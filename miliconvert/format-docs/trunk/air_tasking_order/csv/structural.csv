@@ -1,0 +1,71 @@
+null;null;1.;(2) P ([1] @)
+null;null;2.;(3)F1 A "ATO"
+null;null;3.;(8) QP (([9] @) / ([10] @))
+null;null;4.;(8)F1 A "ALLOTMENT"
+null;null;5.;(12)F1 A "TASKING"
+null;null;6.;(19S) QP ((([17S] !@) & ([23] !@)) & ([25S] !@))
+null;null;7.;(23) QP ((([17S] !@) & ([19S] !@)) & ([25S] !@))
+null;null;8.;(24) P ([23] !@)
+null;null;9.;(25S) QP ((([17S] !@) & ([19S] !@)) & ([23] !@))
+null;null;10.;(31) QP (([25]F3 @) & ([25]F4 = "MC"))
+null;null;11.;(31)F1,N = [25]F3
+null;null;12.;(32) QP (([25]F3 @) & ([25]F4 !@))
+null;null;13.;(34) QP (((([33] !@) & ([35] !@)) & ([36] !@)) & ([37] !@))
+null;null;14.;(35) QP (((([33] !@) & ([34] !@)) & ([36] !@)) & ([37] !@))
+null;null;15.;(36) QP (((([33] !@) & ([34] !@)) & ([35] !@)) & ([37] !@))
+null;null;16.;(37) QP (((([33] !@) & ([34] !@)) & ([35] !@)) & ([36] !@))
+null;null;17.;(38S) QP ([37] @)
+null;null;18.;(40) P ([37] !@)
+null;null;19.;(42) P ([33] !@)
+null;null;20.;(43) P (((([34] @) / ([35] @)) / ([36] @)) / ([37] @))
+null;null;21.;(43) Q (([25]F5 = "AR") / ([25]F6 = "AR"))
+null;null;22.;(44) P (((([34] @) / ([35] @)) / ([36] @)) / ([37] @))
+null;null;23.;(44) Q (([25]F5 = "AR") / ([25]F6 = "AR"))
+null;null;24.;(60) Q ([61] @)
+null;null;25.;(62) QP ([28] @)
+null;null;26.;(62)F1 A "UNIT REMARKS"
+null;null;27.;(63) QP (([65S] @) / ([64] @))
+null;null;28.;(63)F1 A "COORDINATION"
+null;null;29.;(72) QP ((((((((((((((([73] @) / ([74] @)) / ([75] @)) / ([76] @)) / ([77] @)) / ([78] @)) / ([79] @)) / ([80] @)) / ([81] @)) / ([82] @)) / ([83] @)) / ([84] @)) / ([85] @)) / ([86] @)) / ([87] @))
+null;null;30.;(72)F1 A "ATO SPECIAL INSTRUCTIONS (SPINS)"
+null;null;31.;(73)F1 A "GENERAL SPINS INFORMATION"
+null;null;32.;(74)F1 A "COMMANDERS GUIDANCE"
+null;null;33.;(75)F1 A "C2 BATTLE MANAGEMENT PLAN"
+null;null;34.;(76)F1 A "RULES OF ENGAGEMENT (ROE)"
+null;null;35.;(77)F1 A "PERSONNEL RECOVERY PROCEDURES"
+null;null;36.;(78)F1 A "COMMUNICATIONS PLAN"
+null;null;37.;(79)F1 A "ELECTRONIC WARFARE PLAN"
+null;null;38.;(80)F1 A "ANTIAIR WARFARE INSTRUCTIONS"
+null;null;39.;(81)F1 A "THEATER POINT OF CONTACT (POC) LIST"
+null;null;40.;(82)F1 A "COMPOSITE AIR OPERATIONS (COMAO) PLAN"
+null;null;41.;(83)F1 A "TANKER PROCEDURES"
+null;null;42.;(84)F1 A "STRATEGIC AND THEATER AIRLIFT INSTRUCTIONS"
+null;null;43.;(85)F1 A "SPACE WARFARE INFORMATION"
+null;null;44.;(86)F1 A "ADDITIONAL SPECIAL INSTRUCTIONS"
+null;null;45.;(87)F1 A "AIRSPACE CONTROL INFORMATION"
+null;null;46.;(17)F13 QP (F12 @)
+null;null;47.;(25)F7 QP ((F5 = "G"*) / (F6 = "G"*))
+null;null;48.;(25)F9 QP (F8 @)
+null;null;49.;(34)F3 Q (F2 !@)
+null;null;50.;(34)F4 Q (F2 !@)
+null;null;51.;(34)F10 QP (F9 @)
+null;null;52.;(35)F2 Q (F1 !@)
+null;null;53.;(35)F3 Q (F1 !@)
+null;null;54.;(37)F3 Q (F2 !@)
+null;null;55.;(37)F4 Q (F2 !@)
+null;null;56.;(37)F9 QP (F8 @)
+null;null;57.;(38)F5,L = F1
+null;null;58.;(40)F5 QP (F4 @)
+null;null;59.;(42)F13 QP (F12 @)
+null;null;60.;(51)FG,LF5 P ([51]FG @> 1)
+null;null;61.;(54)F3 Q (F2 @)
+null;null;62.;(54)F3 = FF2383-006 (F2 = FF2383-005)
+null;null;63.;(54)F3 = FF2493-003 (F2 = FF2493-002)
+null;null;64.;(54)F5 Q (F4 @)
+null;null;65.;(55)F3 QP (F2 @)
+null;null;66.;(55)F5 QP (F4 @)
+null;null;67.;(56)F5 QP (F4 @)
+null;null;68.;(58)F7 QP (F6 @)
+null;null;69.;(58)F9 QP (F8 @)
+null;null;70.;(88)F2 QP (F1 = FF1022-269)
+null;null;71.;(88)F5 QP ((F3 !@) & (F4 !@))

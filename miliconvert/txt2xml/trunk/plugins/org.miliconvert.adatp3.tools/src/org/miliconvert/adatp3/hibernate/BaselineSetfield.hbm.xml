@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineSetfield" table="BASELINE_SETFIELD" >
+        <cache usage="read-only"/>
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="fudn" type="java.lang.Double">
+            <column name="FUDN" precision="15" scale="5" />
+        </property>
+        <property name="context" type="java.lang.Double">
+            <column name="CONTEXT" precision="15" scale="5" />
+        </property>
+        <property name="ordercode" type="java.lang.Double">
+            <column name="ORDERCODE" precision="15" scale="5" />
+        </property>
+        <property name="altfldcont" type="string">
+            <column name="ALTFLDCONT" length="2" />
+        </property>
+        <property name="fielddesc" type="string">
+            <column name="FIELDDESC" length="8" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="fudjustify" type="string">
+            <column name="FUDJUSTIFY" length="1" />
+        </property>
+        <property name="altname" type="string">
+            <column name="ALTNAME" length="20" />
+        </property>
+        <property name="mfslabel" type="string">
+            <column name="MFSLABEL" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

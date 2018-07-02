@@ -1,0 +1,867 @@
+
+
+package org.mpgt.rules.navsitsum;
+
+expander mpgt-fields-navsitsum.dsl;
+
+import org.miliconvert.xsmt.mpgt.rules.NavsitsumFieldRules;
+import org.miliconvert.xsmt.mpgt.rules.CommonFieldRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+
+rule R_OPCASM_19_0_3_0
+when
+		Dans le set  OPCASM avec la position 19 alternative 0
+		Dans le champ de ffirn 1036_003 avec la position 3 alternative 0
+then
+		CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)
+end
+
+rule R_OPCASM_19_0_2_0
+when
+		Dans le set  OPCASM avec la position 19 alternative 0
+		Dans le champ de ffirn 1026_003 avec la position 2 alternative 0
+then
+		VI MPIA.AssociationAffiliationInstanceObjet.Categorie = "OB"
+		CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_OPCASM_19_0_1_0
+when
+		Dans le set  OPCASM avec la position 19 alternative 0
+		Dans le champ de ffirn 1158_003 avec la position 1 alternative 0
+then
+		CD=(AD3_1158_3;MPGT_EtatOperationnelMaterielQualificatifEtat)
+end
+
+rule R_OPCASM_19_0_5_0
+when
+		Dans le set  OPCASM avec la position 19 alternative 0
+		Dans le champ de ffirn 1336_002 avec la position 5 alternative 0
+then
+		CD=(AD3_1336_2;MPGT_EtatOperationnel)
+end
+
+
+rule R_1APHIB_17_1_1_0
+when
+		Dans le set  1APHIB avec la position 17 alternative 1
+		Dans le champ de ffirn 1026_003 avec la position 1 alternative 0
+then
+		CD=(AD3_1026_2;MPGT_EntitePolitiqueTrigramme)
+		VI MPIA.AssociationAffiliationInstanceObjet.Categorie = "OB"
+end
+
+rule R_1APHIB_17_1_3A_0
+when
+		Dans le set  1APHIB avec la position 17 alternative 1
+		Dans le champ de ffirn 2042_001 avec la position 3A alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_1APHIB_17_1_3B_0
+when
+		Dans le set  1APHIB avec la position 17 alternative 1
+		Dans le champ de ffirn 2043_001 avec la position 3B alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_1APHIB_17_1_3D_0
+when
+		Dans le set  1APHIB avec la position 17 alternative 1
+		Dans le champ de ffirn 1022_004 avec la position 3D alternative 0
+then
+		VI MPGT.AssociationMaterielSite.Categorie = "ISSITU"
+end
+
+rule R_1APHIB_17_1_3C_0
+when
+		Dans le set  1APHIB avec la position 17 alternative 1
+		Dans le champ de ffirn 2044_001 avec la position 3C alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_18_0_3A_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn 2013_031 avec la position 3A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_18_0_3B_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn 2032_007 avec la position 3B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_18_0_2A_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn 2043_001 avec la position 2A alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_18_0_2_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn null avec la position 2 alternative 0
+then
+		Règle A_LocalisationBatiment
+end
+
+
+
+rule R_SAIL_18_0_2C_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn 2200_001 avec la position 2C alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_18_0_2B_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn 2044_001 avec la position 2B alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+
+rule R_SAIL_18_0_2D_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn 1022_170 avec la position 2D alternative 0
+then
+		VI MPGT.AssociationMaterielSite.Categorie = "ISSITU"
+end
+
+
+rule R_SAIL_18_0_1B_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn 2032_006 avec la position 1B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_18_0_1A_0
+when
+		Dans le set  SAIL avec la position 18 alternative 0
+		Dans le champ de ffirn 2013_032 avec la position 1A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_APHIB_15_1_1_0
+when
+		Dans le set  APHIB avec la position 15 alternative 1
+		Dans le champ de ffirn 1026_003 avec la position 1 alternative 0
+then
+		CD=(AD3_1026_2;MPGT_EntitePolitiqueTrigramme)
+		VI MPIA.AssociationAffiliationInstanceObjet.Categorie = "OB"
+end
+
+rule R_APHIB_15_1_3A_0
+when
+		Dans le set  APHIB avec la position 15 alternative 1
+		Dans le champ de ffirn 2042_001 avec la position 3A alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_APHIB_15_1_3B_0
+when
+		Dans le set  APHIB avec la position 15 alternative 1
+		Dans le champ de ffirn 2043_001 avec la position 3B alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_APHIB_15_1_3E_0
+when
+		Dans le set  APHIB avec la position 15 alternative 1
+		Dans le champ de ffirn 1022_170 avec la position 3E alternative 0
+then
+		VI MPGT.AssociationMaterielSite.Categorie = "ISSITU"
+end
+
+rule R_APHIB_15_1_3D_0
+when
+		Dans le set  APHIB avec la position 15 alternative 1
+		Dans le champ de ffirn 1022_049 avec la position 3D alternative 0
+then
+		VI MPGT.AssociationMaterielMateriel.Categorie = "ISLOAD"
+end
+
+rule R_APHIB_15_1_3C_0
+when
+		Dans le set  APHIB avec la position 15 alternative 1
+		Dans le champ de ffirn 2044_001 avec la position 3C alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_16_0_3A_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn 2013_031 avec la position 3A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_16_0_3B_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn 2032_007 avec la position 3B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_16_0_2A_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn 2043_001 avec la position 2A alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_16_0_2_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn null avec la position 2 alternative 0
+then
+		Règle A_LocalisationBatiment
+end
+
+
+rule R_SAIL_16_0_2C_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn 2200_001 avec la position 2C alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_16_0_2B_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn 2044_001 avec la position 2B alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+
+rule R_SAIL_16_0_2D_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn 1022_170 avec la position 2D alternative 0
+then
+		VI MPGT.AssociationMaterielSite.Categorie = "ISSITU"
+end
+
+
+rule R_SAIL_16_0_1B_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn 2032_006 avec la position 1B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_16_0_1A_0
+when
+		Dans le set  SAIL avec la position 16 alternative 0
+		Dans le champ de ffirn 2013_032 avec la position 1A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_13_0_3A_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn 2013_031 avec la position 3A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_13_0_3B_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn 2032_007 avec la position 3B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_13_0_2A_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn 2043_001 avec la position 2A alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_13_0_2_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn null avec la position 2 alternative 0
+then
+		Règle A_LocalisationBatiment
+end
+
+
+
+rule R_SAIL_13_0_2C_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn 2200_001 avec la position 2C alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_13_0_2B_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn 2044_001 avec la position 2B alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+
+
+rule R_SAIL_13_0_2D_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn 1022_170 avec la position 2D alternative 0
+then
+		VI MPIA.AssociationMaterielSite.Categorie = "ISSITU"
+end
+
+
+
+rule R_SAIL_13_0_1B_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn 2032_006 avec la position 1B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_13_0_1A_0
+when
+		Dans le set  SAIL avec la position 13 alternative 0
+		Dans le champ de ffirn 2013_032 avec la position 1A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+
+
+rule R_ACFT_14_0_1A_0
+when
+		Dans le set  ACFT avec la position 14 alternative 0
+		Dans le champ de ffirn 1026_002 avec la position 1A alternative 0
+then
+		CD=(AD3_1026_2;MPGT_EntitePolitiqueTrigramme)
+		VI MPIA.AssociationAffiliationType.Categorie = "OB"
+end
+
+rule R_ACFT_14_1_2_0
+when
+		Dans le set  ACFT avec la position 14 alternative 1
+		Dans le champ de ffirn 1015_012 avec la position 2 alternative 0
+then
+		VI MPIA.TypeAeronef.Categorie = "NOS"
+end
+
+
+rule R_ACFT_14_1_4E_0
+when
+		Dans le set  ACFT avec la position 14 alternative 1
+		Dans le champ de ffirn 1022_170 avec la position 4E alternative 0
+then
+//		Créer la relation 
+end
+
+
+rule R_ACFT_14_1_1A_0
+when
+		Dans le set  ACFT avec la position 14 alternative 1
+		Dans le champ de ffirn 1026_002 avec la position 1A alternative 0
+then
+		CD=(AD3_1026_2;MPGT_EntitePolitiqueTrigramme)
+		VI MPIA.AssociationAffiliationType.Categorie = "OB"
+end
+
+rule R_SAIL_11_0_3A_0
+when
+		Dans le set  SAIL avec la position 11 alternative 0
+		Dans le champ de ffirn 2013_031 avec la position 3A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_11_0_3B_0
+when
+		Dans le set  SAIL avec la position 11 alternative 0
+		Dans le champ de ffirn 2032_007 avec la position 3B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_11_0_2A_0
+when
+		Dans le set  SAIL avec la position 11 alternative 0
+		Dans le champ de ffirn 2043_001 avec la position 2A alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+
+
+rule R_SAIL_11_0_2C_0
+when
+		Dans le set  SAIL avec la position 11 alternative 0
+		Dans le champ de ffirn 2200_001 avec la position 2C alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_11_0_2B_0
+when
+		Dans le set  SAIL avec la position 11 alternative 0
+		Dans le champ de ffirn 2044_001 avec la position 2B alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_SAIL_11_0_2D_0
+when
+		Dans le set  SAIL avec la position 11 alternative 0
+		Dans le champ de ffirn 1022_170 avec la position 2D alternative 0
+then
+		VI MPGT.AssociationMaterielSite.Categorie = "ISSITU"
+end
+
+
+rule R_SAIL_11_0_1B_0
+when
+		Dans le set  SAIL avec la position 11 alternative 0
+		Dans le champ de ffirn 2032_006 avec la position 1B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_SAIL_11_0_1A_0
+when
+		Dans le set  SAIL avec la position 11 alternative 0
+		Dans le champ de ffirn 2013_032 avec la position 1A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_NSIT_12_1_4A_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 2043_001 avec la position 4A alternative 0
+then
+		Règle VerifCheckSum
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_NSIT_12_1_5C_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 2067_004 avec la position 5C alternative 0
+then
+		Règle A_GdhFormatJourDuMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_NSIT_12_1_5B_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 2032_001 avec la position 5B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_NSIT_12_1_4B_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 1022_170 avec la position 4B alternative 0
+then
+		VI MPGT.AssociationMaterielSite.Categorie = "ISSITU"
+end
+
+rule R_NSIT_12_1_5A_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 2013_007 avec la position 5A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_NSIT_12_1_2_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 1036_003 avec la position 2 alternative 0
+then
+		CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)
+end
+
+rule R_NSIT_12_1_6_3
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 1061_004 avec la position 6 alternative 3
+then
+		Règle A_ConversionVitesseKnots
+end
+
+rule R_NSIT_12_1_6_4
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 1341_002 avec la position 6 alternative 4
+then
+		CD=(AD3_1041_2;MPGT_EtatMouvement)
+end
+
+rule R_NSIT_12_1_4_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn null avec la position 4 alternative 0
+then
+		Règle A_LocalisationBatiment
+end
+
+rule R_NSIT_12_1_1B_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 2141_001 avec la position 1B alternative 0
+then
+		VI MPGT.AssociationEntiteOrgMateriel.Categorie = "CONTRL"
+end
+
+rule R_NSIT_12_1_1A_0
+when
+		Dans le set  NSIT avec la position 12 alternative 1
+		Dans le champ de ffirn 1026_003 avec la position 1A alternative 0
+then
+		LIGNE = 92/700
+		VI MPIA.AssociationAffiliationInstanceObjet.Categorie = "OB"
+		CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_1SHIPS_10_0_2_1
+when
+		Dans le set  1SHIPS avec la position 10 alternative 0
+		Dans le champ de ffirn 1036_003 avec la position 2 alternative 1
+then
+		CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)
+end
+
+rule R_1SHIPS_10_0_3B_0
+when
+		Dans le set  1SHIPS avec la position 10 alternative 0
+		Dans le champ de ffirn 1044_076 avec la position 3B alternative 0
+then
+	//	Si sous le champs est renseigné Alors ERREUR
+	//	cette instance du set est à rejeter
+end
+
+rule R_1SHIPS_10_0_1A_0
+when
+		Dans le set  1SHIPS avec la position 10 alternative 0
+		Dans le champ de ffirn 1026_003 avec la position 1A alternative 0
+then
+		VI MPIA.AssociationAffiliationInstanceObjet.Categorie = "OB"
+		CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_1SHIPS_10_1_2_1
+when
+		Dans le set  1SHIPS avec la position 10 alternative 1
+		Dans le champ de ffirn 1036_003 avec la position 2 alternative 1
+then
+		LIGNE = 66
+		CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)
+end
+
+rule R_1SHIPS_10_1_1_1
+when
+		Dans le set  1SHIPS avec la position 10 alternative 1
+		Dans le champ de ffirn 1026_003 avec la position 1 alternative 1
+then
+		LIGNE =  66
+		CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_1SHIPS_10_1_1_2
+when
+		Dans le set  1SHIPS avec la position 10 alternative 1
+		Dans le champ de ffirn 2141_001 avec la position 1 alternative 2
+then
+		NANA
+end
+
+rule R_1SHIPS_10_1_3B_0
+when
+		Dans le set  1SHIPS avec la position 10 alternative 1
+		Dans le champ de ffirn 1044_076 avec la position 3B alternative 0
+then
+		LIGNE = 66
+end
+
+rule R_CONTR_7_0_1C_1
+when
+		Dans le set  CONTR avec la position 7 alternative 0
+		Dans le champ de ffirn 1045_003  avec la position 1C alternative 1
+then
+		VI MPIA.AssociationEntiteOrgEltCtrl.Categorie = "CONTRL"
+end
+
+rule R_CONTR_7_0_1B_0
+when
+		Dans le set  CONTR avec la position 7 alternative 0
+		Dans le champ de ffirn 2141_010 avec la position 1B alternative 0
+then
+		VI MPIA.AssociationEntiteOrgEltCtrl.Categorie = "CONTRL"
+end
+
+rule R_CONTR_7_0_1A_0
+when
+		Dans le set  CONTR avec la position 7 alternative 0
+		Dans le champ de ffirn 1028_008 avec la position 1A alternative 0
+then
+		VI MPIA.AssociationEntiteOrgEltCtrl.Categorie = "CONTRL"
+end
+
+rule R_SMRY_6_0_2_0
+when
+		Dans le set  SMRY avec la position 6 alternative 0
+		Dans le champ de ffirn 1022_059 avec la position 2 alternative 0
+then
+		VI APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#APourType{MPGT.AssociationEltCtrlTypeEltCtrl}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.Categorie = "MARINE"
+		VI APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#APourType{MPGT.AssociationEltCtrlTypeEltCtrl}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.SousCategorie = "GENARE"
+end
+
+rule R_SMRY_6_0_1_0
+when
+		Dans le set  SMRY avec la position 6 alternative 0
+		Dans le champ de ffirn 1299_006 avec la position 1 alternative 0
+then
+		VI MPIA.Action.Categorie = "PLAN"
+		VI MPIA.Action.Activite = "NOS"
+		CD=(AD3_1299_6;MPGT_ActionSousActivite)
+end
+
+rule R_SHIPS_9_0_2_1
+when
+		Dans le set  SHIPS avec la position 9 alternative 0
+		Dans le champ de ffirn 1036_003 avec la position 2 alternative 1
+then
+		LIGNE = 45
+		CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)
+end
+
+rule R_SHIPS_9_0_2_3
+when
+		Dans le set  SHIPS avec la position 9 alternative 0
+		Dans le champ de ffirn 1246_009 avec la position 2 alternative 3
+then
+		LIGNE = 45
+end
+
+rule R_SHIPS_9_0_1_0
+when
+		Dans le set  SHIPS avec la position 9 alternative 0
+		Dans le champ de ffirn 1026_003 avec la position 1 alternative 0
+then
+		Règle A_ShipsFlag
+		VI MPIA.AssociationAffiliationInstanceObjet.Categorie = "OB"
+		CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_SHIPS_9_0_3A_0
+when
+		Dans le set  SHIPS avec la position 9 alternative 0
+		Dans le champ de ffirn 1022_049 avec la position 3A alternative 0
+then
+		LIGNE = 45
+end
+
+rule R_SHIPS_9_0_3B_0
+when
+		Dans le set  SHIPS avec la position 9 alternative 0
+		Dans le champ de ffirn 1044_076 avec la position 3B alternative 0
+then
+	//	Si le sous champs est renseigné Alors ERREUR
+	//	cette instance du set est à rejeter
+end
+
+rule R_SHIPS_9_1_2_1
+when
+		Dans le set  SHIPS avec la position 9 alternative 1
+		Dans le champ de ffirn 1036_003 avec la position 2 alternative 1
+then
+		LIGNE = 503
+		CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)
+end
+
+rule R_SHIPS_9_1_2_3
+when
+		Dans le set  SHIPS avec la position 9 alternative 1
+		Dans le champ de ffirn 1246_009 avec la position 2 alternative 3
+then
+		LIGNE = 503
+end
+
+rule R_SHIPS_9_1_1_0
+when
+		Dans le set  SHIPS avec la position 9 alternative 1
+		Dans le champ de ffirn 1026_003 avec la position 1 alternative 0
+then
+		Règle A_ShipsTypeFlag
+		VI MPIA.AssociationAffiliationInstanceObjet.Categorie = "OB"
+		CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_SHIPS_9_1_3B_0
+when
+		Dans le set  SHIPS avec la position 9 alternative 1
+		Dans le champ de ffirn 1044_076 avec la position 3B alternative 0
+then
+		LIGNE = 503
+end
+
+rule R_NFOR_8_1_3A_0
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 2013_007 avec la position 3A alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatJour
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_NFOR_8_1_3B_0
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 2032_001 avec la position 3B alternative 0
+then
+		Règle VerifCheckSum
+		Règle A_GdhFormatMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_NFOR_8_1_2A_0
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 2043_001 avec la position 2A alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_NFOR_8_1_4A_3
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 1061_004 avec la position 4A alternative 3
+then
+		Règle A_ConversionVitesseKnots
+end
+
+rule R_NFOR_8_1_2B_0
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 2044_001 avec la position 2B alternative 0
+then
+		Règle ConvLatLonToDecimalDegree
+end
+
+rule R_NFOR_8_1_4B_0
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 1341_002 avec la position 4B alternative 0
+then
+		CD=(AD3_1041_2;MPGT_EtatMouvement)
+end
+
+rule R_NFOR_8_1_3C_0
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 2067_004 avec la position 3C alternative 0
+then
+		Règle A_GdhFormatJourDuMois
+		VI MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_NFOR_8_1_1B_0
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 1022_048 avec la position 1B alternative 0
+then
+		VI MPIA.ArticulationMarine.Categorie = "NAVFMN"
+end
+
+rule R_NFOR_8_1_1A_1
+when
+		Dans le set  NFOR avec la position 8 alternative 1
+		Dans le champ de ffirn 1045_003  avec la position 1A alternative 1
+then
+		CD=(AD3_1045_3;MPGT_ArticulationMarineCategorie)
+end
+

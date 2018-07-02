@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.miliconvert.xsmt.editor.XSMTEditor"
+            extensions="xsmt"
+            icon="icons/miliconvert_logo.gif"
+            contributorClass="org.miliconvert.xsmt.editor.XSMTEditorActionBarContributor"
+            id="org.miliconvert.xsmt.editor.XSMTEditor"
+            name="%editor.editor.name"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="org.milliconvert.xsmt.editor"
+            name="%editor.category.name"/>
+      <wizard
+            category="org.milliconvert.xsmt.editeur"
+            class="org.miliconvert.xsmt.editor.wizards.XSMTWizard"
+            icon="icons/miliconvert_logo.gif"
+            id="org.miliconvert.xsmt.editor.wizards.XSMTWizard"
+            name="%editor.wizard.name"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.miliconvert.xsmt.perspective.XSMTPerspectiveFactory"
+            icon="icons/miliconvert_logo.gif"
+            id="org.miliconvert.xsmt.perspective.XSMTPerspectiveFactory"
+            name="%editor.perspective.name"/>
+   </extension>
+
+</plugin>

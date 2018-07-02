@@ -1,0 +1,7 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;PASSAGE TYPE;2-6;Individual;;1.0;In Service;03 Dec 07
+3;PASSAGE FLOW;3-3;Individual;;1.0;In Service;03 Dec 07
+4;PASSAGE USAGE;3-4;Individual;;1.0;In Service;03 Dec 07
+5;LANE OR GAP IDENTIFIER;1-1;Individual;;1.0;In Service;03 Dec 07
+6;ROUTE FEATURE;2-2;Individual;;1.0;In Service;03 Dec 07
+7;CROSSING POTENTIAL;2-2;Individual;;1.0;In Service;03 Dec 07

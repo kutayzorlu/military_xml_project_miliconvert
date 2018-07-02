@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema">
+<ObjectifActivite>
+<CTE>_40nNUAaWEd-Fd8xoS6G2hg</CTE>
+<EstObjectifPour_Activite/>
+<AssocieCommeInstanceObjet_InstanceObjet>
+<refCTE>_4046IAaWEd-Fd8xoS6G2hg</refCTE>
+</AssocieCommeInstanceObjet_InstanceObjet>
+</ObjectifActivite>
+<AutreElementControle>
+<Nom>ACTION</Nom>
+<CTE>_4046IAaWEd-Fd8xoS6G2hg</CTE>
+<AssocieCommeObjectifActivite_ObjectifActivite>
+<refCTE>_40nNUAaWEd-Fd8xoS6G2hg</refCTE>
+</AssocieCommeObjectifActivite_ObjectifActivite>
+<EstObjet_AssociationEntiteOrgEltCtrl>
+<refCTE>_41CEEAaWEd-Fd8xoS6G2hg</refCTE>
+</EstObjet_AssociationEntiteOrgEltCtrl>
+</AutreElementControle>
+<Batiment>
+<CTE>_41XbQAaWEd-Fd8xoS6G2hg</CTE>
+<Nationalite>FRA</Nationalite>
+<APourArticulation_ArticulationMarine/>
+</Batiment>
+<AssociationEntiteOrgEltCtrl>
+<CTE>_41CEEAaWEd-Fd8xoS6G2hg</CTE>
+<Categorie>CONTRL</Categorie>
+<APourObjet_ElementControle>
+<refCTE>_4046IAaWEd-Fd8xoS6G2hg</refCTE>
+</APourObjet_ElementControle>
+<APourSujet_EntiteOrganisationnelle>
+<refCTE>_41FHYAaWEd-Fd8xoS6G2hg</refCTE>
+</APourSujet_EntiteOrganisationnelle>
+</AssociationEntiteOrgEltCtrl>
+<StructureOrganisee>
+<Nom>ARTI OP</Nom>
+<CTE>_41FHYAaWEd-Fd8xoS6G2hg</CTE>
+<EstSujet_AssociationEntiteOrgEltCtrl>
+<refCTE>_41CEEAaWEd-Fd8xoS6G2hg</refCTE>
+</EstSujet_AssociationEntiteOrgEltCtrl>
+</StructureOrganisee>
+</schema:MPGT_Message>

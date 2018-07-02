@@ -1,0 +1,6 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;UNIT ADDRESS;1-40;Instructive;;1.0;In Service;03 Dec 07
+6;REFERENCED MESSAGE ACTION ADDRESSEE;1-30;Instructive;;1.0;In Service;03 Dec 07
+7;ELECTRONIC MAIL ADDRESS;1-60;Instructive;;1.0;In Service;03 Dec 07
+8;E-MAIL ADDRESS, (30 CHARACTERS );1-30;Instructive;ACTUAL E-MAIL ADDRESS.;1.0;In Service;03 Dec 07
+9;SECURE ELECTRONIC MAIL ADDRESS;1-60;Instructive;AN EMAIL ADDRESS ON A SECURE NETWORK.;1.0;In Service;03 Dec 07

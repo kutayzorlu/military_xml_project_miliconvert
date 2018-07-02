@@ -1,0 +1,5 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;NAVIGATION SYSTEM CODE;1-2;Individual;;1.0;In Service;03 Dec 07
+2;NAVIGATION AID TYPE;1-1;Individual;;1.0;In Service;03 Dec 07
+3;NAVIGATION BUOY OR MARKER CODE;8-9;Individual;;1.0;In Service;03 Dec 07
+4;CIVILIAN MILITARY AIR NAVIGATION AID TYPE;2-5;Individual;THE TYPE OF NAVIGATIONAL AID.;1.0;In Service;03 Dec 07

@@ -1,0 +1,10 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;FUZE TYPE;2-20;Instructive;;1.0;In Service;03 Dec 07
+2;FUZING;2-20;Instructive;;1.0;In Service;03 Dec 07
+3;ARTILLERY FUZE TYPE;2-3;Individual;;1.0;In Service;03 Dec 07
+4;FIRST SELECTED FUZE;2-3;Individual;;1.0;In Service;03 Dec 07
+5;SECOND SELECTED FUZE;2-3;Individual;;1.0;In Service;03 Dec 07
+6;FIRE FOR EFFECT FUZE;2-3;Individual;;1.0;In Service;03 Dec 07
+7;EXCLUDED FUZE TYPE;2-3;Individual;;1.0;In Service;03 Dec 07
+8;WEAPON FUZE TYPE;3-6;Individual;THE TYPE OF FUZE USED BY THE WEAPON DELIVERY SYSTEM.;1.0;In Service;03 Dec 07
+9;FUZE DELAY SETTING;4-6;Individual;THE FUZE DELAY SETTING USED BY THE WEAPON DELIVERY SYSTEM.;1.0;In Service;03 Dec 07

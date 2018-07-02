@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><intelligence_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/intsum/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier ff-seq="1" ffirn-fudn="1018-2">INTSUM</message_text_format_identifier>
+<originator ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<date_time_group set-id="dtg" set-seq="5">
+<dtg_4_digit_year ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="6">
+<unit_designation_name ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_drafter_releaser>
+<period_of_time set-id="period" set-seq="7">
+<start_day_time>
+<day_time_and_month_of_start ff-seq="1" ffirn-fudn="2030-3">
+<day ffirn-fudn="1000-1">22</day>
+<hour_time ffirn-fudn="1001-1">15</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">SEP</month_name>
+</day_time_and_month_of_start>
+</start_day_time>
+<stop_day_time>
+<day_time_and_month_of_stop ff-seq="2" ffirn-fudn="2030-4">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">OCT</month_name>
+</day_time_and_month_of_stop>
+</stop_day_time>
+</period_of_time>
+<general_text set-id="gentext" set-seq="8">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">HIGHLIGHTS</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text>
+<general_text_1_segment>
+<general_text_1 set-id="gentext" set-seq="9">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">GEOGRAPHICAL INFORMATION</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_1>
+<general_text_2 set-id="gentext" set-seq="10">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">GENERAL SITUATION</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_2>
+<general_text_3 set-id="gentext" set-seq="11">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">MILITARY SITUATION</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_3>
+<general_text_4 set-id="gentext" set-seq="12">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">LAND SITUATION</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_4>
+<general_text_5 set-id="gentext" set-seq="13">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">MARITIME SITUATION</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_5>
+<general_text_6 set-id="gentext" set-seq="14">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">AIR SITUATION</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_6>
+<general_text_7 set-id="gentext" set-seq="15">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">SPACE SITUATION</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_7>
+<general_text_8 set-id="gentext" set-seq="16">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">COUNTER-INTELLIGENCE AND SECURITY SITUATION</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_8>
+<general_text_9 set-id="gentext" set-seq="17">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">OTHER INTELLIGENCE</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_9>
+<general_text_10 set-id="gentext" set-seq="18">
+<text_indicator ff-seq="1" ffirn-fudn="1009-1">AREA ASSESSMENT</text_indicator>
+<free_text ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_10>
+</general_text_1_segment>
+</intelligence_summary>

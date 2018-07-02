@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineMsgusr" table="BASELINE_MSGUSR" >
+        <composite-id name="id" class="org.miliconvert.adatp3.hibernate.BaselineMsgusrId">
+            <key-property name="key" type="java.lang.Double">
+                <column name="`KEY`" precision="15" scale="5" />
+            </key-property>
+            <key-property name="context" type="java.lang.Double">
+                <column name="CONTEXT" precision="15" scale="5" />
+            </key-property>
+            <key-property name="username" type="string">
+                <column name="USERNAME" length="20" />
+            </key-property>
+            <key-property name="responsible" type="string">
+                <column name="RESPONSIBLE" length="30" />
+            </key-property>
+            <key-property name="address" type="string">
+                <column name="ADDRESS" length="120" />
+            </key-property>
+            <key-property name="postcode" type="string">
+                <column name="POSTCODE" length="30" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

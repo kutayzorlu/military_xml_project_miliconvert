@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.xsmt.functions
+Bundle-SymbolicName: org.miliconvert.xsmt.functions;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.miliconvert.xsmt.functions.Activator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.xsmt.tmodel
+Eclipse-LazyStart: true
+Eclipse-RegisterBuddy: org.miliconvert.xsmt.tmodel
+Export-Package: org.miliconvert.xsmt.functions;uses:="org.eclipse.core.runtime,org.osgi.framework",
+ org.miliconvert.xsmt.functions.core;uses:="org.eclipse.osgi.util,org.miliconvert.xsmt.tmodel"
+Bundle-Localization: plugin

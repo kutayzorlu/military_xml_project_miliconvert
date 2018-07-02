@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineClformbas" table="BASELINE_CLFORMBAS" >
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="classname" type="string">
+            <column name="CLASSNAME" length="10" unique="true" />
+        </property>
+        <property name="revdate" type="timestamp">
+            <column name="REVDATE" length="19" />
+        </property>
+        <property name="linelength" type="string">
+            <column name="LINELENGTH" />
+        </property>
+        <property name="flddescmk" type="string">
+            <column name="FLDDESCMK" length="20" />
+        </property>
+        <property name="eosmarker" type="string">
+            <column name="EOSMARKER" length="20" />
+        </property>
+        <property name="fldmarker" type="string">
+            <column name="FLDMARKER" length="20" />
+        </property>
+        <property name="nodatamk" type="string">
+            <column name="NODATAMK" length="20" />
+        </property>
+        <property name="efldmin" type="string">
+            <column name="EFLDMIN" />
+        </property>
+        <property name="efldmax" type="string">
+            <column name="EFLDMAX" />
+        </property>
+        <property name="cfldmin" type="string">
+            <column name="CFLDMIN" />
+        </property>
+        <property name="cfldmax" type="string">
+            <column name="CFLDMAX" />
+        </property>
+        <property name="addset" type="string">
+            <column name="ADDSET" />
+        </property>
+        <property name="addseg" type="string">
+            <column name="ADDSEG" />
+        </property>
+        <property name="addmsg" type="string">
+            <column name="ADDMSG" />
+        </property>
+        <property name="srcFileName" type="string">
+            <column name="SRC_FILE_NAME" length="46" />
+        </property>
+        <property name="classdesc" type="string">
+            <column name="CLASSDESC" />
+        </property>
+        <property name="classtype" type="string">
+            <column name="CLASSTYPE" length="10" />
+        </property>
+        <property name="priority" type="string">
+            <column name="PRIORITY" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="maxmsgname" type="java.lang.Double">
+            <column name="MAXMSGNAME" precision="15" scale="5" />
+        </property>
+        <property name="maxsetidlen" type="java.lang.Double">
+            <column name="MAXSETIDLEN" precision="15" scale="5" />
+        </property>
+        <property name="maxfudn" type="java.lang.Double">
+            <column name="MAXFUDN" precision="15" scale="5" />
+        </property>
+        <property name="setcontmk" type="string">
+            <column name="SETCONTMK" length="20" />
+        </property>
+        <property name="textcontmk" type="string">
+            <column name="TEXTCONTMK" length="20" />
+        </property>
+        <property name="maxnumlines" type="string">
+            <column name="MAXNUMLINES" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="nato:adatp-3:bl12" xmlns:s="nato:adatp-3:bl12:sets" attributeFormDefault="unqualified" elementFormDefault="unqualified" version="bl12">
+<xsd:import namespace="nato:adatp-3:bl12:sets" schemaLocation="sets.xsd"/>
+<xsd:element name="nbc2_nuc_report">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="exercise_identification">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:exercise.identification">
+<xsd:attribute fixed="1" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="operation_codeword">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:operation.codeword">
+<xsd:attribute fixed="2" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_identifier">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.identifier">
+<xsd:attribute fixed="3" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="reference">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:reference">
+<xsd:attribute fixed="4" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="geodetic_datum">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:geodetic.datum">
+<xsd:attribute fixed="5" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="date_time_group">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:date.time.group">
+<xsd:attribute fixed="6" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_of_drafter_releaser">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator.of.drafter.releaser">
+<xsd:attribute fixed="7" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="type_of_nbc_report">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:type.of.nbc.report">
+<xsd:attribute fixed="8" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="strike_serial_number">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:strike.serial.number">
+<xsd:attribute fixed="9" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="date_time_group_of_attack_or_detonation_and_attack_end">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:date.time.group.of.attack.or.detonation.and.attack.end">
+<xsd:attribute fixed="10" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="location_of_attack_or_event">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:location.of.attack.or.event">
+<xsd:attribute fixed="11" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="delivery_and_quantity_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:delivery.and.quantity.information">
+<xsd:attribute fixed="12" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="type_of_nuclear_burst">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:type.of.nuclear.burst">
+<xsd:attribute fixed="13" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="estimated_nuclear_yield_in_kilotons">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:estimated.nuclear.yield.in.kilotons">
+<xsd:attribute fixed="14" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="representative_downwind_direction_and_downwind_speed">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:representative.downwind.direction.and.downwind.speed">
+<xsd:attribute fixed="15" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="actual_weather_conditions">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:actual.weather.conditions">
+<xsd:attribute fixed="16" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="17" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="remarks" type="s:remarks"/>
+</xsd:sequence>
+<xsd:attribute fixed="NUC2" name="mtfid" type="xsd:string"/>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<airspace_control_order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/aco/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">DESERT</exercise_nickname>
+</exercise_identification>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A" ff-seq="1" ffirn-fudn="1018-2">ACO</message_text_format_identifier>
+<originator alt="A" ff-seq="2" ffirn-fudn="1029-1">CG I MEF</originator>
+<message_serial_number alt="A" ff-seq="3" ffirn-fudn="1012-7">107-91</message_serial_number>
+<month_name_abbreviated alt="A" ff-seq="4" ffirn-fudn="1004-1">FEB</month_name_abbreviated>
+</message_identifier>
+<airspace_control_order_identification_segment>
+<airspace_control_order_identification set-id="acoid" set-seq="5">
+<name_of_area_of_validity alt="A" ff-seq="1" ffirn-fudn="1022-25">AA</name_of_area_of_validity>
+</airspace_control_order_identification>
+<geodetic_datum set-id="geodatum" set-seq="6">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1" xsi:nil="true"/>
+</geodetic_datum>
+<period_of_time set-id="period" set-seq="7">
+<start_day_time>
+<day_time_start alt="A" ff-seq="1" ffirn-fudn="2000-14">
+<day ffirn-fudn="1000-1">00</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">B</time_zone>
+</day_time_start>
+</start_day_time>
+<stop_day_time>
+<day_time_stop alt="A" ff-seq="2" ffirn-fudn="2000-15">
+<day ffirn-fudn="1000-1">33</day>
+<hour_time ffirn-fudn="1001-1">22</hour_time>
+<minute_time ffirn-fudn="1002-1">11</minute_time>
+<time_zone ffirn-fudn="1003-1">C</time_zone>
+</day_time_stop>
+</stop_day_time>
+</period_of_time>
+<airspace_control_means_status_segment>
+<airspace_control_means_status set-id="acmstat" set-seq="9">
+<airspace_control_means_status_update alt="A" ff-seq="1" ffirn-fudn="1156-5">ADD</airspace_control_means_status_update>
+</airspace_control_means_status>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification set-id="acmid" set-seq="10">
+<airspace_control_means>
+<type_of_airspace_control_means alt="A" ff-seq="1" ffirn-fudn="1389-2">PROC</type_of_airspace_control_means>
+</airspace_control_means>
+<airspace_control_means_identifier>
+<airspace_control_means_identifying_designator alt="A" ff-seq="2" ffirn-fudn="1515-12" xsi:nil="true"/>
+</airspace_control_means_identifier>
+<type_of_airspace_shape alt="A" ff-seq="3" ffirn-fudn="1237-2">POINT</type_of_airspace_shape>
+<airspace_usage>
+<airspace_usage alt="A" descriptor="USE" ff-seq="4" ffirn-fudn="1389-3">CL</airspace_usage>
+</airspace_usage>
+</airspace_control_means_identification>
+<shape_point set-id="apoint" set-seq="18">
+<airspace_point>
+<geographic_position_lat_long_minutes alt="A" descriptor="LATM" ff-seq="1" ffirn-fudn="2023-1">
+<latitude_degrees ffirn-fudn="1039-1">00</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">000</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</airspace_point>
+</shape_point>
+<vertical_dimension_of_the_effective_level set-id="efflevel" set-seq="21">
+<vertical_dimemsion>
+<vertical_dimension_base_ref_point_to_relative_altitude alt="A" ff-seq="1" ffirn-fudn="2166-1" xsi:nil="true"/>
+</vertical_dimemsion>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+</airspace_control_means_status_segment>
+</airspace_control_order_identification_segment>
+</airspace_control_order>

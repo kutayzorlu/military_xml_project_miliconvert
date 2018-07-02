@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" version="11"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="contactreport">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded" minOccurs="0">
+				<xsd:element maxOccurs="1" minOccurs="1"
+					name="message_identification">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="command" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="message_identifier" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="message_serial_no" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="month" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="operexer_name" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="qualifier" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="qualifier_serial_no" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" name="delete">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="track_number" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="command" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="unique_identifier" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="unbounded" minOccurs="0"
+					name="delete_line_of_bearing">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="track_number" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="date-time_group" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="month" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="latitude_of_origin" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="longitude_of_origin" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="bearing" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="sensor_code" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="command" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="unique_identifier" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="unbounded" minOccurs="0"
+					name="delete_position">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="track_number" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="date-time_group" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="month" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="latitude" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="longitude" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="sensor_code" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="source_code" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="command" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="unique_identifier" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" name="merge">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="source_track_number" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="destination_track_no" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="source_command" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="destination_command" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="spare_source_track_unique_id" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="destination_track_unique_id" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="unbounded" minOccurs="0"
+					name="contact_segment">
+					<xsd:complexType>
+						<xsd:choice maxOccurs="unbounded" minOccurs="0">
+							<xsd:element maxOccurs="unbounded" minOccurs="0"
+								name="contact">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element maxOccurs="1" minOccurs="1"
+											name="track_number" />
+										<xsd:element maxOccurs="1" minOccurs="1" name="class-name" />
+										<xsd:element maxOccurs="1" minOccurs="0" name="trademark" />
+										<xsd:element maxOccurs="1" minOccurs="0" name="type" />
+										<xsd:element maxOccurs="1" minOccurs="0" name="category" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="pennant_number" />
+										<xsd:element maxOccurs="1" minOccurs="0" name="flag" />
+										<xsd:element maxOccurs="1" minOccurs="0" name="sconum" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="selective_identifier" />
+										<xsd:element maxOccurs="1" minOccurs="0" name="alert_code" />
+										<xsd:element maxOccurs="1" minOccurs="1" name="force_code" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="system_track_number" />
+										<xsd:element maxOccurs="1" minOccurs="1" name="track_type" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="average_speed" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="avg_time_on_leg" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="discrete_identifier" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="unique_identifier" />
+										<xsd:element maxOccurs="1" minOccurs="0" name="ircs" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="suspicion_code" />
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="emitter_voice_call_sign" />
+										<xsd:element maxOccurs="unbounded" minOccurs="0"
+											name="position_segment">
+											<xsd:complexType>
+												<xsd:choice maxOccurs="unbounded" minOccurs="0">
+													<xsd:element maxOccurs="unbounded" minOccurs="0"
+														name="position">
+														<xsd:complexType>
+															<xsd:sequence>
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="date-time_group" />
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="month" />
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="latitude_of_center" />
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="longitude_of_center" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="sensor_code" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="bearing_of_major_axis" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="length_of_semi-major_axis" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="length_of_semi-minor_axis" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="course" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="speed" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="altitudedepth" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="rdf_rf" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="spare_source_code" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="identifier" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="units" />
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="expanded_radar_data">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="elint_notation" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="emitter_name" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="radio_frequency" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="pulse_rep_interval" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="pulse_rep_frequency" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="pulse_width" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="scan_rate" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="scan_type" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="electronic_order_of">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="pin_number" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="developmental_eob" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="remarks">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="free-text" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="signature_segment">
+																	<xsd:complexType>
+																		<xsd:choice maxOccurs="unbounded"
+																			minOccurs="0">
+																			<xsd:element maxOccurs="unbounded"
+																				minOccurs="0" name="signature">
+																				<xsd:complexType>
+																					<xsd:sequence>
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="source" />
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="fundamental_freq" />
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="harmonics" />
+																						<xsd:element maxOccurs="1" minOccurs="0"
+																							name="rpm" />
+																						<xsd:element maxOccurs="1" minOccurs="0"
+																							name="turns_per_knot" />
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="date-time_group" />
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="month" />
+																						<xsd:element maxOccurs="1" minOccurs="0"
+																							name="acoustic_sensor_code" />
+																						<xsd:element maxOccurs="1" minOccurs="0"
+																							name="detection_status" />
+																						<xsd:element maxOccurs="unbounded"
+																							minOccurs="0" name="signa_amplification">
+																							<xsd:complexType>
+																								<xsd:sequence>
+																									<xsd:element maxOccurs="1"
+																										minOccurs="1" name="free-text" />
+																								</xsd:sequence>
+																								<xsd:attribute name="setId" type="xsd:string"
+																									use="required" />
+																								<xsd:attribute name="set-seq"
+																									type="xsd:string" use="required" />
+																							</xsd:complexType>
+																						</xsd:element>
+																					</xsd:sequence>
+																					<xsd:attribute name="setId" type="xsd:string"
+																						use="required" />
+																					<xsd:attribute name="set-seq" type="xsd:string"
+																						use="required" />
+																				</xsd:complexType>
+																			</xsd:element>
+																		</xsd:choice>
+																		<xsd:attribute name="seg-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="mode_gold">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="submarine_operating_mode" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="submarine_propulsion_mode" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="depth" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="depth_measured_estimated" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="depth_determination_means" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="personnel">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_persons_allocated" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_persons_assigned" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_killed" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_missing_in_action" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_captured" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_wounded" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_wounded_ambulatory" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_wnded_transport_not_amblatory" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_wnded_nontrans-portable" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="equipment">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="equipment_name" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_of_equipment_allocated" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_of_equipment_assigned" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_of_failed_equipment" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_equip_diminished_capability" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_equip_abandonedcaptured" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="prisoners_of_war">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="no_of_captivespows" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="refugees">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="no_of_refugees" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="country_code" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="subgroup" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="engagement">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="engagement_level" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="unique_identifier" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+															</xsd:sequence>
+															<xsd:attribute name="setId" type="xsd:string"
+																use="required" />
+															<xsd:attribute name="set-seq" type="xsd:string"
+																use="required" />
+														</xsd:complexType>
+													</xsd:element>
+												</xsd:choice>
+												<xsd:attribute name="seg-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="unbounded" minOccurs="0"
+											name="line_of_bearing_segment">
+											<xsd:complexType>
+												<xsd:choice maxOccurs="unbounded" minOccurs="0">
+													<xsd:element maxOccurs="unbounded" minOccurs="0"
+														name="line_of_bearing">
+														<xsd:complexType>
+															<xsd:sequence>
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="date-time_group" />
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="month" />
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="latitude_of_origin" />
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="longitude_of_origin" />
+																<xsd:element maxOccurs="1" minOccurs="1"
+																	name="bearing" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="sensor_code" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="half-width" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="range" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="rdf_rf" />
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="spare_source_code" />
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="expanded_radar_data">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="elint_notation" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="emitter_name" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="radio_frequency" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="pulse_rep_interval" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="pulse_rep_frequency" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="pulse_width" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="scan_rate" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="scan_type" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="electronic_order_of">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="pin_number" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="developmental_eob" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="remarks">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="free-text" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="signature_segment">
+																	<xsd:complexType>
+																		<xsd:choice maxOccurs="unbounded"
+																			minOccurs="0">
+																			<xsd:element maxOccurs="unbounded"
+																				minOccurs="0" name="signature">
+																				<xsd:complexType>
+																					<xsd:sequence>
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="source" />
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="fundamental_freq" />
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="harmonics" />
+																						<xsd:element maxOccurs="1" minOccurs="0"
+																							name="rpm" />
+																						<xsd:element maxOccurs="1" minOccurs="0"
+																							name="turns_per_knot" />
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="date-time_group" />
+																						<xsd:element maxOccurs="1" minOccurs="1"
+																							name="month" />
+																						<xsd:element maxOccurs="1" minOccurs="0"
+																							name="acoustic_sensor_code" />
+																						<xsd:element maxOccurs="1" minOccurs="0"
+																							name="detection_status" />
+																						<xsd:element maxOccurs="unbounded"
+																							minOccurs="0" name="signa_amplification">
+																							<xsd:complexType>
+																								<xsd:sequence>
+																									<xsd:element maxOccurs="1"
+																										minOccurs="1" name="free-text" />
+																								</xsd:sequence>
+																								<xsd:attribute name="setId" type="xsd:string"
+																									use="required" />
+																								<xsd:attribute name="set-seq"
+																									type="xsd:string" use="required" />
+																							</xsd:complexType>
+																						</xsd:element>
+																					</xsd:sequence>
+																					<xsd:attribute name="setId" type="xsd:string"
+																						use="required" />
+																					<xsd:attribute name="set-seq" type="xsd:string"
+																						use="required" />
+																				</xsd:complexType>
+																			</xsd:element>
+																		</xsd:choice>
+																		<xsd:attribute name="seg-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="mode_gold">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="submarine_operating_mode" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="submarine_propulsion_mode" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="depth" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="depth_measured_estimated" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="depth_determination_means" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="personnel">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_persons_allocated" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_persons_assigned" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_killed" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_missing_in_action" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_captured" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="number_wounded" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_wounded_ambulatory" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_wnded_transport_not_amblatory" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_wnded_nontrans-portable" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="equipment">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="equipment_name" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_of_equipment_allocated" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_of_equipment_assigned" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_of_failed_equipment" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_equip_diminished_capability" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="no_equip_abandonedcaptured" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="1" minOccurs="0"
+																	name="prisoners_of_war">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="no_of_captivespows" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="refugees">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="no_of_refugees" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="country_code" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="subgroup" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+																<xsd:element maxOccurs="unbounded"
+																	minOccurs="0" name="engagement">
+																	<xsd:complexType>
+																		<xsd:sequence>
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="date-time_group" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="month" />
+																			<xsd:element maxOccurs="1" minOccurs="1"
+																				name="engagement_level" />
+																			<xsd:element maxOccurs="1" minOccurs="0"
+																				name="unique_identifier" />
+																		</xsd:sequence>
+																		<xsd:attribute name="setId" type="xsd:string"
+																			use="required" />
+																		<xsd:attribute name="set-seq" type="xsd:string"
+																			use="required" />
+																	</xsd:complexType>
+																</xsd:element>
+															</xsd:sequence>
+															<xsd:attribute name="setId" type="xsd:string"
+																use="required" />
+															<xsd:attribute name="set-seq" type="xsd:string"
+																use="required" />
+														</xsd:complexType>
+													</xsd:element>
+												</xsd:choice>
+												<xsd:attribute name="seg-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="ground_order_of_battle">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="equipment_code" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="target_identifier" />
+													<xsd:element maxOccurs="1" minOccurs="0" name="quantity" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="arbitrary_intercept_designator" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="unit_identification_code">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="unbounded" minOccurs="1"
+														name="unit_id_code" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="1" minOccurs="0" name="pair">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="1" minOccurs="0" name="fotccmd" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="fotc_track_no" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="command_i" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="track_number" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="command_2" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="track_number_1" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="command_3" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="track_number_2" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="command_4" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="track_number_3" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="command_5" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="track_number_4" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="1" minOccurs="0"
+											name="pleasure_craft_data">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="hull_color" />
+													<xsd:element maxOccurs="1" minOccurs="0" name="brand" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="hull_length" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="1" minOccurs="0" name="rigging">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="appearance_group" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="hull_profile" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="stern_type" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="upright_sequence" />
+													<xsd:element maxOccurs="1" minOccurs="0" name="tonnage" />
+													<xsd:element maxOccurs="1" minOccurs="0" name="length" />
+													<xsd:element maxOccurs="1" minOccurs="0" name="comments" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="1" minOccurs="0" name="arrival">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="1" minOccurs="1"
+														name="port_of_arrloc" />
+													<xsd:element maxOccurs="1" minOccurs="1"
+														name="country_of_port" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="time_of_arr" />
+													<xsd:element maxOccurs="1" minOccurs="0" name="month" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_1" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_2" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_3" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="1" minOccurs="0" name="departure">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="1" minOccurs="1"
+														name="port_of_departure" />
+													<xsd:element maxOccurs="1" minOccurs="1" name="country" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="date-time_group" />
+													<xsd:element maxOccurs="1" minOccurs="0" name="month" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_1" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_2" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_3" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="1" minOccurs="0" name="destination">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="1" minOccurs="1"
+														name="port_of_destination" />
+													<xsd:element maxOccurs="1" minOccurs="1" name="country" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="date-time_group" />
+													<xsd:element maxOccurs="1" minOccurs="0" name="month" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_1" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_2" />
+													<xsd:element maxOccurs="1" minOccurs="0"
+														name="cargo_indicator_3" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element maxOccurs="unbounded" minOccurs="0"
+											name="remarks">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element maxOccurs="1" minOccurs="1"
+														name="free-text" />
+												</xsd:sequence>
+												<xsd:attribute name="setId" type="xsd:string"
+													use="required" />
+												<xsd:attribute name="set-seq" type="xsd:string"
+													use="required" />
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+									<xsd:attribute name="setId" type="xsd:string"
+										use="required" />
+									<xsd:attribute name="set-seq" type="xsd:string"
+										use="required" />
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:choice>
+						<xsd:attribute name="seg-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="1" name="end_of_data">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="derivation_source_for_clsif" />
+							<xsd:element maxOccurs="unbounded" minOccurs="0"
+								name="dwngrd_or_declass_inst" />
+							<xsd:element maxOccurs="unbounded" minOccurs="0"
+								name="dwngrd_or_declass_exempt_code" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

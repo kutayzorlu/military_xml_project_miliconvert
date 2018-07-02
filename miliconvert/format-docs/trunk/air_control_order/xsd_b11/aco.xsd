@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" version="11">
+  <xsd:element name="airspace_control_order">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="0" name="exercise_identification">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="exercise_nickname" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="exercise_additional_identifier" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="operation_codeword">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="operation_codeword" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="plan_originator_and_number">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="plan_originator"/>
+                    <xsd:element name="blank_space_character"/>
+                    <xsd:element name="plan_number"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="0" name="option_nickname" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="secondary_option_nickname" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="message_identifier">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="message_text_format_identifier" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="originator" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="message_serial_number" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="month_name" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="qualifier" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="serial_number_of_qualifier" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="reference">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="serial_letter" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="message_text_format_identifier" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="originator" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="day_time_group_of_reference">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="day"/>
+                    <xsd:element name="hour_time"/>
+                    <xsd:element name="minute_time"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="0" name="reference_serial_number" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="special_notation" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="0" name="sic" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="airspace_control_order_identification_segment">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="airspace_control_order_identification">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="1" name="name_of_area_of_validity" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="aco_serial_number" type="xsd:string"/>
+                  </xsd:sequence>
+                  <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="1" name="geodetic_datum">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="1" name="geodetic_datum" type="xsd:string"/>
+                  </xsd:sequence>
+                  <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="period_of_time">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="1" name="day_time_start">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="day"/>
+                          <xsd:element name="hour_time"/>
+                          <xsd:element name="minute_time"/>
+                          <xsd:element name="time_zone"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="1" name="day_time_stop">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="day"/>
+                          <xsd:element name="hour_time"/>
+                          <xsd:element name="minute_time"/>
+                          <xsd:element name="time_zone"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="day_time">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="day"/>
+                          <xsd:element name="hour_time"/>
+                          <xsd:element name="minute_time"/>
+                          <xsd:element name="time_zone"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                  <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="0" name="aco_management_information">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="1" name="text_indicator" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="1" name="free_text" type="xsd:string"/>
+                  </xsd:sequence>
+                  <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="1" name="airspace_control_means_status_segment">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="airspace_control_means_status">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                          <xsd:element maxOccurs="1" minOccurs="1" name="airspace_control_means_status_update" type="xsd:string"/>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="airspace_control_means_identifying_designator" type="xsd:string"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="airspace_control_means_identification_segment">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="airspace_control_means_identification">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="type_of_airspace_control_means" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="airspace_control_means_identifying_designator" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="type_of_airspace_shape" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="airspace_usage" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="acm_link_16_track_number_reference" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="transition_altitude">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_0_99999"/>
+                                      <xsd:element name="unit_of_linear_measurement_feet_or_metres"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="geodetic_datum">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="geodetic_datum" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="airspace_shape_polyarc">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="bearing_origin_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="beginning_radial_bearing_degrees_true">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_000_359"/>
+                                      <xsd:element name="angular_measurement_reference_true"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="radius_m_km_nm">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_0_to_1_decimal_pt_permitted_5_char_max"/>
+                                      <xsd:element name="unit_of_linear_measurement_m_km_nm"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="ending_radial_bearing_degrees_true">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_000_359"/>
+                                      <xsd:element name="angular_measurement_reference_true"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="airspace_shape_radarc">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="bearing_origin_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="beginning_radial_bearing_degrees_true">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_000_359"/>
+                                      <xsd:element name="angular_measurement_reference_true"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="ending_radial_bearing_degrees_true">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_000_359"/>
+                                      <xsd:element name="angular_measurement_reference_true"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="inner_radius_m_km_nm">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_0_to_1_decimal_pt_permitted_5_char_max"/>
+                                      <xsd:element name="unit_of_linear_measurement_m_km_nm"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="outer_radius_m_km_nm">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_0_to_1_decimal_pt_permitted_5_char_max"/>
+                                      <xsd:element name="unit_of_linear_measurement_m_km_nm"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="airspace_shape_track">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="track_leg" type="xsd:string"/>
+                                <xsd:element maxOccurs="2" minOccurs="2" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="track_width" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="vertical_dimension_base_ref_point_to_relative_altitude" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="shape_polygon">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="shape_circle">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="radius_m_km_nm">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_0_to_1_decimal_pt_permitted_5_char_max"/>
+                                      <xsd:element name="unit_of_linear_measurement_m_km_nm"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="airspace_shape_corridor">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="width_m_km_nm">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_0_to_1_decimal_pt_permitted_5_char_max"/>
+                                      <xsd:element name="unit_of_linear_measurement_m_km_nm"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="shape_point">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="airspace_shape_orbit">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="2" minOccurs="2" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="width_m_km_nm">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_0_to_1_decimal_pt_permitted_5_char_max"/>
+                                      <xsd:element name="unit_of_linear_measurement_m_km_nm"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="orbit_alignment" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="geometric_composite_line">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="vertical_dimension_of_the_effective_level">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="vertical_dimension_base_ref_point_to_relative_altitude" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="airspace_time_period">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="airspace_time_mode" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="day_time_and_month_of_start">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="day"/>
+                                      <xsd:element name="hour_time"/>
+                                      <xsd:element name="minute_time"/>
+                                      <xsd:element name="time_zone"/>
+                                      <xsd:element name="month_name"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="day_time_and_month_of_stop">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="day"/>
+                                      <xsd:element name="hour_time"/>
+                                      <xsd:element name="minute_time"/>
+                                      <xsd:element name="time_zone"/>
+                                      <xsd:element name="month_name"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="interval_frequency" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="interval_duration" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="control_point">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="control_point_type" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="position_or_point_name" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="vertical_dimension_base_ref_point_to_relative_altitude" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="controlling_authority">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="operational_control_authority" type="xsd:string"/>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="radio_frequency">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="context_quantity_decimal_pt_permitted_11_char_max"/>
+                                      <xsd:element name="unit_of_electromagnetic_emission_measurement"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="transit_instructions">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="text_indicator" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="free_text" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="undefined_airspace_control_means_link_16_track_number_reference">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="undefined_link_16_track_number_reference" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="message_downgrading_or_declassification_data">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="derivative_source_for_classification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="reason_for_classification" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="0" name="downgrading_or_declassification_instructions" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="0" name="downgrade_or_declassification_date_ddmmmyyyy">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="day"/>
+                    <xsd:element name="month_name"/>
+                    <xsd:element name="year"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="unbounded" minOccurs="0" name="downgrading_or_declassification_exemption_code" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="remarks" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphic xmlns="http://miliconvert.org/xsd/xsmt/graphic.xsd">
+
+  <box modelid="schema-0" x="20" y="20" w="120" h="240"/>
+  <box modelid="schema-1" x="500" y="20" w="120" h="240"/>
+  <box modelid="func-0" x="380" y="20" w="80" h="70"/>
+  <box modelid="func-1" x="280" y="60" w="80" h="30"/>
+  <box modelid="func-2" x="280" y="20" w="80" h="30"/>
+
+</graphic>

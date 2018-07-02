@@ -1,0 +1,3 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+3;FILTER REGION;3-18;Individual;THE FILTER REGION IN WHICH THE FILTERS ARE EFFECTIVE (SEE CODES).;1.0;In Service;03 Dec 07
+4;FILTER REGION RANGE;3-3;Integer;;1.0;In Service;03 Dec 07

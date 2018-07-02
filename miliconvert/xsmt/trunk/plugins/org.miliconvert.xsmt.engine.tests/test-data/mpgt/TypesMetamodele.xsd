@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema targetNamespace="urn:XST-meta" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:MPIAInfo="urn:MPGTV3-schemaInfo" xmlns:XSTInfo="urn:XST-schemaInfo" xmlns="urn:XST-meta" version="F.0">
+
+	<!-- ... Définition des types issus du XMLIA V3.0b avec restriction des chaînes à 1 caractère minimum ... -->
+
+
+	<!-- ....................................................... -->
+	<!-- Types Primitifs du MPIA                                 -->
+	<!-- ....................................................... -->
+	<!--  Type Chaîne de Caractères  -->
+	<xsd:simpleType name="typeString">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<!--  Type Boléen  -->
+	<xsd:simpleType name="typeBoolean">
+		<xsd:restriction base="xsd:boolean"/>
+	</xsd:simpleType>
+	<!--  Type Numérique Entier  -->
+	<xsd:simpleType name="typeInteger">
+		<xsd:restriction base="xsd:long"/>
+	</xsd:simpleType>
+	<!--  Type Numérique Réel  -->
+	<xsd:simpleType name="typeReal">
+		<xsd:restriction base="xsd:double"/>
+	</xsd:simpleType>
+	<!--  Type Décimal -->
+	<xsd:simpleType name="typeDecimal">
+		<xsd:restriction base="xsd:decimal"/>
+	</xsd:simpleType>
+	<!--  Type Année -->
+	<xsd:simpleType name="typeAnnee">
+		<xsd:restriction base="xsd:gYear"/>
+	</xsd:simpleType>
+	<!--  Type Année Mois -->
+	<xsd:simpleType name="typeAnneeMois">
+		<xsd:restriction base="xsd:gYearMonth"/>
+	</xsd:simpleType>
+	<!--  Type Date -->
+	<xsd:simpleType name="typeDate">
+		<xsd:restriction base="xsd:date"/>
+	</xsd:simpleType>
+	<!--  Type Heure -->
+	<xsd:simpleType name="typeHeure">
+		<xsd:restriction base="xsd:time"/>
+	</xsd:simpleType>
+	<!--  Type Date Time Gride -->
+	<xsd:simpleType name="typeDTG">
+		<xsd:restriction base="xsd:dateTime"/>
+	</xsd:simpleType>
+	<!--  Type lien  -->
+	<xsd:simpleType name="typeAnyURI">
+		<xsd:restriction base="xsd:anyURI"/>
+	</xsd:simpleType>
+	<!-- ....................................................... -->
+	<!-- Types Simples du MPIA                                   -->
+	<!-- ....................................................... -->
+	<!--  Type Chaine 0-3  -->
+	<xsd:simpleType name="typeDataTypeChaine03">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-6  -->
+	<xsd:simpleType name="typeDataTypeChaine06">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="6"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-8  -->
+	<xsd:simpleType name="typeDataTypeChaine08">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="8"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-9  -->
+	<xsd:simpleType name="typeDataTypeChaine09">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="9"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-12  -->
+	<xsd:simpleType name="typeDataTypeChaine012">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="12"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-15  -->
+	<xsd:simpleType name="typeDataTypeChaine015">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="15"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-20  -->
+	<xsd:simpleType name="typeDataTypeChaine020">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-30  -->
+	<xsd:simpleType name="typeDataTypeChaine030">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-50  -->
+	<xsd:simpleType name="typeDataTypeChaine050">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-80  -->
+	<xsd:simpleType name="typeDataTypeChaine080">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="80"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-100  -->
+	<xsd:simpleType name="typeDataTypeChaine0100">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="100"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-255  -->
+	<xsd:simpleType name="typeDataTypeChaine0255">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="255"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-2000  -->
+	<xsd:simpleType name="typeDataTypeChaine02000">
+		<xsd:restriction base="typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="2000"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Groupe Date Heure  -->
+	<xsd:simpleType name="typeDataTypeGDH">
+		<xsd:restriction base="typeDTG">
+			<xsd:minInclusive value="1901-01-01T00:00:00"/>
+			<xsd:maxInclusive value="2036-12-31T23:59:59"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Entier 3  -->
+	<xsd:simpleType name="typeDataTypeEntier3">
+		<xsd:restriction base="typeInteger">
+			<xsd:totalDigits value="3"/>
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="999"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Entier 6  -->
+	<xsd:simpleType name="typeDataTypeEntier6">
+		<xsd:restriction base="typeInteger">
+			<xsd:totalDigits value="6"/>
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="999999"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Entier 9  -->
+	<xsd:simpleType name="typeDataTypeEntier9">
+		<xsd:restriction base="typeInteger">
+			<xsd:totalDigits value="9"/>
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="999999999"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Entier 15  -->
+	<xsd:simpleType name="typeDataTypeEntier15">
+		<xsd:restriction base="typeInteger">
+			<xsd:totalDigits value="15"/>
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="999999999999999"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Reel Positif  -->
+	<xsd:simpleType name="typeReelPositif">
+		<xsd:restriction base="typeReal">
+			<xsd:minInclusive value="0"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Restriction pour la construction du DataType Angle  -->
+	<xsd:simpleType name="typeRestrictionAngle">
+		<xsd:restriction base="typeReelPositif">
+			<xsd:maxExclusive value="360"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Restriction pour la construction du DataType Angle signé -->
+	<xsd:simpleType name="typeRestrictionAngleSigne">
+		<xsd:restriction base="typeReal">
+			<xsd:minExclusive value="-180"/>
+			<xsd:maxInclusive value="180"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Fraction  -->
+	<xsd:simpleType name="typeDataTypeFraction">
+		<xsd:restriction base="typeReal">
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Restriction pour la construction du DataType Latitude  -->
+	<xsd:simpleType name="typeRestrictionLatitude">
+		<xsd:restriction base="typeDecimal">
+			<xsd:minInclusive value="-90"/>
+			<xsd:maxInclusive value="90"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Restriction pour la construction du DataType Longitude  -->
+	<xsd:simpleType name="typeRestrictionLongitude">
+		<xsd:restriction base="typeDecimal">
+			<xsd:minExclusive value="-180"/>
+			<xsd:maxInclusive value="180"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Restriction pour la construction du DataType Temperature  -->
+	<xsd:simpleType name="typeRestrictionTemperature">
+		<xsd:restriction base="typeReal">
+			<xsd:minInclusive value="-273.15"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Ratio  -->
+	<xsd:simpleType name="typeDataTypeRatio">
+		<xsd:restriction base="typeReal">
+			<xsd:minInclusive value="0"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- ....................................................... -->
+	<!-- Types Complexes du MPIA                                 -->
+	<!-- ....................................................... -->
+	<!--  Type Association entre deux Entités  -->
+	<xsd:complexType name="typeAssociation">
+		<xsd:sequence>
+			<xsd:element name="refCTE" type="typeDataTypeChaine030"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--  Type Association vers une Entité pouvant être externe à l'annexe  -->
+	<xsd:complexType name="typeAssociationEXT">
+		<xsd:choice>
+			<xsd:element name="refCTE" type="typeDataTypeChaine030"/>
+			<xsd:element name="refEXT" type="typeDataTypeChaine030"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<!--  Type Acceleration angulaire  -->
+	<xsd:complexType name="typeDataTypeAccelerationAngulaire">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="DS-2"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Acceleration angulaire orientée  -->
+	<xsd:complexType name="typeDataTypeAccelerationAngulaireOrientee">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReal">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="DS-2"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Acceleration linéaire  -->
+	<xsd:complexType name="typeDataTypeAccelerationLineaire">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="MS-2"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Aire  -->
+	<xsd:complexType name="typeDataTypeAire">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="M2"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Altitude pression  -->
+	<xsd:complexType name="typeDataTypeAltitudePression">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReal">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="M"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Angle  -->
+	<xsd:complexType name="typeDataTypeAngle">
+		<xsd:simpleContent>
+			<xsd:extension base="typeRestrictionAngle">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="D"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Angle signé  -->
+	<xsd:complexType name="typeDataTypeAngleSigne">
+		<xsd:simpleContent>
+			<xsd:extension base="typeRestrictionAngleSigne">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="D"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Champ magnétique  -->
+	<xsd:complexType name="typeDataTypeChampMagnetique">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReal">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="T"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Coordonnée d'accélération linéaire  -->
+	<xsd:complexType name="typeDataTypeCoordonneeAccelerationLineaire">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReal">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="MS-2"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Coordonnée de force  -->
+	<xsd:complexType name="typeDataTypeCoordonneeForce">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReal">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="N"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Coordonnée linéaire  -->
+	<xsd:complexType name="typeDataTypeCoordonneeLineaire">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReal">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="M"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Coordonnée de vitesse linéaire  -->
+	<xsd:complexType name="typeDataTypeCoordonneeVitesseLineaire">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReal">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="MS-1"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Date Heure  -->
+	<xsd:complexType name="typeDataTypeDateHeure">
+		<xsd:choice>
+			<xsd:element name="annee" type="typeAnnee"/>
+			<xsd:element name="anneeMois" type="typeAnneeMois"/>
+			<xsd:element name="date" type="typeDate"/>
+			<xsd:element name="heure" type="typeHeure"/>
+			<xsd:element name="dateHeure" type="typeDTG"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<!--  Type Débit massique  -->
+	<xsd:complexType name="typeDataTypeDebitMassique">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="KS-1"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Débit de transmission  -->
+	<xsd:complexType name="typeDataTypeDebitTransmission">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="BS-1"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Débit volumique  -->
+	<xsd:complexType name="typeDataTypeDebitVolumique">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="M3S-1"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Dose absorbée  -->
+	<xsd:complexType name="typeDataTypeDoseAbsorbee">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="G"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Durée  -->
+	<xsd:complexType name="typeDataTypeDuree">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="S"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Force  -->
+	<xsd:complexType name="typeDataTypeForce">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="N"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Fréquence  -->
+	<xsd:complexType name="typeDataTypeFrequence">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="H"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Latitude  -->
+	<xsd:complexType name="typeDataTypeLatitude">
+		<xsd:simpleContent>
+			<xsd:extension base="typeRestrictionLatitude">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="D"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Longitude  -->
+	<xsd:complexType name="typeDataTypeLongitude">
+		<xsd:simpleContent>
+			<xsd:extension base="typeRestrictionLongitude">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="D"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Longueur  -->
+	<xsd:complexType name="typeDataTypeLongueur">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="M"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Masse  -->
+	<xsd:complexType name="typeDataTypeMasse">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="K"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Préssion  -->
+	<xsd:complexType name="typeDataTypePression">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="P"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Taux de précipitation  -->
+	<xsd:complexType name="typeDataTypeTauxPrecipitation">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="MIH-1"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Température  -->
+	<xsd:complexType name="typeDataTypeTemperature">
+		<xsd:simpleContent>
+			<xsd:extension base="typeRestrictionTemperature">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="C"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Vitesse angulaire  -->
+	<xsd:complexType name="typeDataTypeVitesseAngulaire">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="DS-1"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Vitesse angulaire orientée  -->
+	<xsd:complexType name="typeDataTypeVitesseAngulaireOrientee">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReal">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="DS-1"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Vitesse linéaire  -->
+	<xsd:complexType name="typeDataTypeVitesseLineaire">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="MS-1"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!--  Type Volume  -->
+	<xsd:complexType name="typeDataTypeVolume">
+		<xsd:simpleContent>
+			<xsd:extension base="typeReelPositif">
+				<xsd:attribute name="Unite" type="typeDictionnaryUniteCode" fixed="M3"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	
+	<!-- ....................................................... -->
+	<!-- Types Dictionnaires          -->
+	<!-- ....................................................... -->
+
+	<!--  Dictionnaire des unitees  -->
+	<xsd:simpleType name="typeDictionnaryUniteCode">
+		<xsd:restriction base="typeString">
+			<xsd:enumeration value="SU"/>
+			<xsd:enumeration value="M"/>
+			<xsd:enumeration value="M2"/>
+			<xsd:enumeration value="M3"/>
+			<xsd:enumeration value="MS-1"/>
+			<xsd:enumeration value="MS-2"/>
+			<xsd:enumeration value="M3S-1"/>
+			<xsd:enumeration value="K"/>
+			<xsd:enumeration value="KS-1"/>
+			<xsd:enumeration value="PI"/>
+			<xsd:enumeration value="S"/>
+			<xsd:enumeration value="C"/>
+			<xsd:enumeration value="D"/>
+			<xsd:enumeration value="DS-1"/>
+			<xsd:enumeration value="DS-2"/>
+			<xsd:enumeration value="N"/>
+			<xsd:enumeration value="H"/>
+			<xsd:enumeration value="P"/>
+			<xsd:enumeration value="BS-1"/>
+			<xsd:enumeration value="MIH-1"/>
+			<xsd:enumeration value="T"/>
+			<xsd:enumeration value="G"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+</xsd:schema>

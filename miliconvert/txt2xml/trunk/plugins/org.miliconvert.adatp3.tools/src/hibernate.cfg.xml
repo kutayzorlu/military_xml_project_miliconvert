@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+    	<property name="hibernate.cache.use_query_cache">true</property>
+        <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+        <property name="hibernate.connection.password"></property><!--
+        In Hibernate Util
+        <property name="hibernate.connection.url">jdbc:derby:classpath:db/NU_Baseline11</property>
+        --><property name="hibernate.connection.username"></property>
+        <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property><!--
+        <property name="show_sql">true</property>
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetsnex.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgbasic.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetrmks.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetnote.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgflog.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgsetord.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFfirnreldoc.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetdef.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgusrgr.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineDifudref.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetflog.hbm.xml" />
+        --><!--<mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgnote.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineClsetdesc.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgnlcmnt.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetflddesc.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClassdef.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFfirndef.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetfield.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgsetreplna.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineFfirnbasic.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClabbrev.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgusr.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgrmks.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClChar.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineDibasic.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsghelp.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineAbrtype.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetfldord.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineAccessright.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineFudbasic.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFudexp.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClsetreplna.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineFormatter.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFfirnchain.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClassnlex.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFfirnflog.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSethelp.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgdef.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetnlex.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineClsetord.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSecClass.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFldhelp.hbm.xml" />
+       --> <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClformbas.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetbasic.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFldposconcept.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgsetdesc.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFldposname.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgsnex.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetexample.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineAbbrev.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgTemp.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgFunc.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClasssnex.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgreldoc.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClChar21.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineDefPrintTmp.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineClnlcmnt.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgpurpose.hbm.xml" />
+        --><mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgnlex.hbm.xml" /><!--
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMessErr.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgsponsor.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFieldFunc.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineMsgusage.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineGlobalFuncs.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineSetnlcmnt.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineFfirnrmk.hbm.xml" />
+        <mapping resource="org/miliconvert/adatp3/hibernate/BaselineStoplist.hbm.xml" />
+    --></session-factory>
+</hibernate-configuration>

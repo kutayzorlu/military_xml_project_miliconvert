@@ -1,0 +1,5 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;TYPE OF SUBMARINE SUPPORT;14-18;Individual;THE TYPE OF SUBMARINE SUPPORT REQUIRED, NEEDED OR REQUESTED.;1.0;In Service;03 Dec 07
+4;AIR SUPPORT MISSION TYPE NUMERIC CODE;2-2;Individual;;1.0;In Service;03 Dec 07
+5;EW MISSION TYPE;4-4;Individual;;1.0;In Service;03 Dec 07
+6;TYPE OF SUPPORT ASSETS;2-22;Instructive;;1.0;In Service;03 Dec 07

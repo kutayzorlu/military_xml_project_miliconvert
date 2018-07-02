@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.xsmt.gmodel
+Bundle-SymbolicName: org.miliconvert.xsmt.gmodel
+Bundle-Version: 1.2.0.qualifier
+Bundle-Activator: org.miliconvert.xsmt.gmodel.GModelActivator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.xsmt.utils,
+ org.miliconvert.xsmt.tmodel
+Eclipse-LazyStart: true
+Export-Package: org.miliconvert.xsmt.gmodel
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

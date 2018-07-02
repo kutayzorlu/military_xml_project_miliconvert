@@ -1,0 +1,121 @@
+
+package org.mpgt.rules.aco;
+
+
+expander mpgt-sets-aco.dsl
+
+import org.miliconvert.xsmt.mpgt.rules.AcoSetRules;
+import org.miliconvert.xsmt.mpgt.rules.CommonSetRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+
+rule AORBIT_19_0
+when
+		Dans le set  AORBIT avec la position 19
+then
+		LIGNE = 41
+		Règle A_FormeACm
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		VI MPGT.LocalisationGeometrique2D.CategorieFormeGeometrique = "ORBTAR"
+end
+
+rule CORRIDOR_17_0
+when
+		Dans le set  CORRIDOR avec la position 17
+then
+		LIGNE = 41
+		Règle A_FormeACm
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		VI MPGT.LocalisationGeometrique2D.CategorieFormeGeometrique = "CORDAR"
+end
+
+rule APOINT_18_0
+when
+		Dans le set  APOINT avec la position 18
+then
+		LIGNE = 41
+		Règle A_FormeACm
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		VI MPGT.LocalisationGeometrique2D.CategorieFormeGeometrique = "PT"
+end
+
+rule POLYGON_15_0
+when
+		Dans le set  POLYGON avec la position 15
+then
+		LIGNE = 41
+		Règle A_FormeACm
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		VI MPGT.LocalisationGeometrique2D.CategorieFormeGeometrique = "PLYGAR"
+end
+
+rule CIRCLE_16_0
+when
+		Dans le set  CIRCLE avec la position 16
+then
+		LIGNE = 41
+		Règle A_FormeACm
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		VI MPGT.LocalisationGeometrique2D.CategorieFormeGeometrique = "CIRCLE"
+end
+
+rule RADARC_13_0
+when
+		Dans le set  RADARC avec la position 13
+then
+		Règle A_FormeACm
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+end
+
+rule UNTRACK14_0
+when
+		Dans le set  1TRACK avec la position 14
+then
+		Règle A_FormeACm
+		LIGNE = 41
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		Règle A_Track
+end
+
+rule POLYARC_12_0
+when
+		Dans le set  POLYARC avec la position 12
+then
+		Règle A_FormeACm
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+end
+
+rule GEOLINE_20_0
+when
+		Dans le set  GEOLINE avec la position 20
+then
+		LIGNE = 41
+		Règle A_FormeACm
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		VI MPGT.LocalisationGeometrique2D.CategorieFormeGeometrique = "LN"
+end
+
+rule CNTRLPT_23_0
+when
+		Dans le set  CNTRLPT avec la position 23
+then
+		Règle A_ControlPt
+end
+
+rule ACMID_10_0
+when
+		Dans le set  ACMID avec la position 10
+then
+		Règle A_Acmid
+		Règle A_FormeACm
+		
+end
+
+rule APERIOD_22_0_1_0
+when
+		Dans le set  APERIOD avec la position 22
+then
+		Règle A_APeriodDiscrete
+end
+

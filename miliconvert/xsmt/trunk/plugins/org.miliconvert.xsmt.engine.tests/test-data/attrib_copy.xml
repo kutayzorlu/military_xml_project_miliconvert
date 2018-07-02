@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tmodel xmlns="http://www.miliconvert.org/xsd/xsmt/tmodel.xsd">
+
+  <schemas>
+    <schema id="schema-0" path="test-data/path.xsd"/>
+    <schema id="schema-1" path="test-data/pathl.xsd"/>
+  </schemas>
+
+  <functions>
+  </functions>
+
+  <links>
+    
+    <link start="xsd:schema-0:/win32/path@value" end="xsd:schema-1:/linux/path@value"/>
+    <link start="xsd:schema-0:/win32/path" end="xsd:schema-1:/linux/path"/>
+    <link start="xsd:schema-0:/win32" end="xsd:schema-1:/linux"/>
+    
+  </links>
+
+</tmodel>

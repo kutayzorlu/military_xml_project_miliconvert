@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.txt2xml.transform.tests
+Bundle-SymbolicName: org.miliconvert.txt2xml.transform.tests
+Bundle-Version: 1.0.0
+Bundle-Activator: org.miliconvert.txt2xml.transform.tests.Activator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.txt2xml.transform,
+ org.junit
+Eclipse-LazyStart: true

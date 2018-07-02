@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="nato:adatp-3:bl11" xmlns:s="nato:adatp-3:bl11:sets" attributeFormDefault="unqualified" elementFormDefault="unqualified" version="bl11">
+<xsd:import namespace="nato:adatp-3:bl11:sets" schemaLocation="sets.xsd"/>
+<xsd:element name="air_tasking_order">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="exercise_identification">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:exercise.identification">
+<xsd:attribute fixed="1" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="operation_codeword">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:operation.codeword">
+<xsd:attribute fixed="2" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_identifier">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.identifier">
+<xsd:attribute fixed="3" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="reference">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:reference">
+<xsd:attribute fixed="4" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="acknowledge">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:acknowledge">
+<xsd:attribute fixed="5" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="message_cancellation_with_new_information_provided">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.cancellation.with.new.information.provided">
+<xsd:attribute fixed="6" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="effective_date_time_frame">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:effective.date.time.frame">
+<xsd:attribute fixed="7" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="heading_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:heading.information">
+<xsd:attribute fixed="8" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="theater_resource_assets">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:theater.resource.assets">
+<xsd:attribute fixed="9" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="force_allotment_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:force.allotment.data">
+<xsd:attribute fixed="10" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="cancelled_mission">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:cancelled.mission">
+<xsd:attribute fixed="11" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="heading_information_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:heading.information">
+<xsd:attribute fixed="12" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="tasked_country_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="tasked_country">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:tasked.country">
+<xsd:attribute fixed="13" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="service_tasked_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="service_tasked">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:service.tasked">
+<xsd:attribute fixed="14" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="tasked_unit_and_location_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="tasked_unit_and_location">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:tasked.unit.and.location">
+<xsd:attribute fixed="15" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="point_of_contact_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:point.of.contact.information">
+<xsd:attribute fixed="16" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="missile_target_location_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="missile_target_location">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:missile.target.location">
+<xsd:attribute fixed="17" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="request_number">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:request.number">
+<xsd:attribute fixed="18" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="air_defence_artillery_ada_tasking_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="air_defence_artillery_ada_tasking">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.defence.artillery.ada.tasking">
+<xsd:attribute fixed="19" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="air_defence_artillery_ada_defence">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.defence.artillery.ada.defence">
+<xsd:attribute fixed="20" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="emission_control_plan">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:emission.control.plan">
+<xsd:attribute fixed="21" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="control_of_air_assets">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:control.of.air.assets">
+<xsd:attribute fixed="22" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="air_surveillance_and_control_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.surveillance.and.control.data">
+<xsd:attribute fixed="23" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="control_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:control.information">
+<xsd:attribute fixed="24" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="aircraft_mission_data_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="aircraft_mission_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:aircraft.mission.data">
+<xsd:attribute fixed="25" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="individual_aircraft_mission_data_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="individual_aircraft_mission_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:individual.aircraft.mission.data">
+<xsd:attribute fixed="26" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="aerial_refuelling_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:aerial.refuelling.information">
+<xsd:attribute fixed="27" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="unit_remarks_reference">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:unit.remarks.reference">
+<xsd:attribute fixed="28" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="route">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:route">
+<xsd:attribute fixed="29" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="mission_routing">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:mission.routing">
+<xsd:attribute fixed="30" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="package_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:package.data">
+<xsd:attribute fixed="31" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="package_commander">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:package.commander">
+<xsd:attribute fixed="32" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="aircraft_mission_location_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="aircraft_mission_location">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:aircraft.mission.location">
+<xsd:attribute fixed="33" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="ground_target_location">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:ground.target.location">
+<xsd:attribute fixed="34" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="ship_target_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:ship.target.data">
+<xsd:attribute fixed="35" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="air_movement">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.movement">
+<xsd:attribute fixed="36" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="reconnaissance_mission_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:reconnaissance.mission.data">
+<xsd:attribute fixed="37" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="position_trace_plot_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="position_trace_plot">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:position.trace.plot">
+<xsd:attribute fixed="38" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="imagery_product">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:imagery.product">
+<xsd:attribute fixed="39" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="imagery_data_link_control_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:imagery.data.link.control.information">
+<xsd:attribute fixed="40" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="request_number_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:request.number">
+<xsd:attribute fixed="41" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="missile_target_location_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:missile.target.location">
+<xsd:attribute fixed="42" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="refuelling_tasking">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:refuelling.tasking">
+<xsd:attribute fixed="43" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="aerial_refuelling">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:aerial.refuelling">
+<xsd:attribute fixed="44" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="control_of_air_assets_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:control.of.air.assets">
+<xsd:attribute fixed="45" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="air_support_for">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.support.for">
+<xsd:attribute fixed="46" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="air_supported_by">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.supported.by">
+<xsd:attribute fixed="47" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="forward_air_controller_information_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:forward.air.controller.information.data">
+<xsd:attribute fixed="48" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="forward_air_controller_schedule">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:forward.air.controller.schedule">
+<xsd:attribute fixed="49" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="electronic_warfare_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:electronic.warfare.data">
+<xsd:attribute fixed="50" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="aircraft_route_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:aircraft.route.information">
+<xsd:attribute fixed="51" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="escort_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:escort.data">
+<xsd:attribute fixed="52" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="aircraft_rendezvous_mission_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:aircraft.rendezvous.mission.data">
+<xsd:attribute fixed="53" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaff_mission_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:chaff.mission.data">
+<xsd:attribute fixed="54" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="landing_site_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:landing.site.information">
+<xsd:attribute fixed="55" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="ground_location_of_friendly_troops">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:ground.location.of.friendly.troops">
+<xsd:attribute fixed="56" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="precision_guided_munitions_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:precision.guided.munitions.information">
+<xsd:attribute fixed="57" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="drop_zone">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:drop.zone">
+<xsd:attribute fixed="58" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="allocated_transportation_requirements">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:allocated.transportation.requirements">
+<xsd:attribute fixed="59" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="air_surveillance_and_control_data_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.surveillance.and.control.data">
+<xsd:attribute fixed="60" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="control_information_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:control.information">
+<xsd:attribute fixed="61" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="62" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="heading_information_2">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:heading.information">
+<xsd:attribute fixed="63" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="naval_flight_operations_times">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:naval.flight.operations.times">
+<xsd:attribute fixed="64" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="friendly_forces_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="friendly_forces">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:friendly.forces">
+<xsd:attribute fixed="65" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="anti_air_warfare_axis_information">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:anti.air.warfare.axis.information">
+<xsd:attribute fixed="66" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="friendly_forces_location_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="friendly_forces_location">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:friendly.forces.location">
+<xsd:attribute fixed="67" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="codes_crypto_and_authentication">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:codes.crypto.and.authentication">
+<xsd:attribute fixed="68" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="iff_or_sif_setting">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:iff.or.sif.setting">
+<xsd:attribute fixed="69" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="air_operations_timing_reference_point_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="air_operations_timing_reference_point">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.operations.timing.reference.point">
+<xsd:attribute fixed="70" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="air_operations_timing_reference_point_trp_flow_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:air.operations.timing.reference.point.trp.flow.data">
+<xsd:attribute fixed="71" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="heading_information_3">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:heading.information">
+<xsd:attribute fixed="72" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="73" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_2">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="74" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_3">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="75" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_4">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="76" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_5">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="77" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_6">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="78" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_7">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="79" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_8">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="80" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_9">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="81" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_10">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="82" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_11">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="83" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_12">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="84" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_13">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="85" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_14">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="86" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_15">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="87" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="message_downgrading_or_declassification_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.downgrading.or.declassification.data">
+<xsd:attribute fixed="88" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="remarks" type="s:remarks"/>
+</xsd:sequence>
+<xsd:attribute fixed="ATO" name="mtfid" type="xsd:string"/>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>

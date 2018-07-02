@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="nato:adatp-3:bl11" xmlns:s="nato:adatp-3:bl11:sets" attributeFormDefault="unqualified" elementFormDefault="unqualified" version="bl11">
+<xsd:import namespace="nato:adatp-3:bl11:sets" schemaLocation="sets.xsd"/>
+<xsd:element name="logistic_situation_report_land_forces">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="exercise_identification">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:exercise.identification">
+<xsd:attribute fixed="1" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="operation_codeword">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:operation.codeword">
+<xsd:attribute fixed="2" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_identifier">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.identifier">
+<xsd:attribute fixed="3" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="reference">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:reference">
+<xsd:attribute fixed="4" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="geodetic_datum">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:geodetic.datum">
+<xsd:attribute fixed="5" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="date_time_group">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:date.time.group">
+<xsd:attribute fixed="6" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="organization_designator_of_drafter_releaser">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator.of.drafter.releaser">
+<xsd:attribute fixed="7" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="map_data_without_geodetic_datum">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:map.data.without.geodetic.datum">
+<xsd:attribute fixed="8" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator">
+<xsd:attribute fixed="9" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="location_and_nearest_feature">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:location.and.nearest.feature">
+<xsd:attribute fixed="10" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="units_logistic_sustainability">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:units.logistic.sustainability">
+<xsd:attribute fixed="11" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="current_capability_future_requirement_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="current_capability_future_requirement">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:current.capability.future.requirement">
+<xsd:attribute fixed="12" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="medical_logistics">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:medical.logistics">
+<xsd:attribute fixed="13" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="materiel_on_hand">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:materiel.on.hand">
+<xsd:attribute fixed="14" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="petroleum_products">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:petroleum.products">
+<xsd:attribute fixed="15" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="ammunition_on_hand">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:ammunition.on.hand">
+<xsd:attribute fixed="16" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="personnel_strength">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:personnel.strength">
+<xsd:attribute fixed="17" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="rations_on_hand">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:rations.on.hand">
+<xsd:attribute fixed="18" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="supply_of_water">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:supply.of.water">
+<xsd:attribute fixed="19" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="surplus_or_critical_deficiency_data_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="surplus_or_critical_deficiency_data">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:surplus.or.critical.deficiency.data">
+<xsd:attribute fixed="20" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="21" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="22" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="operational_effect">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:operational.effect">
+<xsd:attribute fixed="23" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="remarks" type="s:remarks"/>
+</xsd:sequence>
+<xsd:attribute fixed="LOGSITLAND" name="mtfid" type="xsd:string"/>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>

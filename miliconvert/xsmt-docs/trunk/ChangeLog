@@ -1,0 +1,202 @@
+2007-08-14  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        fix toc numbering in xsmt manual (hopefully...)
+	
+	* TODO: update
+
+2007-05-29  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add 1.3 testing procedutes
+	
+	* TODO: update with planned versions
+
+2007-05-28  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	* release.sh: bump to 1.0.3
+
+	Add deployement instructions for xsmt new function.
+
+2007-05-24  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Internal testing & testing procedures tweaking
+
+2007-05-23  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Internal testing & testing procedures tweaking
+	
+	* release.sh:
+	* testing/v0/test_data/boolIn.xml:
+	* testing/v0/test_data/dicoIn.xml:
+	* testing/v0/test_data/ifelseIn.xml:
+	* testing/v0/test_data/ifelseIn.xsd:
+	* testing/v0/test_data/ifelseOut.xsd:
+
+2007-05-09  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add tests lots references to testing procedure
+	
+2007-05-07  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	procedure_tests updated
+
+	* testing/v0/procedure_tests.ods
+	* testing/v0/test_data/arithmetiqueIn.xml:
+	* testing/v0/test_data/arithmetiqueIn.xsd:
+	* testing/v0/test_data/boolIn.xml:
+	* testing/v0/test_data/boolIn.xsd:
+	* testing/v0/test_data/boolOut.xsd:
+	* testing/v0/test_data/comparaisonIn.xml:
+	* testing/v0/test_data/comparaisonIn.xsd:
+	* testing/v0/test_data/comparaisonOut.xsd:
+	* testing/v0/test_data/dico.txt:
+	* testing/v0/test_data/dicoIn.xsd:
+	* testing/v0/test_data/dicoOut.xsd:
+
+2007-05-04  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add testing procedures "front page"
+	
+	* TODO:
+
+2007-05-04  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	Added french tests_usine, french user manual and procedure_tests updated
+
+	* user_manual/fr/manuel_utilisateur.odt
+	* testing/v0/tests_usine.ods
+	* testing/v0/procedure_tests.ods
+
+2007-05-03  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        fix small glitches in xsmt install guide
+	
+	* TODO: update
+
+2007-05-02  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	French Manual updated
+
+	* install_guide/fr/manuel_install_MiliConvert_fr.odt
+	* user_manual/fr/manuel_utilisateur.odt
+	* testing/v0/procedure_tests.ods
+
+
+2007-04-27  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	French install manual updated
+
+	* install_guide/fr/manuel_install_MiliConvert_fr.odt
+
+2007-04-27  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	French install manual added
+
+		* install_guide/fr/manuel_install_MiliConvert_fr.odt
+
+2007-04-26  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	French tests and french manual updated
+
+		* testing/v0/test_data/arithmetiqueIn.xsd
+		* testing/v0/test_data/pathl.xsd
+		* testing/v0/test_data/arithmetiqueOut.xsd
+		* testing/v0/test_data/arithmetiqueIn.xml
+		* testing/v0/test_data/pathl.xml
+		* testing/v0/test_data/path.xsd
+		* testing/v0/test_data/LaClasseDeMaFonctionExemple.java
+		* testing/v0/procedure_tests.ods
+		* user_manual/fr/manuel_utilisateur.odt
+
+2007-04-23  François Gilbert  <francois.gilbert@miliconvert.org>
+
+        French user manual corrected
+	
+                * /user_manual/fr/manuel_utilsateur.odt:
+
+
+
+2007-04-20  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	French user manual updated with screen shots
+
+	        * /user_manual/fr/manuel_utilsateur.odt:
+
+
+2007-04-19  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	French user manual updated
+
+	* /user_manual/fr/manuel_utilsateur.odt:
+	
+
+2007-04-19  François Gilbert  <francois.gilbert@miliconvert.org>
+
+        Add initial version of testing procedures and french user manuel
+	
+	* TODO:
+
+2007-04-12  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Integrate David's feedback on specifications. Add note about
+	eclipse user interface guidelines.
+	
+	* TODO: 
+
+2007-03-27  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	Update specs to 1.1. Functions will be provided by plug-ins, and
+	cli will be osgi based.
+
+2007-03-16  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Set specs version at 1.0
+	
+	* TODO: clean
+
+2007-03-15  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Set namespaceLocation on www.miliconvert.org instead of
+	miliconvert.org...
+
+	Transformation spec update
+	
+	* specs/xsd/graphic.xsd:
+	* specs/xsd/tmodel.xsd:
+	* specs/xsd/xsmt.xsd:
+
+2007-03-07  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Split tmodel execution in a separate specification document
+	Tmodel updates (buddy classloading, etc)
+	
+	* TODO: update
+
+2007-03-05  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Specs update. Few things are still missing on transformation
+	execution, but most of the ui spec part is complete.
+	
+	* TODO: added
+
+2007-03-02  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Specs updated to 0.3. Added examples and schemas for save format.
+	
+	* specs/examples/graphics1.xml:
+	* specs/examples/xsmt1.xml:
+	* specs/xsd/graphic.xsd:
+	* specs/xsd/xsmt.xsd:
+
+2007-02-28  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Added examples & tmodel schema draft
+	
+	* specs/examples/path.xml:
+	* specs/examples/path.xsd:
+	* specs/examples/pathl.xsd:
+	* specs/examples/tmodel1.xml:
+	* specs/xsd/tmodel.xsd:
+
+2007-02-27    Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	Added preliminary version of the specifications

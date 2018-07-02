@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema">
+<ObjectifActivite>
+<CTE>_qEtqYAaWEd-TMZdIMvwKMw</CTE>
+<EstObjectifPour_Activite/>
+<AssocieCommeInstanceObjet_InstanceObjet>
+<refCTE>_qEvfkAaWEd-TMZdIMvwKMw</refCTE>
+</AssocieCommeInstanceObjet_InstanceObjet>
+</ObjectifActivite>
+<AutreElementControle>
+<Nom>ACTION</Nom>
+<CTE>_qEvfkAaWEd-TMZdIMvwKMw</CTE>
+<AssocieCommeObjectifActivite_ObjectifActivite>
+<refCTE>_qEtqYAaWEd-TMZdIMvwKMw</refCTE>
+</AssocieCommeObjectifActivite_ObjectifActivite>
+</AutreElementControle>
+</schema:MPGT_Message>

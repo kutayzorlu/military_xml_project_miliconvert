@@ -1,0 +1,6 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;ADDRESS;1-60;Instructive;THE COMPLETE ADDRESS OF THE RESIDENCE OR WORKPLACE OF SUBJECT.;1.0;In Service;03 Dec 07
+2;FIRST LINE OF ADDRESS;1-40;Instructive;;1.0;In Service;03 Dec 07
+3;SECOND LINE OF ADDRESS;1-40;Instructive;;1.0;In Service;03 Dec 07
+4;THIRD LINE OF ADDRESS;1-40;Instructive;;1.0;In Service;03 Dec 07
+5;FOURTH LINE OF ADDRESS;1-40;Instructive;;1.0;In Service;03 Dec 07

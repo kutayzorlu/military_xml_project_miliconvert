@@ -1,0 +1,245 @@
+
+package org.mpgt.rules.ownsitrep;
+
+
+expander mpgt-sets-ownsitrep.dsl
+
+import org.miliconvert.xsmt.mpgt.rules.OwnsitrepSetRules
+import org.miliconvert.xsmt.mpgt.rules.CommonSetRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+
+
+
+rule LOCNFSTS_19_0
+when
+		Dans le set  LOCNFSTS avec la position 19
+then
+		LIGNE = 145/163/179
+end
+
+rule ACTIVITY_35_0
+when
+		Dans le set  ACTIVITY avec la position 35
+then
+		LIGNE = 333/1049
+		Règle A_ACTIVITY_EORGID
+end
+
+rule ORGID_17_0
+when
+		Dans le set  ORGID avec la position 17
+then
+		Règle A_SET_ORGID
+		Règle A_Comportement_Unite
+
+end
+
+
+rule TPERID_18_0
+when
+		Dans le set  TPERID avec la position 18
+then
+		LIGNE = 145/163/179
+end
+
+rule TIME_34_0
+when
+		Dans le set  TIME avec la position 34
+then
+		LIGNE = 333/1049
+		Règle A_TIME_LOCATION
+		Règle A_TIME_LOCATION_VALORISATION
+end
+
+rule PARTTITL_16_0
+when
+		Dans le set  PARTTITL avec la position 16
+then
+		Règle A_PARTTITL
+end
+
+rule ORGID_39_0
+when
+		Dans le set  ORGID avec la position 39
+then
+		Règle A_SET_ORGID
+		Règle A_Comportement_Unite
+end
+
+rule CMDREL_13_0
+when
+		Dans le set  CMDREL avec la position 13
+then
+		Règle A_CMDREL
+end
+
+rule TIME_14_0
+when
+		Dans le set  TIME avec la position 14
+then
+		Règle A_TIME_SUBORD
+end
+
+rule PARTTITL_38_0
+when
+		Dans le set  PARTTITL avec la position 38
+then
+		Règle A_PARTTITL
+end
+
+rule ORGIDSUB_12_0
+when
+		Dans le set  ORGIDSUB avec la position 12
+then
+	    Règle A_SET_ORGID
+		Règle A_Comportement_Unite
+end
+
+
+rule TPERID_20_0
+when
+		Dans le set  TPERID avec la position 20
+then
+		NANA si le set ACTIVITY est absent
+end
+
+rule TPERID_43_0
+when
+		Dans le set  TPERID avec la position 43
+then
+		LIGNE = 462
+		Règle A_DATE_VALORISATION
+end
+
+rule ORGIDBDY_42_0
+when
+		Dans le set  ORGIDBDY avec la position 42
+then
+		LIGNE = 1032
+end
+
+rule LOCNF_41_0
+when
+		Dans le set  LOCNF avec la position 41
+then
+		LIGNE = 463/1032
+end
+
+rule LINETYPE_40_0
+when
+		Dans le set  LINETYPE avec la position 40
+then
+		LIGNE = 410/428/444
+end
+
+rule QSTRTIME_44_0
+when
+		Dans le set  QSTRTIME avec la position 44
+then
+		Règle A_QSTRTIME
+		Règle A_DATE_VALORISATION
+		
+end
+
+rule OPMOVEMT_22_0
+when
+		Dans le set  OPMOVEMT avec la position 22
+then
+		LIGNE = 203/217
+end
+
+rule PARTTITL_24_0
+when
+		Dans le set  PARTTITL avec la position 24
+then
+		Règle A_PARTTITL
+end
+
+rule ORGID_25_0
+when
+		Dans le set  ORGID avec la position 25
+then
+		Règle A_SET_ORGID
+		Règle A_Comportement_Unite
+end
+
+
+rule CEFT_26_0
+when
+		Dans le set  CEFT avec la position 26
+then
+		LIGNE = 259/277/293
+end
+
+rule EQUIP_27_0
+when
+		Dans le set  EQUIP avec la position 27
+then
+		LIGNE = 259/277/293
+		Règle A_EQUIP
+end
+
+rule UNLNKSTAT_28_0
+when
+		Dans le set  1LNKSTAT avec la position 28
+then
+		LIGNE = 259/277/293
+end
+
+rule EORGID_29_0
+when
+		Dans le set  EORGID avec la position 29
+then
+		Règle A_SET_EORGID
+end
+
+
+rule ORGID_10_0
+when
+		Dans le set  ORGID avec la position 10
+then
+		Règle A_SET_ORGID 
+		Règle A_Comportement_Unite
+end
+
+rule ESTRENTH_30_0
+when
+		Dans le set  ESTRENTH avec la position 30
+then
+		Règle A_ESTRENTH
+		Règle A_Comportement_Unite
+end
+
+
+rule LOCATION_32_0
+when
+		Dans le set  LOCATION avec la position 32
+then
+		LIGNE = 333/1049
+		Règle A_LOCATION_OWNSITREP
+		Règle A_LOCATION_FORME
+end
+
+rule EMAT_31_0
+when
+		Dans le set  EMAT avec la position 31
+then
+		LIGNE = 333/1049
+		Règle A_EMAT
+end
+
+rule PARTTITL_9_0
+when
+		Dans le set  PARTTITL avec la position 9
+then
+		Règle A_PARTTITL
+end
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsmt xmlns="http://miliconvert.org/xsd/xsmt/xsmt.xsd" 
+      xmlns:tmodel="http://miliconvert.org/xsd/xsmt/tmodel.xsd"
+      xmlns:graphic="http://miliconvert.org/xsd/xsmt/graphic.xsd">
+
+  <tmodel:tmodel>
+
+    <tmodel:schemas>
+      <tmodel:schema id="schema-0" path="/home/tom/path.xsd"/>
+      <tmodel:schema id="schema-1" path="/home/tom/pathl.xsd"/>
+    </tmodel:schemas>
+
+    <tmodel:functions>
+      <tmodel:function id="func-0" 
+		       impl="org.miliconvert.xsmt.tmodel.functions.Replace"/>
+      <tmodel:function id="func-1" 
+		       impl="org.miliconvert.xsmt.tmodel.functions.Constant">
+	<tmodel:property name="value" value="/"/>
+	<tmodel:property name="type" value="string"/>
+      </tmodel:function>
+      <tmodel:function id="func-2" 
+		       impl="org.miliconvert.xsmt.tmodel.functions.Constant">
+	<tmodel:property name="value" value="\"/>
+	<tmodel:property name="type" value="string"/>
+      </tmodel:function>
+    </tmodel:functions>
+
+    <tmodel:links>
+      <tmodel:link start="fid:func-2" end="fid:func-0,0"/>
+      <tmodel:link start="fid:func-1" end="fid:func-0,1"/>
+      <tmodel:link start="xsd:schema-0:/win32/path@value" end="fid:func-0,2"/>
+      <tmodel:link start="xsd:schema-0:/win32/path" end="xsd:schema-1:/linux/path"/>
+      <tmodel:link start="xsd:schema-0:/win32" end="xsd:schema-1:/linux"/>
+      <tmodel:link start="fid:func-0" end="xsd:schema-1:/win32/path@value"/>
+      
+    </tmodel:links>
+
+  </tmodel:tmodel>
+
+
+  <graphic:graphic>
+
+    <graphic:box modelid="schema-0" x="20" y="20" w="120" h="240"/>
+    <graphic:box modelid="schema-1" x="500" y="20" w="120" h="240"/>
+    <graphic:box modelid="func-0" x="380" y="20" w="80" h="70"/>
+    <graphic:box modelid="func-1" x="280" y="60" w="80" h="30"/>
+    <graphic:box modelid="func-2" x="280" y="20" w="80" h="30"/>
+
+  </graphic:graphic>
+
+</xsmt>

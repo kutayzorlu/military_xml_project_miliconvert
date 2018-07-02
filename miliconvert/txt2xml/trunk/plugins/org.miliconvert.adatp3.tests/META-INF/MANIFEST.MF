@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.mpgt.tests
+Bundle-SymbolicName: org.miliconvert.adatp3.tests
+Bundle-Version: 1.0.0
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.adatp3,
+ org.miliconvert.xsmt.engine,
+ org.miliconvert.txt2xml.transform,
+ org.miliconvert.xsmt.utils,
+ org.junit,
+ org.miliconvert.adatp3.tools
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.miliconvert.xsmt_1.4.0.201001251643.jar" id="org.miliconvert.xsmt" version="1.4.0.201001251643" os="linux,solaris,win32" ws="gtk,win32" nl="en_US,en,fr_FR,fr">
+      <category name="Miliconvert"/>
+   </feature>
+   <feature url="features/org.miliconvert.xsmt.core_1.4.0.201001251643.jar" id="org.miliconvert.xsmt.core" version="1.4.0.201001251643" os="linux,solaris,win32" ws="gtk,win32" nl="en_US,en,fr_FR,fr">
+      <category name="Miliconvert"/>
+   </feature>
+   <category-def name="Miliconvert" label="Miliconvert"/>
+</site>

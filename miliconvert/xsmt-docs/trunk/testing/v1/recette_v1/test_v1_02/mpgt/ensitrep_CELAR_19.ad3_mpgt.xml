@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema">
+<Rapport>
+<CTE>_x0Qu0AZ8Ed-HWpqDxOOdDQ</CTE>
+</Rapport>
+<Unite>
+<CTE>_x0KBIAZ8Ed-HWpqDxOOdDQ</CTE>
+<EstObjet_AssociationEntiteOrgEntiteOrg>
+<refCTE>_x0JaEAZ8Ed-HWpqDxOOdDQ</refCTE>
+</EstObjet_AssociationEntiteOrgEntiteOrg>
+</Unite>
+<Rapport>
+<CTE>_xz8lwAZ8Ed-HWpqDxOOdDQ</CTE>
+</Rapport>
+<Unite>
+<CTE>_xzt8QAZ8Ed-HWpqDxOOdDQ</CTE>
+<EstObjet_AssociationEntiteOrgEntiteOrg>
+<refCTE>_xztVMQZ8Ed-HWpqDxOOdDQ</refCTE>
+</EstObjet_AssociationEntiteOrgEntiteOrg>
+</Unite>
+<AssociationEntiteOrgEntiteOrg>
+<CTE>_x0JaEAZ8Ed-HWpqDxOOdDQ</CTE>
+<APourSujet_EntiteOrganisationnelle/>
+<APourObjet_EntiteOrganisationnelle>
+<refCTE>_x0KBIAZ8Ed-HWpqDxOOdDQ</refCTE>
+</APourObjet_EntiteOrganisationnelle>
+</AssociationEntiteOrgEntiteOrg>
+<AssociationEntiteOrgEntiteOrg>
+<CTE>_xztVMQZ8Ed-HWpqDxOOdDQ</CTE>
+<APourSujet_EntiteOrganisationnelle/>
+<APourObjet_EntiteOrganisationnelle>
+<refCTE>_xzt8QAZ8Ed-HWpqDxOOdDQ</refCTE>
+</APourObjet_EntiteOrganisationnelle>
+</AssociationEntiteOrgEntiteOrg>
+</schema:MPGT_Message>

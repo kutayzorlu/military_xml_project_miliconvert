@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.miliconvert.xsmt.tmodel.userfunctions">
+      <userFunction
+            category="org.miliconvert.xsmt.tmodel.tests.testCategory"
+            class="org.miliconvert.xsmt.tmodel.tests.Identity"
+            comment="comment_identity"
+            name="identity">
+      </userFunction>
+   </extension>
+
+</plugin>

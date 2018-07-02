@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><intelligence_request xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/intreq/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">INTREQ</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<geodetic_datum set-id="geodatum" set-seq="5">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">EUROPEAN 1979</geodetic_datum>
+</geodetic_datum>
+<effective_date_time_month set-id="efdt" set-seq="6">
+<date_time>
+<day_time_effective alt="A" ff-seq="1" ffirn-fudn="2000-13">
+<day ffirn-fudn="1000-1">27</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_effective>
+</date_time>
+<effective_month alt="A" ff-seq="2" ffirn-fudn="1004-4">SEP</effective_month>
+</effective_date_time_month>
+<request_references_segment>
+<request_references set-id="reqref" set-seq="7">
+<originators_control_reference_number alt="A" ff-seq="1" ffirn-fudn="1012-72">BX001</originators_control_reference_number>
+<request_priority alt="A" ff-seq="2" ffirn-fudn="1076-5">1</request_priority>
+<priority_ranking alt="A" ff-seq="3" ffirn-fudn="1012-71">001</priority_ranking>
+</request_references>
+<request_details_segment>
+<request_details set-id="reqdet" set-seq="8">
+<subject_type>
+<information_categories alt="A" ff-seq="1" ffirn-fudn="1343-2">BRIDGE</information_categories>
+</subject_type>
+<scope_of_information_code alt="A" ff-seq="2" ffirn-fudn="1345-2">C</scope_of_information_code>
+<basic_encyclopedia_number alt="A" ff-seq="3" ffirn-fudn="2002-1">
+<world_area_number ffirn-fudn="1012-39">1234</world_area_number>
+<program_indicator_be_number ffirn-fudn="1155-1">E</program_indicator_be_number>
+<installation_identification_serial_number ffirn-fudn="1012-43">00235</installation_identification_serial_number>
+</basic_encyclopedia_number>
+<basic_encyclopedia_number_suffix alt="A" ff-seq="4" ffirn-fudn="1012-102">02</basic_encyclopedia_number_suffix>
+<site_name alt="A" ff-seq="5" ffirn-fudn="1022-68">LONG RIVER BRIDGE</site_name>
+</request_details>
+<general_text set-id="gentext" set-seq="9">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">INFORMATION REQUIRED</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text>
+</request_details_segment>
+<general_location set-id="genloc" set-seq="10">
+<geographical_entity alt="A" ff-seq="1" ffirn-fudn="1026-1">RS</geographical_entity>
+<area_name alt="A" ff-seq="2" ffirn-fudn="1022-69">KAZAN</area_name>
+<day_time_and_month alt="A" ff-seq="3" ffirn-fudn="2030-1">
+<day ffirn-fudn="1000-1">07</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">JAN</month_name>
+</day_time_and_month>
+</general_location>
+<request_location set-id="reqloc" set-seq="11">
+<request_location alt="A" ff-seq="1" ffirn-fudn="1284-6">ELLIPSE</request_location>
+<location>
+<geographic_position_georef_centiminute alt="A" ff-seq="2" ffirn-fudn="2018-1">
+<fifteen_degree_quadrilateral_georef ffirn-fudn="1031-1">WC</fifteen_degree_quadrilateral_georef>
+<one_degree_quadrilateral_georef ffirn-fudn="1032-1">AN</one_degree_quadrilateral_georef>
+<minute_easting_georef ffirn-fudn="1033-1">56</minute_easting_georef>
+<centiminute_angular ffirn-fudn="1035-1">50</centiminute_angular>
+<minute_northing_georef ffirn-fudn="1034-1">30</minute_northing_georef>
+<centiminute_angular_1 ffirn-fudn="1035-1">60</centiminute_angular_1>
+</geographic_position_georef_centiminute>
+</location>
+<target>
+<elliptical_target_area alt="C" descriptor="ELP" ff-seq="3" ffirn-fudn="2180-2">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">10</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_linear_measurement_m_km_nm ffirn-fudn="1008-20">KM</unit_of_linear_measurement_m_km_nm>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<context_quantity_decimal_pt_permitted_6_char_max_1 ffirn-fudn="1023-28">7</context_quantity_decimal_pt_permitted_6_char_max_1>
+<unit_of_linear_measurement_m_km_nm_1 ffirn-fudn="1008-20">KM</unit_of_linear_measurement_m_km_nm_1>
+<hyphen_1 ffirn-fudn="1025-2">-</hyphen_1>
+<semi_major_axis_orientation_in_tenths_of_degrees_true ffirn-fudn="1439-7">12345</semi_major_axis_orientation_in_tenths_of_degrees_true>
+</elliptical_target_area>
+</target>
+<elevation_in_metres alt="A" ff-seq="4" ffirn-fudn="1344-2">555</elevation_in_metres>
+<day_time_and_month alt="A" ff-seq="5" ffirn-fudn="2030-1">
+<day ffirn-fudn="1000-1">22</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">35</minute_time>
+<time_zone ffirn-fudn="1003-1">A</time_zone>
+<month_name ffirn-fudn="1004-1">JAN</month_name>
+</day_time_and_month>
+</request_location>
+<request_position set-id="reqpos" set-seq="12">
+<request_location alt="A" ff-seq="1" ffirn-fudn="1284-6">RADIUS</request_location>
+<location>
+<geographic_position_georef_centiminute alt="A" ff-seq="2" ffirn-fudn="2018-1">
+<fifteen_degree_quadrilateral_georef ffirn-fudn="1031-1">WC</fifteen_degree_quadrilateral_georef>
+<one_degree_quadrilateral_georef ffirn-fudn="1032-1">AN</one_degree_quadrilateral_georef>
+<minute_easting_georef ffirn-fudn="1033-1">56</minute_easting_georef>
+<centiminute_angular ffirn-fudn="1035-1">50</centiminute_angular>
+<minute_northing_georef ffirn-fudn="1034-1">30</minute_northing_georef>
+<centiminute_angular_1 ffirn-fudn="1035-1">60</centiminute_angular_1>
+</geographic_position_georef_centiminute>
+</location>
+<target>
+<target_radius_ft_yd_sm_nm_m_km_hf alt="A" descriptor="RAD" ff-seq="3" ffirn-fudn="2178-2">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">100</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_ft_yd_sm_nm_m_km_hf ffirn-fudn="1008-19">M</unit_of_linear_measurement_ft_yd_sm_nm_m_km_hf>
+</target_radius_ft_yd_sm_nm_m_km_hf>
+</target>
+<day_time_and_month alt="A" ff-seq="5" ffirn-fudn="2030-1">
+<day ffirn-fudn="1000-1">22</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">35</minute_time>
+<time_zone ffirn-fudn="1003-1">A</time_zone>
+<month_name ffirn-fudn="1004-1">JAN</month_name>
+</day_time_and_month>
+<course_or_direction_of_movement>
+<target_course_in_degrees alt="A" ff-seq="6" ffirn-fudn="2065-14">
+<context_quantity_000_359 ffirn-fudn="1023-2">180</context_quantity_000_359>
+<angular_measurement_reference ffirn-fudn="1024-1">M</angular_measurement_reference>
+</target_course_in_degrees>
+</course_or_direction_of_movement>
+<target_speed>
+<target_speed alt="A" ff-seq="7" ffirn-fudn="2063-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">2</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_velocity_measurement ffirn-fudn="1008-5">KPH</unit_of_speed_velocity_measurement>
+</target_speed>
+</target_speed>
+</request_position>
+<map_data_without_geodetic_datum set-id="mapnogd" set-seq="13">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+<map_or_chart_suffix_number alt="A" ff-seq="2" ffirn-fudn="1012-4">16</map_or_chart_suffix_number>
+<group_of_fields>
+<map_or_chart_sheet_number alt="A" ff-seq="3" ffirn-fudn="1012-3">NM32-1ESSEN</map_or_chart_sheet_number>
+<map_or_chart_edition_number alt="A" ff-seq="4" ffirn-fudn="1012-2">3-DMG</map_or_chart_edition_number>
+</group_of_fields>
+</map_data_without_geodetic_datum>
+<map_data_without_geodetic_datum set-id="mapnogd" set-seq="13">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+</map_data_without_geodetic_datum>
+<request_time_specifications set-id="reqtime" set-seq="14">
+<day_time_and_month_of_latest_delivery alt="A" ff-seq="1" ffirn-fudn="2030-11">
+<day ffirn-fudn="1000-1">31</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">59</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">DEC</month_name>
+</day_time_and_month_of_latest_delivery>
+<latest_day_time_and_month_of_intelligence_value alt="A" ff-seq="2" ffirn-fudn="2030-12">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">00</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">JAN</month_name>
+</latest_day_time_and_month_of_intelligence_value>
+<day_time_and_month_of_earliest_coverage alt="A" ff-seq="3" ffirn-fudn="2030-13">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">05</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">DEC</month_name>
+</day_time_and_month_of_earliest_coverage>
+<report_frequency alt="A" ff-seq="4" ffirn-fudn="1346-2">DAILY</report_frequency>
+<specific_coverage>
+<day_time_and_month_of_start alt="B" descriptor="START" ff-seq="5" ffirn-fudn="2030-3">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">05</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">DEC</month_name>
+</day_time_and_month_of_start>
+</specific_coverage>
+<specific_coverage>
+<day_time_and_month_of_stop alt="C" descriptor="STOP" ff-seq="5" ffirn-fudn="2030-4">
+<day ffirn-fudn="1000-1">22</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">DEC</month_name>
+</day_time_and_month_of_stop>
+</specific_coverage>
+</request_time_specifications>
+<report_materials_required set-id="reqrepr" set-seq="15">
+<type_of_report_or_material_requested alt="A" ff-seq="1" ffirn-fudn="1340-1">INTREP</type_of_report_or_material_requested>
+<number_of_copies_01_99 alt="A" ff-seq="2" ffirn-fudn="1044-90">22</number_of_copies_01_99>
+<security_classification_abbreviated alt="A" ff-seq="3" ffirn-fudn="1288-1">CTS</security_classification_abbreviated>
+</report_materials_required>
+<requested_report_dissemination set-id="reqrepd" set-seq="16">
+<delivery_address alt="A" ff-seq="1" ffirn-fudn="1437-1">12TH CORPS G2</delivery_address>
+<delivery_means alt="A" ff-seq="2" ffirn-fudn="1436-1">FAX</delivery_means>
+</requested_report_dissemination>
+<point_of_contact set-id="pocdata" set-seq="17">
+<rank_or_position alt="A" ff-seq="1" ffirn-fudn="1046-2">CAPT</rank_or_position>
+<contact_name alt="A" ff-seq="2" ffirn-fudn="1022-7">WYLDE</contact_name>
+<unit_identifier alt="A" ff-seq="3" ffirn-fudn="1028-1">321 EOD COY</unit_identifier>
+<designation_of_telephone_number alt="A" ff-seq="4" ffirn-fudn="1361-1">0621-493576</designation_of_telephone_number>
+</point_of_contact>
+</request_references_segment>
+</intelligence_request>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema">
+<StructureOrganisee>
+<Nom>ARTI OP</Nom>
+<CTE>_z9FdsAaWEd-cSIhSRgpX3w</CTE>
+<EstSujet_AssociationEntiteOrgEltCtrl>
+<refCTE>_z9DBcAaWEd-cSIhSRgpX3w</refCTE>
+</EstSujet_AssociationEntiteOrgEltCtrl>
+</StructureOrganisee>
+<AutreElementControle>
+<Nom>ACTION</Nom>
+<CTE>_z8XsAAaWEd-cSIhSRgpX3w</CTE>
+<AssocieCommeObjectifActivite_ObjectifActivite>
+<refCTE>_z8LewAaWEd-cSIhSRgpX3w</refCTE>
+</AssocieCommeObjectifActivite_ObjectifActivite>
+<EstObjet_AssociationEntiteOrgEltCtrl>
+<refCTE>_z9DBcAaWEd-cSIhSRgpX3w</refCTE>
+</EstObjet_AssociationEntiteOrgEltCtrl>
+</AutreElementControle>
+<AssociationEntiteOrgEltCtrl>
+<CTE>_z9DBcAaWEd-cSIhSRgpX3w</CTE>
+<Categorie>CONTRL</Categorie>
+<APourObjet_ElementControle>
+<refCTE>_z8XsAAaWEd-cSIhSRgpX3w</refCTE>
+</APourObjet_ElementControle>
+<APourSujet_EntiteOrganisationnelle>
+<refCTE>_z9FdsAaWEd-cSIhSRgpX3w</refCTE>
+</APourSujet_EntiteOrganisationnelle>
+</AssociationEntiteOrgEltCtrl>
+<ObjectifActivite>
+<CTE>_z8LewAaWEd-cSIhSRgpX3w</CTE>
+<EstObjectifPour_Activite/>
+<AssocieCommeInstanceObjet_InstanceObjet>
+<refCTE>_z8XsAAaWEd-cSIhSRgpX3w</refCTE>
+</AssocieCommeInstanceObjet_InstanceObjet>
+</ObjectifActivite>
+</schema:MPGT_Message>

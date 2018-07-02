@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactreport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactreport.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">-</command>
+<message_identifier ff-seq="2">GOLD</message_identifier>
+<message_serial_no ff-seq="3">0001</message_serial_no>
+<month ff-seq="4">FEB</month>
+</message_identification>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T0001</track_number>
+<class-name ff-seq="2">UNEQUATED-JUJU2</class-name>
+<category ff-seq="5">UNK</category>
+<force_code ff-seq="11">23</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">170728Z5</date-time_group>
+<month ff-seq="2">FEB</month>
+<latitude_of_center ff-seq="3">2844N8</latitude_of_center>
+<longitude_of_center ff-seq="4">07521E5</longitude_of_center>
+<course ff-seq="9">000T</course>
+<altitudedepth ff-seq="11">ALT000</altitudedepth>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T0002</track_number>
+<class-name ff-seq="2">UNEQUATED-JU4</class-name>
+<category ff-seq="5">UNK</category>
+<flag ff-seq="7">GM</flag>
+<force_code ff-seq="11">23</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">0010</average_speed>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">170717Z3</date-time_group>
+<month ff-seq="2">FEB</month>
+<latitude_of_center ff-seq="3">1153N0</latitude_of_center>
+<longitude_of_center ff-seq="4">07923E1</longitude_of_center>
+<course ff-seq="9">000T</course>
+<speed ff-seq="10">0010K</speed>
+<altitudedepth ff-seq="11">ALT000</altitudedepth>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T0003</track_number>
+<class-name ff-seq="2">UNEQUATED-JU2</class-name>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">FR</flag>
+<force_code ff-seq="11">30</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">0020</average_speed>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">170715Z1</date-time_group>
+<month ff-seq="2">FEB</month>
+<latitude_of_center ff-seq="3">1249N6</latitude_of_center>
+<longitude_of_center ff-seq="4">07632E8</longitude_of_center>
+<course ff-seq="9">000T</course>
+<speed ff-seq="10">0020K</speed>
+<altitudedepth ff-seq="11">ALT000</altitudedepth>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T0004</track_number>
+<class-name ff-seq="2">UNEQUATED-JUJU3</class-name>
+<category ff-seq="5">NAV</category>
+<flag ff-seq="7">DA</flag>
+<force_code ff-seq="11">08</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">170729Z6</date-time_group>
+<month ff-seq="2">FEB</month>
+<latitude_of_center ff-seq="3">2414N1</latitude_of_center>
+<longitude_of_center ff-seq="4">06619E2</longitude_of_center>
+<course ff-seq="9">000T</course>
+<altitudedepth ff-seq="11">ALT000</altitudedepth>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T0005</track_number>
+<class-name ff-seq="2">UNEQUATED-JU5</class-name>
+<category ff-seq="5">NAV</category>
+<flag ff-seq="7">AN</flag>
+<force_code ff-seq="11">13</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">0010</average_speed>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">170718Z4</date-time_group>
+<month ff-seq="2">FEB</month>
+<latitude_of_center ff-seq="3">0917N7</latitude_of_center>
+<longitude_of_center ff-seq="4">07244E7</longitude_of_center>
+<course ff-seq="9">090T</course>
+<speed ff-seq="10">0010K</speed>
+<altitudedepth ff-seq="11">ALT000</altitudedepth>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T0006</track_number>
+<class-name ff-seq="2">UNEQUATED-JUJU1</class-name>
+<category ff-seq="5">UNK</category>
+<force_code ff-seq="11">52</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">170727Z4</date-time_group>
+<month ff-seq="2">FEB</month>
+<latitude_of_center ff-seq="3">2928N1</latitude_of_center>
+<longitude_of_center ff-seq="4">07653E1</longitude_of_center>
+<course ff-seq="9">000T</course>
+<altitudedepth ff-seq="11">ALT005</altitudedepth>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T0007</track_number>
+<class-name ff-seq="2">UNEQUATED-JU1</class-name>
+<category ff-seq="5">UNK</category>
+<force_code ff-seq="11">01</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">0150</average_speed>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">170714Z0</date-time_group>
+<month ff-seq="2">FEB</month>
+<latitude_of_center ff-seq="3">1848N1</latitude_of_center>
+<longitude_of_center ff-seq="4">07603E6</longitude_of_center>
+<course ff-seq="9">180T</course>
+<speed ff-seq="10">0150K</speed>
+<altitudedepth ff-seq="11">ALT005</altitudedepth>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</contactreport>

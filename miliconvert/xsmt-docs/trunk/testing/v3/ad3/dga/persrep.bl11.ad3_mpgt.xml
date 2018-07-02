@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personnel_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/persrep/messages.xsd">
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">PERSREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">FR4DB</originator>
+</message_identifier>
+<organization_designator_segment>
+<organization_designator set-id="orgid" set-seq="7">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">2DB</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">DIV</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">CBT</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">AR</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">ARMD</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5">ARMD</unit_role_indicator_code_d>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">1CRP</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0002</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">OFF-MALE</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">100</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">50</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH">75</number_attached>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH">0</number_detached>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">15</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">10</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">5</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW">0</number_of_own_pow>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW">0</number_of_enemy_pow>
+</personnel_data>
+<date_time_group_1 set-id="dtg" set-seq="9">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">18</hour_time>
+<minute_time ffirn-fudn="1002-1">56</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">SEP</month_name>
+<year ffirn-fudn="1005-7">2003</year>
+</dtg_4_digit_year>
+</date_time_group_1>
+</organization_designator_segment>
+</personnel_report>

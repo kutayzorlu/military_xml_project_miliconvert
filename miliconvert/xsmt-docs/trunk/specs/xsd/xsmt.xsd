@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.miliconvert.org/xsd/xsmt/xsmt.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.miliconvert.org/xsd/xsmt/xsmt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.miliconvert.org/xsd/xsmt/tmodel.xsd" />
+  <xs:import namespace="http://www.miliconvert.org/xsd/xsmt/graphic.xsd" />
+  <xs:element name="xsmt">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element xmlns:q1="http://www.miliconvert.org/xsd/xsmt/tmodel.xsd" ref="q1:tmodel" />
+	<xs:element xmlns:q2="http://www.miliconvert.org/xsd/xsmt/graphic.xsd" ref="q2:graphic" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

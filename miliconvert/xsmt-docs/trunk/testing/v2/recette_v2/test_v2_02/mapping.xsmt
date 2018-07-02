@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsmt:xsmt xmlns:xsmt="http://www.miliconvert.org/xsd/xsmt/xsmt.xsd">
+  <tmodel:tmodel xmlns:tmodel="http://www.miliconvert.org/xsd/xsmt/tmodel.xsd">
+
+    <tmodel:schemas>
+      <tmodel:schema id="schema-0" path="../../../xsd/bl11/navsitsum/messages.xsd" />
+      <tmodel:schema id="schema-1" path="../../../xsd/mpgt_v317.xsd" />
+    </tmodel:schemas>
+    
+    <tmodel:functions>
+      <tmodel:function id="func-0"
+		       impl="org.miliconvert.xsmt.mpgt.Adatp3ToMPGT" />
+    </tmodel:functions>
+    
+    <tmodel:links>
+      <tmodel:link end="fid:func-0,0" start="xsd:schema-0:/naval_situation_summary" />
+      <tmodel:link end="xsd:schema-1:/MPGT_Message" start="fid:func-0" />
+    </tmodel:links>
+
+  </tmodel:tmodel>
+
+  <graphic:graphic xmlns:graphic="http://www.miliconvert.org/xsd/xsmt/graphic.xsd">
+  </graphic:graphic>
+
+</xsmt:xsmt>

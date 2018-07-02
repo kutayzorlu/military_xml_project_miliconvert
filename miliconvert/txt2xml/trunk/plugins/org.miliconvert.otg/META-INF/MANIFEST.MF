@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.miliconvert.otg;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.miliconvert.otg.Activator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.txt2xml.transform,
+ org.apache.commons.logging
+Bundle-ActivationPolicy: lazy
+Export-Package: org.miliconvert.otg;uses:="org.w3c.dom",
+ org.miliconvert.otg.model,
+ org.miliconvert.otg.service.csv,
+ org.miliconvert.otg.service.initialiser,
+ org.miliconvert.otg.service.initialiser.impl,
+ org.miliconvert.otg.service.parser,
+ org.miliconvert.otg.service.parser.impl,
+ org.miliconvert.otg.service.xml,
+ org.miliconvert.otg.service.xml.impl,
+ org.miliconvert.otg.utils
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Name: org.miliconvert.otg
+

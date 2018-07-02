@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema targetNamespace="urn:XST-schema" xmlns:XSTMeta="urn:XST-meta" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:MPIAInfo="urn:MPGTV3-schemaInfo" xmlns:XSTInfo="urn:XST-schemaInfo" xmlns="urn:XST-schema" version="F.0">
+	<xsd:import namespace="urn:XST-meta" schemaLocation="TypesMetamodele.xsd"/>
+	<!-- ..................................................... -->
+	<!-- Types                               -->
+	<!-- ..................................................... -->
+	<!--  Types Simples  -->
+	<!--  Type Référence -->
+	<xsd:simpleType name="typeReference">
+		<xsd:restriction base="XSTMeta:typeString">
+			<xsd:minLength value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-1  -->
+	<xsd:simpleType name="typeDataTypeChaine01AZ">
+		<xsd:restriction base="XSTMeta:typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="1"/>
+			<xsd:pattern value="[A-Z]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--  Type Chaine 0-8000  -->
+	<xsd:simpleType name="typeDataTypeChaine08000">
+		<xsd:restriction base="XSTMeta:typeString">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="8000"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--  Types dictionnaires -->
+	<xsd:simpleType name="typeDictionaryIdentifiantComplementaireExercice">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Message entre les joueurs 'bleu' / Message between "BLUE" players  -->
+			<xsd:enumeration value="BLUE" />
+			<!-- Message adressé aux joueurs pour diriger l'exercice / Message addressed to players to control the exercise  -->
+			<xsd:enumeration value="CONTROL" />
+			<!-- Message à l'intention exclusive du DISTAFF ou DISCONTAFF / Message for DISTAFF or DICONSTAFF only  -->
+			<xsd:enumeration value="DISTAFF" />
+			<!-- Essai ou instruction n'ayant pas de lien avec l'exercice / Message for test or practice not related to the exercise  -->
+			<xsd:enumeration value="DRILL" />
+			<!-- Message intervenant hors cadre du jeu opérationnel / Message interception not for use in direction finding  -->
+			<xsd:enumeration value="NODUF" />
+			<!-- Message 'hors-jeu' opérationnel mais affectant l'exercice / Message not part of play but affecting the exercise  -->
+			<xsd:enumeration value="NO PLAY" />
+			<!-- Message entre les joueurs 'orange' / Message between "ORANGE" players  -->
+			<xsd:enumeration value="ORANGE" />
+			<!-- Message originaire d'un commandement de couleur 'Pourpre' / Message originated by a commander assigned a "PURPLE" role  -->
+			<xsd:enumeration value="PURPLE" />
+			<!-- Message originaire de l'Arbitrage / Message originated by an umpire  -->
+			<xsd:enumeration value="UMPIRE" />
+			<!-- Message adressé aux 'Arbitres' seulement / Message addressed to umpires only  -->
+			<xsd:enumeration value="UMPIRE EYES ONLY" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryAttribution">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Diffusé séparemment / Passed separately  -->
+			<xsd:enumeration value="PASEP" />
+			<!-- Non attribué à tous les correspondants / Not to all  -->
+			<xsd:enumeration value="NOTAL" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeOpoOuAnnexe">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Ordre préparatoire / Warning order  -->
+			<xsd:enumeration value="WARNO" />
+			<!-- Ordre / Order  -->
+			<xsd:enumeration value="ORDER" />
+			<!-- Ordre de conduite / Fragmentary order  -->
+			<xsd:enumeration value="FRAGO" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeSitrep">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Point de situation  / Point de situation [FR]  -->
+			<xsd:enumeration value="PTSITU" />
+			<!-- Compte rendu à temps / Compte rendu à temps [FR]  -->
+			<xsd:enumeration value="SITREPBAS" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryNomOrdreLogistique">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- ORDRE ADMINISTRATIF ET LOGISTIQUE / ORDRE ADMINISTRATIF ET LOGISTIQUE [FR]  -->
+			<xsd:enumeration value="OAL" />
+			<!-- ANNEXE LOGISTIQUE / ANNEXE LOGISTIQUE [FR]  -->
+			<xsd:enumeration value="ANN_LOG" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryRaisonsImpreparations">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Matériel / Matériel [FR]  -->
+			<xsd:enumeration value="MAT" />
+			<!-- Personnel / Personnel [FR]  -->
+			<xsd:enumeration value="PERS" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeDemande">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- AMI / Friendly  -->
+			<xsd:enumeration value="FRD" />
+			<!-- ENI / Enemy  -->
+			<xsd:enumeration value="ENI" />
+			<!-- Population / Population  -->
+			<xsd:enumeration value="POPULATION" />
+			<!-- Divers / Miscellaneous  -->
+			<xsd:enumeration value="MISC" />
+			<!-- Prévisions météo / Weather forecast  -->
+			<xsd:enumeration value="WEATHFORC" />
+			<!-- Bulletin de sondage météo / Weather probing bulletin  -->
+			<xsd:enumeration value="WTHPRBBLT" />
+			<!-- Obstacles / Obstacles  -->
+			<xsd:enumeration value="OBSTACLES" />
+			<!-- CR observation météo / Weather observation report  -->
+			<xsd:enumeration value="WTHOBSREP" />
+			<!-- Moyens génie / Moyens génie  -->
+			<xsd:enumeration value="MOYENGENIE" />
+			<!-- Renforcement effectif / Renforcement effectif  -->
+			<xsd:enumeration value="RENFEFFECTIF" />
+			<!-- Prise en charge I3D Terre / Prise en charge I3D Terre  -->
+			<xsd:enumeration value="PRISECHARGEI3DTerre" />
+			<!-- Information météo / Information météo  -->
+			<xsd:enumeration value="METEOINFO" />
+			<!-- Couverture carte / Couverture carte  -->
+			<xsd:enumeration value="MAPREQ" />
+			<!-- Autre / Autre  -->
+			<xsd:enumeration value="AUTRE" />
+			<!-- Position / Position  -->
+			<xsd:enumeration value="POS" />
+			<!-- Logistique / Logistique  -->
+			<xsd:enumeration value="LOG" />
+			<!-- Position / Position  -->
+			<xsd:enumeration value="POSITION" />
+			<!-- Possibilité d'observation / Possibilité d'observation  -->
+			<xsd:enumeration value="POSSOBS" />
+			<!-- Observation / Observation  -->
+			<xsd:enumeration value="OBS" />
+			<!-- Tir / Tir  -->
+			<xsd:enumeration value="TIR" />
+			<!-- Milieu / Milieu  -->
+			<xsd:enumeration value="MILIEU" />
+			<!-- Situation opérationnelle / Situation opérationnelle  -->
+			<xsd:enumeration value="SITOP" />
+			<!-- Situation logistique / Situation logistique  -->
+			<xsd:enumeration value="SITLOG" />
+			<!-- Situation radiation / Situation radiation  -->
+			<xsd:enumeration value="SITRAD" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryUrgenceMessage">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Z (FLASH) / Z (FLASH)  -->
+			<xsd:enumeration value="Z" />
+			<!-- O (Immédiat) / O (Immédiat)  -->
+			<xsd:enumeration value="O" />
+			<!-- P (Prioritaire) / P (Prioritaire)  -->
+			<xsd:enumeration value="P" />
+			<!-- R (Routine) / R (Routine)  -->
+			<xsd:enumeration value="R" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryNiveauClassificationOuProtection">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Secret / Secret  -->
+			<xsd:enumeration value="SECRET" />
+			<!-- Confidentiel / Confidential  -->
+			<xsd:enumeration value="CONFIDENTIAL" />
+			<!-- Diffusion restreinte / Restricted  -->
+			<xsd:enumeration value="RESTRICTED" />
+			<!-- Non classifié / Unclassified  -->
+			<xsd:enumeration value="UNCLASSIFIED" />
+			<!-- Non protégé / Unmarked  -->
+			<xsd:enumeration value="UNMARKED" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryMentionManipulation">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- ACSSI / ACSSI  -->
+			<xsd:enumeration value="ACSSI" />
+			<!-- ACSSI S / ACSSI S  -->
+			<xsd:enumeration value="ACSSIS" />
+			<!-- Source secrète / Source secrète  -->
+			<xsd:enumeration value="SSECRETE" />
+			<!-- Catégorie spéciale de l'OTAN / Catégorie spéciale de l'OTAN  -->
+			<xsd:enumeration value="ATOMAL" />
+			<!-- Catégorie spéciale de l'OTAN / Catégorie spéciale de l'OTAN  -->
+			<xsd:enumeration value="CRYPTO" />
+			<!-- Catégorie spéciale de l'OTAN / Catégorie spéciale de l'OTAN  -->
+			<xsd:enumeration value="SIOP" />
+			<!-- Catégorie spéciale de l'OTAN / Catégorie spéciale de l'OTAN  -->
+			<xsd:enumeration value="SIOP ESI" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryMentionAppartenance">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Spécial France / Spécial France  -->
+			<xsd:enumeration value="SFRANCE" />
+			<!-- Réservé à une personne / Réservé à une personne  -->
+			<xsd:enumeration value="EXCLUSIVE" />
+			<!-- Renseignement / Renseignement  -->
+			<xsd:enumeration value="INTEL" />
+			<!-- Logistique / Logistique  -->
+			<xsd:enumeration value="LOG" />
+			<!-- Opérations / Opérations  -->
+			<xsd:enumeration value="OPS" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryMentionAdministrative">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Opérations ou plans / Opérations ou plans  -->
+			<xsd:enumeration value="MANAGEMENT" />
+			<!-- Membres du personnel / Membres du personnel  -->
+			<xsd:enumeration value="STAFF" />
+			<!-- Réservé au destinataire / Réservé au destinataire  -->
+			<xsd:enumeration value="PERSONAL" />
+			<!-- Médical / Médical  -->
+			<xsd:enumeration value="MEDICAL" />
+			<!-- Commercial ou industriel / Commercial ou industriel  -->
+			<xsd:enumeration value="COMMERCIAL" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryRegleMiseAJourParagrapheOptionnel">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Annule / Cancels  -->
+			<xsd:enumeration value="CANCEL" />
+			<!-- Annule et remplace / Cancels and replaces  -->
+			<xsd:enumeration value="REPLACE" />
+			<!-- Inchangé / Unchanged  -->
+			<xsd:enumeration value="UNCHANGED" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryRegleMiseAJourParagrapheObligatoire">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Annule / Cancels  -->
+			<xsd:enumeration value="CANCEL" />
+			<!-- Annule et remplace / Cancels and replaces  -->
+			<xsd:enumeration value="REPLACE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeEvaluationSituation">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Alat / Alat  -->
+			<xsd:enumeration value="ALAT" />
+			<!-- Appui mouvement / Appui mouvement  -->
+			<xsd:enumeration value="Appui MVT" />
+			<!-- ASA / ASA  -->
+			<xsd:enumeration value="ASA" />
+			<!-- ASS / ASS  -->
+			<xsd:enumeration value="ASS" />
+			<!-- Contact (Mélée) / Contact (Mélée)  -->
+			<xsd:enumeration value="CONTACT" />
+			<!-- DNBC / DNBC  -->
+			<xsd:enumeration value="DNBC" />
+			<!-- GE / GE  -->
+			<xsd:enumeration value="GE" />
+			<!-- GENIE / GENIE  -->
+			<xsd:enumeration value="GENIE" />
+			<!-- Appui mobilté blindé / Appui mobilté blindé  -->
+			<xsd:enumeration value="AMOBBIINDE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeCrActionTXT">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- ABC déplacement / ABC déplacement  -->
+			<xsd:enumeration value="ABCDEPLACEMENT" />
+			<!-- INF déplacement / INF déplacement  -->
+			<xsd:enumeration value="INFDEPLACEMENT" />
+			<!-- Franchissement / Franchissement  -->
+			<xsd:enumeration value="FRANCHISSEMENT" />
+			<!-- Reconnaissance ACM / Reconnaissance ACM  -->
+			<xsd:enumeration value="RECOACM" />
+			<!-- Reconnaissance Infra / Reconnaissance Infra  -->
+			<xsd:enumeration value="RECOINFRA" />
+			<!-- ABC Observation / ABC Observation  -->
+			<xsd:enumeration value="ABCOBSER" />
+			<!-- INF Observation / INF Observation  -->
+			<xsd:enumeration value="INFOBSER" />
+			<!-- ABC Mise en garde / ABC Mise en garde  -->
+			<xsd:enumeration value="ABCMISEGARDE" />
+			<!-- INF Mise en garde / INF Mise en garde  -->
+			<xsd:enumeration value="INFMISEGARDE" />
+			<!-- ABC Tir / ABC Tir  -->
+			<xsd:enumeration value="ABCTIR" />
+			<!-- INF Tir / INF Tir  -->
+			<xsd:enumeration value="INFTIR" />
+			<!-- Contact ou Observation / Contact ou Observation  -->
+			<xsd:enumeration value="CONTACTOBSER" />
+			<!-- Relevé terrain / Relevé terrain  -->
+			<xsd:enumeration value="RELEVETERRAIN" />
+			<!-- Analyse terrain / Analyse terrain  -->
+			<xsd:enumeration value="ANALYSETERRAIN" />
+			<!-- Equipement itinéraire / Equipement itinéraire  -->
+			<xsd:enumeration value="EQUIPITINERAIRE" />
+			<!-- Interception intérêt immédiat / Interception intérêt immédiat  -->
+			<xsd:enumeration value="INTERCEPINTERETIMM" />
+			<!-- DNBC décontamination / DNBC décontamination  -->
+			<xsd:enumeration value="DNBCDECON" />
+			<!-- Stationnement / Stationnement  -->
+			<xsd:enumeration value="STA" />
+			<!-- SH / SH  -->
+			<xsd:enumeration value="SH" />
+			<!-- Matériel / Matériel  -->
+			<xsd:enumeration value="MAT" />
+			<!-- Sanitaire / Sanitaire  -->
+			<xsd:enumeration value="SAN" />
+			<!-- SAC / SAC  -->
+			<xsd:enumeration value="SAC" />
+			<!-- Autre / Autre  -->
+			<xsd:enumeration value="AUTRE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeCrSituationTXT">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Avancement travaux / Avancement travaux  -->
+			<xsd:enumeration value="AVTRAV" />
+			<!-- Génie / Génie  -->
+			<xsd:enumeration value="GENIE" />
+			<!-- Soutien pétrolier / Soutien pétrolier  -->
+			<xsd:enumeration value="SP" />
+			<!-- Stationnement / Stationnement  -->
+			<xsd:enumeration value="STA" />
+			<!-- Appui MVT / Appui MVT  -->
+			<xsd:enumeration value="APPUIMVT" />
+			<!-- Exécution ABC Contact / Exécution ABC Contact  -->
+			<xsd:enumeration value="EXEABCCONTACT" />
+			<!-- Exécution INF Contact / Exécution INF Contact  -->
+			<xsd:enumeration value="EXEINFCONTACT" />
+			<!-- SIC / SIC  -->
+			<xsd:enumeration value="SIC" />
+			<!-- ACM / ACM  -->
+			<xsd:enumeration value="ACM" />
+			<!-- SH / SH  -->
+			<xsd:enumeration value="SH" />
+			<!-- SAC / SAC  -->
+			<xsd:enumeration value="SAC" />
+			<!-- Matériel / Matériel  -->
+			<xsd:enumeration value="MAT" />
+			<!-- Soutien pétrolier / Soutien pétrolier  -->
+			<xsd:enumeration value="SP" />
+			<!-- Autre / Autre  -->
+			<xsd:enumeration value="AUTRE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeOrdreTXT">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Analyse terrain / Analyse terrain  -->
+			<xsd:enumeration value="ANALYSETERRAIN" />
+			<!-- Relevé terrain / Relevé terrain  -->
+			<xsd:enumeration value="RELEVETERRAIN" />
+			<!-- Aux capteurs ROEM / Aux capteurs ROEM  -->
+			<xsd:enumeration value="CAPTEURROEM" />
+			<!-- Aux drones / Aux drones  -->
+			<xsd:enumeration value="DRONE" />
+			<!-- Aux EEI / Aux EEI  -->
+			<xsd:enumeration value="EEI" />
+			<!-- Aux GCP GCM / Aux GCP GCM  -->
+			<xsd:enumeration value="GCPGCM" />
+			<!-- Equipement itinéraire / Equipement itinéraire  -->
+			<xsd:enumeration value="EQUIPITINERAIRE" />
+			<!-- Exécution ABC Déplacement / Exécution ABC Déplacement  -->
+			<xsd:enumeration value="EXEABCDEPLAC" />
+			<!-- Exécution ABC Mise en garde / Exécution ABC Mise en garde  -->
+			<xsd:enumeration value="EXEABCMEG" />
+			<!-- Exécution ABC Observation / Exécution ABC Observation  -->
+			<xsd:enumeration value="EXEABCOBS" />
+			<!-- Exécution ABC Tir / Exécution ABC Tir  -->
+			<xsd:enumeration value="EXEABCTIR" />
+			<!-- Exécution ABC ACM / Exécution ABC ACM  -->
+			<xsd:enumeration value="EXEABCACM" />
+			<!-- Exécution ABC Alat / Exécution ABC Alat  -->
+			<xsd:enumeration value="EXEABCALAT" />
+			<!-- Exécution DNBC et RECO / Exécution DNBC et RECO  -->
+			<xsd:enumeration value="EXEDNBCRECO" />
+			<!-- Exécution INF Déplacement / Exécution INF Déplacement  -->
+			<xsd:enumeration value="EXEINFDEPLAC" />
+			<!-- Exécution INF Mise en garde / Exécution INF Mise en garde  -->
+			<xsd:enumeration value="EXEINFMEG" />
+			<!-- Exécution INF Observation / Exécution INF Observation  -->
+			<xsd:enumeration value="EXEINFOBS" />
+			<!-- Exécution INF Tir / Exécution INF Tir  -->
+			<xsd:enumeration value="EXEINFTIR" />
+			<!-- Mouvement terrestre / Mouvement terrestre  -->
+			<xsd:enumeration value="MVTTERRESTRE" />
+			<!-- Mise en oeuvre ACM / Mise en oeuvre ACM  -->
+			<xsd:enumeration value="MEOACM" />
+			<!-- Mise en oeuvre Alat / Mise en oeuvre Alat  -->
+			<xsd:enumeration value="MEOALAT" />
+			<!-- Mise en oeuvre ASA / Mise en oeuvre ASA  -->
+			<xsd:enumeration value="MEOASA" />
+			<!-- Mise en oeuvre Génie / Mise en oeuvre Génie  -->
+			<xsd:enumeration value="MEOGENIE" />
+			<!-- Mise en oeuvre PIO / Mise en oeuvre PIO  -->
+			<xsd:enumeration value="MEOPIO" />
+			<!-- Mise en oeuvre PSYOPS / Mise en oeuvre PSYOPS  -->
+			<xsd:enumeration value="MEOPSYOPS" />
+			<!-- Mise en oeuvre Système Communication / Mise en oeuvre Système Communication  -->
+			<xsd:enumeration value="MEOSC" />
+			<!-- Mise en oeuvre Système d'Information et Communication / Mise en oeuvre Système d'Information et Communication  -->
+			<xsd:enumeration value="MEOSIC" />
+			<!-- Traitement / Traitement  -->
+			<xsd:enumeration value="TRAITEMENT" />
+			<!-- Exécution DNBC décontamination / Exécution DNBC décontamination  -->
+			<xsd:enumeration value="EXEDNBCDECON" />
+			<!-- Exécution STA, consigne exécution / Exécution STA, consigne exécution  -->
+			<xsd:enumeration value="EXESTACONSEXE" />
+			<!-- Exécution SH, consigne exécution / Exécution SH, consigne exécution  -->
+			<xsd:enumeration value="EXESHCONSEXE" />
+			<!-- Exécution Soutien sanitaire, consigne exécution / Exécution Soutien sanitaire, consigne exécution  -->
+			<xsd:enumeration value="EXESSANCONSEXE" />
+			<!-- Autre / Autre  -->
+			<xsd:enumeration value="AUTRE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeCompteRenduRENS">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Contre Ingérence / Contre Ingérence  -->
+			<xsd:enumeration value="CONINGERENCE" />
+			<!-- Exploitation Reconnaissance / Exploitation Reconnaissance  -->
+			<xsd:enumeration value="EXPLOITRECO" />
+			<!-- Interpretation / Interpretation  -->
+			<xsd:enumeration value="INTERPRETATION" />
+			<!-- Autre / Autre  -->
+			<xsd:enumeration value="AUTRE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryPolitiqueSecuriteCategorie">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- DEFENSE / DEFENSE  -->
+			<xsd:enumeration value="DEFENSE" />
+			<!-- NATO / NATO  -->
+			<xsd:enumeration value="NATO" />
+			<!-- MISSION / MISSION  -->
+			<xsd:enumeration value="MISSION" />
+			<!-- NATOMISSION / NATOMISSION  -->
+			<xsd:enumeration value="NATOMISSION" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeDemandeActivite">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Demande d'ordre / Demande d'ordre  -->
+			<xsd:enumeration value="ORDRE" />
+			<!-- Demande d'appui / Demande d'appui  -->
+			<xsd:enumeration value="APPUI" />
+			<!-- Demande de conduite à tenir / Demande de conduite à tenir  -->
+			<xsd:enumeration value="CONDTEN" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryEclairage">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Libre / Libre  -->
+			<xsd:enumeration value="LIBRE" />
+			<!-- Black out / Black out  -->
+			<xsd:enumeration value="BLACKOUT" />
+			<!-- Intensification lumière / Intensification lumière  -->
+			<xsd:enumeration value="INTENSLUM" />
+			<!-- Autre / Autre  -->
+			<xsd:enumeration value="AUTRE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryOuvertureFeu">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Libre / Libre  -->
+			<xsd:enumeration value="LIBRE" />
+			<!-- Restreint / Restreint  -->
+			<xsd:enumeration value="RESTREINT" />
+			<!-- Interdit / Interdit  -->
+			<xsd:enumeration value="INTERDIT" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryRegimeRadio">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Libre / Libre  -->
+			<xsd:enumeration value="LIBRE" />
+			<!-- Vacation / Vacation  -->
+			<xsd:enumeration value="VACATION" />
+			<!-- Silence / Silence  -->
+			<xsd:enumeration value="SILENCE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeDepart">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Aussitôt prêt / Aussitôt prêt  -->
+			<xsd:enumeration value="PRÊT" />
+			<!-- Sur ordre / Sur ordre  -->
+			<xsd:enumeration value="ORDRE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryNiveauProtectionChimique">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Niveau 0 / Niveau 0  -->
+			<xsd:enumeration value="NIV0" />
+			<!-- Niveau 1 / Niveau 1  -->
+			<xsd:enumeration value="NIV1" />
+			<!-- Niveau 1 bis / Niveau 1 bis  -->
+			<xsd:enumeration value="NIV1B" />
+			<!-- Niveau 2 / Niveau 2  -->
+			<xsd:enumeration value="NIV2" />
+			<!-- Niveau autre / Niveau autre  -->
+			<xsd:enumeration value="NIVAUTRE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryDirectionPOuPasser">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- A gauche / A gauche  -->
+			<xsd:enumeration value="AGAUCHE" />
+			<!-- Tout Droit / Tout Droit  -->
+			<xsd:enumeration value="TOUTDROIT" />
+			<!-- A droite / A droite  -->
+			<xsd:enumeration value="ADROITE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeFormation">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Bataille / Bataille  -->
+			<xsd:enumeration value="BATAIL" />
+			<!-- Ligne / Ligne  -->
+			<xsd:enumeration value="LIGNE" />
+			<!-- Colonne double / Colonne double  -->
+			<xsd:enumeration value="COLDOUBLE" />
+			<!-- 2 lignes / 2 lignes  -->
+			<xsd:enumeration value="2LIGNE" />
+			<!-- Colonne / Colonne  -->
+			<xsd:enumeration value="COL" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeDictionaryTypeCrPos">
+		<xsd:restriction base="XSTMeta:typeString">
+			<!-- Futur / Futur  -->
+			<xsd:enumeration value="CRPOSIT" />
+			<!-- Auto / Auto  -->
+			<xsd:enumeration value="POSAUTO" />
+			<!-- Manuel / Manual  -->
+			<xsd:enumeration value="POSMANU" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<!-- ..................................................... -->
+	<!-- Definition de l'entete du type de document XML SIC Terre    -->
+	<!-- ..................................................... -->
+	<!-- Classe principale : type_XST_EnTete  -->
+	<xsd:complexType name="type_XST_EnTete">
+		<xsd:sequence>
+			<xsd:element name="Diffusion">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="NumeroSerie" type="XSTMeta:typeInteger"/>
+						<xsd:element name="DateComposition" type="XSTMeta:typeDataTypeGDH"/>
+						<xsd:element name="DateSignature" type="XSTMeta:typeDataTypeGDH" minOccurs="0"/>
+						<xsd:element name="AutoriteOrigine" type="XSTMeta:typeDataTypeChaine0100" minOccurs="0"/>
+						<xsd:choice>
+							<xsd:sequence>
+								<xsd:element name="NomOperation" type="XSTMeta:typeDataTypeChaine050"/>
+								<xsd:element name="NomPlan" type="XSTMeta:typeDataTypeChaine030" minOccurs="0"/>
+							</xsd:sequence>
+							<xsd:sequence>
+								<xsd:element name="NomExercice" type="XSTMeta:typeDataTypeChaine080"/>
+								<xsd:element name="IdentifiantComplementaireExercice" type="typeDictionaryIdentifiantComplementaireExercice" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:choice>
+						<xsd:element name="UrgencePourAction" type="typeDictionaryUrgenceMessage"/>
+						<xsd:element name="UrgencePourInfo" type="typeDictionaryUrgenceMessage" minOccurs="0"/>
+						<xsd:element name="Objet" type="XSTMeta:typeDataTypeChaine0100" minOccurs="0"/>
+						<xsd:element name="MessageAuquelOnRepond" minOccurs="0">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="TypeDocument" type="XSTMeta:typeDataTypeChaine080"/>
+									<xsd:element name="NumeroSerie" type="XSTMeta:typeInteger"/>
+									<xsd:element name="DateComposition" type="XSTMeta:typeDataTypeGDH"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="Attribution" type="typeDictionaryAttribution" minOccurs="0"/>
+						<xsd:element name="Sic" type="typeMultipleAggregationSic" minOccurs="0"/>
+						<xsd:element name="ReferenceAAutreMessage" type="typeMultipleAggregationReferenceAAutreMessage" minOccurs="0"/>
+						<xsd:element name="Destinataire" type="typeMultipleAggregationDestinataire"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SecuriteEtImputabilite">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="PolitiqueSecurite">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="Categorie"  type="typeDictionaryPolitiqueSecuriteCategorie"/>
+									<xsd:element name="NomMission" type="XSTMeta:typeDataTypeChaine080" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="NiveauClassificationOuProtection" type="typeDictionaryNiveauClassificationOuProtection"/>
+						<xsd:element name="MentionManipulation" type="typeDictionaryMentionManipulation" minOccurs="0"/>
+						<xsd:element name="MentionAppartenance" type="typeDictionaryMentionAppartenance" minOccurs="0"/>
+						<xsd:element name="MentionAdministrative" type="typeDictionaryMentionAdministrative" minOccurs="0"/>
+						<xsd:element name="AutorisationDiffusionVersAutreChaine" type="XSTMeta:typeDataTypeChaine050" minOccurs="0"/>
+						<xsd:element name="DateDeclassification" type="XSTMeta:typeDataTypeGDH" minOccurs="0"/>
+						<xsd:element name="MentionsComplementaires" type="XSTMeta:typeDataTypeChaine0255" minOccurs="0"/>
+						<xsd:element name="PCproducteur" type="XSTMeta:typeDataTypeChaine0100" minOccurs="0"/>
+						<xsd:choice>
+							<xsd:element name="ApplicationProductrice" type="XSTMeta:typeDataTypeChaine0100"/>
+							<xsd:element name="UsagerRedacteur" type="XSTMeta:typeDataTypeChaine0100"/>
+						</xsd:choice>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- Type Composition multiple de SIC-->
+	<xsd:complexType name="typeMultipleAggregationSic">
+		<xsd:sequence>
+			<xsd:element name="Sic" type="XSTMeta:typeDataTypeChaine012" maxOccurs="3"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- Type Composition multiple de ReferenceAAutreMessage -->
+	<xsd:complexType name="typeMultipleAggregationReferenceAAutreMessage">
+		<xsd:sequence>
+			<xsd:element name="ReferenceAAutreMessage" type="typeReferenceAAutreMessage" maxOccurs="26"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- Type ReferenceAUnAutreMessage  -->
+	<xsd:complexType name="typeReferenceAAutreMessage" MPIAInfo:entity_Type="AGGREGATED_ENTITY">
+		<xsd:sequence>
+			<xsd:element name="NumeroOrdre" type="typeDataTypeChaine01AZ"/>
+			<xsd:element name="TypeDocument" type="XSTMeta:typeDataTypeChaine080"/>
+			<xsd:element name="NumeroSerie" type="XSTMeta:typeInteger"/>
+			<xsd:element name="DateComposition" type="XSTMeta:typeDataTypeGDH"/>
+			<xsd:element name="DateSignature" type="XSTMeta:typeDataTypeGDH" minOccurs="0"/>
+			<xsd:element name="AutoriteOrigine" type="XSTMeta:typeDataTypeChaine0100"/>
+			<xsd:element name="Attribution" type="typeDictionaryAttribution" minOccurs="0"/>
+			<xsd:element name="Sic" type="typeMultipleAggregationSic" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- Type Composition multiple de Destinataires-->
+	<xsd:complexType name="typeMultipleAggregationDestinataire">
+		<xsd:sequence>
+			<xsd:element name="Destinataire" type="typeDestinataire" maxOccurs="unbounded"/>
+			<xsd:element name="DocumentAttendu" type="typeMultipleAggregationDocumentAttendu" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- Type Destinataire-->
+	<xsd:complexType name="typeDestinataire" MPIAInfo:entity_Type="AGGREGATED_ENTITY">
+		<xsd:sequence>
+			<xsd:element name="Destinataire" type="XSTMeta:typeDataTypeChaine0100"/>
+			<xsd:element name="DemandeDSN" type="XSTMeta:typeBoolean" default="0"/>
+			<xsd:element name="DemandeAccuseReception" type="XSTMeta:typeBoolean" default="0"/>
+			<xsd:element name="PourInfo" type="XSTMeta:typeBoolean" default="0"/>
+			<xsd:element name="DocumentAttendu" type="typeMultipleAggregationDocumentAttendu" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- Type Composition multiple de DocumentsAttendus-->
+	<xsd:complexType name="typeMultipleAggregationDocumentAttendu">
+		<xsd:sequence>
+			<xsd:element name="DocumentAttendu" type="typeDocumentAttendu" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- Type DocumentAttendu-->
+	<xsd:complexType name="typeDocumentAttendu" MPIAInfo:entity_Type="AGGREGATED_ENTITY">
+		<xsd:sequence>
+			<xsd:element name="TypeDocument" type="XSTMeta:typeDataTypeChaine080"/>
+			<xsd:element name="Date" type="XSTMeta:typeDataTypeGDH" minOccurs="0"/>
+			<xsd:element name="DureeEntreEnvois" type="XSTMeta:typeInteger" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

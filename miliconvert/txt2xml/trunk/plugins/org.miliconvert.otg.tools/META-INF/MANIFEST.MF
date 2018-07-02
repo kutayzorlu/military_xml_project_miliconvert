@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tools Plug-in
+Bundle-SymbolicName: org.miliconvert.otg.tools;singleton:=true
+Bundle-Version: 1.0.0
+Require-Bundle: org.apache.xerces,
+ org.apache.commons.logging,
+ org.eclipse.equinox.app,
+ org.miliconvert.otg
+Bundle-ClassPath: .
+Export-Package: org.miliconvert.otg.tools;uses:="org.eclipse.equinox.app,org.w3c.dom"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

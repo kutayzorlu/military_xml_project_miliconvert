@@ -1,0 +1,185 @@
+
+package org.mpgt.rules.ensitrep;
+
+
+expander mpgt-sets-ensitrep.dsl
+
+import org.miliconvert.xsmt.mpgt.rules.EnsitrepSetRules;
+import org.miliconvert.xsmt.mpgt.rules.CommonSetRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+rule R_ORGIDSCE_19_0
+when
+		Dans le set  ORGIDSCE avec la position 19
+then
+		LIGNE  21
+end
+
+rule R_EORGSTAT_17_0
+when
+		Dans le set  EORGSTAT avec la position 17
+then
+		LIGNE  21
+end
+
+rule R_INFOEVAL_18_0
+when
+		Dans le set  INFOEVAL avec la position 18
+then
+		LIGNE  21
+end
+
+rule R_1POL_15_0
+when
+		Dans le set  1POL avec la position 15
+then
+		LIGNE  21
+		//Les répétitions du groupe permettent d'enrichir la dotation l'unité en consommables de type "Autre type de consommable" et de catégorie "POL" (Petroleum, Oil, and Lubricant)
+end
+
+rule R_EMAT_16_0
+when
+		Dans le set  EMAT avec la position 16
+then
+		LIGNE  21
+		Règle A_ENSITREP_EMAT
+end
+
+rule R_1AMMOH_13_0
+when
+		Dans le set  1AMMOH avec la position 13
+then
+		LIGNE  21
+		//Les répétitions du groupe permettent d'enrichir la dotation de l'unité en consommables de type Munition
+end
+
+rule R_2SHORAD_14_0
+when
+		Dans le set  2SHORAD avec la position 14
+then
+		LIGNE  21
+		//Les répétitions du groupe de champs permettent de valoriser les dotations effectives et théoriques de l'unité en Equipements :
+		//- de type "type d'arme",
+		//- dont  la catégorie est "AD" (Air-defence) et la sous-catégorie est "ADMLSR" (Air-defence missile launcher, short range)
+end
+
+rule R_ESUBORD_11_0
+when
+		Dans le set  ESUBORD avec la position 11
+then
+		LIGNE  20/21
+end
+
+rule R_1FWPNS_12_0
+when
+		Dans le set  1FWPNS avec la position 12
+then
+		LIGNE  21
+		//Les répétitions du groupe permettent d'enrichir la dotation de l'unité en équipements de type Arme
+end
+
+rule R_ACTIVITY_22_0
+when
+		Dans le set  ACTIVITY avec la position 22
+then
+		LIGNE  21
+end
+
+rule R_DRCTN_23_0
+when
+		Dans le set  DRCTN avec la position 23
+then
+		LIGNE  134
+		Règle A_DRCTN
+end
+
+rule R_ORGID_24_0
+when
+		Dans le set  ORGID avec la position 24
+then
+		Règle A_SET_ORGID
+		Règle A_Comportement_Unite
+end
+
+rule R_ORGID_24_1
+when
+		Dans le set  ORGID avec la position 24
+then
+		Règle A_SET_ORGID
+		Règle A_Comportement_Unite
+end
+
+rule R_ORGID_24_2
+when
+		Dans le set  ORGID avec la position 24
+then
+		Règle A_SET_ORGID
+		Règle A_Comportement_Unite
+end
+
+rule R_INFOEVAL_26_0
+when
+		Dans le set  INFOEVAL avec la position 26
+then
+		LIGNE  140
+		Règle A_INFOEVAL_ACTIVITY
+		VI EstSujet{MPIA.AssociationActiviteLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.Confirmation = "REP" 
+end
+
+rule R_ORGIDSCE_27_0
+when
+		Dans le set  ORGIDSCE avec la position 27
+then
+		LIGNE  140
+end
+
+rule R_EORGBDRY_29_0
+when
+		Dans le set  EORGBDRY avec la position 29
+then
+		Règle A_Unite_Limite
+		Règle A_Comportement_Unite
+		//On ne crée pas l'unité droite (respectivement gauche) si tous les champs qui lui sont associés sont laissés vides.
+		//On ne créée pas une nouvelle unité si une autre unité existe déjà avec la même valeur de l'attribut MPIA.RacineOperationnelle.Nom, donnée dans les zones 1 ou 6.
+end
+
+rule R_EORGID_10_0
+when
+		Dans le set  EORGID avec la position 10
+then
+		Règle A_SET_EORGID
+		Règle A_Comportement_Unite
+end
+
+rule R_EORGID_10_1
+when
+		Dans le set  EORGID avec la position 10
+then
+		Règle A_SET_EORGID
+		Règle A_Comportement_Unite
+end
+
+rule R_INFOEVAL_30_0
+when
+		Dans le set  INFOEVAL avec la position 30
+then
+		LIGNE  179
+		VI EstSujet{MPIA.AssociationActiviteLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.Confirmation = "REP" 
+
+		//Les données des sets INFOEVAL et ORGIDSCE permettent de valoriser le rapport associé à l'entité MPIA.AssocInstanceObjetLocalisation reliant les entités MPIA.Limite et MPIA.Localisation traitées dans le segment LOCNF courant.
+end
+
+rule R_ORGIDSCE_31_0
+when
+		Dans le set  ORGIDSCE avec la position 31
+then
+		LIGNE  179
+end
+
+rule R_CMDRELI_9_0
+when
+		Dans le set  CMDRELI avec la position 9
+then
+		LIGNE  21
+end

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<airspace_control_order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="aco.xsd">
+<exercise_identification pos="1" set-seq="1">
+<exercise_nickname ff-pos="0">VALIDATION</exercise_nickname>
+<exercise_additional_identifier ff-pos="1">DRILL</exercise_additional_identifier>
+</exercise_identification>
+<message_identifier pos="2" set-seq="3">
+<message_text_format_identifier ff-pos="0">ACO</message_text_format_identifier>
+<originator ff-pos="1">UNDEFINED</originator>
+<month_name ff-pos="3">JAN</month_name>
+</message_identifier>
+<reference pos="3" set-seq="4">
+<serial_letter ff-pos="0">A</serial_letter>
+<message_text_format_identifier ff-pos="1">ACO</message_text_format_identifier>
+<originator ff-pos="2">2DB.FR</originator>
+<day_time_group_of_reference descriptor="DTIME" ff-pos="3">
+<day>10</day>
+<hour_time>10</hour_time>
+<minute_time>13</minute_time>
+</day_time_group_of_reference>
+<reference_serial_number ff-pos="4">001</reference_serial_number>
+<special_notation ff-pos="5">PASEP</special_notation>
+<sic ff-pos="6">ABC</sic>
+</reference>
+<airspace_control_order_identification_segment>
+<airspace_control_order_identification pos="4" set-seq="5">
+<name_of_area_of_validity ff-pos="0">ACO IDENTIFICATION</name_of_area_of_validity>
+</airspace_control_order_identification>
+<geodetic_datum pos="5" set-seq="6">
+<geodetic_datum ff-pos="0">W84</geodetic_datum>
+</geodetic_datum>
+<period_of_time pos="6" set-seq="7">
+<day_time_start ff-pos="0">
+<day>10</day>
+<hour_time>10</hour_time>
+<minute_time>03</minute_time>
+<time_zone>Z</time_zone>
+</day_time_start>
+<day_time_stop ff-pos="1">
+<day>11</day>
+<hour_time>10</hour_time>
+<minute_time>02</minute_time>
+<time_zone>Z</time_zone>
+</day_time_stop>
+</period_of_time>
+<period_of_time pos="7" set-seq="7">
+<day_time_start ff-pos="0">
+<day>12</day>
+<hour_time>10</hour_time>
+<minute_time>03</minute_time>
+<time_zone>Z</time_zone>
+</day_time_start>
+<day_time_stop ff-pos="1">
+<day>14</day>
+<hour_time>10</hour_time>
+<minute_time>03</minute_time>
+<time_zone>Z</time_zone>
+</day_time_stop>
+</period_of_time>
+<period_of_time pos="8" set-seq="7">
+<day_time_start ff-pos="0">
+<day>16</day>
+<hour_time>10</hour_time>
+<minute_time>03</minute_time>
+<time_zone>Z</time_zone>
+</day_time_start>
+<day_time_stop ff-pos="1">
+<day>20</day>
+<hour_time>10</hour_time>
+<minute_time>03</minute_time>
+<time_zone>Z</time_zone>
+</day_time_stop>
+</period_of_time>
+<aco_management_information pos="9" set-seq="8">
+<text_indicator ff-pos="0">ACO MANAGEMENT INFORMATION</text_indicator>
+<free_text ff-pos="1">TEXTE LIBRE</free_text>
+</aco_management_information>
+<airspace_control_means_status_segment>
+<airspace_control_means_status pos="10" set-seq="9">
+<airspace_control_means_status_update ff-pos="0">CHANG</airspace_control_means_status_update>
+</airspace_control_means_status>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification pos="11" set-seq="10">
+<type_of_airspace_control_means descriptor="ACM" ff-pos="0">REFPT</type_of_airspace_control_means>
+<airspace_control_means_identifying_designator descriptor="DESIG" ff-pos="1">AB123</airspace_control_means_identifying_designator>
+<type_of_airspace_shape ff-pos="2">POINT</type_of_airspace_shape>
+<airspace_usage descriptor="USE" ff-pos="3">CP</airspace_usage>
+</airspace_control_means_identification>
+<shape_point pos="12" set-seq="18">
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>46</latitude_degrees>
+<latitude_minute_angular>00</latitude_minute_angular>
+<latitude_second_angular>57</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>002</longitude_degrees>
+<longitude_minute_angular>30</longitude_minute_angular>
+<longitude_second_angular>20</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</shape_point>
+<vertical_dimension_of_the_effective_level pos="13" set-seq="21">
+<vertical_dimension_flight_level_to_flight_level descriptor="FLFL" ff-pos="0">
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>100</flight_level_number>
+<hyphen>-</hyphen>
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>900</flight_level_number>
+</vertical_dimension_flight_level_to_flight_level>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification pos="14" set-seq="10">
+<type_of_airspace_control_means descriptor="ACM" ff-pos="0">ADOA</type_of_airspace_control_means>
+<airspace_control_means_identifying_designator descriptor="DESIG" ff-pos="1">AB124</airspace_control_means_identifying_designator>
+<type_of_airspace_shape ff-pos="2">CIRCLE</type_of_airspace_shape>
+<airspace_usage descriptor="USE" ff-pos="3">CADA</airspace_usage>
+</airspace_control_means_identification>
+<shape_circle pos="15" set-seq="16">
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>46</latitude_degrees>
+<latitude_minute_angular>00</latitude_minute_angular>
+<latitude_second_angular>57</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>002</longitude_degrees>
+<longitude_minute_angular>31</longitude_minute_angular>
+<longitude_second_angular>31</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<radius_m_km_nm ff-pos="1">
+<context_quantity_0_to_1_decimal_pt_permitted_5_char_max>1350</context_quantity_0_to_1_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_m_km_nm>M</unit_of_linear_measurement_m_km_nm>
+</radius_m_km_nm>
+</shape_circle>
+<vertical_dimension_of_the_effective_level pos="16" set-seq="21">
+<vertical_dimension_flight_level_to_flight_level descriptor="FLFL" ff-pos="0">
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>150</flight_level_number>
+<hyphen>-</hyphen>
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>750</flight_level_number>
+</vertical_dimension_flight_level_to_flight_level>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification pos="17" set-seq="10">
+<type_of_airspace_control_means descriptor="ACM" ff-pos="0">ATC</type_of_airspace_control_means>
+<airspace_control_means_identifying_designator descriptor="DESIG" ff-pos="1">AB125</airspace_control_means_identifying_designator>
+<type_of_airspace_shape ff-pos="2">TRACK</type_of_airspace_shape>
+<airspace_usage descriptor="USE" ff-pos="3">ARWY</airspace_usage>
+</airspace_control_means_identification>
+<airspace_shape_track pos="18" set-seq="14">
+<track_leg ff-pos="0" header="LEG">01</track_leg>
+<geographic_position_lat_long_seconds ff-pos="1" header="LEG-BEGIN">
+<latitude_degrees>46</latitude_degrees>
+<latitude_minute_angular>00</latitude_minute_angular>
+<latitude_second_angular>58</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>002</longitude_degrees>
+<longitude_minute_angular>32</longitude_minute_angular>
+<longitude_second_angular>46</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<geographic_position_lat_long_seconds_1 ff-pos="2" header="LEG-END">
+<latitude_degrees>46</latitude_degrees>
+<latitude_minute_angular>00</latitude_minute_angular>
+<latitude_second_angular>59</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>002</longitude_degrees>
+<longitude_minute_angular>35</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds_1>
+<track_width ff-pos="3" header="LEG-WIDTH">010KML-10KMR</track_width>
+<vertical_dimension_base_ref_point_to_relative_altitude descriptor="A" ff-pos="4" header="MIN-MAXALT">MSL-555AMSL</vertical_dimension_base_ref_point_to_relative_altitude>
+</airspace_shape_track>
+</airspace_control_means_identification_segment>
+</airspace_control_means_status_segment>
+</airspace_control_order_identification_segment>
+</airspace_control_order>

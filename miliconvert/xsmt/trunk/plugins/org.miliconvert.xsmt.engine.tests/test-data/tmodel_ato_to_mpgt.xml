@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tmodel xmlns="http://www.miliconvert.org/xsd/xsmt/tmodel.xsd">
+
+	<schemas>
+		<schema id="schema-0" path="test-data/bl11/ato/messages.xsd" />
+		<schema id="schema-1" path="test-data/mpgt/mpgt_v315.xsd" />
+	</schemas>
+	
+	<functions>
+		<function id="func-0"
+			impl="org.miliconvert.xsmt.mpgt.Adatp3ToMPGT" />
+	</functions>
+	
+	<links>
+		<link end="fid:func-0,0" start="xsd:schema-0:/air_tasking_order" />
+		<link end="xsd:schema-1:/MPIA_Message" start="fid:func-0" />
+	</links>
+
+</tmodel>

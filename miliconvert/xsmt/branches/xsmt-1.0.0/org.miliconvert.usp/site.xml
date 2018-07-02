@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.miliconvert.xsmt.core_1.0.0.200705161838.jar" id="org.miliconvert.xsmt.core" version="1.0.0.200705161838">
+      <category name="Miliconvert"/>
+   </feature>
+   <feature url="features/org.miliconvert.xsmt_1.0.0.200705161838.jar" id="org.miliconvert.xsmt" version="1.0.0.200705161838">
+      <category name="Miliconvert"/>
+   </feature>
+   <category-def name="Miliconvert" label="Miliconvert"/>
+</site>

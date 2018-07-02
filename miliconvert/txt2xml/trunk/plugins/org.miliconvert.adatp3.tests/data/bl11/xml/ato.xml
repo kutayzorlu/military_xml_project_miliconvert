@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?><air_tasking_order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ato/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">ATO</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<acknowledge set-id="aknldg" set-seq="5">
+<acknowledge_requirement_indicator alt="A" ff-seq="1" ffirn-fudn="1027-5">YES</acknowledge_requirement_indicator>
+<instructions_for_or_force_or_unit_required_to_acknowledge>
+<instructions_for_acknowledging alt="A" ff-seq="2" ffirn-fudn="1357-7">MIDDLEBURGH</instructions_for_acknowledging>
+</instructions_for_or_force_or_unit_required_to_acknowledge>
+</acknowledge>
+<message_cancellation_with_new_information_provided set-id="canx" set-seq="6">
+<message_text_format_id>
+<message_text_format_identifier alt="A" ff-seq="1" ffirn-fudn="1018-2">SARREQ</message_text_format_identifier>
+</message_text_format_id>
+<originator alt="A" ff-seq="2" ffirn-fudn="1029-1">CTG24.1</originator>
+<time_of_reference>
+<day_time_of_reference alt="A" ff-seq="3" ffirn-fudn="2000-34">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">00</hour_time>
+<minute_time ffirn-fudn="1002-1">02</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_reference>
+</time_of_reference>
+<serial_number>
+<message_serial_number alt="A" ff-seq="4" ffirn-fudn="1012-7">1234567</message_serial_number>
+</serial_number>
+</message_cancellation_with_new_information_provided>
+<effective_date_time_frame set-id="timefram" set-seq="7">
+<date_time_group_of_start>
+<dtg_of_start_4_digit_yr alt="A" descriptor="FROM" ff-seq="1" ffirn-fudn="2033-29">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">00</hour_time>
+<minute_time ffirn-fudn="1002-1">01</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+<year ffirn-fudn="1005-7">1993</year>
+</dtg_of_start_4_digit_yr>
+</date_time_group_of_start>
+<date_time_group_of_stop>
+<dtg_of_stop_4_digit_yr alt="A" descriptor="TO" ff-seq="2" ffirn-fudn="2033-30">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">59</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+<year ffirn-fudn="1005-7">1993</year>
+</dtg_of_stop_4_digit_yr>
+</date_time_group_of_stop>
+<as_of_dtg_4_digit_yr alt="A" descriptor="ASOF" ff-seq="3" ffirn-fudn="2033-54">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">20</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+<year ffirn-fudn="1005-7">1993</year>
+</as_of_dtg_4_digit_yr>
+</effective_date_time_frame>
+<heading_information set-id="heading" set-seq="8">
+<heading_information alt="A" ff-seq="1" ffirn-fudn="1370-1">ALLOTMENT</heading_information>
+</heading_information>
+<theater_resource_assets set-id="resasset" set-seq="9">
+<resource_unit_designator>
+<tasked_unit_designator alt="A" descriptor="UNIT" ff-seq="1" ffirn-fudn="1028-41">32ADA</tasked_unit_designator>
+</resource_unit_designator>
+<resource_location>
+<geographic_position_utm_100_metre alt="B" descriptor="UTMO" ff-seq="2" ffirn-fudn="2087-1">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">W</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">L</utm_100000_metre_square_row>
+<utm_100_metre_easting ffirn-fudn="1239-1">123</utm_100_metre_easting>
+<utm_100_metre_northing ffirn-fudn="1240-1">123</utm_100_metre_northing>
+</geographic_position_utm_100_metre>
+</resource_location>
+<group_of_fields>
+<number_of_assets_000_999 alt="A" ff-seq="3" ffirn-fudn="1044-321">003</number_of_assets_000_999>
+<type_of_resource>
+<name_of_assets alt="C" descriptor="ASSET" ff-seq="4" ffirn-fudn="1022-108">HAWK</name_of_assets>
+</type_of_resource>
+</group_of_fields>
+</theater_resource_assets>
+<theater_resource_assets set-id="resasset" set-seq="9">
+<resource_unit_designator>
+<tasked_unit_designator alt="A" descriptor="UNIT" ff-seq="1" ffirn-fudn="1028-41">35FW</tasked_unit_designator>
+</resource_unit_designator>
+<resource_location>
+<icao_base_code alt="A" descriptor="ICAO" ff-seq="2" ffirn-fudn="1125-2">EDAZ</icao_base_code>
+</resource_location>
+<group_of_fields>
+<number_of_assets_000_999 alt="A" ff-seq="3" ffirn-fudn="1044-321">024</number_of_assets_000_999>
+<type_of_resource>
+<aircraft_type_and_model alt="A" descriptor="ACTYP" ff-seq="4" ffirn-fudn="1015-20">F15E</aircraft_type_and_model>
+</type_of_resource>
+</group_of_fields>
+<group_of_fields>
+<number_of_assets_000_999 alt="A" ff-seq="3" ffirn-fudn="1044-321">024</number_of_assets_000_999>
+<type_of_resource>
+<aircraft_type_and_model alt="A" descriptor="ACTYP" ff-seq="4" ffirn-fudn="1015-20">F15C</aircraft_type_and_model>
+</type_of_resource>
+</group_of_fields>
+</theater_resource_assets>
+<force_allotment_data set-id="7allot" set-seq="10">
+<requesting_component_command alt="A" ff-seq="1" ffirn-fudn="1037-4" header="REQCMD">III CORPS</requesting_component_command>
+<request_identifier alt="A" ff-seq="2" ffirn-fudn="1012-144" header="REQNO">1F785I</request_identifier>
+<request_status_indicator_abbreviated alt="A" ff-seq="3" ffirn-fudn="1570-3" header="STS">APP</request_status_indicator_abbreviated>
+<mission_number alt="A" ff-seq="4" ffirn-fudn="1012-69" header="MSNNO">0175D</mission_number>
+<complying_component_command alt="A" ff-seq="5" ffirn-fudn="1037-5" header="COMCMD">CVN 68 VA-165</complying_component_command>
+<revised_priority alt="A" ff-seq="6" ffirn-fudn="1076-9" header="RP">1D</revised_priority>
+<comment_abbreviated alt="A" ff-seq="7" ffirn-fudn="1357-25" header="CMNT">SUB OK</comment_abbreviated>
+</force_allotment_data>
+<cancelled_mission set-id="cnxmsn" set-seq="11">
+<geographic_entities_notional_and_actual alt="A" ff-seq="1" ffirn-fudn="1026-16">SL</geographic_entities_notional_and_actual>
+<tasked_unit_designator alt="A" ff-seq="2" ffirn-fudn="1028-41">63 RS</tasked_unit_designator>
+<mission_number alt="A" ff-seq="3" ffirn-fudn="1012-69">CBS117</mission_number>
+<mission_number alt="A" ff-seq="3" ffirn-fudn="1012-69">03F818</mission_number>
+</cancelled_mission>
+<heading_information_1 set-id="heading" set-seq="12">
+<heading_information alt="A" ff-seq="1" ffirn-fudn="1370-1">TASKING</heading_information>
+</heading_information_1>
+<tasked_country_segment>
+<tasked_country set-id="tskcntry" set-seq="13">
+<geographic_entities_notional_and_actual alt="A" ff-seq="1" ffirn-fudn="1026-16">PS</geographic_entities_notional_and_actual>
+</tasked_country>
+<service_tasked_segment>
+<service_tasked set-id="svctask" set-seq="14">
+<armed_service_code alt="A" ff-seq="1" ffirn-fudn="1107-2">F</armed_service_code>
+</service_tasked>
+<tasked_unit_and_location_segment>
+<tasked_unit_and_location set-id="taskunit" set-seq="15">
+<tasked_unit_designator alt="A" ff-seq="1" ffirn-fudn="1028-41">AMPHIB5DIV</tasked_unit_designator>
+<tasked_unit_location>
+<place_name alt="B" descriptor="NAME" ff-seq="2" ffirn-fudn="1022-170">BREMEN</place_name>
+</tasked_unit_location>
+</tasked_unit_and_location>
+<point_of_contact_information set-id="poc" set-seq="16">
+<contact_name alt="A" ff-seq="1" ffirn-fudn="1022-7">F. BURNS</contact_name>
+<rank_or_position alt="A" ff-seq="2" ffirn-fudn="1046-2">MAJ</rank_or_position>
+<unit_identifier_or_call_sign>
+<unit_designator alt="A" ff-seq="3" ffirn-fudn="1028-43">4077 MASH</unit_designator>
+</unit_identifier_or_call_sign>
+<poc_location>
+<location_name alt="C" descriptor="LOC" ff-seq="4" ffirn-fudn="1022-4">CAMP SWAMPY</location_name>
+</poc_location>
+<telephone_number_or_frequency>
+<non_secure_telephone alt="A" descriptor="TEL" ff-seq="5" ffirn-fudn="1361-3">804-555-4142</non_secure_telephone>
+</telephone_number_or_frequency>
+<telephone_number_or_frequency>
+<secure_telephone_number alt="B" descriptor="SECTEL" ff-seq="5" ffirn-fudn="1361-4">DSN 555-4311</secure_telephone_number>
+</telephone_number_or_frequency>
+</point_of_contact_information>
+<missile_target_location_segment>
+<missile_target_location set-id="mtgtloc" set-seq="17">
+<primary_alternate_target_designator alt="A" ff-seq="1" ffirn-fudn="1076-13">P</primary_alternate_target_designator>
+<mission_number alt="A" ff-seq="2" ffirn-fudn="1012-69">23463434</mission_number>
+<time_on_target>
+<day_time_on_target_to_the_second_zulu alt="B" descriptor="TOTS" ff-seq="3" ffirn-fudn="2483-2">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<second_time ffirn-fudn="1683-1">35</second_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+</day_time_on_target_to_the_second_zulu>
+</time_on_target>
+<net_time>
+<not_earlier_than_day_time alt="A" descriptor="NET" ff-seq="4" ffirn-fudn="2000-88">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</not_earlier_than_day_time>
+</net_time>
+<not_later_than_day_time alt="A" descriptor="NLT" ff-seq="5" ffirn-fudn="2000-87">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">35</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</not_later_than_day_time>
+<target_identifier>
+<target_position_identifier alt="B" descriptor="ID" ff-seq="6" ffirn-fudn="1416-2">1234FA1234ZZ</target_position_identifier>
+</target_identifier>
+<target_type>
+<non_ship_target_type alt="A" ff-seq="7" ffirn-fudn="1650-6">FTAFLD</non_ship_target_type>
+</target_type>
+<type_of_cruise_missile alt="A" ff-seq="8" ffirn-fudn="1407-27">C</type_of_cruise_missile>
+<number_of_missiles alt="A" ff-seq="9" ffirn-fudn="1044-323">30</number_of_missiles>
+<target_priority_literal alt="A" ff-seq="10" ffirn-fudn="1076-11">1A</target_priority_literal>
+<component_target_identifier alt="A" ff-seq="11" ffirn-fudn="1416-5">N4792601</component_target_identifier>
+<desired_mean_point_of_impact>
+<geographic_position_lat_long_seconds alt="E" descriptor="DMPIS" ff-seq="12" ffirn-fudn="2024-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">25</latitude_second_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">25</longitude_second_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</desired_mean_point_of_impact>
+<geodetic_datum alt="A" ff-seq="13" ffirn-fudn="1195-1">NORTH AMERICAN 1983</geodetic_datum>
+<aimpoint_suffix alt="A" ff-seq="14" ffirn-fudn="1012-244">EB</aimpoint_suffix>
+<aimpoint_suffix alt="A" ff-seq="14" ffirn-fudn="1012-244">AD</aimpoint_suffix>
+<aimpoint_suffix alt="A" ff-seq="14" ffirn-fudn="1012-244">BZ</aimpoint_suffix>
+</missile_target_location>
+<request_number set-id="reqno" set-seq="18">
+<request_identifier alt="A" ff-seq="1" ffirn-fudn="1012-144">3AR001</request_identifier>
+<request_identifier alt="A" ff-seq="1" ffirn-fudn="1012-144">3AF002</request_identifier>
+</request_number>
+</missile_target_location_segment>
+<air_defence_artillery_ada_tasking_segment>
+<air_defence_artillery_ada_tasking set-id="adatsk" set-seq="19">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69">7AD001</mission_number>
+<number_of_weapons alt="A" ff-seq="2" ffirn-fudn="1044-67">2</number_of_weapons>
+<ordnance_weapon_type_surface_to_air alt="A" ff-seq="3" ffirn-fudn="1407-2">HAWK</ordnance_weapon_type_surface_to_air>
+<threat_direction_in_degrees_true_magnetic_or_relative alt="A" ff-seq="4" ffirn-fudn="2368-4">
+<context_quantity_000_359 ffirn-fudn="1023-2">060</context_quantity_000_359>
+<angular_measurement_reference_true_magnetic_or_relative ffirn-fudn="1024-6">T</angular_measurement_reference_true_magnetic_or_relative>
+</threat_direction_in_degrees_true_magnetic_or_relative>
+<air_alert_status alt="A" ff-seq="5" ffirn-fudn="1798-2">30M</air_alert_status>
+<day_time_start alt="A" ff-seq="6" ffirn-fudn="2000-14">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_start>
+<day_time_of_termination alt="A" ff-seq="7" ffirn-fudn="2000-10">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_termination>
+</air_defence_artillery_ada_tasking>
+<air_defence_artillery_ada_defence set-id="defend" set-seq="20">
+<type_of_air_defence_artillery_mission alt="A" ff-seq="1" ffirn-fudn="1285-27">CMO</type_of_air_defence_artillery_mission>
+<upper_altitude_in_hundreds_of_feet alt="A" ff-seq="2" ffirn-fudn="1255-11">300</upper_altitude_in_hundreds_of_feet>
+<radius_nautical_miles alt="A" ff-seq="3" ffirn-fudn="2276-1">
+<context_quantity_1_9999 ffirn-fudn="1023-12">35</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</radius_nautical_miles>
+<ada_location>
+<geographic_position_lat_long_minutes alt="D" descriptor="LATM" ff-seq="4" ffirn-fudn="2023-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</ada_location>
+</air_defence_artillery_ada_defence>
+<emission_control_plan set-id="emcon" set-seq="21">
+<group_of_fields>
+<emission_control_plan_identifier>
+<emission_control_plan_phonetic_identifier alt="A" ff-seq="1" ffirn-fudn="1128-11">OSCAR</emission_control_plan_phonetic_identifier>
+</emission_control_plan_identifier>
+<start_day_tyme>
+<day_time_start alt="A" ff-seq="2" ffirn-fudn="2000-14">
+<day ffirn-fudn="1000-1">23</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_start>
+</start_day_tyme>
+<stop_day_time>
+<day_time_stop alt="A" ff-seq="3" ffirn-fudn="2000-15">
+<day ffirn-fudn="1000-1">25</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_stop>
+</stop_day_time>
+</group_of_fields>
+<group_of_fields>
+<emission_control_plan_identifier>
+<emission_control_plan_phonetic_identifier alt="A" ff-seq="1" ffirn-fudn="1128-11">BRAVO</emission_control_plan_phonetic_identifier>
+</emission_control_plan_identifier>
+<start_day_tyme>
+<day_time_start alt="A" ff-seq="2" ffirn-fudn="2000-14">
+<day ffirn-fudn="1000-1">26</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_start>
+</start_day_tyme>
+<stop_day_time>
+<day_time_stop alt="A" ff-seq="3" ffirn-fudn="2000-15">
+<day ffirn-fudn="1000-1">27</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_stop>
+</stop_day_time>
+</group_of_fields>
+</emission_control_plan>
+<control_of_air_assets set-id="controla" set-seq="22">
+<type_of_aircraft_control_agency alt="A" ff-seq="1" ffirn-fudn="1395-5">CRC</type_of_aircraft_control_agency>
+<control_agency_call_sign_extended alt="A" ff-seq="2" ffirn-fudn="1129-30">INVERT</control_agency_call_sign_extended>
+<primary_frequency>
+<primary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="PFREQ" ff-seq="3" ffirn-fudn="1068-13">342.5</primary_frequency_in_megahertz__0000001___99999999>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_designator alt="B" descriptor="SDESIG" ff-seq="4" ffirn-fudn="1396-3">TAD02</secondary_frequency_designator>
+</secondary_frequency>
+<report_in_point>
+<location_name alt="A" descriptor="NAME" ff-seq="5" ffirn-fudn="1022-4">ALFA</location_name>
+</report_in_point>
+</control_of_air_assets>
+</air_defence_artillery_ada_tasking_segment>
+<air_surveillance_and_control_data set-id="asacsdat" set-seq="23">
+<type_of_aircraft_control_agency alt="A" ff-seq="1" ffirn-fudn="1395-5">CRC</type_of_aircraft_control_agency>
+<call_sign_of_control_agency alt="A" ff-seq="2" ffirn-fudn="1129-10">ALLEN</call_sign_of_control_agency>
+<tasked_equipment alt="A" ff-seq="3" ffirn-fudn="1135-24">AN-TPS-43A</tasked_equipment>
+<aerial_mission_type alt="A" ff-seq="4" ffirn-fudn="1285-29">AEW</aerial_mission_type>
+<state_of_emission alt="A" ff-seq="5" ffirn-fudn="1584-4">ECHO TWO</state_of_emission>
+<operational_control_authority alt="A" ff-seq="6" ffirn-fudn="1028-8">AOC</operational_control_authority>
+</air_surveillance_and_control_data>
+<control_information set-id="7control" set-seq="24">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69" header="MSNNO">D123EF</mission_number>
+<aircraft_call_sign_abbreviated alt="A" ff-seq="2" ffirn-fudn="1129-34" header="ACSIGN">HAMMER 21</aircraft_call_sign_abbreviated>
+<number_of_aircraft_0_99 alt="A" ff-seq="3" ffirn-fudn="1044-322" header="NO">4</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="AC" ff-seq="4" ffirn-fudn="1015-20" header="ACTYPE">FA18</aircraft_type_and_model>
+</type_of_aircraft>
+<aerial_mission_type alt="A" ff-seq="5" ffirn-fudn="1285-29" header="MSNTY">CAS</aerial_mission_type>
+<day_time_on_station alt="A" ff-seq="6" ffirn-fudn="2000-33" header="TOSTA">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_on_station>
+<report_in_point>
+<geographic_position_lat_long_minutes alt="A" ff-seq="7" ffirn-fudn="2023-1" header="RIP">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</report_in_point>
+</control_information>
+<aircraft_mission_data_segment>
+<aircraft_mission_data set-id="amsndat" set-seq="25">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69">D123HA</mission_number>
+<package_identification alt="A" ff-seq="3" ffirn-fudn="1028-38">ZZ</package_identification>
+<mission_commander_designator alt="A" ff-seq="4" ffirn-fudn="1515-5">MC</mission_commander_designator>
+<primary_aerial_mission_type alt="A" ff-seq="5" ffirn-fudn="1285-31">CAS</primary_aerial_mission_type>
+<secondary_aerial_mission_type alt="A" ff-seq="6" ffirn-fudn="1285-32">SEAD</secondary_aerial_mission_type>
+</aircraft_mission_data>
+<individual_aircraft_mission_data_segment>
+<individual_aircraft_mission_data set-id="msnacft" set-seq="26">
+<number_of_aircraft_0_99 alt="A" ff-seq="1" ffirn-fudn="1044-322">2</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="ACTYP" ff-seq="2" ffirn-fudn="1015-20">FA18</aircraft_type_and_model>
+</type_of_aircraft>
+<aircraft_call_sign_abbreviated alt="A" ff-seq="3" ffirn-fudn="1129-34">HAMMER 53</aircraft_call_sign_abbreviated>
+<primary_configuration_code alt="A" ff-seq="4" ffirn-fudn="1012-258">2HARM</primary_configuration_code>
+<secondary_configuration_code alt="A" ff-seq="5" ffirn-fudn="1012-259">2S2WG</secondary_configuration_code>
+<iff_sif_mode_and_code_non_hyphenated alt="A" ff-seq="6" ffirn-fudn="2500-1">
+<iff_sif_modes_that_have_iff_sif_codes ffirn-fudn="1302-5">2</iff_sif_modes_that_have_iff_sif_codes>
+<iff_sif_code ffirn-fudn="1303-1">0153</iff_sif_code>
+</iff_sif_mode_and_code_non_hyphenated>
+<iff_sif_mode_and_code_non_hyphenated alt="A" ff-seq="6" ffirn-fudn="2500-1">
+<iff_sif_modes_that_have_iff_sif_codes ffirn-fudn="1302-5">3</iff_sif_modes_that_have_iff_sif_codes>
+<iff_sif_code ffirn-fudn="1303-1">0153</iff_sif_code>
+</iff_sif_mode_and_code_non_hyphenated>
+</individual_aircraft_mission_data>
+<aerial_refuelling_information set-id="arinfo" set-seq="27">
+<aircraft_call_sign_abbreviated alt="A" ff-seq="1" ffirn-fudn="1129-34">EXXON 11</aircraft_call_sign_abbreviated>
+<mission_number alt="A" ff-seq="2" ffirn-fudn="1012-69">AR123HA</mission_number>
+<iff_sif_mode_and_code_non_hyphenated alt="A" ff-seq="3" ffirn-fudn="2500-1">
+<iff_sif_modes_that_have_iff_sif_codes ffirn-fudn="1302-5">3</iff_sif_modes_that_have_iff_sif_codes>
+<iff_sif_code ffirn-fudn="1303-1">7700</iff_sif_code>
+</iff_sif_mode_and_code_non_hyphenated>
+<air_refueling_control_point>
+<location_name alt="A" descriptor="NAME" ff-seq="4" ffirn-fudn="1022-4">BUICK</location_name>
+</air_refueling_control_point>
+<altitude_in_hundreds_of_feet_0_999 alt="A" ff-seq="5" ffirn-fudn="1255-14">170</altitude_in_hundreds_of_feet_0_999>
+<day_time_of_air_refuelling_control alt="A" descriptor="ARCT" ff-seq="6" ffirn-fudn="2000-81">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_air_refuelling_control>
+<day_time_and_month_of_end_air_refuelling alt="A" descriptor="NDAR" ff-seq="7" ffirn-fudn="2030-45">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+</day_time_and_month_of_end_air_refuelling>
+<fuel_in_thousands_of_pounds_decimal_point_permitted alt="A" descriptor="KLBS" ff-seq="8" ffirn-fudn="1578-4">15.0</fuel_in_thousands_of_pounds_decimal_point_permitted>
+<primary_frequency>
+<primary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="PFREQ" ff-seq="9" ffirn-fudn="1068-13">243.0</primary_frequency_in_megahertz__0000001___99999999>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="SFREQ" ff-seq="10" ffirn-fudn="1068-14">121.5</secondary_frequency_in_megahertz__0000001___99999999>
+</secondary_frequency>
+<type_of_refueling_aircraft>
+<refuelling_aircraft_type alt="A" descriptor="ACTYP" ff-seq="11" ffirn-fudn="1015-19">KC135R</refuelling_aircraft_type>
+</type_of_refueling_aircraft>
+<aerial_refuelling_system_specific alt="A" ff-seq="12" ffirn-fudn="1579-2">BOM</aerial_refuelling_system_specific>
+<cell_sequence_numbers>
+<cell_sequence_numbers alt="B" ff-seq="14" ffirn-fudn="2436-1">
+<cell_sequence_number ffirn-fudn="1012-253">1</cell_sequence_number>
+<punctuation_mark_comma ffirn-fudn="1025-8">,</punctuation_mark_comma>
+<cell_sequence_number_1 ffirn-fudn="1012-253">3</cell_sequence_number_1>
+</cell_sequence_numbers>
+</cell_sequence_numbers>
+<tacan_channel_receiver_and_tanker alt="A" ff-seq="15" ffirn-fudn="2486-1">
+<receiver_tacan_channel ffirn-fudn="1012-255">16</receiver_tacan_channel>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<tanker_tacan_channel ffirn-fudn="1012-256">72</tanker_tacan_channel>
+</tacan_channel_receiver_and_tanker>
+<beacon alt="A" ff-seq="16" ffirn-fudn="2497-1">
+<context_quantity_0_6 ffirn-fudn="1023-86">4</context_quantity_0_6>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<context_quantity_0_6_1 ffirn-fudn="1023-86">3</context_quantity_0_6_1>
+<hyphen_1 ffirn-fudn="1025-2">-</hyphen_1>
+<context_quantity_0_6_2 ffirn-fudn="1023-86">1</context_quantity_0_6_2>
+</beacon>
+</aerial_refuelling_information>
+</individual_aircraft_mission_data_segment>
+<unit_remarks_reference set-id="urmkref" set-seq="28">
+<remark_identification alt="A" ff-seq="1" ffirn-fudn="1102-10">A</remark_identification>
+<remark_identification alt="A" ff-seq="1" ffirn-fudn="1102-10">B</remark_identification>
+<remark_identification alt="A" ff-seq="1" ffirn-fudn="1102-10">E</remark_identification>
+<remark_identification alt="A" ff-seq="1" ffirn-fudn="1102-10">G</remark_identification>
+</unit_remarks_reference>
+<route set-id="route" set-seq="29">
+<group_of_fields>
+<day_time_of_position>
+<day_time_of_position alt="A" ff-seq="1" ffirn-fudn="2000-18">
+<day ffirn-fudn="1000-1">18</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_position>
+</day_time_of_position>
+<route_point_name>
+<position_or_point_name alt="A" descriptor="NAME" ff-seq="2" ffirn-fudn="1022-18">SENBACH</position_or_point_name>
+</route_point_name>
+<track_route_type alt="A" ff-seq="3" ffirn-fudn="1372-1">QR</track_route_type>
+</group_of_fields>
+</route>
+<mission_routing set-id="1msnrte" set-seq="30">
+<related_route_name alt="A" ff-seq="1" ffirn-fudn="1022-301" header="NAME">BLUE 23</related_route_name>
+<day_time_and_month_of_route_entry alt="A" ff-seq="2" ffirn-fudn="2030-47" header="ENTRY TIME">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+</day_time_and_month_of_route_entry>
+<entry_point_name alt="A" ff-seq="3" ffirn-fudn="1022-240" header="ENTRY PT">ALFA</entry_point_name>
+<day_time_of_route_exit alt="A" ff-seq="4" ffirn-fudn="2000-94" header="EXIT TIME">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">15</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_route_exit>
+<exit_point_name alt="A" ff-seq="5" ffirn-fudn="1022-233" header="EXIT PT">CHARLIE</exit_point_name>
+<true_airspeed_in_knots alt="A" ff-seq="6" ffirn-fudn="1061-14" header="TAS">370</true_airspeed_in_knots>
+</mission_routing>
+<package_data set-id="9pkgdat" set-seq="31">
+<package_identification alt="A" ff-seq="1" ffirn-fudn="1028-38" header="PKGID">ZZ</package_identification>
+<tasked_unit alt="A" ff-seq="2" ffirn-fudn="1028-10" header="UNIT">123 FS</tasked_unit>
+<mission_number alt="A" ff-seq="3" ffirn-fudn="1012-69" header="MSNNO">123DAH</mission_number>
+<primary_aerial_mission_type alt="A" ff-seq="4" ffirn-fudn="1285-31" header="PMSN">CAS</primary_aerial_mission_type>
+<number_of_aircraft_0_99 alt="A" ff-seq="5" ffirn-fudn="1044-322" header="NO">4</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="AC" ff-seq="6" ffirn-fudn="1015-20" header="ACTYPE">FA18</aircraft_type_and_model>
+</type_of_aircraft>
+<aircraft_call_sign_abbreviated alt="A" ff-seq="7" ffirn-fudn="1129-34" header="ACSIGN">HAMMER 12</aircraft_call_sign_abbreviated>
+</package_data>
+<package_data set-id="9pkgdat" set-seq="31">
+<package_identification alt="A" ff-seq="1" ffirn-fudn="1028-38" header="PKGID">AA</package_identification>
+<tasked_unit alt="A" ff-seq="2" ffirn-fudn="1028-10" header="UNIT">37 AS</tasked_unit>
+<mission_number alt="A" ff-seq="3" ffirn-fudn="1012-69" header="MSNNO">ABC123</mission_number>
+<primary_aerial_mission_type alt="A" ff-seq="4" ffirn-fudn="1285-31" header="PMSN" xsi:nil="true"/>
+<number_of_aircraft_0_99 alt="A" ff-seq="5" ffirn-fudn="1044-322" header="NO">2</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="AC" ff-seq="6" ffirn-fudn="1015-20" header="ACTYPE">C130E</aircraft_type_and_model>
+</type_of_aircraft>
+<aircraft_call_sign_abbreviated alt="A" ff-seq="7" ffirn-fudn="1129-34" header="ACSIGN">HERKY 45</aircraft_call_sign_abbreviated>
+</package_data>
+<package_commander set-id="pkgcmd" set-seq="32">
+<package_identification alt="A" ff-seq="1" ffirn-fudn="1028-38">ZZ</package_identification>
+<tasked_unit alt="A" ff-seq="2" ffirn-fudn="1028-10">123 FS</tasked_unit>
+<mission_number alt="A" ff-seq="3" ffirn-fudn="1012-69">123DAH</mission_number>
+<aircraft_call_sign_abbreviated alt="A" ff-seq="4" ffirn-fudn="1129-34">HAMMER 12</aircraft_call_sign_abbreviated>
+</package_commander>
+<aircraft_mission_location_segment>
+<aircraft_mission_location set-id="amsnloc" set-seq="33">
+<day_time_and_month_of_start alt="A" ff-seq="1" ffirn-fudn="2030-3">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+</day_time_and_month_of_start>
+<day_time_and_month_of_stop alt="A" ff-seq="2" ffirn-fudn="2030-4">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">20</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+</day_time_and_month_of_stop>
+<location_name alt="A" ff-seq="3" ffirn-fudn="1022-4">MISTY ORBIT</location_name>
+<altitude_in_hundreds_of_feet_0_999 alt="A" ff-seq="4" ffirn-fudn="1255-14">210</altitude_in_hundreds_of_feet_0_999>
+<mission_priority_literal alt="A" ff-seq="5" ffirn-fudn="1076-12">1A</mission_priority_literal>
+<location>
+<geographic_position_lat_long_minutes alt="A" descriptor="LATM" ff-seq="6" ffirn-fudn="2023-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</location>
+<location>
+<position_or_point_name alt="D" descriptor="NAME" ff-seq="6" ffirn-fudn="1022-18">PT ALFA</position_or_point_name>
+</location>
+</aircraft_mission_location>
+</aircraft_mission_location_segment>
+<aircraft_mission_location_segment>
+<ship_target_data set-id="shiptgt" set-seq="35">
+<time_on_target>
+<day_time_and_month_tasked_on_target alt="A" descriptor="TOT" ff-seq="1" ffirn-fudn="2030-41">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+</day_time_and_month_tasked_on_target>
+</time_on_target>
+<not_earlier_than_day_time_and_month alt="A" descriptor="NET" ff-seq="2" ffirn-fudn="2030-46">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">20</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+</not_earlier_than_day_time_and_month>
+<nlt_time>
+<not_later_than_day_time alt="A" descriptor="NLT" ff-seq="3" ffirn-fudn="2000-87">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</not_later_than_day_time>
+</nlt_time>
+<ship_target_identity alt="A" ff-seq="4" ffirn-fudn="1416-6">HOS</ship_target_identity>
+<ship_type_category alt="A" ff-seq="5" ffirn-fudn="1036-8">CG</ship_type_category>
+<special_hull_number alt="A" ff-seq="6" ffirn-fudn="1012-245">123</special_hull_number>
+<ship_name_abbreviated alt="A" ff-seq="7" ffirn-fudn="1022-243">VIRGINIA</ship_name_abbreviated>
+<target_priority_identifier alt="A" ff-seq="8" ffirn-fudn="1076-8">1</target_priority_identifier>
+<target_priority_literal alt="A" ff-seq="9" ffirn-fudn="1076-11">1A</target_priority_literal>
+<day_time_of_position alt="A" ff-seq="10" ffirn-fudn="2000-18">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_position>
+<ship_location>
+<location_deciseconds alt="C" descriptor="LATDS" ff-seq="11" ffirn-fudn="2187-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">25</latitude_second_angular>
+<latitude_decisecond_angular ffirn-fudn="1364-2">.3</latitude_decisecond_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">25</longitude_second_angular>
+<longitude_decisecond_angular ffirn-fudn="1364-3">.7</longitude_decisecond_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</location_deciseconds>
+</ship_location>
+<component_target_identifier alt="A" ff-seq="12" ffirn-fudn="1416-5">N4792618</component_target_identifier>
+<course_in_degrees_true alt="A" ff-seq="13" ffirn-fudn="1439-4">235</course_in_degrees_true>
+<speed_in_knots_decimal_prohibited alt="A" ff-seq="14" ffirn-fudn="1061-16">25</speed_in_knots_decimal_prohibited>
+</ship_target_data>
+</aircraft_mission_location_segment>
+<aircraft_mission_location_segment>
+<air_movement set-id="airmove" set-seq="36">
+<leg_identification_number alt="A" ff-seq="1" ffirn-fudn="1012-247">1</leg_identification_number>
+<mission_number alt="A" ff-seq="2" ffirn-fudn="1012-69">D171HA</mission_number>
+<mission_leg_identifier>
+<specified_geolocation_code alt="B" ff-seq="3" ffirn-fudn="1125-11">KPOB</specified_geolocation_code>
+</mission_leg_identifier>
+<crew_type alt="A" ff-seq="4" ffirn-fudn="1806-1">B</crew_type>
+<airlift_activity_purpose alt="A" ff-seq="6" ffirn-fudn="2499-1">
+<reason_for_stop ffirn-fudn="1805-2">O</reason_for_stop>
+<alternate_purpose_for_airlift_activity ffirn-fudn="1805-3">F</alternate_purpose_for_airlift_activity>
+<deviation_reason ffirn-fudn="1805-4">N</deviation_reason>
+</airlift_activity_purpose>
+<departure_time>
+<julian_day_time_of_departure alt="B" ff-seq="7" ffirn-fudn="2484-2">
+<julian_day ffirn-fudn="1792-1">045</julian_day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">55</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</julian_day_time_of_departure>
+</departure_time>
+<requirement_number alt="A" ff-seq="8" ffirn-fudn="1012-248">ABCD99</requirement_number>
+<mission_priority_identifier alt="A" ff-seq="9" ffirn-fudn="1076-10">1A1</mission_priority_identifier>
+<route_comment alt="A" ff-seq="10" ffirn-fudn="1357-22">LIMA</route_comment>
+</air_movement>
+</aircraft_mission_location_segment>
+<aircraft_mission_location_segment>
+<reconnaissance_mission_data set-id="reccedat" set-seq="37">
+<mission_priority alt="A" descriptor="PRI" ff-seq="1" ffirn-fudn="1076-2">1</mission_priority>
+<day_time_and_month_over_target alt="A" ff-seq="2" ffirn-fudn="2030-43">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+</day_time_and_month_over_target>
+<net_time>
+<not_earlier_than_day_time_and_month alt="A" descriptor="NET" ff-seq="3" ffirn-fudn="2030-46">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+</not_earlier_than_day_time_and_month>
+</net_time>
+<nlt_time>
+<not_later_than_day_time alt="A" descriptor="NLT" ff-seq="4" ffirn-fudn="2000-87">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</not_later_than_day_time>
+</nlt_time>
+<date_time_group_of_latest_time_of_intelligence_value>
+<dtg_of_latest_time_of_intelligence_value_4_digit_yr alt="A" ff-seq="5" ffirn-fudn="2033-3">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">FEB</month_name>
+<year ffirn-fudn="1005-7">1993</year>
+</dtg_of_latest_time_of_intelligence_value_4_digit_yr>
+</date_time_group_of_latest_time_of_intelligence_value>
+<reconnaissance_mission_type alt="A" ff-seq="6" ffirn-fudn="1285-30">SLAR</reconnaissance_mission_type>
+<type_of_reconnaissance_surveillance_coverage alt="A" ff-seq="7" ffirn-fudn="1795-1">AREACOV</type_of_reconnaissance_surveillance_coverage>
+<sensor_type alt="A" ff-seq="8" ffirn-fudn="1677-7">SL</sensor_type>
+<image_qualifier alt="A" descriptor="IMQ" ff-seq="9" ffirn-fudn="1677-6">S</image_qualifier>
+<imagery_coverage_extent_and_mode alt="A" descriptor="CM" ff-seq="10" ffirn-fudn="1677-4">B</imagery_coverage_extent_and_mode>
+<reconnaissance_mission_purpose alt="A" ff-seq="11" ffirn-fudn="1435-1">C</reconnaissance_mission_purpose>
+<type_of_intelligence_task alt="A" ff-seq="12" ffirn-fudn="1285-28">DET</type_of_intelligence_task>
+<component_target_identifier alt="A" ff-seq="13" ffirn-fudn="1416-5">A194762</component_target_identifier>
+<target_category_code alt="A" ff-seq="14" ffirn-fudn="1309-2">01</target_category_code>
+<essential_elements_of_information_eei_of_target_category alt="A" ff-seq="15" ffirn-fudn="1802-1">01-1</essential_elements_of_information_eei_of_target_category>
+<essential_elements_of_information_eei_of_target_category alt="A" ff-seq="15" ffirn-fudn="1802-1">01-2</essential_elements_of_information_eei_of_target_category>
+<essential_elements_of_information_eei_of_target_category alt="A" ff-seq="15" ffirn-fudn="1802-1">01-3</essential_elements_of_information_eei_of_target_category>
+<essential_elements_of_information_eei_of_target_category alt="A" ff-seq="15" ffirn-fudn="1802-1">01-4</essential_elements_of_information_eei_of_target_category>
+</reconnaissance_mission_data>
+<position_trace_plot_segment>
+<position_trace_plot set-id="ptrcplot" set-seq="38">
+<location_of_reconnaissance_mission>
+<geographic_position_lat_long_seconds alt="C" descriptor="LATS" ff-seq="1" ffirn-fudn="2024-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">25</latitude_second_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">25</longitude_second_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</location_of_reconnaissance_mission>
+<target_identifier>
+<target_position_name alt="A" descriptor="NAME" ff-seq="2" ffirn-fudn="1022-81">PENTAGON</target_position_name>
+</target_identifier>
+<area_description>
+<radius_in_ft_yd_kf_sm_nm_mm_cm_m_km_hm alt="A" descriptor="RAD" ff-seq="3" ffirn-fudn="2490-1">
+<context_quantity_k_permitted_4_characters_max ffirn-fudn="1390-3">1N</context_quantity_k_permitted_4_characters_max>
+<unit_of_linear_measurement ffirn-fudn="1008-4">M</unit_of_linear_measurement>
+</radius_in_ft_yd_kf_sm_nm_mm_cm_m_km_hm>
+</area_description>
+<geodetic_datum alt="A" ff-seq="4" ffirn-fudn="1195-1">NORTH AMERICAN 1983</geodetic_datum>
+</position_trace_plot>
+<imagery_product set-id="product" set-seq="39">
+<delivery_unit_identifier alt="A" ff-seq="1" ffirn-fudn="1028-42">VII CORPS</delivery_unit_identifier>
+<scale_of_prints alt="A" ff-seq="2" ffirn-fudn="1079-4">12500</scale_of_prints>
+<group_of_fields>
+<number_of_products alt="A" ff-seq="3" ffirn-fudn="1044-328">4</number_of_products>
+<type_of_imagery_mapping alt="A" ff-seq="4" ffirn-fudn="1677-8">MOSAIC</type_of_imagery_mapping>
+</group_of_fields>
+</imagery_product>
+</position_trace_plot_segment>
+<imagery_data_link_control_information set-id="imdatlnk" set-seq="40">
+<frequency>
+<frequency_in_megahertz alt="A" descriptor="FREQ" ff-seq="1" ffirn-fudn="1068-1">243.0</frequency_in_megahertz>
+</frequency>
+<imagery_receiver_call_sign alt="A" ff-seq="2" ffirn-fudn="1129-32">JOHANN23</imagery_receiver_call_sign>
+<report_in_point>
+<geographic_position_lat_long_seconds alt="A" descriptor="LATS" ff-seq="3" ffirn-fudn="2024-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">25</latitude_second_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">25</longitude_second_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</report_in_point>
+<day_time_of_link_start alt="A" ff-seq="4" ffirn-fudn="2000-92">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_link_start>
+<day_time_of_link_stop alt="A" ff-seq="5" ffirn-fudn="2000-93">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_link_stop>
+</imagery_data_link_control_information>
+<request_number_1 set-id="reqno" set-seq="41">
+<request_identifier alt="A" ff-seq="1" ffirn-fudn="1012-144">3AR001</request_identifier>
+<request_identifier alt="A" ff-seq="1" ffirn-fudn="1012-144">3AF002</request_identifier>
+</request_number_1>
+<missile_target_location_1 set-id="mtgtloc" set-seq="42">
+<primary_alternate_target_designator alt="A" ff-seq="1" ffirn-fudn="1076-13">P</primary_alternate_target_designator>
+<mission_number alt="A" ff-seq="2" ffirn-fudn="1012-69">23463434</mission_number>
+<time_on_target>
+<day_time_on_target_to_the_second_zulu alt="B" descriptor="TOTS" ff-seq="3" ffirn-fudn="2483-2">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<second_time ffirn-fudn="1683-1">35</second_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+</day_time_on_target_to_the_second_zulu>
+</time_on_target>
+<net_time>
+<not_earlier_than_day_time alt="A" descriptor="NET" ff-seq="4" ffirn-fudn="2000-88">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</not_earlier_than_day_time>
+</net_time>
+<not_later_than_day_time alt="A" descriptor="NLT" ff-seq="5" ffirn-fudn="2000-87">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">35</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</not_later_than_day_time>
+<target_identifier>
+<target_position_identifier alt="B" descriptor="ID" ff-seq="6" ffirn-fudn="1416-2">1234FA1234ZZ</target_position_identifier>
+</target_identifier>
+<target_type>
+<non_ship_target_type alt="A" ff-seq="7" ffirn-fudn="1650-6">FTAFLD</non_ship_target_type>
+</target_type>
+<type_of_cruise_missile alt="A" ff-seq="8" ffirn-fudn="1407-27">C</type_of_cruise_missile>
+<number_of_missiles alt="A" ff-seq="9" ffirn-fudn="1044-323">30</number_of_missiles>
+<target_priority_literal alt="A" ff-seq="10" ffirn-fudn="1076-11">1A</target_priority_literal>
+<component_target_identifier alt="A" ff-seq="11" ffirn-fudn="1416-5">N4792601</component_target_identifier>
+<desired_mean_point_of_impact>
+<geographic_position_lat_long_seconds alt="E" descriptor="DMPIS" ff-seq="12" ffirn-fudn="2024-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">25</latitude_second_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">25</longitude_second_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</desired_mean_point_of_impact>
+<geodetic_datum alt="A" ff-seq="13" ffirn-fudn="1195-1">NORTH AMERICAN 1983</geodetic_datum>
+<aimpoint_suffix alt="A" ff-seq="14" ffirn-fudn="1012-244">EB</aimpoint_suffix>
+<aimpoint_suffix alt="A" ff-seq="14" ffirn-fudn="1012-244">AD</aimpoint_suffix>
+<aimpoint_suffix alt="A" ff-seq="14" ffirn-fudn="1012-244">BZ</aimpoint_suffix>
+</missile_target_location_1>
+<refuelling_tasking set-id="reftsk" set-seq="43">
+<aerial_refuelling_system_specific alt="A" ff-seq="1" ffirn-fudn="1579-2">BOM</aerial_refuelling_system_specific>
+<total_off_load_fuel_in_thousands_of_pounds alt="A" descriptor="KLBS" ff-seq="2" ffirn-fudn="1578-5">25.5</total_off_load_fuel_in_thousands_of_pounds>
+<alert_contingency_off_load_fuel_in_thousands_of_pounds alt="A" descriptor="KLBS" ff-seq="3" ffirn-fudn="1578-6">5.1</alert_contingency_off_load_fuel_in_thousands_of_pounds>
+<primary_frequency>
+<primary_frequency_designator alt="B" descriptor="PDESIG" ff-seq="4" ffirn-fudn="1396-2">TAD01</primary_frequency_designator>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_designator alt="B" descriptor="SDESIG" ff-seq="5" ffirn-fudn="1396-3">TAD02</secondary_frequency_designator>
+</secondary_frequency>
+<tacan_channel_receiver_and_tanker alt="A" ff-seq="6" ffirn-fudn="2486-1">
+<receiver_tacan_channel ffirn-fudn="1012-255">16</receiver_tacan_channel>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<tanker_tacan_channel ffirn-fudn="1012-256">72</tanker_tacan_channel>
+</tacan_channel_receiver_and_tanker>
+<beacon alt="A" ff-seq="7" ffirn-fudn="2497-1">
+<context_quantity_0_6 ffirn-fudn="1023-86">4</context_quantity_0_6>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<context_quantity_0_6_1 ffirn-fudn="1023-86">3</context_quantity_0_6_1>
+<hyphen_1 ffirn-fudn="1025-2">-</hyphen_1>
+<context_quantity_0_6_2 ffirn-fudn="1023-86">1</context_quantity_0_6_2>
+</beacon>
+</refuelling_tasking>
+<aerial_refuelling set-id="5refuel" set-seq="44">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69" header="MSNNO">0151H</mission_number>
+<receiver_call_sign alt="A" ff-seq="2" ffirn-fudn="1129-35" header="RECCS">HAMMER 51</receiver_call_sign>
+<number_of_aircraft_0_99 alt="A" ff-seq="3" ffirn-fudn="1044-322" header="NO">2</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="AC" ff-seq="4" ffirn-fudn="1015-20" header="ACTYPE">FA18</aircraft_type_and_model>
+</type_of_aircraft>
+<fuel_in_thousands_of_pounds_decimal_point_permitted alt="A" descriptor="KLBS" ff-seq="5" ffirn-fudn="1578-4" header="OFLD">15.0</fuel_in_thousands_of_pounds_decimal_point_permitted>
+<day_time_of_air_refuelling_control alt="A" ff-seq="6" ffirn-fudn="2000-81" header="ARCT">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_air_refuelling_control>
+<cell_sequence_numbers>
+<cell_sequence_number alt="A" ff-seq="7" ffirn-fudn="1012-253" header="SEQ">3</cell_sequence_number>
+</cell_sequence_numbers>
+<refueling_fuel_type>
+<refuelling_fuel_grade alt="A" ff-seq="8" ffirn-fudn="1803-4" header="TYP">JP8</refuelling_fuel_grade>
+</refueling_fuel_type>
+<aerial_refuelling_system_specific alt="A" ff-seq="9" ffirn-fudn="1579-2" header="ARS">CLD</aerial_refuelling_system_specific>
+</aerial_refuelling>
+<aerial_refuelling set-id="5refuel" set-seq="44">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69" header="MSNNO">AMC123</mission_number>
+<receiver_call_sign alt="A" ff-seq="2" ffirn-fudn="1129-35" header="RECCS">LIFTER 33</receiver_call_sign>
+<number_of_aircraft_0_99 alt="A" ff-seq="3" ffirn-fudn="1044-322" header="NO">1</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="AC" ff-seq="4" ffirn-fudn="1015-20" header="ACTYPE">C5A</aircraft_type_and_model>
+</type_of_aircraft>
+<fuel_in_thousands_of_pounds_decimal_point_permitted alt="A" descriptor="KLBS" ff-seq="5" ffirn-fudn="1578-4" header="OFLD">95.0</fuel_in_thousands_of_pounds_decimal_point_permitted>
+<day_time_of_air_refuelling_control alt="A" ff-seq="6" ffirn-fudn="2000-81" header="ARCT">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">15</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_air_refuelling_control>
+<cell_sequence_numbers>
+<cell_sequence_number alt="A" ff-seq="7" ffirn-fudn="1012-253" header="SEQ">2</cell_sequence_number>
+</cell_sequence_numbers>
+<refueling_fuel_type>
+<refuelling_fuel_grade alt="A" ff-seq="8" ffirn-fudn="1803-4" header="TYP">JP4</refuelling_fuel_grade>
+</refueling_fuel_type>
+<aerial_refuelling_system_specific alt="A" ff-seq="9" ffirn-fudn="1579-2" header="ARS">BOM</aerial_refuelling_system_specific>
+</aerial_refuelling>
+<control_of_air_assets_1 set-id="controla" set-seq="45">
+<type_of_aircraft_control_agency alt="A" ff-seq="1" ffirn-fudn="1395-5">CRC</type_of_aircraft_control_agency>
+<control_agency_call_sign_extended alt="A" ff-seq="2" ffirn-fudn="1129-30">INVERT</control_agency_call_sign_extended>
+<primary_frequency>
+<primary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="PFREQ" ff-seq="3" ffirn-fudn="1068-13">342.5</primary_frequency_in_megahertz__0000001___99999999>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_designator alt="B" descriptor="SDESIG" ff-seq="4" ffirn-fudn="1396-3">TAD02</secondary_frequency_designator>
+</secondary_frequency>
+<report_in_point>
+<location_name alt="A" descriptor="NAME" ff-seq="5" ffirn-fudn="1022-4">ALFA</location_name>
+</report_in_point>
+</control_of_air_assets_1>
+<air_support_for set-id="asuptfor" set-seq="46">
+<primary_aerial_mission_type alt="A" ff-seq="1" ffirn-fudn="1285-31">CAS</primary_aerial_mission_type>
+<tasked_unit_designator alt="A" ff-seq="2" ffirn-fudn="1028-41">63 RS</tasked_unit_designator>
+<mission_number alt="A" ff-seq="3" ffirn-fudn="1012-69">D171HA</mission_number>
+<aircraft_call_sign_abbreviated alt="A" ff-seq="4" ffirn-fudn="1129-34">HAMMER 53</aircraft_call_sign_abbreviated>
+<number_of_aircraft_0_99 alt="A" ff-seq="5" ffirn-fudn="1044-322">1</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="ACTYP" ff-seq="6" ffirn-fudn="1015-20">FA18</aircraft_type_and_model>
+</type_of_aircraft>
+<primary_frequency>
+<primary_frequency_designator alt="B" descriptor="PDESIG" ff-seq="7" ffirn-fudn="1396-2">TAD01</primary_frequency_designator>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_designator alt="B" descriptor="SDESIG" ff-seq="8" ffirn-fudn="1396-3">TAD02</secondary_frequency_designator>
+</secondary_frequency>
+</air_support_for>
+<air_supported_by set-id="asuptby" set-seq="47">
+<primary_aerial_mission_type alt="A" ff-seq="1" ffirn-fudn="1285-31">CAS</primary_aerial_mission_type>
+<tasked_unit_designator alt="A" ff-seq="2" ffirn-fudn="1028-41">63 RS</tasked_unit_designator>
+<mission_number alt="A" ff-seq="3" ffirn-fudn="1012-69">D171HA</mission_number>
+<aircraft_call_sign_abbreviated alt="A" ff-seq="4" ffirn-fudn="1129-34">HAMMER 53</aircraft_call_sign_abbreviated>
+<number_of_aircraft_0_99 alt="A" ff-seq="5" ffirn-fudn="1044-322">1</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="ACTYP" ff-seq="6" ffirn-fudn="1015-20">FA18</aircraft_type_and_model>
+</type_of_aircraft>
+<primary_frequency>
+<primary_frequency_designator alt="B" descriptor="PDESIG" ff-seq="7" ffirn-fudn="1396-2">TAD01</primary_frequency_designator>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_designator alt="B" descriptor="SDESIG" ff-seq="8" ffirn-fudn="1396-3">TAD02</secondary_frequency_designator>
+</secondary_frequency>
+</air_supported_by>
+<forward_air_controller_information_data set-id="facinfor" set-seq="48">
+<control_agency_call_sign_extended alt="A" ff-seq="1" ffirn-fudn="1129-30">NAIL 10</control_agency_call_sign_extended>
+<primary_frequency>
+<primary_frequency_designator alt="B" descriptor="PDESIG" ff-seq="2" ffirn-fudn="1396-2">TAD01</primary_frequency_designator>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_designator alt="B" descriptor="SDESIG" ff-seq="3" ffirn-fudn="1396-3">RED11</secondary_frequency_designator>
+</secondary_frequency>
+<contact_point>
+<position_or_point_name alt="A" descriptor="NAME" ff-seq="4" ffirn-fudn="1022-18">POINT ALFA</position_or_point_name>
+</contact_point>
+<unit_identification_code_specific alt="A" ff-seq="5" ffirn-fudn="1028-39">1BDE</unit_identification_code_specific>
+</forward_air_controller_information_data>
+<electronic_warfare_data set-id="6ewdata" set-seq="50">
+<emitter_identifier>
+<emitter_name alt="A" ff-seq="1" ffirn-fudn="1022-225" header="EMITTYP">BIG BIRD</emitter_name>
+</emitter_identifier>
+<elint_notation_or_sorting_code>
+<elint_notation alt="A" ff-seq="2" ffirn-fudn="1012-34" header="ELNOT">XXXXX</elint_notation>
+</elint_notation_or_sorting_code>
+<radio_radar_function alt="A" ff-seq="3" ffirn-fudn="1471-1" header="FC">GI</radio_radar_function>
+<lower_frequency>
+<lower_radio_frequency_limit alt="A" ff-seq="4" ffirn-fudn="2383-5" header="LOWFRQ">
+<context_quantity_decimal_pt_permitted_8_char_max ffirn-fudn="1023-21">365.235</context_quantity_decimal_pt_permitted_8_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</lower_radio_frequency_limit>
+</lower_frequency>
+<upper_frequency>
+<upper_radio_frequency_limit alt="A" ff-seq="5" ffirn-fudn="2383-6" header="UPFRQ">
+<context_quantity_decimal_pt_permitted_8_char_max ffirn-fudn="1023-21">1525.25</context_quantity_decimal_pt_permitted_8_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</upper_radio_frequency_limit>
+</upper_frequency>
+<electronic_attack_ea_technique alt="A" ff-seq="6" ffirn-fudn="1643-3" header="EA-TECQ">JAMBAR</electronic_attack_ea_technique>
+</electronic_warfare_data>
+<electronic_warfare_data set-id="6ewdata" set-seq="50">
+<emitter_identifier>
+<emitter_name alt="A" ff-seq="1" ffirn-fudn="1022-225" header="EMITTYP">GCIRDR</emitter_name>
+</emitter_identifier>
+<elint_notation_or_sorting_code>
+<sorting_code alt="B" ff-seq="2" ffirn-fudn="1012-76" header="ELNOT">1234</sorting_code>
+</elint_notation_or_sorting_code>
+<radio_radar_function alt="A" ff-seq="3" ffirn-fudn="1471-1" header="FC" xsi:nil="true"/>
+<lower_frequency>
+<lower_frequency_pulses_per_second alt="B" ff-seq="4" ffirn-fudn="2493-2" header="LOWFRQ">
+<context_quantity_decimal_pt_permitted_8_char_max ffirn-fudn="1023-21">365</context_quantity_decimal_pt_permitted_8_char_max>
+<electromagnetic_pulse_unit_of_measurement ffirn-fudn="1008-54">PPS</electromagnetic_pulse_unit_of_measurement>
+</lower_frequency_pulses_per_second>
+</lower_frequency>
+<upper_frequency>
+<upper_frequency_pulses_per_second alt="B" ff-seq="5" ffirn-fudn="2493-3" header="UPFRQ">
+<context_quantity_decimal_pt_permitted_8_char_max ffirn-fudn="1023-21">1580.5</context_quantity_decimal_pt_permitted_8_char_max>
+<electromagnetic_pulse_unit_of_measurement ffirn-fudn="1008-54">PPS</electromagnetic_pulse_unit_of_measurement>
+</upper_frequency_pulses_per_second>
+</upper_frequency>
+</electronic_warfare_data>
+<aircraft_route_information set-id="6route" set-seq="51">
+<point_number alt="A" ff-seq="1" ffirn-fudn="1012-257" header="PN">1</point_number>
+<route_point>
+<position_or_point_name alt="F" ff-seq="2" ffirn-fudn="1022-18" header="ROUTEPT">KPOB</position_or_point_name>
+</route_point>
+<route_point_type alt="A" ff-seq="3" ffirn-fudn="1284-13" header="TYP">STP</route_point_type>
+<arrival_time>
+<day_time_of_arrival alt="B" ff-seq="4" ffirn-fudn="2000-2" header="ATIME">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_arrival>
+</arrival_time>
+<speed_of_movement_in_mph_kps_kph_or_mps alt="A" ff-seq="5" ffirn-fudn="2481-1" header="TAS">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">450</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_measurement_mph_kts_kph_mps ffirn-fudn="1008-52">KTS</unit_of_measurement_mph_kts_kph_mps>
+</speed_of_movement_in_mph_kps_kph_or_mps>
+<altitude_in_hundreds_of_feet_0_999 alt="A" ff-seq="6" ffirn-fudn="1255-14" header="ALT">180</altitude_in_hundreds_of_feet_0_999>
+</aircraft_route_information>
+<aircraft_route_information set-id="6route" set-seq="51">
+<point_number alt="A" ff-seq="1" ffirn-fudn="1012-257" header="PN">2</point_number>
+<route_point>
+<geographic_position_lat_long_minutes alt="C" ff-seq="2" ffirn-fudn="2023-1" header="ROUTEPT">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</route_point>
+<route_point_type alt="A" ff-seq="3" ffirn-fudn="1284-13" header="TYP">IP</route_point_type>
+<arrival_time>
+<day_time_of_arrival alt="B" ff-seq="4" ffirn-fudn="2000-2" header="ATIME">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_arrival>
+</arrival_time>
+<speed_of_movement_in_mph_kps_kph_or_mps alt="A" ff-seq="5" ffirn-fudn="2481-1" header="TAS" xsi:nil="true"/>
+<altitude_in_hundreds_of_feet_0_999 alt="A" ff-seq="6" ffirn-fudn="1255-14" header="ALT">5</altitude_in_hundreds_of_feet_0_999>
+</aircraft_route_information>
+<aircraft_route_information set-id="6route" set-seq="51">
+<point_number alt="A" ff-seq="1" ffirn-fudn="1012-257" header="PN">3</point_number>
+<route_point>
+<position_true_bearing_and_range_in_nm alt="E" ff-seq="2" ffirn-fudn="2281-1" header="ROUTEPT">
+<direction_in_degrees_true ffirn-fudn="1439-1">330</direction_in_degrees_true>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<reference_name ffirn-fudn="1022-89">PT ALFA</reference_name>
+<hyphen_1 ffirn-fudn="1025-2">-</hyphen_1>
+<distance_in_nautical_miles_0_999 ffirn-fudn="1089-6">50</distance_in_nautical_miles_0_999>
+</position_true_bearing_and_range_in_nm>
+</route_point>
+<route_point_type alt="A" ff-seq="3" ffirn-fudn="1284-13" header="TYP">TGT</route_point_type>
+</aircraft_route_information>
+<escort_data set-id="escdata" set-seq="52">
+<number_escorted alt="A" ff-seq="1" ffirn-fudn="1044-330">03</number_escorted>
+<escorted_aircraft_or_vehicle>
+<aircraft_type_and_model alt="A" descriptor="ACTYP" ff-seq="2" ffirn-fudn="1015-20">C130E</aircraft_type_and_model>
+</escorted_aircraft_or_vehicle>
+<escorted_call_sign alt="A" ff-seq="3" ffirn-fudn="1129-38">HERKY 10</escorted_call_sign>
+<primary_frequency>
+<primary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="PFREQ" ff-seq="4" ffirn-fudn="1068-13">290.8</primary_frequency_in_megahertz__0000001___99999999>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="SFREQ" ff-seq="5" ffirn-fudn="1068-14">341.2</secondary_frequency_in_megahertz__0000001___99999999>
+</secondary_frequency>
+</escort_data>
+<aircraft_rendezvous_mission_data set-id="rdzdata" set-seq="53">
+<rendezvous_location>
+<position_true_bearing_and_range_in_nm alt="D" descriptor="BAR" ff-seq="1" ffirn-fudn="2281-1">
+<direction_in_degrees_true ffirn-fudn="1439-1">330</direction_in_degrees_true>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<reference_name ffirn-fudn="1022-89">PT ALFA</reference_name>
+<hyphen_1 ffirn-fudn="1025-2">-</hyphen_1>
+<distance_in_nautical_miles_0_999 ffirn-fudn="1089-6">50</distance_in_nautical_miles_0_999>
+</position_true_bearing_and_range_in_nm>
+</rendezvous_location>
+<altitude>
+<flight_level_in_hundreds_of_feet alt="B" descriptor="FL" ff-seq="2" ffirn-fudn="1255-12">230</flight_level_in_hundreds_of_feet>
+</altitude>
+<time>
+<day_time_of_arrival alt="B" descriptor="ARRV" ff-seq="3" ffirn-fudn="2000-2">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_arrival>
+</time>
+<rendezvous_leader_indicator alt="A" ff-seq="4" ffirn-fudn="1359-21">Y</rendezvous_leader_indicator>
+<call_sign_or_mission_number>
+<rendezvous_call_sign alt="A" descriptor="CS" ff-seq="5" ffirn-fudn="1129-36">JOLLY 20</rendezvous_call_sign>
+</call_sign_or_mission_number>
+<primary_frequency>
+<primary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="PFREQ" ff-seq="6" ffirn-fudn="1068-13">235.5</primary_frequency_in_megahertz__0000001___99999999>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="SFREQ" ff-seq="7" ffirn-fudn="1068-14">121.25</secondary_frequency_in_megahertz__0000001___99999999>
+</secondary_frequency>
+</aircraft_rendezvous_mission_data>
+<chaff_mission_data set-id="chaff" set-seq="54">
+<type_of_chaff alt="A" ff-seq="1" ffirn-fudn="1652-1">STRIPS</type_of_chaff>
+<lower_frequency>
+<lower_radio_frequency_limit alt="A" descriptor="LEAFREQ" ff-seq="2" ffirn-fudn="2383-5">
+<context_quantity_decimal_pt_permitted_8_char_max ffirn-fudn="1023-21">121.5</context_quantity_decimal_pt_permitted_8_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</lower_radio_frequency_limit>
+</lower_frequency>
+<upper_frequency>
+<upper_radio_frequency_limit alt="A" descriptor="UEAFREQ" ff-seq="3" ffirn-fudn="2383-6">
+<context_quantity_decimal_pt_permitted_8_char_max ffirn-fudn="1023-21">243.0</context_quantity_decimal_pt_permitted_8_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</upper_radio_frequency_limit>
+</upper_frequency>
+<lower_flight_level_in_hundreds_of_feet alt="A" ff-seq="4" ffirn-fudn="1255-10">150</lower_flight_level_in_hundreds_of_feet>
+<upper_flight_level_in_hundreds_of_feet alt="A" ff-seq="5" ffirn-fudn="1255-9">230</upper_flight_level_in_hundreds_of_feet>
+<mechanical_jamming_techniques alt="A" ff-seq="6" ffirn-fudn="1643-4">CORRIDOR</mechanical_jamming_techniques>
+</chaff_mission_data>
+<landing_site_information set-id="landsts" set-seq="55">
+<mission_location>
+<location_name alt="D" descriptor="NAME" ff-seq="1" ffirn-fudn="1022-4">FIRE BASE ALFA</location_name>
+</mission_location>
+<enemy_action_status alt="A" ff-seq="2" ffirn-fudn="1797-1">COLD</enemy_action_status>
+<day_time_as_of alt="A" ff-seq="3" ffirn-fudn="2000-30">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_as_of>
+<method_of_marking_friendly_positions alt="A" ff-seq="4" ffirn-fudn="1613-2">PANELS</method_of_marking_friendly_positions>
+<colour alt="A" ff-seq="5" ffirn-fudn="1138-1">RED</colour>
+<group_of_fields>
+<contact_name_or_callsign>
+<contact_call_sign alt="A" descriptor="CONTACT" ff-seq="6" ffirn-fudn="1129-31">RAYMOND 25</contact_call_sign>
+</contact_name_or_callsign>
+<primary_frequency_or_phone>
+<landing_site_primary_frequency_in_megahertz alt="B" descriptor="PFREQ" ff-seq="7" ffirn-fudn="1068-12">132.5</landing_site_primary_frequency_in_megahertz>
+</primary_frequency_or_phone>
+<secondary_frequency_or_phone>
+<landing_site_secondary_frequency_in_megahertz alt="B" descriptor="SFREQ" ff-seq="8" ffirn-fudn="1068-10">150.0</landing_site_secondary_frequency_in_megahertz>
+</secondary_frequency_or_phone>
+</group_of_fields>
+</landing_site_information>
+<ground_location_of_friendly_troops set-id="gndfrnd" set-seq="56">
+<time_of_position>
+<day_time_of_position alt="B" descriptor="DTIME" ff-seq="1" ffirn-fudn="2000-18">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_position>
+</time_of_position>
+<friendly_unit_location>
+<geographic_position_utm_abbreviated_100_metre alt="E" descriptor="AUTMO" ff-seq="2" ffirn-fudn="2126-1">
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">L</utm_100000_metre_square_row>
+<utm_100_metre_easting ffirn-fudn="1239-1">123</utm_100_metre_easting>
+<utm_100_metre_northing ffirn-fudn="1240-1">123</utm_100_metre_northing>
+</geographic_position_utm_abbreviated_100_metre>
+</friendly_unit_location>
+<geodetic_datum alt="A" ff-seq="3" ffirn-fudn="1195-1">NORTH AMERICAN 1983</geodetic_datum>
+<method_of_marking_friendly_positions alt="A" ff-seq="4" ffirn-fudn="1613-2">PANELS</method_of_marking_friendly_positions>
+<colour alt="A" ff-seq="5" ffirn-fudn="1138-1">RED</colour>
+</ground_location_of_friendly_troops>
+<precision_guided_munitions_information set-id="pgminfo" set-seq="57">
+<laser_datalink_code>
+<laser_correlation_code alt="A" descriptor="LC" ff-seq="1" ffirn-fudn="1012-254">3290</laser_correlation_code>
+</laser_datalink_code>
+<guidance_frequency>
+<guidance_frequency_in_megahertz alt="A" descriptor="FREQ" ff-seq="2" ffirn-fudn="1068-11">123.456</guidance_frequency_in_megahertz>
+</guidance_frequency>
+<contact_call_sign alt="A" ff-seq="3" ffirn-fudn="1129-31">BRAVO CHARLIE 35</contact_call_sign>
+<primary_frequency>
+<primary_frequency_designator alt="B" descriptor="PDESIG" ff-seq="4" ffirn-fudn="1396-2">TAD01</primary_frequency_designator>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_designator alt="B" descriptor="SDESIG" ff-seq="5" ffirn-fudn="1396-3">TAD02</secondary_frequency_designator>
+</secondary_frequency>
+</precision_guided_munitions_information>
+<drop_zone set-id="airdrop" set-seq="58">
+<drop_zone_elevation_in_feet alt="A" ff-seq="1" ffirn-fudn="1799-2">125</drop_zone_elevation_in_feet>
+<airdrop_location>
+<geographic_position_lat_long_seconds alt="B" descriptor="LATS" ff-seq="2" ffirn-fudn="2024-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">25</latitude_second_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">25</longitude_second_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</airdrop_location>
+<geodetic_datum alt="A" ff-seq="3" ffirn-fudn="1195-1">NORTH AMERICAN 1983</geodetic_datum>
+<run_in_heading_in_degrees_magnetic alt="A" ff-seq="4" ffirn-fudn="1804-4">235</run_in_heading_in_degrees_magnetic>
+<distance_between_leading_edge_and_impact_point_in_metres alt="A" ff-seq="5" ffirn-fudn="1052-3">500</distance_between_leading_edge_and_impact_point_in_metres>
+<drop_zone_length_in_metres alt="A" ff-seq="6" ffirn-fudn="1657-9">1500</drop_zone_length_in_metres>
+<drop_zone_width_in_metres alt="A" ff-seq="7" ffirn-fudn="1658-9">500</drop_zone_width_in_metres>
+<method_of_marking_friendly_positions alt="A" ff-seq="8" ffirn-fudn="1613-2">PANELS</method_of_marking_friendly_positions>
+<colour alt="A" ff-seq="9" ffirn-fudn="1138-1">ORANGE</colour>
+</drop_zone>
+<allocated_transportation_requirements set-id="transreq" set-seq="59">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69">D123HA</mission_number>
+<transportation_requirement>
+<unit_identification_code_specific alt="C" descriptor="UIC" ff-seq="2" ffirn-fudn="1028-39">F12345</unit_identification_code_specific>
+</transportation_requirement>
+<onload_leg_reference_number alt="A" ff-seq="3" ffirn-fudn="1012-249">A1</onload_leg_reference_number>
+<offload_leg_reference_number alt="A" ff-seq="4" ffirn-fudn="1012-250">A2</offload_leg_reference_number>
+<number_of_passengers alt="A" ff-seq="5" ffirn-fudn="1044-88">235</number_of_passengers>
+<bulk_cargo_in_short_tons_in_tenths alt="A" ff-seq="6" ffirn-fudn="1800-2">25.2</bulk_cargo_in_short_tons_in_tenths>
+<hoist_requirement_indicator alt="A" ff-seq="7" ffirn-fudn="1027-52">NO</hoist_requirement_indicator>
+<type_of_support_equipment alt="A" ff-seq="8" ffirn-fudn="1135-9">25K LOADER</type_of_support_equipment>
+<hazardous_cargo_designator_abbreviated alt="A" ff-seq="9" ffirn-fudn="1221-3">A12.1</hazardous_cargo_designator_abbreviated>
+<single_dagger_required alt="A" ff-seq="10" ffirn-fudn="1359-22">Y</single_dagger_required>
+<net_explosive_weight alt="A" ff-seq="11" ffirn-fudn="2487-2">
+<context_quantity_k_permitted_4_characters_max ffirn-fudn="1390-3">1000</context_quantity_k_permitted_4_characters_max>
+<unit_of_weight_mass_measurement ffirn-fudn="1008-53">LB</unit_of_weight_mass_measurement>
+</net_explosive_weight>
+<oversize_cargo_in_short_tons_in_tenths alt="A" ff-seq="12" ffirn-fudn="1800-3">2.0</oversize_cargo_in_short_tons_in_tenths>
+<outsize_cargo_in_short_tons_in_tenths alt="A" ff-seq="13" ffirn-fudn="1800-4">10.5</outsize_cargo_in_short_tons_in_tenths>
+<number_of_stretcher_patients_0_999 alt="A" ff-seq="14" ffirn-fudn="1044-325">20</number_of_stretcher_patients_0_999>
+<number_of_ambulatory_patients alt="A" ff-seq="15" ffirn-fudn="1044-326">45</number_of_ambulatory_patients>
+<number_of_attendants alt="A" ff-seq="16" ffirn-fudn="1044-327">3</number_of_attendants>
+<contact_name alt="A" ff-seq="17" ffirn-fudn="1022-7">RADAR OREILLY</contact_name>
+</allocated_transportation_requirements>
+<air_surveillance_and_control_data_1 set-id="asacsdat" set-seq="60">
+<type_of_aircraft_control_agency alt="A" ff-seq="1" ffirn-fudn="1395-5">CRC</type_of_aircraft_control_agency>
+<call_sign_of_control_agency alt="A" ff-seq="2" ffirn-fudn="1129-10">ALLEN</call_sign_of_control_agency>
+<tasked_equipment alt="A" ff-seq="3" ffirn-fudn="1135-24">AN-TPS-43A</tasked_equipment>
+<aerial_mission_type alt="A" ff-seq="4" ffirn-fudn="1285-29">AEW</aerial_mission_type>
+<state_of_emission alt="A" ff-seq="5" ffirn-fudn="1584-4">ECHO TWO</state_of_emission>
+<operational_control_authority alt="A" ff-seq="6" ffirn-fudn="1028-8">AOC</operational_control_authority>
+</air_surveillance_and_control_data_1>
+<control_information_1 set-id="7control" set-seq="61">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69" header="MSNNO">D123EF</mission_number>
+<aircraft_call_sign_abbreviated alt="A" ff-seq="2" ffirn-fudn="1129-34" header="ACSIGN">HAMMER 21</aircraft_call_sign_abbreviated>
+<number_of_aircraft_0_99 alt="A" ff-seq="3" ffirn-fudn="1044-322" header="NO">4</number_of_aircraft_0_99>
+<type_of_aircraft>
+<aircraft_type_and_model alt="A" descriptor="AC" ff-seq="4" ffirn-fudn="1015-20" header="ACTYPE">FA18</aircraft_type_and_model>
+</type_of_aircraft>
+<aerial_mission_type alt="A" ff-seq="5" ffirn-fudn="1285-29" header="MSNTY">CAS</aerial_mission_type>
+<day_time_on_station alt="A" ff-seq="6" ffirn-fudn="2000-33" header="TOSTA">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_on_station>
+<report_in_point>
+<geographic_position_lat_long_minutes alt="A" ff-seq="7" ffirn-fudn="2023-1" header="RIP">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</report_in_point>
+</control_information_1>
+</aircraft_mission_location_segment>
+</aircraft_mission_data_segment>
+<general_text set-id="gentext" set-seq="62">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">UNIT REMARKS</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text>
+</tasked_unit_and_location_segment>
+</service_tasked_segment>
+</tasked_country_segment>
+<heading_information_2 set-id="heading" set-seq="63">
+<heading_information alt="A" ff-seq="1" ffirn-fudn="1370-1">COORDINATION</heading_information>
+</heading_information_2>
+<friendly_forces_segment>
+<friendly_forces set-id="fyfce" set-seq="65">
+<unit alt="A" ff-seq="1" ffirn-fudn="1022-57">CTG122.20</unit>
+<group_of_fields>
+<number_of_cooperating_forces alt="A" ff-seq="2" ffirn-fudn="1044-93">2</number_of_cooperating_forces>
+<cooperating_forces>
+<naval_ship_type alt="B" descriptor="SHIP" ff-seq="3" ffirn-fudn="1036-3">FF</naval_ship_type>
+</cooperating_forces>
+</group_of_fields>
+<group_of_fields>
+<number_of_cooperating_forces alt="A" ff-seq="2" ffirn-fudn="1044-93">2</number_of_cooperating_forces>
+<cooperating_forces>
+<naval_ship_type alt="B" descriptor="SHIP" ff-seq="3" ffirn-fudn="1036-3">DDG</naval_ship_type>
+</cooperating_forces>
+</group_of_fields>
+</friendly_forces>
+<anti_air_warfare_axis_information set-id="aaxis" set-seq="66">
+<geographic_position_lat_long_minutes alt="A" ff-seq="1" ffirn-fudn="2023-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+<day_time_of_position alt="A" ff-seq="2" ffirn-fudn="2000-18">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_position>
+<course_in_degrees_true alt="A" ff-seq="3" ffirn-fudn="1439-4">235</course_in_degrees_true>
+<speed_in_knots_decimal_prohibited alt="A" ff-seq="4" ffirn-fudn="1061-16">25</speed_in_knots_decimal_prohibited>
+<bearing_001_360_in_degrees_true alt="A" ff-seq="5" ffirn-fudn="1791-6">075</bearing_001_360_in_degrees_true>
+<zone_angle_in_degrees alt="A" ff-seq="6" ffirn-fudn="1043-20">020</zone_angle_in_degrees>
+</anti_air_warfare_axis_information>
+<friendly_forces_location_segment>
+<friendly_forces_location set-id="fyloc" set-seq="67">
+<unit_designator>
+<tasked_unit_designator alt="B" descriptor="DESIG" ff-seq="1" ffirn-fudn="2143-7">
+<naval_level_of_echelon ffirn-fudn="1045-3">CTG</naval_level_of_echelon>
+<naval_organization_numeric_designator ffirn-fudn="1012-104">122.2</naval_organization_numeric_designator>
+</tasked_unit_designator>
+</unit_designator>
+<unit_location>
+<geographic_position_lat_long_seconds alt="E" descriptor="LATS" ff-seq="2" ffirn-fudn="2024-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">25</latitude_second_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">25</longitude_second_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</unit_location>
+<geodetic_datum alt="A" ff-seq="3" ffirn-fudn="1195-1">NORTH AMERICAN 1983</geodetic_datum>
+<time>
+<day_time_of_position alt="A" descriptor="TIME" ff-seq="4" ffirn-fudn="2000-18">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_position>
+</time>
+<course_and_speed>
+<friendly_force_course_true_and_speed_knots alt="A" descriptor="SPEED" ff-seq="5" ffirn-fudn="2037-3">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+<context_quantity_decimal_pt_permitted_3_char_max ffirn-fudn="1023-20">12</context_quantity_decimal_pt_permitted_3_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</friendly_force_course_true_and_speed_knots>
+</course_and_speed>
+<geographic_entities_notional_and_actual alt="A" ff-seq="6" ffirn-fudn="1026-16">US</geographic_entities_notional_and_actual>
+<discrete_identifier alt="A" ff-seq="7" ffirn-fudn="1625-25">1234</discrete_identifier>
+</friendly_forces_location>
+<codes_crypto_and_authentication set-id="codes" set-seq="68">
+<group_of_fields>
+<codes_crypto_in_use alt="A" ff-seq="1" ffirn-fudn="1295-1">AKAC8338</codes_crypto_in_use>
+<code_day_number alt="A" ff-seq="2" ffirn-fudn="1012-79">DAY12</code_day_number>
+<authentication_system alt="A" ff-seq="3" ffirn-fudn="1296-1">AMSA1606</authentication_system>
+</group_of_fields>
+</codes_crypto_and_authentication>
+<iff_or_sif_setting set-id="iff" set-seq="69">
+<supporting_unit_or_base>
+<unit alt="A" descriptor="UNIT" ff-seq="1" ffirn-fudn="1022-57">T3RS</unit>
+</supporting_unit_or_base>
+<iff_sif_mode_and_code_or_condition>
+<iff_sif_mode_and_code alt="A" ff-seq="2" ffirn-fudn="2083-1">
+<actual_iff_sif_modes_that_have_iff_sif_codes ffirn-fudn="1302-6">1</actual_iff_sif_modes_that_have_iff_sif_codes>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<iff_sif_code ffirn-fudn="1303-1">61</iff_sif_code>
+</iff_sif_mode_and_code>
+</iff_sif_mode_and_code_or_condition>
+<iff_sif_mode_and_code_or_condition>
+<iff_sif_mode_and_code alt="A" ff-seq="2" ffirn-fudn="2083-1">
+<actual_iff_sif_modes_that_have_iff_sif_codes ffirn-fudn="1302-6">2</actual_iff_sif_modes_that_have_iff_sif_codes>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<iff_sif_code ffirn-fudn="1303-1">2345</iff_sif_code>
+</iff_sif_mode_and_code>
+</iff_sif_mode_and_code_or_condition>
+<iff_sif_mode_and_code_or_condition>
+<iff_sif_mode_and_code alt="A" ff-seq="2" ffirn-fudn="2083-1">
+<actual_iff_sif_modes_that_have_iff_sif_codes ffirn-fudn="1302-6">3</actual_iff_sif_modes_that_have_iff_sif_codes>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<iff_sif_code ffirn-fudn="1303-1">4577</iff_sif_code>
+</iff_sif_mode_and_code>
+</iff_sif_mode_and_code_or_condition>
+<iff_sif_mode_and_code_or_condition>
+<iff_sif_mode_and_condition alt="B" ff-seq="2" ffirn-fudn="2084-1">
+<iff_sif_mode ffirn-fudn="1302-1">4</iff_sif_mode>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<iff_sif_mode_on_or_off_indicator ffirn-fudn="1304-2">ON</iff_sif_mode_on_or_off_indicator>
+</iff_sif_mode_and_condition>
+</iff_sif_mode_and_code_or_condition>
+</iff_or_sif_setting>
+</friendly_forces_location_segment>
+</friendly_forces_segment>
+<air_operations_timing_reference_point_segment>
+<air_operations_timing_reference_point set-id="aotrp" set-seq="70">
+<timing_reference_point_trp_designator alt="A" ff-seq="1" ffirn-fudn="1796-2">ZA</timing_reference_point_trp_designator>
+<trp_location>
+<geographic_position_lat_long_minutes alt="B" descriptor="LATM" ff-seq="2" ffirn-fudn="2023-1">
+<latitude_degrees ffirn-fudn="1039-1">35</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</trp_location>
+<time_reference_point_trp_description alt="A" ff-seq="3" ffirn-fudn="1363-47">CTR BRIDGE</time_reference_point_trp_description>
+<primary_frequency>
+<primary_frequency_in_megahertz__0000001___99999999 alt="A" descriptor="PFREQ" ff-seq="4" ffirn-fudn="1068-13">243.0</primary_frequency_in_megahertz__0000001___99999999>
+</primary_frequency>
+<secondary_frequency>
+<secondary_frequency_designator alt="B" descriptor="SDESIG" ff-seq="5" ffirn-fudn="1396-3">TAD02</secondary_frequency_designator>
+</secondary_frequency>
+</air_operations_timing_reference_point>
+<air_operations_timing_reference_point_trp_flow_data set-id="7aofdat" set-seq="71">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69" header="MSNNO">0234D</mission_number>
+<ingress_route_identification alt="A" ff-seq="2" ffirn-fudn="1022-229" header="INROUTE">BLUE 22</ingress_route_identification>
+<day_time_over_timing_reference_point alt="A" ff-seq="3" ffirn-fudn="2000-89" header="TIME">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_over_timing_reference_point>
+<day_time_of_latest_timing_reference_point alt="A" ff-seq="4" ffirn-fudn="2000-90" header="LTIME">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">20</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_latest_timing_reference_point>
+<egress_route_identification alt="A" ff-seq="5" ffirn-fudn="1022-230" header="EROUTE">RED7</egress_route_identification>
+</air_operations_timing_reference_point_trp_flow_data>
+<air_operations_timing_reference_point_trp_flow_data set-id="7aofdat" set-seq="71">
+<mission_number alt="A" ff-seq="1" ffirn-fudn="1012-69" header="MSNNO">1234E</mission_number>
+<ingress_route_identification alt="A" ff-seq="2" ffirn-fudn="1022-229" header="INROUTE">AMBER 45</ingress_route_identification>
+<day_time_over_timing_reference_point alt="A" ff-seq="3" ffirn-fudn="2000-89" header="TIME">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_over_timing_reference_point>
+<day_time_of_latest_timing_reference_point alt="A" ff-seq="4" ffirn-fudn="2000-90" header="LTIME">
+<day ffirn-fudn="1000-1">14</day>
+<hour_time ffirn-fudn="1001-1">15</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_of_latest_timing_reference_point>
+<egress_route_identification alt="A" ff-seq="5" ffirn-fudn="1022-230" header="EROUTE">ALFA 4</egress_route_identification>
+</air_operations_timing_reference_point_trp_flow_data>
+</air_operations_timing_reference_point_segment>
+<heading_information_3 set-id="heading" set-seq="72">
+<heading_information alt="A" ff-seq="1" ffirn-fudn="1370-1">ATO SPECIAL INSTRUCTIONS (SPINS)</heading_information>
+</heading_information_3>
+<general_text_1 set-id="gentext" set-seq="73">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">GENERAL SPINS INFORMATION</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_1>
+<general_text_2 set-id="gentext" set-seq="74">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">COMMANDERS GUIDANCE</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_2>
+<general_text_3 set-id="gentext" set-seq="75">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">C2 BATTLE MANAGEMENT PLAN</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_3>
+<general_text_4 set-id="gentext" set-seq="76">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">RULES OF ENGAGEMENT (ROE)</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_4>
+<general_text_5 set-id="gentext" set-seq="77">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">PERSONNEL RECOVERY PROCEDURES</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_5>
+<general_text_6 set-id="gentext" set-seq="78">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">COMMUNICATIONS PLAN</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_6>
+<general_text_8 set-id="gentext" set-seq="80">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">ANTIAIR WARFARE INSTRUCTIONS</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_8>
+<general_text_9 set-id="gentext" set-seq="81">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">THEATER POINT OF CONTACT (POC) LIST</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_9>
+<general_text_10 set-id="gentext" set-seq="82">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">COMPOSITE AIR OPERATIONS (COMAO) PLAN</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_10>
+<general_text_11 set-id="gentext" set-seq="83">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">TANKER PROCEDURES</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_11>
+<general_text_12 set-id="gentext" set-seq="84">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">STRATEGIC AND THEATER AIRLIFT INSTRUCTIONS</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_12>
+<general_text_13 set-id="gentext" set-seq="85">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">SPACE WARFARE INFORMATION</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_13>
+<general_text_14 set-id="gentext" set-seq="86">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">ADDITIONAL SPECIAL INSTRUCTIONS</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_14>
+<general_text_15 set-id="gentext" set-seq="87">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">AIRSPACE CONTROL INFORMATION</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_15>
+<message_downgrading_or_declassification_data set-id="decl" set-seq="88">
+<source_of_classification>
+<derivative_source_for_classification alt="A" descriptor="DERI" ff-seq="1" ffirn-fudn="1243-4">OPLAN 55-01</derivative_source_for_classification>
+</source_of_classification>
+<reason_for_classification alt="A" ff-seq="2" ffirn-fudn="1807-2" xsi:nil="true"/>
+<group_of_fields>
+<downgrading_or_declassification_instructions alt="A" ff-seq="3" ffirn-fudn="1822-6">DOWNGRADE TO SECRET</downgrading_or_declassification_instructions>
+<downgrade_or_declassification_date_ddmmmyyyy alt="A" ff-seq="4" ffirn-fudn="2001-6">
+<day ffirn-fudn="1000-1">30</day>
+<month_name ffirn-fudn="1004-1">MAY</month_name>
+<year ffirn-fudn="1005-7">2005</year>
+</downgrade_or_declassification_date_ddmmmyyyy>
+</group_of_fields>
+</message_downgrading_or_declassification_data>
+</air_tasking_order>

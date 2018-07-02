@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intelligence_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/intsum/messages.xsd">
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DESERT STORM</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">INTSUM</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">CG I MEF</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">10791</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">FEB</month_name>
+</message_identifier>
+<period_of_time set-id="period" set-seq="7">
+<start_day_time>
+<day_time_start alt="A" ff-seq="1" ffirn-fudn="2000-14">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">12</minute_time>
+<time_zone ffirn-fudn="1003-1">A</time_zone>
+</day_time_start>
+</start_day_time>
+<stop_day_time>
+<day_time_stop alt="A" ff-seq="2" ffirn-fudn="2000-15">
+<day ffirn-fudn="1000-1">09</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">12</minute_time>
+<time_zone ffirn-fudn="1003-1">B</time_zone>
+</day_time_stop>
+</stop_day_time>
+</period_of_time>
+<general_text set-id="gentext" set-seq="8">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">HIGHLIGHTS</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">IMPORTANT INFORMATIONS</free_text>
+</general_text>
+<general_text_1_segment>
+<general_text_1 set-id="gentext" set-seq="9">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">GEOGRAPHICAL INFORMATION</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">ATHOME</free_text>
+</general_text_1>
+<general_text_10 set-id="gentext" set-seq="18">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">AREA ASSESSMENT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">AREA</free_text>
+</general_text_10>
+</general_text_1_segment>
+</intelligence_summary>

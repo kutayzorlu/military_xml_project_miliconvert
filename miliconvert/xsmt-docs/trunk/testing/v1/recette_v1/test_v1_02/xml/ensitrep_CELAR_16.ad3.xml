@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enemy_land_forces_situation_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ensitrep/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">PREINTEGRATION</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">DRILL</exercise_additional_identifier>
+</exercise_identification>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">ENSITREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">2DB</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">001</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">OCT</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">INI</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">001</serial_number_of_qualifier>
+</message_identifier>
+<reference set-id="ref" set-seq="4">
+<serial_letter alt="A" ff-seq="1" ffirn-fudn="1102-3">A</serial_letter>
+<communication_type>
+<message_text_format_identifier alt="A" ff-seq="2" ffirn-fudn="1018-2">ENSITREP</message_text_format_identifier>
+</communication_type>
+<originator alt="A" ff-seq="3" ffirn-fudn="1029-1">2DB</originator>
+<date_and_time_of_reference>
+<dtg_of_reference_4_digit_yr alt="F" ff-seq="4" ffirn-fudn="2033-2">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">10</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">OCT</month_name>
+<year ffirn-fudn="1005-7">2003</year>
+</dtg_of_reference_4_digit_yr>
+</date_and_time_of_reference>
+<reference_serial_number alt="A" ff-seq="5" ffirn-fudn="1012-66">001</reference_serial_number>
+<special_notation alt="A" ff-seq="6" ffirn-fudn="1131-1">PASEP</special_notation>
+<sic_or_file_number>
+<sic alt="A" ff-seq="7" ffirn-fudn="1017-2">SIC</sic>
+</sic_or_file_number>
+</reference>
+<geodetic_datum set-id="geodatum" set-seq="5">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">W84</geodetic_datum>
+</geodetic_datum>
+<date_time_group set-id="dtg" set-seq="6">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">16</hour_time>
+<minute_time ffirn-fudn="1002-1">10</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">OCT</month_name>
+<year ffirn-fudn="1005-7">2003</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="7">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">2DB</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">DIV</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4">UNIT</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5">UNIT</unit_role_indicator_code_d>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40">1CORPS</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A " ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0001</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_drafter_releaser>
+<map_data_without_geodetic_datum set-id="mapnogd" set-seq="8">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">MAP001</map_or_chart_series_designator>
+<map_or_chart_suffix_number alt="A" ff-seq="2" ffirn-fudn="1012-4">01</map_or_chart_suffix_number>
+<group_of_fields>
+<map_or_chart_sheet_number alt="A" ff-seq="3" ffirn-fudn="1012-3">MAP002</map_or_chart_sheet_number>
+<map_or_chart_edition_number alt="A" ff-seq="4" ffirn-fudn="1012-2">002</map_or_chart_edition_number>
+</group_of_fields>
+</map_data_without_geodetic_datum>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">SUPERIOR</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">BOSTON</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">DIV</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">IZ</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">CBT</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">AR</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1">
+<unit_role_indicator_code_c ffirn-fudn="1311-4">ARMD</unit_role_indicator_code_c>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_unit_role_indicator_code_c>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<force_weapons set-id="1fwpns" set-seq="12">
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">RIC001</reportable_item_code_ric>
+<short_title alt="A" ff-seq="2" ffirn-fudn="1022-87" header="TITLE">FORCE</short_title>
+<quantity_on_hand alt="A" ff-seq="3" ffirn-fudn="1044-110" header="ON-HAND">200</quantity_on_hand>
+<quantity_on_hand_serviceable alt="A" ff-seq="4" ffirn-fudn="1044-112" header="SVC">50</quantity_on_hand_serviceable>
+<quantity_table_of_entitlement alt="A" ff-seq="5" ffirn-fudn="1044-122" header="TOE">150</quantity_table_of_entitlement>
+</force_weapons>
+<ammunition_on_hand set-id="1ammoh" set-seq="13">
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">RIC002</reportable_item_code_ric>
+<ammunition_short_title_specification_name alt="A" ff-seq="2" ffirn-fudn="1022-86" header="TITLE">AMMUNITION</ammunition_short_title_specification_name>
+<quantity_on_hand_including_ubl_rounds alt="A" ff-seq="3" ffirn-fudn="1044-119" header="ON-HAND">500</quantity_on_hand_including_ubl_rounds>
+<days_of_supply alt="A" ff-seq="4" ffirn-fudn="1055-2" header="DOS">3</days_of_supply>
+</ammunition_on_hand>
+<short_range_air_defence_systems_and_ammunition set-id="2shorad" set-seq="14">
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">RIC003</reportable_item_code_ric>
+<short_title alt="A" ff-seq="2" ffirn-fudn="1022-87" header="TITLE">ASA</short_title>
+<weapon_system_short_name alt="A" ff-seq="3" ffirn-fudn="1022-93" header="SYSTEM">SAM</weapon_system_short_name>
+<quantity_on_hand alt="A" ff-seq="4" ffirn-fudn="1044-110" header="ON-HAND">10</quantity_on_hand>
+<rounds_of_ammunition_missiles_on_hand alt="A" ff-seq="5" ffirn-fudn="1044-129" header="AMMOH">15</rounds_of_ammunition_missiles_on_hand>
+<quantity_table_of_entitlement alt="A" ff-seq="6" ffirn-fudn="1044-122" header="TOE">20</quantity_table_of_entitlement>
+<system_kill_requirement alt="A" ff-seq="7" ffirn-fudn="1044-130" header="REQ-C">2</system_kill_requirement>
+</short_range_air_defence_systems_and_ammunition>
+<petroleum_products set-id="1pol" set-seq="15">
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">RIC004</reportable_item_code_ric>
+<pol_type_name alt="A" ff-seq="2" ffirn-fudn="1022-88" header="TITLE">PETROLEUM</pol_type_name>
+<cubic_metres_on_hand alt="A" ff-seq="3" ffirn-fudn="1044-128" header="CU-MTR-OH">600</cubic_metres_on_hand>
+<days_of_supply alt="A" ff-seq="4" ffirn-fudn="1055-2" header="DOS">5</days_of_supply>
+</petroleum_products>
+<verified_enemy_echelon_of_force set-id="eorgstat" set-seq="17">
+<verified_echelon_of_force alt="A " ff-seq="1" ffirn-fudn="2072-1">
+<echelon_of_force ffirn-fudn="1248-1">1</echelon_of_force>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_echelon_of_force>
+</verified_enemy_echelon_of_force>
+<information_evaluation set-id="infoeval" set-seq="18">
+<evaluation_of_information alt="A " ff-seq="1" ffirn-fudn="2054-1">
+<evaluation_of_reliability ffirn-fudn="1202-1">A</evaluation_of_reliability>
+<evaluation_of_accuracy ffirn-fudn="1251-1">1</evaluation_of_accuracy>
+</evaluation_of_information>
+<source_type_of_intelligence_information alt="A " ff-seq="2" ffirn-fudn="1310-1">AIRRECCE</source_type_of_intelligence_information>
+<dtg_4_digit_year alt="A " ff-seq="3" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">OCT</month_name>
+<year ffirn-fudn="1005-7">2003</year>
+</dtg_4_digit_year>
+</information_evaluation>
+<organization_designator_of_information_source set-id="orgidsce" set-seq="19">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">BOND</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">SECTION</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">UK</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">MI</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">UNIT</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">UNIT</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5">UNIT</unit_role_indicator_code_d>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2DB</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0002</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_information_source>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">M</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">00318</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">00122</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+<location_amplification set-id="locampn" set-seq="21">
+<location_type alt="A" ff-seq="1" ffirn-fudn="1284-1">MAIN</location_type>
+<location_name alt="A " ff-seq="2" ffirn-fudn="1022-4">REIMS</location_name>
+<geographic_place_name alt="A " ff-seq="3" ffirn-fudn="1022-90">FRANCE</geographic_place_name>
+<geographical_entity alt="A " ff-seq="4" ffirn-fudn="1026-1">FR</geographical_entity>
+</location_amplification>
+<activity_segment>
+<activity set-id="activity" set-seq="22">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<activity_type alt="A" ff-seq="2" ffirn-fudn="1299-1">ATTACK</activity_type>
+<activity_qualifier alt="A" ff-seq="3" ffirn-fudn="1291-1">MAIN</activity_qualifier>
+<activity_codeword_designator alt="A " ff-seq="4" ffirn-fudn="1020-3">BEUAH</activity_codeword_designator>
+</activity>
+<direction set-id="drctn" set-seq="23">
+<direction_of_movement alt="A " ff-seq="1" ffirn-fudn="1161-3">N</direction_of_movement>
+<day_time_effective alt="A " ff-seq="2" ffirn-fudn="2000-13">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">15</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_effective>
+<speed_in_kilometres_per_hour alt="A " ff-seq="3" ffirn-fudn="1267-1">56</speed_in_kilometres_per_hour>
+</direction>
+<organization_designator_of_own_affected_unit_segment>
+<organization_designator_of_own_affected_unit set-id="orgidafu" set-seq="24">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">3RGTINF</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">UNIT</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">UNIT</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5">UNIT</unit_role_indicator_code_d>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2DB</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0003</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_own_affected_unit>
+<attack_type set-id="atktype" set-seq="25">
+<employment_type alt="A " ff-seq="1" ffirn-fudn="1294-1">ESPIONAGE</employment_type>
+</attack_type>
+</organization_designator_of_own_affected_unit_segment>
+<information_evaluation_1 set-id="infoeval" set-seq="26">
+<evaluation_of_information alt="A " ff-seq="1" ffirn-fudn="2054-1">
+<evaluation_of_reliability ffirn-fudn="1202-1">A</evaluation_of_reliability>
+<evaluation_of_accuracy ffirn-fudn="1251-1">1</evaluation_of_accuracy>
+</evaluation_of_information>
+<source_type_of_intelligence_information alt="A " ff-seq="2" ffirn-fudn="1310-1">AIRRECCE</source_type_of_intelligence_information>
+<dtg_4_digit_year alt="A " ff-seq="3" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">OCT</month_name>
+<year ffirn-fudn="1005-7">2003</year>
+</dtg_4_digit_year>
+</information_evaluation_1>
+<organization_designator_of_information_source_1 set-id="orgidsce" set-seq="27">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">BOND</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">SECTION</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">UK</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">MI</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">UNIT</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">UNIT</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5">UNIT</unit_role_indicator_code_d>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2DB</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">000002</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_information_source_1>
+</activity_segment>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<location_and_nearest_feature_segment>
+<location_and_nearest_feature set-id="locnf" set-seq="28">
+<geographic_place_name alt="A " ff-seq="1" ffirn-fudn="1022-90">REIMS</geographic_place_name>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="2" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">M</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">00318</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">00122</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="2" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">M</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">00318</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">00123</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+</location_and_nearest_feature>
+<enemy_organizational_boundary set-id="eorgbdry" set-seq="29">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1RGTINFE</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">IZ</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<boundary_unit_level_indicator alt="A" ff-seq="5" ffirn-fudn="1045-7">III</boundary_unit_level_indicator>
+<unit_designation_name_1 alt="A " ff-seq="6" ffirn-fudn="1022-39">2RGTINFE</unit_designation_name_1>
+<verified_unit_size_indicator_1 alt="A " ff-seq="7" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_unit_size_indicator_1>
+<verified_nationality_1 alt="A " ff-seq="8" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">IZ</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_nationality_1>
+<verified_unit_role_indicator_code_a_1 alt="A " ff-seq="9" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">C</verification_indicator>
+</verified_unit_role_indicator_code_a_1>
+</enemy_organizational_boundary>
+<information_evaluation_2 set-id="infoeval" set-seq="30">
+<evaluation_of_information alt="A " ff-seq="1" ffirn-fudn="2054-1">
+<evaluation_of_reliability ffirn-fudn="1202-1">A</evaluation_of_reliability>
+<evaluation_of_accuracy ffirn-fudn="1251-1">1</evaluation_of_accuracy>
+</evaluation_of_information>
+<source_type_of_intelligence_information alt="A " ff-seq="2" ffirn-fudn="1310-1">AIRRECCE</source_type_of_intelligence_information>
+<dtg_4_digit_year alt="A " ff-seq="3" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">OCT</month_name>
+<year ffirn-fudn="1005-7">2003</year>
+</dtg_4_digit_year>
+</information_evaluation_2>
+<organization_designator_of_information_source_2 set-id="orgidsce" set-seq="31">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">BOND</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">SECTION</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">UK</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">MI</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">UNIT</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">UNIT</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5">UNIT</unit_role_indicator_code_d>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2DB</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0002</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_information_source_2>
+</location_and_nearest_feature_segment>
+<general_text set-id="gentext" set-seq="32">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">COMMANDERS ASSESSMENT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">PFFF</free_text>
+</general_text>
+</enemy_land_forces_situation_report>

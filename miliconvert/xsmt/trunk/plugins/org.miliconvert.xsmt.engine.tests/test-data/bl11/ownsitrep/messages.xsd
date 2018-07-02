@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="nato:adatp-3:bl11" xmlns:s="nato:adatp-3:bl11:sets" attributeFormDefault="unqualified" elementFormDefault="unqualified" version="bl11">
+<xsd:import namespace="nato:adatp-3:bl11:sets" schemaLocation="sets.xsd"/>
+<xsd:element name="own_land_forces_situation_report">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="exercise_identification">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:exercise.identification">
+<xsd:attribute fixed="1" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="operation_codeword">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:operation.codeword">
+<xsd:attribute fixed="2" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_identifier">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.identifier">
+<xsd:attribute fixed="3" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="reference">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:reference">
+<xsd:attribute fixed="4" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="geodetic_datum">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:geodetic.datum">
+<xsd:attribute fixed="5" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="date_time_group">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:date.time.group">
+<xsd:attribute fixed="6" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="organization_designator_of_drafter_releaser">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator.of.drafter.releaser">
+<xsd:attribute fixed="7" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="map_data_without_geodetic_datum">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:map.data.without.geodetic.datum">
+<xsd:attribute fixed="8" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_part_and_title_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_part_and_title">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.part.and.title">
+<xsd:attribute fixed="9" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator">
+<xsd:attribute fixed="10" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="command_relationship_type">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:command.relationship.type">
+<xsd:attribute fixed="11" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="organization_designator_of_subordinate_unit_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_of_subordinate_unit">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator.of.subordinate.unit">
+<xsd:attribute fixed="12" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="command_relationship_type_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:command.relationship.type">
+<xsd:attribute fixed="13" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="time">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:time">
+<xsd:attribute fixed="14" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="15" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="message_part_and_title_1_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_part_and_title_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.part.and.title">
+<xsd:attribute fixed="16" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_1_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator">
+<xsd:attribute fixed="17" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="time_period_covered">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:time.period.covered">
+<xsd:attribute fixed="18" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="location_nearest_feature_and_confirmation_status_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="location_nearest_feature_and_confirmation_status">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:location.nearest.feature.and.confirmation.status">
+<xsd:attribute fixed="19" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="time_period_covered_1_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="time_period_covered_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:time.period.covered">
+<xsd:attribute fixed="20" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="activity">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:activity">
+<xsd:attribute fixed="21" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="operational_movement">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:operational.movement">
+<xsd:attribute fixed="22" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="23" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="message_part_and_title_2_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_part_and_title_2">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.part.and.title">
+<xsd:attribute fixed="24" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_2_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_2">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator">
+<xsd:attribute fixed="25" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="combat_effectiveness">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:combat.effectiveness">
+<xsd:attribute fixed="26" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="main_equipment_of_own_units">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:main.equipment.of.own.units">
+<xsd:attribute fixed="27" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="link_status">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:link.status">
+<xsd:attribute fixed="28" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enemy_organization_designator_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="enemy_organization_designator">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:enemy.organization.designator">
+<xsd:attribute fixed="29" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="enemy_strength">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:enemy.strength">
+<xsd:attribute fixed="30" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enemy_materiel">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:enemy.materiel">
+<xsd:attribute fixed="31" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="geographic_location">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:geographic.location">
+<xsd:attribute fixed="32" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="location_amplification">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:location.amplification">
+<xsd:attribute fixed="33" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="time_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:time">
+<xsd:attribute fixed="34" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="activity_1">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:activity">
+<xsd:attribute fixed="35" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_2">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="36" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_3">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="37" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="message_part_and_title_3_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="message_part_and_title_3">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:message.part.and.title">
+<xsd:attribute fixed="38" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_3_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="organization_designator_3">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.designator">
+<xsd:attribute fixed="39" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="control_or_coordination_line_type_segment">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="control_or_coordination_line_type">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:control.or.coordination.line.type">
+<xsd:attribute fixed="40" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="location_and_nearest_feature">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:location.and.nearest.feature">
+<xsd:attribute fixed="41" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="organization_boundary">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:organization.boundary">
+<xsd:attribute fixed="42" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="time_period_covered_2">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:time.period.covered">
+<xsd:attribute fixed="43" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="qualified_start_time">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:qualified.start.time">
+<xsd:attribute fixed="44" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="general_text_4">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="s:general.text">
+<xsd:attribute fixed="45" name="set-seq" type="xsd:unsignedShort"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="remarks" type="s:remarks"/>
+</xsd:sequence>
+<xsd:attribute fixed="OWNSITREP" name="mtfid" type="xsd:string"/>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>

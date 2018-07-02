@@ -1,0 +1,5 @@
+#Eclipse Product File
+#Fri Jan 29 10:03:18 CET 2010
+version=1.2.0.201001291003
+name=Txt2Xml Command Line interface
+id=org.miliconvert.txt2xml.cli.txt2xml_cli

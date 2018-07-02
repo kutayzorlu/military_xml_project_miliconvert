@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.xsmt.tmodel.tests
+Bundle-SymbolicName: org.miliconvert.xsmt.tmodel.tests
+Bundle-Version: 1.0.0
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.miliconvert.xsmt.tmodel,
+ org.junit,
+ org.eclipse.xsd,
+ org.miliconvert.xsmt.utils
+Export-Package: org.miliconvert.xsmt.tmodel.tests

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactreport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactreport.xsd">
+  <message_identification set-seq="40" setId="MSGID">
+    <command ff-seq="1">COMSECONDFLT</command>
+    <message_identifier ff-seq="2">GOLD</message_identifier>
+    <message_serial_no ff-seq="3">1234</message_serial_no>
+    <month ff-seq="4">DEC</month>
+  </message_identification>
+  <contact_segment seg-seq="1">
+    <contact set-seq="5" setId="CTC">
+      <track_number ff-seq="1">T7020</track_number>
+      <class-name ff-seq="2">NIMITZ-EISENHOWER DD</class-name>
+      <category ff-seq="5">NAV</category>
+      <flag ff-seq="7">US</flag>
+      <force_code ff-seq="11">09</force_code>
+      <track_type ff-seq="13"/>
+      <position_segment seg-seq="1">
+        <position set-seq="5" setId="POS">
+          <date-time_group ff-seq="1">021234Z2</date-time_group>
+          <month ff-seq="2">MAY</month>
+          <latitude_of_center ff-seq="3">3141N9</latitude_of_center>
+          <longitude_of_center ff-seq="4">12135W2</longitude_of_center>
+          <personnel set-seq="21" setId="PRSNL">
+            <date-time_group ff-seq="1">021234Z2</date-time_group>
+            <month ff-seq="2">MAY</month>
+            <number_persons_allocated ff-seq="3">5000</number_persons_allocated>
+            <number_persons_assigned ff-seq="4">4980</number_persons_assigned>
+            <number_killed ff-seq="5">0</number_killed>
+            <no_missing_in_action ff-seq="6">0</no_missing_in_action>
+            <number_captured ff-seq="7">0</number_captured>
+            <number_wounded ff-seq="8">12</number_wounded>
+            <no_wounded_ambulatory ff-seq="9">11</no_wounded_ambulatory>
+            <no_wnded_transport_not_amblatory ff-seq="10">1</no_wnded_transport_not_amblatory>
+          </personnel>
+          <equipment set-seq="22" setId="EQPT">
+            <date-time_group ff-seq="1">021240Z9</date-time_group>
+            <month ff-seq="2">MAY</month>
+            <equipment_name ff-seq="3">SH-3</equipment_name>
+            <no_of_equipment_allocated ff-seq="4">4</no_of_equipment_allocated>
+            <no_of_equipment_assigned ff-seq="5">4</no_of_equipment_assigned>
+          </equipment>
+          <equipment set-seq="22" setId="EQPT">
+            <date-time_group ff-seq="1">021240Z9</date-time_group>
+            <month ff-seq="2">MAY</month>
+            <equipment_name ff-seq="3">ANUSQ-119BV</equipment_name>
+            <no_of_equipment_allocated ff-seq="4">17</no_of_equipment_allocated>
+            <no_of_equipment_assigned ff-seq="5">17</no_of_equipment_assigned>
+          </equipment>
+          <refugees set-seq="24" setId="REFUG">
+            <date-time_group ff-seq="1">021245Z4</date-time_group>
+            <month ff-seq="2">MAY</month>
+            <no_of_refugees ff-seq="3">20</no_of_refugees>
+            <country_code ff-seq="4">HA</country_code>
+          </refugees>
+        </position>
+      </position_segment>
+    </contact>
+  </contact_segment>
+  <contact_segment seg-seq="1">
+    <contact set-seq="5" setId="CTC">
+      <track_number ff-seq="1">T7021</track_number>
+      <class-name ff-seq="2">MIG27-UNKNOWN</class-name>
+      <category ff-seq="5">AIR</category>
+      <alert_code ff-seq="10">TGT</alert_code>
+      <force_code ff-seq="11">01</force_code>
+      <track_type ff-seq="13"/>
+      <position_segment seg-seq="1">
+        <position set-seq="5" setId="POS">
+          <date-time_group ff-seq="1">021444Z5</date-time_group>
+          <month ff-seq="2">MAY</month>
+          <latitude_of_center ff-seq="3">2345N4</latitude_of_center>
+          <longitude_of_center ff-seq="4">13245W5</longitude_of_center>
+          <length_of_semi-major_axis ff-seq="7">2NM</length_of_semi-major_axis>
+          <length_of_semi-minor_axis ff-seq="8">2NM</length_of_semi-minor_axis>
+          <course ff-seq="9">120T</course>
+          <speed ff-seq="10">570K</speed>
+          <altitudedepth ff-seq="11">ALT062</altitudedepth>
+          <engagement set-seq="25" setId="ENGAG">
+            <date-time_group ff-seq="1">012305Z1</date-time_group>
+            <month ff-seq="2">MAY</month>
+            <engagement_level ff-seq="3">BA</engagement_level>
+            <unique_identifier ff-seq="4">CBA876543210</unique_identifier>
+          </engagement>
+        </position>
+      </position_segment>
+    </contact>
+  </contact_segment>
+  <end_of_data set-seq="45" setId="ENDAT"/>
+</contactreport>

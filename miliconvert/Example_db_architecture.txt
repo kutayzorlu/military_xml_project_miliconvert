@@ -1,0 +1,21 @@
+Roles of Commanders
+: role_id_
+read_access
+writeaccess
+transfer access
+
+Message Types: 
+type id
+type name
+type format
+
+roles
+role_id
+role_name
+
+Main Device Table 
+   sender code
+   group
+	sender short name
+		subject
+		message prirt

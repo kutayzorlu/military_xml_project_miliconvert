@@ -1,0 +1,1569 @@
+
+
+package org.mpgt.rules.ensitrep;
+
+expander mpgt-fields-ensitrep.dsl;
+
+import org.miliconvert.xsmt.mpgt.rules.EnsitrepFieldRules;
+import org.miliconvert.xsmt.mpgt.rules.CommonFieldRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+
+
+rule R_INFOEVAL_18_0_3_0
+when
+		Dans le set  INFOEVAL avec la position 18 alternative 0
+		Dans le champ de ffirn 2033_001 avec la position 3 alternative 0
+then
+		Règle A_GdhFormatAn
+end
+
+rule R_INFOEVAL_18_0_2_0
+when
+		Dans le set  INFOEVAL avec la position 18 alternative 0
+		Dans le champ de ffirn 1310_001 avec la position 2 alternative 0
+then
+		CD=(AD3_1310_1;MPGT_RapportTypeSource)
+end
+
+rule R_INFOEVAL_18_0_1_1
+when
+		Dans le set  INFOEVAL avec la position 18 alternative 0
+		Dans le champ de ffirn 1202_001 avec la position 1 alternative 1
+then
+		CD=(AD3_1202_1;MPGT_RapportFiabiliteSource)
+end
+
+rule R_INFOEVAL_18_0_1_2
+when
+		Dans le set  INFOEVAL avec la position 18 alternative 0
+		Dans le champ de ffirn 1251_001 avec la position 1 alternative 2
+then
+		CD=(AD3_1251_1;MPGT_RapportExactitude)
+end
+
+rule R_1POL_15_0_1_0
+when
+		Dans le set  1POL avec la position 15 alternative 0
+		Dans le champ de ffirn 1281_001 avec la position 1 alternative 0
+then
+		Règle A_1POL_ExisteConsommable
+		VI APourDotationEffective{MPGT.DotationEffectiveConsommable}#AssocieCommeType{MPIA.AutreTypeConsommable}#Dico_AutreTypeConsommableCategorie = "POL"
+end
+
+
+rule R_1AMMOH_13_0_1_0
+when
+		Dans le set  1AMMOH avec la position 13 alternative 0
+		Dans le champ de ffirn 1281_001 avec la position 1 alternative 0
+then
+		Règle A_1AMMOH_ExisteConsommable
+end
+
+rule R_2SHORAD_14_0_1_0
+when
+		Dans le set  2SHORAD avec la position 14 alternative 0
+		Dans le champ de ffirn 1281_001 avec la position 1 alternative 0
+then
+		Règle A_2SHORAD_ExisteEquipement
+end
+
+rule R_2SHORAD_14_0_6_0
+when
+		Dans le set  2SHORAD avec la position 14 alternative 0
+		Dans le champ de ffirn 1044_122 avec la position 6 alternative 0
+then
+		LIGNE = 68 définit le type d'arme concerné.
+		Règle A_2SHORAD_ExisteEquipement
+end
+
+
+rule R_ESUBORD_11_0_1_1
+when
+		Dans le set  ESUBORD avec la position 11 alternative 0
+		Dans le champ de ffirn 1272_002 avec la position 1 alternative 1
+then
+		CD=(AD3_1272_2;MPGT_AssociationEntiteOrgEntiteOrgCategorie,MPGT_AssociationInstanceObjetInstanceObjetSousCategorie)
+end
+
+rule R_ESUBORD_11_0_1_2
+when
+		Dans le set  ESUBORD avec la position 11 alternative 0
+		Dans le champ de ffirn 1272_002 avec la position 1 alternative 2
+then
+		CD=(AD3_1272_2;MPGT_AssociationEntiteOrgEntiteOrgCategorie,MPGT_AssociationInstanceObjetInstanceObjetSousCategorie)
+end
+
+rule R_ESUBORD_11_0_1_3
+when
+		Dans le set  ESUBORD avec la position 11 alternative 0
+		Dans le champ de ffirn 1272_002 avec la position 1 alternative 3
+then
+		CD=(AD3_1272_2;MPGT_AssociationEntiteOrgEntiteOrgCategorie,MPGT_AssociationInstanceObjetInstanceObjetSousCategorie)
+end
+
+rule R_ESUBORD_11_0_1_4
+when
+		Dans le set  ESUBORD avec la position 11 alternative 0
+		Dans le champ de ffirn 1272_002 avec la position 1 alternative 4
+then
+		CD=(AD3_1272_2;MPGT_AssociationEntiteOrgEntiteOrgCategorie,MPGT_AssociationInstanceObjetInstanceObjetSousCategorie)
+end
+
+
+rule R_1FWPNS_12_0_1_0
+when
+		Dans le set  1FWPNS avec la position 12 alternative 0
+		Dans le champ de ffirn 1281_001 avec la position 1 alternative 0
+then
+		Règle A_1FWPNS_ExisteEquipement
+end
+
+rule R_1FWPNS_12_0_5_0
+when
+		Dans le set  1FWPNS avec la position 12 alternative 0
+		Dans le champ de ffirn 1044_122 avec la position 5 alternative 0
+then
+		LIGNE = 55 définit le type d'arme concerné.
+		Règle A_1FWPNS_ExisteEquipement
+end
+
+rule R_LOCAMPN_21_0_2_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 0
+		Dans le champ de ffirn 1022_004 avec la position 2 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.AutreElementControle}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "HO" (Hostile) ou "PENDNG" (Pending) ou "SUSPCT" (Suspect) en fonction de l'état opérationnel de l'unité associé : LIGNE = 22/46/47/1165/1189/1190.
+end
+
+rule R_LOCAMPN_21_0_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 0
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;MPGT_AutreTypeElementControleCategorie;MPGT_AutreTypeElementControleSousCategorie
+end
+
+rule R_LOCAMPN_21_0_1_2
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 0
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 2
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;MPGT_AutreTypeElementControleCategorie;MPGT_AutreTypeElementControleSousCategorie
+end
+
+rule R_LOCAMPN_21_0_1_3
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 0
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 3
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;MPIA.Type.Fictif
+end
+
+rule R_LOCAMPN_21_0_1_4
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 0
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 4
+then
+		CD=(AD3_1268_2;MPGT_RapportConfirmation)
+		VI  EstSujet{MPGT.AssociationEntiteOrgEntiteOrg}#EstRapporteePar{MPIA.Rapport}#EstRedigePar{MPIA.EntiteOrganisationnelle} = nom entité définie par le set ORGIDDFT à la ligne 14.
+end
+
+rule R_LOCAMPN_21_0_4_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 0
+		Dans le champ de ffirn 1026_001 avec la position 4 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_LOCAMPN_21_1_2_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 1
+		Dans le champ de ffirn 1022_004 avec la position 2 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.AutreElementControle}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "HO" (Hostile) ou "PENDNG" (Pending) ou "SUSPCT" (Suspect) en fonction de l'état opérationnel de l'unité associé : LIGNE = 22/46/47/1165/1189/1190.
+end
+
+rule R_LOCAMPN_21_1_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 1
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		VI MPIA.Type.Fictif = "0"
+end
+
+rule R_LOCAMPN_21_1_1_2
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 1
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 2
+then
+		CD=(AD3_1268_2;MPGT_RapportConfirmation)
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#EstRapporteePar{MPIA.Rapport}#EstRedigePar{MPIA.EntiteOrganisationnelle} = nom entité définie par le set ORGIDDFT à la ligne 14.
+end
+
+rule R_LOCAMPN_21_1_4_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 1
+		Dans le champ de ffirn 1026_001 avec la position 4 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_LOCAMPN_21_2_2_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 2
+		Dans le champ de ffirn 1022_004 avec la position 2 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.AutreElementControle}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "HO" (Hostile) ou "PENDNG" (Pending) ou "SUSPCT" (Suspect) en fonction de l'état opérationnel de l'unité associé : LIGNE = 22/46/47/1165/1189/1190.
+end
+
+rule R_LOCAMPN_21_2_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 2
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;AutreTypeSiteCategorie
+end
+
+rule R_LOCAMPN_21_2_1_2
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 2
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 2
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;MPIA.Type.Fictif
+end
+
+rule R_LOCAMPN_21_2_1_3
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 2
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 3
+then
+		CD=(AD3_1268_2;MPGT_RapportConfirmation)
+		VI  EstSujet{MPGT.AssociationEntiteOrgSite}#EstRapporteePar{MPIA.Rapport}#EstRedigePar{MPIA.EntiteOrganisationnelle} = nom entité définie par le set ORGIDDFT à la ligne 14.
+end
+
+rule R_LOCAMPN_21_2_4_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 2
+		Dans le champ de ffirn 1026_001 avec la position 4 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_LOCAMPN_21_3_2_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 3
+		Dans le champ de ffirn 1022_004 avec la position 2 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgSite}#APourObjet{MPIA.Aerodrome}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "HO" (Hostile) ou "PENDNG" (Pending) ou "SUSPCT" (Suspect) en fonction de l'état opérationnel de l'unité associé : LIGNE = 22/46/47/1165/1189/1190.
+end
+
+rule R_LOCAMPN_21_3_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 3
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		VI MPIA.Type.Fictif = "0"
+end
+
+rule R_LOCAMPN_21_3_1_2
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 3
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 2
+then
+		CD=(AD3_1268_2;MPGT_RapportConfirmation)
+		VI EstSujet{MPGT.AssociationEntiteOrgSite}#EstRapporteePar{MPIA.Rapport}#EstRedigePar{MPIA.EntiteOrganisationnelle} = nom nom entité définie par le set ORGIDDFT à la ligne 14.
+end
+
+rule R_LOCAMPN_21_3_4_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 3
+		Dans le champ de ffirn 1026_001 avec la position 4 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_LOCAMPN_21_4_2_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 4
+		Dans le champ de ffirn 1022_004 avec la position 2 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.AutreElementControle}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "HO" (Hostile) ou "PENDNG" (Pending) ou "SUSPCT" (Suspect) en fonction de l'état opérationnel de l'unité associé : LIGNE = 22/46/47/1165/1189/1190.
+end
+
+rule R_LOCAMPN_21_4_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 4
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		VI MPIA.Type.Fictif = "0"
+end
+
+rule R_LOCAMPN_21_4_1_2
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 4
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 2
+then
+		CD=(AD3_1268_2;MPGT_RapportConfirmation)
+		VI EstSujet{MPGT.AssociationEntiteOrgSite}#EstRapporteePar{MPIA.Rapport}#EstRedigePar{MPIA.EntiteOrganisationnelle} = nom nom entité définie par le set ORGIDDFT à la ligne 14.
+end
+
+rule R_LOCAMPN_21_4_4_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 4
+		Dans le champ de ffirn 1026_001 avec la position 4 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_LOCAMPN_21_5_2_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 5
+		Dans le champ de ffirn 1022_004 avec la position 2 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.AutreElementControle}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "HO" (Hostile) ou "PENDNG" (Pending) ou "SUSPCT" (Suspect) en fonction de l'état opérationnel de l'unité associé : LIGNE = 22/46/47/1165/1189/1190.
+end
+
+rule R_LOCAMPN_21_5_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 5
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		VI MPIA.Type.Fictif = "0"
+end
+
+rule R_LOCAMPN_21_5_1_2
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 5
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 2
+then
+		CD=(AD3_1268_2;MPGT_RapportConfirmation)
+		VI EstSujet{MPGT.AssociationEntiteOrgSite}#EstRapporteePar{MPIA.Rapport}#EstRedigePar{MPIA.EntiteOrganisationnelle} = nom nom entité définie par le set ORGIDDFT à la ligne 14.
+end
+
+rule R_LOCAMPN_21_5_4_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 5
+		Dans le champ de ffirn 1026_001 avec la position 4 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_LOCAMPN_21_6_2_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 6
+		Dans le champ de ffirn 1022_004 avec la position 2 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.AutreElementControle}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "HO" (Hostile) ou "PENDNG" (Pending) ou "SUSPCT" (Suspect) en fonction de l'état opérationnel de l'unité associé : LIGNE = 22/46/47/1165/1189/1190.
+end
+
+rule R_LOCAMPN_21_6_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 6
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		VI MPIA.Type.Fictif = "0"
+end
+
+rule R_LOCAMPN_21_6_1_2
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 6
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 2
+then
+		CD=(AD3_1268_2;MPGT_RapportConfirmation)
+		VI EstSujet{MPGT.AssociationEntiteOrgSite}#EstRapporteePar{MPIA.Rapport}#EstRedigePar{MPIA.EntiteOrganisationnelle} = nom entité définie par le set ORGIDDFT à la ligne 14.
+end
+
+rule R_LOCAMPN_21_6_4_0
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 6
+		Dans le champ de ffirn 1026_001 avec la position 4 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_LOCAMPN_21_7_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 7
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;TypeEntiteOrganisationnelleTypeCommandement;EtatOperationnelEntiteOrganisationnelleFonctionPC;MPIA.Type.Fictif
+end
+
+rule R_LOCAMPN_21_7_1_2
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 7
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 2
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;TypeEntiteOrganisationnelleTypeCommandement;EtatOperationnelEntiteOrganisationnelleFonctionPC;MPIA.Type.Fictif
+end
+
+rule R_LOCAMPN_21_7_1_3
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 7
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 3
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;TypeEntiteOrganisationnelleTypeCommandement;EtatOperationnelEntiteOrganisationnelleFonctionPC;MPIA.Type.Fictif
+end
+
+
+rule R_LOCAMPN_21_8_1_1
+when
+		Dans le set  LOCAMPN avec la position 21 alternative 8
+		Dans le champ de ffirn 1284_001 avec la position 1 alternative 1
+then
+		CD A_LOCATION_TYPE pour traiter la conversion des valeurs 1284_1;AssocInstanceObjetLocalisationCategorie
+end
+
+rule R_LOCATION_20_0_3_0
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3 alternative 0
+then
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+end
+
+rule R_LOCATION_20_0_3_1
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3 alternative 1
+then
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+end
+
+rule R_LOCATION_20_0_3_2
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3 alternative 2
+then
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+end
+
+rule R_LOCATION_20_0_3_3
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3 alternative 3
+then
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+end
+
+rule R_LOCATION_20_0_3_4
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3 alternative 4
+then
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+end
+
+rule R_LOCATION_20_0_1_0
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 1268_001 avec la position 1 alternative 0
+then
+		CD=(AD3_1268_2;MPGT_RapportConfirmation)
+		VI EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#EstRedigePar{MPIA.EntiteOrganisationnelle} = nom entité définie par le set ORGIDDFT à la ligne 14.
+end
+
+rule R_LOCATION_20_0_3A_0
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 0
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_1
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 1
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_2
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 2
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_3
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 3
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_4
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 4
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_5
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 5
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_6
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 6
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_7
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 7
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_8
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 8
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_9
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 9
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3A_10
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 3A alternative 10
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_0
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 0
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_1
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 1
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_2
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 2
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_3
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 3
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_4
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 4
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_5
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 5
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_6
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 6
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_7
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 7
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_8
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 8
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_9
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 9
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3B_10
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 3B alternative 10
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3E_0
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2022_001 avec la position 3E alternative 0
+then
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+end
+
+rule R_LOCATION_20_0_3D_0
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 0
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_1
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 1
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_2
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 2
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_3
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 3
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_4
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 4
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_5
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 5
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_6
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 6
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_7
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 7
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_8
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 8
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_9
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 9
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3D_10
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 3D alternative 10
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_0
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 0
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_1
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 1
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_2
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 2
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_3
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 3
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_4
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 4
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_5
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 5
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_6
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 6
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_7
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 7
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_8
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 8
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_9
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 9
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCATION_20_0_3C_10
+when
+		Dans le set  LOCATION avec la position 20 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 3C alternative 10
+then
+		Règle ConversionUTM
+end
+
+rule R_ACTIVITY_22_0_3_0
+when
+		Dans le set  ACTIVITY avec la position 22 alternative 0
+		Dans le champ de ffirn 1291_001 avec la position 3 alternative 0
+then
+		Règle A_ACTIVITY_QUALIFIER
+end
+
+rule R_ACTIVITY_22_0_3_1
+when
+		Dans le set  ACTIVITY avec la position 22 alternative 0
+		Dans le champ de ffirn 1291_001 avec la position 3 alternative 1
+then
+		Règle A_ACTIVITY_QUALIFIER
+end
+
+rule R_ACTIVITY_22_0_2_0
+when
+		Dans le set  ACTIVITY avec la position 22 alternative 0
+		Dans le champ de ffirn 1299_001 avec la position 2 alternative 0
+then
+		CD=(AD3_1299_1;MPGT_ActionSousActivite,MPGT_ActionActivite)
+end
+
+rule R_ACTIVITY_22_0_2_1
+when
+		Dans le set  ACTIVITY avec la position 22 alternative 0
+		Dans le champ de ffirn 1299_001 avec la position 2 alternative 1
+then
+		CD=(AD3_1299_1;MPGT_ActionSousActivite,MPGT_ActionActivite)
+end
+
+rule R_ACTIVITY_22_0_1_0
+when
+		Dans le set  ACTIVITY avec la position 22 alternative 0
+		Dans le champ de ffirn 1268_001 avec la position 1 alternative 0
+then
+		CD=(AD3_1268_1;MPGT_ActionCategorie,MPGT_RapportConfirmation)
+end
+
+rule R_ACTIVITY_22_0_1_1
+when
+		Dans le set  ACTIVITY avec la position 22 alternative 0
+		Dans le champ de ffirn 1268_001 avec la position 1 alternative 1
+then
+		CD=(AD3_1268_1;MPGT_ActionCategorie,MPGT_RapportConfirmation)
+end
+
+rule R_DRCTN_23_0_3_0
+when
+		Dans le set  DRCTN avec la position 23 alternative 0
+		Dans le champ de ffirn 1267_001 avec la position 3 alternative 0
+then
+		Règle ConversionVitesse
+end
+
+rule R_DRCTN_23_0_2_0
+when
+		Dans le set  DRCTN avec la position 23 alternative 0
+		Dans le champ de ffirn 2000_013 avec la position 2 alternative 0
+then
+		Règle A_GdhFormatJour
+		VI EstSujet{MPIA.AssociationActiviteLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.Confirmation = "REP"
+end
+
+rule R_DRCTN_23_0_1_0
+when
+		Dans le set  DRCTN avec la position 23 alternative 0
+		Dans le champ de ffirn 1161_003 avec la position 1 alternative 0
+then
+		Règle A_Direction
+end
+
+rule R_ORGID_24_0_3_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1026_001 avec la position 3 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_ORGID_24_0_2_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1045_004 avec la position 2 alternative 0
+then
+		CD=(AD3_1045_4;MPGT_Niveau)
+end
+
+rule R_ORGID_24_0_10_1
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1026_002  avec la position 10 alternative 1
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_0_10_2
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1107_001  avec la position 10 alternative 2
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_0_10_3
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1012_103  avec la position 10 alternative 3
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_0_1_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1022_039 avec la position 1 alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "FR"
+end
+
+rule R_ORGID_24_0_9A_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1107_001 avec la position 9A alternative 0
+then
+		CD=(AD3_1107_1;MPGT_Armee)
+end
+
+rule R_ORGID_24_0_7_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1311_005 avec la position 7 alternative 0
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_ORGID_24_0_7_1
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1311_005 avec la position 7 alternative 1
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_ORGID_24_0_7_2
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1311_005 avec la position 7 alternative 2
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_ORGID_24_0_6_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1311_004 avec la position 6 alternative 0
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_ORGID_24_0_5_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1311_003 avec la position 5 alternative 0
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_ORGID_24_0_4_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 4 alternative 0
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_ORGID_24_0_8_0
+when
+		Dans le set  ORGID avec la position 24 alternative 0
+		Dans le champ de ffirn 1022_040 avec la position 8 alternative 0
+then
+		VI MPGT.AssociationEntiteOrgEntiteOrg.Categorie = "CMDCTL"
+end
+
+rule R_ORGID_24_1_3_0
+when
+		Dans le set  ORGID avec la position 24 alternative 1
+		Dans le champ de ffirn 1026_001 avec la position 3 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_ORGID_24_1_2_0
+when
+		Dans le set  ORGID avec la position 24 alternative 1
+		Dans le champ de ffirn 1045_004 avec la position 2 alternative 0
+then
+		CD=(AD3_1045_4;MPGT_TypeRegroupementForceCategorie)
+end
+
+rule R_ORGID_24_1_10_1
+when
+		Dans le set  ORGID avec la position 24 alternative 1
+		Dans le champ de ffirn 1026_002  avec la position 10 alternative 1
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_1_10_2
+when
+		Dans le set  ORGID avec la position 24 alternative 1
+		Dans le champ de ffirn 1107_001  avec la position 10 alternative 2
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_1_10_3
+when
+		Dans le set  ORGID avec la position 24 alternative 1
+		Dans le champ de ffirn 1012_103  avec la position 10 alternative 3
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_1_1_0
+when
+		Dans le set  ORGID avec la position 24 alternative 1
+		Dans le champ de ffirn 1022_039 avec la position 1 alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "FR"
+end
+
+rule R_ORGID_24_1_9A_0
+when
+		Dans le set  ORGID avec la position 24 alternative 1
+		Dans le champ de ffirn 1107_001 avec la position 9A alternative 0
+then
+		CD=(AD3_1107_1;MPGT_Armee)
+end
+
+rule R_ORGID_24_1_8_0
+when
+		Dans le set  ORGID avec la position 24 alternative 1
+		Dans le champ de ffirn 1022_040 avec la position 8 alternative 0
+then
+		VI MPGT.AssociationEntiteOrgEntiteOrg.Categorie = "CMDCTL"
+end
+
+rule R_ORGID_24_2_3_0
+when
+		Dans le set  ORGID avec la position 24 alternative 2
+		Dans le champ de ffirn 1026_001 avec la position 3 alternative 0
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_ORGID_24_2_10_1
+when
+		Dans le set  ORGID avec la position 24 alternative 2
+		Dans le champ de ffirn 1026_002  avec la position 10 alternative 1
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_2_10_2
+when
+		Dans le set  ORGID avec la position 24 alternative 2
+		Dans le champ de ffirn 1107_001  avec la position 10 alternative 2
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_2_10_3
+when
+		Dans le set  ORGID avec la position 24 alternative 2
+		Dans le champ de ffirn 1012_103  avec la position 10 alternative 3
+then
+		Concaténation des 3 sous zones dans l'attribut MPGT.EntiteOrganisationnelle.CodeIdentification
+end
+
+rule R_ORGID_24_2_1_0
+when
+		Dans le set  ORGID avec la position 24 alternative 2
+		Dans le champ de ffirn 1022_039 avec la position 1 alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "FR"
+end
+
+rule R_ORGID_24_2_9B_0
+when
+		Dans le set  ORGID avec la position 24 alternative 2
+		Dans le champ de ffirn 1507_001 avec la position 9B alternative 0
+then
+		CD=(AD3_1507_1;MPGT_AutreTypeOrganisationGouvernementaleSousCategorie)
+end
+
+rule R_ATKTYPE_25_0_1_0
+when
+		Dans le set  ATKTYPE avec la position 25 alternative 0
+		Dans le champ de ffirn 1294_001 avec la position 1 alternative 0
+then
+		CD=(AD3_1294_1;MPGT_EffetSurInstanceObjetTypeAttaque)
+end
+
+rule R_INFOEVAL_26_0_3_0
+when
+		Dans le set  INFOEVAL avec la position 26 alternative 0
+		Dans le champ de ffirn 2033_001 avec la position 3 alternative 0
+then
+		Règle A_GdhFormatAn
+end
+
+rule R_INFOEVAL_26_0_2_0
+when
+		Dans le set  INFOEVAL avec la position 26 alternative 0
+		Dans le champ de ffirn 1310_001 avec la position 2 alternative 0
+then
+		CD=(AD3_1310_1;MPGT_RapportTypeSource)
+end
+
+rule R_INFOEVAL_26_0_1_1
+when
+		Dans le set  INFOEVAL avec la position 26 alternative 0
+		Dans le champ de ffirn 1202_001 avec la position 1 alternative 1
+then
+		CD=(AD3_1202_1;MPGT_RapportFiabiliteSource)
+end
+
+rule R_INFOEVAL_26_0_1_2
+when
+		Dans le set  INFOEVAL avec la position 26 alternative 0
+		Dans le champ de ffirn 1251_001 avec la position 1 alternative 2
+then
+		CD=(AD3_1251_1;MPGT_RapportExactitude)
+end
+
+rule R_LOCNF_28_0_1_0
+when
+		Dans le set  LOCNF avec la position 28 alternative 0
+		Dans le champ de ffirn 1022_090 avec la position 1 alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "6"
+		VI MPIA.Limite.CategorieAdministrative = "THEA"
+end
+
+rule R_LOCNF_28_0_2A_0
+when
+		Dans le set  LOCNF avec la position 28 alternative 0
+		Dans le champ de ffirn 2089_020 avec la position 2A alternative 0
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCNF_28_0_2C_0
+when
+		Dans le set  LOCNF avec la position 28 alternative 0
+		Dans le champ de ffirn 2087_020 avec la position 2C alternative 0
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCNF_28_0_2B_0
+when
+		Dans le set  LOCNF avec la position 28 alternative 0
+		Dans le champ de ffirn 2086_020 avec la position 2B alternative 0
+then
+		Règle ConversionUTM
+end
+
+rule R_LOCNF_28_0_2D_0
+when
+		Dans le set  LOCNF avec la position 28 alternative 0
+		Dans le champ de ffirn 2088_020 avec la position 2D alternative 0
+then
+		Règle ConversionUTM
+end
+
+rule R_EORGBDRY_29_0_3_1
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1026_001 avec la position 3 alternative 1
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_EORGBDRY_29_0_3_2
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1233_001 avec la position 3 alternative 2
+then
+		NANA
+end
+
+rule R_EORGBDRY_29_0_2_1
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1045_004 avec la position 2 alternative 1
+then
+		CD=(AD3_1045_4;MPGT_Niveau)
+end
+
+rule R_EORGBDRY_29_0_2_2
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1233_001 avec la position 2 alternative 2
+then
+		NANA
+end
+
+rule R_EORGBDRY_29_0_1_0
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1022_039 avec la position 1 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.StructureOrganisee}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "6"
+		VC EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#MPGT.AssociationEntiteOrgEltCtrl.Categorie = "36"
+end
+
+rule R_EORGBDRY_29_0_7_1
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1045_004 avec la position 7 alternative 1
+then
+		CD=(AD3_1045_4;MPGT_Niveau)
+end
+
+
+
+rule R_EORGBDRY_29_0_6_0
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1022_039 avec la position 6 alternative 0
+then
+		VI EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.StructureOrganisee}#APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "6"
+		VC EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#MPGT.AssociationEntiteOrgEltCtrl.Categorie = "ISBDLE"
+end
+
+rule R_EORGBDRY_29_0_5_0
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1045_007 avec la position 5 alternative 0
+then
+		CD=(AD3_1045_7;MPGT_Niveau)
+end
+
+rule R_EORGBDRY_29_0_4_1
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 4 alternative 1
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_4_2
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 4 alternative 2
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_4_3
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 4 alternative 3
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_4_4
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 4 alternative 4
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_4_5
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 4 alternative 5
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_4_6
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 4 alternative 6
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_4_7
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1233_001 avec la position 4 alternative 7
+then
+		NANA
+end
+
+rule R_EORGBDRY_29_0_9_1
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 9 alternative 1
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_9_2
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 9 alternative 2
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_9_3
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 9 alternative 3
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_9_4
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 9 alternative 4
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_9_5
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 9 alternative 5
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+rule R_EORGBDRY_29_0_9_6
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 9 alternative 6
+then
+		CD=(AD3_1311_2;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale)
+end
+
+
+rule R_EORGBDRY_29_0_8_1
+when
+		Dans le set  EORGBDRY avec la position 29 alternative 0
+		Dans le champ de ffirn 1026_001 avec la position 8 alternative 1
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+
+rule R_EORGID_10_0_3_1
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1026_001 avec la position 3 alternative 1
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+
+rule R_EORGID_10_0_2_1
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1045_004 avec la position 2 alternative 1
+then
+		CD=(AD3_1045_4;MPGT_Niveau)
+end
+
+rule R_EORGID_10_0_1_0
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1022_039 avec la position 1 alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "6"
+end
+
+rule R_EORGID_10_0_10B_0
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 2151_001 avec la position 10B alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "13"
+end
+
+rule R_EORGID_10_0_7_1
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1311_005 avec la position 7 alternative 1
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+
+rule R_EORGID_10_0_7_3
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 2396_001 avec la position 7 alternative 3
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_EORGID_10_0_7_4
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 2396_001 avec la position 7 alternative 4
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_EORGID_10_0_10A_0
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 2150_001 avec la position 10A alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "12"
+end
+
+rule R_EORGID_10_0_6_1
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1311_004 avec la position 6 alternative 1
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_EORGID_10_0_5_1
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1311_003 avec la position 5 alternative 1
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+rule R_EORGID_10_0_5_2
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1233_001 avec la position 5 alternative 2
+then
+		NANA
+end
+
+rule R_EORGID_10_0_4_1
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1311_002 avec la position 4 alternative 1
+then
+		CD=(AD3_1311_2,AD3_1311_3,AD3_1311_4,AD3_1311_5;MPGT_TypeUniteCategorie,MPGT_TypeUniteCategorieArme,MPGT_TypeUniteSpecialisationArme,MPGT_TypeUniteSecondeSpecialisationArme,MPGT_TypeUniteMobiliteGenerale,MPGT_TypeUniteQualificatifArme)
+end
+
+
+rule R_EORGID_10_0_9_1
+when
+		Dans le set  EORGID avec la position 10 alternative 0
+		Dans le champ de ffirn 1107_001 avec la position 9 alternative 1
+then
+		CD=(AD3_1107_1;MPGT_Armee)
+end
+
+rule R_EORGID_10_1_3_1
+when
+		Dans le set  EORGID avec la position 10 alternative 1
+		Dans le champ de ffirn 1026_001 avec la position 3 alternative 1
+then
+		CD=(AD3_1026_1;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_EORGID_10_1_2_1
+when
+		Dans le set  EORGID avec la position 10 alternative 1
+		Dans le champ de ffirn 1045_004 avec la position 2 alternative 1
+then
+		CD=(AD3_1045_4;MPGT_TypeRegroupementForceCategorie)
+end
+
+
+rule R_EORGID_10_1_1_0
+when
+		Dans le set  EORGID avec la position 10 alternative 1
+		Dans le champ de ffirn 1022_039 avec la position 1 alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "6"
+end
+
+rule R_EORGID_10_1_10B_0
+when
+		Dans le set  EORGID avec la position 10 alternative 1
+		Dans le champ de ffirn 2151_001 avec la position 10B alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "13"
+end
+
+rule R_EORGID_10_1_10A_0
+when
+		Dans le set  EORGID avec la position 10 alternative 1
+		Dans le champ de ffirn 2150_001 avec la position 10A alternative 0
+then
+		VI APourComportement{MPGT.Comportement}#MPIA.EtatOperationnel.Comportement = "12"
+end
+
+rule R_INFOEVAL_30_0_3_0
+when
+		Dans le set  INFOEVAL avec la position 30 alternative 0
+		Dans le champ de ffirn 2033_001 avec la position 3 alternative 0
+then
+		Règle A_GdhFormatAn
+end
+
+rule R_INFOEVAL_30_0_2_0
+when
+		Dans le set  INFOEVAL avec la position 30 alternative 0
+		Dans le champ de ffirn 1310_001 avec la position 2 alternative 0
+then
+		CD=(AD3_1310_1;MPGT_RapportTypeSource)
+end
+
+rule R_INFOEVAL_30_0_1_1
+when
+		Dans le set  INFOEVAL avec la position 30 alternative 0
+		Dans le champ de ffirn 1202_001 avec la position 1 alternative 1
+then
+		CD=(AD3_1202_1;MPGT_RapportFiabiliteSource)
+end
+
+rule R_INFOEVAL_30_0_1_2
+when
+		Dans le set  INFOEVAL avec la position 30 alternative 0
+		Dans le champ de ffirn 1251_001 avec la position 1 alternative 2
+then
+		CD=(AD3_1251_1;MPGT_RapportExactitude)
+end
+
+

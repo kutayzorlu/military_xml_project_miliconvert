@@ -1,0 +1,6 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;SEA STATE;1-1;Individual;;1.0;In Service;03 Dec 07
+2;SEA STATE OF HEAD SEAS;1-1;Individual;;1.0;In Service;03 Dec 07
+3;SEA STATE OF BEAM SEAS;1-1;Individual;;1.0;In Service;03 Dec 07
+4;SEA STATE OF STERN SEAS;1-1;Individual;;1.0;In Service;03 Dec 07
+5;MAX OPERATING SEA STATE;1-1;Individual;THE MAXIMUM SEA STATE IN WHICH THE SPECIFIED LANDING CRAFT MAY BE OPERATED.;1.0;In Service;03 Dec 07

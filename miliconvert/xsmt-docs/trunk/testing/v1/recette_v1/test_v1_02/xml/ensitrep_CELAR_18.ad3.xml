@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enemy_land_forces_situation_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ensitrep/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1" xsi:nil="true"/>
+</exercise_identification>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">ENSITREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">6BLBFR</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">0</message_serial_number>
+</message_identifier>
+<geodetic_datum set-id="geodatum" set-seq="5">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">W84</geodetic_datum>
+</geodetic_datum>
+<date_time_group set-id="dtg" set-seq="6">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">05</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">54</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">JUL</month_name>
+<year ffirn-fudn="1005-7">2009</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="7">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">6BLB</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BDE</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">AT</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3" xsi:nil="true"/>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A " ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">999999</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_drafter_releaser>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">301RB-12</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">01200</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">25600</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">30BB</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">BDE</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">36100</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">23800</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">301RB</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">11500</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">27400</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1CA</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">CORPS</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">CBT</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">UNIT</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">36100</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">40100</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">301RB-13</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">06100</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">30200</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">101RI</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">L</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">92700</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">40100</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">101RI-1</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">COY</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">L</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">88800</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">32800</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">103RC-2</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">SQN</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">13800</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">44700</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">103RC-23</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">14200</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">42500</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">301RB-11</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">03500</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">27900</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">303RIM-11</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">MECH</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">S</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">03300</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">97700</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">303RIM-13</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">MECH</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">L</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">99800</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">02000</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">101RI-13</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">L</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">89400</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">28600</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">303RIM</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">MECH</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">19700</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">19700</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">101RI-11</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">L</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">92000</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">31400</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">101RI-12</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">L</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">85400</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">29100</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">103RC-21</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">17400</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">43400</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">103RC-22</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">AR</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">ARMD</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">M</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">T</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">11300</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">42100</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<command_relationship_indicator_segment>
+<command_relationship_indicator set-id="cmdreli" set-seq="9">
+<command_relationship_indicator alt="A " ff-seq="1" ffirn-fudn="1660-3">UNKNOWN</command_relationship_indicator>
+</command_relationship_indicator>
+<enemy_organization_designator set-id="eorgid" set-seq="10">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">303RIM-12</unit_designation_name>
+<verified_unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="2392-1">
+<unit_size_indicator ffirn-fudn="1045-4">PLT</unit_size_indicator>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_size_indicator>
+<verified_nationality alt="A " ff-seq="3" ffirn-fudn="2082-1">
+<geographical_entity ffirn-fudn="1026-1">XR</geographical_entity>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_nationality>
+<verified_unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="2393-1">
+<unit_role_indicator_code_a ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_a>
+<verified_unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="2394-1">
+<unit_role_indicator_code_b ffirn-fudn="1311-3">MECH</unit_role_indicator_code_b>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_unit_role_indicator_code_b>
+<verified_unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="2395-1" xsi:nil="true"/>
+<verified_unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="2396-1" xsi:nil="true"/>
+<verified_higher_formation_name alt="A " ff-seq="8" ffirn-fudn="2397-1" xsi:nil="true"/>
+<verified_armed_service alt="A " ff-seq="9" ffirn-fudn="2071-1">
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<verification_indicator ffirn-fudn="1233-1">-</verification_indicator>
+</verified_armed_service>
+</enemy_organization_designator>
+<geographic_location_segment>
+<geographic_location set-id="location" set-seq="20">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<type_of_graphic_shape alt="A " ff-seq="2" ffirn-fudn="1237-1">POINT</type_of_graphic_shape>
+<grid_reference_location_coordinate>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">L</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">S</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">98500</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">98300</utm_1_metre_northing>
+</location_utm_1_metre>
+</grid_reference_location_coordinate>
+</geographic_location>
+</geographic_location_segment>
+</command_relationship_indicator_segment>
+<general_text set-id="gentext" set-seq="32">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">COMMANDERS ASSESSMENT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1" xsi:nil="true"/>
+</general_text>
+</enemy_land_forces_situation_report>

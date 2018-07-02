@@ -1,0 +1,151 @@
+;SEG ;RPT ;OCC ;SETID ;SEQ ;FIELD OCCURRENCE ;SET FORMAT NAME 
+;;;O ;EXER ;1;/M /O // ;EXERCISE IDENTIFICATION 
+;;;C ;OPER ;2;/M /O /O /O // ;OPERATION CODEWORD 
+;;;M ;MSGID ;3;/M /M /O /O /O /O // ;MESSAGE IDENTIFIER 
+;;* ;O ;REF ;4;/M /M /M /M /O /O /*O // ;REFERENCE 
+;;;M ;QUEWORD ;5;/M // ;QUEUE WORD 
+;;;C ;TIMPD ;6;/M /M /M /O /O /O // ;TIME PERIOD 
+;O ;;[M] ;SUB ;7;/M /M /M /M /M /M /O /O /O /O /O // ;SUBMARINE CONTACT 
+;[ ;;O ;ASSOC ;8;/*M // ;ASSOCIATION 
+;[ ;;O ;ELLIPSE ;9;/M /M /M /M // ;ELLIPSE 
+;[ ;;C ;CIRC ;10;/M /*M // ;CIRCULAR AREA 
+;[ ;;C ;AREA ;11;/O /*C // ;AREA 
+;[ ;;C ;TIMEVENT ;12;/M /M /M /M /M /O /O // ;TIME OF SENSOR CONTACT EVENT 
+;[ ;* ;C ;BRNG ;13;/M /M /M /O /O /O // ;BEARING 
+;[ ;* ;M ;TMPOS ;14;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ ;* ;O ;RELPO ;15;/M /M /M /M /M /O /O // ;RELATIVE TO OWN POSITION 
+;[ ;* ;O ;REACT ;16;/M /M /M /M /M /O // ;REACTION 
+;[ ;;C ;TMPOS ;17;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ O ;;[M] ;ATTACK ;18;/M /M /O /O /O /O // ;ATTACK 
+;[ [ ;;M ;TMPOS ;19;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;EMITTER ;20;/M /M /M /O /O /O // ;NON-ACOUSTIC EMISSION INTERCEPT 
+;[ [ ;* ;O ;BRNG ;21;/M /M /M /O /O /O // ;BEARING 
+;[ [ ;;O ;RADPA ;22;/M /O /O /O /O /O /O /O // ;RADAR PARAMETERS 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;SIGNA ;23;/M /M /M /O /O // ;SIGNATURE 
+;[ [ ;* ;O ;SIGSUM ;24;/M /M /M /O // ;SIGNATURE SUMMATION 
+;[ [ ;;O ;MODE ;25;/M /M /M /M // ;SUBMARINE OPERATING MODE 
+;;;;;;;END OF SEGMENT 
+;[ ;;O ;SUMRY ;26;/M /M /M /M /M /M /O // ;CONTACT SUMMARY 
+;[ ;;O ;ARR ;27;/M /M /M /M /*O // ;ARRIVAL 
+;[ ;;O ;INPORT ;28;/M /M /M /M /*O // ;INPORT 
+;[ ;;O ;DEP ;29;/M /M /M /M /*O // ;DEPARTURE 
+;[ ;;O ;DEST ;30;/M /M /M /M /*O // ;DESTINATION 
+;;;;;;;END OF SEGMENT 
+;O ;;[M] ;NAVAL ;31;/M /M /M /M /M /M /M /O /O /O // ;NAVAL SURFACE CONTACT 
+;[ ;;O ;ASSOC ;32;/*M // ;ASSOCIATION 
+;[ ;;O ;ELLIPSE ;33;/M /M /M /M // ;ELLIPSE 
+;[ ;;C ;CIRC ;34;/M /*M // ;CIRCULAR AREA 
+;[ ;;C ;AREA ;35;/O /*C // ;AREA 
+;[ ;;M ;TIMEVENT ;36;/M /M /M /M /M /O /O // ;TIME OF SENSOR CONTACT EVENT 
+;[ ;* ;C ;BRNG ;37;/M /M /M /O /O /O // ;BEARING 
+;[ ;* ;M ;TMPOS ;38;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ ;* ;O ;RELPO ;39;/M /M /M /M /M /O /O // ;RELATIVE TO OWN POSITION 
+;[ ;* ;O ;REACT ;40;/M /M /M /M /M /O // ;REACTION 
+;[ ;;C ;TMPOS ;41;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ O ;;[M] ;ATTACK ;42;/M /M /O /O /O /O // ;ATTACK 
+;[ [ ;;M ;TMPOS ;43;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;EMITTER ;44;/M /M /M /O /O /O // ;NON-ACOUSTIC EMISSION INTERCEPT 
+;[ [ ;* ;O ;BRNG ;45;/M /M /M /O /O /O // ;BEARING 
+;[ [ ;;O ;RADPA ;46;/M /O /O /O /O /O /O /O // ;RADAR PARAMETERS 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;SIGNA ;47;/M /M /M /O /O // ;SIGNATURE 
+;[ [ ;* ;O ;SIGSUM ;48;/M /M /M /O // ;SIGNATURE SUMMATION 
+;;;;;;;END OF SEGMENT 
+;[ ;;O ;SUMRY ;49;/M /M /M /M /M /M /O // ;CONTACT SUMMARY 
+;[ ;;O ;ARR ;50;/M /M /M /M /*O // ;ARRIVAL 
+;[ ;;O ;INPORT ;51;/M /M /M /M /*O // ;INPORT 
+;[ ;;O ;DEP ;52;/M /M /M /M /*O // ;DEPARTURE 
+;[ ;;O ;DEST ;53;/M /M /M /M /*O // ;DESTINATION 
+;;;;;;;END OF SEGMENT 
+;O ;;[M] ;AIR ;54;/M /M /M /M /M /M /M /M /O // ;AIRCRAFT CONTACT 
+;[ ;* ;M ;TMPOS ;55;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ ;* ;O ;REACT ;56;/M /M /M /M /M /O // ;REACTION 
+;[ ;;C ;TMPOS ;57;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ O ;;[M] ;ATTACK ;58;/M /M /O /O /O /O // ;ATTACK 
+;[ [ ;;M ;TMPOS ;59;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;EMITTER ;60;/M /M /M /O /O /O // ;NON-ACOUSTIC EMISSION INTERCEPT 
+;[ [ ;* ;O ;BRNG ;61;/M /M /M /O /O /O // ;BEARING 
+;[ [ ;;O ;RADPA ;62;/M /O /O /O /O /O /O /O // ;RADAR PARAMETERS 
+;[ ;;;;;;END OF SEGMENT 
+;;;;;;;END OF SEGMENT 
+;O ;;[M] ;MERCH ;63;/M /M /M /M /M /O /O /*O // ;MERCHANT SHIP CONTACT 
+;[ ;;O ;ASSOC ;64;/*M // ;ASSOCIATION 
+;[ ;;O ;ELLIPSE ;65;/M /M /M /M // ;ELLIPSE 
+;[ ;;C ;CIRC ;66;/M /*M // ;CIRCULAR AREA 
+;[ ;;C ;AREA ;67;/O /*C // ;AREA 
+;[ ;;M ;TIMEVENT ;68;/M /M /M /M /M /O /O // ;TIME OF SENSOR CONTACT EVENT 
+;[ ;* ;C ;BRNG ;69;/M /M /M /O /O /O // ;BEARING 
+;[ ;* ;M ;TMPOS ;70;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ ;* ;O ;RELPO ;71;/M /M /M /M /M /O /O // ;RELATIVE TO OWN POSITION 
+;[ ;;O ;RIG ;72;/M /M /O /O /O /O // ;SURFACE SHIP RIGGING 
+;[ ;* ;O ;REACT ;73;/M /M /M /M /M /O // ;REACTION 
+;[ ;;C ;TMPOS ;74;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ O ;;[M] ;ATTACK ;75;/M /M /O /O /O /O // ;ATTACK 
+;[ [ ;;M ;TMPOS ;76;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;EMITTER ;77;/M /M /M /O /O /O // ;NON-ACOUSTIC EMISSION INTERCEPT 
+;[ [ ;* ;O ;BRNG ;78;/M /M /M /O /O /O // ;BEARING 
+;[ [ ;;O ;RADPA ;79;/M /O /O /O /O /O /O /O // ;RADAR PARAMETERS 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;SIGNA ;80;/M /M /M /O /O // ;SIGNATURE 
+;[ [ ;* ;O ;SIGSUM ;81;/M /M /M /O // ;SIGNATURE SUMMATION 
+;;;;;;;END OF SEGMENT 
+;[ ;;O ;SUMRY ;82;/M /M /M /M /M /M /O // ;CONTACT SUMMARY 
+;[ ;;O ;ARR ;83;/M /M /M /M /*O // ;ARRIVAL 
+;[ ;;O ;INPORT ;84;/M /M /M /M /*O // ;INPORT 
+;[ ;;O ;DEP ;85;/M /M /M /M /*O // ;DEPARTURE 
+;[ ;;O ;DEST ;86;/M /M /M /M /*O // ;DESTINATION 
+;;;;;;;END OF SEGMENT 
+;O ;;[M] ;FISHCTC ;87;/M /M /M /M /M /O /O /O /O /O // ;FISHING VESSEL CONTACT 
+;[ ;;O ;ASSOC ;88;/*M // ;ASSOCIATION 
+;[ ;;C ;ELLIPSE ;89;/M /M /M /M // ;ELLIPSE 
+;[ ;;C ;CIRC ;90;/M /*M // ;CIRCULAR AREA 
+;[ ;;C ;AREA ;91;/O /*C // ;AREA 
+;[ ;;M ;TIMEVENT ;92;/M /M /M /M /M /O /O // ;TIME OF SENSOR CONTACT EVENT 
+;[ ;* ;C ;BRNG ;93;/M /M /M /O /O /O // ;BEARING 
+;[ ;* ;M ;TMPOS ;94;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ ;* ;O ;RELPO ;95;/M /M /M /M /M /O /O // ;RELATIVE TO OWN POSITION 
+;[ ;* ;O ;REACT ;96;/M /M /M /M /M /O // ;REACTION 
+;[ ;;C ;TMPOS ;97;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ O ;;[M] ;ATTACK ;98;/M /M /O /O /O /O // ;ATTACK 
+;[ [ ;;M ;TMPOS ;99;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;EMITTER ;100;/M /M /M /O /O /O // ;NON-ACOUSTIC EMISSION INTERCEPT 
+;[ [ ;* ;O ;BRNG ;101;/M /M /M /O /O /O // ;BEARING 
+;[ [ ;;O ;RADPA ;102;/M /O /O /O /O /O /O /O // ;RADAR PARAMETERS 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;SIGNA ;103;/M /M /M /O /O // ;SIGNATURE 
+;[ [ ;* ;O ;SIGSUM ;104;/M /M /M /O // ;SIGNATURE SUMMATION 
+;;;;;;;END OF SEGMENT 
+;[ ;;O ;SUMRY ;105;/M /M /M /M /M /M /O // ;CONTACT SUMMARY 
+;[ ;;O ;ARR ;106;/M /M /M /M /*O // ;ARRIVAL 
+;[ ;;O ;INPORT ;107;/M /M /M /M /*O // ;INPORT 
+;[ ;;O ;DEP ;108;/M /M /M /M /*O // ;DEPARTURE 
+;[ ;;O ;DEST ;109;/M /M /M /M /*O // ;DESTINATION 
+;;;;;;;END OF SEGMENT 
+;C ;;[M] ;UNK ;110;/M /M // ;UNKNOWN CONTACT 
+;[ ;;O ;ASSOC ;111;/*M // ;ASSOCIATION 
+;[ ;;O ;ELLIPSE ;112;/M /M /M /M // ;ELLIPSE 
+;[ ;;C ;CIRC ;113;/M /*M // ;CIRCULAR AREA 
+;[ ;;C ;AREA ;114;/O /*C // ;AREA 
+;[ ;;M ;TIMEVENT ;115;/M /M /M /M /M /O /O // ;TIME OF SENSOR CONTACT EVENT 
+;[ ;* ;C ;BRNG ;116;/M /M /M /O /O /O // ;BEARING 
+;[ ;* ;M ;TMPOS ;117;/M /M /M /M /M /M /M /O /O /O // ;TIME AND POSITION 
+;[ ;* ;O ;RELPO ;118;/M /M /M /M /M /O /O // ;RELATIVE TO OWN POSITION 
+;[ O ;;[M] ;EMITTER ;119;/M /M /M /O /O /O // ;NON-ACOUSTIC EMISSION INTERCEPT 
+;[ [ ;* ;O ;BRNG ;120;/M /M /M /O /O /O // ;BEARING 
+;[ [ ;;O ;RADPA ;121;/M /O /O /O /O /O /O /O // ;RADAR PARAMETERS 
+;;;;;;;END OF SEGMENT 
+;[ O ;;[M] ;SIGNA ;122;/M /M /M /O /O // ;SIGNATURE 
+;[ [ ;* ;O ;SIGSUM ;123;/M /M /M /O // ;SIGNATURE SUMMATION 
+;;;;;;;END OF SEGMENT 
+;[ ;;O ;SUMRY ;124;/M /M /M /M /M /M /O // ;CONTACT SUMMARY 
+;[ ;;O ;ARR ;125;/M /M /M /M /*O // ;ARRIVAL 
+;[ ;;O ;INPORT ;126;/M /M /M /M /*O // ;INPORT 
+;[ ;;O ;DEP ;127;/M /M /M /M /*O // ;DEPARTURE 
+;[ ;;O ;DEST ;128;/M /M /M /M /*O // ;DESTINATION 
+;;;;;;;END OF SEGMENT

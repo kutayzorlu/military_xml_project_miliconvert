@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.txt2xml.cli
+Bundle-SymbolicName: org.miliconvert.txt2xml.cli;singleton:=true
+Bundle-Version: 1.2.0.qualifier
+Bundle-Activator: org.miliconvert.txt2xml.cli.Activator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.txt2xml.transform,
+ org.apache.commons.logging
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

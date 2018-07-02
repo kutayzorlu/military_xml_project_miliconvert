@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactreport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactreport.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">NCTSI</command>
+<message_identifier ff-seq="2">GOLD</message_identifier>
+<message_serial_no ff-seq="3">0001</message_serial_no>
+<month ff-seq="4">JUN</month>
+</message_identification>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7062</track_number>
+<class-name ff-seq="2">SPRUANCE-CUSHING</class-name>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130500Z9</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">8500S3</latitude_of_center>
+<longitude_of_center ff-seq="4">00000W0</longitude_of_center>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7063</track_number>
+<class-name ff-seq="2">XKRIVAK II-PETERSON</class-name>
+<category ff-seq="5">NAV</category>
+<flag ff-seq="7">XX</flag>
+<force_code ff-seq="11">07</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130501Z0</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">8600S4</latitude_of_center>
+<longitude_of_center ff-seq="4">18000E9</longitude_of_center>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7064</track_number>
+<class-name ff-seq="2">KIROV-UNKNOWN</class-name>
+<flag ff-seq="7">XX</flag>
+<force_code ff-seq="11">07</force_code>
+<track_type ff-seq="13">2</track_type>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130502Z1</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">8500S3</latitude_of_center>
+<longitude_of_center ff-seq="4">18000E9</longitude_of_center>
+</position>
+</position_segment>
+<line_of_bearing_segment seg-seq="1">
+<line_of_bearing set-seq="15" setId="LOB">
+<date-time_group ff-seq="1">130502Z1</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_origin ff-seq="3">8510S4</latitude_of_origin>
+<longitude_of_origin ff-seq="4">17800W6</longitude_of_origin>
+<bearing ff-seq="5">335T</bearing>
+</line_of_bearing>
+</line_of_bearing_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7164</track_number>
+<class-name ff-seq="2">SACRAMENTO-DETROIT</class-name>
+<flag ff-seq="7">US</flag>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130501Z0</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">8500S3</latitude_of_center>
+<longitude_of_center ff-seq="4">18000E9</longitude_of_center>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<delete_line_of_bearing set-seq="3" setId="DLOB">
+<track_number ff-seq="1">T7064</track_number>
+<date-time_group ff-seq="2">130502Z1</date-time_group>
+<month ff-seq="3">JUN</month>
+<latitude_of_origin ff-seq="4">9000S9</latitude_of_origin>
+<longitude_of_origin ff-seq="5">18000E9</longitude_of_origin>
+<bearing ff-seq="6">335T</bearing>
+<command ff-seq="8">NCTSI</command>
+</delete_line_of_bearing>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7066</track_number>
+<class-name ff-seq="2">NIMITZ-EISENHOWER DD</class-name>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13">4</track_type>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130502Z1</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3300N6</latitude_of_center>
+<longitude_of_center ff-seq="4">12200W5</longitude_of_center>
+<rdf_rf ff-seq="12">5250.530HZ</rdf_rf>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<delete set-seq="2" setId="DEL">
+<track_number ff-seq="1">T1235</track_number>
+<command ff-seq="2">CTG168.1</command>
+</delete>
+<delete set-seq="2" setId="DEL">
+<track_number ff-seq="1">T12346</track_number>
+<command ff-seq="2">COMCRUDESGRU 1</command>
+</delete>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7652</track_number>
+<class-name ff-seq="2">NIMITZ-EISENHOWER DD</class-name>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130504Z3</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3141N9</latitude_of_center>
+<longitude_of_center ff-seq="4">12135W2</longitude_of_center>
+</position>
+</position_segment>
+<line_of_bearing_segment seg-seq="1">
+<line_of_bearing set-seq="15" setId="LOB">
+<date-time_group ff-seq="1">0503Z8</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_origin ff-seq="3">3142N0</latitude_of_origin>
+<longitude_of_origin ff-seq="4">12134W1</longitude_of_origin>
+<bearing ff-seq="5">262T</bearing>
+</line_of_bearing>
+</line_of_bearing_segment>
+</contact>
+</contact_segment>
+<delete_line_of_bearing set-seq="3" setId="DLOB">
+<track_number ff-seq="1">T7652</track_number>
+<date-time_group ff-seq="2">130510Z0</date-time_group>
+<month ff-seq="3">JUN</month>
+<latitude_of_origin ff-seq="4">3142N0</latitude_of_origin>
+<longitude_of_origin ff-seq="5">12134W1</longitude_of_origin>
+<bearing ff-seq="6">262T</bearing>
+<command ff-seq="8">CTF 70</command>
+</delete_line_of_bearing>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7654</track_number>
+<class-name ff-seq="2">NIMITZ-EISENHOWER DD</class-name>
+<type ff-seq="4">CV</type>
+<category ff-seq="5">NAV</category>
+<flag ff-seq="7">US</flag>
+<selective_identifier ff-seq="9">1225</selective_identifier>
+<alert_code ff-seq="10">HIT</alert_code>
+<force_code ff-seq="11">09</force_code>
+<system_track_number ff-seq="12">0025</system_track_number>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130515Z5</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3300N6</latitude_of_center>
+<longitude_of_center ff-seq="4">12000W3</longitude_of_center>
+<sensor_code ff-seq="5">IFF</sensor_code>
+<bearing_of_major_axis ff-seq="6">032T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">0010NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">0008NM</length_of_semi-minor_axis>
+<course ff-seq="9">140T</course>
+<speed ff-seq="10">12K</speed>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7657</track_number>
+<class-name ff-seq="2">FORRESTAL-EISENHOWER DD</class-name>
+<type ff-seq="4">CV</type>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130516Z6</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3300N6</latitude_of_center>
+<longitude_of_center ff-seq="4">12002W5</longitude_of_center>
+<sensor_code ff-seq="5">IRDS</sensor_code>
+<course ff-seq="9">156T</course>
+<speed ff-seq="10">10K</speed>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<merge set-seq="5" setId="MRG">
+<source_track_number ff-seq="1">T7654</source_track_number>
+<destination_track_no ff-seq="2">T7657</destination_track_no>
+<source_command ff-seq="3">COMCRUDESGRU 1</source_command>
+<destination_command ff-seq="4">CTF 70</destination_command>
+</merge>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7656</track_number>
+<class-name ff-seq="2">BURKE A-STETHEM</class-name>
+<type ff-seq="4">CGN</type>
+<category ff-seq="5">NAV</category>
+<flag ff-seq="7">US</flag>
+<selective_identifier ff-seq="9">2334</selective_identifier>
+<alert_code ff-seq="10">HIT</alert_code>
+<force_code ff-seq="11">09</force_code>
+<system_track_number ff-seq="12">0017</system_track_number>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130517Z7</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3255N5</latitude_of_center>
+<longitude_of_center ff-seq="4">12004W7</longitude_of_center>
+<sensor_code ff-seq="5">SLAR</sensor_code>
+<course ff-seq="9">179T</course>
+<speed ff-seq="10">14K</speed>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7656</track_number>
+<class-name ff-seq="2">UNEQUATED-UNKNOWN</class-name>
+<force_code ff-seq="11">00</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130518Z8</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3254N4</latitude_of_center>
+<longitude_of_center ff-seq="4">12006W9</longitude_of_center>
+<sensor_code ff-seq="5">LLLTV</sensor_code>
+<course ff-seq="9">185T</course>
+<speed ff-seq="10">12K</speed>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<merge set-seq="5" setId="MRG">
+<source_track_number ff-seq="1">T7656</source_track_number>
+<destination_track_no ff-seq="2">T7658</destination_track_no>
+<source_command ff-seq="3">CTF 70</source_command>
+<destination_command ff-seq="4">COMCRUDESGRU 1</destination_command>
+</merge>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T4567</track_number>
+<class-name ff-seq="2">NIMITZ-EISENHOWER DD</class-name>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130524Z5</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3235N3</latitude_of_center>
+<longitude_of_center ff-seq="4">12000W3</longitude_of_center>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7571</track_number>
+<class-name ff-seq="2">KENNEDY JF-KENNEDY JF</class-name>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130527Z8</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3305N1</latitude_of_center>
+<longitude_of_center ff-seq="4">12300W6</longitude_of_center>
+<expanded_radar_data set-seq="16" setId="RADB">
+<date-time_group ff-seq="1">130528Z9</date-time_group>
+<month ff-seq="2">JUN</month>
+<elint_notation ff-seq="3">A579K</elint_notation>
+<emitter_name ff-seq="4">FAN SONG</emitter_name>
+<radio_frequency ff-seq="5">4654KHZ</radio_frequency>
+<pulse_rep_interval ff-seq="6">000221.3</pulse_rep_interval>
+<pulse_rep_frequency ff-seq="7">4975.371</pulse_rep_frequency>
+<pulse_width ff-seq="8">337.001</pulse_width>
+</expanded_radar_data>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7573</track_number>
+<class-name ff-seq="2">POWHATAN-MOHAWK</class-name>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">130530Z2</date-time_group>
+<month ff-seq="2">JUN</month>
+<latitude_of_center ff-seq="3">3315N2</latitude_of_center>
+<longitude_of_center ff-seq="4">12300W6</longitude_of_center>
+<expanded_radar_data set-seq="16" setId="RADB">
+<date-time_group ff-seq="1">130531Z3</date-time_group>
+<month ff-seq="2">JUN</month>
+<elint_notation ff-seq="3">A987Z</elint_notation>
+<radio_frequency ff-seq="5">5250.530HZ</radio_frequency>
+<pulse_rep_interval ff-seq="6">000209.3</pulse_rep_interval>
+<pulse_rep_frequency ff-seq="7">1200.505</pulse_rep_frequency>
+</expanded_radar_data>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</contactreport>

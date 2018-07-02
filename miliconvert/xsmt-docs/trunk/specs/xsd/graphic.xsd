@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.miliconvert.org/xsd/xsmt/graphic.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.miliconvert.org/xsd/xsmt/graphic.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="graphic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="box">
+          <xs:complexType>
+            <xs:attribute name="modelid" type="xs:string" use="required" />
+            <xs:attribute name="x" type="xs:unsignedShort" use="required" />
+            <xs:attribute name="y" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="w" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="h" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;TIME QUALIFIER;2-7;Individual;;1.0;In Service;03 Dec 07
+2;TIME QUALIFIER ON;3-7;Individual;;1.0;In Service;03 Dec 07
+3;TIME QUALIFIER OFF;3-7;Individual;;1.0;In Service;03 Dec 07
+4;TERMINATION TIME QUALIFIER;3-5;Individual;;1.0;In Service;03 Dec 07
+5;TIME QUALIFIER UNTIL FURTHER NOTICE;3-3;Individual;;1.0;In Service;03 Dec 07
+6;COMMENCEMENT TIME QUALIFIER;4-4;Individual;;1.0;In Service;03 Dec 07
+8;STOP TIME QUALIFIER;3-7;Individual;;1.0;In Service;03 Dec 07
+10;TIME QUALIFIER TO BE DETERMINED;3-3;Individual;THE QUALIFIER OF A TIME PERIOD TO BE DETERMINED.;1.0;In Service;03 Dec 07
+11;TIME MODIFIER;2-3;Individual;TERM DESCRIBING TYPE OF TIME ENTRY. [WAS 1143/1);1.0;In Service;03 Dec 07
+13;TIME QUALIFICATION CATEGORY;4-5;Individual;;1.0;In Service;03 Dec 07
+14;UNKNOWN TIME;3-3;Individual;;1.0;In Service;03 Dec 07
+15;START TIME QUALIFIER;2-7;Individual;;1.0;In Service;03 Dec 07
+16;REPORTABLE QUALIFIER;3-3;Individual;;1.0;In Service;03 Dec 07
+19;AIRSPACE TIME MODE;8-8;Individual;;1.0;In Service;03 Dec 07

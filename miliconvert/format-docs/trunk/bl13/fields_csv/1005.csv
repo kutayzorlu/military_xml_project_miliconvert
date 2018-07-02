@@ -1,0 +1,5 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;YEAR, 4 DIGIT;4-4;Integer;;1.0;In Service;03 Dec 07
+2;START YEAR, 4 DIGIT;4-4;Integer;THE YEAR IN WHICH AN EVENT STARTED OR IS EXPECTED TO START.;1.0;In Service;03 Dec 07
+3;END YEAR, 4 DIGIT;4-4;Integer;THE YEAR IN WHICH AN EVENT ENDED OR IS EXPECTED TO END.;1.0;In Service;03 Dec 07
+7;YEAR;4-4;Integer;;1.0;In Service;03 Dec 07

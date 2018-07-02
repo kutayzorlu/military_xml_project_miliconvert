@@ -1,0 +1,5 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;MODULATION TYPE;2-5;Individual;;1.0;In Service;03 Dec 07
+2;TERMINAL MODULATION TYPE;4-4;Individual;;1.0;In Service;03 Dec 07
+3;MODE UTILIZED FOR MAXIMUM DETECTION RANGES;2-2;Individual;;1.0;In Service;03 Dec 07
+4;CW MODE UTILIZED FOR MAXIMUM DETECTION RANGES;2-2;Individual;;1.0;In Service;03 Dec 07

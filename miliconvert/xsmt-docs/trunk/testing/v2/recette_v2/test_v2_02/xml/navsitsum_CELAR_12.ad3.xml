@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<naval_situation_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/navsitsum/messages.xsd">
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">NAVSITSUM</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">CINCNAV</originator>
+</message_identifier>
+<effective_date_time_month set-id="efdt" set-seq="5">
+<date_time>
+<day_time_effective alt="A" ff-seq="1" ffirn-fudn="2000-13">
+<day ffirn-fudn="1000-1">05</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_effective>
+</date_time>
+<effective_month alt="A" ff-seq="2" ffirn-fudn="1004-4">NOV</effective_month>
+</effective_date_time_month>
+<activity_summary_segment>
+<activity_summary set-id="smry" set-seq="6">
+<maritime_activity_type alt="A" ff-seq="1" ffirn-fudn="1299-6" xsi:nil="true"/>
+<nato_sub_area_name alt="A" ff-seq="2" ffirn-fudn="1022-59" xsi:nil="true"/>
+</activity_summary>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority alt="A" ff-seq="1" ffirn-fudn="1028-8">COMSTANAVFORMED</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">FF</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">GRECALE</ship_name>
+<location>
+<place_name alt="B" descriptor="PLACE" ff-seq="4" ffirn-fudn="1022-170">NAPOLI</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">08</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+</situation_of_naval_units_segment>
+</operational_control_segment>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority alt="A" ff-seq="1" ffirn-fudn="1028-8">MARISTAT</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">LSD</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">SAN GIUSTO</ship_name>
+<location>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="4" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">49</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">3</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">006</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">40</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">0</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">08</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">TRANST</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+<sailing_information_1 set-id="sail" set-seq="13">
+<time_of_arrival>
+<day_time_of_arrival_verified alt="A" ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">11</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name alt="D" ff-seq="2" ffirn-fudn="1022-170">REYKJAVIK</place_name>
+</position>
+</sailing_information_1>
+</situation_of_naval_units_segment>
+</operational_control_segment>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority alt="A" ff-seq="1" ffirn-fudn="1028-8">CINCNAV</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<naval_force_segment>
+<naval_force set-id="nfor" set-seq="8">
+<naval_designation>
+<naval_task_designator alt="A" descriptor="NTD" ff-seq="1" ffirn-fudn="2143-2">
+<naval_level_of_echelon ffirn-fudn="1045-3">CTF</naval_level_of_echelon>
+<naval_organization_numeric_designator ffirn-fudn="1012-104">470</naval_organization_numeric_designator>
+</naval_task_designator>
+</naval_designation>
+<location>
+<place_name alt="C" descriptor="PLACE" ff-seq="2" ffirn-fudn="1022-170">KONSTANZA</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="3" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">06</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<speed_or_movement>
+<naval_force_movement_status alt="B" ff-seq="4" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</speed_or_movement>
+</naval_force>
+</naval_force_segment>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">DDG</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">ARDITO</ship_name>
+<location>
+<place_name alt="B" descriptor="PLACE" ff-seq="4" ffirn-fudn="1022-170">KONSTANZA</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">06</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+</situation_of_naval_units_segment>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">FF</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">ORSA</ship_name>
+<location>
+<place_name alt="B" descriptor="PLACE" ff-seq="4" ffirn-fudn="1022-170">KONSTANZA</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">06</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+</situation_of_naval_units_segment>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">AORL</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">VESUVIO</ship_name>
+<location>
+<place_name alt="B" descriptor="PLACE" ff-seq="4" ffirn-fudn="1022-170">KONSTANZA</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">06</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+</situation_of_naval_units_segment>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">LSD</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">SAN GIORGIO</ship_name>
+<location>
+<place_name alt="B" descriptor="PLACE" ff-seq="4" ffirn-fudn="1022-170">KONSTANZA</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">06</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+</situation_of_naval_units_segment>
+</operational_control_segment>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority alt="A" ff-seq="1" ffirn-fudn="1028-8">CINCSOUTH</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<naval_force_segment>
+<naval_force set-id="nfor" set-seq="8">
+<naval_designation>
+<naval_task_designator alt="A" descriptor="NTD" ff-seq="1" ffirn-fudn="2143-2">
+<naval_level_of_echelon ffirn-fudn="1045-3">CTG</naval_level_of_echelon>
+<naval_organization_numeric_designator ffirn-fudn="1012-104">250</naval_organization_numeric_designator>
+</naval_task_designator>
+</naval_designation>
+<location>
+<place_name alt="C" descriptor="PLACE" ff-seq="2" ffirn-fudn="1022-170">VALPARAISO</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="3" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">07</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">4</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<speed_or_movement>
+<naval_force_movement_status alt="B" ff-seq="4" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</speed_or_movement>
+</naval_force>
+</naval_force_segment>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">DDH</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">DURAND DE LA PENNE</ship_name>
+<location>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="4" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">58</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">3</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">013</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">06</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">TRANST</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+</situation_of_naval_units_segment>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">DDH</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">MIMBELLI</ship_name>
+<location>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="4" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">58</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">3</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">013</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">06</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">TRANST</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+<sailing_information_1 set-id="sail" set-seq="13">
+<time_of_arrival>
+<day_time_of_arrival_verified alt="A" ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">3</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name alt="D" ff-seq="2" ffirn-fudn="1022-170">LEITH</place_name>
+</position>
+<time_of_departure>
+<day_time_of_departure_verified alt="A" ff-seq="3" ffirn-fudn="2013-31">
+<day ffirn-fudn="1000-1">17</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_departure_verified>
+</time_of_departure>
+</sailing_information_1>
+</situation_of_naval_units_segment>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">FS</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">DRIADE</ship_name>
+<location>
+<place_name alt="B" descriptor="PLACE" ff-seq="4" ffirn-fudn="1022-170">SOUDA</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">06</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+</situation_of_naval_units_segment>
+</operational_control_segment>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority alt="A" ff-seq="1" ffirn-fudn="1028-8">POLDER</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<naval_force_segment>
+<naval_force set-id="nfor" set-seq="8">
+<naval_designation>
+<unit_name alt="B" ff-seq="1" ffirn-fudn="1022-48">NUMANA GAETA</unit_name>
+</naval_designation>
+<location>
+<place_name alt="C" descriptor="PLACE" ff-seq="2" ffirn-fudn="1022-170">OOSTENDE</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="3" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">3</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<speed_or_movement>
+<naval_force_movement_status alt="B" ff-seq="4" ffirn-fudn="1341-2">ANC</naval_force_movement_status>
+</speed_or_movement>
+</naval_force>
+</naval_force_segment>
+</operational_control_segment>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority alt="A" ff-seq="1" ffirn-fudn="1028-8">MARICOSOM</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">SSK</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">DA VINCI</ship_name>
+<location>
+<place_name alt="B" descriptor="PLACE" ff-seq="4" ffirn-fudn="1022-170">MEDOC</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7" xsi:nil="true"/>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">MODLOC</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+<sailing_information_1 set-id="sail" set-seq="13">
+<time_of_arrival>
+<day_time_of_arrival_verified alt="A" ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name alt="D" ff-seq="2" ffirn-fudn="1022-170">AUGUSTA</place_name>
+</position>
+</sailing_information_1>
+</situation_of_naval_units_segment>
+</operational_control_segment>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority alt="A" ff-seq="1" ffirn-fudn="1028-8">MARIDIPART TARANTO</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">FF</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">MINERVA</ship_name>
+<location>
+<place_name alt="B" descriptor="PLACE" ff-seq="4" ffirn-fudn="1022-170">OTRANTO CHANNEL</place_name>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7" xsi:nil="true"/>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">PATROL</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+<sailing_information_1 set-id="sail" set-seq="13">
+<time_of_arrival>
+<day_time_of_arrival_verified alt="A" ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">06</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name alt="D" ff-seq="2" ffirn-fudn="1022-170">BRINDISI</place_name>
+</position>
+<time_of_departure>
+<day_time_of_departure_verified alt="A" ff-seq="3" ffirn-fudn="2013-31">
+<day ffirn-fudn="1000-1">09</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_departure_verified>
+</time_of_departure>
+</sailing_information_1>
+</situation_of_naval_units_segment>
+</operational_control_segment>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority alt="A" ff-seq="1" ffirn-fudn="1028-8">MARISICILIA</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag alt="A" ff-seq="1" ffirn-fudn="1026-3">IT</flag>
+</flag>
+<naval_ship_type alt="A" ff-seq="2" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<ship_name alt="A" ff-seq="3" ffirn-fudn="1022-49">SPICA</ship_name>
+<location>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="4" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">34</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">30</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">011</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">30</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">5</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</location>
+<time_at_location>
+<day_time_of_position_verified alt="A" ff-seq="5" ffirn-fudn="2013-7" xsi:nil="true"/>
+</time_at_location>
+<course_speed_or_movement_status>
+<naval_force_movement_status alt="B" ff-seq="6" ffirn-fudn="1341-2">PATROL</naval_force_movement_status>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+<sailing_information_1 set-id="sail" set-seq="13">
+<time_of_arrival>
+<day_time_of_arrival_verified alt="A" ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">09</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name alt="D" ff-seq="2" ffirn-fudn="1022-170">MESSINA</place_name>
+</position>
+</sailing_information_1>
+</situation_of_naval_units_segment>
+</operational_control_segment>
+</activity_summary_segment>
+</naval_situation_summary>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?><gap_crossing_completion_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/gaprep/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">GAPREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<date_time_group set-id="dtg" set-seq="5">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="6">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_drafter_releaser>
+<map_data set-id="map" set-seq="7">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+<map_or_chart_suffix_number alt="A" ff-seq="2" ffirn-fudn="1012-4">16</map_or_chart_suffix_number>
+<group_of_fields>
+<map_or_chart_sheet_number alt="A" ff-seq="3" ffirn-fudn="1012-3">NM32-1ESSEN</map_or_chart_sheet_number>
+<map_or_chart_edition_number alt="A" ff-seq="4" ffirn-fudn="1012-2">3-DMG</map_or_chart_edition_number>
+</group_of_fields>
+</map_data>
+<map_data set-id="map" set-seq="7">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+</map_data>
+<task_serial_number set-id="tskserno" set-seq="8">
+<task_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-132">01</task_serial_number>
+</task_serial_number>
+<crossing_site_task set-id="xingtask" set-seq="9">
+<crossing_site_task alt="A" ff-seq="1" ffirn-fudn="1285-35">B</crossing_site_task>
+</crossing_site_task>
+<crossing_site_serial_number_and_folder_name set-id="xsernfld" set-seq="10">
+<crossing_site_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-287">01</crossing_site_serial_number>
+<name alt="A" ff-seq="2" ffirn-fudn="1022-1">PAMPUS</name>
+</crossing_site_serial_number_and_folder_name>
+<crossing_type_and_assessment set-id="xtypeass" set-seq="11">
+<crossing_type alt="A" ff-seq="1" ffirn-fudn="1706-2">FA</crossing_type>
+<crossing_potential alt="A" ff-seq="2" ffirn-fudn="1662-7">OK</crossing_potential>
+</crossing_type_and_assessment>
+<location_of_task set-id="loctask" set-seq="12">
+<grid_reference_for_location_of_task__utm_coordinates>
+<location_utm_10_metre alt="B" ff-seq="1" ffirn-fudn="2086-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">S</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">T</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">H</utm_100000_metre_square_row>
+<utm_10_metre_easting ffirn-fudn="1234-1">1150</utm_10_metre_easting>
+<utm_10_metre_northing ffirn-fudn="1238-1">1410</utm_10_metre_northing>
+</location_utm_10_metre>
+</grid_reference_for_location_of_task__utm_coordinates>
+</location_of_task>
+<near_by_feature set-id="nearfeat" set-seq="13">
+<geographic_place_name alt="A" ff-seq="1" ffirn-fudn="1022-90">BRUSSELS</geographic_place_name>
+<geographical_entity alt="A" ff-seq="2" ffirn-fudn="1026-1">BE</geographical_entity>
+</near_by_feature>
+<actual_completion_time set-id="actucomp" set-seq="14">
+<actual_completion_time>
+<dtg_4_digit_year alt="A" ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">MAY</month_name>
+<year ffirn-fudn="1005-7">1997</year>
+</dtg_4_digit_year>
+</actual_completion_time>
+</actual_completion_time>
+<opening_and_closing_times set-id="opnclot" set-seq="15">
+<dtg_of_opening_4_digit_yr alt="A" ff-seq="1" ffirn-fudn="2033-56">
+<day ffirn-fudn="1000-1">18</day>
+<hour_time ffirn-fudn="1001-1">06</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">MAY</month_name>
+<year ffirn-fudn="1005-7">1997</year>
+</dtg_of_opening_4_digit_yr>
+<dtg_of_closure_4_digit_yr alt="A" ff-seq="2" ffirn-fudn="2033-57">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">17</hour_time>
+<minute_time ffirn-fudn="1002-1">15</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">MAY</month_name>
+<year ffirn-fudn="1005-7">1997</year>
+</dtg_of_closure_4_digit_yr>
+</opening_and_closing_times>
+<name_of_waterway_or_feature set-id="watrfeat" set-seq="16">
+<name alt="A" ff-seq="1" ffirn-fudn="1022-1">WESER</name>
+</name_of_waterway_or_feature>
+<rate_of_access set-id="accrate" set-seq="17">
+<traffic_volume_vehicles_per_hour alt="A" ff-seq="1" ffirn-fudn="1044-353">55</traffic_volume_vehicles_per_hour>
+</rate_of_access>
+<route_type set-id="routtype" set-seq="18">
+<route_type_right_bank alt="A" ff-seq="1" ffirn-fudn="1704-2">E</route_type_right_bank>
+<route_identifier alt="A" ff-seq="2" ffirn-fudn="1069-2">1</route_identifier>
+<route_type_left_bank alt="A" ff-seq="3" ffirn-fudn="1704-3">D</route_type_left_bank>
+<route_identifier_1 alt="A" ff-seq="4" ffirn-fudn="1069-2">1</route_identifier_1>
+</route_type>
+<rate_of_traffic_crossing set-id="xingrate" set-seq="20">
+<traffic_volume_vehicles_per_hour alt="A" ff-seq="1" ffirn-fudn="1044-353">12</traffic_volume_vehicles_per_hour>
+</rate_of_traffic_crossing>
+<highest_mlc set-id="maxmlc" set-seq="21">
+<military_load_classification_tracked alt="A" ff-seq="1" ffirn-fudn="1253-6">060</military_load_classification_tracked>
+<military_load_classification_wheeled alt="A" ff-seq="2" ffirn-fudn="1253-7">040</military_load_classification_wheeled>
+</highest_mlc>
+<name_of_route_to_task_site_road_or_river_segment>
+<name_of_route_to_task_site_road_or_river set-id="routname" set-seq="22">
+<name alt="A" ff-seq="1" ffirn-fudn="1022-1">RUDOLPH</name>
+</name_of_route_to_task_site_road_or_river>
+<route_start_point set-id="routesp" set-seq="23">
+<grid_reference_utm>
+<location_utm_1000_metre alt="D " ff-seq="1" ffirn-fudn="2088-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">16</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">A</utm_100000_metre_square_row>
+<utm_1000_metre_easting ffirn-fudn="1241-1">12</utm_1000_metre_easting>
+<utm_1000_metre_northing ffirn-fudn="1242-1">34</utm_1000_metre_northing>
+</location_utm_1000_metre>
+</grid_reference_utm>
+</route_start_point>
+<route_intermediate_point set-id="routeip" set-seq="24">
+<intermediate_point_number alt="A " ff-seq="1" ffirn-fudn="1012-134">1</intermediate_point_number>
+<grid_reference_utm>
+<location_utm_1000_metre alt="D " ff-seq="2" ffirn-fudn="2088-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">10</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">A</utm_100000_metre_square_row>
+<utm_1000_metre_easting ffirn-fudn="1241-1">12</utm_1000_metre_easting>
+<utm_1000_metre_northing ffirn-fudn="1242-1">34</utm_1000_metre_northing>
+</location_utm_1000_metre>
+</grid_reference_utm>
+</route_intermediate_point>
+<route_release_point set-id="routerp" set-seq="25">
+<grid_reference_utm>
+<location_utm_1000_metre alt="D " ff-seq="1" ffirn-fudn="2088-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">12</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">A</utm_100000_metre_square_row>
+<utm_1000_metre_easting ffirn-fudn="1241-1">12</utm_1000_metre_easting>
+<utm_1000_metre_northing ffirn-fudn="1242-1">34</utm_1000_metre_northing>
+</location_utm_1000_metre>
+</grid_reference_utm>
+</route_release_point>
+</name_of_route_to_task_site_road_or_river_segment>
+<manpower_data set-id="manpower" set-seq="26">
+<group_of_fields>
+<combat_engineer_troop_or_platoon_type alt="A" ff-seq="1" ffirn-fudn="1311-8">GEN ENGR</combat_engineer_troop_or_platoon_type>
+<troop_or_platoon_allocation alt="A" ff-seq="2" ffirn-fudn="1044-292">9</troop_or_platoon_allocation>
+<number_required_troop_platoon alt="A" ff-seq="3" ffirn-fudn="1044-290">0</number_required_troop_platoon>
+<duration_required_hours alt="A" ff-seq="4" ffirn-fudn="1047-8">0</duration_required_hours>
+</group_of_fields>
+</manpower_data>
+<equipment_data set-id="equipm" set-seq="27">
+<group_of_fields>
+<equipment_type alt="A" ff-seq="1" ffirn-fudn="1135-1">WATER PURIFIER</equipment_type>
+<equipment_allocation alt="A" ff-seq="2" ffirn-fudn="1044-291">0</equipment_allocation>
+<quantity_required alt="A" ff-seq="3" ffirn-fudn="1044-289">1</quantity_required>
+<duration_required_hours alt="A" ff-seq="4" ffirn-fudn="1047-8">48</duration_required_hours>
+</group_of_fields>
+</equipment_data>
+<materiel_data set-id="materiel" set-seq="28">
+<group_of_fields>
+<type_of_materiel alt="A" ff-seq="1" ffirn-fudn="1592-3">CEMENT</type_of_materiel>
+<quantity_authorized_with_unit_of_measure alt="A" ff-seq="2" ffirn-fudn="2077-1">
+<quantity_authorized ffirn-fudn="1044-284">99</quantity_authorized>
+<unit_of_measurement_combat_engineers ffirn-fudn="1008-43">KG</unit_of_measurement_combat_engineers>
+</quantity_authorized_with_unit_of_measure>
+</group_of_fields>
+</materiel_data>
+<bridging_equipment_data set-id="brequipm" set-seq="29">
+<group_of_fields>
+<equipment_type alt="A" ff-seq="1" ffirn-fudn="1135-1">PILE DRIVER</equipment_type>
+<equipment_allocation alt="A" ff-seq="2" ffirn-fudn="1044-291">0</equipment_allocation>
+<quantity_required alt="A" ff-seq="3" ffirn-fudn="1044-289">1</quantity_required>
+<duration_required_hours alt="A" ff-seq="4" ffirn-fudn="1047-8">48</duration_required_hours>
+</group_of_fields>
+</bridging_equipment_data>
+<organization_function_segment>
+<organization_function set-id="orgfunc" set-seq="30">
+<organization_function alt="A" ff-seq="1" ffirn-fudn="1496-4">COORD</organization_function>
+</organization_function>
+<organization_designator set-id="orgid" set-seq="31">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator>
+</organization_function_segment>
+<acknowledge set-id="aknldg" set-seq="32">
+<acknowledge_requirement_indicator alt="A" ff-seq="1" ffirn-fudn="1027-5">YES</acknowledge_requirement_indicator>
+<instructions_for_or_force_or_unit_required_to_acknowledge>
+<instructions_for_acknowledging alt="A" ff-seq="2" ffirn-fudn="1357-7">MIDDLEBURGH</instructions_for_acknowledging>
+</instructions_for_or_force_or_unit_required_to_acknowledge>
+</acknowledge>
+</gap_crossing_completion_report>

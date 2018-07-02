@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fourwhisky xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="fourwhisky.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">CTG 81.0</command>
+<message_identifier ff-seq="2">4WHISKY</message_identifier>
+<message_serial_no ff-seq="3">0007</message_serial_no>
+<month ff-seq="4">JAN</month>
+</message_identification>
+<security set-seq="41" setId="SEC">
+<classification ff-seq="1">CONFIDENTIAL</classification>
+<amplifying_info ff-seq="2">NOFORN</amplifying_info>
+</security>
+<addressees set-seq="42" setId="ADDEE">
+<address ff-seq="1">GCCS-M</address>
+</addressees>
+<addressees set-seq="42" setId="ADDEE">
+<address ff-seq="1">OED</address>
+<address_1 ff-seq="2">TWCS</address_1>
+</addressees>
+<_4-whisky set-seq="43" setId="WHSKY">
+<name ff-seq="1">HAWAII TRANSIT</name>
+<no_of_grid_cells ff-seq="2">34</no_of_grid_cells>
+<grid_cell_size ff-seq="3">5NM</grid_cell_size>
+<pim_cell ff-seq="4">AA09</pim_cell>
+</_4-whisky>
+<_4-whisky_unit set-seq="44" setId="WUNIT">
+<unit_name ff-seq="1">CV</unit_name>
+<unit_assignment ff-seq="2">QT1520</unit_assignment>
+</_4-whisky_unit>
+<_4-whisky_unit set-seq="44" setId="WUNIT">
+<unit_name ff-seq="1">DE</unit_name>
+<unit_assignment ff-seq="2">JL0812</unit_assignment>
+</_4-whisky_unit>
+<_4-whisky_unit set-seq="44" setId="WUNIT">
+<unit_name ff-seq="1">AO</unit_name>
+<unit_assignment ff-seq="2">XZ0812</unit_assignment>
+</_4-whisky_unit>
+<_4-whisky_unit set-seq="44" setId="WUNIT">
+<unit_name ff-seq="1">FF</unit_name>
+<unit_assignment ff-seq="2">JL2428+LM2526</unit_assignment>
+</_4-whisky_unit>
+<_4-whisky_unit set-seq="44" setId="WUNIT">
+<unit_name ff-seq="1">EISENHOWER DD</unit_name>
+<unit_assignment ff-seq="2">CF04+C0506+F0506</unit_assignment>
+</_4-whisky_unit>
+<end_of_data set-seq="45" setId="ENDAT">
+<derivation_source_for_clsif ff-seq="1">DESRON FIFTEEN 021300ZMAY00</derivation_source_for_clsif>
+<dwngrd_or_declass_inst ff-seq="2">INST:FOR EYES ONLY</dwngrd_or_declass_inst>
+<dwngrd_or_declass_exempt_code ff-seq="4">DATE:31DEC00</dwngrd_or_declass_exempt_code>
+</end_of_data>
+</fourwhisky>

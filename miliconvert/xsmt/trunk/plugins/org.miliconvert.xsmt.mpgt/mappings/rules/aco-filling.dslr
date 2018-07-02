@@ -1,0 +1,782 @@
+
+
+package org.mpgt.rules.aco;
+
+expander mpgt-fields-aco.dsl;
+
+import org.miliconvert.xsmt.mpgt.rules.AcoFieldRules;
+import org.miliconvert.xsmt.mpgt.rules.CommonFieldRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+rule AORBIT_19_0_3_0
+when
+		Dans le set  AORBIT avec la position 19 alternative 0
+		Dans le champ de ffirn 2123_001  avec la position 3 alternative 0
+then
+		Règle A_Largeur
+end
+
+rule AORBIT_19_0_4_0
+when
+		Dans le set  AORBIT avec la position 19 alternative 0
+		Dans le champ de ffirn 1586_004  avec la position 4 alternative 0
+then
+		CD=(AD3_1586_4;MPGT_HippodromeCodeAlignement)
+end
+
+rule AORBIT_19_0_2A_0
+when
+		Dans le set  AORBIT avec la position 19 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 2A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "MINUTE"
+end
+
+rule AORBIT_19_0_2B_0
+when
+		Dans le set  AORBIT avec la position 19 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 2B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule AORBIT_19_0_1B_0
+when
+		Dans le set  AORBIT avec la position 19 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 1B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule AORBIT_19_0_1A_0
+when
+		Dans le set  AORBIT avec la position 19 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 1A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "MINUTE"
+end
+
+rule CORRIDOR_17_0_1_0
+when
+		Dans le set  CORRIDOR avec la position 17 alternative 0
+		Dans le champ de ffirn 2123_001 avec la position 1 alternative 0
+then
+		Règle A_Largeur
+end
+
+rule CORRIDOR_17_0_2A_0
+when
+		Dans le set  CORRIDOR avec la position 17 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 2A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "MINUTE"
+end
+
+rule CORRIDOR_17_0_2B_0
+when
+		Dans le set  CORRIDOR avec la position 17 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 2B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule APOINT_18_0_1B_0
+when
+		Dans le set  APOINT avec la position 18 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 1B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule APOINT_18_0_1A_0
+when
+		Dans le set  APOINT avec la position 18 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 1A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "MINUTE"
+end
+
+rule POLYGON_15_0_1B_0
+when
+		Dans le set  POLYGON avec la position 15 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 1B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule POLYGON_15_0_1A_0
+when
+		Dans le set  POLYGON avec la position 15 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 1A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "MINUTE"
+end
+
+rule CIRCLE_16_0_2_0
+when
+		Dans le set  CIRCLE avec la position 16 alternative 0
+		Dans le champ de ffirn 2118_001 avec la position 2 alternative 0
+then
+		Règle A_Largeur
+end
+
+rule CIRCLE_16_0_1B_0
+when
+		Dans le set  CIRCLE avec la position 16 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 1B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule CIRCLE_16_0_1A_0
+when
+		Dans le set  CIRCLE avec la position 16 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 1A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "MINUTE"
+end
+
+rule RADARC_13_0_3_0
+when
+		Dans le set  RADARC avec la position 13 alternative 0
+		Dans le champ de ffirn 2253_008  avec la position 3 alternative 0
+then
+		Règle A_Secteur
+end
+
+rule RADARC_13_0_2_0
+when
+		Dans le set  RADARC avec la position 13 alternative 0
+		Dans le champ de ffirn 2253_007  avec la position 2 alternative 0
+then
+		Règle A_Secteur
+end
+
+rule RADARC_13_0_5_0
+when
+		Dans le set  RADARC avec la position 13 alternative 0
+		Dans le champ de ffirn 2118_004  avec la position 5 alternative 0
+then
+		Règle A_Rayon
+end
+
+rule RADARC_13_0_4_0
+when
+		Dans le set  RADARC avec la position 13 alternative 0
+		Dans le champ de ffirn 2118_003  avec la position 4 alternative 0
+then
+		Règle A_Rayon
+end
+
+rule RADARC_13_0_1B_0
+when
+		Dans le set  RADARC avec la position 13 alternative 0
+		Dans le champ de ffirn 2024_005  avec la position 1B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule RADARC_13_0_1A_0
+when
+		Dans le set  RADARC avec la position 13 alternative 0
+		Dans le champ de ffirn 2023_002  avec la position 1A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence 
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "MINUTE"
+end
+
+rule UNTRACK_14_0_3A_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 3A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence 
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "MINUTE" 
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "MINUTE"
+end
+
+rule UNTRACK_14_0_3B_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 3B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence 
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "SECOND"
+end
+
+rule UNTRACK_14_0_2A_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 2A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence 
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "MINUTE" 
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "MINUTE"
+end
+
+rule UNTRACK_14_0_5D_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2169_001 avec la position 5D alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5D_1
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2169_001 avec la position 5D alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5C_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2168_001 avec la position 5C alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5C_1
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2168_001 avec la position 5C alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5B_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2167_001 avec la position 5B alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5B_1
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2167_001 avec la position 5B alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5A_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2166_001 avec la position 5A alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5A_1
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2166_001 avec la position 5A alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5E_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2099_002 avec la position 5E alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_5E_1
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2099_002 avec la position 5E alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule UNTRACK_14_0_4_1
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 1023_039 avec la position 4 alternative 1
+then
+		Règle A_LargeurPiste
+end
+
+rule UNTRACK_14_0_4_5
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 1023_039 avec la position 4 alternative 5
+then
+		//EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique3D}#APourVolumeGeometrique{MPGT.CylindreGeometrique}#APourSection{MPGT.AirePisteGeometrique}#
+		Règle A_LargeurPiste
+end
+
+rule UNTRACK_14_0_2B_0
+when
+		Dans le set  1TRACK avec la position 14 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 2B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "SECOND"
+end
+
+rule GEODATUM_11_0_1_0
+when
+		Dans le set  GEODATUM avec la position 11 alternative 0
+		Dans le champ de ffirn 1195_001 avec la position 1 alternative 0
+then
+		Règle A_GéoïdeCourantRéférence
+end
+
+rule POLYARC_12_0_3_0
+when
+		Dans le set  POLYARC avec la position 12 alternative 0
+		Dans le champ de ffirn 2118_001 avec la position 3 alternative 0
+then
+		Règle A_Rayon
+end
+
+rule POLYARC_12_0_2_0
+when
+		Dans le set  POLYARC avec la position 12 alternative 0
+		Dans le champ de ffirn 2253_007  avec la position 2 alternative 0
+then
+		Règle A_AngleDegré
+end
+
+rule POLYARC_12_0_4_0
+when
+		Dans le set  POLYARC avec la position 12 alternative 0
+		Dans le champ de ffirn 2253_008  avec la position 4 alternative 0
+then
+		Règle A_AngleDegré
+end
+
+rule POLYARC_12_0_5B_0
+when
+		Dans le set  POLYARC avec la position 12 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 5B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence 
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "SECOND"
+end
+
+rule POLYARC_12_0_5A_0
+when
+		Dans le set  POLYARC avec la position 12 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 5A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence 
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "MINUTE" 
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "MINUTE"
+end
+
+rule POLYARC_12_0_1B_0
+when
+		Dans le set  POLYARC avec la position 12 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 1B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence 
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "SECOND"
+end
+
+rule POLYARC_12_0_1A_0
+when
+		Dans le set  POLYARC avec la position 12 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 1A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence 
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude = "MINUTE" 
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude = "MINUTE"
+end
+
+rule EFFLEVEL_21_0_1E_0
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2099_002 avec la position 1E alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1E_1
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2099_002 avec la position 1E alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1D_0
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2169_001 avec la position 1D alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1D_1
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2169_001 avec la position 1D alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1C_0
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2168_001 avec la position 1C alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1C_1
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2168_001 avec la position 1C alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1B_0
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2167_001 avec la position 1B alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1B_1
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2167_001 avec la position 1B alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1A_0
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2166_001 avec la position 1A alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_21_0_1A_1
+when
+		Dans le set  EFFLEVEL avec la position 21 alternative 0
+		Dans le champ de ffirn 2166_001 avec la position 1A alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule GEOLINE_20_0_1B_0
+when
+		Dans le set  GEOLINE avec la position 20 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 1B alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule GEOLINE_20_0_1A_0
+when
+		Dans le set  GEOLINE avec la position 20 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 1A alternative 0
+then
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "MINUTE"
+end
+
+rule APERIOD_22_0_2_0
+when
+		Dans le set  APERIOD avec la position 22 alternative 0
+		Dans le champ de ffirn 2033_029 avec la position 2 alternative 0
+then
+		Règle A_GdhFormatAn
+end
+
+
+
+rule APERIOD_22_0_3A_0
+when
+		Dans le set  APERIOD avec la position 22 alternative 0
+		Dans le champ de ffirn 2033_030 avec la position 3A alternative 0
+then
+		Règle A_GdhFormatAn
+end
+
+rule APERIOD_22_0_3B_0
+when
+		Dans le set  APERIOD avec la position 22 alternative 0
+		Dans le champ de ffirn 1220_008 avec la position 3B alternative 0
+then
+		CD=(AD3_1220_8;MPGT_Periode3DQualificatifDateFin)
+end
+
+rule CNTRLPT_23_0_3A_0
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 3A alternative 0
+then
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "MINUTE"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "MINUTE"
+end
+
+rule CNTRLPT_23_0_3B_0
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2024_001 avec la position 3B alternative 0
+then
+		VI MPIA.AssocInstanceObjetLocalisation.Categorie = "SHAPE"
+		Règle A_CorrectionCoordonnéesGéoïdeRéférence
+		VD MPGT.CoordonneesLatLong.PrecisionLatitude= "SECOND"
+		VD MPGT.CoordonneesLatLong.PrecisionLongitude= "SECOND"
+end
+
+rule CONTAUTH_24_0_2A_0
+when
+		Dans le set  CONTAUTH avec la position 24 alternative 0
+		Dans le champ de ffirn 2064_001 avec la position 2A alternative 0
+then
+		Règle A_ValoriserFrequence
+end
+
+rule CNTRLPT_23_0_4A_0
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2166_001 avec la position 4A alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_4A_1
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2166_001 avec la position 4A alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_4C_0
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2168_001 avec la position 4C alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_4C_1
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2168_001 avec la position 4C alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_4B_0
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2167_001 avec la position 4B alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_4B_1
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2167_001 avec la position 4B alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_1_0
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 1362_005 avec la position 1 alternative 0
+then
+		CD=(AD3_1362_5;MPGT_AutreTypeElementControleCategorie,MPGT_AutreTypeElementControleSousCategorie)	
+end
+
+rule CNTRLPT_23_0_1_1
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 1362_005 avec la position 1 alternative 1
+then
+		CD=(AD3_1362_5;MPGT_AutreTypeElementControleCategorie,MPGT_AutreTypeElementControleSousCategorie)	
+end
+
+rule CNTRLPT_23_0_4D_0
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2169_001 avec la position 4D alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_4D_1
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2169_001 avec la position 4D alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_4E_0
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2099_002 avec la position 4E alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule CNTRLPT_23_0_4E_1
+when
+		Dans le set  CNTRLPT avec la position 23 alternative 0
+		Dans le champ de ffirn 2099_002 avec la position 4E alternative 1
+then
+		Règle A_Hauteur
+end
+
+
+
+rule ACMID_10_1_4A_0
+when
+		Dans le set  ACMID avec la position 10 alternative 1
+		Dans le champ de ffirn 1389_003 avec la position 4A alternative 0
+then
+		CD=(AD3_1389_3;MPGT_TypeMesureCoordinationSousCategorie)
+end
+
+rule ACMID_10_1_4B_0
+when
+		Dans le set  ACMID avec la position 10 alternative 1
+		Dans le champ de ffirn 1389_005 avec la position 4B alternative 0
+then
+		VD MPIA.TypeMesureCoordination.SousCategorie = "NOS"
+end
+
+rule ACMID_10_1_1B_0
+when
+		Dans le set  ACMID avec la position 10 alternative 1
+		Dans le champ de ffirn 1389_004 avec la position 1B alternative 0
+then
+		Règle A_AutreTypeAcm
+end
+
+rule ACMID_10_1_1A_0
+when
+		Dans le set  ACMID avec la position 10 alternative 1
+		Dans le champ de ffirn 1389_002 avec la position 1A alternative 0
+then
+		CD=(AD3_1389_2;MPGT_TypeMesureCoordinationCategorie)
+end
+
+rule PERIOD_7_0_2A_0
+when
+		Dans le set  PERIOD avec la position 7 alternative 0
+		Dans le champ de ffirn 2000_015 avec la position 2A alternative 0
+then
+		Règle A_GdhFormatJour
+end
+
+rule PERIOD_7_0_2C_0
+when
+		Dans le set  PERIOD avec la position 7 alternative 0
+		Dans le champ de ffirn 1220_008 avec la position 2C alternative 0
+then
+		CD=(AD3_1220_8;MPGT_Periode3DQualificatifDateFin)
+end
+
+rule PERIOD_7_0_2B_0
+when
+		Dans le set  PERIOD avec la position 7 alternative 0
+		Dans le champ de ffirn 2030_004 avec la position 2B alternative 0
+then
+		Règle A_GdhFormatMois
+end
+
+rule PERIOD_7_0_2D_0
+when
+		Dans le set  PERIOD avec la position 7 alternative 0
+		Dans le champ de ffirn 2033_030 avec la position 2D alternative 0
+then
+		Règle A_GdhFormatAn
+end
+
+rule PERIOD_7_0_1C_0
+when
+		Dans le set  PERIOD avec la position 7 alternative 0
+		Dans le champ de ffirn 2033_029 avec la position 1C alternative 0
+then
+		Règle A_GdhFormatAn
+end
+
+rule PERIOD_7_0_1B_0
+when
+		Dans le set  PERIOD avec la position 7 alternative 0
+		Dans le champ de ffirn 2030_003 avec la position 1B alternative 0
+then
+		Règle A_GdhFormatMois
+end
+
+rule PERIOD_7_0_1A_0
+when
+		Dans le set  PERIOD avec la position 7 alternative 0
+		Dans le champ de ffirn 2000_014 avec la position 1A alternative 0
+then
+		Règle A_GdhFormatJour
+end
+
+rule GEODATUM_6_0_1_0
+when
+		Dans le set  GEODATUM avec la position 6 alternative 0
+		Dans le champ de ffirn 1195_001 avec la position 1 alternative 0
+then
+		Règle A_GéoïdeGlobalRéférence
+end
+
+rule ACMSTAT_9_0_1_0
+when
+		Dans le set  ACMSTAT avec la position 9 alternative 0
+		Dans le champ de ffirn 1156_005 avec la position 1 alternative 0
+then
+		IF AIRSPACE CONTROL MEANS STATUS = "CHANG"
+end
+

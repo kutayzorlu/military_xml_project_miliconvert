@@ -1,0 +1,5 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;LATITUDE MINUTE (ANGULAR);2-2;Integer;;1.0;In Service;03 Dec 07
+3;LONGITUDE MINUTE (ANGULAR);2-2;Integer;;1.0;In Service;03 Dec 07
+4;LATITUDE, MINUTES, 0-4 DECIMAL PLACES;2-7;Instructive;;1.0;In Service;03 Dec 07
+5;LONGITUDE, MINUTES, 0-4 DECIMAL PLACES;2-7;Instructive;;1.0;In Service;03 Dec 07

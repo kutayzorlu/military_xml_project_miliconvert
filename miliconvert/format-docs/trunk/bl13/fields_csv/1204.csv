@@ -1,0 +1,6 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;FLOATING MINE STATUS IDENTIFIER;5-5;Individual;;1.0;In Service;03 Dec 07
+3;OTHER MINE STATUS IDENTIFIER;6-6;Individual;;1.0;In Service;03 Dec 07
+4;EXPLODED MINE STATUS IDENTIFIER;6-7;Individual;;1.0;In Service;03 Dec 07
+5;REMOVED MINE STATUS IDENTIFIER;4-4;Individual;;1.0;In Service;03 Dec 07
+6;DEFEATED MINE STATUS IDENTIFIER;4-6;Individual;;1.0;In Service;03 Dec 07

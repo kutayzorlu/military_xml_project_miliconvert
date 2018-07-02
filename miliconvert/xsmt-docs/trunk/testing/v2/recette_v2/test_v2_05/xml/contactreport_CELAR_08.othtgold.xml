@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactreport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactreport.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">CTE 81.0.1.1</command>
+<message_identifier ff-seq="2">GOLD</message_identifier>
+<message_serial_no ff-seq="3">1240</message_serial_no>
+<month ff-seq="4">APR</month>
+<operexer_name ff-seq="5">MIDLINK</operexer_name>
+</message_identification>
+<delete set-seq="2" setId="DEL">
+<track_number ff-seq="1">T7144</track_number>
+<command ff-seq="2">CTE 81.0.1.1</command>
+</delete>
+<delete set-seq="2" setId="DEL">
+<track_number ff-seq="1">T7182</track_number>
+<command ff-seq="2">CTE 81.0.1.1</command>
+</delete>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</contactreport>

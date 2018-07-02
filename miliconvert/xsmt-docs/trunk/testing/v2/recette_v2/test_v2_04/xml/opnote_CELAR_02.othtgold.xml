@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opnote xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opnote.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">NCTSI</command>
+<message_identifier ff-seq="2">GOLD</message_identifier>
+<message_serial_no ff-seq="3">0002</message_serial_no>
+<month ff-seq="4">APR</month>
+</message_identification>
+<narrative set-seq="37" setId="NARR">
+<free-text ff-seq="1">OPNOTE: SR DE NT T7479 DETECTED BY LAMPS CREW REPRESENTS 3
+CONTACTS. MAY CORRELATE TO T7536, T7537 AND T7538 REPORTED EARLIER BY
+DAVID R. RAY RADAR.</free-text>
+</narrative>
+<weather set-seq="38" setId="WEX">
+<dtg_obsrv_or_beg_forecast_per ff-seq="1">181800Z8</dtg_obsrv_or_beg_forecast_per>
+<month ff-seq="2">APR</month>
+<latitude ff-seq="3">2300N5</latitude>
+<longitude ff-seq="4">11900E1</longitude>
+<radius ff-seq="5">50NM</radius>
+<wind_direction ff-seq="6">230T</wind_direction>
+<wind_speed ff-seq="7">10K</wind_speed>
+<most_signf_weather ff-seq="8">RW</most_signf_weather>
+<sea_state ff-seq="9">5</sea_state>
+<duration_of_forecast_from_dtg ff-seq="10">4</duration_of_forecast_from_dtg>
+<air_temperature ff-seq="11">50F</air_temperature>
+</weather>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</opnote>

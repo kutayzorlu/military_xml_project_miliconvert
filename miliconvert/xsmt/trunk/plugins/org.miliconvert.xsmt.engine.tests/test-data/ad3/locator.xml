@@ -1,0 +1,2780 @@
+<?xml version="1.0" encoding="UTF-8"?><maritime_force_locator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/locator/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier ff-seq="1" ffirn-fudn="1018-2">LOCATOR</message_text_format_identifier>
+<originator ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<queue_word set-id="queword" set-seq="5">
+<maritime_indicator ff-seq="1" ffirn-fudn="1462-1">BLUE</maritime_indicator>
+</queue_word>
+<time_period set-id="timpd" set-seq="6">
+<start_time>
+<day_time_start ff-seq="1" ffirn-fudn="2000-14">
+<day ffirn-fudn="1000-1">24</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_start>
+</start_time>
+<end_time>
+<day_time_of_stop_verified ff-seq="2" ffirn-fudn="2013-9">
+<day ffirn-fudn="1000-1">26</day>
+<hour_time ffirn-fudn="1001-1">22</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">2</context_quantity_0_9>
+</day_time_of_stop_verified>
+</end_time>
+<start_month ff-seq="3" ffirn-fudn="1004-5">FEB</start_month>
+<start_year_4_digit ff-seq="4" ffirn-fudn="1005-2">01</start_year_4_digit>
+<end_month ff-seq="5" ffirn-fudn="1004-6">MAR</end_month>
+<end_year_4_digit ff-seq="6" ffirn-fudn="1005-3">01</end_year_4_digit>
+</time_period>
+<submarine_contact_segment>
+<submarine_contact set-id="sub" set-seq="7">
+<contact_serial_number ff-seq="1" ffirn-fudn="1012-67">12</contact_serial_number>
+<unit>
+<unit ff-seq="2" ffirn-fudn="1022-57">LE REDOUTABLE</unit>
+</unit>
+<report_number>
+<locating_report_number ff-seq="3" ffirn-fudn="2296-1">
+<locating_report_qualifier ffirn-fudn="1130-24">LR</locating_report_qualifier>
+<locating_report_serial_number ffirn-fudn="1012-78">21</locating_report_serial_number>
+</locating_report_number>
+</report_number>
+<submarine_classification_confidence_level ff-seq="4" ffirn-fudn="1123-5">PROB</submarine_classification_confidence_level>
+<flag ff-seq="5" ffirn-fudn="1026-3">FR</flag>
+<submarine_propulsion_type ff-seq="6" ffirn-fudn="1339-1">DSL</submarine_propulsion_type>
+<class_or_type>
+<submarine_type ff-seq="7" ffirn-fudn="1036-2">SSN</submarine_type>
+</class_or_type>
+<credibility ff-seq="8" ffirn-fudn="1461-1">HIGH</credibility>
+<contact_photo_status ff-seq="9" ffirn-fudn="1450-1">PHT</contact_photo_status>
+<ship_control_number ff-seq="10" ffirn-fudn="2282-1">
+<ship_control_number_prefix ffirn-fudn="1441-1">B</ship_control_number_prefix>
+<context_quantity_00000_99999 ffirn-fudn="1023-36">10456</context_quantity_00000_99999>
+</ship_control_number>
+<designator_or_identifier>
+<nato_submarine_contact_designator ff-seq="11" ffirn-fudn="2152-1">
+<nato_command_area_codes ffirn-fudn="1421-1">24</nato_command_area_codes>
+<contact_sequential_number ffirn-fudn="1012-107">46</contact_sequential_number>
+</nato_submarine_contact_designator>
+</designator_or_identifier>
+</submarine_contact>
+<association set-id="assoc" set-seq="8">
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">CASE L15-79</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">DESIG B20-79</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">CTG81.OT2-59</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">VP56-KK095CONT10-23</trademark>
+</association>
+</association>
+<ellipse set-id="ellipse" set-seq="9">
+<ellipse_position>
+<unit_designation ff-seq="1" ffirn-fudn="1028-26">4725N8-02500W</unit_designation>
+</ellipse_position>
+<orientation_of_semi_major_axis_qualified ff-seq="2" ffirn-fudn="2159-3">
+<context_quantity_decimal_pt_for_tenth_perm_5_char_max ffirn-fudn="1023-32">090</context_quantity_decimal_pt_for_tenth_perm_5_char_max>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</orientation_of_semi_major_axis_qualified>
+<semi_major_axis_length_nautical_miles ff-seq="3" ffirn-fudn="2280-2">
+<context_quantity_1_9999 ffirn-fudn="1023-12">150</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_major_axis_length_nautical_miles>
+<semi_minor_axis_length_nautical_miles ff-seq="4" ffirn-fudn="2280-3">
+<context_quantity_1_9999 ffirn-fudn="1023-12">50</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_minor_axis_length_nautical_miles>
+</ellipse>
+<circular_area set-id="circ" set-seq="10">
+<position_of_centre_of_circle>
+<origin_place_name ff-seq="1" ffirn-fudn="1022-109">563030.5S2-1205632.9E8</origin_place_name>
+</position_of_centre_of_circle>
+<radius_yd_kyd_or_nm ff-seq="2" ffirn-fudn="2433-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">50</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_nm ffirn-fudn="1008-31">NM</unit_of_linear_measurement_yd_kyd_nm>
+</radius_yd_kyd_or_nm>
+</circular_area>
+<area set-id="area" set-seq="11">
+<area_name ff-seq="1" ffirn-fudn="1022-69">SALAPARUTA-A45</area_name>
+<position_or_point_name>
+<position_or_point_name descriptor="N" ff-seq="2" ffirn-fudn="1022-18">BATMAN</position_or_point_name>
+</position_or_point_name>
+</area>
+<time_of_sensor_contact_event set-id="timevent" set-seq="12">
+<day_time>
+<day_time_of_event_verified ff-seq="1" ffirn-fudn="2013-34">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_event_verified>
+</day_time>
+<asw_mission_event ff-seq="2" ffirn-fudn="1224-3">GAINED</asw_mission_event>
+<acoustic_sensor ff-seq="3" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<contact_course_degrees_true ff-seq="4" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="5" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">9</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+</time_of_sensor_contact_event>
+<bearing set-id="brng" set-seq="13">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing>
+<time_and_position set-id="tmpos" set-seq="14">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position>
+<relative_to_own_position set-id="relpo" set-seq="15">
+<bearing_degrees_true_magnetic_grid_or_relative ff-seq="1" ffirn-fudn="2254-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</bearing_degrees_true_magnetic_grid_or_relative>
+<distance_yd_kyd_m_km_or_nm ff-seq="2" ffirn-fudn="2268-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_m_km_nm ffirn-fudn="1008-30">NM</unit_of_linear_measurement_yd_kyd_m_km_nm>
+</distance_yd_kyd_m_km_or_nm>
+<unit ff-seq="3" ffirn-fudn="1022-57">FORRESTAL</unit>
+<date_time_month_verified ff-seq="4" ffirn-fudn="2032-1">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">50</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+<month_name ffirn-fudn="1004-1">JUN</month_name>
+</date_time_month_verified>
+<station_lat_long_minutes_verified ff-seq="5" ffirn-fudn="2043-10">
+<latitude_degrees ffirn-fudn="1039-1">32</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">40</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">120</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">30</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</station_lat_long_minutes_verified>
+<course_degrees_true_or_magnetic ff-seq="6" ffirn-fudn="2259-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">035</context_quantity_000_359>
+<angular_measurement_reference_true_or_magnetic ffirn-fudn="1024-4">T</angular_measurement_reference_true_or_magnetic>
+</course_degrees_true_or_magnetic>
+<speed_knots ff-seq="7" ffirn-fudn="2265-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">16</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</speed_knots>
+</relative_to_own_position>
+<reaction set-id="react" set-seq="16">
+<day_time_of_observed_reaction>
+<day_time_of_observed_reaction_verified ff-seq="1" ffirn-fudn="2013-42">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">04</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observed_reaction_verified>
+</day_time_of_observed_reaction>
+<direction_of_pass ff-seq="2" ffirn-fudn="1382-1">PS</direction_of_pass>
+<closest_point_of_approach_feet_yards_or_metres ff-seq="3" ffirn-fudn="2300-1">
+<closest_point_of_approach_cpa_qualifier ffirn-fudn="1130-28">CPA</closest_point_of_approach_cpa_qualifier>
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">1000</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_feet_yards_or_metres ffirn-fudn="1008-28">YD</unit_of_linear_measurement_feet_yards_or_metres>
+</closest_point_of_approach_feet_yards_or_metres>
+<altitude_in_feet_or_metres ff-seq="4" ffirn-fudn="2279-1">
+<context_quantity_0_99999 ffirn-fudn="1023-4">200</context_quantity_0_99999>
+<unit_of_linear_measurement_feet_or_metres ffirn-fudn="1008-13">FT</unit_of_linear_measurement_feet_or_metres>
+</altitude_in_feet_or_metres>
+<aircraft_to_contact_pass ff-seq="5" ffirn-fudn="1400-1">PORT</aircraft_to_contact_pass>
+</reaction>
+<time_and_position_1 set-id="tmpos" set-seq="17">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_1>
+<attack_segment>
+<attack set-id="attack" set-seq="18">
+<ordnance_type_maritime ff-seq="1" ffirn-fudn="1407-7">ASROC</ordnance_type_maritime>
+<attack_results ff-seq="2" ffirn-fudn="1150-1">DESTROYED</attack_results>
+<attack_method_type ff-seq="3" ffirn-fudn="1469-1">VISUAL</attack_method_type>
+<range_from_water_entry_to_target_metres_yards_or_nm ff-seq="4" ffirn-fudn="2274-2">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">100</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</range_from_water_entry_to_target_metres_yards_or_nm>
+<bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative ff-seq="5" ffirn-fudn="2252-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">245</context_quantity_000_359>
+<angular_measurement_reference_relative ffirn-fudn="1024-5">R</angular_measurement_reference_relative>
+</bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative>
+<aircraft_heading_at_weapon_release_time_degrees_true ff-seq="6" ffirn-fudn="2255-3">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</aircraft_heading_at_weapon_release_time_degrees_true>
+</attack>
+<time_and_position_2 set-id="tmpos" set-seq="19">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_2>
+</attack_segment>
+<non_acoustic_emission_intercept_segment>
+<non_acoustic_emission_intercept set-id="emitter" set-seq="20">
+<standard_emitter_designation ff-seq="1" ffirn-fudn="1121-4">HEADBAND</standard_emitter_designation>
+<credibility ff-seq="2" ffirn-fudn="1461-1">LOW</credibility>
+<elint_notation_or_sorting_code>
+<elint_notation ff-seq="3" ffirn-fudn="1012-34">F24R</elint_notation>
+</elint_notation_or_sorting_code>
+<radio_radar_function ff-seq="4" ffirn-fudn="1471-1">NA</radio_radar_function>
+<crystal_frequency ff-seq="5" ffirn-fudn="2064-5">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">123.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">KHZ</unit_of_electromagnetic_emission_measurement>
+</crystal_frequency>
+<crystal_countdown ff-seq="6" ffirn-fudn="1472-1">34</crystal_countdown>
+</non_acoustic_emission_intercept>
+<bearing_1 set-id="brng" set-seq="21">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_1>
+<radar_parameters set-id="radpa" set-seq="22">
+<radio_frequency>
+<radio_frequency ff-seq="1" ffirn-fudn="2064-1">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">240.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</radio_frequency>
+</radio_frequency>
+<pulse_repetition_frequency ff-seq="2" ffirn-fudn="2177-1">
+<pulse_repetition_frequency_data_qualifier ffirn-fudn="1130-20">PRF</pulse_repetition_frequency_data_qualifier>
+<pulse_repetition_frequency_in_pulses_per_second ffirn-fudn="1083-2">4.6</pulse_repetition_frequency_in_pulses_per_second>
+</pulse_repetition_frequency>
+<pulse_repetition_interval_in_microseconds ff-seq="3" ffirn-fudn="2176-1">
+<pulse_repetition_interval_data_qualifier ffirn-fudn="1130-21">PRI</pulse_repetition_interval_data_qualifier>
+<pulse_repetition_interval_in_microseconds ffirn-fudn="1082-2">56.8</pulse_repetition_interval_in_microseconds>
+</pulse_repetition_interval_in_microseconds>
+<pulse_width ff-seq="4" ffirn-fudn="2175-1">
+<pulse_width_data_qualifier ffirn-fudn="1130-22">PW</pulse_width_data_qualifier>
+<pulse_width_in_microseconds ffirn-fudn="1082-3">125</pulse_width_in_microseconds>
+</pulse_width>
+<scan_rate>
+<scan_rate_hz ff-seq="5" ffirn-fudn="2026-1">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">3</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_electromagnetic_emission_measurement_hertz ffirn-fudn="1008-18">HZ</unit_of_electromagnetic_emission_measurement_hertz>
+</scan_rate_hz>
+</scan_rate>
+<scan_type ff-seq="6" ffirn-fudn="1105-1">SPIR</scan_type>
+<emission_intercept_duration ff-seq="7" ffirn-fudn="2095-1">
+<context_quantity_00_99 ffirn-fudn="1023-14">12</context_quantity_00_99>
+<unit_of_time_measurement_hour ffirn-fudn="1008-86">HR</unit_of_time_measurement_hour>
+<context_quantity_00_59 ffirn-fudn="1023-15">34</context_quantity_00_59>
+<unit_of_time_measurement_minute ffirn-fudn="1008-87">MIN</unit_of_time_measurement_minute>
+<context_quantity_00_59_1 ffirn-fudn="1023-15">56</context_quantity_00_59_1>
+<unit_of_time_measurement_seconds ffirn-fudn="1008-36">SEC</unit_of_time_measurement_seconds>
+</emission_intercept_duration>
+<prf_variation ff-seq="8" ffirn-fudn="1260-1">STDY</prf_variation>
+</radar_parameters>
+</non_acoustic_emission_intercept_segment>
+<signature_segment>
+<signature set-id="signa" set-seq="23">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<fundamental_frequency ff-seq="2" ffirn-fudn="2283-4">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</fundamental_frequency>
+<harmonic ff-seq="3" ffirn-fudn="1466-1">1-2</harmonic>
+<rotational_speed_rpm ff-seq="4" ffirn-fudn="2174-1">
+<context_quantity_decimal_pt_permitted_3_char_max ffirn-fudn="1023-20">123</context_quantity_decimal_pt_permitted_3_char_max>
+<unit_of_angular_speed_velocity_measurement_rpm ffirn-fudn="1008-17">RPM</unit_of_angular_speed_velocity_measurement_rpm>
+</rotational_speed_rpm>
+<turns_per_knot_tpk ff-seq="5" ffirn-fudn="2287-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">12.4</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_angular_speed_velocity_measurement_tpk ffirn-fudn="1008-25">TPK</unit_of_angular_speed_velocity_measurement_tpk>
+</turns_per_knot_tpk>
+</signature>
+<signature_summation set-id="sigsum" set-seq="24">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<maximum_fundamental_frequency ff-seq="2" ffirn-fudn="2283-5">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</maximum_fundamental_frequency>
+<minimum_fundamental_frequency ff-seq="3" ffirn-fudn="2283-6">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">121.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</minimum_fundamental_frequency>
+<harmonic ff-seq="4" ffirn-fudn="1466-1">1-2-3</harmonic>
+</signature_summation>
+<submarine_operating_mode set-id="mode" set-seq="25">
+<submarine_operating_mode ff-seq="1" ffirn-fudn="1056-1">SUBMERGED</submarine_operating_mode>
+<submarine_propulsion_mode ff-seq="2" ffirn-fudn="1454-1">TURBINE-REDUCTION</submarine_propulsion_mode>
+<submarine_depth_feet_or_metres_decimal_permitted ff-seq="3" ffirn-fudn="2264-3">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">250</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_feet_or_metres ffirn-fudn="1008-13">FT</unit_of_linear_measurement_feet_or_metres>
+</submarine_depth_feet_or_metres_decimal_permitted>
+<depth_measurement_method ff-seq="4" ffirn-fudn="2286-1">
+<estimated_or_measured ffirn-fudn="1457-1">M</estimated_or_measured>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<depth_determination_means ffirn-fudn="1458-1">LLOYDS-MIRROR</depth_determination_means>
+</depth_measurement_method>
+</submarine_operating_mode>
+</signature_segment>
+<contact_summary set-id="sumry" set-seq="26">
+<day_time_contact>
+<day_time_contact_gained_verified ff-seq="1" ffirn-fudn="2013-12">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+</day_time_contact_gained_verified>
+</day_time_contact>
+<asw_mission_event ff-seq="2" ffirn-fudn="1224-3">AI-CZ</asw_mission_event>
+<sensor_type_or_information_source>
+<sensor_type descriptor="SENSOR" ff-seq="3" ffirn-fudn="1434-1">DIFAR</sensor_type>
+</sensor_type_or_information_source>
+<time_contact_lost>
+<day_time_contact_lost_verified ff-seq="4" ffirn-fudn="2013-43">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">01</hour_time>
+<minute_time ffirn-fudn="1002-1">10</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">4</context_quantity_0_9>
+</day_time_contact_lost_verified>
+</time_contact_lost>
+<asw_mission_event_1 ff-seq="5" ffirn-fudn="1224-3">FO-CZ</asw_mission_event_1>
+<sensor_type_or_information_source_1438>
+<sensor_type_1 descriptor="SENSOR" ff-seq="6" ffirn-fudn="1434-1">DIFAR</sensor_type_1>
+</sensor_type_or_information_source_1438>
+<percentage_number_qualified ff-seq="7" ffirn-fudn="2301-1">
+<context_quantity_0_100_1_decimal_pt_permitted ffirn-fudn="1023-38">75</context_quantity_0_100_1_decimal_pt_permitted>
+<percentage_qualifier ffirn-fudn="1130-29">PCT</percentage_qualifier>
+</percentage_number_qualified>
+</contact_summary>
+<arrival set-id="arr" set-seq="27">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">UR</flag>
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="3" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<arrival_month ff-seq="4" ffirn-fudn="1004-2">JUN</arrival_month>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</arrival>
+<inport set-id="inport" set-seq="28">
+<location_name ff-seq="1" ffirn-fudn="1022-4">HAMAMET</location_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<estimated_day_time_of_sighting_verified ff-seq="3" ffirn-fudn="2013-29">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</estimated_day_time_of_sighting_verified>
+</time_of_observation>
+<month_of_sighting ff-seq="4" ffirn-fudn="1004-11">JUL</month_of_sighting>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</inport>
+<departure set-id="dep" set-seq="29">
+<departure_port ff-seq="1" ffirn-fudn="1022-82">HAMAMET</departure_port>
+<flag ff-seq="2" ffirn-fudn="1026-3">UK</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</departure>
+<destination set-id="dest" set-seq="30">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</destination>
+</submarine_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number ff-seq="1" ffirn-fudn="1012-67">3</contact_serial_number>
+<unit ff-seq="2" ffirn-fudn="1022-57">LOWESTOFT</unit>
+<locating_report_number>
+<locating_report_number ff-seq="3" ffirn-fudn="2296-1">
+<locating_report_qualifier ffirn-fudn="1130-24">LR</locating_report_qualifier>
+<locating_report_serial_number ffirn-fudn="1012-78">3</locating_report_serial_number>
+</locating_report_number>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class descriptor="CL" ff-seq="4" ffirn-fudn="1022-35">MOSKVA</name_of_ship_class>
+</name_of_ship_class>
+<naval_ship_type ff-seq="5" ffirn-fudn="1036-3">CVHG</naval_ship_type>
+<flag ff-seq="6" ffirn-fudn="1026-3">UR</flag>
+<contact_photo_status ff-seq="7" ffirn-fudn="1450-1">PHT</contact_photo_status>
+<pennant_number ff-seq="8" ffirn-fudn="1012-46">FR962</pennant_number>
+</naval_surface_contact>
+<association_1 set-id="assoc" set-seq="32">
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">CASE L15-79</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">DESIG B20-79</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">CTG81.OT2-59</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">VP56-KK095CONT10-23</trademark>
+</association>
+</association_1>
+<ellipse_1 set-id="ellipse" set-seq="33">
+<ellipse_position>
+<unit_designation ff-seq="1" ffirn-fudn="1028-26">4725N8-02500W</unit_designation>
+</ellipse_position>
+<orientation_of_semi_major_axis_qualified ff-seq="2" ffirn-fudn="2159-3">
+<context_quantity_decimal_pt_for_tenth_perm_5_char_max ffirn-fudn="1023-32">090</context_quantity_decimal_pt_for_tenth_perm_5_char_max>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</orientation_of_semi_major_axis_qualified>
+<semi_major_axis_length_nautical_miles ff-seq="3" ffirn-fudn="2280-2">
+<context_quantity_1_9999 ffirn-fudn="1023-12">150</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_major_axis_length_nautical_miles>
+<semi_minor_axis_length_nautical_miles ff-seq="4" ffirn-fudn="2280-3">
+<context_quantity_1_9999 ffirn-fudn="1023-12">50</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_minor_axis_length_nautical_miles>
+</ellipse_1>
+<area_1 set-id="area" set-seq="35">
+<area_name ff-seq="1" ffirn-fudn="1022-69">SALAPARUTA-A45</area_name>
+<position_or_point_name>
+<position_or_point_name descriptor="N" ff-seq="2" ffirn-fudn="1022-18">BATMAN</position_or_point_name>
+</position_or_point_name>
+</area_1>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified ff-seq="1" ffirn-fudn="2013-34">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_event_verified>
+</day_time>
+<asw_mission_event ff-seq="2" ffirn-fudn="1224-3">GAINED</asw_mission_event>
+<acoustic_sensor ff-seq="3" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<contact_course_degrees_true ff-seq="4" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="5" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">9</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+</time_of_sensor_contact_event_1>
+<bearing_2 set-id="brng" set-seq="37">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_2>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_3>
+<relative_to_own_position_1 set-id="relpo" set-seq="39">
+<bearing_degrees_true_magnetic_grid_or_relative ff-seq="1" ffirn-fudn="2254-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</bearing_degrees_true_magnetic_grid_or_relative>
+<distance_yd_kyd_m_km_or_nm ff-seq="2" ffirn-fudn="2268-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_m_km_nm ffirn-fudn="1008-30">NM</unit_of_linear_measurement_yd_kyd_m_km_nm>
+</distance_yd_kyd_m_km_or_nm>
+<unit ff-seq="3" ffirn-fudn="1022-57">FORRESTAL</unit>
+<date_time_month_verified ff-seq="4" ffirn-fudn="2032-1">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">50</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+<month_name ffirn-fudn="1004-1">JUN</month_name>
+</date_time_month_verified>
+<station_lat_long_minutes_verified ff-seq="5" ffirn-fudn="2043-10">
+<latitude_degrees ffirn-fudn="1039-1">32</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">40</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">120</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">30</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</station_lat_long_minutes_verified>
+<course_degrees_true_or_magnetic ff-seq="6" ffirn-fudn="2259-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">035</context_quantity_000_359>
+<angular_measurement_reference_true_or_magnetic ffirn-fudn="1024-4">T</angular_measurement_reference_true_or_magnetic>
+</course_degrees_true_or_magnetic>
+<speed_knots ff-seq="7" ffirn-fudn="2265-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">16</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</speed_knots>
+</relative_to_own_position_1>
+<reaction_1 set-id="react" set-seq="40">
+<day_time_of_observed_reaction>
+<day_time_of_observed_reaction_verified ff-seq="1" ffirn-fudn="2013-42">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">04</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observed_reaction_verified>
+</day_time_of_observed_reaction>
+<direction_of_pass ff-seq="2" ffirn-fudn="1382-1">PS</direction_of_pass>
+<closest_point_of_approach_feet_yards_or_metres ff-seq="3" ffirn-fudn="2300-1">
+<closest_point_of_approach_cpa_qualifier ffirn-fudn="1130-28">CPA</closest_point_of_approach_cpa_qualifier>
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">1000</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_feet_yards_or_metres ffirn-fudn="1008-28">YD</unit_of_linear_measurement_feet_yards_or_metres>
+</closest_point_of_approach_feet_yards_or_metres>
+<altitude_in_feet_or_metres ff-seq="4" ffirn-fudn="2279-1">
+<context_quantity_0_99999 ffirn-fudn="1023-4">200</context_quantity_0_99999>
+<unit_of_linear_measurement_feet_or_metres ffirn-fudn="1008-13">FT</unit_of_linear_measurement_feet_or_metres>
+</altitude_in_feet_or_metres>
+<aircraft_to_contact_pass ff-seq="5" ffirn-fudn="1400-1">PORT</aircraft_to_contact_pass>
+</reaction_1>
+<time_and_position_4 set-id="tmpos" set-seq="41">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_4>
+<attack_1_segment>
+<attack_1 set-id="attack" set-seq="42">
+<ordnance_type_maritime ff-seq="1" ffirn-fudn="1407-7">ASROC</ordnance_type_maritime>
+<attack_results ff-seq="2" ffirn-fudn="1150-1">DESTROYED</attack_results>
+<attack_method_type ff-seq="3" ffirn-fudn="1469-1">VISUAL</attack_method_type>
+<range_from_water_entry_to_target_metres_yards_or_nm ff-seq="4" ffirn-fudn="2274-2">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">100</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</range_from_water_entry_to_target_metres_yards_or_nm>
+<bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative ff-seq="5" ffirn-fudn="2252-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">245</context_quantity_000_359>
+<angular_measurement_reference_relative ffirn-fudn="1024-5">R</angular_measurement_reference_relative>
+</bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative>
+<aircraft_heading_at_weapon_release_time_degrees_true ff-seq="6" ffirn-fudn="2255-3">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</aircraft_heading_at_weapon_release_time_degrees_true>
+</attack_1>
+<time_and_position_5 set-id="tmpos" set-seq="43">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_5>
+</attack_1_segment>
+<non_acoustic_emission_intercept_1_segment>
+<non_acoustic_emission_intercept_1 set-id="emitter" set-seq="44">
+<standard_emitter_designation ff-seq="1" ffirn-fudn="1121-4">HEADBAND</standard_emitter_designation>
+<credibility ff-seq="2" ffirn-fudn="1461-1">LOW</credibility>
+<elint_notation_or_sorting_code>
+<elint_notation ff-seq="3" ffirn-fudn="1012-34">F24R</elint_notation>
+</elint_notation_or_sorting_code>
+<radio_radar_function ff-seq="4" ffirn-fudn="1471-1">NA</radio_radar_function>
+<crystal_frequency ff-seq="5" ffirn-fudn="2064-5">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">123.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">KHZ</unit_of_electromagnetic_emission_measurement>
+</crystal_frequency>
+<crystal_countdown ff-seq="6" ffirn-fudn="1472-1">34</crystal_countdown>
+</non_acoustic_emission_intercept_1>
+<bearing_3 set-id="brng" set-seq="45">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_3>
+<radar_parameters_1 set-id="radpa" set-seq="46">
+<radio_frequency>
+<radio_frequency ff-seq="1" ffirn-fudn="2064-1">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">240.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</radio_frequency>
+</radio_frequency>
+<pulse_repetition_frequency ff-seq="2" ffirn-fudn="2177-1">
+<pulse_repetition_frequency_data_qualifier ffirn-fudn="1130-20">PRF</pulse_repetition_frequency_data_qualifier>
+<pulse_repetition_frequency_in_pulses_per_second ffirn-fudn="1083-2">4.6</pulse_repetition_frequency_in_pulses_per_second>
+</pulse_repetition_frequency>
+<pulse_repetition_interval_in_microseconds ff-seq="3" ffirn-fudn="2176-1">
+<pulse_repetition_interval_data_qualifier ffirn-fudn="1130-21">PRI</pulse_repetition_interval_data_qualifier>
+<pulse_repetition_interval_in_microseconds ffirn-fudn="1082-2">56.8</pulse_repetition_interval_in_microseconds>
+</pulse_repetition_interval_in_microseconds>
+<pulse_width ff-seq="4" ffirn-fudn="2175-1">
+<pulse_width_data_qualifier ffirn-fudn="1130-22">PW</pulse_width_data_qualifier>
+<pulse_width_in_microseconds ffirn-fudn="1082-3">125</pulse_width_in_microseconds>
+</pulse_width>
+<scan_rate>
+<scan_rate_hz ff-seq="5" ffirn-fudn="2026-1">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">3</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_electromagnetic_emission_measurement_hertz ffirn-fudn="1008-18">HZ</unit_of_electromagnetic_emission_measurement_hertz>
+</scan_rate_hz>
+</scan_rate>
+<scan_type ff-seq="6" ffirn-fudn="1105-1">SPIR</scan_type>
+<emission_intercept_duration ff-seq="7" ffirn-fudn="2095-1">
+<context_quantity_00_99 ffirn-fudn="1023-14">12</context_quantity_00_99>
+<unit_of_time_measurement_hour ffirn-fudn="1008-86">HR</unit_of_time_measurement_hour>
+<context_quantity_00_59 ffirn-fudn="1023-15">34</context_quantity_00_59>
+<unit_of_time_measurement_minute ffirn-fudn="1008-87">MIN</unit_of_time_measurement_minute>
+<context_quantity_00_59_1 ffirn-fudn="1023-15">56</context_quantity_00_59_1>
+<unit_of_time_measurement_seconds ffirn-fudn="1008-36">SEC</unit_of_time_measurement_seconds>
+</emission_intercept_duration>
+<prf_variation ff-seq="8" ffirn-fudn="1260-1">STDY</prf_variation>
+</radar_parameters_1>
+</non_acoustic_emission_intercept_1_segment>
+<signature_1_segment>
+<signature_1 set-id="signa" set-seq="47">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<fundamental_frequency ff-seq="2" ffirn-fudn="2283-4">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</fundamental_frequency>
+<harmonic ff-seq="3" ffirn-fudn="1466-1">1-2</harmonic>
+<rotational_speed_rpm ff-seq="4" ffirn-fudn="2174-1">
+<context_quantity_decimal_pt_permitted_3_char_max ffirn-fudn="1023-20">123</context_quantity_decimal_pt_permitted_3_char_max>
+<unit_of_angular_speed_velocity_measurement_rpm ffirn-fudn="1008-17">RPM</unit_of_angular_speed_velocity_measurement_rpm>
+</rotational_speed_rpm>
+<turns_per_knot_tpk ff-seq="5" ffirn-fudn="2287-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">12.4</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_angular_speed_velocity_measurement_tpk ffirn-fudn="1008-25">TPK</unit_of_angular_speed_velocity_measurement_tpk>
+</turns_per_knot_tpk>
+</signature_1>
+<signature_summation_1 set-id="sigsum" set-seq="48">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<maximum_fundamental_frequency ff-seq="2" ffirn-fudn="2283-5">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</maximum_fundamental_frequency>
+<minimum_fundamental_frequency ff-seq="3" ffirn-fudn="2283-6">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">121.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</minimum_fundamental_frequency>
+<harmonic ff-seq="4" ffirn-fudn="1466-1">1-2-3</harmonic>
+</signature_summation_1>
+</signature_1_segment>
+<arrival_1 set-id="arr" set-seq="50">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">UR</flag>
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="3" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<arrival_month ff-seq="4" ffirn-fudn="1004-2">JUN</arrival_month>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</arrival_1>
+<inport_1 set-id="inport" set-seq="51">
+<location_name ff-seq="1" ffirn-fudn="1022-4">HAMAMET</location_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<estimated_day_time_of_sighting_verified ff-seq="3" ffirn-fudn="2013-29">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</estimated_day_time_of_sighting_verified>
+</time_of_observation>
+<month_of_sighting ff-seq="4" ffirn-fudn="1004-11">JUL</month_of_sighting>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</inport_1>
+<departure_1 set-id="dep" set-seq="52">
+<departure_port ff-seq="1" ffirn-fudn="1022-82">HAMAMET</departure_port>
+<flag ff-seq="2" ffirn-fudn="1026-3">UK</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</departure_1>
+<destination_1 set-id="dest" set-seq="53">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</destination_1>
+</naval_surface_contact_segment>
+<aircraft_contact_segment>
+<aircraft_contact set-id="air" set-seq="54">
+<contact_serial_number ff-seq="1" ffirn-fudn="1012-67">1</contact_serial_number>
+<unit ff-seq="2" ffirn-fudn="1022-57">KEF GREEN 040</unit>
+<locating_report_number>
+<locating_report_number ff-seq="3" ffirn-fudn="2296-1">
+<locating_report_qualifier ffirn-fudn="1130-24">LR</locating_report_qualifier>
+<locating_report_serial_number ffirn-fudn="1012-78">2</locating_report_serial_number>
+</locating_report_number>
+</locating_report_number>
+<aircraft_type_model ff-seq="4" ffirn-fudn="1015-4">BER</aircraft_type_model>
+<credibility ff-seq="5" ffirn-fudn="1461-1">MED</credibility>
+<number_of_aircraft_1_99 ff-seq="6" ffirn-fudn="1044-143">2</number_of_aircraft_1_99>
+<flag ff-seq="7" ffirn-fudn="1026-3">UR</flag>
+<contact_photo_status ff-seq="8" ffirn-fudn="1450-1">NPH</contact_photo_status>
+<altitude>
+<flight_level ff-seq="9" ffirn-fudn="2129-1">
+<flight_level_data_qualifier ffirn-fudn="1130-4">FL</flight_level_data_qualifier>
+<flight_level_number ffirn-fudn="1012-42">250</flight_level_number>
+</flight_level>
+</altitude>
+</aircraft_contact>
+<time_and_position_6 set-id="tmpos" set-seq="55">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_6>
+<reaction_2 set-id="react" set-seq="56">
+<day_time_of_observed_reaction>
+<day_time_of_observed_reaction_verified ff-seq="1" ffirn-fudn="2013-42">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">04</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observed_reaction_verified>
+</day_time_of_observed_reaction>
+<direction_of_pass ff-seq="2" ffirn-fudn="1382-1">PS</direction_of_pass>
+<closest_point_of_approach_feet_yards_or_metres ff-seq="3" ffirn-fudn="2300-1">
+<closest_point_of_approach_cpa_qualifier ffirn-fudn="1130-28">CPA</closest_point_of_approach_cpa_qualifier>
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">1000</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_feet_yards_or_metres ffirn-fudn="1008-28">YD</unit_of_linear_measurement_feet_yards_or_metres>
+</closest_point_of_approach_feet_yards_or_metres>
+<altitude_in_feet_or_metres ff-seq="4" ffirn-fudn="2279-1">
+<context_quantity_0_99999 ffirn-fudn="1023-4">200</context_quantity_0_99999>
+<unit_of_linear_measurement_feet_or_metres ffirn-fudn="1008-13">FT</unit_of_linear_measurement_feet_or_metres>
+</altitude_in_feet_or_metres>
+<aircraft_to_contact_pass ff-seq="5" ffirn-fudn="1400-1">PORT</aircraft_to_contact_pass>
+</reaction_2>
+<time_and_position_7 set-id="tmpos" set-seq="57">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_7>
+<attack_2_segment>
+<attack_2 set-id="attack" set-seq="58">
+<ordnance_type_maritime ff-seq="1" ffirn-fudn="1407-7">ASROC</ordnance_type_maritime>
+<attack_results ff-seq="2" ffirn-fudn="1150-1">DESTROYED</attack_results>
+<attack_method_type ff-seq="3" ffirn-fudn="1469-1">VISUAL</attack_method_type>
+<range_from_water_entry_to_target_metres_yards_or_nm ff-seq="4" ffirn-fudn="2274-2">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">100</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</range_from_water_entry_to_target_metres_yards_or_nm>
+<bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative ff-seq="5" ffirn-fudn="2252-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">245</context_quantity_000_359>
+<angular_measurement_reference_relative ffirn-fudn="1024-5">R</angular_measurement_reference_relative>
+</bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative>
+<aircraft_heading_at_weapon_release_time_degrees_true ff-seq="6" ffirn-fudn="2255-3">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</aircraft_heading_at_weapon_release_time_degrees_true>
+</attack_2>
+<time_and_position_8 set-id="tmpos" set-seq="59">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_8>
+</attack_2_segment>
+<non_acoustic_emission_intercept_2_segment>
+<non_acoustic_emission_intercept_2 set-id="emitter" set-seq="60">
+<standard_emitter_designation ff-seq="1" ffirn-fudn="1121-4">HEADBAND</standard_emitter_designation>
+<credibility ff-seq="2" ffirn-fudn="1461-1">LOW</credibility>
+<elint_notation_or_sorting_code>
+<elint_notation ff-seq="3" ffirn-fudn="1012-34">F24R</elint_notation>
+</elint_notation_or_sorting_code>
+<radio_radar_function ff-seq="4" ffirn-fudn="1471-1">NA</radio_radar_function>
+<crystal_frequency ff-seq="5" ffirn-fudn="2064-5">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">123.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">KHZ</unit_of_electromagnetic_emission_measurement>
+</crystal_frequency>
+<crystal_countdown ff-seq="6" ffirn-fudn="1472-1">34</crystal_countdown>
+</non_acoustic_emission_intercept_2>
+<bearing_4 set-id="brng" set-seq="61">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_4>
+<radar_parameters_2 set-id="radpa" set-seq="62">
+<radio_frequency>
+<radio_frequency ff-seq="1" ffirn-fudn="2064-1">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">240.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</radio_frequency>
+</radio_frequency>
+<pulse_repetition_frequency ff-seq="2" ffirn-fudn="2177-1">
+<pulse_repetition_frequency_data_qualifier ffirn-fudn="1130-20">PRF</pulse_repetition_frequency_data_qualifier>
+<pulse_repetition_frequency_in_pulses_per_second ffirn-fudn="1083-2">4.6</pulse_repetition_frequency_in_pulses_per_second>
+</pulse_repetition_frequency>
+<pulse_repetition_interval_in_microseconds ff-seq="3" ffirn-fudn="2176-1">
+<pulse_repetition_interval_data_qualifier ffirn-fudn="1130-21">PRI</pulse_repetition_interval_data_qualifier>
+<pulse_repetition_interval_in_microseconds ffirn-fudn="1082-2">56.8</pulse_repetition_interval_in_microseconds>
+</pulse_repetition_interval_in_microseconds>
+<pulse_width ff-seq="4" ffirn-fudn="2175-1">
+<pulse_width_data_qualifier ffirn-fudn="1130-22">PW</pulse_width_data_qualifier>
+<pulse_width_in_microseconds ffirn-fudn="1082-3">125</pulse_width_in_microseconds>
+</pulse_width>
+<scan_rate>
+<scan_rate_hz ff-seq="5" ffirn-fudn="2026-1">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">3</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_electromagnetic_emission_measurement_hertz ffirn-fudn="1008-18">HZ</unit_of_electromagnetic_emission_measurement_hertz>
+</scan_rate_hz>
+</scan_rate>
+<scan_type ff-seq="6" ffirn-fudn="1105-1">SPIR</scan_type>
+<emission_intercept_duration ff-seq="7" ffirn-fudn="2095-1">
+<context_quantity_00_99 ffirn-fudn="1023-14">12</context_quantity_00_99>
+<unit_of_time_measurement_hour ffirn-fudn="1008-86">HR</unit_of_time_measurement_hour>
+<context_quantity_00_59 ffirn-fudn="1023-15">34</context_quantity_00_59>
+<unit_of_time_measurement_minute ffirn-fudn="1008-87">MIN</unit_of_time_measurement_minute>
+<context_quantity_00_59_1 ffirn-fudn="1023-15">56</context_quantity_00_59_1>
+<unit_of_time_measurement_seconds ffirn-fudn="1008-36">SEC</unit_of_time_measurement_seconds>
+</emission_intercept_duration>
+<prf_variation ff-seq="8" ffirn-fudn="1260-1">STDY</prf_variation>
+</radar_parameters_2>
+</non_acoustic_emission_intercept_2_segment>
+</aircraft_contact_segment>
+<merchant_ship_contact_segment>
+<merchant_ship_contact set-id="merch" set-seq="63">
+<contact_serial_number ff-seq="1" ffirn-fudn="1012-67">3</contact_serial_number>
+<unit ff-seq="2" ffirn-fudn="1022-57">DOBRYNA NIKITICH</unit>
+<naval_ship_type ff-seq="3" ffirn-fudn="1036-3">AGB</naval_ship_type>
+<flag ff-seq="4" ffirn-fudn="1026-3">UR</flag>
+<contact_photo_status ff-seq="5" ffirn-fudn="1450-1">NPH</contact_photo_status>
+<discrete_identifier>
+<nato_surface_contact_designator ff-seq="7" ffirn-fudn="2154-1">
+<nato_command_area_codes ffirn-fudn="1421-1">24</nato_command_area_codes>
+<contact_sequential_2_letter_identifier ffirn-fudn="1246-8">AG</contact_sequential_2_letter_identifier>
+</nato_surface_contact_designator>
+</discrete_identifier>
+<cargo_indicator ff-seq="8" ffirn-fudn="1173-4">MAC</cargo_indicator>
+</merchant_ship_contact>
+<ellipse_2 set-id="ellipse" set-seq="65">
+<ellipse_position>
+<unit_designation ff-seq="1" ffirn-fudn="1028-26">4725N8-02500W</unit_designation>
+</ellipse_position>
+<orientation_of_semi_major_axis_qualified ff-seq="2" ffirn-fudn="2159-3">
+<context_quantity_decimal_pt_for_tenth_perm_5_char_max ffirn-fudn="1023-32">090</context_quantity_decimal_pt_for_tenth_perm_5_char_max>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</orientation_of_semi_major_axis_qualified>
+<semi_major_axis_length_nautical_miles ff-seq="3" ffirn-fudn="2280-2">
+<context_quantity_1_9999 ffirn-fudn="1023-12">150</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_major_axis_length_nautical_miles>
+<semi_minor_axis_length_nautical_miles ff-seq="4" ffirn-fudn="2280-3">
+<context_quantity_1_9999 ffirn-fudn="1023-12">50</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_minor_axis_length_nautical_miles>
+</ellipse_2>
+<circular_area_2 set-id="circ" set-seq="66">
+<position_of_centre_of_circle>
+<origin_place_name ff-seq="1" ffirn-fudn="1022-109">563030.5S2-1205632.9E8</origin_place_name>
+</position_of_centre_of_circle>
+<radius_yd_kyd_or_nm ff-seq="2" ffirn-fudn="2433-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">50</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_nm ffirn-fudn="1008-31">NM</unit_of_linear_measurement_yd_kyd_nm>
+</radius_yd_kyd_or_nm>
+</circular_area_2>
+<area_2 set-id="area" set-seq="67">
+<area_name ff-seq="1" ffirn-fudn="1022-69">SALAPARUTA-A45</area_name>
+<position_or_point_name>
+<position_or_point_name descriptor="N" ff-seq="2" ffirn-fudn="1022-18">BATMAN</position_or_point_name>
+</position_or_point_name>
+</area_2>
+<time_of_sensor_contact_event_2 set-id="timevent" set-seq="68">
+<day_time>
+<day_time_of_event_verified ff-seq="1" ffirn-fudn="2013-34">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_event_verified>
+</day_time>
+<asw_mission_event ff-seq="2" ffirn-fudn="1224-3">GAINED</asw_mission_event>
+<acoustic_sensor ff-seq="3" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<contact_course_degrees_true ff-seq="4" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="5" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">9</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+</time_of_sensor_contact_event_2>
+<bearing_5 set-id="brng" set-seq="69">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_5>
+<time_and_position_9 set-id="tmpos" set-seq="70">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_9>
+<relative_to_own_position_2 set-id="relpo" set-seq="71">
+<bearing_degrees_true_magnetic_grid_or_relative ff-seq="1" ffirn-fudn="2254-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</bearing_degrees_true_magnetic_grid_or_relative>
+<distance_yd_kyd_m_km_or_nm ff-seq="2" ffirn-fudn="2268-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_m_km_nm ffirn-fudn="1008-30">NM</unit_of_linear_measurement_yd_kyd_m_km_nm>
+</distance_yd_kyd_m_km_or_nm>
+<unit ff-seq="3" ffirn-fudn="1022-57">FORRESTAL</unit>
+<date_time_month_verified ff-seq="4" ffirn-fudn="2032-1">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">50</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+<month_name ffirn-fudn="1004-1">JUN</month_name>
+</date_time_month_verified>
+<station_lat_long_minutes_verified ff-seq="5" ffirn-fudn="2043-10">
+<latitude_degrees ffirn-fudn="1039-1">32</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">40</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">120</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">30</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</station_lat_long_minutes_verified>
+<course_degrees_true_or_magnetic ff-seq="6" ffirn-fudn="2259-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">035</context_quantity_000_359>
+<angular_measurement_reference_true_or_magnetic ffirn-fudn="1024-4">T</angular_measurement_reference_true_or_magnetic>
+</course_degrees_true_or_magnetic>
+<speed_knots ff-seq="7" ffirn-fudn="2265-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">16</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</speed_knots>
+</relative_to_own_position_2>
+<surface_ship_rigging set-id="rig" set-seq="72">
+<appearance_group ff-seq="1" ffirn-fudn="1467-1">GP2</appearance_group>
+<hull_profile ff-seq="2" ffirn-fudn="1463-1">RAISED 1-2-3</hull_profile>
+<stern_type ff-seq="3" ffirn-fudn="1464-1">CRUISER</stern_type>
+<upright_structure ff-seq="4" ffirn-fudn="1465-1">GANTRY</upright_structure>
+<ship_displacement ff-seq="5" ffirn-fudn="1440-2">45000</ship_displacement>
+<ship_length_feet_or_metres ff-seq="6" ffirn-fudn="2266-2">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">490</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_feet_or_metres ffirn-fudn="1008-13">FT</unit_of_linear_measurement_feet_or_metres>
+</ship_length_feet_or_metres>
+</surface_ship_rigging>
+<reaction_3 set-id="react" set-seq="73">
+<day_time_of_observed_reaction>
+<day_time_of_observed_reaction_verified ff-seq="1" ffirn-fudn="2013-42">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">04</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observed_reaction_verified>
+</day_time_of_observed_reaction>
+<direction_of_pass ff-seq="2" ffirn-fudn="1382-1">PS</direction_of_pass>
+<closest_point_of_approach_feet_yards_or_metres ff-seq="3" ffirn-fudn="2300-1">
+<closest_point_of_approach_cpa_qualifier ffirn-fudn="1130-28">CPA</closest_point_of_approach_cpa_qualifier>
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">1000</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_feet_yards_or_metres ffirn-fudn="1008-28">YD</unit_of_linear_measurement_feet_yards_or_metres>
+</closest_point_of_approach_feet_yards_or_metres>
+<altitude_in_feet_or_metres ff-seq="4" ffirn-fudn="2279-1">
+<context_quantity_0_99999 ffirn-fudn="1023-4">200</context_quantity_0_99999>
+<unit_of_linear_measurement_feet_or_metres ffirn-fudn="1008-13">FT</unit_of_linear_measurement_feet_or_metres>
+</altitude_in_feet_or_metres>
+<aircraft_to_contact_pass ff-seq="5" ffirn-fudn="1400-1">PORT</aircraft_to_contact_pass>
+</reaction_3>
+<time_and_position_10 set-id="tmpos" set-seq="74">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_10>
+<attack_3_segment>
+<attack_3 set-id="attack" set-seq="75">
+<ordnance_type_maritime ff-seq="1" ffirn-fudn="1407-7">ASROC</ordnance_type_maritime>
+<attack_results ff-seq="2" ffirn-fudn="1150-1">DESTROYED</attack_results>
+<attack_method_type ff-seq="3" ffirn-fudn="1469-1">VISUAL</attack_method_type>
+<range_from_water_entry_to_target_metres_yards_or_nm ff-seq="4" ffirn-fudn="2274-2">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">100</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</range_from_water_entry_to_target_metres_yards_or_nm>
+<bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative ff-seq="5" ffirn-fudn="2252-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">245</context_quantity_000_359>
+<angular_measurement_reference_relative ffirn-fudn="1024-5">R</angular_measurement_reference_relative>
+</bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative>
+<aircraft_heading_at_weapon_release_time_degrees_true ff-seq="6" ffirn-fudn="2255-3">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</aircraft_heading_at_weapon_release_time_degrees_true>
+</attack_3>
+<time_and_position_11 set-id="tmpos" set-seq="76">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_11>
+</attack_3_segment>
+<non_acoustic_emission_intercept_3_segment>
+<non_acoustic_emission_intercept_3 set-id="emitter" set-seq="77">
+<standard_emitter_designation ff-seq="1" ffirn-fudn="1121-4">HEADBAND</standard_emitter_designation>
+<credibility ff-seq="2" ffirn-fudn="1461-1">LOW</credibility>
+<elint_notation_or_sorting_code>
+<elint_notation ff-seq="3" ffirn-fudn="1012-34">F24R</elint_notation>
+</elint_notation_or_sorting_code>
+<radio_radar_function ff-seq="4" ffirn-fudn="1471-1">NA</radio_radar_function>
+<crystal_frequency ff-seq="5" ffirn-fudn="2064-5">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">123.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">KHZ</unit_of_electromagnetic_emission_measurement>
+</crystal_frequency>
+<crystal_countdown ff-seq="6" ffirn-fudn="1472-1">34</crystal_countdown>
+</non_acoustic_emission_intercept_3>
+<bearing_6 set-id="brng" set-seq="78">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_6>
+</non_acoustic_emission_intercept_3_segment>
+<signature_2_segment>
+<signature_2 set-id="signa" set-seq="80">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<fundamental_frequency ff-seq="2" ffirn-fudn="2283-4">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</fundamental_frequency>
+<harmonic ff-seq="3" ffirn-fudn="1466-1">1-2</harmonic>
+<rotational_speed_rpm ff-seq="4" ffirn-fudn="2174-1">
+<context_quantity_decimal_pt_permitted_3_char_max ffirn-fudn="1023-20">123</context_quantity_decimal_pt_permitted_3_char_max>
+<unit_of_angular_speed_velocity_measurement_rpm ffirn-fudn="1008-17">RPM</unit_of_angular_speed_velocity_measurement_rpm>
+</rotational_speed_rpm>
+<turns_per_knot_tpk ff-seq="5" ffirn-fudn="2287-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">12.4</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_angular_speed_velocity_measurement_tpk ffirn-fudn="1008-25">TPK</unit_of_angular_speed_velocity_measurement_tpk>
+</turns_per_knot_tpk>
+</signature_2>
+<signature_summation_2 set-id="sigsum" set-seq="81">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<maximum_fundamental_frequency ff-seq="2" ffirn-fudn="2283-5">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</maximum_fundamental_frequency>
+<minimum_fundamental_frequency ff-seq="3" ffirn-fudn="2283-6">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">121.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</minimum_fundamental_frequency>
+<harmonic ff-seq="4" ffirn-fudn="1466-1">1-2-3</harmonic>
+</signature_summation_2>
+</signature_2_segment>
+<contact_summary_2 set-id="sumry" set-seq="82">
+<day_time_contact>
+<day_time_contact_gained_verified ff-seq="1" ffirn-fudn="2013-12">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+</day_time_contact_gained_verified>
+</day_time_contact>
+<asw_mission_event ff-seq="2" ffirn-fudn="1224-3">AI-CZ</asw_mission_event>
+<sensor_type_or_information_source>
+<sensor_type descriptor="SENSOR" ff-seq="3" ffirn-fudn="1434-1">DIFAR</sensor_type>
+</sensor_type_or_information_source>
+<time_contact_lost>
+<day_time_contact_lost_verified ff-seq="4" ffirn-fudn="2013-43">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">01</hour_time>
+<minute_time ffirn-fudn="1002-1">10</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">4</context_quantity_0_9>
+</day_time_contact_lost_verified>
+</time_contact_lost>
+<asw_mission_event_1 ff-seq="5" ffirn-fudn="1224-3">FO-CZ</asw_mission_event_1>
+<sensor_type_or_information_source_1438>
+<sensor_type_1 descriptor="SENSOR" ff-seq="6" ffirn-fudn="1434-1">DIFAR</sensor_type_1>
+</sensor_type_or_information_source_1438>
+<percentage_number_qualified ff-seq="7" ffirn-fudn="2301-1">
+<context_quantity_0_100_1_decimal_pt_permitted ffirn-fudn="1023-38">75</context_quantity_0_100_1_decimal_pt_permitted>
+<percentage_qualifier ffirn-fudn="1130-29">PCT</percentage_qualifier>
+</percentage_number_qualified>
+</contact_summary_2>
+<arrival_2 set-id="arr" set-seq="83">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">UR</flag>
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="3" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<arrival_month ff-seq="4" ffirn-fudn="1004-2">JUN</arrival_month>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</arrival_2>
+<inport_2 set-id="inport" set-seq="84">
+<location_name ff-seq="1" ffirn-fudn="1022-4">HAMAMET</location_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<estimated_day_time_of_sighting_verified ff-seq="3" ffirn-fudn="2013-29">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</estimated_day_time_of_sighting_verified>
+</time_of_observation>
+<month_of_sighting ff-seq="4" ffirn-fudn="1004-11">JUL</month_of_sighting>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</inport_2>
+<departure_2 set-id="dep" set-seq="85">
+<departure_port ff-seq="1" ffirn-fudn="1022-82">HAMAMET</departure_port>
+<flag ff-seq="2" ffirn-fudn="1026-3">UK</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</departure_2>
+<destination_2 set-id="dest" set-seq="86">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</destination_2>
+</merchant_ship_contact_segment>
+<fishing_vessel_contact_segment>
+<fishing_vessel_contact set-id="fishctc" set-seq="87">
+<contact_serial_number ff-seq="1" ffirn-fudn="1012-67">3</contact_serial_number>
+<unit ff-seq="2" ffirn-fudn="1022-57">FLEETWOOD MAC</unit>
+<naval_ship_type ff-seq="3" ffirn-fudn="1036-3">SWCL</naval_ship_type>
+<flag ff-seq="4" ffirn-fudn="1026-3">FR</flag>
+<contact_photo_status ff-seq="5" ffirn-fudn="1450-1">NPH</contact_photo_status>
+<number_of_additional_vessels_in_area ff-seq="6" ffirn-fudn="1044-115">8</number_of_additional_vessels_in_area>
+<ship_pennant_prefix ff-seq="7" ffirn-fudn="1453-1">FD</ship_pennant_prefix>
+<pennant_number ff-seq="8" ffirn-fudn="1012-46">FR425</pennant_number>
+<ship_control_number ff-seq="9" ffirn-fudn="2282-1">
+<ship_control_number_prefix ffirn-fudn="1441-1">M</ship_control_number_prefix>
+<context_quantity_00000_99999 ffirn-fudn="1023-36">12345</context_quantity_00000_99999>
+</ship_control_number>
+<nato_designator_or_discrete_identifier>
+<nato_surface_contact_designator ff-seq="10" ffirn-fudn="2154-1">
+<nato_command_area_codes ffirn-fudn="1421-1">11</nato_command_area_codes>
+<contact_sequential_2_letter_identifier ffirn-fudn="1246-8">34</contact_sequential_2_letter_identifier>
+</nato_surface_contact_designator>
+</nato_designator_or_discrete_identifier>
+</fishing_vessel_contact>
+<association_3 set-id="assoc" set-seq="88">
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">CASE L15-79</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">DESIG B20-79</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">CTG81.OT2-59</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">VP56-KK095CONT10-23</trademark>
+</association>
+</association_3>
+<ellipse_3 set-id="ellipse" set-seq="89">
+<ellipse_position>
+<unit_designation ff-seq="1" ffirn-fudn="1028-26">4725N8-02500W</unit_designation>
+</ellipse_position>
+<orientation_of_semi_major_axis_qualified ff-seq="2" ffirn-fudn="2159-3">
+<context_quantity_decimal_pt_for_tenth_perm_5_char_max ffirn-fudn="1023-32">090</context_quantity_decimal_pt_for_tenth_perm_5_char_max>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</orientation_of_semi_major_axis_qualified>
+<semi_major_axis_length_nautical_miles ff-seq="3" ffirn-fudn="2280-2">
+<context_quantity_1_9999 ffirn-fudn="1023-12">150</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_major_axis_length_nautical_miles>
+<semi_minor_axis_length_nautical_miles ff-seq="4" ffirn-fudn="2280-3">
+<context_quantity_1_9999 ffirn-fudn="1023-12">50</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_minor_axis_length_nautical_miles>
+</ellipse_3>
+<circular_area_3 set-id="circ" set-seq="90">
+<position_of_centre_of_circle>
+<origin_place_name ff-seq="1" ffirn-fudn="1022-109">563030.5S2-1205632.9E8</origin_place_name>
+</position_of_centre_of_circle>
+<radius_yd_kyd_or_nm ff-seq="2" ffirn-fudn="2433-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">50</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_nm ffirn-fudn="1008-31">NM</unit_of_linear_measurement_yd_kyd_nm>
+</radius_yd_kyd_or_nm>
+</circular_area_3>
+<area_3 set-id="area" set-seq="91">
+<area_name ff-seq="1" ffirn-fudn="1022-69">SALAPARUTA-A45</area_name>
+<position_or_point_name>
+<position_or_point_name descriptor="N" ff-seq="2" ffirn-fudn="1022-18">BATMAN</position_or_point_name>
+</position_or_point_name>
+</area_3>
+<time_of_sensor_contact_event_3 set-id="timevent" set-seq="92">
+<day_time>
+<day_time_of_event_verified ff-seq="1" ffirn-fudn="2013-34">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_event_verified>
+</day_time>
+<asw_mission_event ff-seq="2" ffirn-fudn="1224-3">GAINED</asw_mission_event>
+<acoustic_sensor ff-seq="3" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<contact_course_degrees_true ff-seq="4" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="5" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">9</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+</time_of_sensor_contact_event_3>
+<bearing_7 set-id="brng" set-seq="93">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_7>
+<time_and_position_12 set-id="tmpos" set-seq="94">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_12>
+<relative_to_own_position_3 set-id="relpo" set-seq="95">
+<bearing_degrees_true_magnetic_grid_or_relative ff-seq="1" ffirn-fudn="2254-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</bearing_degrees_true_magnetic_grid_or_relative>
+<distance_yd_kyd_m_km_or_nm ff-seq="2" ffirn-fudn="2268-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_m_km_nm ffirn-fudn="1008-30">NM</unit_of_linear_measurement_yd_kyd_m_km_nm>
+</distance_yd_kyd_m_km_or_nm>
+<unit ff-seq="3" ffirn-fudn="1022-57">FORRESTAL</unit>
+<date_time_month_verified ff-seq="4" ffirn-fudn="2032-1">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">50</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+<month_name ffirn-fudn="1004-1">JUN</month_name>
+</date_time_month_verified>
+<station_lat_long_minutes_verified ff-seq="5" ffirn-fudn="2043-10">
+<latitude_degrees ffirn-fudn="1039-1">32</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">40</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">120</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">30</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</station_lat_long_minutes_verified>
+<course_degrees_true_or_magnetic ff-seq="6" ffirn-fudn="2259-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">035</context_quantity_000_359>
+<angular_measurement_reference_true_or_magnetic ffirn-fudn="1024-4">T</angular_measurement_reference_true_or_magnetic>
+</course_degrees_true_or_magnetic>
+<speed_knots ff-seq="7" ffirn-fudn="2265-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">16</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</speed_knots>
+</relative_to_own_position_3>
+<reaction_4 set-id="react" set-seq="96">
+<day_time_of_observed_reaction>
+<day_time_of_observed_reaction_verified ff-seq="1" ffirn-fudn="2013-42">
+<day ffirn-fudn="1000-1">03</day>
+<hour_time ffirn-fudn="1001-1">04</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observed_reaction_verified>
+</day_time_of_observed_reaction>
+<direction_of_pass ff-seq="2" ffirn-fudn="1382-1">PS</direction_of_pass>
+<closest_point_of_approach_feet_yards_or_metres ff-seq="3" ffirn-fudn="2300-1">
+<closest_point_of_approach_cpa_qualifier ffirn-fudn="1130-28">CPA</closest_point_of_approach_cpa_qualifier>
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">1000</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_feet_yards_or_metres ffirn-fudn="1008-28">YD</unit_of_linear_measurement_feet_yards_or_metres>
+</closest_point_of_approach_feet_yards_or_metres>
+<altitude_in_feet_or_metres ff-seq="4" ffirn-fudn="2279-1">
+<context_quantity_0_99999 ffirn-fudn="1023-4">200</context_quantity_0_99999>
+<unit_of_linear_measurement_feet_or_metres ffirn-fudn="1008-13">FT</unit_of_linear_measurement_feet_or_metres>
+</altitude_in_feet_or_metres>
+<aircraft_to_contact_pass ff-seq="5" ffirn-fudn="1400-1">PORT</aircraft_to_contact_pass>
+</reaction_4>
+<time_and_position_13 set-id="tmpos" set-seq="97">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_13>
+<attack_4_segment>
+<attack_4 set-id="attack" set-seq="98">
+<ordnance_type_maritime ff-seq="1" ffirn-fudn="1407-7">ASROC</ordnance_type_maritime>
+<attack_results ff-seq="2" ffirn-fudn="1150-1">DESTROYED</attack_results>
+<attack_method_type ff-seq="3" ffirn-fudn="1469-1">VISUAL</attack_method_type>
+<range_from_water_entry_to_target_metres_yards_or_nm ff-seq="4" ffirn-fudn="2274-2">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">100</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</range_from_water_entry_to_target_metres_yards_or_nm>
+<bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative ff-seq="5" ffirn-fudn="2252-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">245</context_quantity_000_359>
+<angular_measurement_reference_relative ffirn-fudn="1024-5">R</angular_measurement_reference_relative>
+</bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative>
+<aircraft_heading_at_weapon_release_time_degrees_true ff-seq="6" ffirn-fudn="2255-3">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</aircraft_heading_at_weapon_release_time_degrees_true>
+</attack_4>
+<time_and_position_14 set-id="tmpos" set-seq="99">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_14>
+</attack_4_segment>
+<non_acoustic_emission_intercept_4_segment>
+<non_acoustic_emission_intercept_4 set-id="emitter" set-seq="100">
+<standard_emitter_designation ff-seq="1" ffirn-fudn="1121-4">HEADBAND</standard_emitter_designation>
+<credibility ff-seq="2" ffirn-fudn="1461-1">LOW</credibility>
+<elint_notation_or_sorting_code>
+<elint_notation ff-seq="3" ffirn-fudn="1012-34">F24R</elint_notation>
+</elint_notation_or_sorting_code>
+<radio_radar_function ff-seq="4" ffirn-fudn="1471-1">NA</radio_radar_function>
+<crystal_frequency ff-seq="5" ffirn-fudn="2064-5">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">123.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">KHZ</unit_of_electromagnetic_emission_measurement>
+</crystal_frequency>
+<crystal_countdown ff-seq="6" ffirn-fudn="1472-1">34</crystal_countdown>
+</non_acoustic_emission_intercept_4>
+<bearing_8 set-id="brng" set-seq="101">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_8>
+<radar_parameters_4 set-id="radpa" set-seq="102">
+<radio_frequency>
+<radio_frequency ff-seq="1" ffirn-fudn="2064-1">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">240.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</radio_frequency>
+</radio_frequency>
+<pulse_repetition_frequency ff-seq="2" ffirn-fudn="2177-1">
+<pulse_repetition_frequency_data_qualifier ffirn-fudn="1130-20">PRF</pulse_repetition_frequency_data_qualifier>
+<pulse_repetition_frequency_in_pulses_per_second ffirn-fudn="1083-2">4.6</pulse_repetition_frequency_in_pulses_per_second>
+</pulse_repetition_frequency>
+<pulse_repetition_interval_in_microseconds ff-seq="3" ffirn-fudn="2176-1">
+<pulse_repetition_interval_data_qualifier ffirn-fudn="1130-21">PRI</pulse_repetition_interval_data_qualifier>
+<pulse_repetition_interval_in_microseconds ffirn-fudn="1082-2">56.8</pulse_repetition_interval_in_microseconds>
+</pulse_repetition_interval_in_microseconds>
+<pulse_width ff-seq="4" ffirn-fudn="2175-1">
+<pulse_width_data_qualifier ffirn-fudn="1130-22">PW</pulse_width_data_qualifier>
+<pulse_width_in_microseconds ffirn-fudn="1082-3">125</pulse_width_in_microseconds>
+</pulse_width>
+<scan_rate>
+<scan_rate_hz ff-seq="5" ffirn-fudn="2026-1">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">3</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_electromagnetic_emission_measurement_hertz ffirn-fudn="1008-18">HZ</unit_of_electromagnetic_emission_measurement_hertz>
+</scan_rate_hz>
+</scan_rate>
+<scan_type ff-seq="6" ffirn-fudn="1105-1">SPIR</scan_type>
+<emission_intercept_duration ff-seq="7" ffirn-fudn="2095-1">
+<context_quantity_00_99 ffirn-fudn="1023-14">12</context_quantity_00_99>
+<unit_of_time_measurement_hour ffirn-fudn="1008-86">HR</unit_of_time_measurement_hour>
+<context_quantity_00_59 ffirn-fudn="1023-15">34</context_quantity_00_59>
+<unit_of_time_measurement_minute ffirn-fudn="1008-87">MIN</unit_of_time_measurement_minute>
+<context_quantity_00_59_1 ffirn-fudn="1023-15">56</context_quantity_00_59_1>
+<unit_of_time_measurement_seconds ffirn-fudn="1008-36">SEC</unit_of_time_measurement_seconds>
+</emission_intercept_duration>
+<prf_variation ff-seq="8" ffirn-fudn="1260-1">STDY</prf_variation>
+</radar_parameters_4>
+</non_acoustic_emission_intercept_4_segment>
+<signature_3_segment>
+<signature_3 set-id="signa" set-seq="103">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<fundamental_frequency ff-seq="2" ffirn-fudn="2283-4">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</fundamental_frequency>
+<harmonic ff-seq="3" ffirn-fudn="1466-1">1-2</harmonic>
+<rotational_speed_rpm ff-seq="4" ffirn-fudn="2174-1">
+<context_quantity_decimal_pt_permitted_3_char_max ffirn-fudn="1023-20">123</context_quantity_decimal_pt_permitted_3_char_max>
+<unit_of_angular_speed_velocity_measurement_rpm ffirn-fudn="1008-17">RPM</unit_of_angular_speed_velocity_measurement_rpm>
+</rotational_speed_rpm>
+<turns_per_knot_tpk ff-seq="5" ffirn-fudn="2287-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">12.4</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_angular_speed_velocity_measurement_tpk ffirn-fudn="1008-25">TPK</unit_of_angular_speed_velocity_measurement_tpk>
+</turns_per_knot_tpk>
+</signature_3>
+<signature_summation_3 set-id="sigsum" set-seq="104">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<maximum_fundamental_frequency ff-seq="2" ffirn-fudn="2283-5">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</maximum_fundamental_frequency>
+<minimum_fundamental_frequency ff-seq="3" ffirn-fudn="2283-6">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">121.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</minimum_fundamental_frequency>
+<harmonic ff-seq="4" ffirn-fudn="1466-1">1-2-3</harmonic>
+</signature_summation_3>
+</signature_3_segment>
+<contact_summary_3 set-id="sumry" set-seq="105">
+<day_time_contact>
+<day_time_contact_gained_verified ff-seq="1" ffirn-fudn="2013-12">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+</day_time_contact_gained_verified>
+</day_time_contact>
+<asw_mission_event ff-seq="2" ffirn-fudn="1224-3">AI-CZ</asw_mission_event>
+<sensor_type_or_information_source>
+<sensor_type descriptor="SENSOR" ff-seq="3" ffirn-fudn="1434-1">DIFAR</sensor_type>
+</sensor_type_or_information_source>
+<time_contact_lost>
+<day_time_contact_lost_verified ff-seq="4" ffirn-fudn="2013-43">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">01</hour_time>
+<minute_time ffirn-fudn="1002-1">10</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">4</context_quantity_0_9>
+</day_time_contact_lost_verified>
+</time_contact_lost>
+<asw_mission_event_1 ff-seq="5" ffirn-fudn="1224-3">FO-CZ</asw_mission_event_1>
+<sensor_type_or_information_source_1438>
+<sensor_type_1 descriptor="SENSOR" ff-seq="6" ffirn-fudn="1434-1">DIFAR</sensor_type_1>
+</sensor_type_or_information_source_1438>
+<percentage_number_qualified ff-seq="7" ffirn-fudn="2301-1">
+<context_quantity_0_100_1_decimal_pt_permitted ffirn-fudn="1023-38">75</context_quantity_0_100_1_decimal_pt_permitted>
+<percentage_qualifier ffirn-fudn="1130-29">PCT</percentage_qualifier>
+</percentage_number_qualified>
+</contact_summary_3>
+<arrival_3 set-id="arr" set-seq="106">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">UR</flag>
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="3" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<arrival_month ff-seq="4" ffirn-fudn="1004-2">JUN</arrival_month>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</arrival_3>
+<inport_3 set-id="inport" set-seq="107">
+<location_name ff-seq="1" ffirn-fudn="1022-4">HAMAMET</location_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<estimated_day_time_of_sighting_verified ff-seq="3" ffirn-fudn="2013-29">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</estimated_day_time_of_sighting_verified>
+</time_of_observation>
+<month_of_sighting ff-seq="4" ffirn-fudn="1004-11">JUL</month_of_sighting>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</inport_3>
+<departure_3 set-id="dep" set-seq="108">
+<departure_port ff-seq="1" ffirn-fudn="1022-82">HAMAMET</departure_port>
+<flag ff-seq="2" ffirn-fudn="1026-3">UK</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</departure_3>
+</fishing_vessel_contact_segment>
+<unknown_contact_segment>
+<unknown_contact set-id="unk" set-seq="110">
+<contact_serial_number ff-seq="1" ffirn-fudn="1012-67">24</contact_serial_number>
+<trademark_or_discrete_identifier>
+<trademark ff-seq="2" ffirn-fudn="1416-3">VP11-KK091CONT6-2</trademark>
+</trademark_or_discrete_identifier>
+</unknown_contact>
+<association_4 set-id="assoc" set-seq="111">
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">CASE L15-79</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">DESIG B20-79</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">CTG81.OT2-59</trademark>
+</association>
+<association>
+<trademark ff-seq="1" ffirn-fudn="1416-3">VP56-KK095CONT10-23</trademark>
+</association>
+</association_4>
+<ellipse_4 set-id="ellipse" set-seq="112">
+<ellipse_position>
+<unit_designation ff-seq="1" ffirn-fudn="1028-26">4725N8-02500W</unit_designation>
+</ellipse_position>
+<orientation_of_semi_major_axis_qualified ff-seq="2" ffirn-fudn="2159-3">
+<context_quantity_decimal_pt_for_tenth_perm_5_char_max ffirn-fudn="1023-32">090</context_quantity_decimal_pt_for_tenth_perm_5_char_max>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</orientation_of_semi_major_axis_qualified>
+<semi_major_axis_length_nautical_miles ff-seq="3" ffirn-fudn="2280-2">
+<context_quantity_1_9999 ffirn-fudn="1023-12">150</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_major_axis_length_nautical_miles>
+<semi_minor_axis_length_nautical_miles ff-seq="4" ffirn-fudn="2280-3">
+<context_quantity_1_9999 ffirn-fudn="1023-12">50</context_quantity_1_9999>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</semi_minor_axis_length_nautical_miles>
+</ellipse_4>
+<circular_area_4 set-id="circ" set-seq="113">
+<position_of_centre_of_circle>
+<origin_place_name ff-seq="1" ffirn-fudn="1022-109">563030.5S2-1205632.9E8</origin_place_name>
+</position_of_centre_of_circle>
+<radius_yd_kyd_or_nm ff-seq="2" ffirn-fudn="2433-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">50</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_nm ffirn-fudn="1008-31">NM</unit_of_linear_measurement_yd_kyd_nm>
+</radius_yd_kyd_or_nm>
+</circular_area_4>
+<area_4 set-id="area" set-seq="114">
+<area_name ff-seq="1" ffirn-fudn="1022-69">SALAPARUTA-A45</area_name>
+<position_or_point_name>
+<position_or_point_name descriptor="N" ff-seq="2" ffirn-fudn="1022-18">BATMAN</position_or_point_name>
+</position_or_point_name>
+</area_4>
+<time_of_sensor_contact_event_4 set-id="timevent" set-seq="115">
+<day_time>
+<day_time_of_event_verified ff-seq="1" ffirn-fudn="2013-34">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_event_verified>
+</day_time>
+<asw_mission_event ff-seq="2" ffirn-fudn="1224-3">GAINED</asw_mission_event>
+<acoustic_sensor ff-seq="3" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<contact_course_degrees_true ff-seq="4" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="5" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">9</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+</time_of_sensor_contact_event_4>
+<bearing_9 set-id="brng" set-seq="116">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_9>
+<time_and_position_15 set-id="tmpos" set-seq="117">
+<date_time_group>
+<day_time_of_position_verified ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">56</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">15</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event ff-seq="5" ffirn-fudn="1224-3">FI-BB</asw_mission_event>
+<sensor_platform ff-seq="6" ffirn-fudn="1473-2">AIR</sensor_platform>
+<acoustic_sensor ff-seq="7" ffirn-fudn="1434-5">CASS</acoustic_sensor>
+<acoustic_information_source ff-seq="8" ffirn-fudn="1474-1">DP</acoustic_information_source>
+<number_of_detecting_sensors ff-seq="9" ffirn-fudn="1044-120">1</number_of_detecting_sensors>
+<navigation_accuracy_yards_metres_or_nautical_miles ff-seq="10" ffirn-fudn="2284-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">100</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_linear_measurement_yd_m_or_nautical_miles ffirn-fudn="1008-80">YD</unit_of_linear_measurement_yd_m_or_nautical_miles>
+</navigation_accuracy_yards_metres_or_nautical_miles>
+</time_and_position_15>
+<relative_to_own_position_4 set-id="relpo" set-seq="118">
+<bearing_degrees_true_magnetic_grid_or_relative ff-seq="1" ffirn-fudn="2254-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">270</context_quantity_000_359>
+<angular_measurement_reference ffirn-fudn="1024-1">T</angular_measurement_reference>
+</bearing_degrees_true_magnetic_grid_or_relative>
+<distance_yd_kyd_m_km_or_nm ff-seq="2" ffirn-fudn="2268-1">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_yd_kyd_m_km_nm ffirn-fudn="1008-30">NM</unit_of_linear_measurement_yd_kyd_m_km_nm>
+</distance_yd_kyd_m_km_or_nm>
+<unit ff-seq="3" ffirn-fudn="1022-57">FORRESTAL</unit>
+<date_time_month_verified ff-seq="4" ffirn-fudn="2032-1">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">50</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+<month_name ffirn-fudn="1004-1">JUN</month_name>
+</date_time_month_verified>
+<station_lat_long_minutes_verified ff-seq="5" ffirn-fudn="2043-10">
+<latitude_degrees ffirn-fudn="1039-1">32</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">40</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">120</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">30</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</station_lat_long_minutes_verified>
+<course_degrees_true_or_magnetic ff-seq="6" ffirn-fudn="2259-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">035</context_quantity_000_359>
+<angular_measurement_reference_true_or_magnetic ffirn-fudn="1024-4">T</angular_measurement_reference_true_or_magnetic>
+</course_degrees_true_or_magnetic>
+<speed_knots ff-seq="7" ffirn-fudn="2265-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">16</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</speed_knots>
+</relative_to_own_position_4>
+<non_acoustic_emission_intercept_5_segment>
+<non_acoustic_emission_intercept_5 set-id="emitter" set-seq="119">
+<standard_emitter_designation ff-seq="1" ffirn-fudn="1121-4">HEADBAND</standard_emitter_designation>
+<credibility ff-seq="2" ffirn-fudn="1461-1">LOW</credibility>
+<elint_notation_or_sorting_code>
+<elint_notation ff-seq="3" ffirn-fudn="1012-34">F24R</elint_notation>
+</elint_notation_or_sorting_code>
+<radio_radar_function ff-seq="4" ffirn-fudn="1471-1">NA</radio_radar_function>
+<crystal_frequency ff-seq="5" ffirn-fudn="2064-5">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">123.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">KHZ</unit_of_electromagnetic_emission_measurement>
+</crystal_frequency>
+<crystal_countdown ff-seq="6" ffirn-fudn="1472-1">34</crystal_countdown>
+</non_acoustic_emission_intercept_5>
+<bearing_10 set-id="brng" set-seq="120">
+<date_time>
+<day_time_of_bearing_verified ff-seq="1" ffirn-fudn="2013-28">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">37</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_bearing_verified>
+</date_time>
+<bearing_origin>
+<bearing_origin_lat_long_minutes_verified ff-seq="2" ffirn-fudn="2043-26">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">125</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">15</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</bearing_origin_lat_long_minutes_verified>
+</bearing_origin>
+<bearing_degrees_true ff-seq="3" ffirn-fudn="2253-1">
+<context_quantity_000_359 ffirn-fudn="1023-2">350</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</bearing_degrees_true>
+<sector_half_width>
+<sector_half_width_degree ff-seq="4" ffirn-fudn="2278-2">
+<context_quantity_0_359 ffirn-fudn="1023-40">45</context_quantity_0_359>
+<unit_of_angular_measurement_degrees ffirn-fudn="1008-26">DEG</unit_of_angular_measurement_degrees>
+</sector_half_width_degree>
+</sector_half_width>
+<line_of_bearing_lob_range_nautical_miles ff-seq="5" ffirn-fudn="2272-5">
+<context_quantity_decimal_pt_permitted_5_char_max ffirn-fudn="1023-19">60</context_quantity_decimal_pt_permitted_5_char_max>
+<units_of_linear_measurement_nautical_miles ffirn-fudn="1008-82">NM</units_of_linear_measurement_nautical_miles>
+</line_of_bearing_lob_range_nautical_miles>
+<acoustic_sensor ff-seq="6" ffirn-fudn="1434-5">SOSUS</acoustic_sensor>
+</bearing_10>
+<radar_parameters_5 set-id="radpa" set-seq="121">
+<radio_frequency>
+<radio_frequency ff-seq="1" ffirn-fudn="2064-1">
+<context_quantity_decimal_pt_permitted_11_char_max ffirn-fudn="1023-22">240.5</context_quantity_decimal_pt_permitted_11_char_max>
+<unit_of_electromagnetic_emission_measurement ffirn-fudn="1008-2">MHZ</unit_of_electromagnetic_emission_measurement>
+</radio_frequency>
+</radio_frequency>
+<pulse_repetition_frequency ff-seq="2" ffirn-fudn="2177-1">
+<pulse_repetition_frequency_data_qualifier ffirn-fudn="1130-20">PRF</pulse_repetition_frequency_data_qualifier>
+<pulse_repetition_frequency_in_pulses_per_second ffirn-fudn="1083-2">4.6</pulse_repetition_frequency_in_pulses_per_second>
+</pulse_repetition_frequency>
+<pulse_repetition_interval_in_microseconds ff-seq="3" ffirn-fudn="2176-1">
+<pulse_repetition_interval_data_qualifier ffirn-fudn="1130-21">PRI</pulse_repetition_interval_data_qualifier>
+<pulse_repetition_interval_in_microseconds ffirn-fudn="1082-2">56.8</pulse_repetition_interval_in_microseconds>
+</pulse_repetition_interval_in_microseconds>
+<pulse_width ff-seq="4" ffirn-fudn="2175-1">
+<pulse_width_data_qualifier ffirn-fudn="1130-22">PW</pulse_width_data_qualifier>
+<pulse_width_in_microseconds ffirn-fudn="1082-3">125</pulse_width_in_microseconds>
+</pulse_width>
+<scan_rate>
+<scan_rate_hz ff-seq="5" ffirn-fudn="2026-1">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">3</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_electromagnetic_emission_measurement_hertz ffirn-fudn="1008-18">HZ</unit_of_electromagnetic_emission_measurement_hertz>
+</scan_rate_hz>
+</scan_rate>
+<scan_type ff-seq="6" ffirn-fudn="1105-1">SPIR</scan_type>
+<emission_intercept_duration ff-seq="7" ffirn-fudn="2095-1">
+<context_quantity_00_99 ffirn-fudn="1023-14">12</context_quantity_00_99>
+<unit_of_time_measurement_hour ffirn-fudn="1008-86">HR</unit_of_time_measurement_hour>
+<context_quantity_00_59 ffirn-fudn="1023-15">34</context_quantity_00_59>
+<unit_of_time_measurement_minute ffirn-fudn="1008-87">MIN</unit_of_time_measurement_minute>
+<context_quantity_00_59_1 ffirn-fudn="1023-15">56</context_quantity_00_59_1>
+<unit_of_time_measurement_seconds ffirn-fudn="1008-36">SEC</unit_of_time_measurement_seconds>
+</emission_intercept_duration>
+<prf_variation ff-seq="8" ffirn-fudn="1260-1">STDY</prf_variation>
+</radar_parameters_5>
+</non_acoustic_emission_intercept_5_segment>
+<signature_4_segment>
+<signature_4 set-id="signa" set-seq="122">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<fundamental_frequency ff-seq="2" ffirn-fudn="2283-4">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</fundamental_frequency>
+<harmonic ff-seq="3" ffirn-fudn="1466-1">1-2</harmonic>
+<rotational_speed_rpm ff-seq="4" ffirn-fudn="2174-1">
+<context_quantity_decimal_pt_permitted_3_char_max ffirn-fudn="1023-20">123</context_quantity_decimal_pt_permitted_3_char_max>
+<unit_of_angular_speed_velocity_measurement_rpm ffirn-fudn="1008-17">RPM</unit_of_angular_speed_velocity_measurement_rpm>
+</rotational_speed_rpm>
+<turns_per_knot_tpk ff-seq="5" ffirn-fudn="2287-1">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">12.4</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_angular_speed_velocity_measurement_tpk ffirn-fudn="1008-25">TPK</unit_of_angular_speed_velocity_measurement_tpk>
+</turns_per_knot_tpk>
+</signature_4>
+<signature_summation_4 set-id="sigsum" set-seq="123">
+<acoustic_source ff-seq="1" ffirn-fudn="1468-1">UNKNOWN</acoustic_source>
+<maximum_fundamental_frequency ff-seq="2" ffirn-fudn="2283-5">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">123.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</maximum_fundamental_frequency>
+<minimum_fundamental_frequency ff-seq="3" ffirn-fudn="2283-6">
+<context_quantity_decimal_pt_permitted_6_char_max ffirn-fudn="1023-28">121.5</context_quantity_decimal_pt_permitted_6_char_max>
+<unit_of_acoustic_frequency_measurement ffirn-fudn="1008-23">HZ</unit_of_acoustic_frequency_measurement>
+</minimum_fundamental_frequency>
+<harmonic ff-seq="4" ffirn-fudn="1466-1">1-2-3</harmonic>
+</signature_summation_4>
+</signature_4_segment>
+<arrival_4 set-id="arr" set-seq="125">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">UR</flag>
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="3" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<arrival_month ff-seq="4" ffirn-fudn="1004-2">JUN</arrival_month>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</arrival_4>
+<inport_4 set-id="inport" set-seq="126">
+<location_name ff-seq="1" ffirn-fudn="1022-4">HAMAMET</location_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<estimated_day_time_of_sighting_verified ff-seq="3" ffirn-fudn="2013-29">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</estimated_day_time_of_sighting_verified>
+</time_of_observation>
+<month_of_sighting ff-seq="4" ffirn-fudn="1004-11">JUL</month_of_sighting>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</inport_4>
+<departure_4 set-id="dep" set-seq="127">
+<departure_port ff-seq="1" ffirn-fudn="1022-82">HAMAMET</departure_port>
+<flag ff-seq="2" ffirn-fudn="1026-3">UK</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">PAX</cargo_indicator>
+</departure_4>
+<destination_4 set-id="dest" set-seq="128">
+<port_name ff-seq="1" ffirn-fudn="1022-74">HAMAMET</port_name>
+<flag ff-seq="2" ffirn-fudn="1026-3">FR</flag>
+<time_of_observation>
+<day_time_of_observation_verified ff-seq="3" ffirn-fudn="2013-49">
+<day ffirn-fudn="1000-1">15</day>
+<hour_time ffirn-fudn="1001-1">13</hour_time>
+<minute_time ffirn-fudn="1002-1">25</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+</day_time_of_observation_verified>
+</time_of_observation>
+<month_of_observation ff-seq="4" ffirn-fudn="1004-3">AUG</month_of_observation>
+<cargo_indicator ff-seq="5" ffirn-fudn="1173-4">GEN</cargo_indicator>
+</destination_4>
+</unknown_contact_segment>
+</maritime_force_locator>

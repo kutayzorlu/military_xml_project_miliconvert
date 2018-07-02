@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="nato:adatp-3:bl11:composites" xmlns:f="nato:adatp-3:bl11:elementals" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="nato:adatp-3:bl11:composites" version="bl11">
+<xsd:import namespace="nato:adatp-3:bl11:elementals" schemaLocation="fields.xsd"/>
+<xsd:complexType name="plan.originator.and.number.2404.1">
+<xsd:sequence>
+<xsd:element name="plan_originator">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:plan.originator.1029.2">
+<xsd:attribute fixed="1029-2" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="blank_space_character">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:blank.space.character.1025.4">
+<xsd:attribute fixed="1025-4" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="plan_number">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:plan.number.1012.146">
+<xsd:attribute fixed="1012-146" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="day.time.group.of.reference.2197.2">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="day.time.of.reference.2000.34">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="day.time.of.reference.verified.2013.33">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="context_quantity_0_9">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:context.quantity.0.9.1023.13">
+<xsd:attribute fixed="1023-13" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="day.time.and.month.of.reference.2030.2">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="date.time.month.of.reference.verified.2032.2">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="context_quantity_0_9">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:context.quantity.0.9.1023.13">
+<xsd:attribute fixed="1023-13" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="dtg.of.reference.4.digit.yr.2033.2">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="dtg.of.reference.verified.4.yr.2034.2">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="context_quantity_0_9">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:context.quantity.0.9.1023.13">
+<xsd:attribute fixed="1023-13" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="date.of.reference.ddmmmyyyy.2001.3">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="date.of.reference.ddmmyyyy.2052.2">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.1004.9">
+<xsd:attribute fixed="1004-9" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="date.of.reference.yyyymmdd.2053.2">
+<xsd:sequence>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.1004.9">
+<xsd:attribute fixed="1004-9" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="dtg.4.digit.year.2033.1">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="unit.identification.code.uic.2141.1">
+<xsd:sequence>
+<xsd:element name="nationality">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:nationality.1026.2">
+<xsd:attribute fixed="1026-2" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="armed_service">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:armed.service.1107.1">
+<xsd:attribute fixed="1107-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="file_sequential_location_number">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:file.sequential.location.number.1012.103">
+<xsd:attribute fixed="1012-103" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="obstacle.number.2015.1">
+<xsd:sequence>
+<xsd:element name="nato_regional_identifier">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:nato.regional.identifier.1246.33">
+<xsd:attribute fixed="1246-33" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="corps_troops_or_division_designator">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:corps.troops.or.division.designator.1323.7">
+<xsd:attribute fixed="1323-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="division_troops_or_brigade_designator">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:division.troops.or.brigade.designator.1323.8">
+<xsd:attribute fixed="1323-8" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="tactical_obstacle_identifier">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:tactical.obstacle.identifier.1246.34">
+<xsd:attribute fixed="1246-34" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="tactical_obstacle_number">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:tactical.obstacle.number.1012.135">
+<xsd:attribute fixed="1012-135" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="estimated.dtg.of.start.4.digit.yr.2033.50">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="estimated.dtg.of.completion.4.digit.yr.2033.34">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="dtg.of.completion.4.digit.yr.2033.24">
+<xsd:sequence>
+<xsd:element name="day">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:day.1000.1">
+<xsd:attribute fixed="1000-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="hour_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hour.time.1001.1">
+<xsd:attribute fixed="1001-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="minute_time">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:minute.time.1002.1">
+<xsd:attribute fixed="1002-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="time_zone">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:time.zone.1003.1">
+<xsd:attribute fixed="1003-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="month_name">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="year">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:year.1005.7">
+<xsd:attribute fixed="1005-7" name="ffirn-fudn" type="xsd:string"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>

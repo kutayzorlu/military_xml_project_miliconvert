@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" version="11"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="fourwhisky">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded" minOccurs="0">
+				<xsd:element maxOccurs="1" minOccurs="1"
+					name="message_identification">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="command" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="message_identifier" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="message_serial_no" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="month" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="operexer_name" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="qualifier" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="qualifier_serial_no" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="0" name="security">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="classification" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="amplifying_info" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="unbounded" minOccurs="0"
+					name="addressees">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="address" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="address_1" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="address_2" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="address_3" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="address_4" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="address_5" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="address_6" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="address_7" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="address_8" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="1" name="_4-whisky">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="name" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="no_of_grid_cells" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="grid_cell_size" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="pim_cell" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="remarks" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="unbounded" minOccurs="1"
+					name="_4-whisky_unit">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="unit_name" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="unit_assignment" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="1" name="end_of_data">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="derivation_source_for_clsif" />
+							<xsd:element maxOccurs="unbounded" minOccurs="0"
+								name="dwngrd_or_declass_inst" />
+							<xsd:element maxOccurs="unbounded" minOccurs="0"
+								name="dwngrd_or_declass_exempt_code" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

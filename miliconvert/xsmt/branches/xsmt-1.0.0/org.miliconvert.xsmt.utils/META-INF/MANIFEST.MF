@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.xsmt.utils
+Bundle-SymbolicName: org.miliconvert.xsmt.utils
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.miliconvert.xsmt.utils.Activator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime
+Eclipse-LazyStart: true
+Export-Package: org.miliconvert.xsmt.utils

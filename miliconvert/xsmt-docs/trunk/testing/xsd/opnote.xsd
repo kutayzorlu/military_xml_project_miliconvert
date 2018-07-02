@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" version="11"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="opnote">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded" minOccurs="0">
+				<xsd:element maxOccurs="1" minOccurs="1"
+					name="message_identification">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="command" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="message_identifier" />
+							<xsd:element maxOccurs="1" minOccurs="1"
+								name="message_serial_no" />
+							<xsd:element maxOccurs="1" minOccurs="1" name="month" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="operexer_name" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="qualifier" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="qualifier_serial_no" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="1" name="narrative">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="1" name="free-text" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="0" name="weather">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="dtg_obsrv_or_beg_forecast_per" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="month" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="latitude" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="longitude" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="radius" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="wind_direction" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="wind_speed" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="most_signf_weather" />
+							<xsd:element maxOccurs="1" minOccurs="0" name="sea_state" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="duration_of_forecast_from_dtg" />
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="air_temperature" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="1" name="end_of_data">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="1" minOccurs="0"
+								name="derivation_source_for_clsif" />
+							<xsd:element maxOccurs="unbounded" minOccurs="0"
+								name="dwngrd_or_declass_inst" />
+							<xsd:element maxOccurs="unbounded" minOccurs="0"
+								name="dwngrd_or_declass_exempt_code" />
+						</xsd:sequence>
+						<xsd:attribute name="setId" type="xsd:string" use="required" />
+						<xsd:attribute name="set-seq" type="xsd:string" use="required" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

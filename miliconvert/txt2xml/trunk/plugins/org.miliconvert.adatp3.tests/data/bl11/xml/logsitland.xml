@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><logistic_situation_report_land_forces xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/logsitland/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">LOGSITLAND</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<geodetic_datum set-id="geodatum" set-seq="5">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">EUROPEAN 1979</geodetic_datum>
+</geodetic_datum>
+<date_time_group set-id="dtg" set-seq="6">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="7">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_drafter_releaser>
+<map_data_without_geodetic_datum set-id="mapnogd" set-seq="8">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+<map_or_chart_suffix_number alt="A" ff-seq="2" ffirn-fudn="1012-4">16</map_or_chart_suffix_number>
+<group_of_fields>
+<map_or_chart_sheet_number alt="A" ff-seq="3" ffirn-fudn="1012-3">NM32-1ESSEN</map_or_chart_sheet_number>
+<map_or_chart_edition_number alt="A" ff-seq="4" ffirn-fudn="1012-2">3-DMG</map_or_chart_edition_number>
+</group_of_fields>
+</map_data_without_geodetic_datum>
+<organization_designator_segment>
+<organization_designator set-id="orgid" set-seq="9">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator>
+<location_and_nearest_feature set-id="locnf" set-seq="10">
+<geographic_place_name alt="A " ff-seq="1" ffirn-fudn="1022-90">BRUSSELS</geographic_place_name>
+<utm_grid_reference>
+<location_utm_10_metre alt="B " ff-seq="2" ffirn-fudn="2086-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">10</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">A</utm_100000_metre_square_row>
+<utm_10_metre_easting ffirn-fudn="1234-1">1234</utm_10_metre_easting>
+<utm_10_metre_northing ffirn-fudn="1238-1">5678</utm_10_metre_northing>
+</location_utm_10_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="2" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">10</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">A</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">12345</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">67890</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+</location_and_nearest_feature>
+<units_logistic_sustainability set-id="logsust" set-seq="11">
+<logistical_sustainability_of_unit alt="A" ff-seq="1" ffirn-fudn="1236-7">SIERRA</logistical_sustainability_of_unit>
+</units_logistic_sustainability>
+<current_capability_future_requirement_segment>
+<current_capability_future_requirement set-id="curcfutr" set-seq="12">
+<general_period_of_time alt="A" ff-seq="1" ffirn-fudn="1607-5">CURRENT</general_period_of_time>
+</current_capability_future_requirement>
+<medical_logistics set-id="1medlogi" set-seq="13">
+<stock_number alt="A" ff-seq="1" ffirn-fudn="1012-73" header="STOCK NUMBER">1234AB5C6789</stock_number>
+<short_title alt="A " ff-seq="2" ffirn-fudn="1022-87" header="TITLE">PLASMA</short_title>
+<days_of_supply alt="A" ff-seq="3" ffirn-fudn="1055-2" header="DOS">22</days_of_supply>
+<unit_of_measurement>
+<unit_of_volume_measurement alt="B " ff-seq="4" ffirn-fudn="1008-58" header="UNIT OF MEAS">LI</unit_of_volume_measurement>
+</unit_of_measurement>
+<quantity_on_hand alt="A" ff-seq="5" ffirn-fudn="1044-110" header="QUANTITY">1000</quantity_on_hand>
+</medical_logistics>
+<materiel_on_hand set-id="1materl" set-seq="14">
+<item_identifying_number>
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">AK1234</reportable_item_code_ric>
+</item_identifying_number>
+<short_title alt="A" ff-seq="2" ffirn-fudn="1022-87" header="TITLE">AM-HOW-105</short_title>
+<quantity>
+<quantity_on_hand alt="A" ff-seq="3" ffirn-fudn="1044-110" header="ON-HAND">123456</quantity_on_hand>
+</quantity>
+<days_of_supply alt="A" ff-seq="4" ffirn-fudn="1055-2" header="DOS">22</days_of_supply>
+<affirmative_or_negative_indicator_abbreviated alt="A" ff-seq="5" ffirn-fudn="1359-1" header="SPARES">Y</affirmative_or_negative_indicator_abbreviated>
+<quantity_on_hand_1 alt="A" ff-seq="6" ffirn-fudn="1044-110" header="QUANTITY">12</quantity_on_hand_1>
+</materiel_on_hand>
+<petroleum_products set-id="1pol" set-seq="15">
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">ADY002</reportable_item_code_ric>
+<pol_type_name alt="A" ff-seq="2" ffirn-fudn="1022-88" header="TITLE">A20-MOGAS</pol_type_name>
+<cubic_metres_on_hand alt="A" ff-seq="3" ffirn-fudn="1044-128" header="CU-MTR-OH">100000</cubic_metres_on_hand>
+<days_of_supply alt="A" ff-seq="4" ffirn-fudn="1055-2" header="DOS">13</days_of_supply>
+</petroleum_products>
+<petroleum_products set-id="1pol" set-seq="15">
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">ACA011</reportable_item_code_ric>
+<pol_type_name alt="A" ff-seq="2" ffirn-fudn="1022-88" header="TITLE">B30-DIESEL</pol_type_name>
+<cubic_metres_on_hand alt="A" ff-seq="3" ffirn-fudn="1044-128" header="CU-MTR-OH">3300000</cubic_metres_on_hand>
+<days_of_supply alt="A" ff-seq="4" ffirn-fudn="1055-2" header="DOS">22</days_of_supply>
+</petroleum_products>
+<ammunition_on_hand set-id="1ammoh" set-seq="16">
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">AK1234</reportable_item_code_ric>
+<ammunition_short_title_specification_name alt="A" ff-seq="2" ffirn-fudn="1022-86" header="TITLE">AM-HOW-105</ammunition_short_title_specification_name>
+<quantity_on_hand_including_ubl_rounds alt="A" ff-seq="3" ffirn-fudn="1044-119" header="ON-HAND">123456</quantity_on_hand_including_ubl_rounds>
+<days_of_supply alt="A" ff-seq="4" ffirn-fudn="1055-2" header="DOS">22</days_of_supply>
+</ammunition_on_hand>
+<ammunition_on_hand set-id="1ammoh" set-seq="16">
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">AK4321</reportable_item_code_ric>
+<ammunition_short_title_specification_name alt="A" ff-seq="2" ffirn-fudn="1022-86" header="TITLE">AM-AT-75</ammunition_short_title_specification_name>
+<quantity_on_hand_including_ubl_rounds alt="A" ff-seq="3" ffirn-fudn="1044-119" header="ON-HAND">350000</quantity_on_hand_including_ubl_rounds>
+<days_of_supply alt="A" ff-seq="4" ffirn-fudn="1055-2" header="DOS">18</days_of_supply>
+</ammunition_on_hand>
+<personnel_strength set-id="2per" set-seq="17">
+<general_personnel_type alt="A" ff-seq="1" ffirn-fudn="1286-15" header="TYPE">MED</general_personnel_type>
+<count_of_personnel_0_999999999 alt="A" ff-seq="2" ffirn-fudn="1044-106" header="NUMBER">115</count_of_personnel_0_999999999>
+</personnel_strength>
+<rations_on_hand set-id="1ration" set-seq="18">
+<item_identifying_number>
+<reportable_item_code_ric alt="A" ff-seq="1" ffirn-fudn="1281-1" header="CODE">AB1234</reportable_item_code_ric>
+</item_identifying_number>
+<quantity_on_hand alt="A" ff-seq="2" ffirn-fudn="1044-110" header="ON-HAND">39000</quantity_on_hand>
+<days_of_supply alt="A" ff-seq="3" ffirn-fudn="1055-2" header="DOS">22</days_of_supply>
+</rations_on_hand>
+</current_capability_future_requirement_segment>
+<surplus_or_critical_deficiency_data_segment>
+<surplus_or_critical_deficiency_data set-id="1surpdef" set-seq="20">
+<surplus_or_deficiency alt="A" ff-seq="1" ffirn-fudn="1130-51" header="TYPE">SURP</surplus_or_deficiency>
+<class_of_supply alt="A" ff-seq="2" ffirn-fudn="1231-1" header="CS">04</class_of_supply>
+<item_identifying_number>
+<stock_number alt="B" ff-seq="3" ffirn-fudn="1012-73" header="CODE">ABC12345</stock_number>
+</item_identifying_number>
+<short_title alt="A" ff-seq="4" ffirn-fudn="1022-87" header="TITLE">PAPER</short_title>
+<quantity>
+<stock_item_quantity_and_unit_of_measurement alt="A" ff-seq="5" ffirn-fudn="2401-1" header="QUANTITY">
+<context_quantity_0_999999 ffirn-fudn="1023-7">1234</context_quantity_0_999999>
+<unit_of_measurement_stock_item ffirn-fudn="1008-51">GRS</unit_of_measurement_stock_item>
+</stock_item_quantity_and_unit_of_measurement>
+</quantity>
+<allowance>
+<days_of_supply alt="A" ff-seq="6" ffirn-fudn="1055-2" header="DOS">040</days_of_supply>
+</allowance>
+</surplus_or_critical_deficiency_data>
+<general_text set-id="gentext" set-seq="21">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">ACTIONS TAKEN OR IN HAND TO CORRECT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text>
+<general_text_1 set-id="gentext" set-seq="22">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">ACTION REQUIRED OF HIGHER AUTHORITY</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_1>
+<operational_effect set-id="opeffect" set-seq="23">
+<as_of_date_time_group>
+<as_of_dtg_4_digit_yr alt="A" ff-seq="1" ffirn-fudn="2033-54">
+<day ffirn-fudn="1000-1">02</day>
+<hour_time ffirn-fudn="1001-1">00</hour_time>
+<minute_time ffirn-fudn="1002-1">01</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">MAY</month_name>
+<year ffirn-fudn="1005-7">1998</year>
+</as_of_dtg_4_digit_yr>
+</as_of_date_time_group>
+<effect_on_operations alt="A" ff-seq="2" ffirn-fudn="1088-2">03</effect_on_operations>
+<details_of_operational_effect alt="A" ff-seq="3" ffirn-fudn="1357-24">ABILITY TO DEPLOY REDUCED TO 30 DAYS ADVANCE WARNING</details_of_operational_effect>
+</operational_effect>
+</surplus_or_critical_deficiency_data_segment>
+</organization_designator_segment>
+</logistic_situation_report_land_forces>

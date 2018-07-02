@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineMsgsetord" table="BASELINE_MSGSETORD" >
+        <cache usage="read-only"/>
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="context" type="java.lang.Double">
+            <column name="CONTEXT" precision="15" scale="5" />
+        </property>
+        <property name="setref" type="java.lang.Double">
+            <column name="SETREF" precision="15" scale="5" />
+        </property>
+        <property name="setordno" type="java.lang.Double">
+            <column name="SETORDNO" precision="15" scale="5" />
+        </property>
+        <property name="setcond" type="string">
+            <column name="SETCOND" length="1" />
+        </property>
+        <property name="setrep" type="string">
+            <column name="SETREP" length="1" />
+        </property>
+        <property name="strtbraket" type="string">
+            <column name="STRTBRAKET" length="60" />
+        </property>
+        <property name="stopbraket" type="string">
+            <column name="STOPBRAKET" />
+        </property>
+        <property name="replnaind" type="string">
+            <column name="REPLNAIND" length="1" />
+        </property>
+        <property name="ignoreseq" type="string">
+            <column name="IGNORESEQ" length="1" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="segmentname" type="string">
+            <column name="SEGMENTNAME" length="20" />
+        </property>
+        <property name="setname" type="string">
+            <column name="SETNAME" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

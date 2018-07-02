@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactreport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactreport.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">-</command>
+<message_identifier ff-seq="2">GOLD</message_identifier>
+<message_serial_no ff-seq="3">0001</message_serial_no>
+<month ff-seq="4">NOV</month>
+</message_identification>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7804</track_number>
+<class-name ff-seq="2">UNEQUATED-URANUS</class-name>
+<type ff-seq="4">CGO</type>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">NT</flag>
+<sconum ff-seq="8">N75043</sconum>
+<force_code ff-seq="11">18</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">FFC465339693</unique_identifier>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">110755Z9</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3558N1</latitude_of_center>
+<longitude_of_center ff-seq="4">00535W3</longitude_of_center>
+<course ff-seq="9">090T</course>
+<speed ff-seq="10">20K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7804</fotc_track_no>
+<command_i ff-seq="3">CARDIFF</command_i>
+<track_number ff-seq="4">T4134</track_number>
+<command_2 ff-seq="5">FFC</command_2>
+<track_number_1 ff-seq="6">T6015</track_number_1>
+<command_3 ff-seq="7">COMNAV</command_3>
+<track_number_2 ff-seq="8">T4235</track_number_2>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7915</track_number>
+<class-name ff-seq="2">MERCHANT-SEABA</class-name>
+<type ff-seq="4">CGO</type>
+<category ff-seq="5">MER</category>
+<pennant_number ff-seq="6">312</pennant_number>
+<flag ff-seq="7">JM</flag>
+<sconum ff-seq="8">M52441</sconum>
+<force_code ff-seq="11">18</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<discrete_identifier ff-seq="16">2762</discrete_identifier>
+<unique_identifier ff-seq="17">FFC465333975</unique_identifier>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">110803Z3</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">2948N3</latitude_of_center>
+<longitude_of_center ff-seq="4">04834E9</longitude_of_center>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">4NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">4NM</length_of_semi-minor_axis>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7915</fotc_track_no>
+<command_i ff-seq="3">FFC</command_i>
+<track_number ff-seq="4">T6648</track_number>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7829</track_number>
+<class-name ff-seq="2">UNEQUATED-SK SPLENDOR</class-name>
+<type ff-seq="4">TKR</type>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">PM</flag>
+<sconum ff-seq="8">N78022</sconum>
+<force_code ff-seq="11">16</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">CNS465558564</unique_identifier>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">101715Z5</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3552N5</latitude_of_center>
+<longitude_of_center ff-seq="4">00612W9</longitude_of_center>
+<course ff-seq="9">090T</course>
+<speed ff-seq="10">15K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7829</fotc_track_no>
+<command_i ff-seq="3">COMNAV</command_i>
+<track_number ff-seq="4">T4325</track_number>
+<command_2 ff-seq="5">TMFC</command_2>
+<track_number_1 ff-seq="6">T4663</track_number_1>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7951</track_number>
+<class-name ff-seq="2">UNEQUATED-ST JOHN</class-name>
+<type ff-seq="4">TME</type>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">MT</flag>
+<force_code ff-seq="11">18</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">SLH466262276</unique_identifier>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">110020Z4</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3621N2</latitude_of_center>
+<longitude_of_center ff-seq="4">02154E2</longitude_of_center>
+<course ff-seq="9">094T</course>
+<speed ff-seq="10">15K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7951</fotc_track_no>
+<command_i ff-seq="3">SLH</command_i>
+<track_number ff-seq="4">T4148</track_number>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7952</track_number>
+<class-name ff-seq="2">UNEQUATED-LUCIEN G A</class-name>
+<type ff-seq="4">TMC</type>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">TU</flag>
+<force_code ff-seq="11">18</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">SLH466262277</unique_identifier>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">110105Z8</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3620N1</latitude_of_center>
+<longitude_of_center ff-seq="4">02147E4</longitude_of_center>
+<course ff-seq="9">090T</course>
+<speed ff-seq="10">16K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7952</fotc_track_no>
+<command_i ff-seq="3">SLH</command_i>
+<track_number ff-seq="4">T4149</track_number>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7608</track_number>
+<class-name ff-seq="2">DE LA PENNE-FRANCESCO MIMBELLI</class-name>
+<type ff-seq="4">DDH</type>
+<category ff-seq="5">NAV</category>
+<pennant_number ff-seq="6">D561</pennant_number>
+<flag ff-seq="7">IT</flag>
+<sconum ff-seq="8">M47490</sconum>
+<selective_identifier ff-seq="9">4512</selective_identifier>
+<alert_code ff-seq="10">HIT</alert_code>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<discrete_identifier ff-seq="16">1770</discrete_identifier>
+<unique_identifier ff-seq="17">CNC465911130</unique_identifier>
+<ircs ff-seq="18">IAFM</ircs>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111205Z0</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3850N6</latitude_of_center>
+<longitude_of_center ff-seq="4">00842E4</longitude_of_center>
+<course ff-seq="9">215T</course>
+<speed ff-seq="10">4K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7608</fotc_track_no>
+<command_i ff-seq="3">CINCNAV</command_i>
+<track_number ff-seq="4">T8257</track_number>
+<command_2 ff-seq="5">COMCANLANT</command_2>
+<track_number_1 ff-seq="6">T4523</track_number_1>
+<command_3 ff-seq="7">FFC</command_3>
+<track_number_2 ff-seq="8">T4647</track_number_2>
+<command_4 ff-seq="9">CINCNAV COAN</command_4>
+<track_number_3 ff-seq="10">T4791</track_number_3>
+<command_5 ff-seq="11">JAC</command_5>
+<track_number_4 ff-seq="12">T23694</track_number_4>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7362</track_number>
+<class-name ff-seq="2">OSA II-652</class-name>
+<trademark ff-seq="3">DESIG T723-01</trademark>
+<type ff-seq="4">PBF</type>
+<category ff-seq="5">NAV</category>
+<pennant_number ff-seq="6">652</pennant_number>
+<flag ff-seq="7">AG</flag>
+<sconum ff-seq="8">M43013</sconum>
+<selective_identifier ff-seq="9">2426</selective_identifier>
+<alert_code ff-seq="10">TGT</alert_code>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<discrete_identifier ff-seq="16">6405</discrete_identifier>
+<unique_identifier ff-seq="17">CNS465558176</unique_identifier>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111228Z5</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3722N4</latitude_of_center>
+<longitude_of_center ff-seq="4">00611E8</longitude_of_center>
+<bearing_of_major_axis ff-seq="6">085T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">9NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">9NM</length_of_semi-minor_axis>
+<course ff-seq="9">085T</course>
+<speed ff-seq="10">25K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7362</fotc_track_no>
+<command_i ff-seq="3">FFC</command_i>
+<track_number ff-seq="4">T5930</track_number>
+<command_2 ff-seq="5">CINCNAV</command_2>
+<track_number_1 ff-seq="6">T6050</track_number_1>
+<command_3 ff-seq="7">CECLANT</command_3>
+<track_number_2 ff-seq="8">T5690</track_number_2>
+<command_4 ff-seq="9">COMCANLANT</command_4>
+<track_number_3 ff-seq="10">T7812</track_number_3>
+<command_5 ff-seq="11">JAC</command_5>
+<track_number_4 ff-seq="12">T8069</track_number_4>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7732</track_number>
+<class-name ff-seq="2">MINERVA-SFINGE</class-name>
+<type ff-seq="4">FF</type>
+<category ff-seq="5">NAV</category>
+<pennant_number ff-seq="6">F554</pennant_number>
+<flag ff-seq="7">IT</flag>
+<sconum ff-seq="8">A68975</sconum>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">CNS465558455</unique_identifier>
+<ircs ff-seq="18">IAOD</ircs>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111200Z5</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3643N6</latitude_of_center>
+<longitude_of_center ff-seq="4">01519E6</longitude_of_center>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">1NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">1NM</length_of_semi-minor_axis>
+<course ff-seq="9">203T</course>
+<speed ff-seq="10">16K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7732</fotc_track_no>
+<command_i ff-seq="3">CINCNAV</command_i>
+<track_number ff-seq="4">T6323</track_number>
+<command_2 ff-seq="5">COMCANLANT</command_2>
+<track_number_1 ff-seq="6">T4548</track_number_1>
+<command_3 ff-seq="7">FFC</command_3>
+<track_number_2 ff-seq="8">T5014</track_number_2>
+</pair>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">SEA 170-1/WIND 090-11/PRESS 1015/TEMP 24/VIS 09NM
+/COV 3/8</free-text>
+</remarks>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7955</track_number>
+<class-name ff-seq="2">UNEQUATED-OULA</class-name>
+<type ff-seq="4">TMB</type>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">TN</flag>
+<force_code ff-seq="11">18</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">CNS465558571</unique_identifier>
+<ircs ff-seq="18">A3BK6</ircs>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111150Z9</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3542N4</latitude_of_center>
+<longitude_of_center ff-seq="4">02757E1</longitude_of_center>
+<sensor_code ff-seq="5">RADAR</sensor_code>
+<course ff-seq="9">290T</course>
+<speed ff-seq="10">12K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7955</fotc_track_no>
+<command_i ff-seq="3">SLH</command_i>
+<track_number ff-seq="4">T4137</track_number>
+</pair>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">1/POR NUKU ALOFA/HULL BLACK/SUPERSTR WHITE
+/SLH 11OCT04</free-text>
+</remarks>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">2/LPOC TRIPOLI 09SEPT04/NPOC NOVOROSSISK 14OCT04
+/CGO BALLAST</free-text>
+</remarks>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">OWN FALEON MARITIME</free-text>
+</remarks>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">3/COOP/POD NOVOROSSISK 14OCT04/IMO 7725972</free-text>
+</remarks>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7597</track_number>
+<class-name ff-seq="2">BRANDENBURG-SCHLESWIG HOLSTEIN</class-name>
+<type ff-seq="4">FFGH</type>
+<category ff-seq="5">NAV</category>
+<pennant_number ff-seq="6">F216</pennant_number>
+<flag ff-seq="7">GM</flag>
+<sconum ff-seq="8">A65571</sconum>
+<selective_identifier ff-seq="9">4177</selective_identifier>
+<alert_code ff-seq="10">HIT</alert_code>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<discrete_identifier ff-seq="16">0062</discrete_identifier>
+<unique_identifier ff-seq="17">CNS465554575</unique_identifier>
+<ircs ff-seq="18">DRAI</ircs>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111235Z3</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3533N4</latitude_of_center>
+<longitude_of_center ff-seq="4">02751E5</longitude_of_center>
+<sensor_code ff-seq="5">WRN6</sensor_code>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">1NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">1NM</length_of_semi-minor_axis>
+<course ff-seq="9">220.3T</course>
+<speed ff-seq="10">13.6K</speed>
+</position>
+</position_segment>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111229Z6</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3534N5</latitude_of_center>
+<longitude_of_center ff-seq="4">02752E6</longitude_of_center>
+<sensor_code ff-seq="5">WRN6</sensor_code>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">1NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">1NM</length_of_semi-minor_axis>
+<course ff-seq="9">219.5T</course>
+<speed ff-seq="10">13.8K</speed>
+</position>
+</position_segment>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111223Z0</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3535N6</latitude_of_center>
+<longitude_of_center ff-seq="4">02753E7</longitude_of_center>
+<sensor_code ff-seq="5">WRN6</sensor_code>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">1NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">1NM</length_of_semi-minor_axis>
+<course ff-seq="9">219.3T</course>
+<speed ff-seq="10">17.0K</speed>
+</position>
+</position_segment>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111217Z3</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3537N8</latitude_of_center>
+<longitude_of_center ff-seq="4">02754E8</longitude_of_center>
+<sensor_code ff-seq="5">WRN6</sensor_code>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">1NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">1NM</length_of_semi-minor_axis>
+<course ff-seq="9">220.1T</course>
+<speed ff-seq="10">16.8K</speed>
+</position>
+</position_segment>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111211Z7</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3538N9</latitude_of_center>
+<longitude_of_center ff-seq="4">02755E9</longitude_of_center>
+<sensor_code ff-seq="5">WRN6</sensor_code>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">1NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">1NM</length_of_semi-minor_axis>
+<course ff-seq="9">178.9T</course>
+<speed ff-seq="10">16.4K</speed>
+</position>
+</position_segment>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111205Z0</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3540N2</latitude_of_center>
+<longitude_of_center ff-seq="4">02755E9</longitude_of_center>
+<sensor_code ff-seq="5">WRN6</sensor_code>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">1NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">1NM</length_of_semi-minor_axis>
+<course ff-seq="9">178.6T</course>
+<speed ff-seq="10">13.7K</speed>
+</position>
+</position_segment>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111159Z8</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3540N2</latitude_of_center>
+<longitude_of_center ff-seq="4">02754E8</longitude_of_center>
+<sensor_code ff-seq="5">WRN6</sensor_code>
+<bearing_of_major_axis ff-seq="6">000T</bearing_of_major_axis>
+<length_of_semi-major_axis ff-seq="7">1NM</length_of_semi-major_axis>
+<length_of_semi-minor_axis ff-seq="8">1NM</length_of_semi-minor_axis>
+<course ff-seq="9">076.9T</course>
+<speed ff-seq="10">10.9K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7597</fotc_track_no>
+<command_i ff-seq="3">SLH</command_i>
+<track_number ff-seq="4">T4001</track_number>
+<command_2 ff-seq="5">FFC</command_2>
+<track_number_1 ff-seq="6">T6846</track_number_1>
+<command_3 ff-seq="7">COMCANLANT</command_3>
+<track_number_2 ff-seq="8">T6904</track_number_2>
+<command_4 ff-seq="9">CINCNAV</command_4>
+<track_number_3 ff-seq="10">T4547</track_number_3>
+<command_5 ff-seq="11">JAC</command_5>
+<track_number_4 ff-seq="12">T4675</track_number_4>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7959</track_number>
+<class-name ff-seq="2">UNEQUATED-ZOJA 2</class-name>
+<type ff-seq="4">TMO</type>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">LG</flag>
+<force_code ff-seq="11">18</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">CNS465558572</unique_identifier>
+<ircs ff-seq="18">YLAM</ircs>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111202Z7</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3535N6</latitude_of_center>
+<longitude_of_center ff-seq="4">02756E0</longitude_of_center>
+<sensor_code ff-seq="5">RADAR</sensor_code>
+<course ff-seq="9">310T</course>
+<speed ff-seq="10">14K</speed>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7959</fotc_track_no>
+<command_i ff-seq="3">SLH</command_i>
+<track_number ff-seq="4">T4143</track_number>
+</pair>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">1/POR VENTSPILS/HULL GREY/SUPERSTR WHITE/SLH 11OCT04</free-text>
+</remarks>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">2/LPOC ASHKALON 10OCT04/NPOC UNK/CGO BALLAST, JUD OIL</free-text>
+</remarks>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">OWN ZOYA SHIPPING COOP.</free-text>
+</remarks>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">3/COOP/POD BLACK SEA FOR ORDERS/IMO 8819108</free-text>
+</remarks>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7692</track_number>
+<class-name ff-seq="2">THETIS-DOXA</class-name>
+<type ff-seq="4">PCE</type>
+<category ff-seq="5">NAV</category>
+<pennant_number ff-seq="6">P63</pennant_number>
+<flag ff-seq="7">GR</flag>
+<alert_code ff-seq="10">HIT</alert_code>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">CME462090639</unique_identifier>
+<ircs ff-seq="18">SZDC</ircs>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">111047Z4</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3627N8</latitude_of_center>
+<longitude_of_center ff-seq="4">02814E5</longitude_of_center>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7692</fotc_track_no>
+<command_i ff-seq="3">CINCNAV</command_i>
+<track_number ff-seq="4">T7142</track_number>
+<command_2 ff-seq="5">HELFLEET MOC</command_2>
+<track_number_1 ff-seq="6">T4396</track_number_1>
+<command_3 ff-seq="7">SLH</command_3>
+<track_number_2 ff-seq="8">T5126</track_number_2>
+<command_4 ff-seq="9">FFC</command_4>
+<track_number_3 ff-seq="10">T5646</track_number_3>
+<command_5 ff-seq="11">COMCANLANT</command_5>
+<track_number_4 ff-seq="12">T5971</track_number_4>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7143</track_number>
+<class-name ff-seq="2">UNEQUATED-MAERSK DUBLIN</class-name>
+<type ff-seq="4">CGO</type>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">AC</flag>
+<sconum ff-seq="8">N66178</sconum>
+<force_code ff-seq="11">18</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">MNA465837009</unique_identifier>
+<ircs ff-seq="18">V2OE1</ircs>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">102304Z0</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3608N7</latitude_of_center>
+<longitude_of_center ff-seq="4">00622W0</longitude_of_center>
+<course ff-seq="9">107T</course>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7143</fotc_track_no>
+<command_i ff-seq="3">COMCANLANT</command_i>
+<track_number ff-seq="4">T4733</track_number>
+<command_2 ff-seq="5">COMNAV</command_2>
+<track_number_1 ff-seq="6">T8981</track_number_1>
+<command_3 ff-seq="7">CARDIFF</command_3>
+<track_number_2 ff-seq="8">T5327</track_number_2>
+<command_4 ff-seq="9">FFC</command_4>
+<track_number_3 ff-seq="10">T5374</track_number_3>
+<command_5 ff-seq="11">CINCNAV</command_5>
+<track_number_4 ff-seq="12">T4811</track_number_4>
+</pair>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7275</track_number>
+<class-name ff-seq="2">UNEQUATED-MAERSK GEORGIA</class-name>
+<type ff-seq="4">CGO</type>
+<category ff-seq="5">MER</category>
+<flag ff-seq="7">US</flag>
+<sconum ff-seq="8">N73742</sconum>
+<force_code ff-seq="11">09</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">18</average_speed>
+<avg_time_on_leg ff-seq="15">4</avg_time_on_leg>
+<unique_identifier ff-seq="17">CNS465558147</unique_identifier>
+<ircs ff-seq="18">WAHP</ircs>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">102304Z0</date-time_group>
+<month ff-seq="2">NOV</month>
+<latitude_of_center ff-seq="3">3645N8</latitude_of_center>
+<longitude_of_center ff-seq="4">01340E8</longitude_of_center>
+<course ff-seq="9">289T</course>
+</position>
+</position_segment>
+<pair set-seq="28" setId="PAIR">
+<fotccmd ff-seq="1">SR FOTC</fotccmd>
+<fotc_track_no ff-seq="2">T7275</fotc_track_no>
+<command_i ff-seq="3">FFC</command_i>
+<track_number ff-seq="4">T7189</track_number>
+<command_2 ff-seq="5">COMCANLANT</command_2>
+<track_number_1 ff-seq="6">T4182</track_number_1>
+<command_3 ff-seq="7">TMFC</command_3>
+<track_number_2 ff-seq="8">T4292</track_number_2>
+</pair>
+</contact>
+</contact_segment>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</contactreport>

@@ -1,0 +1,2765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maritime_force_locator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/locator/messages.xsd">
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">LOCATOR</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">ALFAN</originator>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">NOV</month_name>
+</message_identifier>
+<queue_word set-id="queword" set-seq="5">
+<maritime_indicator alt="A" ff-seq="1" ffirn-fudn="1462-1">WHITE</maritime_indicator>
+</queue_word>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">CATALUNA</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">FF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">43</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">29</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">008</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">13</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">2</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">ALVARO DE BAZAN</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">FF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">43</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">29</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">008</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">13</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">2</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">A 06</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">LST</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">28</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">09</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">25</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">A 08</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">LST</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">28</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">09</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">25</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">TAGOMAGO</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">28</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">09</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">25</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">GROSSA</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">28</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">09</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">25</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">MEDAS</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">27</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">44</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">37</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">006</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">MAROLA</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">43</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">28</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">003</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">45</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">2</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">025</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0010</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">CENTINELA</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PCE</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">28</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">09</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">25</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">ALBORAN</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PGS</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">39</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">04</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">010</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">11</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">ATALAYA</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PGS</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">42</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">009</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">02</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">1</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">045</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0011</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">ARNOMENDI</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PGS</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">SP</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">28</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">09</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">25</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">ENDURANCE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AGS</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">32</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">46</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">079</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">55</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">CORYSTES</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AGS</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">49</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">53</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">002</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">09</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">1</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">BLACK ROVER</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AOL</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">TG 326.01 - ESCALE A HAVANA JPD LE 16/05/03</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">13</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">14</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">070</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">52</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">4</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">300</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0015</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">WAVE RULER</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AORL</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">04</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">35</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">2</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">010</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0013</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">INVINCIBLE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">CVS</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">25</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">2</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">001</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">29</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">2</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">070</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0014</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">SOUTHAMPTON</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">DDG</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">INDISPO PORTSMOUTH JPD LE 20/05/03</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">45</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">4</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">001</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">07</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">8</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">GLOUCESTER</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">DDG</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">49</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">52</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">180</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0010</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">MANCHESTER</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">DDG</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">22</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">11</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">179</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0010</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">IRON DUKE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">FF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">13</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">05</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">059</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">L AIGLE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">MHSO</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">FR</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">TRANSIT VERS NANTES JPA LE 16/05/03</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">37</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">25</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">006</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">PORTLAND</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">FF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">21</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">09</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">209</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0012</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">MONMOUTH</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">FF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">37</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">000</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">56</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">1</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">340</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0013</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">CUMBERLAND</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">FF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">22</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">002</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">58</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">5</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">062</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0014</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">LANCASTER</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">FF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">18</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">4</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">004</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">18</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">045</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0010</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">INVERNESS</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">MHC</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">MCMFN CTF 102 EXERCICE BLUE GAME 03</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">54</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">31</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">3</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">016</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">10</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">8</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">TYNE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">32</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">000</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">49</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">046</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0014</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">LEEDS CASTLE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">TG337.01 ESCALE A EAST COVE JPD LE 26/05/03</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">51</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">35</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">S</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">4</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">058</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">00</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">DUMBARTON CASTLE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">MCMFN CTF 102 EXERCICE BLUE GAME 03</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">54</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">29</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">05</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">1</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">LINDISFARNE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">UK</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">49</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">35</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">008</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">50</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">115</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0008</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">GOPHER STATE</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">ACM</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">US</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">51</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">03</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">001</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">13</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">5</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">MOUNT BAKER</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AE</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">US</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">HSTBG TRANSIT STROG USA</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">36</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">15</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">006</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">51</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">2</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">223</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0009</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">SATURN</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AFS</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">US</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">36</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">37</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">006</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">19</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">HAYES</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AGF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">US</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">28</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">24</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">6</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">080</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">7</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">REGULUS</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AKR</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">US</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">PG INDET</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">50</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">32</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">001</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">01</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">2</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">ALGOL</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AKR</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">US</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1" xsi:nil="true"/>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">29</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">53</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">9</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">089</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">57</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">9</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">ABOU AL BARAKAT BARBARI</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">AGF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">TI</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1">NPH</contact_photo_status>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">SAILING 15NM NORTH CASABLANCA</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">33</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">47</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">007</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">40</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">1</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">SIDI MOHAMMED BEN ABD</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">LST</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">TI</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1">NPH</contact_photo_status>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">CASABLANCA HARBOUR</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">33</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">36</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">007</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">LCL ARRAHMANI</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">FF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">TI</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1">NPH</contact_photo_status>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">CASABLANCA HARBOUR</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">33</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">36</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">007</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">RAIS CHARKAOUI</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">TI</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1">NPH</contact_photo_status>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">CASABLANCA HARBOUR</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">33</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">36</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">007</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">EL HAMISS</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">TI</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1">NPH</contact_photo_status>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">CASABLANCA HARBOUR</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">33</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">36</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">007</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">CDT BOUTOUBA</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PCE</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">TI</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1">NPH</contact_photo_status>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">CASABLANCA HARBOUR</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">33</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">36</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">007</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">EL BACHIR</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">TI</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1">NPH</contact_photo_status>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">CASABLANCA HARBOUR</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">33</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">36</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">007</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+<naval_surface_contact_segment>
+<naval_surface_contact set-id="naval" set-seq="31">
+<contact_serial_number alt="A" ff-seq="1" ffirn-fudn="1012-67" xsi:nil="true"/>
+<unit alt="A" ff-seq="2" ffirn-fudn="1022-57">P32</unit>
+<locating_report_number>
+<locating_report_number alt="A" ff-seq="3" ffirn-fudn="2296-1" xsi:nil="true"/>
+</locating_report_number>
+<name_of_ship_class>
+<name_of_ship_class alt="A" ff-seq="4" ffirn-fudn="1022-35" xsi:nil="true"/>
+</name_of_ship_class>
+<naval_ship_type alt="A" ff-seq="5" ffirn-fudn="1036-3">PBF</naval_ship_type>
+<flag alt="A" ff-seq="6" ffirn-fudn="1026-3">TI</flag>
+<contact_photo_status alt="A" ff-seq="7" ffirn-fudn="1450-1">NPH</contact_photo_status>
+</naval_surface_contact>
+<time_of_sensor_contact_event_1 set-id="timevent" set-seq="36">
+<day_time>
+<day_time_of_event_verified alt="A" ff-seq="1" ffirn-fudn="2013-34" xsi:nil="true"/>
+</day_time>
+<asw_mission_event alt="A" ff-seq="2" ffirn-fudn="1224-3" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="3" ffirn-fudn="1434-5" xsi:nil="true"/>
+<contact_course_degrees_true alt="A" ff-seq="4" ffirn-fudn="2258-2" xsi:nil="true"/>
+<contact_speed_knots alt="A" ff-seq="5" ffirn-fudn="2265-2" xsi:nil="true"/>
+</time_of_sensor_contact_event_1>
+<time_and_position_3 set-id="tmpos" set-seq="38">
+<amplification set-id="ampn">
+<free_text ff-seq="1" ffirn-fudn="1006-1">CASABLANCA HARBOUR</free_text>
+</amplification>
+<date_time_group>
+<day_time_of_position_verified alt="A" ff-seq="1" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">13</day>
+<hour_time ffirn-fudn="1001-1">07</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+</day_time_of_position_verified>
+</date_time_group>
+<geographic_position>
+<geographic_position_lat_long_minutes_verified alt="A" ff-seq="2" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">33</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">36</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">007</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">36</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">6</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</geographic_position>
+<contact_course_degrees_true alt="A" ff-seq="3" ffirn-fudn="2258-2">
+<context_quantity_000_359 ffirn-fudn="1023-2">000</context_quantity_000_359>
+<angular_measurement_reference_true ffirn-fudn="1024-2">T</angular_measurement_reference_true>
+</contact_course_degrees_true>
+<contact_speed_knots alt="A" ff-seq="4" ffirn-fudn="2265-2">
+<context_quantity_decimal_pt_permitted_4_char_max ffirn-fudn="1023-18">0000</context_quantity_decimal_pt_permitted_4_char_max>
+<unit_of_speed_measurement_knots ffirn-fudn="1008-81">KTS</unit_of_speed_measurement_knots>
+</contact_speed_knots>
+<asw_mission_event alt="A" ff-seq="5" ffirn-fudn="1224-3" xsi:nil="true"/>
+<sensor_platform alt="A" ff-seq="6" ffirn-fudn="1473-2" xsi:nil="true"/>
+<acoustic_sensor alt="A" ff-seq="7" ffirn-fudn="1434-5" xsi:nil="true"/>
+</time_and_position_3>
+</naval_surface_contact_segment>
+</maritime_force_locator>

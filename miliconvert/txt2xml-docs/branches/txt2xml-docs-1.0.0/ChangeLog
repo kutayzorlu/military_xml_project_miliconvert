@@ -1,0 +1,30 @@
+2007-04-24  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        French user manual & transformation plugin example
+	
+	* user_manual/data/com.acme.txt2xml.mytransformation/.classpath:
+	* user_manual/data/com.acme.txt2xml.mytransformation/.project:
+	* user_manual/data/com.acme.txt2xml.mytransformation/META-INF/MANIF
+	EST.MF:
+	* user_manual/data/com.acme.txt2xml.mytransformation/build.properti
+	es:
+	* user_manual/data/com.acme.txt2xml.mytransformation/plugin.xml:
+	* user_manual/data/com.acme.txt2xml.mytransformation/src/com/acme/t
+	xt2xml/mytransformation/TransformerFactory1.java:
+	(TransformerFactory1), (TransformerFactory1.TransformerFactory1),
+	(TransformerFactory1.getDescriptor),
+	(TransformerFactory1.getSupportedFormats):
+	* user_manual/data/com.acme.txt2xml.mytransformation/src/com/acme/t
+	xt2xml/mytransformation/Xml2AcmeDescriptor.java:
+	(Xml2AcmeDescriptor), (Xml2AcmeDescriptor.createInstance):
+	* user_manual/data/com.acme.txt2xml.mytransformation/src/com/acme/t
+	xt2xml/mytransformation/Xml2AcmeTransformer.java:
+	(Xml2AcmeTransformer), (Xml2AcmeTransformer.getType),
+	(Xml2AcmeTransformer.transform):
+
+2007-04-23  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add txt2xml specifications
+	
+	* README: added
+

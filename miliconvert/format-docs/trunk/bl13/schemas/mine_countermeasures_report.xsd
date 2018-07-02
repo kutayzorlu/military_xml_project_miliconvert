@@ -1,0 +1,2082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" version="13">
+  <xsd:element name="mine_countermeasures_report">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="0" name="exercise_identification">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="exercise_nickname" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="exercise_additional_identifier" type="xsd:string"/>
+                <xsd:element name="exercise_additional_nickname" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="operation_codeword">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="operation_codeword" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="plan_originator_and_number">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="plan_originator"/>
+                      <xsd:element name="blank_space_character"/>
+                      <xsd:element name="plan_number"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="option_nickname" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="secondary_option_nickname" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="message_identifier">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="message_text_format_identifier" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="standard_of_message_text_format" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="version_of_message_text_format" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="originator" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="message_serial_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="month_name_abbreviated" type="xsd:string"/>
+                <xsd:element name="date_time_iso">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="year_4_digit"/>
+                      <xsd:element name="month_numeric"/>
+                      <xsd:element name="day"/>
+                      <xsd:element name="time_delimiter"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="second_time"/>
+                      <xsd:element name="time_zone_zulu"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="qualifier" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="serial_number_of_qualifier" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="message_security_policy" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="message_security_classification_extended" type="xsd:string"/>
+                <xsd:element name="message_security_classification" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="message_security_category" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="reference">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="serial_letter" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="message_text_format_identifier" type="xsd:string"/>
+                <xsd:element name="communication_type" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="originator" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="dtg_of_reference_4_digit_yr">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                      <xsd:element name="year"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="day_time_of_reference">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="day_time_and_month_of_reference">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="date_of_reference_ddmmmyyyy">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                      <xsd:element name="year"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="date_of_reference_ddmmyyyy">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="month_numeric"/>
+                      <xsd:element name="year"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="date_of_reference_yyyymmdd">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="year"/>
+                      <xsd:element name="month_numeric"/>
+                      <xsd:element name="day"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="month_year">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="month_name_abbreviated"/>
+                      <xsd:element name="year_4_digit"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="date_time_iso">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="year_4_digit"/>
+                      <xsd:element name="month_numeric"/>
+                      <xsd:element name="day"/>
+                      <xsd:element name="time_delimiter"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="second_time"/>
+                      <xsd:element name="time_zone_zulu"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="reference_serial_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="special_notation" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="sic" type="xsd:string"/>
+                <xsd:element name="filing_number" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="geodetic_datum">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="mine_explosion">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="surface_vessel_type" type="xsd:string"/>
+                <xsd:element name="submarine_type" type="xsd:string"/>
+                <xsd:element name="aircraft_type" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="ship_name" type="xsd:string"/>
+                <xsd:element name="ship_call_sign" type="xsd:string"/>
+                <xsd:element name="naval_task_designator">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="naval_level_of_echelon"/>
+                      <xsd:element name="naval_organization_numeric_designator"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="latitude_and_longitude_minutes_0_4_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitude_degrees"/>
+                      <xsd:element name="latitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="longitude_degrees"/>
+                      <xsd:element name="longitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="longitudinal_hemisphere"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_transverse_mercator_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="utm_1_metre_higher_order_easting"/>
+                      <xsd:element name="utm_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_utm_mgrs_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="mgrs_utm_grid_latitude_band"/>
+                      <xsd:element name="mgrs_utm_100km_box"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_polar_stereographic_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="ups_1_metre_higher_order_x"/>
+                      <xsd:element name="ups_1_metre_higher_order_y"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_ups_mgrs_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mgrs_ups_hemisphere_indicator"/>
+                      <xsd:element name="mgrs_ups_100km_square_column"/>
+                      <xsd:element name="mgrs_ups_100km_square_row"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+                <xsd:element name="geographic_position_georef_centiminute">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="fifteen_degree_quadrilateral_georef"/>
+                      <xsd:element name="one_degree_quadrilateral_georef"/>
+                      <xsd:element name="minute_easting_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                      <xsd:element name="minute_northing_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="place_name" type="xsd:string"/>
+                <xsd:element name="true_bearing_and_distance_from_ref_point">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="bearing_distance_reference_point_name"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_1_to_99999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_linear_measurement_yd_m_or_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="q_route_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_a_q_route_point"/>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="lateral_displacement_from_a_q_route_track_in_tens_of_yds"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="course_in_degrees_true_and_speed_in_knots">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="course_in_degrees_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="unit_speed_in_knots"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="day_time_and_month_of_reference">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="dtg">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                      <xsd:element name="year"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="bearing_and_distance">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_1_to_99999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_linear_measurement_yd_m_or_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="exercise_mine_flare_colour" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="mine_detection_data">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="submarine_type" type="xsd:string"/>
+                <xsd:element name="surface_vessel_type" type="xsd:string"/>
+                <xsd:element name="aircraft_category" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="unit_name" type="xsd:string"/>
+                <xsd:element name="call_sign" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="latitude_and_longitude_minutes_0_4_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitude_degrees"/>
+                      <xsd:element name="latitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="longitude_degrees"/>
+                      <xsd:element name="longitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="longitudinal_hemisphere"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_transverse_mercator_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="utm_1_metre_higher_order_easting"/>
+                      <xsd:element name="utm_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_utm_mgrs_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="mgrs_utm_grid_latitude_band"/>
+                      <xsd:element name="mgrs_utm_100km_box"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_polar_stereographic_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="ups_1_metre_higher_order_x"/>
+                      <xsd:element name="ups_1_metre_higher_order_y"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_ups_mgrs_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mgrs_ups_hemisphere_indicator"/>
+                      <xsd:element name="mgrs_ups_100km_square_column"/>
+                      <xsd:element name="mgrs_ups_100km_square_row"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+                <xsd:element name="geographic_position_georef_centiminute">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="fifteen_degree_quadrilateral_georef"/>
+                      <xsd:element name="one_degree_quadrilateral_georef"/>
+                      <xsd:element name="minute_easting_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                      <xsd:element name="minute_northing_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="place_name" type="xsd:string"/>
+                <xsd:element name="true_bearing_and_distance_in_nm_from_reference_point">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="direction_in_degrees_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="reference_point_name"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="distance_in_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="q_route_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_a_q_route_point"/>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="lateral_displacement_from_a_q_route_track_in_tens_of_yds"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="course_in_degrees_true_and_speed_in_knots">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="course_in_degrees_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="unit_speed_in_knots"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="dtg">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                      <xsd:element name="year"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="number_of_mines_detected" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mine_case" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="3" minOccurs="3">
+                <xsd:element name="firing_system" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="detection_identifier" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mine_status_identifier" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mine_reference_number" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="1" name="mine_countermeasures_operations_in_progress">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mcm_operation_type" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_and_month">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="mcm_task">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mcm_task_order_number">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mcm_area_designator"/>
+                      <xsd:element name="mcm_operation_suffix"/>
+                      <xsd:element name="mcm_task_sequential_number"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="ship_name" type="xsd:string"/>
+                <xsd:element name="tasked_unit" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="q_route_number" type="xsd:string"/>
+                <xsd:element name="q_route_segment">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_start_point"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_finish_point"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="mcm_area_name" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="time_modifier" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="day_time">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="day_time_and_month">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="mine_information">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mine_case" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="3" minOccurs="3">
+                <xsd:element name="firing_system" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mine_reference_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="laying_reference_number_lrn" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="latitude_and_longitude_minutes_0_4_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitude_degrees"/>
+                      <xsd:element name="latitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="longitude_degrees"/>
+                      <xsd:element name="longitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="longitudinal_hemisphere"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_transverse_mercator_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="utm_1_metre_higher_order_easting"/>
+                      <xsd:element name="utm_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_utm_mgrs_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="mgrs_utm_grid_latitude_band"/>
+                      <xsd:element name="mgrs_utm_100km_box"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_polar_stereographic_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="ups_1_metre_higher_order_x"/>
+                      <xsd:element name="ups_1_metre_higher_order_y"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_ups_mgrs_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mgrs_ups_hemisphere_indicator"/>
+                      <xsd:element name="mgrs_ups_100km_square_column"/>
+                      <xsd:element name="mgrs_ups_100km_square_row"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+                <xsd:element name="place_name" type="xsd:string"/>
+                <xsd:element name="true_bearing_and_distance_from_ref_point">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="bearing_distance_reference_point_name"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_1_to_99999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_linear_measurement_yd_m_or_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="q_route_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_a_q_route_point"/>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="lateral_displacement_from_a_q_route_track_in_tens_of_yds"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="navigation_system_code" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="other_mine_status_identifier" type="xsd:string"/>
+                <xsd:element name="floating_mine_direction_true">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="floating_mine_status_identifier"/>
+                      <xsd:element name="context_quantity_000_359"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="exploded_mine_relative_bearing_and_distance">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="exploded_mine_status_identifier"/>
+                      <xsd:element name="relative_bearing_in_degrees"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_1_9999"/>
+                      <xsd:element name="units_of_linear_measurement_metres_or_yards"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="removed_mine_bearing_true_and_distance">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="removed_mine_status_identifier"/>
+                      <xsd:element name="context_quantity_000_359"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_1_9999"/>
+                      <xsd:element name="units_of_linear_measurement_metres_or_yards"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="mine_status_with_date_time_group">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="defeated_mine_status_identifier"/>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="summary_of_minefinds">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mine_reference_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_of_mine_zone_status">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="day_time_and_month">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="dtg">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                      <xsd:element name="year"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="type_of_mine">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="number_of_mines" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mine_case" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="3" minOccurs="3">
+                <xsd:element name="firing_system" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="ship_count" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mine_arming_delay">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_01_99"/>
+                      <xsd:element name="unit_of_mine_arming_time_measurement"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="progress_of_mcm_task">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="q_route_segment">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_start_point"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_finish_point"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mine_countermeasures_operation_standard_letter_suffixes" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mcm_operation_stage_first_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mcm_operation_stage_second_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="percentage_of_task_completed" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_and_month">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="aggregate_actuation_width_in_metres_or_yards">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_000_999"/>
+                      <xsd:element name="units_of_linear_measurement_metres_or_yards"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="sweep_or_detection_width_in_metres_or_yards">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_000_999"/>
+                      <xsd:element name="units_of_linear_measurement_metres_or_yards"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="sweep_or_detection_probability" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="track_spacing_in_metres_or_yards">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_000_999"/>
+                      <xsd:element name="units_of_linear_measurement_metres_or_yards"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="swept_depth_metres" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="standard_deviation_in_metres_or_yards">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_000_999"/>
+                      <xsd:element name="units_of_linear_measurement_metres_or_yards"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="number_of_runs_per_track">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="centre_line_or_q_route_track_displacement_in_tens_of_yds"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="number_of_runs"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="ships_non_operational">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="ship_name" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_of_defect">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="estimated_day_time_operational">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_month_of_related_navopdef">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="underwater_conditions">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="latitude_and_longitude_minutes_0_4_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitude_degrees"/>
+                      <xsd:element name="latitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="longitude_degrees"/>
+                      <xsd:element name="longitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="longitudinal_hemisphere"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_transverse_mercator_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="utm_1_metre_higher_order_easting"/>
+                      <xsd:element name="utm_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_utm_mgrs_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="mgrs_utm_grid_latitude_band"/>
+                      <xsd:element name="mgrs_utm_100km_box"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_polar_stereographic_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="ups_1_metre_higher_order_x"/>
+                      <xsd:element name="ups_1_metre_higher_order_y"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_ups_mgrs_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mgrs_ups_hemisphere_indicator"/>
+                      <xsd:element name="mgrs_ups_100km_square_column"/>
+                      <xsd:element name="mgrs_ups_100km_square_row"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+                <xsd:element name="place_name" type="xsd:string"/>
+                <xsd:element name="true_bearing_and_distance_from_ref_point">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="bearing_distance_reference_point_name"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_1_to_99999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_linear_measurement_yd_m_or_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="q_route_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_a_q_route_point"/>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="lateral_displacement_from_a_q_route_track_in_tens_of_yds"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_of_observation">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="thermal_layer_depth_in_metres" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="tidal_stream_course_and_speed_with_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_to_9999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_speed_measurement_knots"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="bottom_composition" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="bottom_type" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="minelike_echo_code_value" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="nombos_code_value" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="reverberation_level" type="xsd:string"/>
+                <xsd:element name="noise_level_in_decibels" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="underwater_sound_velocity_metres_per_second">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_1_9999"/>
+                      <xsd:element name="unit_of_velocity_measurement_metres_per_second"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="thermal_layer_depth_in_metres_1" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="underwater_visibility_yards_or_metres">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_1_99"/>
+                      <xsd:element name="units_of_linear_measurement_metres_or_yards"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="sand_ridge_height_in_metres" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="percentage_of_mine_buried" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="single_arm_thrust_result_code" type="xsd:string"/>
+                <xsd:element name="depth_of_penetration_of_arm_thrusts_in_centimetres" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="bottom_current_in_knots" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="contact_marker">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mine_reference_number" type="xsd:string"/>
+                <xsd:element name="contact_plot_designator" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="latitude_and_longitude_minutes_0_4_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitude_degrees"/>
+                      <xsd:element name="latitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="longitude_degrees"/>
+                      <xsd:element name="longitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="longitudinal_hemisphere"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_transverse_mercator_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="utm_1_metre_higher_order_easting"/>
+                      <xsd:element name="utm_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_utm_mgrs_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="mgrs_utm_grid_latitude_band"/>
+                      <xsd:element name="mgrs_utm_100km_box"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_polar_stereographic_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="ups_1_metre_higher_order_x"/>
+                      <xsd:element name="ups_1_metre_higher_order_y"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_ups_mgrs_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mgrs_ups_hemisphere_indicator"/>
+                      <xsd:element name="mgrs_ups_100km_square_column"/>
+                      <xsd:element name="mgrs_ups_100km_square_row"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+                <xsd:element name="geographic_position_georef_centiminute">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="fifteen_degree_quadrilateral_georef"/>
+                      <xsd:element name="one_degree_quadrilateral_georef"/>
+                      <xsd:element name="minute_easting_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                      <xsd:element name="minute_northing_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="place_name" type="xsd:string"/>
+                <xsd:element name="true_bearing_and_distance_from_ref_point">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="bearing_distance_reference_point_name"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_1_to_99999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_linear_measurement_yd_m_or_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="q_route_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_a_q_route_point"/>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="lateral_displacement_from_a_q_route_track_in_tens_of_yds"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="bearing_distance_in_nm_of_mine_contact_relative_to_marker">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="reference_point_name_12_characters"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_4_decimal_pt_permitted"/>
+                      <xsd:element name="units_of_linear_measurement_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_of_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="status_of_mine_zone">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="type_of_mine_zone" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="day_time_of_mine_zone_status">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mine_zone_colour_code" type="xsd:string"/>
+                <xsd:element name="mine_zone_status" type="xsd:string"/>
+                <xsd:element name="mine_zone_risk_status" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="day_time_of_operation">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="predicted_mine_zone_colour_code" type="xsd:string"/>
+                <xsd:element name="predicted_mine_zone_status" type="xsd:string"/>
+                <xsd:element name="mine_zone_predicted_risk_status" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="mcm_buoy">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mcm_buoy_type" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="latitude_and_longitude_minutes_0_4_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitude_degrees"/>
+                      <xsd:element name="latitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="longitude_degrees"/>
+                      <xsd:element name="longitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="longitudinal_hemisphere"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_transverse_mercator_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="utm_1_metre_higher_order_easting"/>
+                      <xsd:element name="utm_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_utm_mgrs_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="mgrs_utm_grid_latitude_band"/>
+                      <xsd:element name="mgrs_utm_100km_box"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_polar_stereographic_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="ups_1_metre_higher_order_x"/>
+                      <xsd:element name="ups_1_metre_higher_order_y"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_ups_mgrs_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mgrs_ups_hemisphere_indicator"/>
+                      <xsd:element name="mgrs_ups_100km_square_column"/>
+                      <xsd:element name="mgrs_ups_100km_square_row"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+                <xsd:element name="geographic_position_georef_centiminute">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="fifteen_degree_quadrilateral_georef"/>
+                      <xsd:element name="one_degree_quadrilateral_georef"/>
+                      <xsd:element name="minute_easting_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                      <xsd:element name="minute_northing_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="place_name" type="xsd:string"/>
+                <xsd:element name="true_bearing_and_distance_from_ref_point">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="bearing_distance_reference_point_name"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_1_to_99999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_linear_measurement_yd_m_or_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="q_route_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_a_q_route_point"/>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="lateral_displacement_from_a_q_route_track_in_tens_of_yds"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="buoy_designator">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="distance_in_yards_from_reference_track"/>
+                      <xsd:element name="mcm_buoy_sequential_number"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="drag_error">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_000_359"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_999"/>
+                      <xsd:element name="units_of_linear_measurement_metres_or_yards"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mcm_buoy_malfunction_type" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="map_data_without_geodetic_datum">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="map_or_chart_series_designator" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="map_or_chart_suffix_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="map_or_chart_sheet_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="map_or_chart_edition_number" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="logistics_situation">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="remaining_fuel_oil_in_percent" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="remaining_water_in_percent" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="remaining_provisions_in_percent" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="remaining_lube_oil_in_percent" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="remaining_ammunition_in_percent" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="remaining_number_of_mine_disposal_weapons_charges" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_and_month">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="air_sortie">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="air_sortie_identification_number" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mcm_equipment" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="flight_time_in_hours_and_tenths" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="tow_time_out_of_track_in_hours" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="operating_tow_time_in_hours" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="stream_time_in_minutes" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="recovery_time_in_minutes" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="task_hours_lost_during_sortie_hours" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="transit_distance_in_nautical_miles" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="mission_abort_casualty_indicator" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="total_turn_time" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="air_summary">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="total_number_of_sorties_to_be_flown" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="number_of_helos_in_operation" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="hours_in_reporting_period" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="hours_scheduled_off_task" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="weather_down_time_in_hours" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="diver_data">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="mine_reference_number" type="xsd:string"/>
+                <xsd:element name="contact_plot_designator" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="single_arm_thrust_result_code" type="xsd:string"/>
+                <xsd:element name="depth_of_penetration_of_arm_thrusts_in_centimetres" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="percentage_of_mine_buried" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="water_depth_in_metres" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="bottom_current_in_knots" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="sand_ridge_height_in_metres" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="environment">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="latitude_and_longitude_minutes_0_4_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitude_degrees"/>
+                      <xsd:element name="latitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="longitude_degrees"/>
+                      <xsd:element name="longitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="longitudinal_hemisphere"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_transverse_mercator_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="utm_1_metre_higher_order_easting"/>
+                      <xsd:element name="utm_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_utm_mgrs_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="mgrs_utm_grid_latitude_band"/>
+                      <xsd:element name="mgrs_utm_100km_box"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_polar_stereographic_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="ups_1_metre_higher_order_x"/>
+                      <xsd:element name="ups_1_metre_higher_order_y"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_ups_mgrs_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mgrs_ups_hemisphere_indicator"/>
+                      <xsd:element name="mgrs_ups_100km_square_column"/>
+                      <xsd:element name="mgrs_ups_100km_square_row"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+                <xsd:element name="geographic_position_georef_centiminute">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="fifteen_degree_quadrilateral_georef"/>
+                      <xsd:element name="one_degree_quadrilateral_georef"/>
+                      <xsd:element name="minute_easting_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                      <xsd:element name="minute_northing_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="place_name_extended" type="xsd:string"/>
+                <xsd:element name="true_bearing_and_distance_from_ref_point">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="bearing_distance_reference_point_name"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_1_to_99999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_linear_measurement_yd_m_or_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="q_route_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_a_q_route_point"/>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="lateral_displacement_from_a_q_route_track_in_tens_of_yds"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="day_time_and_month_of_observation">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="swell_direction_code" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="swell_height_in_metres_decimal_permitted" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="wave_period_in_seconds" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="wave_height_in_metres_decimal_permitted" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="weather_impact" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="chronology">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="hours_scheduled_off_task" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="maintenance_down_time_in_hours" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="total_time_to_stream_gear" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="total_time_to_recover_gear" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="total_number_of_turns" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="total_turn_time" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="turn_system" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="total_transit_time_to_and_from_oparea" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="0">
+                <xsd:element name="effective_time_on_task_in_the_lap_in_hours" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="navigation_system">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="day_time_and_month">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="day"/>
+                      <xsd:element name="hour_time"/>
+                      <xsd:element name="minute_time"/>
+                      <xsd:element name="time_zone"/>
+                      <xsd:element name="month_name_abbreviated"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="navigation_system_code" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="geodetic_datum" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="latitude_and_longitude_minutes_0_4_decimal_places">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitude_degrees"/>
+                      <xsd:element name="latitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="longitude_degrees"/>
+                      <xsd:element name="longitude_minutes_0_4_decimal_places"/>
+                      <xsd:element name="longitudinal_hemisphere"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_transverse_mercator_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="utm_1_metre_higher_order_easting"/>
+                      <xsd:element name="utm_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_utm_mgrs_utm">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="utm_grid_zone"/>
+                      <xsd:element name="mgrs_utm_grid_latitude_band"/>
+                      <xsd:element name="mgrs_utm_100km_box"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="universal_polar_stereographic_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="latitudinal_hemisphere"/>
+                      <xsd:element name="ups_1_metre_higher_order_x"/>
+                      <xsd:element name="ups_1_metre_higher_order_y"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="military_grid_reference_system_ups_mgrs_ups">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="mgrs_ups_hemisphere_indicator"/>
+                      <xsd:element name="mgrs_ups_100km_square_column"/>
+                      <xsd:element name="mgrs_ups_100km_square_row"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_easting"/>
+                      <xsd:element name="mgrs_1_metre_higher_order_northing"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="national_grid_system_coordinates" type="xsd:string"/>
+                <xsd:element name="geographic_position_georef_centiminute">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="fifteen_degree_quadrilateral_georef"/>
+                      <xsd:element name="one_degree_quadrilateral_georef"/>
+                      <xsd:element name="minute_easting_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                      <xsd:element name="minute_northing_georef"/>
+                      <xsd:element name="centiminute_angular"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="place_name" type="xsd:string"/>
+                <xsd:element name="true_bearing_and_distance_from_ref_point">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="context_quantity_decimal_pt_for_tenth_perm_5_char_max"/>
+                      <xsd:element name="angular_measurement_reference_true"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="bearing_distance_reference_point_name"/>
+                      <xsd:element name="hyphen"/>
+                      <xsd:element name="context_quantity_0_1_to_99999_0_1_decimal_pt_permitted"/>
+                      <xsd:element name="unit_of_linear_measurement_yd_m_or_nautical_miles"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="q_route_position">
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="q_route_number"/>
+                      <xsd:element name="q_route_point_designator"/>
+                      <xsd:element name="distance_in_nautical_miles_from_a_q_route_point"/>
+                      <xsd:element name="q_route_lateral_displacement_qualifier"/>
+                      <xsd:element name="lateral_displacement_from_a_q_route_track_in_tens_of_yds"/>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="special_instructions">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="text_indicator" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="free_text" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="acknowledge">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:choice maxOccurs="1" minOccurs="1">
+                <xsd:element name="acknowledge_requirement_indicator" type="xsd:string"/>
+              </xsd:choice>
+              <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                <xsd:element name="instructions_for_acknowledging" type="xsd:string"/>
+                <xsd:element name="force_or_unit_required_to_acknowledge" type="xsd:string"/>
+              </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+            <xsd:attribute name="pos" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="remarks" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

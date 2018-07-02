@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Depense>
+  <encore value="true"/>
+  <processeur value="200"/>
+  <ram value="100"/>
+  <qte value="3"/>
+</Depense>

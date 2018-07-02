@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><engineer_data_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/engrdatarep/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">ENGRDATAREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<date_time_group set-id="dtg" set-seq="5">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="6">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_drafter_releaser>
+<organization_designator set-id="orgid" set-seq="7">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator>
+<combat_effectiveness set-id="ceft" set-seq="8">
+<combat_effectiveness alt="A" ff-seq="1" ffirn-fudn="1298-1">2</combat_effectiveness>
+<personnel_strength_rating alt="A" ff-seq="2" ffirn-fudn="1298-6">1</personnel_strength_rating>
+<manpower_fatigue_rating alt="A" ff-seq="3" ffirn-fudn="1298-5">2</manpower_fatigue_rating>
+<major_equipments_available_rating alt="A" ff-seq="4" ffirn-fudn="1298-7">1</major_equipments_available_rating>
+<ammunition_holdings_rating alt="A" ff-seq="5" ffirn-fudn="1298-8">3</ammunition_holdings_rating>
+<fuel_holdings_rating alt="A" ff-seq="6" ffirn-fudn="1298-4">3</fuel_holdings_rating>
+</combat_effectiveness>
+<sub_unit_type_and_quantity set-id="subunit" set-seq="9">
+<subunit_type alt="A " ff-seq="1" ffirn-fudn="1311-7">ARMDENGRSQN</subunit_type>
+<number_1_99 alt="A " ff-seq="2" ffirn-fudn="1044-293">6</number_1_99>
+</sub_unit_type_and_quantity>
+<land_mines set-id="landmine" set-seq="10">
+<land_mine_type_anti_personnel_anti_tank alt="A" ff-seq="1" ffirn-fudn="1210-3">T</land_mine_type_anti_personnel_anti_tank>
+<name_of_assets alt="A " ff-seq="2" ffirn-fudn="1022-108">MK36</name_of_assets>
+<group_of_fields>
+<number_of_assets_1_9999999 alt="A " ff-seq="3" ffirn-fudn="1044-287">900</number_of_assets_1_9999999>
+<commitment_status alt="A " ff-seq="4" ffirn-fudn="1236-16">B</commitment_status>
+</group_of_fields>
+</land_mines>
+<explosives_available set-id="explsavl" set-seq="11">
+<name_of_assets alt="A" ff-seq="1" ffirn-fudn="1022-108">CD14</name_of_assets>
+<group_of_fields>
+<explosives_quantity_and_unit_of_measure alt="A" ff-seq="2" ffirn-fudn="2075-1">
+<number_of_assets_1_99999 ffirn-fudn="1044-288">90</number_of_assets_1_99999>
+<unit_of_measure_explosives ffirn-fudn="1008-40">M</unit_of_measure_explosives>
+</explosives_quantity_and_unit_of_measure>
+<commitment_status alt="A" ff-seq="3" ffirn-fudn="1236-16">A</commitment_status>
+</group_of_fields>
+</explosives_available>
+<land_mine_laying_assets set-id="lminelay" set-seq="12">
+<name_of_assets alt="A " ff-seq="1" ffirn-fudn="1022-108">BARMINELAYER</name_of_assets>
+<group_of_fields>
+<number_1_99 alt="A " ff-seq="2" ffirn-fudn="1044-293">3</number_1_99>
+<commitment_status alt="A " ff-seq="3" ffirn-fudn="1236-16">B</commitment_status>
+</group_of_fields>
+</land_mine_laying_assets>
+<minefield_breaching_assets set-id="minebrch" set-seq="13">
+<name_of_assets alt="A " ff-seq="1" ffirn-fudn="1022-108">GV</name_of_assets>
+<group_of_fields>
+<number_1_99 alt="A " ff-seq="2" ffirn-fudn="1044-293">6</number_1_99>
+<commitment_status alt="A " ff-seq="3" ffirn-fudn="1236-16">B</commitment_status>
+</group_of_fields>
+</minefield_breaching_assets>
+<combat_engineer_vehicles set-id="ctengveh" set-seq="14">
+<name_of_assets alt="A" ff-seq="1" ffirn-fudn="1022-108">AVRE</name_of_assets>
+<group_of_fields>
+<number_1_99 alt="A" ff-seq="2" ffirn-fudn="1044-293">12</number_1_99>
+<commitment_status alt="A" ff-seq="3" ffirn-fudn="1236-16">B</commitment_status>
+</group_of_fields>
+</combat_engineer_vehicles>
+<combat_engineer_vehicles set-id="ctengveh" set-seq="14">
+<name_of_assets alt="A" ff-seq="1" ffirn-fudn="1022-108">CET</name_of_assets>
+<group_of_fields>
+<number_1_99 alt="A" ff-seq="2" ffirn-fudn="1044-293">8</number_1_99>
+<commitment_status alt="A" ff-seq="3" ffirn-fudn="1236-16">B</commitment_status>
+</group_of_fields>
+<group_of_fields>
+<number_1_99 alt="A" ff-seq="2" ffirn-fudn="1044-293">4</number_1_99>
+<commitment_status alt="A" ff-seq="3" ffirn-fudn="1236-16">C</commitment_status>
+</group_of_fields>
+</combat_engineer_vehicles>
+<general_engineer_equipment set-id="genengeq" set-seq="15">
+<name_of_assets alt="A " ff-seq="1" ffirn-fudn="1022-108">WATER PURIFIER, NBC</name_of_assets>
+<group_of_fields>
+<number_1_99 alt="A " ff-seq="2" ffirn-fudn="1044-293">2</number_1_99>
+<commitment_status alt="A " ff-seq="3" ffirn-fudn="1236-16">B</commitment_status>
+</group_of_fields>
+</general_engineer_equipment>
+<survivability_material set-id="survmat" set-seq="16">
+<name_of_assets alt="A " ff-seq="1" ffirn-fudn="1022-108">MEXE SHELTER</name_of_assets>
+<group_of_fields>
+<number_of_assets_1_99999 alt="A " ff-seq="2" ffirn-fudn="1044-288">34</number_of_assets_1_99999>
+<commitment_status alt="A " ff-seq="3" ffirn-fudn="1236-16">B</commitment_status>
+</group_of_fields>
+</survivability_material>
+<item_list set-id="itemlist" set-seq="17">
+<item_data>
+<national_stores_list_number alt="A" descriptor="NSLN" ff-seq="1" ffirn-fudn="1012-142">LIST01</national_stores_list_number>
+</item_data>
+<quantity_required_and_unit_of_measurement alt="A" ff-seq="2" ffirn-fudn="2074-1">
+<number_of_items ffirn-fudn="1044-285">3</number_of_items>
+<unit_of_measurement_combat_engineers ffirn-fudn="1008-43">PAL</unit_of_measurement_combat_engineers>
+</quantity_required_and_unit_of_measurement>
+</item_list>
+<grounded_material set-id="grdmat" set-seq="18">
+<stores_number>
+<grounded_material_weight_in_metric_tons alt="A " ff-seq="1" ffirn-fudn="1050-4">82</grounded_material_weight_in_metric_tons>
+</stores_number>
+<grounded_material_volume_in_cubic_metres alt="A " ff-seq="2" ffirn-fudn="1063-5">36</grounded_material_volume_in_cubic_metres>
+<weight_of_the_largest_item_in_metric_tons alt="A " ff-seq="3" ffirn-fudn="1050-5">5</weight_of_the_largest_item_in_metric_tons>
+</grounded_material>
+<bridging_equipment set-id="bridgeqp" set-seq="19">
+<bridging_equipment_designator alt="A " ff-seq="1" ffirn-fudn="1135-14">D</bridging_equipment_designator>
+<name_of_assets alt="A " ff-seq="2" ffirn-fudn="1022-108">MEDIUM GIRDER</name_of_assets>
+<military_load_classification alt="A " ff-seq="3" ffirn-fudn="1253-1">070</military_load_classification>
+<group_of_fields>
+<bridging_assets>
+<length_of_bridge_in_metres alt="A " descriptor="MTRS" ff-seq="4" ffirn-fudn="1052-7">30</length_of_bridge_in_metres>
+</bridging_assets>
+<commitment_status alt="A " ff-seq="5" ffirn-fudn="1236-16">A</commitment_status>
+</group_of_fields>
+</bridging_equipment>
+<bridging_equipment set-id="bridgeqp" set-seq="19">
+<bridging_equipment_designator alt="A " ff-seq="1" ffirn-fudn="1135-14">A</bridging_equipment_designator>
+<name_of_assets alt="A " ff-seq="2" ffirn-fudn="1022-108">NO8BR</name_of_assets>
+<military_load_classification alt="A " ff-seq="3" ffirn-fudn="1253-1">070</military_load_classification>
+<group_of_fields>
+<bridging_assets>
+<number_1_99 alt="B " descriptor="EACH" ff-seq="4" ffirn-fudn="1044-293">5</number_1_99>
+</bridging_assets>
+<commitment_status alt="A " ff-seq="5" ffirn-fudn="1236-16">B</commitment_status>
+</group_of_fields>
+<group_of_fields>
+<bridging_assets>
+<number_1_99 alt="B " descriptor="EACH" ff-seq="4" ffirn-fudn="1044-293">1</number_1_99>
+</bridging_assets>
+<commitment_status alt="A " ff-seq="5" ffirn-fudn="1236-16">C</commitment_status>
+</group_of_fields>
+</bridging_equipment>
+<acknowledge set-id="aknldg" set-seq="20">
+<acknowledge_requirement_indicator alt="A" ff-seq="1" ffirn-fudn="1027-5">YES</acknowledge_requirement_indicator>
+<instructions_for_or_force_or_unit_required_to_acknowledge>
+<instructions_for_acknowledging alt="A" ff-seq="2" ffirn-fudn="1357-7">MIDDLEBURGH</instructions_for_acknowledging>
+</instructions_for_or_force_or_unit_required_to_acknowledge>
+</acknowledge>
+</engineer_data_report>

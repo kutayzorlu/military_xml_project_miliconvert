@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ListeMesuresCoordination3D>
+<NomZoneValidite>AA</NomZoneValidite>
+<APourACMmodifie_MesureCoordination>
+<refCTE>_GmeZgAZ9Ed-Q_4TgLpon_Q</refCTE>
+</APourACMmodifie_MesureCoordination>
+<APourPeriodeValidite_Periode3D>
+<DateDebut>2009-12-31T10:00:00</DateDebut>
+<DateFin>2010-02-02T08:11:00</DateFin>
+<CTE>_GmSMQQZ9Ed-Q_4TgLpon_Q</CTE>
+</APourPeriodeValidite_Periode3D>
+</ListeMesuresCoordination3D>
+<MesureCoordination>
+<CTE>_GmeZgAZ9Ed-Q_4TgLpon_Q</CTE>
+<EstLocalisePar_AssocInstanceObjetLocalisation>
+<Categorie>SHAPE</Categorie>
+<CTE>_Gm20AAZ9Ed-Q_4TgLpon_Q</CTE>
+<EstLocaliseEn_Localisation xsi:type="schema:type_LocalisationGeometrique3D">
+<CTE>_Gm-v0AZ9Ed-Q_4TgLpon_Q</CTE>
+<APourVolumeGeometrique_VolumeGeometrique xsi:type="schema:type_CylindreGeometrique">
+<APourSection_ObjetGeometrique xsi:type="schema:type_PointGeometrique">
+<EstLocalisePar_CoordonneesLatLong>
+<Latitude>0</Latitude>
+<Longitude>0</Longitude>
+<PrecisionLatitude>MINUTE</PrecisionLatitude>
+<PrecisionLongitude>MINUTE</PrecisionLongitude>
+</EstLocalisePar_CoordonneesLatLong>
+</APourSection_ObjetGeometrique>
+</APourVolumeGeometrique_VolumeGeometrique>
+</EstLocaliseEn_Localisation>
+</EstLocalisePar_AssocInstanceObjetLocalisation>
+<EstLocalisePar_AssocInstanceObjetLocalisation>
+<CTE>_GnFdgAZ9Ed-Q_4TgLpon_Q</CTE>
+<EstLocaliseEn_Localisation xsi:type="schema:type_LocalisationGeometrique3D">
+<CTE>_GnFdgQZ9Ed-Q_4TgLpon_Q</CTE>
+<APourVolumeGeometrique_VolumeGeometrique xsi:type="schema:type_CylindreGeometrique"/>
+</EstLocaliseEn_Localisation>
+</EstLocalisePar_AssocInstanceObjetLocalisation>
+<CodeACM/>
+</MesureCoordination>
+</schema:MPGT_Message>

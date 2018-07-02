@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineMsgsnex" table="BASELINE_MSGSNEX" >
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="msgsnexpr" type="string">
+            <column name="MSGSNEXPR" />
+        </property>
+    </class>
+</hibernate-mapping>

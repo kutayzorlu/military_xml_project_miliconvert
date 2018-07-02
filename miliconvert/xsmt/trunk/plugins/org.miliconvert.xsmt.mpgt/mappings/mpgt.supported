@@ -1,0 +1,5 @@
+ownsitrep:own_land_forces_situation_report.mapping
+aco:airspace_control_order.mapping
+ensitrep:enemy_land_forces_situation_report.mapping
+ato:air_tasking_order.mapping
+navsitsum:naval_situation_summary.mapping

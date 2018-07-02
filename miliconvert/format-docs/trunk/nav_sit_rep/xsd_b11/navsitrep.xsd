@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" version="11">
+  <xsd:element name="naval_situation_report">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="0" name="exercise_identification">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="exercise_nickname" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="exercise_additional_identifier" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="operation_codeword">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="operation_codeword" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="plan_originator_and_number">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="plan_originator"/>
+                    <xsd:element name="blank_space_character"/>
+                    <xsd:element name="plan_number"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="0" name="option_nickname" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="secondary_option_nickname" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="message_identifier">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="message_text_format_identifier" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="originator" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="message_serial_number" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="month_name" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="qualifier" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="serial_number_of_qualifier" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="reference">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="serial_letter" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="message_text_format_identifier" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="originator" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="day_time_group_of_reference">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="day"/>
+                    <xsd:element name="hour_time"/>
+                    <xsd:element name="minute_time"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="0" name="reference_serial_number" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="special_notation" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="0" name="sic" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="effective_date_time_month">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="day_time_effective">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="day"/>
+                    <xsd:element name="hour_time"/>
+                    <xsd:element name="minute_time"/>
+                    <xsd:element name="time_zone"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="0" name="effective_month" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="naval_force">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="naval_task_designator">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="naval_level_of_echelon"/>
+                    <xsd:element name="naval_organization_numeric_designator"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes_verified">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="latitude_degrees"/>
+                    <xsd:element name="latitude_minute_angular"/>
+                    <xsd:element name="latitudinal_hemisphere"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                    <xsd:element name="hyphen"/>
+                    <xsd:element name="longitude_degrees"/>
+                    <xsd:element name="longitude_minute_angular"/>
+                    <xsd:element name="longitudinal_hemisphere"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="1" name="day_time_of_position_verified">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="day"/>
+                    <xsd:element name="hour_time"/>
+                    <xsd:element name="minute_time"/>
+                    <xsd:element name="time_zone"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="1" name="course_in_degrees_true_and_speed_in_knots">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="course_in_degrees_true"/>
+                    <xsd:element name="hyphen"/>
+                    <xsd:element name="unit_speed_in_knots"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="situation_of_naval_units">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="naval_ship_type" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="ship_name" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes_verified">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="latitude_degrees"/>
+                    <xsd:element name="latitude_minute_angular"/>
+                    <xsd:element name="latitudinal_hemisphere"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                    <xsd:element name="hyphen"/>
+                    <xsd:element name="longitude_degrees"/>
+                    <xsd:element name="longitude_minute_angular"/>
+                    <xsd:element name="longitudinal_hemisphere"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="1" name="day_time_of_position_verified">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="day"/>
+                    <xsd:element name="hour_time"/>
+                    <xsd:element name="minute_time"/>
+                    <xsd:element name="time_zone"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="1" name="course_in_degrees_true_and_speed_in_knots">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="course_in_degrees_true"/>
+                    <xsd:element name="hyphen"/>
+                    <xsd:element name="unit_speed_in_knots"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="aircraft_situation">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="nationality" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="aircraft_identifier" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="number_of_aircraft_00_99" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="ship_name" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="amphibious_force_situation">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="unit_name" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="geographic_position_lat_long_degrees_verified">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="latitude_degrees"/>
+                    <xsd:element name="latitudinal_hemisphere"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                    <xsd:element name="hyphen"/>
+                    <xsd:element name="longitude_degrees"/>
+                    <xsd:element name="longitudinal_hemisphere"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="amphibious_forces_situation">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="unit_name" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_degrees_verified">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="latitude_degrees"/>
+                    <xsd:element name="latitudinal_hemisphere"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                    <xsd:element name="hyphen"/>
+                    <xsd:element name="longitude_degrees"/>
+                    <xsd:element name="longitudinal_hemisphere"/>
+                    <xsd:element name="context_quantity_0_9"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="major_equipment">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="ship_name" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="maritime_forces_equipment_type" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="1" name="quantity_of_equipment" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="present_position">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="latitude_degrees"/>
+                    <xsd:element name="latitude_minute_angular"/>
+                    <xsd:element name="latitudinal_hemisphere"/>
+                    <xsd:element name="longitude_degrees"/>
+                    <xsd:element name="longitude_minute_angular"/>
+                    <xsd:element name="longitudinal_hemisphere"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="1" name="unit_name" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="unit_status">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="unit_readiness_status" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="unit_availability_status" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="unit_assignment_status" type="xsd:string"/>
+              <xsd:element maxOccurs="unbounded" minOccurs="0" name="unit_name" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="operational_casualty_summary">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="operational_casualty_status" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="naval_ship_type" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="ship_name" type="xsd:string"/>
+              <xsd:element maxOccurs="1" minOccurs="1" name="combat_effectiveness_rating" type="xsd:string"/>
+            </xsd:sequence>
+            <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="activity_summary_segment">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="activity_summary">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="1" name="maritime_activity_type" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="1" name="nato_sub_area_name" type="xsd:string"/>
+                  </xsd:sequence>
+                  <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element maxOccurs="1" minOccurs="0" name="operational_control_segment">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="operational_control">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                          <xsd:element maxOccurs="1" minOccurs="1" name="operational_control_authority" type="xsd:string"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="naval_force_segment">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="naval_force">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="naval_task_designator">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="naval_level_of_echelon"/>
+                                      <xsd:element name="naval_organization_numeric_designator"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="day_time_of_position_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="day"/>
+                                      <xsd:element name="hour_time"/>
+                                      <xsd:element name="minute_time"/>
+                                      <xsd:element name="time_zone"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="course_in_degrees_true_and_speed_in_knots">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="course_in_degrees_true"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="unit_speed_in_knots"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ship_name">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="ship_type_identifier">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="naval_ship_type"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="stanag_1166_suffix"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="ship_name" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ships_names">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="ship_type_identifier">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="naval_ship_type"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="stanag_1166_suffix"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="ship_name" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="sailing_information">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="day_time_of_arrival_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="day"/>
+                                      <xsd:element name="hour_time"/>
+                                      <xsd:element name="minute_time"/>
+                                      <xsd:element name="time_zone"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="day_time_of_departure_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="day"/>
+                                      <xsd:element name="hour_time"/>
+                                      <xsd:element name="minute_time"/>
+                                      <xsd:element name="time_zone"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="situation_of_naval_units_segment">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="situation_of_naval_units">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="naval_ship_type" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="ship_name" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="day_time_of_position_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="day"/>
+                                      <xsd:element name="hour_time"/>
+                                      <xsd:element name="minute_time"/>
+                                      <xsd:element name="time_zone"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="course_in_degrees_true_and_speed_in_knots">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="course_in_degrees_true"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="unit_speed_in_knots"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="sailing_information">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="day_time_of_arrival_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="day"/>
+                                      <xsd:element name="hour_time"/>
+                                      <xsd:element name="minute_time"/>
+                                      <xsd:element name="time_zone"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitude_minute_angular"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitude_minute_angular"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="day_time_of_departure_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="day"/>
+                                      <xsd:element name="hour_time"/>
+                                      <xsd:element name="minute_time"/>
+                                      <xsd:element name="time_zone"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="aircraft_situation">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                          <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                          <xsd:element maxOccurs="1" minOccurs="1" name="nationality" type="xsd:string"/>
+                          <xsd:element maxOccurs="unbounded" minOccurs="1" name="aircraft_identifier" type="xsd:string"/>
+                          <xsd:element maxOccurs="unbounded" minOccurs="1" name="number_of_aircraft_00_99" type="xsd:string"/>
+                          <xsd:element maxOccurs="unbounded" minOccurs="1" name="ship_name" type="xsd:string"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="amphibious_force_situation_segment">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="amphibious_force_situation">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="unit_name" type="xsd:string"/>
+                                <xsd:element maxOccurs="unbounded" minOccurs="1" name="geographic_position_lat_long_degrees_verified">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="latitude_degrees"/>
+                                      <xsd:element name="latitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                      <xsd:element name="hyphen"/>
+                                      <xsd:element name="longitude_degrees"/>
+                                      <xsd:element name="longitudinal_hemisphere"/>
+                                      <xsd:element name="context_quantity_0_9"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                              <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element maxOccurs="unbounded" minOccurs="0" name="amphibious_forces_situation_segment">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="amphibious_forces_situation">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                      <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                      <xsd:element maxOccurs="1" minOccurs="1" name="flag" type="xsd:string"/>
+                                      <xsd:element maxOccurs="1" minOccurs="1" name="unit_name" type="xsd:string"/>
+                                      <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_degrees_verified">
+                                        <xsd:complexType>
+                                          <xsd:sequence>
+                                            <xsd:element name="latitude_degrees"/>
+                                            <xsd:element name="latitudinal_hemisphere"/>
+                                            <xsd:element name="context_quantity_0_9"/>
+                                            <xsd:element name="hyphen"/>
+                                            <xsd:element name="longitude_degrees"/>
+                                            <xsd:element name="longitudinal_hemisphere"/>
+                                            <xsd:element name="context_quantity_0_9"/>
+                                          </xsd:sequence>
+                                        </xsd:complexType>
+                                      </xsd:element>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element maxOccurs="unbounded" minOccurs="0" name="sailing_information">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="xsd:string"/>
+                                      <xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="xsd:string"/>
+                                      <xsd:element maxOccurs="1" minOccurs="1" name="day_time_of_arrival_verified">
+                                        <xsd:complexType>
+                                          <xsd:sequence>
+                                            <xsd:element name="day"/>
+                                            <xsd:element name="hour_time"/>
+                                            <xsd:element name="minute_time"/>
+                                            <xsd:element name="time_zone"/>
+                                            <xsd:element name="context_quantity_0_9"/>
+                                          </xsd:sequence>
+                                        </xsd:complexType>
+                                      </xsd:element>
+                                      <xsd:element maxOccurs="1" minOccurs="1" name="geographic_position_lat_long_minutes_verified">
+                                        <xsd:complexType>
+                                          <xsd:sequence>
+                                            <xsd:element name="latitude_degrees"/>
+                                            <xsd:element name="latitude_minute_angular"/>
+                                            <xsd:element name="latitudinal_hemisphere"/>
+                                            <xsd:element name="context_quantity_0_9"/>
+                                            <xsd:element name="hyphen"/>
+                                            <xsd:element name="longitude_degrees"/>
+                                            <xsd:element name="longitude_minute_angular"/>
+                                            <xsd:element name="longitudinal_hemisphere"/>
+                                            <xsd:element name="context_quantity_0_9"/>
+                                          </xsd:sequence>
+                                        </xsd:complexType>
+                                      </xsd:element>
+                                      <xsd:element maxOccurs="1" minOccurs="0" name="day_time_of_departure_verified">
+                                        <xsd:complexType>
+                                          <xsd:sequence>
+                                            <xsd:element name="day"/>
+                                            <xsd:element name="hour_time"/>
+                                            <xsd:element name="minute_time"/>
+                                            <xsd:element name="time_zone"/>
+                                            <xsd:element name="context_quantity_0_9"/>
+                                          </xsd:sequence>
+                                        </xsd:complexType>
+                                      </xsd:element>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="set-seq" type="xsd:string" use="optional"/>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="remarks" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

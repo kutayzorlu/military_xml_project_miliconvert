@@ -1,0 +1,10 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;TERRORIST BOMBING;3-4;Individual;;1.0;In Service;03 Dec 07
+3;TERRORIST SHOOTING;4-4;Individual;;1.0;In Service;03 Dec 07
+4;OTHER TERRORIST INCIDENT;4-4;Individual;;1.0;In Service;03 Dec 07
+5;CIVIL UNREST;2-4;Individual;;1.0;In Service;03 Dec 07
+6;NATURAL DISASTER;3-4;Individual;;1.0;In Service;03 Dec 07
+7;MEDIA EVENT;3-3;Individual;;1.0;In Service;03 Dec 07
+8;EVENT TYPE;1-6;Individual;[REF: STANAG 2441, AINTP-3] GENERIC TYPE OF EVENT BEING DESCRIBED BY THE RECORD.;1.0;In Service;03 Dec 07
+9;EVENT SUB-TYPE;1-9;Individual;TYPE OF INCIDENT THAT AN EVENT IS BASED UPON.;1.0;In Service;03 Dec 07
+10;TYPE OF INCIDENT;1-2;Individual;;1.0;In Service;03 Dec 07

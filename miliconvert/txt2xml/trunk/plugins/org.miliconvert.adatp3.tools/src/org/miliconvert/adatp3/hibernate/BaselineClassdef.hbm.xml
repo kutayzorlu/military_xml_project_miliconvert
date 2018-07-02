@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineClassdef" table="BASELINE_CLASSDEF" >
+        <composite-id name="id" class="org.miliconvert.adatp3.hibernate.BaselineClassdefId">
+            <key-property name="context" type="double">
+                <column name="CONTEXT" precision="15" scale="5" />
+            </key-property>
+            <key-property name="setfield" type="double">
+                <column name="SETFIELD" precision="15" scale="5" />
+            </key-property>
+        </composite-id>
+        <property name="operator" type="string">
+            <column name="OPERATOR" length="1" />
+        </property>
+        <property name="fldvalue" type="string">
+            <column name="FLDVALUE" length="72" />
+        </property>
+    </class>
+</hibernate-mapping>

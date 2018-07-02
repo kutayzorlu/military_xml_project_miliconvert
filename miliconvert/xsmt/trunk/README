@@ -1,0 +1,33 @@
+XML Schema Mapping Tool (xsmt)
+==============================
+
+xsmt is a graphical schema mapping tool, running as a
+plugin in eclipse.
+
+Directory layout :
+
+.
+|-- ChangeLog : summary of source code changes
+|-- HACKING : informations for developping xsmt
+|-- README : this file
+|-- add_header.sh : add the license header from header.txt to Java files
+|-- header.txt
+|-- org.miliconvert.usp : used to create the xsmt update site
+|-- org.miliconvert.xsmt : the eclipse feature for the graphical editor
+|-- org.miliconvert.xsmt.cli : command line interface
+|-- org.miliconvert.xsmt.core : the eclipse feature for xsmt core API
+|-- org.miliconvert.xsmt.editor : graphical editor
+|-- org.miliconvert.xsmt.engine : transformation engine
+|-- org.miliconvert.xsmt.engine.tests : transformation engine unit tests
+|-- org.miliconvert.xsmt.functions : standard transformation functions
+|-- org.miliconvert.xsmt.gmodel : graphical model, used in design i/o 
+|-- org.miliconvert.xsmt.gmodel.tests : gmodel unit tests
+|-- org.miliconvert.xsmt.io : classes to read/write .xsmt files
+|-- org.miliconvert.xsmt.io.tests : test for xsmt io classes
+|-- org.miliconvert.xsmt.tmodel : transformation model
+|-- org.miliconvert.xsmt.tmodel.tests : tmodel unit tests
+|-- org.miliconvert.xsmt.utils : some utility classes
+|-- org.miliconvert.xsmt.xalan : xalan as an eclipse plugin
+|-- org.miliconvert.xsmt.xalan.tests : tests for the xalan plug-in
+`-- prepare-xsmt-cli-releases.sh : used to package releasable archives
+

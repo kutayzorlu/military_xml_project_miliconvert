@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineFudbasic" table="BASELINE_FUDBASIC" >
+        <cache usage="read-only"/>
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="clcontext" type="java.lang.Double">
+            <column name="CLCONTEXT" precision="15" scale="5" />
+        </property>
+        <property name="context" type="java.lang.Double">
+            <column name="CONTEXT" precision="15" scale="5" />
+        </property>
+        <property name="fudn" type="string">
+            <column name="FUDN" />
+        </property>
+        <property name="operuse" type="string">
+            <column name="OPERUSE" length="1" />
+        </property>
+        <property name="fudname" type="string">
+            <column name="FUDNAME" length="60" />
+        </property>
+        <property name="fudmin" type="string">
+            <column name="FUDMIN" />
+        </property>
+        <property name="fudmax" type="string">
+            <column name="FUDMAX" />
+        </property>
+        <property name="typchars" type="string">
+            <column name="TYPCHARS" length="10" />
+        </property>
+        <property name="fudjustify" type="string">
+            <column name="FUDJUSTIFY" length="1" />
+        </property>
+        <property name="natostat" type="string">
+            <column name="NATOSTAT" length="1" />
+        </property>
+        <property name="nmoddate" type="timestamp">
+            <column name="NMODDATE" length="19" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="clname" type="string">
+            <column name="CLNAME" length="10" />
+        </property>
+        <property name="title" type="string">
+            <column name="TITLE" length="100" />
+        </property>
+        <property name="template" type="string">
+            <column name="TEMPLATE" />
+        </property>
+        <property name="templateLength" type="string">
+            <column name="TEMPLATE_LENGTH" />
+        </property>
+        <property name="dataType" type="string">
+            <column name="DATA_TYPE" length="7" />
+        </property>
+        <property name="mfslabel" type="string">
+            <column name="MFSLABEL" length="50" />
+        </property>
+        <property name="freetextind" type="string">
+            <column name="FREETEXTIND" length="1" />
+        </property>
+        <property name="fudclass" type="string">
+            <column name="FUDCLASS" length="2" />
+        </property>
+        <property name="fnclass" type="string">
+            <column name="FNCLASS" length="2" />
+        </property>
+        <property name="bitsize" type="string">
+            <column name="BITSIZE" />
+        </property>
+        <property name="sinc" type="string">
+            <column name="SINC" />
+        </property>
+        <property name="qinc" type="string">
+            <column name="QINC" />
+        </property>
+        <property name="offset" type="string">
+            <column name="OFFSET" />
+        </property>
+    </class>
+</hibernate-mapping>

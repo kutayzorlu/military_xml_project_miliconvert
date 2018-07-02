@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema">
+<StructureOrganisee>
+<Nom>ARTI OP</Nom>
+<CTE>_vNEEQAaWEd-GZdAguCvqqA</CTE>
+<EstSujet_AssociationEntiteOrgEltCtrl>
+<refCTE>_vNBoAAaWEd-GZdAguCvqqA</refCTE>
+</EstSujet_AssociationEntiteOrgEltCtrl>
+</StructureOrganisee>
+<ObjectifActivite>
+<CTE>_vM2B0AaWEd-GZdAguCvqqA</CTE>
+<EstObjectifPour_Activite/>
+<AssocieCommeInstanceObjet_InstanceObjet>
+<refCTE>_vM4eEAaWEd-GZdAguCvqqA</refCTE>
+</AssocieCommeInstanceObjet_InstanceObjet>
+</ObjectifActivite>
+<AutreElementControle>
+<Nom>ACTION</Nom>
+<CTE>_vM4eEAaWEd-GZdAguCvqqA</CTE>
+<AssocieCommeObjectifActivite_ObjectifActivite>
+<refCTE>_vM2B0AaWEd-GZdAguCvqqA</refCTE>
+</AssocieCommeObjectifActivite_ObjectifActivite>
+<EstObjet_AssociationEntiteOrgEltCtrl>
+<refCTE>_vNBoAAaWEd-GZdAguCvqqA</refCTE>
+</EstObjet_AssociationEntiteOrgEltCtrl>
+</AutreElementControle>
+<AssociationEntiteOrgEltCtrl>
+<CTE>_vNBoAAaWEd-GZdAguCvqqA</CTE>
+<Categorie>CONTRL</Categorie>
+<APourObjet_ElementControle>
+<refCTE>_vM4eEAaWEd-GZdAguCvqqA</refCTE>
+</APourObjet_ElementControle>
+<APourSujet_EntiteOrganisationnelle>
+<refCTE>_vNEEQAaWEd-GZdAguCvqqA</refCTE>
+</APourSujet_EntiteOrganisationnelle>
+</AssociationEntiteOrgEltCtrl>
+</schema:MPGT_Message>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?><naval_situation_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/navsitsum/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier ff-seq="1" ffirn-fudn="1018-2">NAVSITSUM</message_text_format_identifier>
+<originator ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<effective_date_time_month set-id="efdt" set-seq="5">
+<date_time>
+<day_time_effective ff-seq="1" ffirn-fudn="2000-13">
+<day ffirn-fudn="1000-1">27</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_effective>
+</date_time>
+<effective_month ff-seq="2" ffirn-fudn="1004-4">SEP</effective_month>
+</effective_date_time_month>
+<activity_summary_segment>
+<activity_summary set-id="smry" set-seq="6">
+<maritime_activity_type ff-seq="1" ffirn-fudn="1299-6">SHIP ACTIVITY</maritime_activity_type>
+<nato_sub_area_name ff-seq="2" ffirn-fudn="1022-59">EASTLANT NORTH OF 64N</nato_sub_area_name>
+</activity_summary>
+<operational_control_segment>
+<operational_control set-id="contr" set-seq="7">
+<operational_control_authority>
+<operational_control_authority ff-seq="1" ffirn-fudn="1028-8">CINCNORTH</operational_control_authority>
+</operational_control_authority>
+</operational_control>
+<naval_force_segment>
+<naval_force set-id="nfor" set-seq="8">
+<naval_designation>
+<unit_name ff-seq="1" ffirn-fudn="1022-48">STRIKFLTLANT</unit_name>
+</naval_designation>
+<location>
+<geographic_position_lat_long_seconds_verified ff-seq="2" ffirn-fudn="2044-1">
+<latitude_degrees ffirn-fudn="1039-1">36</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">10</latitude_second_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">1</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">009</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">10</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">10</longitude_second_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">1</context_quantity_0_9_1>
+</geographic_position_lat_long_seconds_verified>
+</location>
+<time_at_location>
+<day_time_of_position_verified ff-seq="3" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">18</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<speed_or_movement>
+<course_in_degrees_true_and_speed_in_knots ff-seq="4" ffirn-fudn="2025-1">
+<course_in_degrees_true ffirn-fudn="1439-4">270</course_in_degrees_true>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<unit_speed_in_knots ffirn-fudn="1061-4">14</unit_speed_in_knots>
+</course_in_degrees_true_and_speed_in_knots>
+</speed_or_movement>
+</naval_force>
+<ship_name set-id="ships" set-seq="9">
+<flag_or_uic>
+<flag ff-seq="1" ffirn-fudn="1026-3">FR</flag>
+</flag_or_uic>
+<group_of_fields>
+<ship_type_identifier ff-seq="2" ffirn-fudn="2047-1">
+<naval_ship_type ffirn-fudn="1036-3">MSD</naval_ship_type>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<stanag_1166_suffix ffirn-fudn="1246-9">LGN</stanag_1166_suffix>
+</ship_type_identifier>
+<ship_identification>
+<ship_name ff-seq="3" ffirn-fudn="1022-49">CHARLES DE GAULLE</ship_name>
+</ship_identification>
+</group_of_fields>
+</ship_name>
+<ships_names set-id="1ships" set-seq="10">
+<flag_or_uic>
+<flag ff-seq="1" ffirn-fudn="1026-3" header="FLAG OR UIC">FR</flag>
+</flag_or_uic>
+<ship_type_identifier ff-seq="2" ffirn-fudn="2047-1" header="SHIP TYPE">
+<naval_ship_type ffirn-fudn="1036-3">MSD</naval_ship_type>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<stanag_1166_suffix ffirn-fudn="1246-9">LGN</stanag_1166_suffix>
+</ship_type_identifier>
+<ship_identification>
+<ship_name ff-seq="3" ffirn-fudn="1022-49" header="SHIP NAME OR QTY">CHARLES DE GAULLE</ship_name>
+</ship_identification>
+</ships_names>
+<ships_names set-id="1ships" set-seq="10">
+<flag_or_uic>
+<unit_identification_code_uic ff-seq="1" ffirn-fudn="2141-1" header="FLAG OR UIC">
+<nationality ffirn-fudn="1026-2">NL</nationality>
+<armed_service ffirn-fudn="1107-1">N</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">123456</file_sequential_location_number>
+</unit_identification_code_uic>
+</flag_or_uic>
+<ship_type_identifier ff-seq="2" ffirn-fudn="2047-1" header="SHIP TYPE">
+<naval_ship_type ffirn-fudn="1036-3">DDG</naval_ship_type>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<stanag_1166_suffix ffirn-fudn="1246-9">LGN</stanag_1166_suffix>
+</ship_type_identifier>
+<ship_identification>
+<number_of_ships descriptor="QTY" ff-seq="3" ffirn-fudn="1044-76" header="SHIP NAME OR QTY">2</number_of_ships>
+</ship_identification>
+</ships_names>
+<sailing_information set-id="sail" set-seq="11">
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">17</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name ff-seq="2" ffirn-fudn="1022-170">ESJBERG</place_name>
+</position>
+<time_of_departure>
+<day_time_of_departure_verified ff-seq="3" ffirn-fudn="2013-31">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_departure_verified>
+</time_of_departure>
+</sailing_information>
+</naval_force_segment>
+<situation_of_naval_units_segment>
+<situation_of_naval_units set-id="nsit" set-seq="12">
+<flag>
+<flag ff-seq="1" ffirn-fudn="1026-3">NL</flag>
+</flag>
+<naval_ship_type ff-seq="2" ffirn-fudn="1036-3">ABUD</naval_ship_type>
+<ship_name ff-seq="3" ffirn-fudn="1022-49">DE RUYTER</ship_name>
+<location>
+<geographic_position_lat_long_minutes_verified ff-seq="4" ffirn-fudn="2043-1">
+<latitude_degrees ffirn-fudn="1039-1">23</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">57</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">015</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">30</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">9</context_quantity_0_9_1>
+</geographic_position_lat_long_minutes_verified>
+</location>
+<time_at_location>
+<day_time_of_position_verified ff-seq="5" ffirn-fudn="2013-7">
+<day ffirn-fudn="1000-1">20</day>
+<hour_time ffirn-fudn="1001-1">18</hour_time>
+<minute_time ffirn-fudn="1002-1">22</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">5</context_quantity_0_9>
+</day_time_of_position_verified>
+</time_at_location>
+<course_speed_or_movement_status>
+<course_in_degrees_true_and_speed_in_knots ff-seq="6" ffirn-fudn="2025-1">
+<course_in_degrees_true ffirn-fudn="1439-4">270</course_in_degrees_true>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<unit_speed_in_knots ffirn-fudn="1061-4">15</unit_speed_in_knots>
+</course_in_degrees_true_and_speed_in_knots>
+</course_speed_or_movement_status>
+</situation_of_naval_units>
+<sailing_information_1 set-id="sail" set-seq="13">
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">17</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name ff-seq="2" ffirn-fudn="1022-170">ESJBERG</place_name>
+</position>
+<time_of_departure>
+<day_time_of_departure_verified ff-seq="3" ffirn-fudn="2013-31">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_departure_verified>
+</time_of_departure>
+</sailing_information_1>
+</situation_of_naval_units_segment>
+<aircraft_situation set-id="acft" set-seq="14">
+<flag_or_uic>
+<nationality ff-seq="1" ffirn-fudn="1026-2">US</nationality>
+</flag_or_uic>
+<group_of_fields>
+<aircraft_identifier ff-seq="2" ffirn-fudn="1015-12">F-14B</aircraft_identifier>
+<number_of_aircraft_00_99 ff-seq="3" ffirn-fudn="1044-3">09</number_of_aircraft_00_99>
+<location>
+<ship_name descriptor="SHIP" ff-seq="4" ffirn-fudn="1022-49">NIMITZ</ship_name>
+</location>
+</group_of_fields>
+</aircraft_situation>
+<amphibious_force_situation_segment>
+<amphibious_force_situation set-id="aphib" set-seq="15">
+<flag ff-seq="1" ffirn-fudn="1026-3">US</flag>
+<group_of_fields>
+<unit_name_or_designator>
+<unit_name ff-seq="2" ffirn-fudn="1022-48">2ND MEB</unit_name>
+</unit_name_or_designator>
+<location>
+<ship_name ff-seq="3" ffirn-fudn="1022-49">WHITNEY</ship_name>
+</location>
+</group_of_fields>
+</amphibious_force_situation>
+<sailing_information_2 set-id="sail" set-seq="16">
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">17</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name ff-seq="2" ffirn-fudn="1022-170">ESJBERG</place_name>
+</position>
+<time_of_departure>
+<day_time_of_departure_verified ff-seq="3" ffirn-fudn="2013-31">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_departure_verified>
+</time_of_departure>
+</sailing_information_2>
+</amphibious_force_situation_segment>
+<amphibious_forces_situation_segment>
+<amphibious_forces_situation set-id="1aphib" set-seq="17">
+<flag ff-seq="1" ffirn-fudn="1026-3" header="FLAG">US</flag>
+<name_or_task_organisation>
+<unit_name ff-seq="2" ffirn-fudn="1022-48" header="NAME OR TASK DESIG">ADAMS</unit_name>
+</name_or_task_organisation>
+<location>
+<geographic_position_lat_long_degrees_verified ff-seq="3" ffirn-fudn="2042-1" header="LOCATION">
+<latitude_degrees ffirn-fudn="1039-1">34</latitude_degrees>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<context_quantity_0_9 ffirn-fudn="1023-13">7</context_quantity_0_9>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<longitude_degrees ffirn-fudn="1040-1">120</longitude_degrees>
+<longitudinal_hemisphere ffirn-fudn="1030-3">W</longitudinal_hemisphere>
+<context_quantity_0_9_1 ffirn-fudn="1023-13">3</context_quantity_0_9_1>
+</geographic_position_lat_long_degrees_verified>
+</location>
+</amphibious_forces_situation>
+<amphibious_forces_situation set-id="1aphib" set-seq="17">
+<flag ff-seq="1" ffirn-fudn="1026-3" header="FLAG">NL</flag>
+<name_or_task_organisation>
+<unit_name ff-seq="2" ffirn-fudn="1022-48" header="NAME OR TASK DESIG">DE RUYTER</unit_name>
+</name_or_task_organisation>
+<location>
+<place_name descriptor="PLACE" ff-seq="3" ffirn-fudn="1022-170" header="LOCATION">DEN HELDER</place_name>
+</location>
+</amphibious_forces_situation>
+<sailing_information_3 set-id="sail" set-seq="18">
+<time_of_arrival>
+<day_time_of_arrival_verified ff-seq="1" ffirn-fudn="2013-32">
+<day ffirn-fudn="1000-1">17</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">0</context_quantity_0_9>
+</day_time_of_arrival_verified>
+</time_of_arrival>
+<position>
+<place_name ff-seq="2" ffirn-fudn="1022-170">ESJBERG</place_name>
+</position>
+<time_of_departure>
+<day_time_of_departure_verified ff-seq="3" ffirn-fudn="2013-31">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">08</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<context_quantity_0_9 ffirn-fudn="1023-13">8</context_quantity_0_9>
+</day_time_of_departure_verified>
+</time_of_departure>
+</sailing_information_3>
+</amphibious_forces_situation_segment>
+</operational_control_segment>
+</activity_summary_segment>
+</naval_situation_summary>

@@ -1,0 +1,4 @@
+5ETGFREQ
+  /DE/PRI-RF     /SEC-RF     /LOW-RF-LIM /UP-RF-LIM  /PULSREP
+  /25/          -/          -/   999.9MHZ/     1.2GHZ/PRI52.5
+  /26/   980.5MHZ/     1.5GHZ/          -/          -/PRF19047.6//

@@ -1,0 +1,16 @@
+null;null;1.;(2) P ([1] @)
+null;null;2.;(3)F1 A "INTSUM"
+null;null;3.;(8)F1 A "HIGHLIGHTS"
+null;null;4.;(9)F1 A "GEOGRAPHICAL INFORMATION"
+null;null;5.;(10)F1 A "GENERAL SITUATION"
+null;null;6.;(11)F1 A "MILITARY SITUATION"
+null;null;7.;(12)F1 A "LAND SITUATION"
+null;null;8.;(13)F1 A "MARITIME SITUATION"
+null;null;9.;(14)F1 A "AIR SITUATION"
+null;null;10.;(15)F1 A "SPACE SITUATION"
+null;null;11.;(16)F1 A "COUNTER-INTELLIGENCE AND SECURITY SITUATION"
+null;null;12.;(17)F1 A "OTHER INTELLIGENCE"
+null;null;13.;(18)F1 A "AREA ASSESSMENT"
+null;null;14.;(19)F1 A "GENERAL ASSESSMENT"
+null;null;15.;(6)F10 Q (F2 = "CORPS" / "ARMY" / "AG" / "MOD" / "MD")
+null;null;16.;(7)F3 QP (F2 = "AFTER" / "ASOF" / "ASAPAFT" / "ASAPNLT" / "BEFORE" / "NET" / "NLT")

@@ -1,0 +1,7 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;MINE TYPE;1-68;Instructive;;1.0;In Service;03 Dec 07
+2;CLASSIFICATION OF MINE TYPE;6-6;Individual;;1.0;In Service;03 Dec 07
+3;LAND MINE TYPE (ANTI-PERSONNEL ANTI-TANK);1-1;Individual;;1.0;In Service;03 Dec 07
+4;GENERIC LAND MINE TYPE;1-1;Individual;NONE;1.0;In Service;03 Dec 07
+5;ANTI-TANK MINE TYPE;1-15;Instructive;;1.0;In Service;03 Dec 07
+6;ANTI-PERSONNEL MINE TYPE;1-15;Instructive;;1.0;In Service;03 Dec 07

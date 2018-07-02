@@ -1,0 +1,5 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;MINE ZONE STATUS;4-6;Individual;;1.0;In Service;03 Dec 07
+3;PREDICTED MINE ZONE STATUS;4-6;Individual;;1.0;In Service;03 Dec 07
+4;ZONE WEAPON CONTROL STATUS;4-5;Individual;THE STATUS OF THE CONTROL WEAPON ZONE.;1.0;In Service;03 Dec 07
+5;MISSILE SEEKER ZONE TYPE;4-4;Individual;;1.0;In Service;03 Dec 07

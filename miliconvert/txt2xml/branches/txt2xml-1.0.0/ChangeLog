@@ -1,0 +1,174 @@
+2007-05-21  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	Add license headers & scripts to add it
+
+2007-05-04  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add simple release script
+	
+	* org.miliconvert.txt2xml.cli/txt2xml.bat:
+	* org.miliconvert.txt2xml.cli/xml2txt.bat:
+	* prepare-txt2xml-cli-releases.sh:
+
+2007-04-24  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add xml2txt example.
+
+	Fix product to depend on org.eclipse.update.configurator
+	
+	* org.miliconvert.txt2xml.cli/build.properties:
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/Messa
+	ges.java: (Messages):
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/Xml2T
+	xt.java: (Xml2Txt.start):
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/messa
+	ges.properties:
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/messa
+	ges_fr.properties:
+	* org.miliconvert.txt2xml.cli/txt2xml.cli.product:
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/MiliTransformerFactory.java:
+	(MiliTransformerFactory.MiliTransformerFactory):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/Pipo2XmlTransformer.java: (Pipo2XmlTransformer),
+	(Pipo2XmlTransformer.transform), (Pipo2XmlTransformer.getType):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/Pipo2XmlTransformerDescriptor.java:
+	(Pipo2XmlTransformerDescriptor),
+	(Pipo2XmlTransformerDescriptor.createInstance):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/PipoTransformer.java:
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/PipoTransformerDescriptor.java:
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/Xml2PipoTransformer.java: (Xml2PipoTransformer),
+	(Xml2PipoTransformer.transform), (Xml2PipoTransformer.getType):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/Xml2PipoTransformerDescriptor.java:
+	(Xml2PipoTransformerDescriptor),
+	(Xml2PipoTransformerDescriptor.createInstance):
+
+2007-04-23  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Javadoc tuning
+	
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/ITransformer.java:
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/ITransformerFactory.java:
+
+2007-04-23  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add xml2txt to API
+
+	Add launch scripts
+	
+	* org.miliconvert.txt2xml.cli/plugin.xml:
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/Xml2T
+	xt.java: (Xml2Txt), (Xml2Txt.start), (Xml2Txt.stop),
+	(Xml2Txt.writeResult):
+	* org.miliconvert.txt2xml.cli/txt2xml.sh:
+	* org.miliconvert.txt2xml.cli/xml2txt.sh:
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/PipoTransformer.java: (PipoTransformer.getType),
+	(PipoTransformer), (PipoTransformer.transform):
+	* org.miliconvert.txt2xml.transform.tests/src/org/miliconvert/txt2x
+	ml/transform/tests/TransformerTests.java:
+	(TransformerTests.testTransform):
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/ITransformer.java:
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/Transformer.java: (Transformer), (Transformer.transform):
+
+2007-04-20  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Initial version of txt2xml api & tools
+	
+	* org.miliconvert.txt2xml.cli/.classpath:
+	* org.miliconvert.txt2xml.cli/.project:
+	* org.miliconvert.txt2xml.cli/META-INF/MANIFEST.MF:
+	* org.miliconvert.txt2xml.cli/build.properties:
+	* org.miliconvert.txt2xml.cli/plugin.properties:
+	* org.miliconvert.txt2xml.cli/plugin.xml:
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/Activ
+	ator.java: (Activator), (Activator.Activator), (Activator.start),
+	(Activator.stop), (Activator.getDefault):
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/Messa
+	ges.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/Txt2X
+	ml.java: (Txt2Xml), (Txt2Xml.start), (Txt2Xml.stop),
+	(Txt2Xml.writeResult):
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/messa
+	ges.properties:
+	* org.miliconvert.txt2xml.cli/src/org/miliconvert/txt2xml/cli/messa
+	ges_fr.properties:
+	* org.miliconvert.txt2xml.cli/txt2xml.cli.product:
+	* org.miliconvert.txt2xml.miliformats/.classpath:
+	* org.miliconvert.txt2xml.miliformats/.project:
+	* org.miliconvert.txt2xml.miliformats/META-INF/MANIFEST.MF:
+	* org.miliconvert.txt2xml.miliformats/build.properties:
+	* org.miliconvert.txt2xml.miliformats/plugin.xml:
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/Activator.java: (Activator), (Activator.Activator),
+	(Activator.start), (Activator.stop), (Activator.getDefault):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/Messages.java: (Messages), (Messages..Messages),
+	(Messages.):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/MiliTransformerFactory.java: (MiliTransformerFactory),
+	(MiliTransformerFactory.MiliTransformerFactory),
+	(MiliTransformerFactory.getDescriptor),
+	(MiliTransformerFactory.getSupportedFormats):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/PipoTransformer.java: (PipoTransformer),
+	(PipoTransformer.transform):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/PipoTransformerDescriptor.java:
+	(PipoTransformerDescriptor),
+	(PipoTransformerDescriptor.createInstance):
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/messages.properties:
+	* org.miliconvert.txt2xml.miliformats/src/org/miliconvert/txt2xml/m
+	iliformats/messages_fr.properties:
+	* org.miliconvert.txt2xml.transform.tests/.classpath:
+	* org.miliconvert.txt2xml.transform.tests/.project:
+	* org.miliconvert.txt2xml.transform.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.txt2xml.transform.tests/build.properties:
+	* org.miliconvert.txt2xml.transform.tests/src/org/miliconvert/txt2x
+	ml/transform/tests/Activator.java: (Activator),
+	(Activator.Activator), (Activator.start), (Activator.stop),
+	(Activator.getDefault):
+	* org.miliconvert.txt2xml.transform.tests/src/org/miliconvert/txt2x
+	ml/transform/tests/TransformerTestCase.java: (TransformerTestCase),
+	(TransformerTestCase.getPipo), (TransformerTestCase.printResult):
+	* org.miliconvert.txt2xml.transform.tests/src/org/miliconvert/txt2x
+	ml/transform/tests/TransformerTests.java: (TransformerTests),
+	(TransformerTests.testTransformer),
+	(TransformerTests.testTransform):
+	* org.miliconvert.txt2xml.transform/.classpath:
+	* org.miliconvert.txt2xml.transform/.project:
+	* org.miliconvert.txt2xml.transform/META-INF/MANIFEST.MF:
+	* org.miliconvert.txt2xml.transform/build.properties:
+	* org.miliconvert.txt2xml.transform/plugin.xml:
+	* org.miliconvert.txt2xml.transform/schema/transformerfactory.exsd:
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/Activator.java: (Activator), (Activator.Activator),
+	(Activator.start), (Activator.stop), (Activator.getDefault):
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/ITransformer.java: (ITransformer):
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/ITransformerDescriptor.java: (ITransformerDescriptor):
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/ITransformerFactory.java: (ITransformerFactory):
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/Messages.java: (Messages), (Messages..Messages),
+	(Messages.):
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/Transformer.java: (Transformer), (Transformer.Transformer),
+	(Transformer.loadTransformerPlugins), (Transformer.transform):
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/Txt2XmlException.java: (Txt2XmlException),
+	(Txt2XmlException.Txt2XmlException):
+	* org.miliconvert.txt2xml.transform/src/org/miliconvert/txt2xml/tra
+	nsform/messages.properties:
+

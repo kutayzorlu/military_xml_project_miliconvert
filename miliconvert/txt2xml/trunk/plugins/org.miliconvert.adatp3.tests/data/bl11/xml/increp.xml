@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><incident_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/increp/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">INCREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<geodetic_datum set-id="geodatum" set-seq="5">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">EUROPEAN 1979</geodetic_datum>
+</geodetic_datum>
+<date_time_group set-id="dtg" set-seq="6">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="7">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_drafter_releaser>
+<map_data_without_geodetic_datum set-id="mapnogd" set-seq="8">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+<map_or_chart_suffix_number alt="A" ff-seq="2" ffirn-fudn="1012-4">16</map_or_chart_suffix_number>
+<group_of_fields>
+<map_or_chart_sheet_number alt="A" ff-seq="3" ffirn-fudn="1012-3">NM32-1ESSEN</map_or_chart_sheet_number>
+<map_or_chart_edition_number alt="A" ff-seq="4" ffirn-fudn="1012-2">3-DMG</map_or_chart_edition_number>
+</group_of_fields>
+</map_data_without_geodetic_datum>
+<map_data_without_geodetic_datum set-id="mapnogd" set-seq="8">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+</map_data_without_geodetic_datum>
+<incident_type set-id="incident" set-seq="9">
+<incident_type>
+<terrorist_bombing alt="A" ff-seq="1" ffirn-fudn="1211-2">TBD</terrorist_bombing>
+</incident_type>
+</incident_type>
+<source_of_information_segment>
+<source_of_information set-id="source" set-seq="10">
+<general_source_type alt="A" ff-seq="1" ffirn-fudn="1310-2">MEDIA</general_source_type>
+<evaluation_of_information alt="A" ff-seq="2" ffirn-fudn="2054-1">
+<evaluation_of_reliability ffirn-fudn="1202-1">E</evaluation_of_reliability>
+<evaluation_of_accuracy ffirn-fudn="1251-1">3</evaluation_of_accuracy>
+</evaluation_of_information>
+</source_of_information>
+<date_time_group_1 set-id="dtg" set-seq="11">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group_1>
+<organization_designator_of_information_source set-id="orgidsce" set-seq="12">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_information_source>
+</source_of_information_segment>
+<incident_date_time_group set-id="incdtg" set-seq="13">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</incident_date_time_group>
+<location_coordinates_and_description set-id="locdesc" set-seq="14">
+<grid_reference_utm>
+<location_utm_10_metre alt="B" ff-seq="1" ffirn-fudn="2086-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">S</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">T</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">H</utm_100000_metre_square_row>
+<utm_10_metre_easting ffirn-fudn="1234-1">1150</utm_10_metre_easting>
+<utm_10_metre_northing ffirn-fudn="1238-1">1410</utm_10_metre_northing>
+</location_utm_10_metre>
+</grid_reference_utm>
+<geographic_area_description alt="A" ff-seq="2" ffirn-fudn="1363-9">TOWN OF 12,000 INHABITANTS</geographic_area_description>
+</location_coordinates_and_description>
+<organization_and_personnel_responsible_segment>
+<organization_and_personnel_responsible set-id="orgpers" set-seq="15">
+<organization_identifier alt="A" ff-seq="1" ffirn-fudn="1380-1">SKINHEADS</organization_identifier>
+<personnel_strength_0_999999 alt="A" ff-seq="2" ffirn-fudn="1044-336">20</personnel_strength_0_999999>
+<name_individual alt="A" ff-seq="3" ffirn-fudn="1022-13">JOE DOE</name_individual>
+<name_individual alt="A" ff-seq="3" ffirn-fudn="1022-13">JIM CROW</name_individual>
+</organization_and_personnel_responsible>
+<direction_and_means_of_travel set-id="travel" set-seq="16">
+<group_of_fields>
+<direction_of_movement>
+<direction_of_movement_from_event alt="A" ff-seq="1" ffirn-fudn="1161-7">ENE</direction_of_movement_from_event>
+</direction_of_movement>
+<means_of_travel alt="A" ff-seq="2" ffirn-fudn="1269-4">TRAM</means_of_travel>
+</group_of_fields>
+</direction_and_means_of_travel>
+</organization_and_personnel_responsible_segment>
+<weapon_used set-id="weapon" set-seq="17">
+<weapon_type_generic alt="A" ff-seq="1" ffirn-fudn="1407-1">PIPEBOMB</weapon_type_generic>
+</weapon_used>
+<general_text set-id="gentext" set-seq="18">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">EFFECT OR DAMAGE CAUSED</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text>
+<general_text_1 set-id="gentext" set-seq="20">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">DESCRIPTION OF INCIDENT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text_1>
+<personnel_casualties set-id="casualty" set-seq="21">
+<group_of_fields>
+<casualty_category alt="A" ff-seq="1" ffirn-fudn="1286-16">INS</casualty_category>
+<number_killed alt="A" ff-seq="2" ffirn-fudn="1044-312">4</number_killed>
+<number_injured alt="A" ff-seq="3" ffirn-fudn="1044-313">12</number_injured>
+</group_of_fields>
+<group_of_fields>
+<casualty_category alt="A" ff-seq="1" ffirn-fudn="1286-16">CIV</casualty_category>
+<number_killed alt="A" ff-seq="2" ffirn-fudn="1044-312">3</number_killed>
+<number_injured alt="A" ff-seq="3" ffirn-fudn="1044-313">10</number_injured>
+</group_of_fields>
+<group_of_fields>
+<casualty_category alt="A" ff-seq="1" ffirn-fudn="1286-16">OWN</casualty_category>
+<number_killed alt="A" ff-seq="2" ffirn-fudn="1044-312">0</number_killed>
+<number_injured alt="A" ff-seq="3" ffirn-fudn="1044-313">4</number_injured>
+</group_of_fields>
+</personnel_casualties>
+<arrest_details_segment>
+<arrest_details set-id="arrest" set-seq="22">
+<date_time_group_of_arrest>
+<dtg_4_digit_year alt="A" ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">08</day>
+<hour_time ffirn-fudn="1001-1">23</hour_time>
+<minute_time ffirn-fudn="1002-1">32</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">NOV</month_name>
+<year ffirn-fudn="1005-7">1998</year>
+</dtg_4_digit_year>
+</date_time_group_of_arrest>
+<geographic_place_name alt="A" ff-seq="2" ffirn-fudn="1022-90">NATO HQ BRUSSELS</geographic_place_name>
+<cause_or_reason alt="A" ff-seq="3" ffirn-fudn="1212-1">DISTURBING THE PEACE</cause_or_reason>
+</arrest_details>
+<person_details set-id="persdetl" set-seq="23">
+<name_individual alt="A" ff-seq="1" ffirn-fudn="1022-13">BETH SHAN</name_individual>
+<age alt="A" ff-seq="2" ffirn-fudn="1044-357">32</age>
+<personnel_gender alt="A" ff-seq="3" ffirn-fudn="1286-2">FEMALE</personnel_gender>
+<personal_identification_number alt="A" ff-seq="4" ffirn-fudn="1012-230">01214-2105-0159</personal_identification_number>
+<address alt="A" ff-seq="5" ffirn-fudn="1614-1">245 8TH ST NY NY</address>
+</person_details>
+</arrest_details_segment>
+</incident_report>

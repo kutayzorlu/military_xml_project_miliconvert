@@ -1,0 +1,4 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;DATA LINK;3-6;Individual;;1.0;In Service;03 Dec 07
+2;LINK TYPE;1-4;Individual;AN IDENTIFIER OF THE SYSTEM BEING USED IN DATA LINK OPERATIONS.;1.0;In Service;03 Dec 07
+3;DATA LINK INPUT;2-4;Individual;;1.0;In Service;03 Dec 07

@@ -1,0 +1,33 @@
+null;null;1.;(2) P ([1] @)
+null;null;2.;(3)F1 A "ACO"
+null;null;3.;(8)F1 A "ACO MANAGEMENT INFORMATION"
+null;null;4.;(10S) QP ([9]F1 = "CHANG" / "ADD")
+null;null;5.;(12) QP ([10]F3 = "POLYARC")
+null;null;6.;(13) QP ([10]F3 = "RADARC")
+null;null;7.;(14) QP ([10]F3 = "TRACK")
+null;null;8.;(15) QP ([10]F3 = "POLYGON")
+null;null;9.;(16) QP ([10]F3 = "CIRCLE")
+null;null;10.;(17) QP ([10]F3 = "CORRIDOR")
+null;null;11.;(18) QP ([10]F3 = "POINT")
+null;null;12.;(19) QP ([10]F3 = "ORBIT")
+null;null;13.;(20) QP ([10]F3 = "LINE")
+null;null;14.;(21) QP ([10]F3 = "POLYARC" / "RADARC" / "POLYGON" / "CIRCLE" / "CORRIDOR" / "POINT" / "ORBIT" / "LINE")
+null;null;15.;(25)F1 A "TRANSIT INSTRUCTIONS"
+null;null;16.;(7)F3 QP (F2 = "AFTER" / "ASOF" / "ASAPAFT" / "ASAPNLT" / "BEFORE" / "NET" / "NLT")
+null;null;17.;(9)F2 QP (F1 = "DELETE")
+null;null;18.;(10)F1 = "ADAREA" (F4 = "ADIZ" / "BZ" / "BDZ" / "WFZ" / "HIDACZ" / "LMEZ" / "LFEZ" / "JEZ" / "JOA" / "KILLZ" / "HIMEZ" / "LOMEZ" / "SHORAD")
+null;null;19.;(10)F1 = "ADOA" (F4 = "APPCOR" / "CCZONE" / "CADA" / "COZ" / "MFEZ" / "MMEZ" / "SAFES" / "SCZ" / "MISARC" / "ISR" / "AOA" / "ADAA" / "ADZ" / "FRAD" / "FIRUB" / "PIRAZ" / "RTF")
+null;null;20.;(10)F1 = "ATC" (F4 = "ARWY" / "CLSA" / "CLSB" / "CLSC" / "CLSD" / "CLSE" / "CLSF" / "CLSG" / "ATSRTE" / "FIR" / "TCA" / "DA" / "PROHIB" / "RA" / "TRSA" / "WARN" / "ADVRTE" / "CONTZN" / "CTA" / "NAVRTE" / "CDR" / "CBA" / "RCA" / "TSA")
+null;null;21.;(10)F1 = "CORRTE" (F4 = "AIRCOR" / "AIRRTE" / "SAAFR" / "TMRR" / "TC" / "SL" / "TR" / "SC" / "MRR")
+null;null;22.;(10)F1 = "PROC" (F4 = "ALTRV" / "CL" / "FSCL" / "GNDAOR" / "FLOT" / "TL" / "FEBA" / "IFFON" / "IFFOFF" / "CFL" / "RFA" / "RFL" / "BNDRY" / "FFA" / "DBSL" / "ACA" / "SAFE")
+null;null;23.;(10)F1 = "REFPT" (F4 = "ACP" / "CP" / "EG" / "HG" / "MG" / "MP" / "BULL" / "SARDOT" / "ISP")
+null;null;24.;(10)F1 = "ROZ" (F4 = "AAR" / "AEW" / "EC" / "LZ" / "ABC" / "DZ" / "PZ" / "RECCE" / "UAV" / "TRNG" / "SEMA" / "SOF" / "CAS" / "CAP" / "ROA")
+null;null;25.;(10)F1 = "SUA" (F4 = "ASCA" / "ACSS" / "FACA" / "NOFLY" / "FARP" / "FOL" / "SSMS" / "ALERTA" / "MOA" / "NFA" / "KILLB")
+null;null;26.;(12)FG @> 1
+null;null;27.;(15)FG @> 2
+null;null;28.;(17)FG @> 1
+null;null;29.;(20)FG @> 1
+null;null;30.;(22)F4 QP (F1 = "INTERVAL")
+null;null;31.;(22)F5 QP (F1 = "INTERVAL")
+null;null;32.;(27)F2 QP (F1 = FF1022-269)
+null;null;33.;(27)F5 QP ((F3 !@) & (F4 !@))

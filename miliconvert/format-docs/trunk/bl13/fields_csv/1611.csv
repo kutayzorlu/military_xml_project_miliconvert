@@ -1,0 +1,4 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;RADIATION HAZARD CATEGORY;1-1;Individual;;1.0;In Service;03 Dec 07
+3;NAVIGATION HAZARD;3-10;Individual;;1.0;In Service;03 Dec 07
+4;TYPE OF WEATHER HAZARD;3-5;Individual;DEFINES THE TYPE OF WEATHER RELATED HAZARD ENROUTE.;1.0;In Service;03 Dec 07

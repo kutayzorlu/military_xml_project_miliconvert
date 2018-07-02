@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineDifudref" table="BASELINE_DIFUDREF" >
+        <cache usage="read-only"/>
+        <composite-id name="identifiant" class="org.miliconvert.adatp3.hibernate.BaselineDifudrefId">
+            <key-property name="di" type="double">
+                <column name="DI" precision="15" scale="5" />
+            </key-property>
+            <key-property name="fudn" type="double">
+                <column name="FUDN" precision="15" scale="5" />
+            </key-property>
+        </composite-id>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

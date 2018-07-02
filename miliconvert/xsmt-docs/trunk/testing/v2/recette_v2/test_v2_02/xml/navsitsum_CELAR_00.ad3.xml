@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<naval_situation_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/navsitsum/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">VALIDATION</exercise_nickname>
+</exercise_identification>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">NAVSITSUM</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">FRABMLR1MAIN</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">0</message_serial_number>
+</message_identifier>
+<effective_date_time_month set-id="efdt" set-seq="5">
+<date_time>
+<day_time_effective alt="A" ff-seq="1" ffirn-fudn="2000-13">
+<day ffirn-fudn="1000-1">01</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">59</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_effective>
+</date_time>
+<effective_month alt="A" ff-seq="2" ffirn-fudn="1004-4">FEB</effective_month>
+</effective_date_time_month>
+<activity_summary_segment>
+<activity_summary set-id="smry" set-seq="6">
+<maritime_activity_type alt="A" ff-seq="1" ffirn-fudn="1299-6">SHIP ACTIVITY</maritime_activity_type>
+<nato_sub_area_name alt="A" ff-seq="2" ffirn-fudn="1022-59">ACTION</nato_sub_area_name>
+</activity_summary>
+</activity_summary_segment>
+</naval_situation_summary>

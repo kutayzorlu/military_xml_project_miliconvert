@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.xsmt.io.tests
+Bundle-SymbolicName: org.miliconvert.xsmt.io.tests
+Bundle-Version: 1.0.0
+Bundle-Activator: org.miliconvert.xsmt.io.tests.Activator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.xsmt.io,
+ org.junit,
+ org.miliconvert.xsmt.tmodel,
+ org.miliconvert.xsmt.gmodel
+Eclipse-LazyStart: true

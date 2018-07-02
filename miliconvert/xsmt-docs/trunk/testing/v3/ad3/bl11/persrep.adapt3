@@ -1,0 +1,30 @@
+EXER/CMX 95/CONTROL//
+OPER/DENY FLIGHT//
+MSGID/PERSREP/SHAPE/15/DEC/PER/5//
+DTG/041405ZAPR1995//
+ORGIDDFT/1-503IN/BN/US/INF/RECCE/ABN/-/2BDE/A//
+ORGID/1-503IN/BN/US/INF/RECCE/ABN/-/2BDE/A//
+1PERSDAT
+/CATEGORY/WARAUTH/EFFSTR /ATTACH/DETACH/DEAD /INCAP/MISS /O-POW/E-POW
+/OFF-MALE/    375/    363/     -/     6/    3/    6/    1/    1/   15
+/OFF-FEM /     87/     88/     -/     -/    1/    -/    -/    -/    -
+/OFF-TOT /    462/    451/     -/     6/    4/    6/    1/    1/   15
+/WO-NCO-M/   1400/   1372/     -/    12/   16/   33/    4/    -/   61
+/WO-NCO-F/    348/    328/     -/     -/    -/    2/    1/    -/    -
+/WO-NCO-T/   1748/   1700/     -/    12/   16/   35/    5/    -/   61
+/ENL-MALE/  14000/  13896/     -/    24/  129/  256/   18/    6/  647
+/ENL-FEM /   3480/   3457/     -/     -/    8/   16/    -/    -/    -
+/ENL-TOT /  17480/  17353/     -/    24/  137/  272/   18/    6/  647
+/OTH-MALE/      -/     36/     -/     -/    -/    -/    -/    -/    -
+/OTH-FEM /      -/     27/     -/     -/    -/    -/    -/    -/    -
+/OTH-TOT /      -/     63/     -/     -/    -/    -/    -/    -/    -
+/NONCBT-M/      -/      -/   781/     -/    -/    -/    -/    -/    -
+/NONCBT-F/      -/      -/   567/     -/    -/    -/    -/    -/    -
+/NONCBT-T/      -/      -/  1348/     -/    -/    -/    -/    -/    -
+/GND-TOT /  19690/  19567/  1348/    42/  157/  313/   24/    7/  723
+//
+DTG/041405ZAPR1995//
+ASSESPER/2/4//
+GENTEXT/OVERALL ASSESSMENT/HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE//

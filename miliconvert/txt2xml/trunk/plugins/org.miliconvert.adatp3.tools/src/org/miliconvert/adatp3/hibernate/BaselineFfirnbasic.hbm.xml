@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineFfirnbasic" table="BASELINE_FFIRNBASIC" >
+       <cache usage="read-only"/>
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="context" type="java.lang.Double">
+            <column name="CONTEXT" precision="15" scale="5" />
+        </property>
+        <property name="ffirn" type="string">
+            <column name="FFIRN" />
+        </property>
+        <property name="natostat" type="string">
+            <column name="NATOSTAT" length="1" />
+        </property>
+        <property name="nmoddate" type="timestamp">
+            <column name="NMODDATE" length="19" />
+        </property>
+        <property name="ffclass" type="string">
+            <column name="FFCLASS" length="2" />
+        </property>
+        <property name="revdate" type="timestamp">
+            <column name="REVDATE" length="19" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="ffirnname" type="string">
+            <column name="FFIRNNAME" length="60" />
+        </property>
+        <property name="typchars" type="string">
+            <column name="TYPCHARS" length="10" />
+        </property>
+        <property name="ffirnmin" type="string">
+            <column name="FFIRNMIN" />
+        </property>
+        <property name="ffirnmax" type="string">
+            <column name="FFIRNMAX" />
+        </property>
+        <property name="origffcl" type="string">
+            <column name="ORIGFFCL" length="10" />
+        </property>
+        <property name="origffirn" type="string">
+            <column name="ORIGFFIRN" />
+        </property>
+        <property name="origdate" type="timestamp">
+            <column name="ORIGDATE" length="19" />
+        </property>
+        <property name="clname" type="string">
+            <column name="CLNAME" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

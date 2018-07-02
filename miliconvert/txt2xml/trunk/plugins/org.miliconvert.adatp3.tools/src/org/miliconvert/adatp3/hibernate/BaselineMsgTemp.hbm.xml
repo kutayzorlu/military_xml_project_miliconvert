@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineMsgTemp" table="BASELINE_MSG_TEMP" >
+        <id name="delIrn" type="string">
+            <column name="DEL_IRN" length="80" />
+            <generator class="assigned" />
+        </id>
+    </class>
+</hibernate-mapping>

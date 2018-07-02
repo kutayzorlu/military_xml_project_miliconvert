@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tmodel xmlns="http://www.miliconvert.org/xsd/xsmt/tmodel.xsd">
+
+  <schemas>
+    <schema id="schema-0" path="test-data/path.xsd"/>
+    <schema id="schema-1" path="test-data/pathl.xsd"/>
+  </schemas>
+
+  <functions>
+    <function id="func-0" 
+	      impl="org.miliconvert.xsmt.functions.core.Replace"/>
+    <function id="func-1" 
+	      impl="org.miliconvert.xsmt.functions.core.Constant">
+      <property name="value" value="/"/>
+      <property name="type" value="string"/>
+    </function>
+    <function id="func-2" 
+	      impl="org.miliconvert.xsmt.functions.core.Constant">
+      <property name="value" value="\"/>
+      <property name="type" value="string"/>
+    </function>
+  </functions>
+
+  <links>
+    
+    <link start="fid:func-2" end="fid:func-0,0"/>
+    <link start="fid:func-1" end="fid:func-0,1"/>
+    <link start="xsd:schema-0:/win32/path@value" end="fid:func-0,2"/>
+    <link start="fid:func-0" end="xsd:schema-1:/linux/path@value"/>
+    <link start="xsd:schema-0:/win32/path" end="xsd:schema-1:/linux/path"/>
+    <link start="xsd:schema-0:/win32" end="xsd:schema-1:/linux"/>
+    
+  </links>
+
+</tmodel>

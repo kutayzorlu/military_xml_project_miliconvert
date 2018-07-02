@@ -1,0 +1,179 @@
+
+package org.mpgt.rules.ato;
+
+
+expander mpgt-sets-ato.dsl
+
+import org.miliconvert.xsmt.mpgt.rules.AtoSetRules;
+import org.miliconvert.xsmt.mpgt.rules.CommonSetRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+
+rule R_POC_39_0
+when
+		Dans le set  POC avec la position 39
+then
+		LIGNE = 24  
+		Règle A_POCGROUPE
+end
+
+rule R_HEADING_37_0
+when
+		Dans le set  HEADING avec la position 37
+then
+		Assistant messagerie
+end
+
+
+rule R_TASKUNIT_40_0
+when
+		Dans le set  TASKUNIT avec la position 40
+then
+		Règle A_TASKUNIT
+end
+
+
+rule R_APERIOD_23_0
+when
+		Dans le set  APERIOD avec la position 23
+then
+		LIGNE = 63
+end
+
+
+rule R_GENTEXT_9_0
+when
+		Dans le set  GENTEXT avec la position 9
+then
+		Assistant messagerie
+end
+
+rule R_HEADING_8_0
+when
+		Dans le set  HEADING avec la position 8
+then
+		Assistant messagerie
+end
+
+rule R_POLYGON_19_0
+when
+		Dans le set  POLYGON avec la position 19
+then
+		LIGNE = 63
+end
+
+rule R_ADAREA_17_0
+when
+		Dans le set  ADAREA avec la position 17
+then
+		LIGNE = 24 
+		Règle A_ZONEDEFENSE
+end
+
+
+rule R_POC_14_0
+when
+		Dans le set  POC avec la position 14
+then
+		LIGNE = 24 
+		VI EstObjet{MPGT.AssociationPersonnePlanifOperation3D}#MPGT.AssociationPersonnePlanifOperation3D.Categorie = 6 
+end
+
+
+rule R_7ALLOT_12_0
+when
+		Dans le set  7ALLOT avec la position 12
+then
+		Règle A_ALLOC
+end
+
+
+rule R_CIRCLE_20_0
+when
+		Dans le set  CIRCLE avec la position 20
+then
+		LIGNE = 63
+end
+
+
+
+
+rule R_GTGTAREA_84_0
+when
+		Dans le set  GTGTAREA avec la position 84
+then
+		LIGNE = 254
+		Règle ALIENOBJAERIEN
+end
+
+rule R_WPNSPEC_85_0
+when
+		Dans le set  WPNSPEC avec la position 85
+then
+		LIGNE = 254
+end
+
+
+rule R_GENTEXT_121_0
+when
+		Dans le set  GENTEXT avec la position 121
+then
+		Assistant messagerie
+end
+
+
+rule R_HEADING_120_0
+when
+		Dans le set  HEADING avec la position 120
+then
+		Assistant messagerie
+end
+
+
+rule R_GTGTLOC_72_0
+when
+		Dans le set  GTGTLOC avec la position 72
+then
+		LIGNE = 254 
+end
+
+
+rule R_AMSNDAT_58_0
+when
+		Dans le set  AMSNDAT avec la position 58
+then
+		LIGNE = 24 
+		Règle A_MISSIONAIR
+end
+
+rule R_ROUTE_64_0
+when
+		Dans le set  ROUTE avec la position 64
+then
+		NANA
+end
+
+
+rule R_SAWPNCTL_48_0
+when
+		Dans le set  SAWPNCTL avec la position 48
+then
+		LIGNE = 203 
+end
+
+rule R_SAWREADY_47_0
+when
+		Dans le set  SAWREADY avec la position 47
+then
+		LIGNE = 203
+end
+
+rule R_SAWMSN_46_0
+when
+		Dans le set  SAWMSN avec la position 46
+then
+		LIGNE = 24
+		Règle A_MISSIONSOLAIR
+		Règle A_FORCEEXE1
+end

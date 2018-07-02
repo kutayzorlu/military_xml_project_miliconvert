@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineAccessright" table="BASELINE_ACCESSRIGHT" >
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="USERNAME" length="30" />
+        </property>
+        <property name="class_" type="java.lang.Double">
+            <column name="CLASS" precision="15" scale="5" />
+        </property>
+        <property name="right" type="string">
+            <column name="RIGHT" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.xsmt.tmodel
+Bundle-SymbolicName: org.miliconvert.xsmt.tmodel;singleton:=true
+Bundle-Version: 1.2.0.qualifier
+Bundle-Activator: org.miliconvert.xsmt.tmodel.TModelActivator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.xsd,
+ org.eclipse.core.runtime,
+ org.miliconvert.xsmt.utils,
+ org.miliconvert.xsmt.xalan
+Eclipse-BuddyPolicy: registered
+Eclipse-RegisterBuddy: org.miliconvert.xsmt.xalan
+Export-Package: org.miliconvert.xsmt.tmodel;uses:="org.miliconvert.xsmt.tmodel.functions,org.w3c.dom",
+ org.miliconvert.xsmt.tmodel.functions;uses:="org.miliconvert.xsmt.tmodel",
+ org.miliconvert.xsmt.tmodel.tree;uses:="javax.swing.tree,org.miliconvert.xsmt.tmodel,javax.swing.event"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

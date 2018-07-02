@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema">
+<Unite>
+<CTE>_zTM8kAZ9Ed-YMo7jTHGGjQ</CTE>
+<EstSujet_AssociationEntiteOrgPersonne>
+<refCTE>_zTMVgAZ9Ed-YMo7jTHGGjQ</refCTE>
+</EstSujet_AssociationEntiteOrgPersonne>
+</Unite>
+<AssociationEntiteOrgPersonne>
+<CTE>_zTMVgAZ9Ed-YMo7jTHGGjQ</CTE>
+<APourObjet_Personne/>
+<APourSujet_EntiteOrganisationnelle>
+<refCTE>_zTM8kAZ9Ed-YMo7jTHGGjQ</refCTE>
+</APourSujet_EntiteOrganisationnelle>
+</AssociationEntiteOrgPersonne>
+<AssociationInstanceObjetAdresse>
+<CTE>_zTWGgAZ9Ed-YMo7jTHGGjQ</CTE>
+<AssocieCommeObjet_Adresse>
+<refCTE>_zTX7sAZ9Ed-YMo7jTHGGjQ</refCTE>
+</AssocieCommeObjet_Adresse>
+<AssocieCommeSujet_InstanceObjet/>
+</AssociationInstanceObjetAdresse>
+<AutreAdresse>
+<Libelle>235.000MHZ</Libelle>
+<CTE>_zTX7sAZ9Ed-YMo7jTHGGjQ</CTE>
+<EstAdresse_AssociationInstanceObjetAdresse>
+<refCTE>_zTWGgAZ9Ed-YMo7jTHGGjQ</refCTE>
+</EstAdresse_AssociationInstanceObjetAdresse>
+</AutreAdresse>
+</schema:MPGT_Message>

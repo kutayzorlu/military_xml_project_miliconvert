@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineMsgbasic" table="BASELINE_MSGBASIC" >
+        <cache usage="read-only"/>
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="version" type="string">
+            <column name="VERSION" length="10" />
+        </property>
+        <property name="context" type="java.lang.Double">
+            <column name="CONTEXT" precision="15" scale="5" />
+        </property>
+        <property name="msgno" type="string">
+            <column name="MSGNO" length="6" />
+        </property>
+        <property name="natostat" type="string">
+            <column name="NATOSTAT" length="1" />
+        </property>
+        <property name="nmoddate" type="timestamp">
+            <column name="NMODDATE" length="19" />
+        </property>
+        <property name="msgclass" type="string">
+            <column name="MSGCLASS" length="2" />
+        </property>
+        <property name="revdate" type="timestamp">
+            <column name="REVDATE" length="19" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="msgname" type="string">
+            <column name="MSGNAME" length="100" />
+        </property>
+        <property name="mnclass" type="string">
+            <column name="MNCLASS" length="2" />
+        </property>
+        <property name="msgid" type="string">
+            <column name="MSGID" length="20" />
+        </property>
+        <property name="miclass" type="string">
+            <column name="MICLASS" length="2" />
+        </property>
+        <property name="operuse" type="string">
+            <column name="OPERUSE" length="1" />
+        </property>
+        <property name="origmsgcl" type="string">
+            <column name="ORIGMSGCL" length="10" />
+        </property>
+        <property name="origmsgno" type="string">
+            <column name="ORIGMSGNO" length="6" />
+        </property>
+        <property name="origdate" type="timestamp">
+            <column name="ORIGDATE" length="19" />
+        </property>
+        <property name="clname" type="string">
+            <column name="CLNAME" length="10" />
+        </property>
+        <property name="ufrevdate" type="timestamp">
+            <column name="UFREVDATE" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.4"?>
+
+<product name="schema gen product" id="org.miliconvert.adatp3.tools.schemagenproduct" application="org.miliconvert.adatp3.tools.schemagenapp" useFeatures="false">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>/home/matthieu/svn/miliconvert/format-docs/trunk/nav_sit_sum/csv/navsitsum.csv /tmp  /home/matthieu/svn/miliconvert/format-docs/trunk/sets/csv  /home/matthieu/svn/miliconvert/format-docs/trunk/fields/csv naval_situation_summary</programArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="javax.xml"/>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.xerces"/>
+      <plugin id="org.apache.xml.resolver"/>
+      <plugin id="org.apache.xml.serializer"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.transforms.hook" fragment="true"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.update.configurator"/>
+      <plugin id="org.miliconvert.adatp3.tools"/>
+      <plugin id="org.miliconvert.xsmt.xalan"/>
+   </plugins>
+
+</product>

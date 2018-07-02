@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactreport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactreport.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">-</command>
+<message_identifier ff-seq="2">GOLD</message_identifier>
+<message_serial_no ff-seq="3">0001</message_serial_no>
+<month ff-seq="4">FEB</month>
+</message_identification>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T0001</track_number>
+<class-name ff-seq="2">UNEQUATED-JU1</class-name>
+<category ff-seq="5">UNK</category>
+<force_code ff-seq="11">01</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">0150</average_speed>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">170714Z0</date-time_group>
+<month ff-seq="2">FEB</month>
+<latitude_of_center ff-seq="3">1848N1</latitude_of_center>
+<longitude_of_center ff-seq="4">07603E6</longitude_of_center>
+<course ff-seq="9">180T</course>
+<speed ff-seq="10">0150K</speed>
+<altitudedepth ff-seq="11">ALT005</altitudedepth>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</contactreport>

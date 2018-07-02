@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><personnel_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/persrep/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">PERSREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<date_time_group set-id="dtg" set-seq="5">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="6">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_drafter_releaser>
+<organization_designator_segment>
+<organization_designator set-id="orgid" set-seq="7">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">OFF-MALE</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">375</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">363</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH">6</number_detached>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">3</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">6</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">1</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW">1</number_of_own_pow>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW">15</number_of_enemy_pow>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">OFF-FEM</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">87</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">88</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">1</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP" xsi:nil="true"/>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS" xsi:nil="true"/>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">OFF-TOT</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">462</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">451</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH">6</number_detached>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">4</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">6</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">1</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW">1</number_of_own_pow>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW">15</number_of_enemy_pow>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">WO-NCO-M</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">1400</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">1372</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH">12</number_detached>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">16</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">33</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">4</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW">61</number_of_enemy_pow>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">WO-NCO-F</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">348</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">328</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD" xsi:nil="true"/>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">2</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">1</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">WO-NCO-T</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">1748</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">1700</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH">12</number_detached>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">16</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">35</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">5</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW">61</number_of_enemy_pow>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">ENL-MALE</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">14000</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">13896</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH">24</number_detached>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">129</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">256</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">18</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW">6</number_of_own_pow>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW">647</number_of_enemy_pow>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">ENL-FEM</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">3480</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">3457</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">8</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">16</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS" xsi:nil="true"/>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">ENL-TOT</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">17480</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">17353</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH">24</number_detached>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">137</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">272</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">18</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW">6</number_of_own_pow>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW">647</number_of_enemy_pow>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">OTH-MALE</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH" xsi:nil="true"/>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">36</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD" xsi:nil="true"/>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP" xsi:nil="true"/>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS" xsi:nil="true"/>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">OTH-FEM</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH" xsi:nil="true"/>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">27</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD" xsi:nil="true"/>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP" xsi:nil="true"/>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS" xsi:nil="true"/>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">OTH-TOT</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH" xsi:nil="true"/>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">63</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH" xsi:nil="true"/>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD" xsi:nil="true"/>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP" xsi:nil="true"/>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS" xsi:nil="true"/>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">NONCBT-M</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH" xsi:nil="true"/>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR" xsi:nil="true"/>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH">781</number_attached>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD" xsi:nil="true"/>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP" xsi:nil="true"/>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS" xsi:nil="true"/>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">NONCBT-F</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH" xsi:nil="true"/>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR" xsi:nil="true"/>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH">567</number_attached>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD" xsi:nil="true"/>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP" xsi:nil="true"/>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS" xsi:nil="true"/>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">NONCBT-T</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH" xsi:nil="true"/>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR" xsi:nil="true"/>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH">1348</number_attached>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH" xsi:nil="true"/>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD" xsi:nil="true"/>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP" xsi:nil="true"/>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS" xsi:nil="true"/>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW" xsi:nil="true"/>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW" xsi:nil="true"/>
+</personnel_data>
+<personnel_data set-id="1persdat" set-seq="8">
+<personnel_category_and_gender alt="A " ff-seq="1" ffirn-fudn="1286-9" header="CATEGORY">GND-TOT</personnel_category_and_gender>
+<number_authorized alt="A " ff-seq="2" ffirn-fudn="1044-257" header="WARAUTH">19690</number_authorized>
+<effective_strength alt="A " ff-seq="3" ffirn-fudn="1044-258" header="EFFSTR">19567</effective_strength>
+<number_attached alt="A " ff-seq="4" ffirn-fudn="1044-259" header="ATTACH">1348</number_attached>
+<number_detached alt="A " ff-seq="5" ffirn-fudn="1044-260" header="DETACH">42</number_detached>
+<number_of_dead alt="A " ff-seq="6" ffirn-fudn="1044-261" header="DEAD">157</number_of_dead>
+<number_of_incapacitated alt="A " ff-seq="7" ffirn-fudn="1044-262" header="INCAP">313</number_of_incapacitated>
+<number_of_missing alt="A " ff-seq="8" ffirn-fudn="1044-263" header="MISS">24</number_of_missing>
+<number_of_own_pow alt="A " ff-seq="9" ffirn-fudn="1044-264" header="O-POW">7</number_of_own_pow>
+<number_of_enemy_pow alt="A " ff-seq="10" ffirn-fudn="1044-265" header="E-POW">723</number_of_enemy_pow>
+</personnel_data>
+<date_time_group_1 set-id="dtg" set-seq="9">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group_1>
+<personnel_assessment set-id="assesper" set-seq="10">
+<personnel_strength_rating alt="A" ff-seq="1" ffirn-fudn="1298-6">2</personnel_strength_rating>
+<manpower_fatigue_rating alt="A" ff-seq="2" ffirn-fudn="1298-5">4</manpower_fatigue_rating>
+</personnel_assessment>
+</organization_designator_segment>
+<general_text set-id="gentext" set-seq="11">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">OVERALL ASSESSMENT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text>
+</personnel_report>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         id="Txt2Xml"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.miliconvert.txt2xml.cli.Txt2Xml">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="Xml2Txt"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.miliconvert.txt2xml.cli.Xml2Txt">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="txt2xml_cli"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.miliconvert.txt2xml.cli.Txt2Xml"
+            name="Txt2Xml Command Line interface">
+         <property
+               name="appName"
+               value="Txt2Xml Command Line interface">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

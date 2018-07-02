@@ -1,0 +1,372 @@
+"Ligne","N° Set","Type élément","Segment","Ensemble","Zone","SS Zone","FFIRN/FUDN","Card.","Longueur","Libellé","Entité MPGT de départ {Entité de l'attribut}","Entité MPGT instanciée {Entité de l'attribut}","Attribut MPGT","Action Analyse","Action Synthèse","Commentaire",
+1,,"MESSAGE",,,,,,,,,,,,,,,
+2,1,"SET",,"EXER",,,,"O - 1",,"EXERCISE IDENTIFICATION","DOCUMENT_XML",,,,,,
+3,,,,,,,,,,,,,,,,,
+4,2,"SET",,"OPER",,,,"C - 1",,"OPERATION CODEWORD","DOCUMENT_XML",,,,,,
+5,,,,,,,,,,,,,,,,,
+6,3,"SET",,"MSGID",,,,"M - 1",,"MESSAGE IDENTIFIER","DOCUMENT_XML",,,,,,
+7,,,,,,,,,,,,,,,,,
+8,4,"SET",,"REF",,,,"O - N",,"REFERENCE","DOCUMENT_XML",,,,,,
+9,,,,,,,,,,,,,,,,,
+10,5,"SET",,"EFDT",,,,"M - 1",,"EFFECTIVE DATE-TIME-MONTH","DOCUMENT_XML",,,,,,
+11,,,,,,,,,,,,,,,,,
+12,6,"SEGMENT Niv 1","SMRY",,,,,"M - N",,"ACTIVITY SUMMARY","_","_","_",,,"Description par type d'activité et par autorité de contrôle opérationnel : des forces navales, des situations des unités navales, des situations des forces amphibies, ",
+13,6,"SET","SMRY","SMRY",,,,"M - 1",,"ACTIVITY SUMMARY","MPGT.AutreAction","MPGT.AutreAction",,"Règle A_SMRY","Règle S_SMRY",,
+14,6,"FIELD","SMRY","SMRY","1",,"1299/006","M - 1","10..13","MARITIME ACTIVITY TYPE","MPGT.AutreAction","MPGT.AutreAction","MPIA.Action.SousActivite","VI MPIA.Action.Categorie = {2|PLAN|Plan} ET VI MPIA.Action.Activite = {10009|NOS|Not otherwise specified} ET CD=(AD3_1299_6;MPGT_ActionSousActivite)","CD=(MPGT_ActionSousActivite;AD3_1299_6)","La zone 1 du set SMRY doit être renseignée",
+15,6,"FIELD","SMRY","SMRY","2",,"1022/059","M - 1","1..50","NATO SUB AREA NAME","MPGT.AutreAction","MPIA.AutreElementControle","APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#MPIA.RacineOperationnelle.Nom","VI APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#APourType{MPGT.AssociationEltCtrlTypeEltCtrl}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.Categorie = ""MARINE"" (Marine)
+VI APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#APourType{MPGT.AssociationEltCtrlTypeEltCtrl}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.SousCategorie = ""GENARE"" (General area)",,,
+16,7,"SEGMENT Niv 2","CONTR",,,,,"0 - N",,"OPERATIONAL CONTROL","_","_","_","Règle A_CONTR","Règle S_CONTR",,
+17,7,"SET Niv 2","CONTR","CONTR",,,,"M - 1",,"OPERATIONAL CONTROL","MPIA.AutreElementControle","_",,"LIGNE = 15",,"Description de l'autorité de contrôle opérationnel pour la zone maritime courante","I1"
+18,7,"FIELD","CONTR","CONTR","1",,,"M - 1",,"OPERATIONAL CONTROL AUTHORITY","_","_","_",,,,
+600,7,"FIELD","CONTR","CONTR","1A",,"1028/008","M - 1","1..20","OPERATIONAL CONTROL AUTHORITY","MPIA.AutreElementControle","MPIA.StructureOrganisee","EstObjet{MPGT.AssociationEntiteOrgEltCtrl}#APourSujet{MPIA.StructureOrganisee}#MPIA.RacineOperationnelle.Nom","VI MPIA.AssociationEntiteOrgEltCtrl.Categorie = {10|CONTRL|Controls}","VC MPIA.AssociationEntiteOrgEltCtrl.Categorie = {10|CONTRL|Controls}","L'autorité de contrôle est de type structure organisée",
+19,7,"COMP. FIELD","CONTR","CONTR","1B",,"2141/010","M - 1","7..9","DELEGATED CONTROL UIC","MPIA.AutreElementControle","MPIA.StructureOrganisee","EstObjet{MPGT.AssociationEntiteOrgEltCtrl}#APourSujet{MPIA.StructureOrganisee}#MPGT.EntiteOrganisationnelle.CodeIdentification","VI MPIA.AssociationEntiteOrgEltCtrl.Categorie = {10|CONTRL|Controls}","VC MPIA.AssociationEntiteOrgEltCtrl.Categorie = {10|CONTRL|Controls}","L'autorité de contrôle est de type structure organisée",
+20,7,"COMP. FIELD","CONTR","CONTR","1C",,"2143/002","M - 1","3..15","NAVAL TASK DESIGNATOR","_","_","_",,,"L'autorité de contrôle est de type Articulation marine",
+601,7,"FIELD","CONTR","CONTR","1C","1","1045/003 ","M - 1","2..3","NAVAL LEVEL OF ECHELON ","MPIA.AutreElementControle","MPIA.ArticulationMarine","EstObjet{MPGT.AssociationEntiteOrgEltCtrl}#APourSujet{MPIA.EntiteOrganisationnelle}#EstEntitePlusHautNiveau{MPIA.ArticulationMarine}#MPIA.ArticulationMarine.Categorie","VI MPIA.AssociationEntiteOrgEltCtrl.Categorie = {10|CONTRL|Controls}","CD=(MPGT_ArticulationMarineCategorie;AD3_1045_3) ET VC MPIA.AssociationEntiteOrgEltCtrl.Categorie = {10|CONTRL|Controls}","Création d'une entité organisationnelle ""entité de plus haut niveau"" de l'articulation marine",
+602,7,"FIELD","CONTR","CONTR","1C","2","1012/104 ","M - 1","1..12","NAVAL ORGANIZATION NUMERIC DESIGNATOR ","MPIA.AutreElementControle","MPIA.ArticulationMarine","EstObjet{MPGT.AssociationEntiteOrgEltCtrl}#APourSujet{MPIA.EntiteOrganisationnelle}#EstEntitePlusHautNiveau{MPIA.ArticulationMarine}#MPGT.Articulation.Nom",,,,
+21,8,"SEGMENT Niv 3","NFOR",,,,,"0 - N",,"NAVAL FORCE","_","_","_","Règle A_NFOR","Règle S_NFOR","Description des forces navales de surface dépendantes de l'autorité de contrôle courante","I11 (segments répétables dans le I1)"
+22,8,"SET Niv 3","NFOR","NFOR",,,,"M - 1",,"NAVAL FORCE","MPIA.StructureOrganisee","MPIA.ArticulationMarine","EstObjet{MPGT.AssociationEntiteOrgEntiteOrg}#APourSujet{MPIA.EntiteOrganisationnelle}#EstEntitePlusHautNiveau{MPIA.ArticulationMarine}","LIGNE = 18 ET VI MPIA.AssociationEntiteOrgEntiteOrg.Categorie = {7|CMDCTL|Command and control} ET VI MPIA.AssociationInstanceObjetInstanceObjet.SousCategorie = {5|TACCNT|Has tactical control of}","LIGNE = 18","Cas 1 : Cas autorité de contrôle est une organisation",
+603,8,"SET Niv 3","NFOR","NFOR",,,,"M - 1",,"NAVAL FORCE","MPIA.ArticulationMarine","MPIA.ArticulationMarine","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstObjet{MPGT.AssociationEntiteOrgEntiteOrg}#APourSujet{MPIA.EntiteOrganisationnelle}#EstEntitePlusHautNiveau{MPIA.ArticulationMarine}","LIGNE = 20 ET VI MPIA.AssociationEntiteOrgEntiteOrg.Categorie = {7|CMDCTL|Command and control} ET VI MPIA.AssociationInstanceObjetInstanceObjet.SousCategorie = {5|TACCNT|Has tactical control of}","LIGNE = 20","Cas 2 : Cas autorité de contrôle est une force navale",
+23,8,"FIELD","NFOR","NFOR","1",,,"M - 1",,"NAVAL DESIGNATION","_","_","_",,,,
+24,8,"COMP. FIELD","NFOR","NFOR","1A",,"2143/002","M - 1","3..15","NAVAL TASK DESIGNATOR","_","_","_",,,,
+25,8,"FIELD","NFOR","NFOR","1A","1","1045/003 ","M - 1","2..3","NAVAL LEVEL OF ECHELON ","MPIA.ArticulationMarine","MPIA.ArticulationMarine","MPIA.ArticulationMarine.Categorie","CD=(AD3_1045_3;MPGT_ArticulationMarineCategorie)","CD=(MPGT_ArticulationMarineCategorie;AD3_1045_3)",,
+26,8,"FIELD","NFOR","NFOR","1A","2","1012/104 ","M - 1","1..12","NAVAL ORGANIZATION NUMERIC DESIGNATOR ","MPIA.ArticulationMarine","MPIA.ArticulationMarine{MPIA.Articulation}","MPGT.Articulation.Nom",,,,
+27,8,"FIELD","NFOR","NFOR","1B",,"1022/048","M - 1","1..38","UNIT NAME","MPIA.ArticulationMarine","MPIA.StructureOrganisee","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#MPIA.RacineOperationnelle.Nom","VI MPIA.ArticulationMarine.Categorie = {16|NAVFMN|Naval formation}","VC MPIA.ArticulationMarine.Categorie = {16|NAVFMN|Naval formation}",,
+28,8,,"NFOR","NFOR","2",,,"M - 1",,"NAVAL DESIGNATION","_","_","_",,"Règle S_LOCNFOR",,
+29,8,"COMP. FIELD","NFOR","NFOR","2A",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","MPIA.ArticulationMarine","MPGT.LocalisationGeometrique2D","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""MINUTE""
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""MINUTE""","Conversion la valeur de LAT/LONG en une valeur exprimée en minute
+S_ChecksumCoordonnées","Cet alternat est privilégié en synthèse",
+30,8,"COMP. FIELD","NFOR","NFOR","2B",,"2044/001","M - 1","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","MPIA.ArticulationMarine","MPGT.LocalisationGeometrique2D","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""SECOND""
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""SECOND""","NSYN /ALTA",,
+31,8,"FIELD","NFOR","NFOR","2C",,"1022/170","M - 1","1..20","PLACE NAME","MPIA.ArticulationMarine","MPGT.LocalisationIndefinie","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu",,,,
+32,8,,"NFOR","NFOR","3",,,"M - 1",,"TIME AT LOCATION","_","_","_",,,,
+33,8,"COMP. FIELD","NFOR","NFOR","3A",,"2013/007","M - 1","8..8","DAY-TIME OF POSITION, VERIFIED","MPIA.ArticulationMarine","MPIA.Rapport","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum
+Règle A_GdhFormatJour
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)",,,
+34,8,"COMP. FIELD","NFOR","NFOR","3B",,"2032/001","M - 1","11..11","DATE-TIME MONTH, VERIFIED","MPIA.ArticulationMarine","MPIA.Rapport","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum
+Règle A_GdhFormatMois
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Cet alternat est privilégié en synthèse",
+35,8,"COMP. FIELD","NFOR","NFOR","3C",,"2067/004","M - 1","5..5","LOCATING DAY-MONTH NAME","MPIA.ArticulationMarine","MPIA.Rapport","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Règle A_GdhFormatJourMois
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)",,,
+36,8,"FIELD","NFOR","NFOR","4",,,"M - 1",,"SPEED OR MOVEMENT","_","_","_",,,,
+37,8,"COMP. FIELD","NFOR","NFOR","4A",,"2025/001","M - 1","5..6","COURSE IN DEGREES TRUE AND SPEED IN KNOTS","_","_","_",,,,
+38,8,"SS ZONE","NFOR","NFOR","4A","1","1439/004","-","3..3","COURSE IN DEGREES, TRUE","MPIA.ArticulationMarine","MPIA.AssocInstanceObjetLocalisation","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#MPIA.AssocInstanceObjetLocalisation.AngleMouvement",,,,
+39,8,"SS ZONE","NFOR","NFOR","4A","2","1025/002","-","1..1","HYPHEN","NON_TRACE","NON_TRACE","NON_TRACE",,"Valeur par défaut ""-""",,
+40,8,"SS ZONE","NFOR","NFOR","4A","3","1061/004","-","1..2","UNIT SPEED IN KNOTS","MPIA.ArticulationMarine","MPIA.AssocInstanceObjetLocalisation","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#MPIA.AssocInstanceObjetLocalisation.Vitesse","Règle A_ConversionVitesseKnots","Règle S_ConversionVitesseKnots",,
+41,8,"FIELD","NFOR","NFOR","4B",,"1341/002","M - 1","3..6","NAVAL FORCE MOVEMENT STATUS","MPIA.ArticulationMarine","MPIA.ArticulationMarine","MPIA.ArticulationMarine.EtatMouvement","CD=(AD3_1041_2;MPGT_EtatMouvement)","CD=(MPGT_EtatMouvement;AD3_1041_2)",,
+42,9,"SET Niv 3","NFOR","SHIPS",,,,"O - N",,"SHIP NAME","MPIA.ArticulationMarine","MPIA.Batiment","APourBatimentsParticipants{MPIA.Batiment}","LIGNE = 25 ET Règle A_SHIPS ET VI MPIA.ArticulationMarine.Categorie = {5|NOS|Not otherwise specified}","NSYN
+On utilise le set 1SHIPS","Situation des bâtiments : répartition des bâtiments par force navale.
+Le set SHIP permet décrire des Bâtiments associés à la Force Navale et/ou des Equipements (de type bâtiment de surface) faisant partie de la composition de la Force Navale.
+Le cas 1, décrit ci-après, correspond à la description d'un bâtiment (car la zone 3 SHIP IDENTIFICATION est renseigné par l'alternat A SHIP NAME).","I111 (premier bâtiment de la force I11, le tous dans I1)
+I111 est répétable dans I11"
+43,9,"FIELD","NFOR","SHIPS","1",,"1026/003","M - 1","2..2","FLAG","MPIA.ArticulationMarine",,"APourBatimentsParticipants{MPIA.Batiment}#MPGT.Materiel.Nationalite","Règle A_ShipsFlag ET VI MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by} ET CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)","CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_3) ET VC MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by}",,
+44,9,"FIELD","NFOR","SHIPS","1",,"2141/001","M - 1","7..9","UNIT IDENTIFICATION CODE (UIC)","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN","Le code UIC est un code attribué à un bâtiment ou un groupe de bâtiments dans le cadre d’une force navale constituée pour un exercice ou une opération. Ce code identifie le(s) bâtiment(s) dans le cadre de l’articulation opérationnelle de cette force (par analogie à un ordre de bataille dans le domaine Terre). L’association de ce code aux bâtiments a pour durée de vie la durée de vie de la force navale dans le cadre de l’exercice ou de l’opération; il n’a pas vocation à identifier les bâtiments de façon permanente.
+Au niveau du MPGT, il n'y a pas de code UIC attribué à un bâtiment ou à un type de bâtiment.",
+45,9,"REPET. GROUP","NFOR","SHIPS","-",,"-","-",,"-","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface","APourBatimentsParticipants{MPIA.Batiment}#APourType{MPGT.AssociationMaterielTypeMateriel}#AssocieCommeType{MPIA.TypeBatimentSurface}","VI MPIA.ArticulationMarine.Categorie = ""NOS""",,,
+46,9,"COMP. FIELD","NFOR","SHIPS","2",,"2047/001","M - N","4..8","SHIP TYPE IDENTIFIER","_","_","_",,,,
+47,9,"SS ZONE","NFOR","SHIPS","2","1","1036/003","M - 1","2..4","NAVAL SHIP TYPE","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface","APourBatimentsParticipants{MPIA.Batiment}#APourType{MPGT.AssociationMaterielTypeMateriel}#AssocieCommeType{MPIA.TypeBatiment}#MPIA.TypeBatimentSurface.Categorie","LIGNE = 45 ET CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)","CD=(MPGT_TypeBatimentSurfaceCategorie;AD3_1036_3)",,
+48,9,"SS ZONE","NFOR","SHIPS","2","2","1025/002","M - 1","1..1","HYPHEN","NON_TRACE","NON_TRACE","NON_TRACE",,"Valeur par défaut ""-""",,
+49,9,"SS ZONE","NFOR","SHIPS","2","3","1246/009","M - 1","1..3","STANAG 1166 SUFFIX","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface{MPIA.TypeBatiment}","APourBatimentsParticipants{MPIA.Batiment}#APourType{MPGT.AssociationMaterielTypeMateriel}#AssocieCommeType{MPIA.TypeBatiment}#MPIA.TypeBatiment.Complements","LIGNE = 45",,,
+604,9,"FIELD","NFOR","SHIPS","3",,,"M - N",,"SHIP IDENTIFICATION","_","_","_",,,,
+50,9,"FIELD","NFOR","SHIPS","3A",,"1022/049","M - 1","1..38","SHIP NAME","MPIA.ArticulationMarine","MPIA.Batiment{MPIA.RacineOperationnelle}","APourBatimentsParticipants{MPIA.Batiment}#MPIA.RacineOperationnelle.Nom","LIGNE = 45",,"Correspond au cas 1 : nom du bâtiment",
+51,9,"FIELD","NFOR","SHIPS","3B",,"1044/076","M - 1","1..2","NUMBER OF SHIPS","_","_","_","Si le sous champs est renseigné Alors ERREUR et cette instance du set est à rejeter",,"Correspond au cas 2 : nombre de bâtiments composant la force navale",
+500,9,"SET Niv 3","NFOR","SHIPS",,,,"O - N",,"SHIP NAME","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatimentSurface}","LIGNE = 25 ET Règle A_SHIPS ET Règle A_SHIPS ET VI MPIA.ArticulationMarine.Categorie = {5|NOS|Not otherwise specified}","NSYN
+On utilise le set 1SHIPS","Le set 1SHIPS (comme le set SHIPS) permet décrire des Bâtiments associés à la Force Navale et/ou des Equipements (de type Batiment) faisant partie de la dotation de la Force Navale.
+Le cas 2, décrit ci-après, correspond à la description d'un type de bâtiment (car la zone 3 SHIP IDENTIFICATION est renseigné par l'alternat B NUMBER OF SHIPS)",
+501,9,"FIELD","NFOR","SHIPS","1",,"1026/003","M - 1","2..2","FLAG","MPIA.ArticulationMarine","MPIA.EntitePolitique{MPIA.Affiliation}","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatimentSurface}#EstAffilieA{MPIA.AssociationAffiliationType}#ConcerneAffiliation{MPIA.EntitePolitique}#MPIA.EntitePolitique.Trigramme","Règle A_ShipsTypeFlag ET VI MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by} ET CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)","CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_3) ET VC MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by}","Attribution de nationalité courante pour le type de bâtiment défini à la ligne 503",
+502,9,"FIELD","NFOR","SHIPS","1",,"2141/001","M - 1","7..9","UNIT IDENTIFICATION CODE (UIC)","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN","Le code UIC est un code attribué à un bâtiment ou un groupe de bâtiments dans le cadre d’une force navale constituée pour un exercice ou une opération. Ce code identifie le(s) bâtiment(s) dans le cadre de l’articulation opérationnelle de cette force (par analogie à un ordre de bataille dans le domaine Terre). L’association de ce code aux bâtiments a pour durée de vie la durée de vie de la force navale dans le cadre de l’exercice ou de l’opération; il n’a pas vocation à identifier les bâtiments de façon permanente.
+Au niveau du MPGT, il n'y a pas de code UIC attribué à un bâtiment ou à un type de bâtiment.",
+503,9,"REPET. GROUP","NFOR","SHIPS","-",,"-","-",,"-","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatimentSurface}","VI MPIA.ArticulationMarine.Categorie = {5|NOS|Not otherwise specified}","VC MPIA.ArticulationMarine.Categorie = {5|NOS|Not otherwise specified}",,
+504,9,"COMP. FIELD","NFOR","SHIPS","2",,"2047/001","M - 1","4..8","SHIP TYPE IDENTIFIER","_","_","_",,,,
+505,9,"SS ZONE","NFOR","SHIPS","2","1","1036/003","M - 1","2..4","NAVAL SHIP TYPE","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatimentSurface}#MPIA.TypeBatimentSurface.Categorie","LIGNE = 503 ET CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)","CD=(MPGT_TypeBatimentSurfaceCategorie;AD3_1036_3)",,
+506,9,"SS ZONE","NFOR","SHIPS","2","2","1025/002","M - 1","1..1","HYPHEN","NON_TRACE","NON_TRACE","NON_TRACE",,"Valeur par défaut ""-""",,
+507,9,"SS ZONE","NFOR","SHIPS","2","3","1246/009","M - 1","1..3","STANAG 1166 SUFFIX","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface{MPIA.TypeBatiment}","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatiment}#MPIA.TypeBatiment.Complements","LIGNE = 503",,,
+605,9,"FIELD","NFOR","SHIPS","3",,,"M - 1",,"SHIP IDENTIFICATION","_","_","_",,,,
+508,9,"FIELD","NFOR","SHIPS","3A",,"1022/049","M - 1","1..38","SHIP NAME","_","_","_",,,"Correspond au cas 1 : nom du bâtiment",
+509,9,"FIELD","NFOR","SHIPS","3B",,"1044/076","M - 1","1..2","NUMBER OF SHIPS","MPIA.ArticulationMarine","MPIA.TypeBatimentParticipant","APourComposition{MPIA.TypeBatimentParticipant}#MPIA.TypeBatimentParticipant.Nombre","LIGNE = 503",,"Correspond au cas 2 : nombre de bâtiments en dotation effective pour la force navale",
+52,10,"SET Niv 3","NFOR","1SHIPS",,,,"O - 1",,"SHIPS NAMES","MPIA.ArticulationMarine","MPIA.Batiment","APourBatimentsParticipants{MPIA.Batiment}","Règle A_1SHIPS ET LIGNE = 25 ET MPIA.ArticulationMarine.Categorie = {5|NOS|Not otherwise specified}","Règle S_1SHIPS","Le set 1SHIPS (comme le set SHIPS) permet décrire des Bâtiments associés à la Force Navale et/ou des Equipements (de type Batiment) faisant partie de la dotation de la Force Navale.
+Le cas 1, décrit ci-après, correspond à la description d'un bâtiment (car la zone 3 SHIP IDENTIFICATION est renseigné par l'alternat A SHIP NAME)",
+53,10,"REPET. GROUP","NFOR","1SHIPS","-",,"-","-",,"-",,"_","_",,,,
+54,10,"FIELD","NFOR","1SHIPS","1",,,"M - 1",,"FLAG OR UIC","_","_","_",,,,
+55,10,"FIELD","NFOR","1SHIPS","1A",,"1026/003","M - 1","2..2","FLAG","MPIA.ArticulationMarine",,"APourBatimentsParticipants{MPIA.Batiment}#MPGT.Materiel.Nationalite","VI MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by} ET CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)","VC MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by} ET CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_3)",,
+56,10,"COMP. FIELD","NFOR","1SHIPS","1B",,"2141/001","M - 1","7..9","UNIT IDENTIFICATION CODE (UIC)","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN","Le code UIC est un code attribué à un bâtiment ou un groupe de bâtiments dans le cadre d’une force navale constituée pour un exercice ou une opération. Ce code identifie le(s) bâtiment(s) dans le cadre de l’articulation opérationnelle de cette force (par analogie à un ordre de bataille dans le domaine Terre). L’association de ce code aux bâtiments a pour durée de vie la durée de vie de la force navale dans le cadre de l’exercice ou de l’opération; il n’a pas vocation à identifier les bâtiments de façon permanente.
+Au niveau du MPGT, il n'y a pas de code UIC attribué à un bâtiment ou à un type de bâtiment.",
+60,10,"COMP. FIELD","NFOR","1SHIPS","2",,"2047/001","M - 1","4..8","SHIP TYPE IDENTIFIER","_","_","_",,,,
+61,10,"SS ZONE","NFOR","1SHIPS","2","1","1036/003","M - 1","2..4","NAVAL SHIP TYPE","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface","APourBatimentsParticipants{MPIA.Batiment}#APourType{MPGT.AssociationMaterielTypeMateriel}#AssocieCommeType{MPIA.TypeBatiment}#MPIA.TypeBatimentSurface.Categorie","CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)","CD=(MPGT_TypeBatimentSurfaceCategorie;AD3_1036_3)",,
+62,10,"SS ZONE","NFOR","1SHIPS","2","2","1025/002","M - 1","1..1","HYPHEN","NON_TRACE","NON_TRACE","NON_TRACE",,"Valeur par défaut ""-""",,
+63,10,"SS ZONE","NFOR","1SHIPS","2","3","1246/009","M - 1","1..3","STANAG 1166 SUFFIX","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface{MPIA.TypeBatiment}","APourBatimentsParticipants{MPIA.Batiment}#APourType{MPGT.AssociationMaterielTypeMateriel}#AssocieCommeType{MPIA.TypeBatiment}#MPIA.TypeBatiment.Complements",,,,
+606,10,"FIELD","NFOR","SHIPS","3",,,"M - 1",,"SHIP IDENTIFICATION","_","_","_",,,,
+64,10,"FIELD","NFOR","1SHIPS","3A",,"1022/049","M - 1","1..38","SHIP NAME","MPIA.ArticulationMarine","MPIA.Batiment{MPIA.RacineOperationnelle}","APourBatimentsParticipants{MPIA.Batiment}#MPIA.RacineOperationnelle.Nom",,,"Correspond au cas 1 : nom du bâtiment",
+65,10,"FIELD","NFOR","1SHIPS","3B",,"1044/076","M - 1","1..2","NUMBER OF SHIPS","_","_","_","Si sous le champs est renseigné Alors ERREUR et cette instance du set est à rejeter",,"Correspond au cas 2 : nombre de bâtiments en dotation effective pour la force navale",
+66,10,"SET Niv 3","NFOR","1SHIPS",,,,"O - 1",,"SHIPS NAMES","MPIA.ArticulationMarine","MPIA.TypeBatiment","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatiment}","Règle A_1SHIPS ET LIGNE = 25 ET VI MPIA.ArticulationMarine.Categorie = {5|NOS|Not otherwise specified}","Règle S_1SHIPS","Le set 1SHIPS (comme le set SHIPS) permet décrire des Bâtiments associés à la Force Navale et/ou des Equipements (de type Batiment) faisant partie de la dotation de la Force Navale.
+Le cas 2, décrit ci-après, correspond à la description d'un type de bâtiment (car la zone 3 SHIP IDENTIFICATION est renseigné par l'alternat B NUMBER OF SHIPS)",
+67,10,"REPET. GROUP","NFOR","1SHIPS","-",,"-","-",,"-","_","_","_",,,,
+68,10,"FIELD","NFOR","1SHIPS","1",,,"M - 1",,"FLAG OR UIC","_","_","_",,,,
+69,10,"FIELD","NFOR","1SHIPS","1",,"1026/003","M - 1","2..2","FLAG","MPIA.ArticulationMarine","MPIA.EntitePolitique{MPIA.Affiliation}","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatiment}#EstAffilieA{MPIA.AssociationAffiliationType}#ConcerneAffiliation{MPIA.EntitePolitique}#MPIA.EntitePolitique.Trigramme","LIGNE =  66
+CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)","CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_3)","Attribution d'une nationalité pour ce type de bâtiment",
+70,10,"COMP. FIELD","NFOR","1SHIPS","1",,"2141/001","M - 1","7..9","UNIT IDENTIFICATION CODE (UIC)","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN","Le code UIC est un code attribué à un bâtiment ou un groupe de bâtiments dans le cadre d’une force navale constituée pour un exercice ou une opération. Ce code identifie le(s) bâtiment(s) dans le cadre de l’articulation opérationnelle de cette force (par analogie à un ordre de bataille dans le domaine Terre). L’association de ce code aux bâtiments a pour durée de vie la durée de vie de la force navale dans le cadre de l’exercice ou de l’opération; il n’a pas vocation à identifier les bâtiments de façon permanente.
+Au niveau du MPGT, il n'y a pas de code UIC attribué à un bâtiment ou à un type de bâtiment.",
+74,10,"COMP. FIELD","NFOR","1SHIPS","2",,"2047/001","M - 1","4..8","SHIP TYPE IDENTIFIER","_","_","_",,,,
+75,10,"SS ZONE","NFOR","1SHIPS","2","1","1036/003","M - 1","2..4","NAVAL SHIP TYPE","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatiment}#MPIA.TypeBatimentSurface.Categorie","LIGNE = 66 ET CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)","CD=(MPGT_TypeBatimentSurfaceCategorie;AD3_1036_3)",,
+76,10,"SS ZONE","NFOR","1SHIPS","2","2","1025/002","M - 1","1..1","HYPHEN","NON_TRACE","NON_TRACE","NON_TRACE",,"Valeur par défaut ""-""",,
+77,10,"SS ZONE","NFOR","1SHIPS","2","3","1246/009","M - 1","1..3","STANAG 1166 SUFFIX","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface{MPIA.TypeBatiment}","APourComposition{MPIA.TypeBatimentParticipant}#EstType{MPIA.TypeBatiment}#MPIA.TypeBatiment.Complements",,,,
+607,10,"FIELD","NFOR","SHIPS","3",,,"M - 1",,"SHIP IDENTIFICATION","_","_","_",,,,
+78,10,"FIELD","NFOR","1SHIPS","3A",,"1022/049","M - 1","1..38","SHIP NAME","_","_","_",,,"Correspond au cas 1 : nom du bâtiment",
+79,10,"FIELD","NFOR","1SHIPS","3B",,"1044/076","M - 1","1..2","NUMBER OF SHIPS","MPIA.ArticulationMarine","MPIA.TypeBatimentSurface","APourComposition{MPIA.TypeBatimentParticipant}#MPIA.TypeBatimentParticipant.Nombre","LIGNE = 66",,"Correspond au cas 2 : nombre de bâtiments en dotation effective pour l'unité appartenant à la force navale",
+80,11,"SET Niv 3","NFOR","SAIL",,,,"O - 1",,"SAILING INFORMATION","_","_","_","LIGNE = 25","LIGNE = 25","Position par la force navale : description des informations date de d'arrivée, position, date de départ.
+Cas 1 : position décrite par les coordonnées géographiques
+Cas 2 : position décrite par une association avec un site de mouillage. L'attribut AssociationEltCtrlSiteCategorie.Categorie = ""ISSITU"" (Is situated in).",
+708,11,"FIELD","NFOR","SAIL","1",,,"M - 1",,"TIME OF ARRIVAL","_","_","_","_",,"Date d'arrivée est assimilée à la date de début",
+81,11,"COMP. FIELD","NFOR","SAIL","1A",,"2013/032","M - 1","8..8","DAY-TIME OF ARRIVAL, VERIFIED","MPIA.ArticulationMarine","MPIA.Rapport","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum ET Règle A_GdhFormatJour ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","NSYN",,
+82,11,"COMP. FIELD","NFOR","SAIL","1B",,"2032/006","M - 1","11..11","DATE-TIME MONTH OF ARRIVAL, VERIFIED","MPIA.ArticulationMarine","MPIA.Rapport","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum ET Règle A_GdhFormatMois ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Cet alternat est privilégié en synthèse",
+,11,"FIELD","NFOR","SAIL","2",,,"M - 1",,"POSITION","_","_","_",,"Règle S_LOCFOR",,
+83,11,"COMP. FIELD","NFOR","SAIL","2A",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","MPIA.ArticulationMarine","MPGT.LocalisationGeometrique2D","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""MINUTE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""MINUTE""","Conversion la valeur de LAT/LONG en une valeur exprimée en minute
+S_ChecksumCoordonnées","Cet alternat est privilégié en synthèse",
+84,11,"COMP. FIELD","NFOR","SAIL","2B",,"2044/001","M - 1","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","MPIA.ArticulationMarine","MPGT.LocalisationGeometrique2D","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""SECOND""
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""SECOND""","NSYN",,
+85,11,"COMP. FIELD","NFOR","SAIL","2C",,"2200/001","M - 1","22..22","GEOGRAPHIC POSITION, LAT/LONG, 1/10 SECOND, VERIFIED","MPIA.ArticulationMarine","MPGT.LocalisationGeometrique2D","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""10SEC"" (1/10 second)
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""10SEC"" (1/10 second)","NSYN",,
+86,11,"FIELD","NFOR","SAIL","2D",,"1022/170","M - 1","1..20","PLACE NAME","MPIA.ArticulationMarine","MPGT.LocalisationIndefinie","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstSujet{MPGT.AssociationEntiteOrgSite}#APourObjet{MPIA.Mouillage}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu","VI MPGT.AssociationMaterielSite.Categorie = ""ISSITU"" (Is situated in)","NSYN",,
+87,11,"COMP. FIELD","NFOR","SAIL","2E",,"2202/001","M - 1","11..36","VERIFIED TRUE BEARING AND DISTANCE FROM REF POINT","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+88,11,"COMP. FIELD","NFOR","SAIL","2F",,"2203/001","M - 1","7..13","Q-ROUTE POSITION","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+710,11,"FIELD","NFOR","SAIL","3",,,"O - 1",,"TIME OF DEPARTURE ","_","_","_",,,"Date de départ est assimilée à la date de fin",
+89,11,"COMP. FIELD","NFOR","SAIL","3A",,"2013/031","O - 1","8..8","DAY-TIME OF DEPARTURE, VERIFIED","MPIA.ArticulationMarine","MPIA.Rapport","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateFin","Vérification de la checksum ET Règle A_GdhFormatJour ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","NSYN",,
+90,11,"COMP. FIELD","NFOR","SAIL","3B",,"2032/007","O - 1","11..11","DATE-TIME MONTH OF DEPARTURE, VERIFIED","MPIA.ArticulationMarine","MPIA.Rapport","APourEntitePlusHautNiveau{MPIA.StructureOrganisee}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateFin","Vérification de la checksum ET Règle A_GdhFormatMois ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Cet alternat est privilégié en synthèse",
+91,12,"SEGMENT Niv 3","NSIT",,,,,"0 - N",,"SITUATION OF NAVAL UNITS","_","_","_",,,"Situatiuon des bâtiments dépendant directement de l'autorité de contrôle",
+92,12,"SET Niv 3","NSIT","NSIT",,,,"M - 1",,"SITUATION OF NAVAL UNITS","MPIA.StructureOrganisee","MPIA.Batiment","EstSujet{MPGT.AssociationEntiteOrgMateriel}#APourObjet{MPIA.Batiment}","LIGNE = 18
+Règle A_NSIT
+VI MPGT.AssociationEntiteOrgMateriel.Categorie = ""CONTRL"" (Controls)","LIGNE = 18
+Règle S_NIT","Autorité de contrôle décrite sous la forme d'une structure organisée",
+725,12,"SET Niv 3","NSIT","NSIT",,,,"M - 1",,"SITUATION OF NAVAL UNITS","MPIA.ArticulationMarine","MPIA.Batiment","APourBatimentsParticipants{MPIA.Batiment}","LIGNE = 20
+Règle A_NSIT","LIGNE = 20
+Règle S_NIT","Autorité de contrôle décrite sous la forme d'une articulation marine",
+701,12,"FIELD","NSIT","NSIT","1",,,"M - 1",,"FLAG OR UIC","_","_","_",,,,
+93,12,"FIELD","NSIT","NSIT","1A",,"1026/003","M - 1","2..2","FLAG","MPIA.Batiment",,"MPGT.Materiel.Nationalite","LIGNE = 92 ou LIGNE = 700
+VI MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by} ET CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)","VC MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by} ET CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_3)","Identification du bâtiment courant",
+94,12,"COMP. FIELD","NSIT","NSIT","1B",,"2141/001","M - 1","7..9","UNIT IDENTIFICATION CODE (UIC)","MPIA.Batiment","MPIA.StructureOrganisee","EstObjet{MPGT.AssociationEntiteOrgMateriel}#APourSujet{MPIA.StructureOrganisee}#MPGT.EntiteOrganisationnelle.CodeIdentification","VI MPGT.AssociationEntiteOrgMateriel.Categorie = ""CONTRL"" (Controls)",,"Au niveau AdatP-3, le code UIC est structuré et fait appel à 2 dictionnaires",
+95,12,"FIELD","NSIT","NSIT","2",,"1036/003","M - 1","2..4","NAVAL SHIP TYPE","MPIA.Batiment","MPIA.TypeBatimentSurface","APourType{MPGT.AssociationMaterielTypeMateriel}#AssocieCommeType{MPIA.TypeBatimentSurface}#MPIA.TypeBatimentSurface.Categorie","CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)","CD=(MPGT_TypeBatimentSurfaceCategorie;AD3_1036_3)",,
+96,12,"FIELD","NSIT","NSIT","3",,"1022/049","M - 1","1..38","SHIP NAME","MPIA.Batiment","MPIA.Batiment{MPIA.RacineOperationnelle}","MPIA.RacineOperationnelle.Nom",,,,
+,12,"FIELD","NSIT","NSIT","4",,,"M - 1",,"LOCATION ","_","_","_","Règle A_LocalisationBatiment","Règle S_LocalisationBatiment",,
+97,12,"COMP. FIELD","NSIT","NSIT","4A",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""MINUTE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""MINUTE""","Conversion la valeur de LAT/LONG en une valeur exprimée en minute
+S_ChecksumCoordonnées","Cet alternat est privilégié en synthèse",
+98,12,"COMP. FIELD","NSIT","NSIT","4B",,"1022/170","M - 1","1..20","PLACE NAME","MPIA.Batiment","MPGT.LocalisationIndefinie","EstSujet{MPGT.AssociationMaterielSite}#APourObjet{MPIA.Mouillage}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu","VI MPGT.AssociationMaterielSite.Categorie = ""ISSITU"" (Is situated in)",,,
+99,12,"COMP. FIELD","NSIT","NSIT","4C",,"2016/001","M - 1","6..46","TRUE BEARING AND DISTANCE IN NM FROM REFERENCE POINT","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+702,12,"FIELD","NSIT","NSIT","5",,,"M - 1",,"TIME AT LOCATION","_","_","_",,,,
+100,12,"COMP. FIELD","NSIT","NSIT","5A",,"2013/007","M - 1","8..8","DAY-TIME OF POSITION, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum ET Règle A_GdhFormatJour ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","VC MPIA.Rapport.Confirmation = {5|REP|Reported}",,
+101,12,"COMP. FIELD","NSIT","NSIT","5B",,"2032/001","M - 1","11..11","DATE-TIME MONTH, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum ET Règle A_GdhFormatMois ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Cet alternat est privilégié en synthèse",
+102,12,"COMP. FIELD","NSIT","NSIT","5C",,"2067/004","M - 1","5..5","LOCATING DAY-MONTH NAME","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Règle A_GdhFormatJourMois ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","VC MPIA.Rapport.Confirmation = {5|REP|Reported}",,
+103,12,"COMP. FIELD","NSIT","NSIT","6",,"2025/001","M - 1","5..6","COURSE IN DEGREES TRUE AND SPEED IN KNOTS","_","_","_",,,,
+104,12,"SS ZONE","NSIT","NSIT","6","1","1439/004","-","3..3","COURSE IN DEGREES, TRUE","MPIA.Batiment","MPIA.AssocInstanceObjetLocalisation","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#MPIA.AssocInstanceObjetLocalisation.AngleMouvement",,,,
+105,12,"SS ZONE","NSIT","NSIT","6","2","1025/002","-","1..1","HYPHEN","NON_TRACE","NON_TRACE","NON_TRACE",,"Valeur par défaut ""-""",,
+106,12,"SS ZONE","NSIT","NSIT","6","3","1061/004","-","1..2","UNIT SPEED IN KNOTS","MPIA.Batiment","MPIA.AssocInstanceObjetLocalisation","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#MPIA.AssocInstanceObjetLocalisation.Vitesse","Règle A_ConversionVitesseKnots","Règle S_ConversionVitesseKnots",,
+107,12,"COMP. FIELD","NSIT","NSIT","6",,"1341/002","M - 1","3..6","NAVAL FORCE MOVEMENT STATUS","MPIA.Batiment","MPIA.Batiment","MPIA.Batiment.EtatMouvement","CD=(AD3_1041_2;MPGT_EtatMouvement)","CD=(MPGT_EtatMouvement;AD3_1041_2)",,
+108,13,"SET Niv 3","NSIT","SAIL",,,,"O - N",,"SAILING INFORMATION","MPIA.StructureOrganisee","MPIA.AssocInstanceObjetLocalisation","EstSujet{MPGT.AssociationEntiteOrgMateriel}#APourObjet{MPIA.Batiment}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}","LIGNE = 22",,"Route suivie par le bâtiment : description des différentes escales : date de d'arrivée, position, date de départ.",
+704,13,"FIELD","NSIT","SAIL","1",,,"M - 1",,"TIME OF ARRIVAL","_","_","_","_",,"Date d'arrivée est assimilée à la date de début",
+705,13,"FIELD","NSIT","SAIL","1A",,"2013/032","M - 1","8..8","DAY-TIME OF ARRIVAL, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum
+Règle A_GdhFormatJour
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","NSYN",,
+110,13,"COMP. FIELD","NSIT","SAIL","1B",,"2032/006","M - 1","11..11","DATE-TIME MONTH OF ARRIVAL, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum
+Règle A_GdhFormatMois
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Cet alternat est privilégié en synthèse",
+709,13,"FIELD","NSIT","SAIL","2",,,"M - 1",,"POSITION","_","_","_","Règle A_LocalisationBatiment","Règle S_LocalisationBatiment",,
+111,13,"COMP. FIELD","NSIT","SAIL","2A",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""MINUTE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""MINUTE""","Conversion la valeur de LAT/LONG en une valeur exprimée en minute
+S_ChecksumCoordonnées","Cet alternat est privilégié en synthèse",
+112,13,"COMP. FIELD","NSIT","SAIL","2B",,"2044/001","M - 1","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""SECOND""
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""SECOND""","NSYN",,
+113,13,"COMP. FIELD","NSIT","SAIL","2C",,"2200/001","M - 1","22..22","GEOGRAPHIC POSITION, LAT/LONG, 1/10 SECOND, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""10SEC"" (1/10 second)
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""10SEC"" (1/10 second)","NSYN",,
+114,13,"COMP. FIELD","NSIT","SAIL","2D",,"1022/170","M - 1","1..20","PLACE NAME","MPIA.Batiment","MPGT.LocalisationIndefinie","EstSujet{MPGT.AssociationMaterielSite}#APourObjet{MPIA.Mouillage}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu","VI MPIA.AssociationMaterielSite.Categorie = {91|ISSITU|Is situated in}","NSYN",,
+115,13,"COMP. FIELD","NSIT","SAIL","2E",,"2202/001","M - 1","11..36","VERIFIED TRUE BEARING AND DISTANCE FROM REF POINT","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+116,13,"COMP. FIELD","NSIT","SAIL","2F",,"2203/001","M - 1","7..13","Q-ROUTE POSITION","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+706,13,"FIELD","NSIT","SAIL","3",,,"O - 1",,"TIME OF DEPARTURE ","_","_","_",,,"Date de départ est assimilée à la date de fin",
+117,13,"COMP. FIELD","NSIT","SAIL","3A",,"2013/031","O - 1","8..8","DAY-TIME OF DEPARTURE, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateFin","Vérification de la checksum ET Règle A_GdhFormatJour ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","NSYN",,
+118,13,"COMP. FIELD","NSIT","SAIL","3B",,"2032/007","O - 1","11..11","DATE-TIME MONTH OF DEPARTURE, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateFin","Vérification de la checksum ET Règle A_GdhFormatMois ET VI MPIA.Rapport.Confirmation = {5|REP|Reported}","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Date de départ est assimilée à la date de fin",
+119,,,,,,,,,,,"_","_","_",,,,
+120,14,"SET Niv 2","CONTR","ACFT",,,,"O - N",,"AIRCRAFT SITUATION","MPIA.StructureOrganisee","MPIA.Batiment","EstSujet{MPGT.AssociationEntiteOrgMateriel}#APourObjet{MPIA.Batiment}","LIGNE = 22
+VI MPGT.AssociationEntiteOrgMateriel.Categorie = ""CMDCTL"" (Command and control)
+VI MPGT.AssociationEntiteOrgMateriel.SousCategorie = ""TACCNT"" (Has tactical control of)","LIGNE = 22","Localisation des aéronefs sur un bâtiment (porte-avions) : zone 4 Alternat A
+Bâtiments sous l'autorité de contrôle définie dans le segment CONTR",
+707,14,"FIELD","CONTR","ACFT","1",,,"M - 1",,"FLAG OR UIC","_","_","_",,,"CAs",
+121,14,"FIELD","CONTR","ACFT","1A",,"1026/002","M - 1","2..2","NATIONALITY","MPIA.Batiment","MPIA.EntitePolitique{MPIA.Affiliation}","APourDotationEffective{MPGT.DotationEffectiveEquipement}#AssocieCommeType{MPGT.TypeAeronef}#EstAffilieA{MPIA.AssociationAffiliationType}#ConcerneAffiliation{MPIA.EntitePolitique}#MPIA.EntitePolitique.Trigramme","CD=(AD3_1026_2;MPGT_EntitePolitiqueTrigramme)
+VI MPIA.AssociationAffiliationType.Categorie = ""OB"" (is owned by)","CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_2)",,
+122,14,"FIELD","CONTR","ACFT","1B",,"2141/001","M - 1","7..9","UNIT IDENTIFICATION CODE (UIC)","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+123,14,"REPET. GROUP","CONTR","ACFT","-",,"-","-",,"-","_","_","_",,,,
+124,14,"FIELD","CONTR","ACFT","2",,"1015/012","M - N","3..29","AIRCRAFT IDENTIFIER","MPIA.Batiment","MPIA.TypeAeronef","APourDotationEffective{MPGT.DotationEffectiveEquipement}#AssocieCommeType{MPGT.TypeAeronef}#MPIA.RacineOperationnelle.Nom",,,,
+125,14,"FIELD","CONTR","ACFT","3",,"1044/003","M - N","2..2","NUMBER OF AIRCRAFT, 00-99","MPIA.Batiment","MPIA.DotationEffective","APourDotationEffective{MPGT.DotationEffectiveEquipement}#MPIA.DotationEffective.QuantiteOperationnelle",,,,
+710,14,"FIELD","CONTR","ACFT","4",,,"M - N",,"LOCATION","_","_","_",,,,
+126,14,"FIELD","CONTR","ACFT","4A",,"1022/049","M - 1","1..38","SHIP NAME","MPIA.Batiment","MPIA.Batiment{MPIA.RacineOperationnelle}","MPIA.RacineOperationnelle.Nom",,,,
+127,14,"FIELD","CONTR","ACFT","4B",,"2042/001","M - 1","10..10","GEOGRAPHIC POSITION, LAT/LONG, DEGREES, VERIFIED","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+128,14,"FIELD","CONTR","ACFT","4C",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+129,14,"FIELD","CONTR","ACFT","4D",,"2044/001","M - 1","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+130,14,"FIELD","CONTR","ACFT","4E",,"1022/170","M - 1","1..20","PLACE NAME","_","_","_","NANA","NSYN",,
+712,14,"SET Niv 2","CONTR","ACFT",,,,"O - N",,"AIRCRAFT SITUATION","MPIA.StructureOrganisee","MPIA.Aerodrome","EstSujet{MPGT.AssociationEntiteOrgSite}#APourObjet{MPIA.Aerodrome}","LIGNE = 22
+VI MPGT.AssociationEntiteOrgSite.Categorie = ""CMDCTL"" (Command and control)
+VI MPGT.AssociationEntiteOrgSite.SousCategorie = ""TACCNT"" (Has tactical control of)","LIGNE = 22","Localisation sur une base aérienne : zone 4 Alternat E
+Bases aériennes sous l'autorité de contrôle définie dans le segment CONTR",
+713,14,"FIELD","CONTR","ACFT","1",,,"M - 1",,"FLAG OR UIC","_","_","_",,,,
+714,14,"FIELD","CONTR","ACFT","1A",,"1026/002","M - 1","2..2","NATIONALITY","MPIA.Aerodrome","MPIA.EntitePolitique{MPIA.Affiliation}","APourDotationEffective{MPGT.DotationEffectiveEquipement}#AssocieCommeType{MPGT.TypeAeronef}#EstAffilieA{MPIA.AssociationAffiliationType}#ConcerneAffiliation{MPIA.EntitePolitique}#MPIA.EntitePolitique.Trigramme","CD=(AD3_1026_2;MPGT_EntitePolitiqueTrigramme)
+VI MPIA.AssociationAffiliationType.Categorie = ""OB"" (is owned by)","CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_2)",,
+715,14,"FIELD","CONTR","ACFT","1B",,"2141/001","M - 1","7..9","UNIT IDENTIFICATION CODE (UIC)","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+716,14,"REPET. GROUP","CONTR","ACFT","-",,"-","-",,"-","_","_","_",,,,
+717,14,"FIELD","CONTR","ACFT","2",,"1015/012","M - N","3..29","AIRCRAFT IDENTIFIER","MPIA.Aerodrome","MPIA.TypeAeronef","APourDotationEffective{MPGT.DotationEffectiveEquipement}#AssocieCommeType{MPGT.TypeAeronef}#MPIA.RacineOperationnelle.Nom","VI MPIA.TypeAeronef.Categorie = {4|NOS|Not otherwise specified}",,,
+718,14,"FIELD","CONTR","ACFT","3",,"1044/003","M - N","2..2","NUMBER OF AIRCRAFT, 00-99","MPIA.Aerodrome","MPIA.DotationEffective","APourDotationEffective{MPGT.DotationEffectiveEquipement}#MPIA.DotationEffective.QuantiteOperationnelle",,,,
+719,14,"FIELD","CONTR","ACFT","4",,,"M - N",,"LOCATION","_","_","_",,,,
+720,14,"FIELD","CONTR","ACFT","4A",,"1022/049","M - 1","1..38","SHIP NAME","_","_","_",,,"Localisation sur un aérodrome qui n'est pas par définiton un porte-avion",
+721,14,"FIELD","CONTR","ACFT","4B",,"2042/001","M - 1","10..10","GEOGRAPHIC POSITION, LAT/LONG, DEGREES, VERIFIED","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+722,14,"FIELD","CONTR","ACFT","4C",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+723,14,"FIELD","CONTR","ACFT","4D",,"2044/001","M - 1","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+724,14,"FIELD","CONTR","ACFT","4E",,"1022/170","M - 1","1..20","PLACE NAME","MPIA.Aerodrome","MPGT.LocalisationIndefinie","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu","Créer la relation ",,"Localisation sur une base aérienne",
+131,15,"SEGMENT Niv 3","APHIB",,,,,"0 - N",,"AMPHIBIOUS FORCE SITUATION","_","_","_",,,"Situation des unités amphibies dépendantes de l'autorité de contrôle
+Les segments APHIB et 1APHIB sont exclusifs",
+132,15,"SET Niv 3","APHIB","APHIB",,,,"M - 1",,"AMPHIBIOUS FORCE SITUATION","MPIA.StructureOrganisee","MPIA.Batiment","EstSujet{MPGT.AssociationEntiteOrgMateriel}#APourObjet{MPIA.Batiment}","LIGNE = 18
+Règle A_APHIB
+VI MPGT.AssociationEntiteOrgMateriel.Categorie = ""CONTRL"" (Controls)","LIGNE = 18
+Règle S_APHIB","Autorité de contrôle décrite sous la forme d'une structure organisée",
+726,15,"SET Niv 3","APHIB","APHIB",,,,"M - 1",,"AMPHIBIOUS FORCE SITUATION","MPIA.ArticulationMarine","MPIA.Batiment","APourBatimentsParticipants{MPIA.Batiment}","LIGNE = 20
+Règle A_APHIB","LIGNE = 20
+Règle S_APHIB","Autorité de contrôle décrite sous la forme d'une articulation marine",
+133,15,"FIELD","APHIB","APHIB","1",,"1026/003","M - 1","2..2","FLAG","MPIA.Batiment",,"MPGT.Materiel.Nationalite","CD=(AD3_1026_2;MPGT_EntitePolitiqueTrigramme)
+VI MPIA.AssociationAffiliationInstanceObjet.Categorie = ""OB"" (is owned by)","CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_2)","Identification et localisation actuelle de l'unité amphibie",
+134,15,"REPET. GROUP","APHIB","APHIB","2",,"-","M-N",,"UNIT NAME OR DESIGNATOR","_","_","_",,,,
+135,15,"FIELD","APHIB","APHIB","2A",,"1022/048","M - 1","1..38","UNIT NAME","MPIA.Batiment","MPIA.Batiment{MPIA.RacineOperationnelle}","MPIA.RacineOperationnelle.Nom",,,,
+136,15,"COMP. FIELD","APHIB","APHIB","2B",,"2143/002","M - 1","3..15","NAVAL TASK DESIGNATOR","_","_","_",,,,
+601,15,"FIELD","APHIB","APHIB","2B","1","1045/003 ","M - 1","2..3","NAVAL LEVEL OF ECHELON ","MPIA.Batiment","MPIA.ArticulationMarine","APourArticulation{MPIA.ArticulationMarine}#MPIA.ArticulationMarine.Categorie",,"CD=(MPGT_ArticulationMarineCategorie;AD3_1045_3)",,
+26,15,"FIELD","APHIB","APHIB","2B","2","1012/104 ","M - 1","1..12","NAVAL ORGANIZATION NUMERIC DESIGNATOR ","MPIA.Batiment","MPIA.ArticulationMarine{MPIA.Articulation}","APourArticulation{MPIA.ArticulationMarine}#MPGT.Articulation.Nom",,,,
+727,15,"FIELD","APHIB","APHIB","3",,,"M-N",,"LOCATION","_","_","_",,,,
+137,15,"COMP. FIELD","APHIB","APHIB","3A",,"2042/001","M - 1","10..10","GEOGRAPHIC POSITION, LAT/LONG, DEGREES, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""DEGREE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""DEGREE""","NSYN",,
+138,15,"COMP. FIELD","APHIB","APHIB","3B",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""MINUTE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""MINUTE""","Conversion la valeur de LAT/LONG en une valeur exprimée en minute
+S_ChecksumCoordonnées","Cet alternat est privilégié en synthèse",
+139,15,"COMP. FIELD","APHIB","APHIB","3C",,"2044/001","M - 1","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""SECOND""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""SECOND""","NSYN",,
+140,15,"COMP. FIELD","APHIB","APHIB","3D",,"1022/049","M - 1","1..38","SHIP NAME","MPIA.Batiment","MPIA.Batiment{MPIA.RacineOperationnelle}","EstSujet{MPGT.AssociationMaterielMateriel}#APourObjet{MPIA.Batiment}MPIA.RacineOperationnelle.Nom","VI MPGT.AssociationMaterielMateriel.Categorie = ""ISLOAD"" (Is loaded on)",,"Localisation sur un bâtiment",
+141,15,"COMP. FIELD","APHIB","APHIB","3E",,"1022/170","M - 1","1..20","PLACE NAME","MPIA.Batiment","MPGT.LocalisationIndefinie","EstSujet{MPGT.AssociationMaterielSite}#APourObjet{MPIA.Mouillage}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu","VI MPGT.AssociationMaterielSite.Categorie = ""ISSITU"" (Is situated in)",,"Localisation sur un site de mouillage",
+142,16,"SET Niv 3","APHIB","SAIL",,,,"O - N",,"SAILING INFORMATION","MPIA.Batiment","MPIA.AssocInstanceObjetLocalisation","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}","LIGNE = 132 ou 726","LIGNE = 132 ou 726",,
+728,16,"FIELD","APHIB","SAIL","1",,,"M - 1",,"TIME OF ARRIVAL","_","_","_","_",,"Date d'arrivée est assimilée à la date de début",
+143,16,"COMP. FIELD","APHIB","SAIL","1A",,"2013/032","M - 1","8..8","DAY-TIME OF ARRIVAL, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum
+Règle A_GdhFormatJour
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)",,,
+144,16,"COMP. FIELD","APHIB","SAIL","1B",,"2032/006","M - 1","11..11","DATE-TIME MONTH OF ARRIVAL, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum
+Règle A_GdhFormatMois
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Cet alternat est privilégié en synthèse",
+729,16,"FIELD","APHIB","SAIL","2",,,"M - 1",,"POSITION","_","_","_","Règle A_LocalisationBatiment","Règle S_LocalisationBatiment",,
+145,16,"COMP. FIELD","APHIB","SAIL","2A",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""MINUTE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""MINUTE""","Conversion la valeur de LAT/LONG en une valeur exprimée en minute
+S_ChecksumCoordonnées","Cet alternat est privilégié en synthèse",
+146,16,"COMP. FIELD","APHIB","SAIL","2B",,"2044/001","M - 1","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""SECOND""
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""SECOND""","NSYN",,
+147,16,"COMP. FIELD","APHIB","SAIL","2C",,"2200/001","M - 1","22..22","GEOGRAPHIC POSITION, LAT/LONG, 1/10 SECOND, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""10SEC"" (1/10 second)
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""10SEC"" (1/10 second)","NSYN",,
+148,16,"COMP. FIELD","APHIB","SAIL","2D",,"1022/170","M - 1","1..20","PLACE NAME","MPIA.Batiment","MPGT.LocalisationIndefinie","EstSujet{MPGT.AssociationMaterielSite}#APourObjet{MPIA.Mouillage}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu","VI MPGT.AssociationMaterielSite.Categorie = ""ISSITU"" (Is situated in)","NSYN",,
+149,16,"COMP. FIELD","APHIB","SAIL","2E",,"2202/001","M - 1","11..36","VERIFIED TRUE BEARING AND DISTANCE FROM REF POINT","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+150,16,"COMP. FIELD","APHIB","SAIL","2F",,"2203/001","M - 1","7..13","Q-ROUTE POSITION","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+706,16,"FIELD","APHIB","SAIL","3",,,"O - 1",,"TIME OF DEPARTURE ","_","_","_",,,"Date de départ est assimilée à la date de fin",
+151,16,"COMP. FIELD","APHIB","SAIL","3A",,"2013/031","O - 1","8..8","DAY-TIME OF DEPARTURE, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateFin","Vérification de la checksum
+Règle A_GdhFormatJour
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","NSYN",,
+152,16,"COMP. FIELD","APHIB","SAIL","3B",,"2032/007","O - 1","11..11","DATE-TIME MONTH OF DEPARTURE, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateFin","Vérification de la checksum
+Règle A_GdhFormatMois
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Date de départ est assimilée à la date de fin",
+153,17,"SEGMENT Niv 3","1APHIB",,,,,"C - N",,"AMPHIBIOUS FORCES SITUATION","_","_","_",,"NSYN
+Utilisation du segment APHIB","Situation de la force amphibie amie
+Les segments APHIB et 1APHIB sont exclusifs",
+154,17,"SET Niv 3","1APHIB","1APHIB",,,,"M - 1",,"AMPHIBIOUS FORCES SITUATION","MPIA.StructureOrganisee","MPIA.Batiment","EstSujet{MPGT.AssociationEntiteOrgMateriel}#APourObjet{MPIA.Batiment}","LIGNE = 18
+Règle A_1APHIB
+VI MPGT.AssociationEntiteOrgMateriel.Categorie = ""CONTRL"" (Controls)","LIGNE = 18
+Règle S_1APHIB","Autorité de contrôle décrite sous la forme d'une structure organisée",
+730,17,"SET Niv 3","1APHIB","1APHIB",,,,"M - 1",,"AMPHIBIOUS FORCES SITUATION","MPIA.ArticulationMarine","MPIA.Batiment","APourBatimentsParticipants{MPIA.Batiment}","LIGNE = 20
+Règle A_1APHIB","LIGNE = 20
+Règle S_1APHIB","Autorité de contrôle décrite sous la forme d'une articulation marine",
+155,17,"REPET. GROUP","1APHIB","1APHIB","-",,"1026/003","-",,"FLAG","_","_","_",,,,
+156,17,"FIELD","1APHIB","1APHIB","1",,"1026/003","M - N","2..2","FLAG","MPIA.Batiment",,"MPGT.Materiel.Nationalite","CD=(AD3_1026_2;MPGT_EntitePolitiqueTrigramme)
+VI MPIA.AssociationAffiliationInstanceObjet.Categorie = ""OB"" (is owned by)","CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_2)","Identification et localisation actuelle de l'unité amphibie",
+157,17,"FIELD","1APHIB","1APHIB","2",,"1022/048","M - N","1..38","UNIT NAME","MPIA.Batiment","MPIA.Batiment{MPIA.RacineOperationnelle}","MPIA.RacineOperationnelle.Nom",,,,
+158,17,"COMP. FIELD","1APHIB","1APHIB","2B",,"2143/002","M - N","3..15","NAVAL TASK DESIGNATOR","_","_","_",,,,
+601,17,"FIELD","1APHIB","1APHIB","2B","1","1045/003 ","M - 1","2..3","NAVAL LEVEL OF ECHELON ","MPIA.Batiment","MPIA.ArticulationMarine","APourArticulation{MPIA.ArticulationMarine}#MPIA.ArticulationMarine.Categorie",,"CD=(MPGT_ArticulationMarineCategorie;AD3_1045_3)",,
+26,17,"FIELD","1APHIB","1APHIB","2B","2","1012/104 ","M - 1","1..12","NAVAL ORGANIZATION NUMERIC DESIGNATOR ","MPIA.Batiment","MPIA.ArticulationMarine{MPIA.Articulation}","APourArticulation{MPIA.ArticulationMarine}#MPGT.Articulation.Nom",,,,
+727,17,"FIELD","1APHIB","1APHIB","3",,,"M - 1",,"LOCATION","_","_","_",,,,
+159,17,"COMP. FIELD","1APHIB","1APHIB","3A",,"2042/001","M - N","10..10","GEOGRAPHIC POSITION, LAT/LONG, DEGREES, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""DEGREE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""DEGREE""","NSYN",,
+160,17,"COMP. FIELD","1APHIB","1APHIB","3B",,"2043/001","M - N","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""MINUTE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""MINUTE""","Conversion la valeur de LAT/LONG en une valeur exprimée en minute
+S_ChecksumCoordonnées","Cet alternat est privilégié en synthèse",
+161,17,"COMP. FIELD","1APHIB","1APHIB","3C",,"2044/001","M - N","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""SECOND""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""SECOND""","NSYN",,
+162,17,"COMP. FIELD","1APHIB","1APHIB","3D",,"1022/004","M - N","1..20","LOCATION NAME","MPIA.Batiment","MPIA.Port{MPIA.RacineOperationnelle}","EstSujet{MPGT.AssociationMaterielSite}#APourObjet{MPIA.Port}#MPIA.RacineOperationnelle.Nom","VI MPGT.AssociationMaterielSite.Categorie = ""ISSITU"" (Is situated in)","Valeur par défaut ""-""",,
+163,17,"COMP. FIELD","1APHIB","1APHIB","3E",,"1022/170","M - N","1..20","PLACE NAME","MPIA.Batiment","MPGT.LocalisationIndefinie","EstSujet{MPGT.AssociationMaterielSite}#APourObjet{MPIA.Mouillage}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu",,"Valeur par défaut ""-""","Localisation sur un site de mouillage",
+164,18,"SET Niv 3","1APHIB","SAIL",,,,"O - 1",,"SAILING INFORMATION","MPIA.Batiment","MPIA.AssocInstanceObjetLocalisation","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}","LIGNE = 154 ou 730",,"Route suivie par la force amphibie : description des N date de d'arrivée, position, date de départ.
+Cas 1 : position décrite par les coordonnées géographiques
+Cas 2 : position décrite par le nom toponymique.",
+728,18,"FIELD","1APHIB","SAIL","1",,,"M - 1",,"TIME OF ARRIVAL","_","_","_","_",,"Date d'arrivée est assimilée à la date de début",
+165,18,"COMP. FIELD","1APHIB","SAIL","1A",,"2013/032","M - 1","8..8","DAY-TIME OF ARRIVAL, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum
+Règle A_GdhFormatJour
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","NSYN",,
+166,18,"COMP. FIELD","1APHIB","SAIL","1B",,"2032/006","M - 1","11..11","DATE-TIME MONTH OF ARRIVAL, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateDebut","Vérification de la checksum
+Règle A_GdhFormatMois
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Cet alternat est privilégié en synthèse",
+729,18,"FIELD","1APHIB","SAIL","2",,,"M - 1",,"POSITION","_","_","_","Règle A_LocalisationBatiment","Règle S_LocalisationBatiment",,
+167,18,"COMP. FIELD","1APHIB","SAIL","2A",,"2043/001","M - 1","14..14","GEOGRAPHIC POSITION, LAT/LONG, MINUTES, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Vérification de la checksum
+Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VI MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""MINUTE""
+VI MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""MINUTE""","Conversion la valeur de LAT/LONG en une valeur exprimée en minute
+S_ChecksumCoordonnées","Cet alternat est privilégié en synthèse",
+168,18,"COMP. FIELD","1APHIB","SAIL","2B",,"2044/001","M - 1","18..18","GEOGRAPHIC POSITION, LAT/LONG, SECONDS, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""SECOND""
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""SECOND""","NSYN",,
+169,18,"COMP. FIELD","1APHIB","SAIL","2C",,"2200/001","M - 1","22..22","GEOGRAPHIC POSITION, LAT/LONG, 1/10 SECOND, VERIFIED","MPIA.Batiment","MPGT.LocalisationGeometrique2D","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}","Conversion la valeur de LAT/LONG en une valeur exprimée en degré décimal
+VD MPGT.LocalisationGeometrique2D.PrecisionLatitude = ""10SEC"" (1/10 second)
+VD MPGT.LocalisationGeometrique2D.PrecisionLongitude = ""10SEC"" (1/10 second)","NSYN",,
+170,18,"COMP. FIELD","1APHIB","SAIL","2D",,"1022/170","M - 1","1..20","PLACE NAME","MPIA.Batiment","MPGT.LocalisationIndefinie","EstSujet{MPGT.AssociationMaterielSite}#APourObjet{MPIA.Mouillage}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationIndefinie}#MPGT.Localisation.Lieu","VI MPGT.AssociationMaterielSite.Categorie = ""ISSITU"" (Is situated in)","NSYN",,
+171,18,"COMP. FIELD","1APHIB","SAIL","2E",,"2202/001","M - 1","11..36","VERIFIED TRUE BEARING AND DISTANCE FROM REF POINT","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+172,18,"COMP. FIELD","1APHIB","SAIL","2F",,"2203/001","M - 1","7..13","Q-ROUTE POSITION","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+706,18,"FIELD","1APHIB","SAIL","3",,,"O - 1",,"TIME OF DEPARTURE ","_","_","_",,,"Date de départ est assimilée à la date de fin",
+173,18,"COMP. FIELD","1APHIB","SAIL","3A",,"2013/031","O - 1","8..8","DAY-TIME OF DEPARTURE, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateFin","Vérification de la checksum
+Règle A_GdhFormatJour
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","NSYN",,
+174,18,"COMP. FIELD","1APHIB","SAIL","3B",,"2032/007","O - 1","11..11","DATE-TIME MONTH OF DEPARTURE, VERIFIED","MPIA.Batiment","MPIA.Rapport","EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstRapporteePar{MPIA.Rapport}#MPIA.Rapport.DateFin","Vérification de la checksum
+Règle A_GdhFormatMois
+VI MPIA.Rapport.Confirmation = ""REP"" (REPORTED)","VC MPIA.Rapport.Confirmation = {5|REP|Reported}","Date de départ est assimilée à la date de fin",
+175,19,"SET Niv 1",,"OPCASM",,,,"O - N",,"OPERATIONAL CASUALTY SUMMARY","_","_","_","Règle A_OPCASM
+
+On ne traite pas le set si la zone 4 n'est pas renseignée ou utilise l'alternat B","Règle S_OPCASM","Etat opérationnel des différents bâtiments amis
+Cas 1 : par bâtiment,
+Cas 2 : par type de bâtiment de surface : non traité au niveau du MPGT, car dans le format ADAtP-3, pas d'entité associée permettant de décrire une dotation.",
+176,19,"FIELD",,"OPCASM","1",,"1158/003","M - 1","4..8","OPERATIONAL CASUALTY STATUS","MPIA.Batiment","MPIA.EtatOperationnelMateriel","APourEtat{MPIA.EtatOperationnelMateriel}#MPIA.EtatOperationnelMateriel.QualificatifEtat","CD=(AD3_1158_3;MPGT_EtatOperationnelMaterielQualificatifEtat)","CD=(MPGT_EtatOperationnelMaterielQualificatifEtat;AD3_1158_3)",,
+177,19,"FIELD",,"OPCASM","2",,"1026/003","M - 1","2..2","FLAG","MPIA.Batiment","MPIA.EntitePolitique{MPIA.Affiliation}","MPGT.Materiel.Nationalite","VI MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by} ET CD=(AD3_1026_3;MPGT_EntitePolitiqueTrigramme)","VC MPIA.AssociationAffiliationInstanceObjet.Categorie = {10026|OB|is owned by} ET CD=(MPGT_EntitePolitiqueTrigramme;AD3_1026_3)",,
+178,19,"FIELD",,"OPCASM","3",,"1036/003","M - 1","2..4","NAVAL SHIP TYPE","MPIA.Batiment","MPIA.TypeBatimentSurface","APourType{MPGT.AssociationMaterielTypeMateriel}#AssocieCommeType{MPIA.TypeBatimentSurface}#MPIA.TypeBatimentSurface.Categorie","CD=(AD3_1036_3;MPGT_TypeBatimentSurfaceCategorie)","CD=(MPGT_TypeBatimentSurfaceCategorie;AD3_1036_3)",,
+711,19,"FIELD",,"OPCASM","4",,,"M - 1",,"SHIP NAME","_","_","_",,,,
+179,19,"FIELD",,"OPCASM","4A",,"1022/049","M - 1","1..38","SHIP NAME","MPIA.Batiment","MPIA.Batiment{MPIA.RacineOperationnelle}","MPIA.RacineOperationnelle.Nom",,,,
+180,19,"FIELD",,"OPCASM","4B",,"1044/076","M - 1","1..2","NUMBER OF SHIPS","NON_TRACE","NON_TRACE","NON_TRACE","NANA","NSYN",,
+181,19,"FIELD",,"OPCASM","5",,"1336/002","M - 1","2..2","COMBAT EFFECTIVENESS RATING","MPIA.Batiment","MPIA.EtatOperationnelMateriel","APourEtat{MPIA.EtatOperationnelMateriel}#MPIA.EtatOperationnelMateriel.EtatOperationnel","CD=(AD3_1336_2;MPGT_EtatOperationnel)","CD=(MPGT_EtatOperationnel;AD3_1336_2)",,
+"FIN",,,,,,,,,,,,,,,,,

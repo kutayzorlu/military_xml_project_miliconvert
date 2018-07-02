@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineSetfldord" table="BASELINE_SETFLDORD" >
+        <cache usage="read-only"/>
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="context" type="java.lang.Double">
+            <column name="CONTEXT" precision="15" scale="5" />
+        </property>
+        <property name="fldordno" type="java.lang.Double">
+            <column name="FLDORDNO" precision="15" scale="5" />
+        </property>
+        <property name="fieldcond" type="string">
+            <column name="FIELDCOND" length="1" />
+        </property>
+        <property name="fieldrep" type="string">
+            <column name="FIELDREP" length="1" />
+        </property>
+        <property name="fldcol" type="string">
+            <column name="FLDCOL" length="66" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="prefixedind" type="string">
+            <column name="PREFIXEDIND" length="1" />
+        </property>
+        <property name="ambiguityind" type="string">
+            <column name="AMBIGUITYIND" length="20" />
+        </property>
+        <property name="columnWidth" type="string">
+            <column name="COLUMN_WIDTH" />
+        </property>
+        <property name="fieldName" type="string">
+            <column name="FIELD_NAME" length="80" />
+        </property>
+        <property name="mfslabel" type="string">
+            <column name="MFSLABEL" length="50" />
+        </property>
+        <property name="defaultind" type="java.lang.Double">
+            <column name="DEFAULTIND" precision="15" scale="5" />
+        </property>
+    </class>
+</hibernate-mapping>

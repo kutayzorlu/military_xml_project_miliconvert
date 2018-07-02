@@ -1,0 +1,7 @@
+"SEG","RPT","USE","SET ID","FIELD ORDER AND USE","SET FORMAT NAME"
+,,"(M)","MSGID","/M/M/M/M/O/O/O","MESSAGE IDENTIFICATION"
+,,"(O)","SEC","/M/O","SECURITY"
+," *","(O)","ADDEE","/M/O/O/O/O/O/O/O/O","ADDRESSEES"
+,,"(M)","WHSKY","/M/M/M/M/O","4-WHISKY"
+," *","(M)","WUNIT","/M/M","4-WHISKY UNIT"
+,,"(M)","ENDAT","/C/*C/*C","END OF DATA"

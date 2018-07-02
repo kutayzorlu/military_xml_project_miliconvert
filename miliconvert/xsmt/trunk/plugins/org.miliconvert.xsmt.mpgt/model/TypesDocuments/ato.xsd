@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsd:schema xmlns:XST="urn:XST-schema" xmlns:MPIAInfo="urn:MPIA-schemaInfo" xmlns:XSTInfo="urn:XST-schemaInfo" xmlns:XST_ATO="urn:XST_ATO" xmlns:XSTMeta="urn:XST-meta" xmlns="urn:XST-schema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn:XST-schema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="../GrammaireXMLsicTerre.xsd" />
+  <xsd:import schemaLocation="../TypesAnnexesXMLsicTerre/XST_ATO.xsd" namespace="urn:XST_ATO" />
+  <xsd:import schemaLocation="../TypesMetamodele.xsd" namespace="urn:XST-meta" />
+  <xsd:element XSTInfo:Cooperatif="NON" XSTInfo:Ordre="NON" XSTInfo:Categorie="XML Terre" XSTInfo:Origine="ATO" name="ATO">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Versions">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element fixed="XML SIC Terre" name="Bibliotheque" type="XSTMeta:typeString" />
+              <xsd:element fixed="1" name="VersionOperationnelle" type="XSTMeta:typeString" />
+              <xsd:element fixed="F.0" name="Grammaire" type="XSTMeta:typeString" />
+              <xsd:element fixed="G.0" name="TypeDocument" type="XSTMeta:typeString" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Entete" type="XST:type_XST_EnTete" />
+        <xsd:element name="Corps">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element XSTInfo:CategorieDAnnexe="XML Terre" XSTInfo:TypeDAnnexe="XST_ATO.xsd" XSTInfo:TypeElementCorps="Reference" minOccurs="1" maxOccurs="1" name="r_XST_ATO" type="XST:typeReference" />
+              <xsd:element XSTInfo:TypeElementCorps="Champ" minOccurs="0" maxOccurs="1" name="c_Commentaire" type="XSTMeta:typeDataTypeChaine02000" />
+              <xsd:element XSTInfo:CategorieDAnnexe="Bureautique" XSTInfo:TypeDAnnexe="" XSTInfo:TypeElementCorps="Reference" minOccurs="0" maxOccurs="unbounded" name="r_AnnexeBureautique" type="XST:typeReference" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

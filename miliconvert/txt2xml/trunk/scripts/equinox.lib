@@ -1,0 +1,44 @@
+# Utility functions to run equinox based applications
+# without the X server dependencies of eclipse generated launchers
+# 
+# @author: Thomas Cataldo <thomas.cataldo@aliasource.fr>
+
+equinox_version="1.0.1.R33x_v20070828"
+epackage=org.eclipse.equinox.launcher
+equinox_main_class=${epackage}.Main
+
+function aliasource_equinox_run_appid() {
+    test $# -ge 2 || {
+	aliasource_equinox_usage
+	exit 1
+    }
+    test -d $1 || {
+	aliasource_equinox_usage
+	exit 1
+    }
+    app_install_dir="$1"
+    appid_to_run="$2"
+    shift 2
+
+    aliasource_equinox_get_jar ${app_install_dir}
+    
+    test -f ${equinox_jar} || {
+	echo "equinox jar not found (${equinox_jar})."
+	exit 1
+    }
+
+    $JAVA_HOME/bin/java -cp ${equinox_jar} ${equinox_main_class} \
+    -application $appid_to_run "$@"
+
+    app_status=$?
+    exit $app_status
+}
+
+function aliasource_equinox_get_jar() {
+    equinox_jar="${1}/plugins/${epackage}_${equinox_version}.jar"
+    return 0
+}
+
+function aliasource_equinox_usage() {
+	echo "usage: <platform base dir> <equinox appid>"
+}

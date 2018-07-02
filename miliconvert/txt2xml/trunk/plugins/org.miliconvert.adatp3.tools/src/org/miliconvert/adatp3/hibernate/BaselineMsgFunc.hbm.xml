@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineMsgFunc" table="BASELINE_MSG_FUNC" >
+        <composite-id name="id" class="org.miliconvert.adatp3.hibernate.BaselineMsgFuncId">
+            <key-property name="mtfid" type="double">
+                <column name="MTFID" precision="15" scale="5" />
+            </key-property>
+            <key-property name="funcid" type="double">
+                <column name="FUNCID" precision="15" scale="5" />
+            </key-property>
+        </composite-id>
+        <property name="io" type="string">
+            <column name="IO" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

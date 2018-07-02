@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="extractproduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.miliconvert.adatp3.tools.extractapp"
+            name="extractproduct">
+         <property
+               name="appName"
+               value="extractproduct">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="genproduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.miliconvert.adatp3.tools.genmappingapp"
+            name="genmappingproduct">
+         <property
+               name="appName"
+               value="genmappingproduct">
+         </property>
+      </product>
+   </extension>
+    <extension
+         id="schemagenproduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.miliconvert.adatp3.tools.schemagenapp"
+            name="schema gen product">
+         <property
+               name="appName"
+               value="schema gen product">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="samplegenproduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.miliconvert.adatp3.tools.samplegenapp"
+            name="sample gen product">
+         <property
+               name="appName"
+               value="sample gen product">
+         </property>
+      </product>
+   </extension>
+   
+   
+   
+   
+   
+   <extension
+         id="extractapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="any">
+         <run
+               class="org.miliconvert.adatp3.tools.ExtractApp">
+         </run>
+      </application>
+   </extension>
+  
+  <extension
+         id="genmappingapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="any">
+         <run
+               class="org.miliconvert.adatp3.tools.GenMappingApp">
+         </run>
+      </application>
+   </extension>
+   
+   <extension
+         id="extractsetapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="any">
+         <run
+               class="org.miliconvert.adatp3.tools.ExtractSetApp">
+         </run></application>
+   </extension>
+   
+    <extension
+         id="extractfieldapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="any">
+         <run
+               class="org.miliconvert.adatp3.tools.ExtractFieldApp">
+         </run></application>
+   </extension>
+   
+    
+   <extension
+         id="setapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="any">
+         <run
+               class="org.miliconvert.adatp3.tools.ExtractSetApp">
+         </run></application>
+   </extension>
+   
+   
+   <extension
+         id="schemagenapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="any">
+         <run
+               class="org.miliconvert.adatp3.tools.SchemaGenApp">
+         </run>
+      </application>
+   </extension>
+   
+   
+     <extension
+         id="samplegenapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="any">
+         <run
+               class="org.miliconvert.adatp3.tools.SampleGenApp">
+         </run>
+      </application>
+   </extension>
+  
+
+</plugin>

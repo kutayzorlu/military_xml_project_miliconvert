@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><obstacle_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/obsrep/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_additional_identifier alt="A" ff-seq="2" ffirn-fudn="1018-11">CONTROL</exercise_additional_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A " ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">OBSREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name alt="A " ff-seq="4" ffirn-fudn="1004-1">DEC</month_name>
+<qualifier alt="A " ff-seq="5" ffirn-fudn="1130-3">PER</qualifier>
+<serial_number_of_qualifier alt="A " ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<geodetic_datum set-id="geodatum" set-seq="5">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">EUROPEAN 1979</geodetic_datum>
+</geodetic_datum>
+<date_time_group set-id="dtg" set-seq="6">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="7">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_drafter_releaser>
+<map_data_without_geodetic_datum set-id="mapnogd" set-seq="8">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+<map_or_chart_suffix_number alt="A" ff-seq="2" ffirn-fudn="1012-4">16</map_or_chart_suffix_number>
+<group_of_fields>
+<map_or_chart_sheet_number alt="A" ff-seq="3" ffirn-fudn="1012-3">NM32-1ESSEN</map_or_chart_sheet_number>
+<map_or_chart_edition_number alt="A" ff-seq="4" ffirn-fudn="1012-2">3-DMG</map_or_chart_edition_number>
+</group_of_fields>
+</map_data_without_geodetic_datum>
+<map_data_without_geodetic_datum set-id="mapnogd" set-seq="8">
+<map_or_chart_series_designator alt="A" ff-seq="1" ffirn-fudn="1075-1">1501</map_or_chart_series_designator>
+</map_data_without_geodetic_datum>
+<organization_designator set-id="orgid" set-seq="9">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator>
+<location_and_nearest_feature set-id="locnf" set-seq="10">
+<geographic_place_name alt="A " ff-seq="1" ffirn-fudn="1022-90">BRUSSELS</geographic_place_name>
+<utm_grid_reference>
+<location_utm_10_metre alt="B " ff-seq="2" ffirn-fudn="2086-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">10</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">A</utm_100000_metre_square_row>
+<utm_10_metre_easting ffirn-fudn="1234-1">1234</utm_10_metre_easting>
+<utm_10_metre_northing ffirn-fudn="1238-1">5678</utm_10_metre_northing>
+</location_utm_10_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="2" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">10</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">D</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">A</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">12345</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">67890</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+</location_and_nearest_feature>
+<obstacle_data set-id="obsdata" set-seq="11">
+<mines_present_indicator alt="A " ff-seq="1" ffirn-fudn="1027-24">UNK</mines_present_indicator>
+<group_of_fields>
+<generic_land_mine_type alt="A " ff-seq="2" ffirn-fudn="1210-4" xsi:nil="true"/>
+<obstacle_type_abbreviated alt="A " ff-seq="3" ffirn-fudn="1270-2">TD</obstacle_type_abbreviated>
+<obstacle_characteristics alt="A " ff-seq="4" ffirn-fudn="1236-20">COV</obstacle_characteristics>
+</group_of_fields>
+</obstacle_data>
+<obstacle_dimensions set-id="obstdims" set-seq="12">
+<obstacle_length_in_metres alt="A " ff-seq="1" ffirn-fudn="1657-3">2000</obstacle_length_in_metres>
+<obstacle_width_in_metres alt="A " ff-seq="2" ffirn-fudn="1658-5">4</obstacle_width_in_metres>
+<obstacle__dimension>
+<obstacle_depth_in_metres alt="B " descriptor="DEPTH" ff-seq="3" ffirn-fudn="1247-4">2</obstacle_depth_in_metres>
+</obstacle__dimension>
+</obstacle_dimensions>
+<entry_and_or_exit_point set-id="entryxpt" set-seq="13">
+<entry_point_grid_reference_in_utm>
+<entry_point_location_utm_10_metre alt="B" ff-seq="1" ffirn-fudn="2086-54">
+<utm_grid_zone_column ffirn-fudn="1096-1">32</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">S</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">T</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">H</utm_100000_metre_square_row>
+<utm_10_metre_easting ffirn-fudn="1234-1">1457</utm_10_metre_easting>
+<utm_10_metre_northing ffirn-fudn="1238-1">2573</utm_10_metre_northing>
+</entry_point_location_utm_10_metre>
+</entry_point_grid_reference_in_utm>
+</entry_and_or_exit_point>
+<acknowledge set-id="aknldg" set-seq="14">
+<acknowledge_requirement_indicator alt="A" ff-seq="1" ffirn-fudn="1027-5">YES</acknowledge_requirement_indicator>
+<instructions_for_or_force_or_unit_required_to_acknowledge>
+<instructions_for_acknowledging alt="A" ff-seq="2" ffirn-fudn="1357-7">MIDDLEBURGH</instructions_for_acknowledging>
+</instructions_for_or_force_or_unit_required_to_acknowledge>
+</acknowledge>
+</obstacle_report>

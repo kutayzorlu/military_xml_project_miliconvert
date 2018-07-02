@@ -1,0 +1,185 @@
+
+package org.mpgt.rules.navsitsum;
+
+
+expander mpgt-sets-navsitsum.dsl
+
+import org.miliconvert.xsmt.mpgt.rules.NavsitsumSetRules;
+import org.miliconvert.xsmt.mpgt.rules.CommonSetRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+
+rule R_OPCASM_19_0
+when
+		Dans le set  OPCASM avec la position 19
+then
+		Règle A_OPCASM
+//		On ne traite pas le set si la zone 4 n'est pas renseignée ou utilise l'alternat B
+end
+
+rule R_1APHIB_17_0
+when
+		Dans le set  1APHIB avec la position 17
+then
+		LIGNE = 18
+		Règle A_1APHIB
+		VI MPGT.AssociationEntiteOrgMateriel.Categorie = "CONTRL"
+end
+
+rule R_1APHIB_17_1
+when
+		Dans le set  1APHIB avec la position 17
+then
+		LIGNE = 20
+		Règle A_1APHIB
+end
+
+rule R_SAIL_18_0
+when
+		Dans le set  SAIL avec la position 18
+then
+		LIGNE = 154/730
+end
+
+rule R_APHIB_15_0
+when
+		Dans le set  APHIB avec la position 15
+then
+		LIGNE = 18
+		Règle A_APHIB
+		VI MPGT.AssociationEntiteOrgMateriel.Categorie = "CONTRL"
+end
+
+rule R_APHIB_15_1
+when
+		Dans le set  APHIB avec la position 15
+then
+		LIGNE = 20
+		Règle A_APHIB
+end
+
+rule R_SAIL_16_0
+when
+		Dans le set  SAIL avec la position 16
+then
+		LIGNE = 132/726
+end
+
+rule R_SAIL_13_0
+when
+		Dans le set  SAIL avec la position 13
+then
+		LIGNE = 22
+end
+
+rule R_ACFT_14_0
+when
+		Dans le set  ACFT avec la position 14
+then
+		LIGNE = 22
+		VI MPGT.AssociationEntiteOrgMateriel.Categorie = "CMDCTL"
+		VI MPGT.AssociationEntiteOrgMateriel.SousCategorie = "TACCNT"
+end
+
+rule R_ACFT_14_1
+when
+		Dans le set  ACFT avec la position 14
+then
+		LIGNE = 22
+		VI MPGT.AssociationEntiteOrgSite.Categorie = "CMDCTL"
+		VI MPGT.AssociationEntiteOrgSite.SousCategorie = "TACCNT"
+end
+
+rule R_SAIL_11_0
+when
+		Dans le set  SAIL avec la position 11
+then
+		LIGNE = 25
+end
+
+rule R_NSIT_12_0
+when
+		Dans le set  NSIT avec la position 12
+then
+		LIGNE = 18
+		Règle A_NSIT
+		VI MPGT.AssociationEntiteOrgMateriel.Categorie = "CONTRL"
+end
+
+rule R_NSIT_12_1
+when
+		Dans le set  NSIT avec la position 12
+then
+		LIGNE = 20
+		Règle A_NSIT
+end
+
+rule R_1SHIPS_10_0
+when
+		Dans le set  1SHIPS avec la position 10
+then
+		Règle A_1SHIPS
+		LIGNE = 25
+		VI MPIA.ArticulationMarine.Categorie = "NOS"
+end
+
+rule R_1SHIPS_10_1
+when
+		Dans le set  1SHIPS avec la position 10
+then
+		Règle A_1SHIPS
+		LIGNE = 25
+		VI MPIA.ArticulationMarine.Categorie = "NOS"
+end
+
+rule R_CONTR_7_0
+when
+		Dans le set  CONTR avec la position 7
+then
+		LIGNE = 15
+end
+
+rule R_SMRY_6_0
+when
+		Dans le set  SMRY avec la position 6
+then
+		Règle A_SMRY
+end
+
+rule R_SHIPS_9_0
+when
+		Dans le set  SHIPS avec la position 9
+then
+		LIGNE = 25
+		Règle A_SHIPS
+		VI MPIA.ArticulationMarine.Categorie = "NOS"
+end
+
+rule R_SHIPS_9_1
+when
+		Dans le set  SHIPS avec la position 9
+then
+		LIGNE = 25
+		Règle A_SHIPS
+		Règle A_SHIPS
+		VI MPIA.ArticulationMarine.Categorie = "NOS"
+end
+
+rule R_NFOR_8_0
+when
+		Dans le set  NFOR avec la position 8
+then
+		LIGNE = 18
+		VI MPIA.AssociationEntiteOrgEntiteOrg.Categorie = "CMDCTL"
+		VI MPIA.AssociationInstanceObjetInstanceObjet.SousCategorie = "TACCNT"
+end
+
+rule R_NFOR_8_1
+when
+		Dans le set  NFOR avec la position 8
+then
+		LIGNE = 20
+		VI MPIA.AssociationEntiteOrgEntiteOrg.Categorie = "CMDCTL"
+		VI MPIA.AssociationInstanceObjetInstanceObjet.SousCategorie = "TACCNT"
+end

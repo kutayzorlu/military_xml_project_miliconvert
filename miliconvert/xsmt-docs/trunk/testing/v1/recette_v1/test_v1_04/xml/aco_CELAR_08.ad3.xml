@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<airspace_control_order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/aco/messages.xsd">
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A" ff-seq="1" ffirn-fudn="1018-2">ACO</message_text_format_identifier>
+<originator alt="A" ff-seq="2" ffirn-fudn="1029-1">UNDEFINED</originator>
+<month_name_abbreviated alt="A" ff-seq="4" ffirn-fudn="1004-1">JAN</month_name_abbreviated>
+</message_identifier>
+<airspace_control_order_identification_segment>
+<airspace_control_order_identification set-id="acoid" set-seq="5">
+<name_of_area_of_validity alt="A" ff-seq="1" ffirn-fudn="1022-25">ACO IDENTIFICATION</name_of_area_of_validity>
+</airspace_control_order_identification>
+<geodetic_datum set-id="geodatum" set-seq="6">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">W84</geodetic_datum>
+</geodetic_datum>
+<period_of_time set-id="period" set-seq="7">
+<start_day_time>
+<day_time_start alt="A" ff-seq="1" ffirn-fudn="2000-14">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">03</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_start>
+</start_day_time>
+<stop_day_time>
+<day_time_stop alt="A" ff-seq="2" ffirn-fudn="2000-15">
+<day ffirn-fudn="1000-1">11</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">02</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+</day_time_stop>
+</stop_day_time>
+</period_of_time>
+<airspace_control_means_status_segment>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification set-id="acmid" set-seq="10">
+<airspace_control_means>
+<type_of_airspace_control_means alt="A" descriptor="ACM" ff-seq="1" ffirn-fudn="1389-2">REFPT</type_of_airspace_control_means>
+</airspace_control_means>
+<airspace_control_means_identifier>
+<airspace_control_means_identifying_designator alt="A" descriptor="DESIG" ff-seq="2" ffirn-fudn="1515-12">AB123</airspace_control_means_identifying_designator>
+</airspace_control_means_identifier>
+<type_of_airspace_shape alt="A" ff-seq="3" ffirn-fudn="1237-2">POINT</type_of_airspace_shape>
+<airspace_usage>
+<airspace_usage alt="A" descriptor="USE" ff-seq="4" ffirn-fudn="1389-3">CP</airspace_usage>
+</airspace_usage>
+</airspace_control_means_identification>
+<shape_point set-id="apoint" set-seq="18">
+<airspace_point>
+<geographic_position_lat_long_seconds alt="B" descriptor="LATS" ff-seq="1" ffirn-fudn="2024-1">
+<latitude_degrees ffirn-fudn="1039-1">46</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">00</latitude_minute_angular>
+<latitude_second_angular ffirn-fudn="1042-2">57</latitude_second_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">002</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">30</longitude_minute_angular>
+<longitude_second_angular ffirn-fudn="1042-3">20</longitude_second_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</airspace_point>
+</shape_point>
+<vertical_dimension_of_the_effective_level set-id="efflevel" set-seq="21">
+<vertical_dimemsion>
+<vertical_dimension_flight_level_to_flight_level alt="E" descriptor="FLFL" ff-seq="1" ffirn-fudn="2099-2">
+<flight_level_data_qualifier ffirn-fudn="1130-4">FL</flight_level_data_qualifier>
+<flight_level_number ffirn-fudn="1012-42">100</flight_level_number>
+<hyphen ffirn-fudn="1025-2">-</hyphen>
+<flight_level_data_qualifier_1 ffirn-fudn="1130-4">FL</flight_level_data_qualifier_1>
+<flight_level_number_1 ffirn-fudn="1012-42">900</flight_level_number_1>
+</vertical_dimension_flight_level_to_flight_level>
+</vertical_dimemsion>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+</airspace_control_means_status_segment>
+</airspace_control_order_identification_segment>
+</airspace_control_order>

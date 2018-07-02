@@ -1,0 +1,4079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="nato:adatp-3:bl11:sets" xmlns:c="nato:adatp-3:bl11:composites" xmlns:f="nato:adatp-3:bl11:elementals" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="nato:adatp-3:bl11:sets" version="bl11">
+<xsd:import namespace="nato:adatp-3:bl11:elementals" schemaLocation="fields.xsd"/>
+<xsd:import namespace="nato:adatp-3:bl11:composites" schemaLocation="composites.xsd"/>
+<xsd:complexType name="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="amplification" type="amplification"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="narrative" type="narrative"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="exercise.identification">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="exercise_nickname" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:exercise.nickname.1021.1">
+<xsd:attribute fixed="1021-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="exercise_additional_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:exercise.additional.identifier.1018.11">
+<xsd:attribute fixed="1018-11" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="exer" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="operation.codeword">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="operation_codeword" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:operation.codeword.1020.1">
+<xsd:attribute fixed="1020-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="plan_originator_and_number" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:plan.originator.and.number.2404.1">
+<xsd:attribute fixed="2404-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="option_nickname" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:option.nickname.1232.1">
+<xsd:attribute fixed="1232-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="secondary_option_nickname" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:secondary.option.nickname.1232.2">
+<xsd:attribute fixed="1232-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="oper" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="message.identifier">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="message_text_format_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:message.text.format.identifier.1018.2">
+<xsd:attribute fixed="1018-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="originator" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:originator.1029.1">
+<xsd:attribute fixed="1029-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="message_serial_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:message.serial.number.1012.7">
+<xsd:attribute fixed="1012-7" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="month_name" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.name.1004.1">
+<xsd:attribute fixed="1004-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="qualifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:qualifier.1130.3">
+<xsd:attribute fixed="1130-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="serial_number_of_qualifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:serial.number.of.qualifier.1012.29">
+<xsd:attribute fixed="1012-29" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="msgid" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="reference">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="serial_letter" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:serial.letter.1102.3">
+<xsd:attribute fixed="1102-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="communication_type" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="message_text_format_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:message.text.format.identifier.1018.2">
+<xsd:attribute fixed="1018-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="communication_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:communication.type.1153.1">
+<xsd:attribute fixed="1153-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="originator" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:originator.1029.1">
+<xsd:attribute fixed="1029-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="date_and_time_of_reference" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_group_of_reference" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.group.of.reference.2197.2">
+<xsd:attribute fixed="2197-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_reference" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.reference.2000.34">
+<xsd:attribute fixed="2000-34" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_reference_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.reference.verified.2013.33">
+<xsd:attribute fixed="2013-33" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_and_month_of_reference" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.and.month.of.reference.2030.2">
+<xsd:attribute fixed="2030-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="date_time_month_of_reference_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:date.time.month.of.reference.verified.2032.2">
+<xsd:attribute fixed="2032-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="dtg_of_reference_4_digit_yr" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:dtg.of.reference.4.digit.yr.2033.2">
+<xsd:attribute fixed="2033-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="dtg_of_reference_verified_4_yr" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:dtg.of.reference.verified.4.yr.2034.2">
+<xsd:attribute fixed="2034-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="date_of_reference_ddmmmyyyy" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:date.of.reference.ddmmmyyyy.2001.3">
+<xsd:attribute fixed="2001-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="date_of_reference_ddmmyyyy" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:date.of.reference.ddmmyyyy.2052.2">
+<xsd:attribute fixed="2052-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="date_of_reference_yyyymmdd" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:date.of.reference.yyyymmdd.2053.2">
+<xsd:attribute fixed="2053-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="reference_serial_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:reference.serial.number.1012.66">
+<xsd:attribute fixed="1012-66" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="special_notation" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:special.notation.1131.1">
+<xsd:attribute fixed="1131-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="sic_or_file_number" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="sic" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:sic.1017.2">
+<xsd:attribute fixed="1017-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="filing_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:filing.number.1012.49">
+<xsd:attribute fixed="1012-49" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="ref" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="queue.word">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="maritime_indicator" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:maritime.indicator.1462.1">
+<xsd:attribute fixed="1462-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="queword" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="time.period">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="start_time" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_start" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.start.2000.14">
+<xsd:attribute fixed="2000-14" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_start_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.start.verified.2013.8">
+<xsd:attribute fixed="2013-8" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="end_time" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_stop" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.stop.2000.15">
+<xsd:attribute fixed="2000-15" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_stop_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.stop.verified.2013.9">
+<xsd:attribute fixed="2013-9" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="start_month" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:start.month.1004.5">
+<xsd:attribute fixed="1004-5" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="start_year_4_digit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:start.year.4.digit.1005.2">
+<xsd:attribute fixed="1005-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="end_month" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:end.month.1004.6">
+<xsd:attribute fixed="1004-6" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="end_year_4_digit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:end.year.4.digit.1005.3">
+<xsd:attribute fixed="1005-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="timpd" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="submarine.contact">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_serial_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.serial.number.1012.67">
+<xsd:attribute fixed="1012-67" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="unit" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="unit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.1022.57">
+<xsd:attribute fixed="1022-57" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="trademark" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:trademark.1416.3">
+<xsd:attribute fixed="1416-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="report_number" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="locating_report_number" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:locating.report.number.2296.1">
+<xsd:attribute fixed="2296-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="not_reported_in_flight" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:not.reported.in.flight.1449.1">
+<xsd:attribute fixed="1449-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="submarine_classification_confidence_level" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:submarine.classification.confidence.level.1123.5">
+<xsd:attribute fixed="1123-5" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="submarine_propulsion_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:submarine.propulsion.type.1339.1">
+<xsd:attribute fixed="1339-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="class_or_type" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="submarine_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:submarine.type.1036.2">
+<xsd:attribute fixed="1036-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="submarine_class_name" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:submarine.class.name.1038.1">
+<xsd:attribute fixed="1038-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="credibility" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:credibility.1461.1">
+<xsd:attribute fixed="1461-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="8" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="contact_photo_status" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.photo.status.1450.1">
+<xsd:attribute fixed="1450-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="9" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ship_control_number" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:ship.control.number.2282.1">
+<xsd:attribute fixed="2282-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="10" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="designator_or_identifier" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="nato_submarine_contact_designator" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:nato.submarine.contact.designator.2152.1">
+<xsd:attribute fixed="2152-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="11" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:discrete.identifier.1625.25">
+<xsd:attribute fixed="1625-25" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="11" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="sub" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="association">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="association" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="trademark" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:trademark.1416.3">
+<xsd:attribute fixed="1416-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:discrete.identifier.1625.25">
+<xsd:attribute fixed="1625-25" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="assoc" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="ellipse">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="ellipse_position" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="centre_lat_long_minutes_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:centre.lat.long.minutes.verified.2043.17">
+<xsd:attribute fixed="2043-17" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="centre_lat_long_minutes" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:centre.lat.long.minutes.2023.3">
+<xsd:attribute fixed="2023-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="unit_designation" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.designation.1028.26">
+<xsd:attribute fixed="1028-26" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="orientation_of_semi_major_axis_qualified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:orientation.of.semi.major.axis.qualified.2159.3">
+<xsd:attribute fixed="2159-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="semi_major_axis_length_nautical_miles" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:semi.major.axis.length.nautical.miles.2280.2">
+<xsd:attribute fixed="2280-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="semi_minor_axis_length_nautical_miles" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:semi.minor.axis.length.nautical.miles.2280.3">
+<xsd:attribute fixed="2280-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="ellipse" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="circular.area">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="position_of_centre_of_circle" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="centre_lat_long_minutes_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:centre.lat.long.minutes.verified.2043.17">
+<xsd:attribute fixed="2043-17" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="origin_place_name" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:origin.place.name.1022.109">
+<xsd:attribute fixed="1022-109" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="origin_bearing_and_distance_in_nm_from_reference_point" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:origin.bearing.and.distance.in.nm.from.reference.point.2307.2">
+<xsd:attribute fixed="2307-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="centre_utm_10_metre" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:centre.utm.10.metre.2086.45">
+<xsd:attribute fixed="2086-45" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="centre_position_georef_centiminute" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:centre.position.georef.centiminute.2018.17">
+<xsd:attribute fixed="2018-17" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_lat_long_seconds_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.seconds.verified.2044.1">
+<xsd:attribute fixed="2044-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_lat_long_1_10_second_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.1.10.second.verified.2200.1">
+<xsd:attribute fixed="2200-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="verified_true_bearing_and_distance_from_ref_point" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:verified.true.bearing.and.distance.from.ref.point.2202.1">
+<xsd:attribute fixed="2202-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="q_route_position" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:q.route.position.2203.1">
+<xsd:attribute fixed="2203-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_lat_long_1_1000_minute_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.1.1000.minute.verified.2201.1">
+<xsd:attribute fixed="2201-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_utm_1_metre" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.utm.1.metre.2089.1">
+<xsd:attribute fixed="2089-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_utm_100_metre" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.utm.100.metre.2087.1">
+<xsd:attribute fixed="2087-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_utm_1000_metre" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.utm.1000.metre.2088.1">
+<xsd:attribute fixed="2088-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_georef_minute" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.georef.minute.2017.1">
+<xsd:attribute fixed="2017-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_georef_abbreviated_minute" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.georef.abbreviated.minute.2019.1">
+<xsd:attribute fixed="2019-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_georef_abbreviated_centiminute" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.georef.abbreviated.centiminute.2020.1">
+<xsd:attribute fixed="2020-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_lat_long_minutes" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.minutes.2023.1">
+<xsd:attribute fixed="2023-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="true_bearing_and_distance_in_nm_from_reference_point" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:true.bearing.and.distance.in.nm.from.reference.point.2016.1">
+<xsd:attribute fixed="2016-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="unit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.1022.57">
+<xsd:attribute fixed="1022-57" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="radius_yd_kyd_or_nm" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:radius.yd.kyd.or.nm.2433.1">
+<xsd:attribute fixed="2433-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="circ" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="area">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="area_name" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:area.name.1022.69">
+<xsd:attribute fixed="1022-69" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="position_or_point_name" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="position_or_point_name" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:position.or.point.name.1022.18">
+<xsd:attribute fixed="1022-18" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_lat_long_degrees" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.degrees.2022.1">
+<xsd:attribute fixed="2022-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_lat_long_minutes" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.minutes.2023.1">
+<xsd:attribute fixed="2023-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_lat_long_seconds" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.seconds.2024.1">
+<xsd:attribute fixed="2024-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_georef_abbreviated_minute" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.georef.abbreviated.minute.2019.1">
+<xsd:attribute fixed="2019-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_georef_minute" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.georef.minute.2017.1">
+<xsd:attribute fixed="2017-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_georef_abbreviated_centiminute" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.georef.abbreviated.centiminute.2020.1">
+<xsd:attribute fixed="2020-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_georef_centiminute" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.georef.centiminute.2018.1">
+<xsd:attribute fixed="2018-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_utm_1000_metre" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.utm.1000.metre.2088.1">
+<xsd:attribute fixed="2088-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_utm_100_metre" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.utm.100.metre.2087.1">
+<xsd:attribute fixed="2087-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_utm_10_metre" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.utm.10.metre.2086.1">
+<xsd:attribute fixed="2086-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_utm_1_metre" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.utm.1.metre.2089.1">
+<xsd:attribute fixed="2089-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="bearing_and_distance_from_reference_point" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:bearing.and.distance.from.reference.point.2157.1">
+<xsd:attribute fixed="2157-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="true_bearing_and_distance_in_nm_from_reference_point" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:true.bearing.and.distance.in.nm.from.reference.point.2016.1">
+<xsd:attribute fixed="2016-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="q_route_position" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:q.route.position.2203.1">
+<xsd:attribute fixed="2203-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="area" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="time.of.sensor.contact.event">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="day_time" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_of_event_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.event.verified.2013.34">
+<xsd:attribute fixed="2013-34" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_event" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.event.2000.9">
+<xsd:attribute fixed="2000-9" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="asw_mission_event" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:asw.mission.event.1224.3">
+<xsd:attribute fixed="1224-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="acoustic_sensor" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:acoustic.sensor.1434.5">
+<xsd:attribute fixed="1434-5" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_course_degrees_true" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:contact.course.degrees.true.2258.2">
+<xsd:attribute fixed="2258-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_speed_knots" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:contact.speed.knots.2265.2">
+<xsd:attribute fixed="2265-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="number_of_detecting_sensors" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:number.of.detecting.sensors.1044.120">
+<xsd:attribute fixed="1044-120" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="comments" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:comments.1357.1">
+<xsd:attribute fixed="1357-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="timevent" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="bearing">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="date_time" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_of_bearing" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.bearing.2000.21">
+<xsd:attribute fixed="2000-21" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_bearing_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.bearing.verified.2013.28">
+<xsd:attribute fixed="2013-28" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="bearing_origin" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="bearing_origin_lat_long_minutes_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:bearing.origin.lat.long.minutes.verified.2043.26">
+<xsd:attribute fixed="2043-26" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="bearing_origin_lat_long_minutes" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:bearing.origin.lat.long.minutes.2023.2">
+<xsd:attribute fixed="2023-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="reference_point_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:reference.point.identifier.1012.91">
+<xsd:attribute fixed="1012-91" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="bearing_degrees_true" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:bearing.degrees.true.2253.1">
+<xsd:attribute fixed="2253-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="sector_half_width" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="sector_half_width_distance_nautical_miles" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:sector.half.width.distance.nautical.miles.2280.4">
+<xsd:attribute fixed="2280-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="sector_half_width_degree" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:sector.half.width.degree.2278.2">
+<xsd:attribute fixed="2278-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="line_of_bearing_lob_range_nautical_miles" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:line.of.bearing.lob.range.nautical.miles.2272.5">
+<xsd:attribute fixed="2272-5" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="acoustic_sensor" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:acoustic.sensor.1434.5">
+<xsd:attribute fixed="1434-5" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="brng" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="time.and.position">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="date_time_group" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_of_position_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.position.verified.2013.7">
+<xsd:attribute fixed="2013-7" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_position" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.position.2000.18">
+<xsd:attribute fixed="2000-18" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="geographic_position" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="geographic_position_lat_long_minutes_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.minutes.verified.2043.1">
+<xsd:attribute fixed="2043-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="geographic_position_lat_long_minutes" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:geographic.position.lat.long.minutes.2023.1">
+<xsd:attribute fixed="2023-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_course_degrees_true" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:contact.course.degrees.true.2258.2">
+<xsd:attribute fixed="2258-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_speed_knots" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:contact.speed.knots.2265.2">
+<xsd:attribute fixed="2265-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="asw_mission_event" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:asw.mission.event.1224.3">
+<xsd:attribute fixed="1224-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="sensor_platform" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:sensor.platform.1473.2">
+<xsd:attribute fixed="1473-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="acoustic_sensor" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:acoustic.sensor.1434.5">
+<xsd:attribute fixed="1434-5" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="acoustic_information_source" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:acoustic.information.source.1474.1">
+<xsd:attribute fixed="1474-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="8" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="number_of_detecting_sensors" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:number.of.detecting.sensors.1044.120">
+<xsd:attribute fixed="1044-120" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="9" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="navigation_accuracy_yards_metres_or_nautical_miles" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:navigation.accuracy.yards.metres.or.nautical.miles.2284.2">
+<xsd:attribute fixed="2284-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="10" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="tmpos" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="relative.to.own.position">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="bearing_degrees_true_magnetic_grid_or_relative" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:bearing.degrees.true.magnetic.grid.or.relative.2254.1">
+<xsd:attribute fixed="2254-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="distance_yd_kyd_m_km_or_nm" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:distance.yd.kyd.m.km.or.nm.2268.1">
+<xsd:attribute fixed="2268-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="unit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.1022.57">
+<xsd:attribute fixed="1022-57" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="date_time_month_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:date.time.month.verified.2032.1">
+<xsd:attribute fixed="2032-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="station_lat_long_minutes_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:station.lat.long.minutes.verified.2043.10">
+<xsd:attribute fixed="2043-10" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="course_degrees_true_or_magnetic" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:course.degrees.true.or.magnetic.2259.1">
+<xsd:attribute fixed="2259-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="speed_knots" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:speed.knots.2265.1">
+<xsd:attribute fixed="2265-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="relpo" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="reaction">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="day_time_of_observed_reaction" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_of_observed_reaction_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.observed.reaction.verified.2013.42">
+<xsd:attribute fixed="2013-42" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_observed_reaction" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.observed.reaction.2000.45">
+<xsd:attribute fixed="2000-45" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="direction_of_pass" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:direction.of.pass.1382.1">
+<xsd:attribute fixed="1382-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="closest_point_of_approach_feet_yards_or_metres" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:closest.point.of.approach.feet.yards.or.metres.2300.1">
+<xsd:attribute fixed="2300-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="altitude_in_feet_or_metres" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:altitude.in.feet.or.metres.2279.1">
+<xsd:attribute fixed="2279-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="aircraft_to_contact_pass" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:aircraft.to.contact.pass.1400.1">
+<xsd:attribute fixed="1400-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="comments" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:comments.1357.1">
+<xsd:attribute fixed="1357-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="react" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="attack">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="ordnance_type_maritime" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:ordnance.type.maritime.1407.7">
+<xsd:attribute fixed="1407-7" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="attack_results" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:attack.results.1150.1">
+<xsd:attribute fixed="1150-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="attack_method_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:attack.method.type.1469.1">
+<xsd:attribute fixed="1469-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="range_from_water_entry_to_target_metres_yards_or_nm" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:range.from.water.entry.to.target.metres.yards.or.nm.2274.2">
+<xsd:attribute fixed="2274-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="bearing_from_tgt_hdg_to_wpn_water_entry_pt_degrees_relative" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:bearing.from.tgt.hdg.to.wpn.water.entry.pt.degrees.relative.2252.2">
+<xsd:attribute fixed="2252-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="aircraft_heading_at_weapon_release_time_degrees_true" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:aircraft.heading.at.weapon.release.time.degrees.true.2255.3">
+<xsd:attribute fixed="2255-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="attack" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="non.acoustic.emission.intercept">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="standard_emitter_designation" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:standard.emitter.designation.1121.4">
+<xsd:attribute fixed="1121-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="credibility" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:credibility.1461.1">
+<xsd:attribute fixed="1461-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="elint_notation_or_sorting_code" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="elint_notation" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:elint.notation.1012.34">
+<xsd:attribute fixed="1012-34" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="sorting_code" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:sorting.code.1012.76">
+<xsd:attribute fixed="1012-76" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="radio_radar_function" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:radio.radar.function.1471.1">
+<xsd:attribute fixed="1471-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="crystal_frequency" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:crystal.frequency.2064.5">
+<xsd:attribute fixed="2064-5" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="crystal_countdown" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:crystal.countdown.1472.1">
+<xsd:attribute fixed="1472-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="emitter" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="radar.parameters">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="radio_frequency" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="radio_frequency" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:radio.frequency.2064.1">
+<xsd:attribute fixed="2064-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="frequency_band" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:frequency.band.1264.1">
+<xsd:attribute fixed="1264-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="pulse_repetition_frequency" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:pulse.repetition.frequency.2177.1">
+<xsd:attribute fixed="2177-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="pulse_repetition_interval_in_microseconds" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:pulse.repetition.interval.in.microseconds.2176.1">
+<xsd:attribute fixed="2176-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="pulse_width" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:pulse.width.2175.1">
+<xsd:attribute fixed="2175-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="scan_rate" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="scan_rate_hz" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:scan.rate.hz.2026.1">
+<xsd:attribute fixed="2026-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="scan_rate_spr" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:scan.rate.spr.2008.1">
+<xsd:attribute fixed="2008-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="scan_rate_rpm" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:scan.rate.rpm.2174.2">
+<xsd:attribute fixed="2174-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="scan_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:scan.type.1105.1">
+<xsd:attribute fixed="1105-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="emission_intercept_duration" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:emission.intercept.duration.2095.1">
+<xsd:attribute fixed="2095-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="prf_variation" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:prf.variation.1260.1">
+<xsd:attribute fixed="1260-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="8" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="radpa" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="signature">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="acoustic_source" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:acoustic.source.1468.1">
+<xsd:attribute fixed="1468-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="fundamental_frequency" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:fundamental.frequency.2283.4">
+<xsd:attribute fixed="2283-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="harmonic" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:harmonic.1466.1">
+<xsd:attribute fixed="1466-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="rotational_speed_rpm" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:rotational.speed.rpm.2174.1">
+<xsd:attribute fixed="2174-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="turns_per_knot_tpk" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:turns.per.knot.tpk.2287.1">
+<xsd:attribute fixed="2287-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="signa" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="signature.summation">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="acoustic_source" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:acoustic.source.1468.1">
+<xsd:attribute fixed="1468-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="maximum_fundamental_frequency" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:maximum.fundamental.frequency.2283.5">
+<xsd:attribute fixed="2283-5" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="minimum_fundamental_frequency" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:minimum.fundamental.frequency.2283.6">
+<xsd:attribute fixed="2283-6" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="harmonic" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:harmonic.1466.1">
+<xsd:attribute fixed="1466-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="sigsum" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="submarine.operating.mode">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="submarine_operating_mode" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:submarine.operating.mode.1056.1">
+<xsd:attribute fixed="1056-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="submarine_propulsion_mode" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:submarine.propulsion.mode.1454.1">
+<xsd:attribute fixed="1454-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="submarine_depth_feet_or_metres_decimal_permitted" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:submarine.depth.feet.or.metres.decimal.permitted.2264.3">
+<xsd:attribute fixed="2264-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="depth_measurement_method" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:depth.measurement.method.2286.1">
+<xsd:attribute fixed="2286-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="mode" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="contact.summary">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="day_time_contact" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_contact_gained_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.contact.gained.verified.2013.12">
+<xsd:attribute fixed="2013-12" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_contact_gained" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.contact.gained.2000.46">
+<xsd:attribute fixed="2000-46" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="asw_mission_event" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:asw.mission.event.1224.3">
+<xsd:attribute fixed="1224-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="sensor_type_or_information_source" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="sensor_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:sensor.type.1434.1">
+<xsd:attribute fixed="1434-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="acoustic_information_source" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:acoustic.information.source.1474.1">
+<xsd:attribute fixed="1474-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="time_contact_lost" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_contact_lost_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.contact.lost.verified.2013.43">
+<xsd:attribute fixed="2013-43" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_contact_lost" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.contact.lost.2000.47">
+<xsd:attribute fixed="2000-47" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="asw_mission_event_1" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:asw.mission.event.1224.3">
+<xsd:attribute fixed="1224-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="sensor_type_or_information_source_1438" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="sensor_type_1" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:sensor.type.1434.1">
+<xsd:attribute fixed="1434-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="acoustic_information_source_1" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:acoustic.information.source.1474.1">
+<xsd:attribute fixed="1474-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="percentage_number_qualified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:percentage.number.qualified.2301.1">
+<xsd:attribute fixed="2301-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="sumry" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="arrival">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="port_name" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:port.name.1022.74">
+<xsd:attribute fixed="1022-74" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="time_of_arrival" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_of_arrival_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.arrival.verified.2013.32">
+<xsd:attribute fixed="2013-32" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_arrival" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.arrival.2000.2">
+<xsd:attribute fixed="2000-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="arrival_month" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:arrival.month.1004.2">
+<xsd:attribute fixed="1004-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="cargo_indicator" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:cargo.indicator.1173.4">
+<xsd:attribute fixed="1173-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="arr" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="inport">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="location_name" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:location.name.1022.4">
+<xsd:attribute fixed="1022-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="time_of_observation" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="estimated_day_time_of_sighting_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:estimated.day.time.of.sighting.verified.2013.29">
+<xsd:attribute fixed="2013-29" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_sighting" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.sighting.2000.11">
+<xsd:attribute fixed="2000-11" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="month_of_sighting" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.of.sighting.1004.11">
+<xsd:attribute fixed="1004-11" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="cargo_indicator" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:cargo.indicator.1173.4">
+<xsd:attribute fixed="1173-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="inport" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="departure">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="departure_port" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:departure.port.1022.82">
+<xsd:attribute fixed="1022-82" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="time_of_observation" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_of_observation_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.observation.verified.2013.49">
+<xsd:attribute fixed="2013-49" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_observation" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.observation.2000.66">
+<xsd:attribute fixed="2000-66" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="month_of_observation" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.of.observation.1004.3">
+<xsd:attribute fixed="1004-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="cargo_indicator" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:cargo.indicator.1173.4">
+<xsd:attribute fixed="1173-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="dep" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="destination">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="port_name" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:port.name.1022.74">
+<xsd:attribute fixed="1022-74" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="time_of_observation" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="day_time_of_observation_verified" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.observation.verified.2013.49">
+<xsd:attribute fixed="2013-49" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="day_time_of_observation" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:day.time.of.observation.2000.66">
+<xsd:attribute fixed="2000-66" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="month_of_observation" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:month.of.observation.1004.3">
+<xsd:attribute fixed="1004-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="cargo_indicator" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:cargo.indicator.1173.4">
+<xsd:attribute fixed="1173-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="dest" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="naval.surface.contact">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_serial_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.serial.number.1012.67">
+<xsd:attribute fixed="1012-67" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="unit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.1022.57">
+<xsd:attribute fixed="1022-57" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="locating_report_number" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="locating_report_number" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:locating.report.number.2296.1">
+<xsd:attribute fixed="2296-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="not_reported_in_flight" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:not.reported.in.flight.1449.1">
+<xsd:attribute fixed="1449-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="name_of_ship_class" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="name_of_ship_class" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:name.of.ship.class.1022.35">
+<xsd:attribute fixed="1022-35" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="unit_1" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.1022.57">
+<xsd:attribute fixed="1022-57" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="naval_ship_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:naval.ship.type.1036.3">
+<xsd:attribute fixed="1036-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_photo_status" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.photo.status.1450.1">
+<xsd:attribute fixed="1450-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="pennant_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:pennant.number.1012.46">
+<xsd:attribute fixed="1012-46" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="8" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ship_control_number" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:ship.control.number.2282.1">
+<xsd:attribute fixed="2282-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="9" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nato_designator_or_discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="nato_surface_contact_designator" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:nato.surface.contact.designator.2154.1">
+<xsd:attribute fixed="2154-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="10" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:discrete.identifier.1625.25">
+<xsd:attribute fixed="1625-25" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="10" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="naval" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="aircraft.contact">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_serial_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.serial.number.1012.67">
+<xsd:attribute fixed="1012-67" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="unit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.1022.57">
+<xsd:attribute fixed="1022-57" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="locating_report_number" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="locating_report_number" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:locating.report.number.2296.1">
+<xsd:attribute fixed="2296-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="not_reported_in_flight" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:not.reported.in.flight.1449.1">
+<xsd:attribute fixed="1449-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="aircraft_type_model" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:aircraft.type.model.1015.4">
+<xsd:attribute fixed="1015-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="credibility" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:credibility.1461.1">
+<xsd:attribute fixed="1461-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="number_of_aircraft_1_99" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:number.of.aircraft.1.99.1044.143">
+<xsd:attribute fixed="1044-143" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_photo_status" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.photo.status.1450.1">
+<xsd:attribute fixed="1450-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="8" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="altitude" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="aircraft_contact_altitude_in_hundreds_of_feet" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:aircraft.contact.altitude.in.hundreds.of.feet.2164.3">
+<xsd:attribute fixed="2164-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="9" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="flight_level" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:flight.level.2129.1">
+<xsd:attribute fixed="2129-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="9" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="air" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="merchant.ship.contact">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_serial_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.serial.number.1012.67">
+<xsd:attribute fixed="1012-67" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="unit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.1022.57">
+<xsd:attribute fixed="1022-57" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="naval_ship_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:naval.ship.type.1036.3">
+<xsd:attribute fixed="1036-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_photo_status" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.photo.status.1450.1">
+<xsd:attribute fixed="1450-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ship_control_number" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:ship.control.number.2282.1">
+<xsd:attribute fixed="2282-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="nato_surface_contact_designator" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:nato.surface.contact.designator.2154.1">
+<xsd:attribute fixed="2154-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:discrete.identifier.1625.25">
+<xsd:attribute fixed="1625-25" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="cargo_indicator" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:cargo.indicator.1173.4">
+<xsd:attribute fixed="1173-4" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="8" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="merch" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="surface.ship.rigging">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="appearance_group" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:appearance.group.1467.1">
+<xsd:attribute fixed="1467-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="hull_profile" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:hull.profile.1463.1">
+<xsd:attribute fixed="1463-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="stern_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:stern.type.1464.1">
+<xsd:attribute fixed="1464-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="upright_structure" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:upright.structure.1465.1">
+<xsd:attribute fixed="1465-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ship_displacement" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:ship.displacement.1440.2">
+<xsd:attribute fixed="1440-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ship_length_feet_or_metres" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:ship.length.feet.or.metres.2266.2">
+<xsd:attribute fixed="2266-2" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="rig" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="fishing.vessel.contact">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_serial_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.serial.number.1012.67">
+<xsd:attribute fixed="1012-67" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="unit" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:unit.1022.57">
+<xsd:attribute fixed="1022-57" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="naval_ship_type" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:naval.ship.type.1036.3">
+<xsd:attribute fixed="1036-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="3" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="flag" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:flag.1026.3">
+<xsd:attribute fixed="1026-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="4" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_photo_status" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.photo.status.1450.1">
+<xsd:attribute fixed="1450-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="5" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="number_of_additional_vessels_in_area" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:number.of.additional.vessels.in.area.1044.115">
+<xsd:attribute fixed="1044-115" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="6" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ship_pennant_prefix" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:ship.pennant.prefix.1453.1">
+<xsd:attribute fixed="1453-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="7" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="pennant_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:pennant.number.1012.46">
+<xsd:attribute fixed="1012-46" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="8" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ship_control_number" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:ship.control.number.2282.1">
+<xsd:attribute fixed="2282-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="9" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nato_designator_or_discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="nato_surface_contact_designator" nillable="true">
+<xsd:complexType>
+<xsd:complexContent>
+<xsd:extension base="c:nato.surface.contact.designator.2154.1">
+<xsd:attribute fixed="2154-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="10" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:discrete.identifier.1625.25">
+<xsd:attribute fixed="1625-25" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="10" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="fishctc" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="unknown.contact">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="contact_serial_number" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:contact.serial.number.1012.67">
+<xsd:attribute fixed="1012-67" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="trademark_or_discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:choice>
+<xsd:element name="trademark" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:trademark.1416.3">
+<xsd:attribute fixed="1416-3" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="discrete_identifier" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:discrete.identifier.1625.25">
+<xsd:attribute fixed="1625-25" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="2" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:choice>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="unk" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="amplification">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="free_text" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:free.text.1006.1">
+<xsd:attribute fixed="1006-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="ampn" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="narrative">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="free_text" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:free.text.1006.1">
+<xsd:attribute fixed="1006-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="narr" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="remarks">
+<xsd:complexContent>
+<xsd:extension base="set.base.type">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="free_text" nillable="true">
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="f:free.text.1006.1">
+<xsd:attribute fixed="1006-1" name="ffirn-fudn" type="xsd:string"/>
+<xsd:attribute fixed="1" name="ff-seq" type="xsd:unsignedShort"/>
+<xsd:attribute name="header" use="optional"/>
+<xsd:attribute name="descriptor" use="optional"/>
+<xsd:attribute name="alt" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute fixed="rmks" name="set-id" type="xsd:string"/>
+</xsd:extension>
+</xsd:complexContent>
+</xsd:complexType>
+</xsd:schema>

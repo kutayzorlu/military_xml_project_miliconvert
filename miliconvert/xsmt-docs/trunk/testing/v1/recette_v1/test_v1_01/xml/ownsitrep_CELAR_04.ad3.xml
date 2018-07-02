@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<own_land_forces_situation_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ownsitrep/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">SCENOPS</exercise_nickname>
+</exercise_identification>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A " ff-seq="1" ffirn-fudn="1018-2">OWNSITREP</message_text_format_identifier>
+<originator alt="A " ff-seq="2" ffirn-fudn="1029-1">FRBMLR1MAIN</originator>
+<message_serial_number alt="A " ff-seq="3" ffirn-fudn="1012-7">0</message_serial_number>
+</message_identifier>
+<geodetic_datum set-id="geodatum" set-seq="5">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">W84</geodetic_datum>
+</geodetic_datum>
+<date_time_group set-id="dtg" set-seq="6">
+<dtg_4_digit_year alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">19</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">45</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_4_digit_year>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="7">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">BMLR1</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BDE</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">CBT</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">AD</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A " ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">2222</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_drafter_releaser>
+<message_part_and_title_segment>
+<message_part_and_title set-id="parttitl" set-seq="9">
+<message_part_identifier alt="A " ff-seq="1" ffirn-fudn="1102-2" xsi:nil="true"/>
+<part_title alt="A " ff-seq="2" ffirn-fudn="1356-2">OWN FORCES TASK ORGANIZATION</part_title>
+</message_part_and_title>
+<organization_designator_segment>
+<organization_designator set-id="orgid" set-seq="10">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1RGTINF</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">CBT</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">INF</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0002</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator>
+</organization_designator_segment>
+<organization_designator_segment>
+<organization_designator set-id="orgid" set-seq="10">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">TASKFORCE</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">TF</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2" xsi:nil="true"/>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3" xsi:nil="true"/>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1" xsi:nil="true"/>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0001</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator>
+<organization_designator_of_subordinate_unit_segment>
+<organization_designator_of_subordinate_unit set-id="orgidsub" set-seq="12">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1RGTINF</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">CBT</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">INF</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A " ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A " ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0002</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_subordinate_unit>
+<command_relationship_type_1 set-id="cmdrel" set-seq="13">
+<command_relationship_qualifier alt="A" ff-seq="1" ffirn-fudn="1130-34">ACT</command_relationship_qualifier>
+<command_relationship_type alt="A" ff-seq="2" ffirn-fudn="1660-2">OPCOM</command_relationship_type>
+</command_relationship_type_1>
+<time set-id="time" set-seq="14">
+<group_of_fields>
+<time_qualifier alt="A " ff-seq="1" ffirn-fudn="1220-1">FROM</time_qualifier>
+<date_time_indicator>
+<dtg_zulu_4_digit_year alt="A " ff-seq="2" ffirn-fudn="2323-1">
+<day ffirn-fudn="1000-1">09</day>
+<hour_time ffirn-fudn="1001-1">09</hour_time>
+<minute_time ffirn-fudn="1002-1">20</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_zulu_4_digit_year>
+</date_time_indicator>
+</group_of_fields>
+</time>
+</organization_designator_of_subordinate_unit_segment>
+<organization_designator_of_subordinate_unit_segment>
+<organization_designator_of_subordinate_unit set-id="orgidsub" set-seq="12">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">HCR</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4" xsi:nil="true"/>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1" xsi:nil="true"/>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2" xsi:nil="true"/>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3" xsi:nil="true"/>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<civilian_agency_code alt="B " ff-seq="9" ffirn-fudn="1507-1">UNRA</civilian_agency_code>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A " ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">O</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0003</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_of_subordinate_unit>
+<command_relationship_type_1 set-id="cmdrel" set-seq="13">
+<command_relationship_qualifier alt="A" ff-seq="1" ffirn-fudn="1130-34">ACT</command_relationship_qualifier>
+<command_relationship_type alt="A" ff-seq="2" ffirn-fudn="1660-2">OPCOM</command_relationship_type>
+</command_relationship_type_1>
+<time set-id="time" set-seq="14">
+<group_of_fields>
+<time_qualifier alt="A " ff-seq="1" ffirn-fudn="1220-1">FROM</time_qualifier>
+<date_time_indicator>
+<dtg_zulu_4_digit_year alt="A " ff-seq="2" ffirn-fudn="2323-1">
+<day ffirn-fudn="1000-1">09</day>
+<hour_time ffirn-fudn="1001-1">10</hour_time>
+<minute_time ffirn-fudn="1002-1">02</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_zulu_4_digit_year>
+</date_time_indicator>
+</group_of_fields>
+</time>
+</organization_designator_of_subordinate_unit_segment>
+</organization_designator_segment>
+<organization_designator_segment>
+<organization_designator set-id="orgid" set-seq="10">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">HCR</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4" xsi:nil="true"/>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1" xsi:nil="true"/>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2" xsi:nil="true"/>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3" xsi:nil="true"/>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<civilian_agency_code alt="B" ff-seq="9" ffirn-fudn="1507-1">UNRA</civilian_agency_code>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">O</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0003</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator>
+</organization_designator_segment>
+</message_part_and_title_segment>
+<general_text set-id="gentext" set-seq="15">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">COMMANDERS ASSESSMENT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1" xsi:nil="true"/>
+</general_text>
+<message_part_and_title_1_segment>
+<message_part_and_title_1 set-id="parttitl" set-seq="16">
+<message_part_identifier alt="A " ff-seq="1" ffirn-fudn="1102-2" xsi:nil="true"/>
+<part_title alt="A " ff-seq="2" ffirn-fudn="1356-2">OWN FORCES PRESENCE REPORT</part_title>
+</message_part_and_title_1>
+<organization_designator_1_segment>
+<organization_designator_1 set-id="orgid" set-seq="17">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1RGTINF</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">CBT</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">INF</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0002</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_1>
+<time_period_covered set-id="tperid" set-seq="18">
+<date_time_group_from>
+<dtg_from_zulu_4_yr alt="A" ff-seq="1" ffirn-fudn="2323-16">
+<day ffirn-fudn="1000-1">09</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">40</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_from_zulu_4_yr>
+</date_time_group_from>
+<date_time_group_to>
+<dtg_to_zulu_4_yr alt="A" ff-seq="2" ffirn-fudn="2323-17">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">40</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_to_zulu_4_yr>
+</date_time_group_to>
+</time_period_covered>
+<location_nearest_feature_and_confirmation_status_segment>
+<location_nearest_feature_and_confirmation_status set-id="locnfsts" set-seq="19">
+<status_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-2">REAL</status_of_confirmation>
+<geographic_place_name alt="A " ff-seq="2" ffirn-fudn="1022-90" xsi:nil="true"/>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">09240</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">59020</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">07910</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">58010</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">07670</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">55440</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">10230</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">55340</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">11650</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">56710</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">11310</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">59020</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+</location_nearest_feature_and_confirmation_status>
+<time_period_covered_1_segment>
+<time_period_covered_1 set-id="tperid" set-seq="20">
+<date_time_group_from>
+<dtg_from_zulu_4_yr alt="A" ff-seq="1" ffirn-fudn="2323-16" xsi:nil="true"/>
+</date_time_group_from>
+<date_time_group_to>
+<dtg_to_zulu_4_yr alt="A" ff-seq="2" ffirn-fudn="2323-17" xsi:nil="true"/>
+</date_time_group_to>
+</time_period_covered_1>
+<activity set-id="activity" set-seq="21">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<activity_type alt="A" ff-seq="2" ffirn-fudn="1299-1">DEFEND</activity_type>
+<activity_codeword_designator alt="A " ff-seq="4" ffirn-fudn="1020-3">DEFENSE</activity_codeword_designator>
+</activity>
+<operational_movement set-id="opmovemt" set-seq="22">
+<movement_direction>
+<direction_of_movement alt="A " ff-seq="1" ffirn-fudn="1161-3" xsi:nil="true"/>
+</movement_direction>
+<speed alt="A " ff-seq="2" ffirn-fudn="2063-1" xsi:nil="true"/>
+</operational_movement>
+</time_period_covered_1_segment>
+</location_nearest_feature_and_confirmation_status_segment>
+<location_nearest_feature_and_confirmation_status_segment>
+<location_nearest_feature_and_confirmation_status set-id="locnfsts" set-seq="19">
+<status_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-2">REAL</status_of_confirmation>
+<geographic_place_name alt="A " ff-seq="2" ffirn-fudn="1022-90" xsi:nil="true"/>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">06790</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">57050</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+</location_nearest_feature_and_confirmation_status>
+<time_period_covered_1_segment>
+<time_period_covered_1 set-id="tperid" set-seq="20">
+<date_time_group_from>
+<dtg_from_zulu_4_yr alt="A" ff-seq="1" ffirn-fudn="2323-16" xsi:nil="true"/>
+</date_time_group_from>
+<date_time_group_to>
+<dtg_to_zulu_4_yr alt="A" ff-seq="2" ffirn-fudn="2323-17" xsi:nil="true"/>
+</date_time_group_to>
+</time_period_covered_1>
+<operational_movement set-id="opmovemt" set-seq="22">
+<movement_direction>
+<direction_of_movement alt="A " ff-seq="1" ffirn-fudn="1161-3" xsi:nil="true"/>
+</movement_direction>
+<speed alt="A " ff-seq="2" ffirn-fudn="2063-1" xsi:nil="true"/>
+</operational_movement>
+</time_period_covered_1_segment>
+</location_nearest_feature_and_confirmation_status_segment>
+</organization_designator_1_segment>
+<organization_designator_1_segment>
+<organization_designator_1 set-id="orgid" set-seq="17">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">TASKFORCE</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">TF</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2" xsi:nil="true"/>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3" xsi:nil="true"/>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1" xsi:nil="true"/>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0001</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_1>
+<time_period_covered set-id="tperid" set-seq="18">
+<date_time_group_from>
+<dtg_from_zulu_4_yr alt="A" ff-seq="1" ffirn-fudn="2323-16">
+<day ffirn-fudn="1000-1">09</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">39</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_from_zulu_4_yr>
+</date_time_group_from>
+<date_time_group_to>
+<dtg_to_zulu_4_yr alt="A" ff-seq="2" ffirn-fudn="2323-17">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">39</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_to_zulu_4_yr>
+</date_time_group_to>
+</time_period_covered>
+<location_nearest_feature_and_confirmation_status_segment>
+<location_nearest_feature_and_confirmation_status set-id="locnfsts" set-seq="19">
+<status_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-2">REAL</status_of_confirmation>
+<geographic_place_name alt="A " ff-seq="2" ffirn-fudn="1022-90" xsi:nil="true"/>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">08400</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">58720</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+</location_nearest_feature_and_confirmation_status>
+<time_period_covered_1_segment>
+<time_period_covered_1 set-id="tperid" set-seq="20">
+<date_time_group_from>
+<dtg_from_zulu_4_yr alt="A" ff-seq="1" ffirn-fudn="2323-16" xsi:nil="true"/>
+</date_time_group_from>
+<date_time_group_to>
+<dtg_to_zulu_4_yr alt="A" ff-seq="2" ffirn-fudn="2323-17" xsi:nil="true"/>
+</date_time_group_to>
+</time_period_covered_1>
+<operational_movement set-id="opmovemt" set-seq="22">
+<movement_direction>
+<direction_of_movement alt="A " ff-seq="1" ffirn-fudn="1161-3" xsi:nil="true"/>
+</movement_direction>
+<speed alt="A " ff-seq="2" ffirn-fudn="2063-1" xsi:nil="true"/>
+</operational_movement>
+</time_period_covered_1_segment>
+</location_nearest_feature_and_confirmation_status_segment>
+</organization_designator_1_segment>
+<organization_designator_1_segment>
+<organization_designator_1 set-id="orgid" set-seq="17">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">HCR</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4" xsi:nil="true"/>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1" xsi:nil="true"/>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2" xsi:nil="true"/>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3" xsi:nil="true"/>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<civilian_agency_code alt="B" ff-seq="9" ffirn-fudn="1507-1">UNRA</civilian_agency_code>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">O</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0003</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_1>
+<time_period_covered set-id="tperid" set-seq="18">
+<date_time_group_from>
+<dtg_from_zulu_4_yr alt="A" ff-seq="1" ffirn-fudn="2323-16">
+<day ffirn-fudn="1000-1">09</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">40</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_from_zulu_4_yr>
+</date_time_group_from>
+<date_time_group_to>
+<dtg_to_zulu_4_yr alt="A" ff-seq="2" ffirn-fudn="2323-17">
+<day ffirn-fudn="1000-1">10</day>
+<hour_time ffirn-fudn="1001-1">11</hour_time>
+<minute_time ffirn-fudn="1002-1">40</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name ffirn-fudn="1004-1">APR</month_name>
+<year ffirn-fudn="1005-7">2004</year>
+</dtg_to_zulu_4_yr>
+</date_time_group_to>
+</time_period_covered>
+<location_nearest_feature_and_confirmation_status_segment>
+<location_nearest_feature_and_confirmation_status set-id="locnfsts" set-seq="19">
+<status_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-2">REAL</status_of_confirmation>
+<geographic_place_name alt="A " ff-seq="2" ffirn-fudn="1022-90" xsi:nil="true"/>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">09640</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">57140</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">10940</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">57140</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+</location_nearest_feature_and_confirmation_status>
+<time_period_covered_1_segment>
+<time_period_covered_1 set-id="tperid" set-seq="20">
+<date_time_group_from>
+<dtg_from_zulu_4_yr alt="A" ff-seq="1" ffirn-fudn="2323-16" xsi:nil="true"/>
+</date_time_group_from>
+<date_time_group_to>
+<dtg_to_zulu_4_yr alt="A" ff-seq="2" ffirn-fudn="2323-17" xsi:nil="true"/>
+</date_time_group_to>
+</time_period_covered_1>
+<activity set-id="activity" set-seq="21">
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<activity_type alt="A" ff-seq="2" ffirn-fudn="1299-1">OTHER</activity_type>
+<activity_codeword_designator alt="A " ff-seq="4" ffirn-fudn="1020-3">DISTRIBUTION</activity_codeword_designator>
+</activity>
+<operational_movement set-id="opmovemt" set-seq="22">
+<movement_direction>
+<direction_of_movement alt="A " ff-seq="1" ffirn-fudn="1161-3" xsi:nil="true"/>
+</movement_direction>
+<speed alt="A " ff-seq="2" ffirn-fudn="2063-1" xsi:nil="true"/>
+</operational_movement>
+</time_period_covered_1_segment>
+</location_nearest_feature_and_confirmation_status_segment>
+<location_nearest_feature_and_confirmation_status_segment>
+<location_nearest_feature_and_confirmation_status set-id="locnfsts" set-seq="19">
+<status_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-2">REAL</status_of_confirmation>
+<geographic_place_name alt="A " ff-seq="2" ffirn-fudn="1022-90" xsi:nil="true"/>
+<utm_grid_reference>
+<location_utm_1_metre alt="A " ff-seq="3" ffirn-fudn="2089-20">
+<utm_grid_zone_column ffirn-fudn="1096-1">31</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">T</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">E</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">N</utm_100000_metre_square_row>
+<utm_1_metre_easting ffirn-fudn="1057-1">09410</utm_1_metre_easting>
+<utm_1_metre_northing ffirn-fudn="1059-1">57060</utm_1_metre_northing>
+</location_utm_1_metre>
+</utm_grid_reference>
+</location_nearest_feature_and_confirmation_status>
+<time_period_covered_1_segment>
+<time_period_covered_1 set-id="tperid" set-seq="20">
+<date_time_group_from>
+<dtg_from_zulu_4_yr alt="A" ff-seq="1" ffirn-fudn="2323-16" xsi:nil="true"/>
+</date_time_group_from>
+<date_time_group_to>
+<dtg_to_zulu_4_yr alt="A" ff-seq="2" ffirn-fudn="2323-17" xsi:nil="true"/>
+</date_time_group_to>
+</time_period_covered_1>
+<operational_movement set-id="opmovemt" set-seq="22">
+<movement_direction>
+<direction_of_movement alt="A " ff-seq="1" ffirn-fudn="1161-3" xsi:nil="true"/>
+</movement_direction>
+<speed alt="A " ff-seq="2" ffirn-fudn="2063-1" xsi:nil="true"/>
+</operational_movement>
+</time_period_covered_1_segment>
+</location_nearest_feature_and_confirmation_status_segment>
+</organization_designator_1_segment>
+</message_part_and_title_1_segment>
+<general_text_1 set-id="gentext" set-seq="23">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">COMMANDERS ASSESSMENT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1" xsi:nil="true"/>
+</general_text_1>
+<message_part_and_title_2_segment>
+<message_part_and_title_2 set-id="parttitl" set-seq="24">
+<message_part_identifier alt="A " ff-seq="1" ffirn-fudn="1102-2" xsi:nil="true"/>
+<part_title alt="A " ff-seq="2" ffirn-fudn="1356-2">OWN FORCES UNIT STATUS</part_title>
+</message_part_and_title_2>
+<organization_designator_2_segment>
+<organization_designator_2 set-id="orgid" set-seq="25">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">1RGTINF</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">RGT</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2">CBT</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3">INF</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0002</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_2>
+<combat_effectiveness set-id="ceft" set-seq="26">
+<combat_effectiveness alt="A" ff-seq="1" ffirn-fudn="1298-1" xsi:nil="true"/>
+<personnel_strength_rating alt="A" ff-seq="2" ffirn-fudn="1298-6" xsi:nil="true"/>
+<manpower_fatigue_rating alt="A" ff-seq="3" ffirn-fudn="1298-5" xsi:nil="true"/>
+<major_equipments_available_rating alt="A" ff-seq="4" ffirn-fudn="1298-7" xsi:nil="true"/>
+<ammunition_holdings_rating alt="A" ff-seq="5" ffirn-fudn="1298-8" xsi:nil="true"/>
+<fuel_holdings_rating alt="A" ff-seq="6" ffirn-fudn="1298-4" xsi:nil="true"/>
+</combat_effectiveness>
+<main_equipment_of_own_units set-id="equip" set-seq="27">
+<group_of_fields>
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<equipment_category alt="A" ff-seq="2" ffirn-fudn="1135-28">ARMD</equipment_category>
+<equipment_designator alt="A " ff-seq="3" ffirn-fudn="1135-3">AMX30</equipment_designator>
+<context_quantity_0_99999 alt="A " ff-seq="4" ffirn-fudn="1023-4">15</context_quantity_0_99999>
+</group_of_fields>
+</main_equipment_of_own_units>
+</organization_designator_2_segment>
+<organization_designator_2_segment>
+<organization_designator_2 set-id="orgid" set-seq="25">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">TASKFORCE</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4">TF</unit_size_indicator>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1">FR</geographical_entity>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2" xsi:nil="true"/>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3" xsi:nil="true"/>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1" xsi:nil="true"/>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">A</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0001</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_2>
+<combat_effectiveness set-id="ceft" set-seq="26">
+<combat_effectiveness alt="A" ff-seq="1" ffirn-fudn="1298-1" xsi:nil="true"/>
+<personnel_strength_rating alt="A" ff-seq="2" ffirn-fudn="1298-6" xsi:nil="true"/>
+<manpower_fatigue_rating alt="A" ff-seq="3" ffirn-fudn="1298-5" xsi:nil="true"/>
+<major_equipments_available_rating alt="A" ff-seq="4" ffirn-fudn="1298-7" xsi:nil="true"/>
+<ammunition_holdings_rating alt="A" ff-seq="5" ffirn-fudn="1298-8" xsi:nil="true"/>
+<fuel_holdings_rating alt="A" ff-seq="6" ffirn-fudn="1298-4" xsi:nil="true"/>
+</combat_effectiveness>
+<main_equipment_of_own_units set-id="equip" set-seq="27">
+<group_of_fields>
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<equipment_category alt="A" ff-seq="2" ffirn-fudn="1135-28">ARMD</equipment_category>
+<equipment_designator alt="A " ff-seq="3" ffirn-fudn="1135-3">AMX30</equipment_designator>
+<context_quantity_0_99999 alt="A " ff-seq="4" ffirn-fudn="1023-4">50</context_quantity_0_99999>
+</group_of_fields>
+</main_equipment_of_own_units>
+</organization_designator_2_segment>
+<organization_designator_2_segment>
+<organization_designator_2 set-id="orgid" set-seq="25">
+<unit_designation_name alt="A" ff-seq="1" ffirn-fudn="1022-39">HCR</unit_designation_name>
+<unit_size_indicator alt="A" ff-seq="2" ffirn-fudn="1045-4" xsi:nil="true"/>
+<geographical_entity alt="A" ff-seq="3" ffirn-fudn="1026-1" xsi:nil="true"/>
+<unit_role_indicator_code_a alt="A" ff-seq="4" ffirn-fudn="1311-2" xsi:nil="true"/>
+<unit_role_indicator_code_b alt="A" ff-seq="5" ffirn-fudn="1311-3" xsi:nil="true"/>
+<unit_role_indicator_code_c alt="A" ff-seq="6" ffirn-fudn="1311-4" xsi:nil="true"/>
+<unit_role_indicator_code_d alt="A" ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A" ff-seq="8" ffirn-fudn="1022-40" xsi:nil="true"/>
+<armed_service_or_civilian_agency_code>
+<civilian_agency_code alt="B" ff-seq="9" ffirn-fudn="1507-1">UNRA</civilian_agency_code>
+</armed_service_or_civilian_agency_code>
+<unit_identification_code_uic alt="A" ff-seq="10" ffirn-fudn="2141-1">
+<nationality ffirn-fudn="1026-2">FR</nationality>
+<armed_service ffirn-fudn="1107-1">O</armed_service>
+<file_sequential_location_number ffirn-fudn="1012-103">0003</file_sequential_location_number>
+</unit_identification_code_uic>
+</organization_designator_2>
+<combat_effectiveness set-id="ceft" set-seq="26">
+<combat_effectiveness alt="A" ff-seq="1" ffirn-fudn="1298-1" xsi:nil="true"/>
+<personnel_strength_rating alt="A" ff-seq="2" ffirn-fudn="1298-6" xsi:nil="true"/>
+<manpower_fatigue_rating alt="A" ff-seq="3" ffirn-fudn="1298-5" xsi:nil="true"/>
+<major_equipments_available_rating alt="A" ff-seq="4" ffirn-fudn="1298-7" xsi:nil="true"/>
+<ammunition_holdings_rating alt="A" ff-seq="5" ffirn-fudn="1298-8" xsi:nil="true"/>
+<fuel_holdings_rating alt="A" ff-seq="6" ffirn-fudn="1298-4" xsi:nil="true"/>
+</combat_effectiveness>
+<main_equipment_of_own_units set-id="equip" set-seq="27">
+<group_of_fields>
+<stage_of_confirmation alt="A " ff-seq="1" ffirn-fudn="1268-1">REAL</stage_of_confirmation>
+<equipment_category alt="A" ff-seq="2" ffirn-fudn="1135-28" xsi:nil="true"/>
+<equipment_designator alt="A " ff-seq="3" ffirn-fudn="1135-3">AMBULANCE</equipment_designator>
+<context_quantity_0_99999 alt="A " ff-seq="4" ffirn-fudn="1023-4">20</context_quantity_0_99999>
+</group_of_fields>
+</main_equipment_of_own_units>
+</organization_designator_2_segment>
+</message_part_and_title_2_segment>
+<general_text_3 set-id="gentext" set-seq="37">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">COMMANDERS ASSESSMENT</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1" xsi:nil="true"/>
+</general_text_3>
+</own_land_forces_situation_report>

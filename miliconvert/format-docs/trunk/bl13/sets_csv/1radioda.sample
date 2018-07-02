@@ -1,0 +1,4 @@
+1RADIODA
+  /TYPE      /NO/BAND/EMISSION/FREQ-SEP      /FREQ-LIM
+  /TRANSMIT  / 5/HF  /J3E     /        0.5MHZ/1-2MHZ
+  /TRANSCEIVE/ 4/UHF /A2E     /             -/-//

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineSetbasic" table="BASELINE_SETBASIC" >
+        <id name="key" type="double">
+            <column name="`KEY`" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="context" type="java.lang.Double">
+            <column name="CONTEXT" precision="15" scale="5" />
+        </property>
+        <property name="setid" type="string">
+            <column name="SETID" length="20" />
+        </property>
+        <property name="natostat" type="string">
+            <column name="NATOSTAT" length="1" />
+        </property>
+        <property name="nmoddate" type="timestamp">
+            <column name="NMODDATE" length="19" />
+        </property>
+        <property name="setclass" type="string">
+            <column name="SETCLASS" length="2" />
+        </property>
+        <property name="revdate" type="timestamp">
+            <column name="REVDATE" length="19" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+        <property name="settitle" type="string">
+            <column name="SETTITLE" length="120" />
+        </property>
+        <property name="stclass" type="string">
+            <column name="STCLASS" length="2" />
+        </property>
+        <property name="operuse" type="string">
+            <column name="OPERUSE" length="1" />
+        </property>
+        <property name="origsetcl" type="string">
+            <column name="ORIGSETCL" length="10" />
+        </property>
+        <property name="origsetid" type="string">
+            <column name="ORIGSETID" length="9" />
+        </property>
+        <property name="origdate" type="timestamp">
+            <column name="ORIGDATE" length="19" />
+        </property>
+        <property name="clname" type="string">
+            <column name="CLNAME" length="10" />
+        </property>
+        <property name="setformat" type="string">
+            <column name="SETFORMAT" length="1" />
+        </property>
+        <property name="setCatId" type="java.lang.Integer">
+            <column name="SET_CAT_ID" />
+        </property>
+        <property name="ufrevdate" type="timestamp">
+            <column name="UFREVDATE" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

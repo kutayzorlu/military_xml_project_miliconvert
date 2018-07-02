@@ -1,0 +1,5 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+2;FUZE POSITION;3-7;Individual;;1.0;In Service;03 Dec 07
+3;CONTROL SURFACE POSITION;3-7;Individual;IDENTIFIES THE RELATIVE POSITION OF A CONTROL SURFACE.;1.0;In Service;03 Dec 07
+4;GUN INSTALLATION POSITION;4-7;Individual;;1.0;In Service;03 Dec 07
+5;ARMOUR PLATE POSITION;4-7;Individual;;1.0;In Service;03 Dec 07

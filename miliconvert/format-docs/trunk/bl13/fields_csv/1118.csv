@@ -1,0 +1,7 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;LOCATION QUALIFIER;2-2;Individual;;1.0;In Service;03 Dec 07
+2;SURF LOCATION;1-2;Individual;;1.0;In Service;03 Dec 07
+3;SHORE BEACH AREA CODE;2-2;Individual;;1.0;In Service;03 Dec 07
+5;EMBARKATION DISEMBARKATION LOCATION QUALIFIER;2-3;Individual;;1.0;In Service;03 Dec 07
+6;UNKNOWN LOCATION QUALIFIER;3-3;Individual;;1.0;In Service;03 Dec 07
+7;RETURN LANE SIDE;1-1;Individual;THE SIDE OF A DESIGNATED LANE TO BE USED BY RETURNING TRAFFIC.;1.0;In Service;03 Dec 07

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.mpgt
+Bundle-SymbolicName: org.miliconvert.adatp3;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.miliconvert.adatp3.Activator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.txt2xml.transform,
+ org.apache.commons.logging,
+ org.miliconvert.adatp3.tools
+Bundle-ActivationPolicy: lazy
+Export-Package: org.miliconvert.adatp3;uses:="org.w3c.dom",
+ org.miliconvert.adatp3.bl11,
+ org.miliconvert.adatp3.bl12,
+ org.miliconvert.adatp3.parser;uses:="org.miliconvert.adatp3.formlets"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

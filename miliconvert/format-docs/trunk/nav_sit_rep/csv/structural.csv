@@ -1,0 +1,10 @@
+null;null;1.;(2) P ([1] @)
+null;null;2.;(3)F1 A "NAVSITREP"
+null;null;3.;(15S) Q ([4]F2 = "ORBATSEA" / "NAVSITSUM" / "NAVSITREP")
+null;null;4.;(16S) Q ([15]F1 = "SHIP ACTIVITY" / "COMBATANTS" / "NONCOMBATANTS" / "AMPHIBIOUS")
+null;null;5.;(17S) Q (([4]F2 = "NAVSITSUM" / "NAVSITREP") & ([15]F1 = "SHIP ACTIVITY" / "COMBATANTS" / "NONCOMBATANTS" / "AMPHIBIOUS"))
+null;null;6.;(19) P ([18] @)
+null;null;7.;(21S) Q ([15]F1 = "INDEPENDENT")
+null;null;8.;(24S) P ([15]F1 != "AMPHIBIOUS")
+null;null;9.;(25) QP ([24] !@)
+null;null;10.;(5)F2 QP (F1 = FF2000-013)

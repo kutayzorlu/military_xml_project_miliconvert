@@ -1,0 +1,1176 @@
+
+
+package org.mpgt.rules.ato;
+
+expander mpgt-fields-ato.dsl;
+
+import org.miliconvert.xsmt.mpgt.rules.AtoFieldRules;
+import org.miliconvert.xsmt.mpgt.rules.CommonFieldRules;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperField;
+import org.miliconvert.xsmt.mpgt.model.mpgt.MPGTWrapperSet;
+
+rule R_POC_39_0_3_0
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1022_057 avec la position 3 alternative 0
+then
+		Règle A_UNITEPOC
+		VI EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#EstObjet{MPGT.AssociationEntiteOrgPersonne}#MPGT.AssociationEntiteOrgPersonne.Categorie = 25
+end
+
+rule R_POC_39_0_3_1
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1129_033 avec la position 3 alternative 1
+then
+		LIGNE  129
+end
+
+rule R_POC_39_0_3_2
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 2141_001 avec la position 3 alternative 2
+then
+		LIGNE  129
+end
+
+rule R_POC_39_0_1_0
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1022_007 avec la position 1 alternative 0
+then
+		CDIFF zone1 = '-'
+end
+
+rule R_POC_39_0_5_0
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1361_003 avec la position 5 alternative 0
+then
+		LIGNE  135
+		Règle A_PHONE
+end
+
+rule R_POC_39_0_5_1
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1361_004 avec la position 5 alternative 1
+then
+		LIGNE  135
+		Règle A_SECPHONE
+end
+
+rule R_POC_39_0_5_2
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 2064_001 avec la position 5 alternative 2
+then
+		Règle A_RADIOFREQ
+end
+
+rule R_POC_39_0_5_3
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1023_022 avec la position 5 alternative 3
+then
+		Règle A_CONVFREQ
+end
+
+rule R_POC_39_0_5_4
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1008_002 avec la position 5 alternative 4
+then
+		Règle A_CONVFREQ
+end
+
+rule R_POC_39_0_5_5
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1396_001 avec la position 5 alternative 5
+then
+		Règle A_CODEFREQUENCE
+end
+
+rule R_POC_39_0_5_6
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 2498_001 avec la position 5 alternative 6
+then
+		NANA
+end
+
+rule R_POC_39_0_5_7
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 2533_001 avec la position 5 alternative 7
+then
+		Règle A_L16VOICE
+end
+
+rule R_POC_39_0_5_8
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 2534_001 avec la position 5 alternative 8
+then
+		NANA
+end
+
+rule R_POC_39_0_5_9
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 2535_001 avec la position 5 alternative 9
+then
+		NANA
+end
+
+rule R_POC_39_0_5_10
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1183_007 avec la position 5 alternative 10
+then
+		Règle A_MAIL
+end
+
+rule R_POC_39_0_5_11
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1361_007 avec la position 5 alternative 11
+then
+		Règle A_FAX
+end
+
+rule R_POC_39_0_5_12
+when
+		Dans le set  POC avec la position 39 alternative 0
+		Dans le champ de ffirn 1361_008 avec la position 5 alternative 12
+then
+		Règle A_SECFAX
+end
+
+rule R_POC_43_0_3_0
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1022_057 avec la position 3 alternative 0
+then
+		Règle A_UNITEPOC
+		VI EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#EstObjet{MPGT.AssociationEntiteOrgPersonne}#MPGT.AssociationEntiteOrgPersonne.Categorie = 25
+end
+
+rule R_POC_43_0_3_1
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1129_033 avec la position 3 alternative 1
+then
+		LIGNE  177
+end
+
+rule R_POC_43_0_3_2
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 2141_001 avec la position 3 alternative 2
+then
+		LIGNE  177
+end
+
+rule R_POC_43_0_1_0
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1022_007 avec la position 1 alternative 0
+then
+		CDIFF zone1 = '-'
+end
+
+rule R_POC_43_0_5_0
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1361_003 avec la position 5 alternative 0
+then
+		LIGNE  183
+		Règle A_PHONE
+end
+
+rule R_POC_43_0_5_1
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1361_004 avec la position 5 alternative 1
+then
+		LIGNE  183
+Règle A_SECPHONE
+end
+
+rule R_POC_43_0_5_2
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 2064_001 avec la position 5 alternative 2
+then
+		Règle A_RADIOFREQ
+end
+
+rule R_POC_43_0_5_3
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1023_022 avec la position 5 alternative 3
+then
+		Règle A_CONVFREQ
+end
+
+rule R_POC_43_0_5_4
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1008_002 avec la position 5 alternative 4
+then
+		Règle A_CONVFREQ
+end
+
+rule R_POC_43_0_5_5
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1396_001 avec la position 5 alternative 5
+then
+		Règle A_CODEFREQUENCE
+end
+
+rule R_POC_43_0_5_6
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 2498_001 avec la position 5 alternative 6
+then
+		NANA
+end
+
+rule R_POC_43_0_5_7
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 2533_001 avec la position 5 alternative 7
+then
+		Règle A_L16VOICE
+end
+
+rule R_POC_43_0_5_8
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 2534_001 avec la position 5 alternative 8
+then
+		NANA
+end
+
+rule R_POC_43_0_5_9
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 2535_001 avec la position 5 alternative 9
+then
+		NANA
+end
+
+rule R_POC_43_0_5_10
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1183_007 avec la position 5 alternative 10
+then
+		Règle A_MAIL
+end
+
+rule R_POC_43_0_5_11
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1361_007 avec la position 5 alternative 11
+then
+		Règle A_FAX
+end
+
+rule R_POC_43_0_5_12
+when
+		Dans le set  POC avec la position 43 alternative 0
+		Dans le champ de ffirn 1361_008 avec la position 5 alternative 12
+then
+		Règle A_SECFAX
+end
+
+rule R_UNITDIR_41_0_4H_0
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1812_001 avec la position 4H alternative 0
+then
+		CD=(AD3_1812_1;MPGT_AutreTypeElementControleCategorie,MPGT_AutreTypeElementControleSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4H_1
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1812_001 avec la position 4H alternative 1
+then
+		CD=(AD3_1812_1;MPGT_AutreTypeElementControleCategorie,MPGT_AutreTypeElementControleSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4D_0
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1407_002 avec la position 4D alternative 0
+then
+		CD=(AD3_1407_2;MPGT_TypeArmeCategorie,MPGT_TypeArmeSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4D_1
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1407_002 avec la position 4D alternative 1
+then
+		CD=(AD3_1407_2;MPGT_TypeArmeCategorie,MPGT_TypeArmeSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4E_0
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1874_004 avec la position 4E alternative 0
+then
+		CD=(AD3_1874_4;MPGT_AutreTypeSiteCategorie)
+end
+
+rule R_UNITDIR_41_0_4E_1
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1874_004 avec la position 4E alternative 1
+then
+		CD=(AD3_1874_4;MPGT_TypeEntiteOrganisationnelleTypeCommandement)
+end
+
+rule R_UNITDIR_41_0_4E_2
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1874_004 avec la position 4E alternative 2
+then
+		CD=(AD3_1874_4;MPGT_TypeEquipementElectroniqueCategorie)
+end
+
+rule R_UNITDIR_41_0_4E_3
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1874_004 avec la position 4E alternative 3
+then
+		CD=(MPGT_TypePosteMilitaireCategorie;AD3_1874_4)
+end
+
+rule R_UNITDIR_41_0_4E_4
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1874_004 avec la position 4E alternative 4
+then
+		CD=(MPGT_TypeRegroupementForceCategorie;AD3_1874_4)
+end
+
+rule R_UNITDIR_41_0_4F_0
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1434_001 avec la position 4F alternative 0
+then
+		CD=(AD3_1434_1;MPGT_TypeEquipementElectroniqueCategorie,MPGT_TypeEquipementElectroniqueSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4F_1
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1434_001 avec la position 4F alternative 1
+then
+		CD=(AD3_1434_1;MPGT_TypeEquipementElectroniqueCategorie,MPGT_TypeEquipementElectroniqueSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4F_2
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1434_001 avec la position 4F alternative 2
+then
+		CD=(AD3_1434_1;MPGT_TypeEquipementMaritimeCategorie,MPGT_TypeEquipementMaritimeSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4F_3
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1434_001 avec la position 4F alternative 3
+then
+		CD=(AD3_1434_1;MPGT_TypeEquipementMaritimeCategorie,MPGT_TypeEquipementMaritimeSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4G_0
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1135_033 avec la position 4G alternative 0
+then
+		CD=(AD3_1135_33;MPGT_TypeArmeSousCategorie)
+end
+
+rule R_UNITDIR_41_0_4G_1
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1135_033 avec la position 4G alternative 1
+then
+		CD=(AD3_1135_33;MPGT_TypeEquipementElectroniqueCategorie)
+end
+
+rule R_UNITDIR_41_0_4A_0
+when
+		Dans le set  UNITDIR avec la position 41 alternative 0
+		Dans le champ de ffirn 1015_020 avec la position 4A alternative 0
+then
+		Règle ATYPEEQUIP
+end
+
+rule R_TASKUNIT_40_0_3_0
+when
+		Dans le set  TASKUNIT avec la position 40 alternative 0
+		Dans le champ de ffirn 1028_041 avec la position 3 alternative 0
+then
+		CDIFF zone3 = '-'
+end
+
+rule R_TASKUNIT_40_0_3_1
+when
+		Dans le set  TASKUNIT avec la position 40 alternative 0
+		Dans le champ de ffirn 2141_001 avec la position 3 alternative 1
+then
+		CDIFF zone3 = '-'
+end
+
+rule R_TASKUNIT_40_0_2_0
+when
+		Dans le set  TASKUNIT avec la position 40 alternative 0
+		Dans le champ de ffirn 1107_002 avec la position 2 alternative 0
+then
+		CD=(AD3_1107_2;MPGT_Armee)
+end
+
+rule R_TASKUNIT_40_0_1_0
+when
+		Dans le set  TASKUNIT avec la position 40 alternative 0
+		Dans le champ de ffirn 1026_016 avec la position 1 alternative 0
+then
+		CD=(AD3_1026_16;MPGT_EntitePolitiqueTrigramme)
+end
+
+rule R_TASKUNIT_40_0_4_0
+when
+		Dans le set  TASKUNIT avec la position 40 alternative 0
+		Dans le champ de ffirn 1125_002 avec la position 4 alternative 0
+then
+		On ne traite pas la zone 4 si la Force possède déjà une Localisation
+end
+
+rule R_TASKUNIT_40_0_4_1
+when
+		Dans le set  TASKUNIT avec la position 40 alternative 0
+		Dans le champ de ffirn 1022_170 avec la position 4 alternative 1
+then
+		On ne traite pas la zone 4 si la Force possède déjà une Localisation
+end
+
+rule R_TASKUNIT_40_0_4_2
+when
+		Dans le set  TASKUNIT avec la position 40 alternative 0
+		Dans le champ de ffirn 2023_001 avec la position 4 alternative 2
+then
+		On ne traite pas la zone 4 si la Force possède déjà une Localisation
+end
+
+rule R_APERIOD_23_0_3_1
+when
+		Dans le set  APERIOD avec la position 23 alternative 0
+		Dans le champ de ffirn 1220_008 avec la position 3 alternative 1
+then
+		CD=(AD3_1220_8;MPGT_Periode3DQualificatifDateFin)
+end
+
+rule R_APERIOD_23_0_1_0
+when
+		Dans le set  APERIOD avec la position 23 alternative 0
+		Dans le champ de ffirn 1220_019 avec la position 1 alternative 0
+then
+		NANA
+		//On ne prend en compte que les intances du set APERIOD pour lesquelles la zone 1 vaut DISCRETE
+end
+
+rule R_APERIOD_23_0_5_0
+when
+		Dans le set  APERIOD avec la position 23 alternative 0
+		Dans le champ de ffirn 2525_001 avec la position 5 alternative 0
+then
+		NANA
+end
+
+rule R_APERIOD_23_0_5_1
+when
+		Dans le set  APERIOD avec la position 23 alternative 0
+		Dans le champ de ffirn 1220_005 avec la position 5 alternative 1
+then
+		NANA
+end
+
+rule R_APERIOD_23_0_5_2
+when
+		Dans le set  APERIOD avec la position 23 alternative 0
+		Dans le champ de ffirn 2033_024 avec la position 5 alternative 2
+then
+		NANA
+end
+
+rule R_APERIOD_23_0_4_0
+when
+		Dans le set  APERIOD avec la position 23 alternative 0
+		Dans le champ de ffirn 1346_003 avec la position 4 alternative 0
+then
+		NANA
+end
+
+rule R_ADAREA_17_0_3_0
+when
+		Dans le set  ADAREA avec la position 17 alternative 0
+		Dans le champ de ffirn 1822_003 avec la position 3 alternative 0
+then
+		VI APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstSoumiseA{MPGT.Reglementation}#MPGT.Reglementation.Categorie = 40001
+end
+
+rule R_ADAREA_17_0_2_0
+when
+		Dans le set  ADAREA avec la position 17 alternative 0
+		Dans le champ de ffirn 1284_023 avec la position 2 alternative 0
+then
+		VI APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.Categorie = 20003
+end
+
+rule R_ADAREA_17_0_2_1
+when
+		Dans le set  ADAREA avec la position 17 alternative 0
+		Dans le champ de ffirn 1284_023 avec la position 2 alternative 1
+then
+		CD=(AD3_1284_23;MPGT_TypeMesureCoordinationCategorie,MPGT_TypeMesureCoordinationSousCategorie)
+end
+
+rule R_ADAREA_17_0_1_0
+when
+		Dans le set  ADAREA avec la position 17 alternative 0
+		Dans le champ de ffirn 1022_069 avec la position 1 alternative 0
+then
+		Si champ 1 non renseigné, APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#MPIA.RacineOperationnelle.Nom
+end
+
+rule R_POC_14_0_3A_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1022_057 avec la position 3A alternative 0
+then
+		Règle A_UNITEPOC
+		VI EstObjet{MPGT.AssociationPersonnePlanifOperation3D}#APourSujet{MPIA.Personne}#EstObjet{MPGT.AssociationEntiteOrgPersonne}#MPGT.AssociationEntiteOrgPersonne.Categorie = 25
+end
+
+rule R_POC_14_0_3B_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1129_033 avec la position 3B alternative 0
+then
+		Règle A_UNITEPOC
+		VI EstObjet{MPGT.AssociationPersonnePlanifOperation3D}#APourSujet{MPIA.Personne}#EstObjet{MPGT.AssociationEntiteOrgPersonne}#MPGT.AssociationEntiteOrgPersonne.Categorie = 25
+end
+
+rule R_POC_14_0_5D_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1396_001 avec la position 5D alternative 0
+then
+		Règle A_CODEFREQUENCE
+end
+
+rule R_POC_14_0_5C_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 2064_001 avec la position 5C alternative 0
+then
+		Règle A_RADIOFREQ
+end
+
+rule R_POC_14_0_5C_1
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1023_022 avec la position 5C alternative 1
+then
+		Règle A_CONVFREQ
+end
+
+rule R_POC_14_0_5C_2
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1008_002 avec la position 5C alternative 2
+then
+		Règle A_CONVFREQ
+end
+
+rule R_POC_14_0_5B_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1361_004 avec la position 5B alternative 0
+then
+		Règle A_SECPHONE
+end
+
+rule R_POC_14_0_5A_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1361_003 avec la position 5A alternative 0
+then
+		Règle A_PHONE
+end
+
+rule R_POC_14_0_5K_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1361_008 avec la position 5K alternative 0
+then
+		Règle A_SECFAX
+end
+
+rule R_POC_14_0_5I_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1183_007 avec la position 5I alternative 0
+then
+		Règle A_MAIL
+end
+
+rule R_POC_14_0_1_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1022_007 avec la position 1 alternative 0
+then
+		CDIFF zone1 = '-'
+end
+
+rule R_POC_14_0_5J_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 1361_007 avec la position 5J alternative 0
+then
+		Règle A_FAX
+end
+
+rule R_POC_14_0_5G_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 2534_001 avec la position 5G alternative 0
+then
+		NANA
+end
+
+rule R_POC_14_0_5H_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 2535_001 avec la position 5H alternative 0
+then
+		NANA
+end
+
+rule R_POC_14_0_5E_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 2498_001 avec la position 5E alternative 0
+then
+		NANA
+end
+
+rule R_POC_14_0_5F_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 2533_001 avec la position 5F alternative 0
+then
+		Règle A_L16VOICE
+end
+
+rule R_POC_14_0_3C_0
+when
+		Dans le set  POC avec la position 14 alternative 0
+		Dans le champ de ffirn 2141_001 avec la position 3C alternative 0
+then
+		Règle A_UNITEPOC
+		VI EstObjet{MPGT.AssociationPersonnePlanifOperation3D}#APourSujet{MPIA.Personne}#EstObjet{MPGT.AssociationEntiteOrgPersonne}#MPGT.AssociationEntiteOrgPersonne.Categorie = 25
+end
+
+rule R_7ALLOT_12_0_3_0
+when
+		Dans le set  7ALLOT avec la position 12 alternative 0
+		Dans le champ de ffirn 1570_003 avec la position 3 alternative 0
+then
+		CD=(AD3_1570_3;MPGT_SuiviDemandeEtatDemande)
+end
+
+rule R_7ALLOT_12_0_1_0
+when
+		Dans le set  7ALLOT avec la position 12 alternative 0
+		Dans le champ de ffirn 1037_004 avec la position 1 alternative 0
+then
+		VI EstObjet{MPGT.AssociationUnitePlanifOperation3D}#MPGT.AssociationUnitePlanifOperation3D.Categorie = 8
+end
+
+rule R_7ALLOT_12_0_6_0
+when
+		Dans le set  7ALLOT avec la position 12 alternative 0
+		Dans le champ de ffirn 1076_009 avec la position 6 alternative 0
+then
+		CD=(AD3_1076_9;MPGT_SuiviDemandePrioriteRevisee)
+end
+
+rule R_7ALLOT_12_0_4_0
+when
+		Dans le set  7ALLOT avec la position 12 alternative 0
+		Dans le champ de ffirn 1012_069 avec la position 4 alternative 0
+then
+		CDIFF zone4 = '-'
+end
+
+rule R_GTGTAREA_84_0_1_0
+when
+		Dans le set  GTGTAREA avec la position 84 alternative 0
+		Dans le champ de ffirn 1022_069 avec la position 1 alternative 0
+then
+		Si champ 5 non renseigné, GENV MPGT.Objectif3D.Nom
+end
+
+rule R_GTGTAREA_84_0_5_4
+when
+		Dans le set  GTGTAREA avec la position 84 alternative 0
+		Dans le champ de ffirn 1125_001 avec la position 5 alternative 4
+then
+		NANA
+end
+
+rule R_GTGTAREA_84_0_4_0
+when
+		Dans le set  GTGTAREA avec la position 84 alternative 0
+		Dans le champ de ffirn 2490_001 avec la position 4 alternative 0
+then
+		NANA
+end
+
+rule R_GTGTAREA_84_0_4_1
+when
+		Dans le set  GTGTAREA avec la position 84 alternative 0
+		Dans le champ de ffirn 2494_001 avec la position 4 alternative 1
+then
+		NANA
+end
+
+rule R_GTGTAREA_84_0_4_2
+when
+		Dans le set  GTGTAREA avec la position 84 alternative 0
+		Dans le champ de ffirn 2526_001 avec la position 4 alternative 2
+then
+		NANA
+end
+
+rule R_GTGTAREA_84_0_4_3
+when
+		Dans le set  GTGTAREA avec la position 84 alternative 0
+		Dans le champ de ffirn 2527_001 avec la position 4 alternative 3
+then
+		NANA
+end
+
+rule R_WPNSPEC_85_0_1_0
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 1044_131 avec la position 1 alternative 0
+then
+		CDIFF zone1 = '-'
+end
+
+rule R_WPNSPEC_85_0_7_1
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 1396_003 avec la position 7 alternative 1
+then
+		NANA
+end
+
+rule R_WPNSPEC_85_0_7_2
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 2533_001 avec la position 7 alternative 2
+then
+		NANA
+end
+
+rule R_WPNSPEC_85_0_7_3
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 2534_001 avec la position 7 alternative 3
+then
+		NANA
+end
+
+rule R_WPNSPEC_85_0_7_4
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 2535_001 avec la position 7 alternative 4
+then
+		NANA
+end
+
+rule R_WPNSPEC_85_0_6_1
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 1396_002 avec la position 6 alternative 1
+then
+		NANA
+end
+
+rule R_WPNSPEC_85_0_6_2
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 2533_001 avec la position 6 alternative 2
+then
+		NANA
+end
+
+rule R_WPNSPEC_85_0_6_3
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 2534_001 avec la position 6 alternative 3
+then
+		NANA
+end
+
+rule R_WPNSPEC_85_0_6_4
+when
+		Dans le set  WPNSPEC avec la position 85 alternative 0
+		Dans le champ de ffirn 2535_001 avec la position 6 alternative 4
+then
+		NANA
+end
+
+rule R_PKGCMD_70_0_1_0
+when
+		Dans le set  PKGCMD avec la position 70 alternative 0
+		Dans le champ de ffirn 1028_038 avec la position 1 alternative 0
+then
+		Règle AVERIFPACK
+end
+
+rule R_GTGTLOC_72_0_2A_0
+when
+		Dans le set  GTGTLOC avec la position 72 alternative 0
+		Dans le champ de ffirn 2030_041 avec la position 2A alternative 0
+then
+		NANA
+end
+
+rule R_GTGTLOC_72_0_3_0
+when
+		Dans le set  GTGTLOC avec la position 72 alternative 0
+		Dans le champ de ffirn 2030_046 avec la position 3 alternative 0
+then
+		NANA
+end 
+
+rule R_GTGTLOC_72_0_7_0
+when
+		Dans le set  GTGTLOC avec la position 72 alternative 0
+		Dans le champ de ffirn 1650_006 avec la position 7 alternative 0
+then
+		CD=(AD3_1650_6;MPGT_TypeSynthetiqueObjectif)
+end
+
+rule R_GTGTLOC_72_0_7_1
+when
+		Dans le set  GTGTLOC avec la position 72 alternative 0
+		Dans le champ de ffirn 1036_011 avec la position 7 alternative 1
+then
+		NANA
+end
+
+rule R_GTGTLOC_72_0_5_0
+when
+		Dans le set  GTGTLOC avec la position 72 alternative 0
+		Dans le champ de ffirn 1022_234 avec la position 5 alternative 0
+then
+		Si champ 5 non renseigné, GENV MPGT.Objectif3D.Nom
+end
+
+rule R_GTGTLOC_72_0_4_0
+when
+		Dans le set  GTGTLOC avec la position 72 alternative 0
+		Dans le champ de ffirn 2000_087 avec la position 4 alternative 0
+then
+		NANA
+end
+
+rule R_GTGTLOC_72_0_4_1
+when
+		Dans le set  GTGTLOC avec la position 72 alternative 0
+		Dans le champ de ffirn 2030_042 avec la position 4 alternative 1
+then
+		NANA
+end
+
+rule R_AMSNDAT_58_0_11_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1125_002 avec la position 11 alternative 0
+then
+		NANA
+end
+
+rule R_AMSNDAT_58_0_11_1
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1022_170 avec la position 11 alternative 1
+then
+		NANA
+end
+
+rule R_AMSNDAT_58_0_9X_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1798_002 avec la position 9 alternative 0
+then
+		VI MPIA.AutreTypeElementControle.SousCategorie = 142
+end
+
+rule R_AMSNDAT_58_0_2_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1012_069 avec la position 2 alternative 0
+then
+		Si champ 2 non renseigné, GENV MPGT.MissionAir.NumeroMission
+end
+
+rule R_AMSNDAT_58_0_1_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1084_008 avec la position 1 alternative 0
+then
+		CD=(AD3_1231_1;MPGT_MissionAirIndicateurMissionResiduel)
+end
+
+rule R_AMSNDAT_58_0_7_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1285_031 avec la position 7 alternative 0
+then
+		CD=(AD3_1285_31;MPGT_MissionAppuiAerienTypeMission)
+end
+
+rule R_AMSNDAT_58_0_10A_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1125_002 avec la position 10A alternative 0
+then
+		NANA
+end
+
+rule R_AMSNDAT_58_0_5_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1515_005 avec la position 5 alternative 0
+then
+		VI EstSujet{MPGT.AssociationPlanificationOperation3DMissionAir}#AssocieCommeObjet{MPGT.MissionAir}#EstObjet{MPGT.AssociationUniteMissionAir}#MPGT.AssociationUniteMissionAir.Categorie = 5
+end
+
+rule R_AMSNDAT_58_0_9_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1798_002 avec la position 9 alternative 0
+then
+		VI EstSujet{MPGT.AssociationPlanificationOperation3DMissionAir}#AssocieCommeObjet{MPGT.MissionAir}#EstObjet{MPIA.AssociationInstanceObjetActivite}.Categorie = Bénéficiaire
+end
+
+rule R_AMSNDAT_58_0_8_0
+when
+		Dans le set  AMSNDAT avec la position 58 alternative 0
+		Dans le champ de ffirn 1285_032 avec la position 8 alternative 0
+then
+		CD=(AD3_1285_32;MPGT_MissionAppuiAerienTypeMission)
+end
+
+rule R_SAWPNCTL_48_0_3_0
+when
+		Dans le set  SAWPNCTL avec la position 48 alternative 0
+		Dans le champ de ffirn 1012_282 avec la position 3 alternative 0
+then
+		CDIFF zone3 = '-'
+		VD m_Categorie = 9
+		VD m_Sous_categorie = 77
+end
+
+rule R_SAWPNCTL_48_0_5_0
+when
+		Dans le set  SAWPNCTL avec la position 48 alternative 0
+		Dans le champ de ffirn 1028_045 avec la position 5 alternative 0
+then
+		CDIFF zone5 = '-'
+		VI EstObjet{MPGT.AssociationUnitePlanifOperation3D}#MPGT.AssociationUnitePlanifOperation3D.Categorie = 4
+end
+
+rule R_SAWPNCTL_48_0_4_0
+when
+		Dans le set  SAWPNCTL avec la position 48 alternative 0
+		Dans le champ de ffirn 1145_006 avec la position 4 alternative 0
+then
+		CD=(AD3_1145_6;MPGT_ConsigneTir)
+end
+
+rule R_SAWPNCTL_48_0_4_1
+when
+		Dans le set  SAWPNCTL avec la position 48 alternative 0
+		Dans le champ de ffirn 1145_006 avec la position 4 alternative 1
+then
+		CD=(AD3_1145_6;MPGT_ConsigneTir)
+end
+
+rule R_SAWPNCTL_48_0_4_2
+when
+		Dans le set  SAWPNCTL avec la position 48 alternative 0
+		Dans le champ de ffirn 1145_006 avec la position 4 alternative 2
+then
+		CD=(AD3_1145_6;MPGT_ConsigneTir)
+end
+
+rule R_SAWPNCTL_48_0_4_3
+when
+		Dans le set  SAWPNCTL avec la position 48 alternative 0
+		Dans le champ de ffirn 1145_006 avec la position 4 alternative 3
+then
+		CD=(AD3_1145_6;MPGT_ConsigneTir)
+end
+
+rule R_SAWREADY_47_0_3_0
+when
+		Dans le set  SAWREADY avec la position 47 alternative 0
+		Dans le champ de ffirn 1236_033 avec la position 3 alternative 0
+then
+		CD=(AD3_1236_33;MPGT_StadeAlerteEmissionStadeAlerte)
+end
+
+rule R_SAWMSN_46_0_2_0
+when
+		Dans le set  SAWMSN avec la position 46 alternative 0
+		Dans le champ de ffirn 1285_027 avec la position 2 alternative 0
+then
+		CD=(AD3_1285_27;MPGT_MissionASATypeMissionASA)
+end
+
+rule R_SAWMSN_46_0_5_2
+when
+		Dans le set  SAWMSN avec la position 46 alternative 0
+		Dans le champ de ffirn 2533_001 avec la position 5 alternative 2
+then
+		NANA
+end
+
+rule R_SAWMSN_46_0_5_3
+when
+		Dans le set  SAWMSN avec la position 46 alternative 0
+		Dans le champ de ffirn 2534_001 avec la position 5 alternative 3
+then
+		NANA
+end
+
+rule R_SAWMSN_46_0_5_4
+when
+		Dans le set  SAWMSN avec la position 46 alternative 0
+		Dans le champ de ffirn 2535_001 avec la position 5 alternative 4
+then
+		NANA
+end
+
+rule R_SAWMSN_46_0_4_3
+when
+		Dans le set  SAWMSN avec la position 46 alternative 0
+		Dans le champ de ffirn 2534_001 avec la position 4 alternative 3
+then
+		NANA
+end
+
+rule R_SAWMSN_46_0_4_4
+when
+		Dans le set  SAWMSN avec la position 46 alternative 0
+		Dans le champ de ffirn 2535_001 avec la position 4 alternative 4
+then
+		NANA
+end
+
+
+rule EFFLEVEL_22_0_1E_0
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2099_002 avec la position 1E alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1E_1
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2099_002 avec la position 1E alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1D_0
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2169_001 avec la position 1D alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1D_1
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2169_001 avec la position 1D alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1C_0
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2168_001 avec la position 1C alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1C_1
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2168_001 avec la position 1C alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1B_0
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2167_001 avec la position 1B alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1B_1
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2167_001 avec la position 1B alternative 1
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1A_0
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2166_001 avec la position 1A alternative 0
+then
+		Règle A_Hauteur
+end
+
+rule EFFLEVEL_22_0_1A_1
+when
+		Dans le set  EFFLEVEL avec la position 22 alternative 0
+		Dans le champ de ffirn 2166_001 avec la position 1A alternative 1
+then
+		Règle A_Hauteur
+end

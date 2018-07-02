@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.4"?>
+
+<product name="XSMT command line interface" id="org.miliconvert.xsmt.cli.xsmtcli" application="org.miliconvert.xsmt.cli.XSMT" useFeatures="false">
+
+   <configIni use="default" path="/org.miliconvert.xsmt.cli/config.ini">
+   </configIni>
+
+   <launcherArgs>
+   </launcherArgs>
+
+   <launcher name="xsmt">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.eclipse.ant.core"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.linux.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.compatibility" fragment="true"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.emf"/>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.ecore"/>
+      <plugin id="org.eclipse.emf.ecore.xmi"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.update.configurator"/>
+      <plugin id="org.eclipse.xsd"/>
+      <plugin id="org.miliconvert.xsmt.cli"/>
+      <plugin id="org.miliconvert.xsmt.engine"/>
+      <plugin id="org.miliconvert.xsmt.functions"/>
+      <plugin id="org.miliconvert.xsmt.gmodel"/>
+      <plugin id="org.miliconvert.xsmt.io"/>
+      <plugin id="org.miliconvert.xsmt.mpgt"/>
+      <plugin id="org.miliconvert.xsmt.tmodel"/>
+      <plugin id="org.miliconvert.xsmt.utils"/>
+      <plugin id="org.miliconvert.xsmt.xalan"/>
+   </plugins>
+
+</product>

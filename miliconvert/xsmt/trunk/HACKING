@@ -1,0 +1,20 @@
+Working on XSMT
+===============
+
+From eclipse 3.3, use the project import feature :
+
+ * File / Import... / Existing project into workspace
+
+Point the wizard to the xsmt folders you checked out from SVN
+
+Select all the org.miliconvert.xsmt projects and import WITHOUT
+copying the projects in your workspace.
+
+Running from Eclipse
+====================
+
+Select the org.miliconvert.xsmt.editor project folder, right click and
+select :
+
+ * Run As / Eclipse Application
+

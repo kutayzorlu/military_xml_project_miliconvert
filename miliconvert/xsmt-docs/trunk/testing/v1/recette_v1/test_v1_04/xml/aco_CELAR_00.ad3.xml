@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<airspace_control_order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="aco.xsd">
+<operation_codeword pos="1" set-seq="2">
+<operation_codeword ff-pos="0">AGAPANTHE</operation_codeword>
+</operation_codeword>
+<message_identifier pos="3" set-seq="3">
+<amplification>CLASSIFICATION/NU</amplification>
+<message_text_format_identifier ff-pos="0">ACO</message_text_format_identifier>
+<originator ff-pos="1">CDG</originator>
+</message_identifier>
+<airspace_control_order_identification_segment>
+<airspace_control_order_identification pos="4" set-seq="5">
+<name_of_area_of_validity ff-pos="0">ACO11</name_of_area_of_validity>
+</airspace_control_order_identification>
+<geodetic_datum pos="5" set-seq="6">
+<geodetic_datum ff-pos="0">W84</geodetic_datum>
+</geodetic_datum>
+<period_of_time pos="6" set-seq="7">
+<dtg_of_start_4_digit_yr ff-pos="0">
+<day>11</day>
+<hour_time>04</hour_time>
+<minute_time>00</minute_time>
+<time_zone>Z</time_zone>
+<month_name>MAR</month_name>
+<year>2004</year>
+</dtg_of_start_4_digit_yr>
+<stop_time_qualifier ff-pos="1">120359ZMAR2004</stop_time_qualifier>
+</period_of_time>
+<airspace_control_means_status_segment>
+<airspace_control_means_status pos="8" set-seq="9">
+<narrative>-------------------------------------------------</narrative>
+<airspace_control_means_status_update ff-pos="0">CHANG</airspace_control_means_status_update>
+</airspace_control_means_status>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification pos="9" set-seq="10">
+<type_of_airspace_control_means descriptor="ACM" ff-pos="0">ROZ</type_of_airspace_control_means>
+<airspace_control_means_name descriptor="NAME" ff-pos="1">ACM001</airspace_control_means_name>
+<type_of_airspace_shape ff-pos="2">POLYGON</type_of_airspace_shape>
+<airspace_usage descriptor="USE" ff-pos="3">TRNG</airspace_usage>
+</airspace_control_means_identification>
+<shape_polygon pos="10" set-seq="15">
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>47</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>042</longitude_degrees>
+<longitude_minute_angular>55</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>11</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>042</longitude_degrees>
+<longitude_minute_angular>55</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>11</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>042</longitude_degrees>
+<longitude_minute_angular>45</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>25</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>042</longitude_degrees>
+<longitude_minute_angular>45</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>27</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>042</longitude_degrees>
+<longitude_minute_angular>47</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</shape_polygon>
+<vertical_dimension_of_the_effective_level pos="12" set-seq="21">
+<narrative>-------------------------------------------------</narrative>
+<vertical_dimension_flight_level_to_flight_level descriptor="FLFL" ff-pos="0">
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>000</flight_level_number>
+<hyphen>-</hyphen>
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>999</flight_level_number>
+</vertical_dimension_flight_level_to_flight_level>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification pos="13" set-seq="10">
+<type_of_airspace_control_means descriptor="ACM" ff-pos="0">REFPT</type_of_airspace_control_means>
+<airspace_control_means_name descriptor="NAME" ff-pos="1">ACM002</airspace_control_means_name>
+<type_of_airspace_shape ff-pos="2">POINT</type_of_airspace_shape>
+<airspace_usage descriptor="USE" ff-pos="3">BULL</airspace_usage>
+</airspace_control_means_identification>
+<shape_point pos="14" set-seq="18">
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>30</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>042</longitude_degrees>
+<longitude_minute_angular>30</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</shape_point>
+<vertical_dimension_of_the_effective_level pos="16" set-seq="21">
+<narrative>-------------------------------------------------</narrative>
+<vertical_dimension_flight_level_to_flight_level descriptor="FLFL" ff-pos="0">
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>000</flight_level_number>
+<hyphen>-</hyphen>
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>999</flight_level_number>
+</vertical_dimension_flight_level_to_flight_level>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification pos="17" set-seq="10">
+<type_of_airspace_control_means descriptor="ACM" ff-pos="0">ROZ</type_of_airspace_control_means>
+<airspace_control_means_name descriptor="NAME" ff-pos="1">ACM003</airspace_control_means_name>
+<type_of_airspace_shape ff-pos="2">ORBIT</type_of_airspace_shape>
+<airspace_usage descriptor="USE" ff-pos="3">AAR</airspace_usage>
+</airspace_control_means_identification>
+<airspace_shape_orbit pos="18" set-seq="19">
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>12</latitude_degrees>
+<latitude_minute_angular>01</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>042</longitude_degrees>
+<longitude_minute_angular>37</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<geographic_position_lat_long_seconds_1 descriptor="LATS" ff-pos="1">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>42</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>044</longitude_degrees>
+<longitude_minute_angular>03</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds_1>
+<width_m_km_nm ff-pos="2">
+<context_quantity_0_to_1_decimal_pt_permitted_5_char_max>15.0</context_quantity_0_to_1_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_m_km_nm>KM</unit_of_linear_measurement_m_km_nm>
+</width_m_km_nm>
+<orbit_alignment ff-pos="3">C</orbit_alignment>
+</airspace_shape_orbit>
+<vertical_dimension_of_the_effective_level pos="20" set-seq="21">
+<narrative>-------------------------------------------------</narrative>
+<vertical_dimension_relative_altitude_to_relative_alt descriptor="RARA" ff-pos="0">120AMSL-180AGL</vertical_dimension_relative_altitude_to_relative_alt>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification pos="21" set-seq="10">
+<type_of_airspace_control_means descriptor="ACM" ff-pos="0">ROZ</type_of_airspace_control_means>
+<airspace_control_means_name descriptor="NAME" ff-pos="1">ACM004</airspace_control_means_name>
+<type_of_airspace_shape ff-pos="2">CIRCLE</type_of_airspace_shape>
+<airspace_usage descriptor="USE" ff-pos="3">LZ</airspace_usage>
+</airspace_control_means_identification>
+<shape_circle pos="22" set-seq="16">
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="0">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>35</latitude_minute_angular>
+<latitude_second_angular>02</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>042</longitude_degrees>
+<longitude_minute_angular>49</longitude_minute_angular>
+<longitude_second_angular>21</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<radius_m_km_nm ff-pos="1">
+<context_quantity_0_to_1_decimal_pt_permitted_5_char_max>1.9</context_quantity_0_to_1_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_m_km_nm>KM</unit_of_linear_measurement_m_km_nm>
+</radius_m_km_nm>
+</shape_circle>
+<vertical_dimension_of_the_effective_level pos="24" set-seq="21">
+<narrative>-------------------------------------------------</narrative>
+<vertical_dimension_base_ref_point_to_flight_level descriptor="BRFL" ff-pos="0">GL-FL170</vertical_dimension_base_ref_point_to_flight_level>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+<airspace_control_means_identification_segment>
+<airspace_control_means_identification pos="25" set-seq="10">
+<type_of_airspace_control_means descriptor="ACM" ff-pos="0">CORRTE</type_of_airspace_control_means>
+<airspace_control_means_name descriptor="NAME" ff-pos="1">ACM005</airspace_control_means_name>
+<type_of_airspace_shape ff-pos="2">CORRIDOR</type_of_airspace_shape>
+<airspace_usage descriptor="USE" ff-pos="3">MRR</airspace_usage>
+</airspace_control_means_identification>
+<airspace_shape_corridor pos="26" set-seq="17">
+<width_m_km_nm ff-pos="0">
+<context_quantity_0_to_1_decimal_pt_permitted_5_char_max>8.0</context_quantity_0_to_1_decimal_pt_permitted_5_char_max>
+<unit_of_linear_measurement_m_km_nm>KM</unit_of_linear_measurement_m_km_nm>
+</width_m_km_nm>
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="1">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>50</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>043</longitude_degrees>
+<longitude_minute_angular>35</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+<geographic_position_lat_long_seconds descriptor="LATS" ff-pos="1">
+<latitude_degrees>11</latitude_degrees>
+<latitude_minute_angular>38</latitude_minute_angular>
+<latitude_second_angular>00</latitude_second_angular>
+<latitudinal_hemisphere>N</latitudinal_hemisphere>
+<longitude_degrees>043</longitude_degrees>
+<longitude_minute_angular>43</longitude_minute_angular>
+<longitude_second_angular>00</longitude_second_angular>
+<longitudinal_hemisphere>E</longitudinal_hemisphere>
+</geographic_position_lat_long_seconds>
+</airspace_shape_corridor>
+<vertical_dimension_of_the_effective_level pos="27" set-seq="21">
+<vertical_dimension_flight_level_to_flight_level descriptor="FLFL" ff-pos="0">
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>050</flight_level_number>
+<hyphen>-</hyphen>
+<flight_level_data_qualifier>FL</flight_level_data_qualifier>
+<flight_level_number>070</flight_level_number>
+</vertical_dimension_flight_level_to_flight_level>
+</vertical_dimension_of_the_effective_level>
+</airspace_control_means_identification_segment>
+</airspace_control_means_status_segment>
+</airspace_control_order_identification_segment>
+</airspace_control_order>

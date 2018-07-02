@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.acme.txt2xml.mytransformation
+Bundle-SymbolicName: com.acme.txt2xml.mytransformation;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: ACME
+Require-Bundle: org.miliconvert.txt2xml.transform
+Export-Package: com.acme.txt2xml.mytransformation;uses:="org.miliconvert.txt2xml.transform,org.w3c.dom"

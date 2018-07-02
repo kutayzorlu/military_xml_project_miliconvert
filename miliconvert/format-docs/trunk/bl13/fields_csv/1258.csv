@@ -1,0 +1,6 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;REFERENCE TIME INDICATOR;1-2;Individual;;1.0;In Service;03 Dec 07
+2;ARRIVAL REFERENCE TIME INDICATOR;1-2;Individual;;1.0;In Service;03 Dec 07
+3;DEPARTURE REFERENCE TIME INDICATOR;1-2;Individual;;1.0;In Service;03 Dec 07
+4;DAY CODE;1-1;Individual;;1.0;In Service;03 Dec 07
+5;RELATIVE TIME INDICATOR;1-1;Individual;THE INDICATOR FOR A SCHEDULED TIME OF AN EVENT/ACTION.;1.0;In Service;03 Dec 07

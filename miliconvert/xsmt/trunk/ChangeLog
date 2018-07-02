@@ -1,0 +1,3260 @@
+2008-06-23  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Add missing mpgt mappings
+	
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/intsum_mpgt.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/navsitrep_mpgt.mapping
+	:
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	datp3ToMPGT.java: (Adatp3ToMPGT.Adatp3ToMPGT):
+
+2008-06-23  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Add validation tests for all adatp3 formats.
+	
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/AtoValidationTests.java: (AtoValidationTests),
+	(AtoValidationTests.setUp), (AtoValidationTests.testValidateAto),
+	(AtoValidationTests.tearDown):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/EnsitrepValidationTests.java:
+	(EnsitrepValidationTests), (EnsitrepValidationTests.setUp),
+	(EnsitrepValidationTests.testValidateEnsitrep),
+	(EnsitrepValidationTests.tearDown):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/IntsumValidationTests.java: (IntsumValidationTests),
+	(IntsumValidationTests.setUp),
+	(IntsumValidationTests.testValidateIntsum),
+	(IntsumValidationTests.tearDown):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/NavsitrepValidationTests.java:
+	(NavsitrepValidationTests), (NavsitrepValidationTests.setUp),
+	(NavsitrepValidationTests.testValidateOwnsitrep),
+	(NavsitrepValidationTests.tearDown):
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco.xml:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ato.xml:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ato/ato.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ensitrep.xml:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ensitrep/ensi
+	trep.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/intsum.xml:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/intsum/intsum
+	.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/navsitrep.xml
+	:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/navsitrep/nav
+	sitrep.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ownsitrep.xml
+	:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ownsitrep/own
+	sitrep.xsd:
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/F
+	ileBasedGenerator.java: (FileBasedGenerator.process):
+
+2008-06-12  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Add missing mpgt mappings & generators
+	
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ownsitrep/own
+	sitrep.xsd:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/ato_mpgt.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/ensitrep_mpgt.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/ownsitrep_mpgt.mapping
+	:
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	COGenerator.java:
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	TOGenerator.java: (ATOGenerator), (ATOGenerator.ATOGenerator):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	datp3ToMPGT.java: (Adatp3ToMPGT.Adatp3ToMPGT):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/E
+	nsitrepGenerator.java: (EnsitrepGenerator),
+	(EnsitrepGenerator.EnsitrepGenerator):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/I
+	ntsumGenerator.java: (IntsumGenerator),
+	(IntsumGenerator.IntsumGenerator):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/N
+	avsitrepGenerator.java: (NavsitrepGenerator),
+	(NavsitrepGenerator.NavsitrepGenerator):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/O
+	wnsitrepGenerator.java: (OwnsitrepGenerator),
+	(OwnsitrepGenerator.OwnsitrepGenerator):
+
+2008-06-05  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Add ownsitrep validation tests
+	
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/OwnsitrepValidationTests.java:
+	(OwnsitrepValidationTests), (OwnsitrepValidationTests.setUp),
+	(OwnsitrepValidationTests.testValidateOwnsitrep),
+	(OwnsitrepValidationTests.tearDown):
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/aco.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ownsitrep.xml
+	:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/ownsitrep/own
+	sitrep.xsd:
+	* plugins/org.miliconvert.xsmt.mpgt/META-INF/MANIFEST.MF:
+	* plugins/org.miliconvert.xsmt.mpgt/build.properties:
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	datp3ToMPGT.java: (Adatp3ToMPGT.Adatp3ToMPGT):
+	* scripts/xsmt.sh:
+
+2008-05-29  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	MPGT generation fixes
+	
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/F
+	ileBasedGenerator.java: (FileBasedGenerator),
+	(FileBasedGenerator.FileBasedGenerator),
+	(FileBasedGenerator.process), (FileBasedGenerator.getMappingLine):
+
+2008-05-28  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	handle MPIA prefix
+	
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/F
+	ileBasedGenerator.java: (FileBasedGenerator.process):
+
+2008-05-28  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	MPGT generation work
+	
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/aco.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/aco_mpgt.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/air_tasking_order.mapp
+	ing:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/airspace_control_order
+	.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/enemy_land_force_situa
+	tion_report.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/intelligence_summary.m
+	apping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/naval_situation_report
+	.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/own_land_force_situati
+	on_report.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	COGenerator.java: (ACOGenerator.ACOGenerator), (ACOGenerator):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/F
+	ileBasedGenerator.java: (FileBasedGenerator),
+	(FileBasedGenerator.FileBasedGenerator),
+	(FileBasedGenerator.fillEntities),
+	(FileBasedGenerator.fillEntitiesRec), (FileBasedGenerator.process),
+	(FileBasedGenerator.getMappingLine):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/I
+	MappingFields.java: (IMappingFields):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/S
+	etsUtils.java: (SetsUtils), (SetsUtils.getXmlElementName),
+	(SetsUtils.safeSplit):
+
+2008-05-26  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Add working transformation chain to create mpgt documents
+	
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/AcoValidationTests.java:
+	(AcoValidationTests.testValidateAco):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/MpgtToAdatp3EngineTests.java:
+	(MpgtToAdatp3EngineTests),
+	(MpgtToAdatp3EngineTests.testRunAcoToMpgt),
+	(MpgtToAdatp3EngineTests.testGenerateXsl):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/ValidationTestCase.java: (ValidationTestCase):
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco.xml:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/aco.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/composite
+	s.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/fields.xs
+	d:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/messages.
+	xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/sets.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/tmodel_adatp3
+	_to_mpgt.xml:
+	* plugins/org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engi
+	ne/TargetSchemaVisitor.java: (TargetSchemaVisitor.visit),
+	(TargetSchemaVisitor.functionToFeatureLink),
+	(TargetSchemaVisitor.generateFunctionCall):
+	* plugins/org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engi
+	ne/ValidatingParser.java: (ValidatingParser.isValid):
+	* plugins/org.miliconvert.xsmt.mpgt/META-INF/MANIFEST.MF:
+	* plugins/org.miliconvert.xsmt.mpgt/mappings/aco.mapping:
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	COGenerator.java: (ACOGenerator), (ACOGenerator.ACOGenerator):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	datp3ToMPGT.java: (Adatp3ToMPGT), (Adatp3ToMPGT.Adatp3ToMPGT),
+	(Adatp3ToMPGT.execute):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/F
+	ileBasedGenerator.java: (FileBasedGenerator),
+	(FileBasedGenerator.FileBasedGenerator),
+	(FileBasedGenerator.generate), (FileBasedGenerator.fillDOM),
+	(FileBasedGenerator.fillEntities),
+	(FileBasedGenerator.initHeaders), (FileBasedGenerator.open):
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/I
+	MPGTGenerator.java: (IMPGTGenerator):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/ModelUtililies.java: (ModelUtililies.getLinkEndingOn):
+
+2008-05-22  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Preparatory work for adatp3 to mpgt
+	
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/AbstractEngineTest.java: (AbstractEngineTest),
+	(AbstractEngineTest.runFiles), (AbstractEngineTest.runModelOnFile):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/AcoValidationTests.java: (AcoValidationTests),
+	(AcoValidationTests.setUp), (AcoValidationTests.testValidateAco),
+	(AcoValidationTests.tearDown):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/EngineTests.java: (EngineTests):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/MpgtToAdatp3EngineTests.java:
+	(MpgtToAdatp3EngineTests), (MpgtToAdatp3EngineTests.testEngine),
+	(MpgtToAdatp3EngineTests.testRunAcoToMpgt):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/ValidatingParserTests.java: (ValidatingParserTests),
+	(ValidatingParserTests.testIsValid):
+	* plugins/org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsm
+	t/engine/tests/ValidationTestCase.java: (ValidationTestCase),
+	(ValidationTestCase.getReadable):
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco.xml:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/composite
+	s.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/fields.xs
+	d:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/messages.
+	xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/aco/sets.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/mpgt/mpgt_v31
+	5.xsd:
+	* plugins/org.miliconvert.xsmt.engine.tests/test-data/tmodel_adatp3
+	_to_mpgt.xml:
+	* plugins/org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engi
+	ne/ValidatingParser.java: (ValidatingParser.isValid):
+	* plugins/org.miliconvert.xsmt.mpgt/.classpath:
+	* plugins/org.miliconvert.xsmt.mpgt/.project:
+	* plugins/org.miliconvert.xsmt.mpgt/META-INF/MANIFEST.MF:
+	* plugins/org.miliconvert.xsmt.mpgt/build.properties:
+	* plugins/org.miliconvert.xsmt.mpgt/plugin.xml:
+	* plugins/org.miliconvert.xsmt.mpgt/src/org/miliconvert/xsmt/mpgt/A
+	datp3ToMPGT.java: (Adatp3ToMPGT), (Adatp3ToMPGT.Adatp3ToMPGT),
+	(Adatp3ToMPGT.getName), (Adatp3ToMPGT.getSignature),
+	(Adatp3ToMPGT.setProperties), (Adatp3ToMPGT.execute):
+	* plugins/org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* plugins/org.miliconvert.xsmt.xalan/META-INF/MANIFEST.MF:
+
+2008-04-10  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Fix support of schemas with xsd:import
+	
+	* plugins/org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/edit
+	or/figures/SchemaFigure.java: (SchemaFigure.SchemaFigure),
+	(SchemaFigure.drawContent), (SchemaFigure.fillTree):
+	* plugins/org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/edit
+	or/model/SchemaElement.java: (SchemaElement.SchemaElement):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/ATOSchemaLoadingTest.java: (ATOSchemaLoadingTest),
+	(ATOSchemaLoadingTest.testSets), (ATOSchemaLoadingTest.testFields),
+	(ATOSchemaLoadingTest.testComposites),
+	(ATOSchemaLoadingTest.testMessages):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/ATOSchemaTreeTest.java: (ATOSchemaTreeTest),
+	(ATOSchemaTreeTest.setUp), (ATOSchemaTreeTest.tearDown),
+	(ATOSchemaTreeTest.testSwingTree):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/test-data/ato/composite
+	s.xsd:
+	* plugins/org.miliconvert.xsmt.tmodel.tests/test-data/ato/fields.xs
+	d:
+	* plugins/org.miliconvert.xsmt.tmodel.tests/test-data/ato/messages.
+	xsd:
+	* plugins/org.miliconvert.xsmt.tmodel.tests/test-data/ato/sets.xsd:
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/LinkResolver.java: (LinkResolver.LinkResolver), (LinkResolver):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/ModelUtililies.java: (ModelUtililies),
+	(ModelUtililies.ModelUtililies), (ModelUtililies.getRoots),
+	(ModelUtililies.directForEachFeature), (ModelUtililies.cacheTree),
+	(ModelUtililies.getParameters):
+
+2008-03-08  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	* prepare-xsmt-cli-releases.sh: rm obsolete script.
+
+2008-02-14  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	update unit tests
+	
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/IdentityLinkResolverTestCase.java:
+	(IdentityLinkResolverTestCase),
+	(IdentityLinkResolverTestCase.setUp),
+	(IdentityLinkResolverTestCase.initAndLink),
+	(IdentityLinkResolverTestCase.FeatLister),
+	(IdentityLinkResolverTestCase.FeatLister.FeatLister),
+	(IdentityLinkResolverTestCase.FeatLister.visit),
+	(IdentityLinkResolverTestCase.linkEverything),
+	(IdentityLinkResolverTestCase.testLinkResolution),
+	(IdentityLinkResolverTestCase.tearDown):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/MPGTLinkResolverTest.java: (MPGTLinkResolverTest),
+	(MPGTLinkResolverTest.getSchemaPath):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/SchemaTreeTest.java: (SchemaTreeTest.testSwingTree):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/TModelFactoryTest.java: (TModelFactoryTest),
+	(TModelFactoryTest.setUp):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/TmodelTest.java: (TmodelTest.setUp), (TmodelTest):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/ModelUtililies.java: (ModelUtililies.visitChildren):
+
+2008-02-13  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Fix LinkResolver for complex XML Schema files (like mpgt v315)
+	
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/AbstractTModelTest.java: (AbstractTModelTest),
+	(AbstractTModelTest.setUp), (AbstractTModelTest.initModel),
+	(AbstractTModelTest.createFeatFuncLink),
+	(AbstractTModelTest.createFuncFeatLink),
+	(AbstractTModelTest.createFeatFeatLink),
+	(AbstractTModelTest.prettyPrint), (AbstractTModelTest.tearDown):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/LinkResolverTest.java: (LinkResolverTest),
+	(LinkResolverTest.setUp), (LinkResolverTest.tearDown):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/MPGTLinkResolverTest.java: (MPGTLinkResolverTest),
+	(MPGTLinkResolverTest.setUp), (MPGTLinkResolverTest.FeatLister),
+	(MPGTLinkResolverTest.FeatLister.FeatLister),
+	(MPGTLinkResolverTest.FeatLister.visit),
+	(MPGTLinkResolverTest.linkEverything),
+	(MPGTLinkResolverTest.testLinkResolution),
+	(MPGTLinkResolverTest.tearDown):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/SchemaTreeRenderer.java: (SchemaTreeRenderer),
+	(SchemaTreeRenderer.SchemaTreeRenderer),
+	(SchemaTreeRenderer.getTreeCellRendererComponent):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/SchemaTreeTest.java: (SchemaTreeTest),
+	(SchemaTreeTest.setUp), (SchemaTreeTest.tearDown),
+	(SchemaTreeTest.testSwingTree):
+	* plugins/org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/LinkResolver.java: (LinkResolver), (LinkResolver.LinkResolver),
+	(LinkResolver.serialize):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/ModelUtililies.java: (ModelUtililies),
+	(ModelUtililies.ModelUtililies), (ModelUtililies.getRoots),
+	(ModelUtililies.forEachFeature),
+	(ModelUtililies.directForEachFeature),
+	(ModelUtililies.visitAllChildren), (ModelUtililies.getParents),
+	(ModelUtililies.cacheTree):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/tree/FeatTreeNode.java: (FeatTreeNode),
+	(FeatTreeNode.FeatTreeNode), (FeatTreeNode.children),
+	(FeatTreeNode.loadChildren), (FeatTreeNode.getAllowsChildren),
+	(FeatTreeNode.getChildAt), (FeatTreeNode.getChildCount),
+	(FeatTreeNode.getIndex), (FeatTreeNode.getParent),
+	(FeatTreeNode.getFeature), (FeatTreeNode.isLeaf):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/tree/SchemaTree.java: (SchemaTree), (SchemaTree.SchemaTree),
+	(SchemaTree.getNode), (SchemaTree.getModelUtilities),
+	(SchemaTree.addTreeModelListener), (SchemaTree.getChild),
+	(SchemaTree.getChildCount), (SchemaTree.getIndexOfChild),
+	(SchemaTree.getRoot), (SchemaTree.isLeaf),
+	(SchemaTree.removeTreeModelListener),
+	(SchemaTree.valueForPathChanged), (SchemaTree.getParents),
+	(SchemaTree.forEach), (SchemaTree.forEachImpl):
+
+2008-02-05  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Lots of fixes for schema loading
+	
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/MPGTSchemaLoadingTest.java: (MPGTSchemaLoadingTest),
+	(MPGTSchemaLoadingTest.testLoad):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/RSSSchemaLoadingTest.java: (RSSSchemaLoadingTest),
+	(RSSSchemaLoadingTest.testLoad):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/SchemaTestCase.java: (SchemaTestCase),
+	(SchemaTestCase.setUp), (SchemaTestCase.tearDown),
+	(SchemaTestCase.loadSchema):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/ModelUtililies.java: (ModelUtililies.getRoots):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/RootExtractor.java: (RootExtractor),
+	(RootExtractor.RootExtractor), (RootExtractor.visit),
+	(RootExtractor.isRoot):
+
+2008-01-30  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Move model utilities from engine to tmodel
+	
+	* plugins/org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/edit
+	or/figures/SchemaFigure.java:
+	* plugins/org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/edit
+	or/model/SchemaElement.java:
+	* plugins/org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engi
+	ne/IFeatVisitor.java:
+	* plugins/org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engi
+	ne/ModelUtililies.java:
+	* plugins/org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engi
+	ne/ModelValidator.java:
+	* plugins/org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engi
+	ne/TargetSchemaVisitor.java:
+	* plugins/org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engi
+	ne/XSLTGenerator.java:
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/IFeatVisitor.java: (IFeatVisitor):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/ModelUtililies.java: (ModelUtililies),
+	(ModelUtililies.ModelUtililies),
+	(ModelUtililies.getLinkStartingFrom),
+	(ModelUtililies.getLinkEndingOn), (ModelUtililies.getRoots),
+	(ModelUtililies.putFeature), (ModelUtililies.buildTree),
+	(ModelUtililies.getChildren), (ModelUtililies.visitChildren),
+	(ModelUtililies.forEachFeature), (ModelUtililies.visitAllChildren),
+	(ModelUtililies.getParents), (ModelUtililies.getXPath),
+	(ModelUtililies.getParameters):
+
+2008-01-10  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	refactor functions loading & fix tmodel unit tests.
+	
+	* plugins/org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/edit
+	or/FunctionCreationFactory.java: (FunctionCreationFactory),
+	(FunctionCreationFactory.FunctionCreationFactory),
+	(FunctionCreationFactory.getNewObject):
+	* plugins/org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/edit
+	or/XSMTEditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.addFuncWithParam),
+	(XSMTEditorPaletteFactory.addFunc):
+	* plugins/org.miliconvert.xsmt.functions/META-INF/MANIFEST.MF:
+	* plugins/org.miliconvert.xsmt.tmodel.tests/META-INF/MANIFEST.MF:
+	* plugins/org.miliconvert.xsmt.tmodel.tests/build.properties:
+	* plugins/org.miliconvert.xsmt.tmodel.tests/plugin.xml:
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/AbstractTModelTest.java: (AbstractTModelTest.setUp):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/FunctionFactoryTest.java: (FunctionFactoryTest),
+	(FunctionFactoryTest.testCtor):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/Identity.java: (Identity), (Identity.Identity),
+	(Identity.getName), (Identity.execute):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsm
+	t/tmodel/tests/TModelTestsActivator.java: (TModelTestsActivator),
+	(TModelTestsActivator.TModelTestsActivator):
+	* plugins/org.miliconvert.xsmt.tmodel.tests/test-data/mpgt_v315.xsd
+	:
+	* plugins/org.miliconvert.xsmt.tmodel/schema/userfunctions.exsd:
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/FunctionFactory.java: (FunctionFactory.FunctionFactory),
+	(FunctionFactory), (FunctionFactory.create):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/functions/FunctionDescriptor.java: (FunctionDescriptor),
+	(FunctionDescriptor.FunctionDescriptor),
+	(FunctionDescriptor.createImpl):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/functions/FunctionExtension.java: (FunctionExtension),
+	(FunctionExtension.FunctionExtension), (FunctionExtension.getIce):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/functions/FunctionExtensionParser.java:
+	(FunctionExtensionParser.FunctionExtensionParser),
+	(FunctionExtensionParser), (FunctionExtensionParser.parse):
+	* plugins/org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmod
+	el/functions/Library.java: (Library), (Library..for),
+	(Library.putFunc), (Library.getDescriptor):
+	* plugins/org.miliconvert.xsmt.utils/META-INF/MANIFEST.MF:
+
+2007-12-27  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	Merge pending changes
+	
+	* org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* product_build.properties:
+	* product_build.sh:
+	* scripts/equinox.lib:
+
+2007-09-03  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        1.2.0 stable release
+	
+	* org.miliconvert.xsmt.cli/.classpath:
+	* org.miliconvert.xsmt.cli/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.xalan/META-INF/MANIFEST.MF:
+	* prepare-xsmt-cli-releases.sh:
+
+2007-08-14  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Beautify borders
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure.FunctionFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/SchemaFigure.java: (SchemaFigure.drawContent):
+
+2007-07-20  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Prepare 1.2.0 release
+	
+	* org.miliconvert.usp/site.xml:
+	* org.miliconvert.xsmt.cli/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.core/feature.xml:
+	* org.miliconvert.xsmt.editor/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.engine/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.gmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.io/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.utils/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt/feature.xml:
+	* prepare-xsmt-cli-releases.sh:
+
+2007-07-10  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	Add logging to engine execution
+	
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Activ
+	ator.java: (Activator.status), (Activator), (Activator.logInfo),
+	(Activator.start):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine.run):
+
+2007-07-10  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Fix +/- toggle on tree expansion
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/SchemaFigure.java: (SchemaFigure.fillTree),
+	(SchemaFigure.createNode), (SchemaFigure.addAnchors),
+	(SchemaFigure.doExpandCollapse), (SchemaFigure.getAnchor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/XSDFeatureNode.java: (XSDFeatureNode),
+	(XSDFeatureNode.XSDFeatureNode), (XSDFeatureNode.setExpanded):
+
+2007-06-29  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Fix file replacement by saveAs
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor.doSaveAs):
+
+2007-05-28  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add j2se-1.5 requirement to plugins
+	
+	* HACKING: added
+	* README: updated
+	* prepare-xsmt-cli-releases.sh: bump version to 1.0.3
+	* transform.sh: removed
+
+2007-05-23  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Misc fixes found while applying the internal testing procedure
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaDeleteCommand.java: (SchemaDeleteCommand),
+	(SchemaDeleteCommand.SchemaDeleteCommand),
+	(SchemaDeleteCommand.redo), (SchemaDeleteCommand.undo):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/And.java: (And), (And.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Equal.java: (Equal), (Equal.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/IfElse.java: (IfElse), (IfElse.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Inferior.java: (Inferior), (Inferior.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/InferiorOrEqual.java: (InferiorOrEqual),
+	(InferiorOrEqual.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Or.java: (Or), (Or.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Superior.java: (Superior), (Superior.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/SuperiorOrEqual.java: (SuperiorOrEqual),
+	(SuperiorOrEqual.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Addition.java: (Addition), (Addition.Addition),
+	(Addition.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Division.java: (Division), (Division.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Multiplication.java: (Multiplication),
+	(Multiplication.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Soustraction.java: (Soustraction), (Soustraction.execute):
+	* prepare-xsmt-cli-releases.sh:
+
+2007-05-21  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        license block script.
+	
+	* add_header.sh:
+	* header.txt:
+
+2007-05-21  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	Add license header to java files.
+
+2007-05-16  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add dictionnary support
+	
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine.run):
+	* org.miliconvert.xsmt.functions/plugin.properties:
+	* org.miliconvert.xsmt.functions/plugin.xml:
+	* org.miliconvert.xsmt.functions/plugin_fr.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Addition.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Division.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Identity.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Messages.java: (Messages):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Multiplication.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Soustraction.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/messages.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/messages_fr.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/dict/Dictionnary.java: (Dictionnary), (Dictionnary.getDefaultMap),
+	(Dictionnary.Dictionnary), (Dictionnary.getName),
+	(Dictionnary.execute), (Dictionnary.setProperties):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/dict/Messages.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/dict/messages.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/dict/messages_fr.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Addition.java: (Addition), (Addition.Addition),
+	(Addition.getName), (Addition.add), (Addition.execute),
+	(Addition.getSignature), (Addition.setProperties):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Division.java: (Division), (Division.Division),
+	(Division.getName), (Division.div), (Division.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Messages.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Multiplication.java: (Multiplication),
+	(Multiplication.Multiplication), (Multiplication.getName),
+	(Multiplication.multi), (Multiplication.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/Soustraction.java: (Soustraction),
+	(Soustraction.Soustraction), (Soustraction.getName),
+	(Soustraction.sub), (Soustraction.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/messages.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/math/messages_fr.properties:
+
+2007-05-16  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        "Replace" tmodel is now fully functionnal.
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement.SchemaElement):
+	* org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsmt/engine
+	/tests/AbstractEngineTest.java: (AbstractEngineTest),
+	(AbstractEngineTest.loadTModel):
+	* org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsmt/engine
+	/tests/EngineTests.java: (EngineTests), (EngineTests.testEngine),
+	(EngineTests.runFiles), (EngineTests.runModelOnFile),
+	(EngineTests.testRunPathToPathl), (EngineTests.testRunAttribCopy):
+	* org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsmt/engine
+	/tests/XSLTGeneratorTests.java: (XSLTGeneratorTests),
+	(XSLTGeneratorTests.testConstructor),
+	(XSLTGeneratorTests.testGenerateAttribCopy),
+	(XSLTGeneratorTests.testGenerateWithParametersFunctions):
+	* org.miliconvert.xsmt.engine.tests/test-data/attrib_copy.xml:
+	* org.miliconvert.xsmt.engine.tests/test-data/tmodel_path_to_pathl.
+	xml:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine), (Engine.dump):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/FeatV
+	isitor.java:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/IFeat
+	Visitor.java: (IFeatVisitor):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Utililies.java: (ModelUtililies), (ModelUtililies.getLinkEndingOn),
+	(ModelUtililies.forEachFeature), (ModelUtililies.visitAllChildren),
+	(ModelUtililies.getXPath), (ModelUtililies.getParameters):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Targe
+	tSchemaVisitor.java: (TargetSchemaVisitor),
+	(TargetSchemaVisitor.TargetSchemaVisitor),
+	(TargetSchemaVisitor.visit),
+	(TargetSchemaVisitor.featureToFeatureLink),
+	(TargetSchemaVisitor.functionToFeatureLink),
+	(TargetSchemaVisitor.generateFunctionCall),
+	(TargetSchemaVisitor.isFunctionToAttributeLink),
+	(TargetSchemaVisitor.isAttributeToAttributeLink),
+	(TargetSchemaVisitor.isElementToElementLink):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/XSLTG
+	enerator.java: (XSLTGenerator), (XSLTGenerator.generate),
+	(XSLTGenerator.executableStateChange):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/AllTModelTests.java: (AllTModelTests.suite):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/TmodelTest.java: (TmodelTest),
+	(TmodelTest.testGetTargetSchemas):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel.findFunctionById), (TModel.findSchemaById),
+	(TModel), (TModel.getTargetSchemas), (TModel.getFunction):
+
+2007-05-10  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        More deps tuning
+	
+	* org.miliconvert.xsmt.xalan.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.xalan.tests/src/org/miliconvert/xsmt/xalan/t
+	ests/XalanJavaCallTest.java: (XalanJavaCallTest):
+
+2007-05-10  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        inverse tmodel xalan dependency and make tmodel registerbuddy on
+	xalan.
+	
+	* org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.xalan.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.xalan/META-INF/MANIFEST.MF:
+
+2007-05-10  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	fix xalan.tests (xalanmap was moved...)
+
+	user function probably needs to 
+	Eclipse-RegisterBuddy: org.miliconvert.xsmt.xalan
+	
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/XSLTG
+	enerator.java: (XSLTGenerator), (XSLTGenerator.XSLTGenerator):
+	* org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/XalanMap.java: (XalanMap), (XalanMap.XalanMap),
+	(XalanMap.addItem), (XalanMap.clear), (XalanMap.clone),
+	(XalanMap.containsKey), (XalanMap.containsValue),
+	(XalanMap.entrySet), (XalanMap.equals), (XalanMap.get),
+	(XalanMap.hashCode), (XalanMap.isEmpty), (XalanMap.keySet),
+	(XalanMap.put), (XalanMap.putAll), (XalanMap.remove),
+	(XalanMap.size), (XalanMap.values):
+	* org.miliconvert.xsmt.xalan.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.xalan.tests/src/org/miliconvert/xsmt/xalan/t
+	ests/XalanJavaCallTest.java: (XalanJavaCallTest.transformWithXSL),
+	(XalanJavaCallTest.testTransformClassic),
+	(XalanJavaCallTest.testClassLoadXalanMap), (XalanJavaCallTest),
+	(XalanJavaCallTest.testClassLoadReplace):
+	* org.miliconvert.xsmt.xalan.tests/test-data/replace.xsl:
+	* org.miliconvert.xsmt.xalan/META-INF/MANIFEST.MF:
+
+2007-05-10  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	Functions categories updated
+
+	* org.miliconvert.xsmt.functions/plugin.properties:
+	* org.miliconvert.xsmt.functions/plugin.xml:
+	* org.miliconvert.xsmt.functions/plugin_fr.properties:
+
+2007-05-09  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Fix categories as palette drawers
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java: (XSMTEditorPaletteFactory),
+	(XSMTEditorPaletteFactory.createFunctionsDrawer),
+	(XSMTEditorPaletteFactory.createToolsGroup):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionCategory.java: (FunctionCategory),
+	(FunctionCategory..create), (FunctionCategory.),
+	(FunctionCategory..FunctionCategory):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionExtensionParser.java:
+	(FunctionExtensionParser.FunctionExtensionParser),
+	(FunctionExtensionParser.parse):
+
+2007-05-07  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	Add simple functions
+
+	* org.miliconvert.xsmt.functions/plugin.properties:
+	* org.miliconvert.xsmt.functions/plugin.xml:
+	* org.miliconvert.xsmt.functions/plugin_fr.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/And.java: (And), (And.And), (And.getName), (And.and),
+	(And.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Difference.java: (Difference), (Difference.Difference),
+	(Difference.getName), (Difference.difference),
+	(Difference.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Equal.java: (Equal), (Equal.Equal), (Equal.getName),
+	(Equal.equal), (Equal.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Inferior.java: (Inferior), (Inferior.Inferior),
+	(Inferior.getName), (Inferior.inferior), (Inferior.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/InferiorOrEqual.java: (InferiorOrEqual),
+	(InferiorOrEqual.InferiorOrEqual), (InferiorOrEqual.getName),
+	(InferiorOrEqual.inferiorOrEqual), (InferiorOrEqual.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Messages.java: (Messages):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Or.java: (Or), (Or.Or), (Or.getName), (Or.or), (Or.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Superior.java: (Superior), (Superior.Superior),
+	(Superior.getName), (Superior.superior), (Superior.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/SuperiorOrEqual.java: (SuperiorOrEqual),
+	(SuperiorOrEqual.SuperiorOrEqual), (SuperiorOrEqual.getName),
+	(SuperiorOrEqual.superiorOrEqual), (SuperiorOrEqual.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/messages.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/messages_fr.properties:
+
+2007-05-04  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add simple release script
+	
+	* org.miliconvert.xsmt.cli/launch_xsmt.bat:
+	* prepare-xsmt-cli-releases.sh:
+
+2007-05-02  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        expand tree on link creation. Makes tree links loading work.
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/SchemaFigure.java: (SchemaFigure.fillTree),
+	(SchemaFigure.addAnchors), (SchemaFigure.doExpandCollapse),
+	(SchemaFigure.makeVisible), (SchemaFigure),
+	(SchemaFigure.getAnchor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelNode.java: (GModelNode.load), (GModelNode):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement), (SchemaElement.setVisible):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram.XSMTDiagram), (XSMTDiagram),
+	(XSMTDiagram.load):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java:
+	(SchemaElementEditPart.propertyChange),
+	(SchemaElementEditPart.makeVisible):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTDiagramEditPart.java: (XSMTDiagramEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTEditPartFactory.java: (XSMTEditPartFactory.createEditPart):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Utililies.java: (ModelUtililies.visitChildren),
+	(ModelUtililies.visitAllChildren), (ModelUtililies),
+	(ModelUtililies.getParents):
+
+2007-04-27  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        First pass at "tree" links.
+
+	Add plugin.properties to bin build
+
+	Add dep on core.update to fix user plugins loading.
+	
+	* org.miliconvert.usp/site.xml:
+	* org.miliconvert.xsmt.cli/launch_xsmt.sh:
+	* org.miliconvert.xsmt.cli/org.miliconvert.xsmt.cli.product:
+	* org.miliconvert.xsmt.editor/build.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/SchemaFigure.java: (SchemaFigure), (SchemaFigure.SchemaFigure),
+	(SchemaFigure.drawContent), (SchemaFigure.fillTree),
+	(SchemaFigure.getSchemaTitle), (SchemaFigure.createNode),
+	(SchemaFigure.addAnchors), (SchemaFigure.getFeatAnchorId),
+	(SchemaFigure.isWithXsi), (SchemaFigure.setWithXsi),
+	(SchemaFigure.setSelected), (SchemaFigure.doExpandCollapse),
+	(SchemaFigure.makeVisible):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/SchemaFigure.java:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/XSDFeatureNode.java: (XSDFeatureNode.getIn),
+	(XSDFeatureNode.getOut):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/LinkElement.java: (LinkElement.update):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement),
+	(SchemaElement.SchemaElement), (SchemaElement.setVisible):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram.XSMTDiagram):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java: (FunctionElementEditPart.addLink):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java:
+	(SchemaElementEditPart.propertyChange), (SchemaElementEditPart),
+	(SchemaElementEditPart.removeLink),
+	(SchemaElementEditPart.addLink),
+	(SchemaElementEditPart.makeVisible):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTDiagramEditPart.java: (XSMTDiagramEditPart),
+	(XSMTDiagramEditPart.getModelChildren),
+	(XSMTDiagramEditPart.propertyChange):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/LinkR
+	esolver.java: (LinkResolver.serialize), (LinkResolver):
+
+2007-04-20  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add qualifier to version numbers
+
+	(very)small cleanup to tree links
+	
+	* org.miliconvert.usp/site.xml:
+	* org.miliconvert.xsmt.cli/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.cli/plugin.xml:
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/XSMT.java:
+	(XSMT), (XSMT.start):
+	* org.miliconvert.xsmt.core/feature.xml:
+	* org.miliconvert.xsmt.editor/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/SchemaFigure.java: (SchemaFigure.createNode),
+	(SchemaFigure), (SchemaFigure.addAnchors),
+	(SchemaFigure.getFeatAnchorId):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/messa
+	ges.properties:
+	* org.miliconvert.xsmt.engine/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.functions/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.gmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.io/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel/schema/userfunctions.exsd:
+	* org.miliconvert.xsmt.utils/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt/feature.xml:
+
+2007-04-19  Mehdi Rande  <mehdi.rande@aliacom.fr>
+
+	Add plugin.properties in the build.properties 
+
+	* org.miliconvert.xsmt.cli/build.properties:
+	* org.miliconvert.xsmt.functions/build.properties:
+
+2007-04-18  Mehdi Rande  <mehdi.rande@aliacom.fr>
+
+	Features informations, licence, provider...
+
+	* org.miliconvert.xsmt.core/feature.xml:
+	* org.miliconvert.xsmt/feature.xml:
+
+2007-04-18  Mehdi Rande  <mehdi.rande@aliacom.fr>
+
+	French traduction, plugin.xml I18N
+
+	* org.miliconvert.xsmt.cli/plugin.properties:
+	* org.miliconvert.xsmt.cli/plugin.xml:
+	* org.miliconvert.xsmt.cli/plugin_fr.properties:
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/messages_fr
+	.properties:
+	* org.miliconvert.xsmt.editor/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.editor/plugin.properties:
+	* org.miliconvert.xsmt.editor/plugin.xml:
+	* org.miliconvert.xsmt.editor/plugin_fr.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/messages_fr.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/messages_fr.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/messa
+	ges.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/messa
+	ges_fr.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/messages_fr.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/messages_fr.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/messages_fr.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/messages_fr.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/messages_fr.properties:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/messa
+	ges_fr.properties:
+	* org.miliconvert.xsmt.functions/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.functions/build.properties:
+	* org.miliconvert.xsmt.functions/plugin.properties:
+	* org.miliconvert.xsmt.functions/plugin.xml:
+	* org.miliconvert.xsmt.functions/plugin_fr.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/messages_fr.properties:
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/messa
+	ges_fr.properties:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/messages_fr.p
+	roperties:
+	* org.miliconvert.xsmt.tmodel/schema/userfunctions.exsd:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/messa
+	ges_fr.properties:
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/message
+	s_fr.properties:
+
+2007-04-18  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Links from & to schema tree nodes
+
+	They are not saved for now
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure.FunctionFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/InputAnchor.java: (InputAnchor.InputAnchor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/OutputAnchor.java: (OutputAnchor.OutputAnchor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/SchemaFigure.java: (SchemaFigure),
+	(SchemaFigure.SchemaFigure), (SchemaFigure.createNode):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/XSDFeatureNode.java: (XSDFeatureNode),
+	(XSDFeatureNode.XSDFeatureNode), (XSDFeatureNode.getIn),
+	(XSDFeatureNode.getOut):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement.FunctionElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelConnectableElement.java:
+	(GModelConnectableElement.isConnectable):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement),
+	(SchemaElement.SchemaElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram.XSMTDiagram):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java: (SchemaElementEditPart),
+	(SchemaElementEditPart.createFigure),
+	(SchemaElementEditPart.createEditPolicies),
+	(SchemaElementEditPart.propertyChange),
+	(SchemaElementEditPart.getSourceConnectionAnchor),
+	(SchemaElementEditPart.getTargetConnectionAnchor),
+	(SchemaElementEditPart.getModelSourceConnections),
+	(SchemaElementEditPart.getModelTargetConnections):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/SchemaElementNodeEditPolicy.java:
+	(SchemaElementNodeEditPolicy),
+	(SchemaElementNodeEditPolicy.getConnectionCompleteCommand),
+	(SchemaElementNodeEditPolicy.getConnectionCreateCommand),
+	(SchemaElementNodeEditPolicy.getReconnectSourceCommand),
+	(SchemaElementNodeEditPolicy.getReconnectTargetCommand),
+	(SchemaElementNodeEditPolicy.createDummyConnection),
+	(SchemaElementNodeEditPolicy.getSEEditPart),
+	(SchemaElementNodeEditPolicy.getConnectedFigure),
+	(SchemaElementNodeEditPolicy.getFE):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/FeatV
+	isitor.java: (FeatVisitor):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Utililies.java: (ModelUtililies.ModelUtililies),
+	(ModelUtililies.getLinkStartingFrom),
+	(ModelUtililies.forEachFeature), (ModelUtililies),
+	(ModelUtililies.visitAllChildren):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Validator.java: (ModelValidator.ModelValidator),
+	(ModelValidator.isValid):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/XSLTG
+	enerator.java: (XSLTGenerator.XSLTGenerator),
+	(XSLTGenerator.doSomethingWithNode),
+	(XSLTGenerator.generateNamespaces):
+
+2007-04-18  Mehdi Rande  <mehdi.rande@aliacom.fr>
+
+	I18N new pattern
+
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/Activator.j
+	ava: (Activator):
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/Messages.ja
+	va: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/XSMT.java:
+	(XSMT), (XSMT.start), (XSMT.stop):
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/messages.pr
+	operties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Funct
+	ionCreationFactory.java: (FunctionCreationFactory),
+	(FunctionCreationFactory.FunctionCreationFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Messa
+	ges.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Param
+	eteredTool.java: (ParameteredTool), (ParameteredTool.promptParams):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/RunEn
+	gineAction.java: (RunEngineAction), (RunEngineAction.run),
+	(RunEngineAction.saveFileDialog):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/RunEn
+	gineRetargetAction.java:
+	(RunEngineRetargetAction.RunEngineRetargetAction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aCreationFactory.java: (SchemaCreationFactory),
+	(SchemaCreationFactory.SchemaCreationFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aTool.java: (SchemaTool), (SchemaTool..promptParams):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iAction.java: (SetXsiAction), (SetXsiAction..run),
+	(SetXsiAction..openFileDialog):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iRetargetAction.java: (SetXsiRetargetAction.SetXsiRetargetAction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor), (XSMTEditor.createActions):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.createFunctionsDrawer),
+	(XSMTEditorPaletteFactory.createToolsGroup),
+	(XSMTEditorPaletteFactory.addFuncWithParam),
+	(XSMTEditorPaletteFactory.addFunc):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/DropShadowImages.java: (DropShadowImages):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/ConnectedFigure.java: (ConnectedFigure.getAnchor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure.FunctionFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/Messages.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/messages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/Animation.java: (Animation), (Animation.end),
+	(Animation.mark), (Animation.captureLayout),
+	(Animation.playbackState), (Animation.recordFinalStates),
+	(Animation.recordInitialState), (Animation.swap), (Animation.step):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/BranchLayout.java: (BranchLayout),
+	(BranchLayout.getSubtrees):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/HangingLayout.java: (HangingLayout),
+	(HangingLayout.calculateDepth), (HangingLayout.setRowHeights),
+	(HangingLayout.updateRowHeights), (HangingLayout.paintLines),
+	(HangingLayout.updateContours):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/Messages.java: (Messages), (Messages..Messages),
+	(Messages.):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/NormalLayout.java: (NormalLayout),
+	(NormalLayout.calculateDepth), (NormalLayout.paintLines),
+	(NormalLayout.updateContours), (NormalLayout.updateRowHeights),
+	(NormalLayout.setRowHeights):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/SchemaFigure.java: (SchemaFigure.drawContent),
+	(SchemaFigure.getSchemaTitle), (SchemaFigure.createNode),
+	(SchemaFigure.doExpandCollapse):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeBranch.java: (TreeBranch.AnimatingLayer),
+	(TreeBranch.AnimatingLayer.setBounds), (TreeBranch),
+	(TreeBranch.animationReset), (TreeBranch.toString):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeLayout.java: (TreeLayout),
+	(TreeLayout.calculatePreferredSize), (TreeLayout.layout):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/XSDFeatureNode.java: (XSDFeatureNode),
+	(XSDFeatureNode.XSDFeatureNode), (XSDFeatureNode.setSelected):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/messages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/messa
+	ges.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement.FunctionElement),
+	(FunctionElement.toString):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelConnectableElement.java: (GModelConnectableElement),
+	(GModelConnectableElement.isConnectable):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelElement.java: (GModelElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/LinkElement.java: (LinkElement), (LinkElement.update):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/Messages.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram),
+	(XSMTDiagram.add):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/messages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java:
+	(FunctionElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/LinkElementEditPart.java: (LinkElementEditPart.createFigure),
+	(LinkElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/Messages.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java:
+	(SchemaElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTDiagramEditPart.java: (XSMTDiagramEditPart),
+	(XSMTDiagramEditPart.getModelChildren):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTEditPartFactory.java: (XSMTEditPartFactory.createEditPart):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/ConnectionCommand.java:
+	(ConnectionCommand.ConnectionCommand), (ConnectionCommand.execute),
+	(ConnectionCommand.canExecute):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionChangeConstraintCommand.java:
+	(FunctionChangeConstraintCommand.FunctionChangeConstraintCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionCreateCommand.java:
+	(FunctionCreateCommand.FunctionCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionDeleteCommand.java:
+	(FunctionDeleteCommand.FunctionDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/Messages.java: (Messages), (Messages..Messages),
+	(Messages.):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaChangeConstraintCommand.java:
+	(SchemaChangeConstraintCommand.SchemaChangeConstraintCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaCreateCommand.java:
+	(SchemaCreateCommand.SchemaCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaDeleteCommand.java:
+	(SchemaDeleteCommand.SchemaDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/messages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/messages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/FunctionElementNodeEditPolicy.java:
+	(FunctionElementNodeEditPolicy.getReconnectSourceCommand),
+	(FunctionElementNodeEditPolicy.getReconnectTargetCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/Messages.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java:
+	(XSMTDiagramLayoutPolicy.createChangeConstraintCommand),
+	(XSMTDiagramLayoutPolicy),
+	(XSMTDiagramLayoutPolicy.getCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/messages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/Messages.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizard.java: (XSMTWizard.performFinish),
+	(XSMTWizard.doFinish), (XSMTWizard.openContentStream),
+	(XSMTWizard.createCoreException):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizardPage.java: (XSMTWizardPage.XSMTWizardPage),
+	(XSMTWizardPage.createControl), (XSMTWizardPage.initialize),
+	(XSMTWizardPage.handleBrowse), (XSMTWizardPage.dialogChanged):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/messages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/perspective/
+	XSMTPerspectiveFactory.java:
+	(XSMTPerspectiveFactory.createInitialLayout):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/perspective/
+	XSMTPerspectivePlugin.java: (XSMTPerspectivePlugin):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine.setXmlInstance):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	eMessages.java:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	eMessages.properties:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Messa
+	ges.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/messa
+	ges.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Constant.java: (Constant.getDefaultMap), (Constant.getName),
+	(Constant.setProperties):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Identity.java: (Identity.Identity), (Identity.getName):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Messages.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Replace.java: (Replace.Replace), (Replace.getName),
+	(Replace.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/messages.properties:
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	l.java: (GModel):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lActivator.java: (GModelActivator):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lFactory.java: (GModelFactory), (GModelFactory.load),
+	(GModelFactory.save):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/Messa
+	ges.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/messa
+	ges.properties:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/IOMessages.ja
+	va:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/IOMessages.pr
+	operties:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/Messages.java
+	: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/XSMTPackageFa
+	ctory.java: (XSMTPackageFactory.save):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/messages.prop
+	erties:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Abstr
+	actFunctionImpl.java: (AbstractFunctionImpl.setProperties):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionFactory.java: (FunctionFactory), (FunctionFactory.create):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionId.java: (FunctionId.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Link.
+	java: (Link.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/LinkR
+	esolver.java: (LinkResolver.serializeEnd),
+	(LinkResolver.serializeStart), (LinkResolver.serialize),
+	(LinkResolver.resolveFeature), (LinkResolver.resolveFunctionId),
+	(LinkResolver.resolve):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Messa
+	ges.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	a.java: (Schema.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	aId.java: (SchemaId.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.add), (TModel.findFunctionById),
+	(TModel.findSchemaById), (TModel.getId):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lActivator.java: (TModelActivator):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lFactory.java: (TModelFactory), (TModelFactory.load),
+	(TModelFactory.computePrefix), (TModelFactory.save),
+	(TModelFactory.addLinks), (TModelFactory.addFunctions),
+	(TModelFactory.addSchemas):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionExtensionParser.java: (FunctionExtensionParser),
+	(FunctionExtensionParser.FunctionExtensionParser),
+	(FunctionExtensionParser.parse):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/Library.java: (Library), (Library.putFunc):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/messa
+	ges.properties:
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/Activat
+	or.java: (Activator):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/DOMUtil
+	s.java: (DOMUtils), (DOMUtils.getElementText), (DOMUtils.getTexts),
+	(DOMUtils.createElementAndText), (DOMUtils.serialise):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/Message
+	s.java: (Messages), (Messages..Messages), (Messages.):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/message
+	s.properties:
+
+2007-04-17  Mehdi Rande  <mehdi.rande@aliacom.fr>
+
+	I18N new eclipse method implementation.
+	Work in engine and io plugins
+
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/Activator.j
+	ava: (Activator):
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/CliMessages
+	.java:
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/CliMessages
+	.properties:
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/XSMT.java:
+	(XSMT), (XSMT.start), (XSMT.stop):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Edito
+	rMessages.java:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Edito
+	rMessages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Funct
+	ionCreationFactory.java: (FunctionCreationFactory),
+	(FunctionCreationFactory.FunctionCreationFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Param
+	eteredTool.java: (ParameteredTool), (ParameteredTool.promptParams):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/RunEn
+	gineAction.java: (RunEngineAction), (RunEngineAction.run),
+	(RunEngineAction.saveFileDialog):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/RunEn
+	gineRetargetAction.java:
+	(RunEngineRetargetAction.RunEngineRetargetAction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aCreationFactory.java: (SchemaCreationFactory),
+	(SchemaCreationFactory.SchemaCreationFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aTool.java: (SchemaTool), (SchemaTool..promptParams):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iAction.java: (SetXsiAction), (SetXsiAction..run),
+	(SetXsiAction..openFileDialog):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iRetargetAction.java: (SetXsiRetargetAction.SetXsiRetargetAction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor), (XSMTEditor.createActions):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.createFunctionsDrawer),
+	(XSMTEditorPaletteFactory.createToolsGroup),
+	(XSMTEditorPaletteFactory.addFuncWithParam),
+	(XSMTEditorPaletteFactory.addFunc):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/DropShadowImages.java: (DropShadowImages):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/ConnectedFigure.java: (ConnectedFigure.getAnchor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure.FunctionFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/Animation.java: (Animation), (Animation.end),
+	(Animation.mark), (Animation.captureLayout),
+	(Animation.playbackState), (Animation.recordFinalStates),
+	(Animation.recordInitialState), (Animation.swap), (Animation.step):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/BranchLayout.java: (BranchLayout),
+	(BranchLayout.getSubtrees):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/HangingLayout.java: (HangingLayout),
+	(HangingLayout.calculateDepth), (HangingLayout.setRowHeights),
+	(HangingLayout.updateRowHeights), (HangingLayout.paintLines),
+	(HangingLayout.updateContours):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/NormalLayout.java: (NormalLayout),
+	(NormalLayout.calculateDepth), (NormalLayout.paintLines),
+	(NormalLayout.updateContours), (NormalLayout.updateRowHeights),
+	(NormalLayout.setRowHeights):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/SchemaFigure.java: (SchemaFigure.drawContent),
+	(SchemaFigure.getSchemaTitle), (SchemaFigure.createNode),
+	(SchemaFigure.doExpandCollapse):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeBranch.java: (TreeBranch.AnimatingLayer),
+	(TreeBranch.AnimatingLayer.setBounds), (TreeBranch),
+	(TreeBranch.animationReset), (TreeBranch.toString):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeLayout.java: (TreeLayout),
+	(TreeLayout.calculatePreferredSize), (TreeLayout.layout):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/XSDFeatureNode.java: (XSDFeatureNode.XSDFeatureNode):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement.FunctionElement),
+	(FunctionElement.toString):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelConnectableElement.java: (GModelConnectableElement),
+	(GModelConnectableElement.isConnectable):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelElement.java: (GModelElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/LinkElement.java: (LinkElement), (LinkElement.update):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram),
+	(XSMTDiagram.add):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java:
+	(FunctionElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/LinkElementEditPart.java: (LinkElementEditPart.createFigure),
+	(LinkElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java:
+	(SchemaElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTDiagramEditPart.java: (XSMTDiagramEditPart),
+	(XSMTDiagramEditPart.getModelChildren):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTEditPartFactory.java: (XSMTEditPartFactory.createEditPart):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/ConnectionCommand.java:
+	(ConnectionCommand.ConnectionCommand), (ConnectionCommand.execute),
+	(ConnectionCommand.canExecute):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionChangeConstraintCommand.java:
+	(FunctionChangeConstraintCommand.FunctionChangeConstraintCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionCreateCommand.java:
+	(FunctionCreateCommand.FunctionCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionDeleteCommand.java:
+	(FunctionDeleteCommand.FunctionDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaChangeConstraintCommand.java:
+	(SchemaChangeConstraintCommand.SchemaChangeConstraintCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaCreateCommand.java:
+	(SchemaCreateCommand.SchemaCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaDeleteCommand.java:
+	(SchemaDeleteCommand.SchemaDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/FunctionElementNodeEditPolicy.java:
+	(FunctionElementNodeEditPolicy.getReconnectSourceCommand),
+	(FunctionElementNodeEditPolicy.getReconnectTargetCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java:
+	(XSMTDiagramLayoutPolicy.createChangeConstraintCommand),
+	(XSMTDiagramLayoutPolicy),
+	(XSMTDiagramLayoutPolicy.getCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizard.java: (XSMTWizard.performFinish),
+	(XSMTWizard.doFinish), (XSMTWizard.openContentStream),
+	(XSMTWizard.createCoreException):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizardPage.java: (XSMTWizardPage.XSMTWizardPage),
+	(XSMTWizardPage.createControl), (XSMTWizardPage.initialize),
+	(XSMTWizardPage.handleBrowse), (XSMTWizardPage.dialogChanged):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/perspective/
+	XSMTPerspectiveFactory.java:
+	(XSMTPerspectiveFactory.createInitialLayout):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/perspective/
+	XSMTPerspectivePlugin.java: (XSMTPerspectivePlugin):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine.setXmlInstance), (Engine.checkExecutable):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	eMessages.java: (EngineMessages), (EngineMessages..EngineMessages):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	eMessages.properties:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Utililies.java: (ModelUtililies.visitChildren):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Validator.java: (ModelValidator.isValid):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Valid
+	atingParser.java: (ValidatingParser.isValid):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/XSLTG
+	enerator.java: (XSLTGenerator.doSomethingWithNode):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/Activator.java: (Activator):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionsMessages.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionsMessages.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Constant.java: (Constant.getDefaultMap), (Constant.getName),
+	(Constant.setProperties):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Identity.java: (Identity.Identity), (Identity.getName):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Replace.java: (Replace.Replace), (Replace.getName),
+	(Replace.execute):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	l.java: (GModel):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lActivator.java: (GModelActivator):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lFactory.java: (GModelFactory), (GModelFactory.load),
+	(GModelFactory.save):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lMessages.java:
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lMessages.properties:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/IOMessages.ja
+	va: (IOMessages), (IOMessages..IOMessages):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/IOMessages.pr
+	operties:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/XSMTPackageFa
+	ctory.java: (XSMTPackageFactory.save):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Abstr
+	actFunctionImpl.java: (AbstractFunctionImpl.setProperties):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionFactory.java: (FunctionFactory), (FunctionFactory.create):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionId.java: (FunctionId.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Link.
+	java: (Link.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/LinkR
+	esolver.java: (LinkResolver.serializeEnd),
+	(LinkResolver.serializeStart), (LinkResolver.serialize),
+	(LinkResolver.resolveFeature), (LinkResolver.resolveFunctionId),
+	(LinkResolver.resolve):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	a.java: (Schema.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	aId.java: (SchemaId.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.add), (TModel.findFunctionById),
+	(TModel.findSchemaById), (TModel.getId):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lActivator.java: (TModelActivator):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lFactory.java: (TModelFactory), (TModelFactory.load),
+	(TModelFactory.computePrefix), (TModelFactory.save),
+	(TModelFactory.addLinks), (TModelFactory.addFunctions),
+	(TModelFactory.addSchemas):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lMessages.java:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lMessages.properties:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionExtensionParser.java: (FunctionExtensionParser),
+	(FunctionExtensionParser.FunctionExtensionParser),
+	(FunctionExtensionParser.parse):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/Library.java: (Library), (Library.putFunc):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/Activat
+	or.java: (Activator):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/DOMUtil
+	s.java: (DOMUtils.getElementText), (DOMUtils.getTexts),
+	(DOMUtils.createElementAndText), (DOMUtils.serialise):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/UtilsMe
+	ssages.java:
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/UtilsMe
+	ssages.properties:
+
+2007-04-17  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Make xalan loading work without jdk 1.6
+	
+	* org.miliconvert.xsmt.engine/META-INF/services/javax.xml.transform
+	.TransformerFactory:
+	* org.miliconvert.xsmt.engine/build.properties:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Activ
+	ator.java: (Activator.getTransformerFactory):
+
+2007-04-17  Mehdi Rande  <mehdi.rande@aliacom.fr>
+
+	I18N
+
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/Activator.j
+	ava: (Activator):
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/CliMessages
+	.java: (CliMessages), (CliMessages.CliMessages),
+	(CliMessages.getString):
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/CliMessages
+	.properties:
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/XSMT.java:
+	(XSMT), (XSMT.start), (XSMT.stop):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Edito
+	rMessages.java: (EditorMessages), (EditorMessages.EditorMessages),
+	(EditorMessages.getString):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Edito
+	rMessages.properties:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Funct
+	ionCreationFactory.java: (FunctionCreationFactory),
+	(FunctionCreationFactory.FunctionCreationFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Param
+	eteredTool.java: (ParameteredTool), (ParameteredTool.promptParams):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/RunEn
+	gineAction.java: (RunEngineAction), (RunEngineAction.run),
+	(RunEngineAction.saveFileDialog):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/RunEn
+	gineRetargetAction.java:
+	(RunEngineRetargetAction.RunEngineRetargetAction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aCreationFactory.java: (SchemaCreationFactory),
+	(SchemaCreationFactory.SchemaCreationFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aTool.java: (SchemaTool), (SchemaTool..promptParams):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iAction.java: (SetXsiAction), (SetXsiAction..run),
+	(SetXsiAction..openFileDialog):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iRetargetAction.java: (SetXsiRetargetAction.SetXsiRetargetAction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor), (XSMTEditor.createActions):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.createFunctionsDrawer),
+	(XSMTEditorPaletteFactory.createToolsGroup),
+	(XSMTEditorPaletteFactory.addFuncWithParam),
+	(XSMTEditorPaletteFactory.addFunc):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/DropShadowImages.java: (DropShadowImages):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/ConnectedFigure.java: (ConnectedFigure.getAnchor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure.FunctionFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/Animation.java: (Animation), (Animation.end),
+	(Animation.mark), (Animation.captureLayout),
+	(Animation.playbackState), (Animation.recordFinalStates),
+	(Animation.recordInitialState), (Animation.swap), (Animation.step):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/BranchLayout.java: (BranchLayout),
+	(BranchLayout.getSubtrees):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/HangingLayout.java: (HangingLayout),
+	(HangingLayout.calculateDepth), (HangingLayout.setRowHeights),
+	(HangingLayout.updateRowHeights), (HangingLayout.paintLines),
+	(HangingLayout.updateContours):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/NormalLayout.java: (NormalLayout),
+	(NormalLayout.calculateDepth), (NormalLayout.paintLines),
+	(NormalLayout.updateContours), (NormalLayout.updateRowHeights),
+	(NormalLayout.setRowHeights):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/SchemaFigure.java: (SchemaFigure.drawContent),
+	(SchemaFigure.getSchemaTitle), (SchemaFigure.createNode),
+	(SchemaFigure.doExpandCollapse):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeBranch.java: (TreeBranch.AnimatingLayer),
+	(TreeBranch.AnimatingLayer.setBounds), (TreeBranch),
+	(TreeBranch.animationReset), (TreeBranch.toString):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeLayout.java: (TreeLayout),
+	(TreeLayout.calculatePreferredSize), (TreeLayout.layout):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/XSDFeatureNode.java: (XSDFeatureNode.XSDFeatureNode):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement.FunctionElement),
+	(FunctionElement.toString):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelConnectableElement.java: (GModelConnectableElement),
+	(GModelConnectableElement.isConnectable):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelElement.java: (GModelElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/LinkElement.java: (LinkElement), (LinkElement.update):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram),
+	(XSMTDiagram.add):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java:
+	(FunctionElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/LinkElementEditPart.java: (LinkElementEditPart.createFigure),
+	(LinkElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java:
+	(SchemaElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTDiagramEditPart.java: (XSMTDiagramEditPart),
+	(XSMTDiagramEditPart.getModelChildren):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTEditPartFactory.java: (XSMTEditPartFactory.createEditPart):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/ConnectionCommand.java:
+	(ConnectionCommand.ConnectionCommand), (ConnectionCommand.execute),
+	(ConnectionCommand.canExecute):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionChangeConstraintCommand.java:
+	(FunctionChangeConstraintCommand.FunctionChangeConstraintCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionCreateCommand.java:
+	(FunctionCreateCommand.FunctionCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionDeleteCommand.java:
+	(FunctionDeleteCommand.FunctionDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaChangeConstraintCommand.java:
+	(SchemaChangeConstraintCommand.SchemaChangeConstraintCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaCreateCommand.java:
+	(SchemaCreateCommand.SchemaCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaDeleteCommand.java:
+	(SchemaDeleteCommand.SchemaDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/FunctionElementNodeEditPolicy.java:
+	(FunctionElementNodeEditPolicy.getReconnectSourceCommand),
+	(FunctionElementNodeEditPolicy.getReconnectTargetCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java:
+	(XSMTDiagramLayoutPolicy.createChangeConstraintCommand),
+	(XSMTDiagramLayoutPolicy),
+	(XSMTDiagramLayoutPolicy.getCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizard.java: (XSMTWizard.performFinish),
+	(XSMTWizard.doFinish), (XSMTWizard.openContentStream),
+	(XSMTWizard.createCoreException):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizardPage.java: (XSMTWizardPage.XSMTWizardPage),
+	(XSMTWizardPage.createControl), (XSMTWizardPage.initialize),
+	(XSMTWizardPage.handleBrowse), (XSMTWizardPage.dialogChanged):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/perspective/
+	XSMTPerspectiveFactory.java:
+	(XSMTPerspectiveFactory.createInitialLayout):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/perspective/
+	XSMTPerspectivePlugin.java: (XSMTPerspectivePlugin):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Activ
+	ator.java: (Activator), (Activator.getTransformerFactory):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine.setXmlInstance), (Engine.checkExecutable):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	eMessages.java: (EngineMessages), (EngineMessages.EngineMessages),
+	(EngineMessages.getString):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	eMessages.properties:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Utililies.java: (ModelUtililies.visitChildren):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Validator.java: (ModelValidator.isValid):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Valid
+	atingParser.java: (ValidatingParser.isValid):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/XSLTG
+	enerator.java: (XSLTGenerator), (XSLTGenerator.XSLTGenerator),
+	(XSLTGenerator.generate), (XSLTGenerator.doSomethingWithNode),
+	(XSLTGenerator.generateNamespaces), (XSLTGenerator.putNs),
+	(XSLTGenerator.generateFunctionsInit), (XSLTGenerator.createVar),
+	(XSLTGenerator.getTempVarName):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/Activator.java: (Activator):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionsMessages.java: (FunctionsMessages),
+	(FunctionsMessages.FunctionsMessages),
+	(FunctionsMessages.getString):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionsMessages.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Constant.java: (Constant.getDefaultMap), (Constant.getName),
+	(Constant.setProperties):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Identity.java: (Identity.Identity), (Identity.getName):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Replace.java: (Replace.Replace), (Replace.getName),
+	(Replace.execute):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	l.java: (GModel):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lActivator.java: (GModelActivator):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lFactory.java: (GModelFactory), (GModelFactory.load),
+	(GModelFactory.save):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lMessages.java: (GModelMessages), (GModelMessages.GModelMessages),
+	(GModelMessages.getString):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lMessages.properties:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/Activator.jav
+	a: (Activator):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/IOMessages.ja
+	va: (IOMessages), (IOMessages.IOMessages), (IOMessages.getString):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/IOMessages.pr
+	operties:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/XSMTPackage.j
+	ava: (XSMTPackage):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/XSMTPackageFa
+	ctory.java: (XSMTPackageFactory), (XSMTPackageFactory.load),
+	(XSMTPackageFactory.save):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Abstr
+	actFunctionImpl.java: (AbstractFunctionImpl.setProperties):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionFactory.java: (FunctionFactory), (FunctionFactory.create):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionId.java: (FunctionId.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Link.
+	java: (Link.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/LinkR
+	esolver.java: (LinkResolver.serializeEnd),
+	(LinkResolver.serializeStart), (LinkResolver.serialize),
+	(LinkResolver.resolveFeature), (LinkResolver.resolveFunctionId),
+	(LinkResolver.resolve):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	a.java: (Schema.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	aId.java: (SchemaId.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.add), (TModel.findFunctionById),
+	(TModel.findSchemaById), (TModel.getId):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lActivator.java: (TModelActivator):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lFactory.java: (TModelFactory), (TModelFactory.load),
+	(TModelFactory.computePrefix), (TModelFactory.save),
+	(TModelFactory.addLinks), (TModelFactory.addFunctions),
+	(TModelFactory.addSchemas):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lMessages.java: (TModelMessages), (TModelMessages.TModelMessages),
+	(TModelMessages.getString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lMessages.properties:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionExtensionParser.java: (FunctionExtensionParser),
+	(FunctionExtensionParser.FunctionExtensionParser),
+	(FunctionExtensionParser.parse):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/Library.java: (Library), (Library.putFunc):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/Activat
+	or.java: (Activator):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/DOMUtil
+	s.java: (DOMUtils.getElementText), (DOMUtils.getTexts),
+	(DOMUtils.createElementAndText), (DOMUtils.serialise):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/UtilsMe
+	ssages.java: (UtilsMessages), (UtilsMessages.UtilsMessages),
+	(UtilsMessages.getString):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/UtilsMe
+	ssages.properties:
+
+2007-04-17  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Make trees for schemas work
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/PageNode.java:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/SchemaFigure.java: (SchemaFigure),
+	(SchemaFigure.SchemaFigure), (SchemaFigure.drawContent),
+	(SchemaFigure.fillTree), (SchemaFigure.createNode),
+	(SchemaFigure.setSelected), (SchemaFigure.doExpandCollapse):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/XSDFeatureNode.java: (XSDFeatureNode),
+	(XSDFeatureNode.XSDFeatureNode), (XSDFeatureNode.isSelected),
+	(XSDFeatureNode.setSelected), (XSDFeatureNode.setExpanded):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java:
+	(SchemaElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Utililies.java: (ModelUtililies), (ModelUtililies.putFeature),
+	(ModelUtililies.buildTree), (ModelUtililies.getChildren),
+	(ModelUtililies.visitChildren):
+
+2007-04-16  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add userfunctions schema to bin builds.
+
+	Fix xalan loading to not break every subsequent jaxb users.
+
+	Fix generated xsl:output
+	
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Activ
+	ator.java: (Activator.start), (Activator),
+	(Activator.getTransformerFactory):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine.run):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/XSLTG
+	enerator.java: (XSLTGenerator.generate):
+	* org.miliconvert.xsmt.tmodel/build.properties:
+
+2007-04-16  Mehdi Rande  <mehdi.rande@aliacom.fr>
+
+	Add features packaging and the update site
+	project
+
+	* org.miliconvert.usp/.project:
+	* org.miliconvert.usp/index.html:
+	* org.miliconvert.usp/site.xml:
+	* org.miliconvert.usp/web/site.css:
+	* org.miliconvert.usp/web/site.xsl:
+	* org.miliconvert.xsmt.core/.project:
+	* org.miliconvert.xsmt.core/build.properties:
+	* org.miliconvert.xsmt.core/feature.xml:
+	* org.miliconvert.xsmt.editor/build.properties:
+	* org.miliconvert.xsmt/.project:
+	* org.miliconvert.xsmt/build.properties:
+	* org.miliconvert.xsmt/feature.xml:
+
+2007-04-16  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	set svn:ignore on bin/ folders.
+	
+2007-04-16  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add annotations to suppress generics related warnings in imported
+	draw2d code
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/Animation.java: (Animation), (Animation.end),
+	(Animation.mark), (Animation.captureLayout),
+	(Animation.playbackState), (Animation.recordFinalStates),
+	(Animation.recordInitialState), (Animation.swap), (Animation.step):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/BranchLayout.java: (BranchLayout),
+	(BranchLayout.getSubtrees):
+
+2007-04-16  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	Add tree figure from draw2d examples
+
+	Improve schema figure.
+
+	Add visual feedback when setting a xsi for a schema
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iAction.java: (SetXsiAction..run):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/SchemaFigure.java:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/Animation.java: (Animation), (Animation.end),
+	(Animation.mark), (Animation.captureLayout),
+	(Animation.playbackState), (Animation.recordFinalStates),
+	(Animation.recordInitialState), (Animation.swap), (Animation.step):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/BranchLayout.java: (BranchLayout),
+	(BranchLayout.BranchLayout), (BranchLayout.getContourLeft),
+	(BranchLayout.getContourRight), (BranchLayout.getDepth),
+	(BranchLayout.getPreferredRowHeights), (BranchLayout.getSubtrees),
+	(BranchLayout.getTransposer), (BranchLayout.getMajorSpacing),
+	(BranchLayout.invalidate), (BranchLayout.isHorizontal),
+	(BranchLayout.setHorizontal), (BranchLayout.setRowHeights):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/HangingLayout.java: (HangingLayout),
+	(HangingLayout.HangingLayout), (HangingLayout.calculateDepth),
+	(HangingLayout.setRowHeights), (HangingLayout.updateRowHeights),
+	(HangingLayout.getGap), (HangingLayout.calculatePreferredSize),
+	(HangingLayout.layout), (HangingLayout.paintLines),
+	(HangingLayout.updateContours):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/NormalLayout.java: (NormalLayout),
+	(NormalLayout.NormalLayout), (NormalLayout.calculateDepth),
+	(NormalLayout.calculatePreferredSize), (NormalLayout.layout),
+	(NormalLayout.mergeContour), (NormalLayout.paintLines),
+	(NormalLayout.updateContours), (NormalLayout.updateRowHeights),
+	(NormalLayout.setRowHeights):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/PageNode.java: (PageNode), (PageNode.FoldedPageBorder),
+	(PageNode.FoldedPageBorder..getInsets),
+	(PageNode.FoldedPageBorder.), (PageNode.FoldedPageBorder..paint),
+	(PageNode.FoldedPageBorder.PageNode),
+	(PageNode.FoldedPageBorder.paintFigure),
+	(PageNode.FoldedPageBorder.setSelected),
+	(PageNode.FoldedPageBorder.toString):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/PlusMinus.java: (PlusMinus), (PlusMinus.paintFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/SchemaFigure.java: (SchemaFigure),
+	(SchemaFigure.SchemaFigure), (SchemaFigure.drawContent),
+	(SchemaFigure.getSchemaTitle), (SchemaFigure.createRoot),
+	(SchemaFigure.createNode), (SchemaFigure.isWithXsi),
+	(SchemaFigure.setWithXsi):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeBranch.java: (TreeBranch), (TreeBranch.AnimatingLayer),
+	(TreeBranch.AnimatingLayer.setBounds), (TreeBranch.TreeBranch),
+	(TreeBranch.animationReset), (TreeBranch.collapse),
+	(TreeBranch.containsPoint), (TreeBranch.expand),
+	(TreeBranch.getAlignment), (TreeBranch.getBranchLayout),
+	(TreeBranch.getContentsPane), (TreeBranch.getContourLeft),
+	(TreeBranch.getContourRight), (TreeBranch.getDepth),
+	(TreeBranch.getMinimumSize), (TreeBranch.getNode),
+	(TreeBranch.getNodeBounds), (TreeBranch.getPreferredRowHeights),
+	(TreeBranch.getPreferredSize), (TreeBranch.getRoot),
+	(TreeBranch.getStyle), (TreeBranch.isExpanded),
+	(TreeBranch.paintFigure), (TreeBranch.setAlignment),
+	(TreeBranch.setExpanded), (TreeBranch.setNode),
+	(TreeBranch.setRowHeights), (TreeBranch.setStyle),
+	(TreeBranch.toString), (TreeBranch.validate):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeLayout.java: (TreeLayout),
+	(TreeLayout.calculatePreferredSize),
+	(TreeLayout.calculateNewRightContour),
+	(TreeLayout.calculateOverlap), (TreeLayout.layout):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/tree/TreeRoot.java: (TreeRoot), (TreeRoot.TreeRoot),
+	(TreeRoot.getMajorSpacing), (TreeRoot.getMinorSpacing),
+	(TreeRoot.getRoot), (TreeRoot.getTransposer),
+	(TreeRoot.isHorizontal), (TreeRoot.setMajorSpacing),
+	(TreeRoot.setHorizontal), (TreeRoot.setMinorSpacing),
+	(TreeRoot.validate), (TreeRoot.isCompressed),
+	(TreeRoot.setCompression):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement), (SchemaElement.isWithXsi),
+	(SchemaElement.setWithXsi):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram.getTModel), (XSMTDiagram):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java: (SchemaElementEditPart),
+	(SchemaElementEditPart.SchemaElementEditPart),
+	(SchemaElementEditPart.createFigure),
+	(SchemaElementEditPart.propertyChange):
+
+2007-04-13  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Clear some action related crap
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java:
+	(SchemaElementEditPart.propertyChange),
+	(SchemaElementEditPart.refreshVisuals):
+
+2007-04-13  Thomas Cataldo <thomas.cataldo@miliconvert.org>
+
+        (commited on f.g. workstation)
+	
+	add "set xsi" and "run engine" action
+
+	Improved tmodel validator
+	
+	* org.miliconvert.xsmt.editor/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/RunEn
+	gineAction.java: (RunEngineAction),
+	(RunEngineAction.RunEngineAction), (RunEngineAction.run),
+	(RunEngineAction.executableStateChange),
+	(RunEngineAction.saveFileDialog), (RunEngineAction.setViewer):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/RunEn
+	gineRetargetAction.java: (RunEngineRetargetAction),
+	(RunEngineRetargetAction.RunEngineRetargetAction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aTool.java: (SchemaTool..promptParams):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iAction.java: (SetXsiAction), (SetXsiAction..SetXsiAction),
+	(SetXsiAction.), (SetXsiAction..setViewer),
+	(SetXsiAction..dispose), (SetXsiAction..run),
+	(SetXsiAction..errorOut), (SetXsiAction..openFileDialog),
+	(SetXsiAction..selectionChanged):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/SetXs
+	iRetargetAction.java: (SetXsiRetargetAction),
+	(SetXsiRetargetAction.SetXsiRetargetAction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor), (XSMTEditor.dispose),
+	(XSMTEditor.configureGraphicalViewer),
+	(XSMTEditor.initializeGraphicalViewer), (XSMTEditor.createActions):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorActionBarContributor.java:
+	(XSMTEditorActionBarContributor.buildActions),
+	(XSMTEditorActionBarContributor.contributeToToolBar),
+	(XSMTEditorActionBarContributor),
+	(XSMTEditorActionBarContributor.init):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram),
+	(XSMTDiagram.getEngine):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java:
+	(SchemaElementEditPart.propertyChange),
+	(SchemaElementEditPart.informXMLSchemaButton):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine.setXmlInstance), (Engine.checkExecutable),
+	(Engine.registerListener):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Utililies.java: (ModelUtililies), (ModelUtililies.ModelUtililies),
+	(ModelUtililies.getLinkStartingFrom), (ModelUtililies.getRoots),
+	(ModelUtililies.putFeature), (ModelUtililies.buildTree):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Validator.java: (ModelValidator), (ModelValidator.ModelValidator),
+	(ModelValidator.isValid):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/XSLTG
+	enerator.java: (XSLTGenerator), (XSLTGenerator.XSLTGenerator),
+	(XSLTGenerator.doSomethingWithNode):
+
+2007-04-11  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Fix canExecute() rules for ConnectionCommand
+
+	Fix schema path fileselector cancellation
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aCreationFactory.java: (SchemaCreationFactory.getNewObject):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement.toString),
+	(FunctionElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelConnectableElement.java:
+	(GModelConnectableElement.isConnectable):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/ConnectionCommand.java: (ConnectionCommand.canExecute):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java:
+	(XSMTDiagramLayoutPolicy.getCreateCommand):
+
+2007-04-10  François Gilbert  <francois.gilbert@miliconvert.org>
+
+        Schema added to the design
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Param
+	eteredTool.java: (ParameteredTool.getFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aCreationFactory.java: (SchemaCreationFactory),
+	(SchemaCreationFactory.SchemaCreationFactory),
+	(SchemaCreationFactory.getNewObject),
+	(SchemaCreationFactory.getObjectType),
+	(SchemaCreationFactory.setOsPath):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aTool.java: (SchemaTool), (SchemaTool..SchemaTool), (SchemaTool.),
+	(SchemaTool..setShell), (SchemaTool..getFactory),
+	(SchemaTool..promptParams), (SchemaTool..activate),
+	(SchemaTool..deactivate), (SchemaTool..createTargetRequest),
+	(SchemaTool..getCreateRequest):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Schem
+	aToolEntry.java: (SchemaToolEntry),
+	(SchemaToolEntry.SchemaToolEntry):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor.dispose),
+	(XSMTEditor.configureGraphicalViewer):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.createFunctionsDrawer),
+	(XSMTEditorPaletteFactory.createToolsGroup):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/SchemaFigure.java: (SchemaFigure), (SchemaFigure.SchemaFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/SchemaElement.java: (SchemaElement),
+	(SchemaElement.SchemaElement), (SchemaElement.getSchema),
+	(SchemaElement.setSchema):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram),
+	(XSMTDiagram.add), (XSMTDiagram.remove):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/SchemaElementEditPart.java: (SchemaElementEditPart),
+	(SchemaElementEditPart.createFigure),
+	(SchemaElementEditPart.createEditPolicies),
+	(SchemaElementEditPart.propertyChange),
+	(SchemaElementEditPart.activate),
+	(SchemaElementEditPart.deactivate),
+	(SchemaElementEditPart.getCastedModel),
+	(SchemaElementEditPart.refreshVisuals):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTDiagramEditPart.java: (XSMTDiagramEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTEditPartFactory.java: (XSMTEditPartFactory.createEditPart):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaChangeConstraintCommand.java:
+	(SchemaChangeConstraintCommand),
+	(SchemaChangeConstraintCommand.SchemaChangeConstraintCommand),
+	(SchemaChangeConstraintCommand.getModel),
+	(SchemaChangeConstraintCommand.execute),
+	(SchemaChangeConstraintCommand.redo),
+	(SchemaChangeConstraintCommand.undo):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaCreateCommand.java: (SchemaCreateCommand),
+	(SchemaCreateCommand.SchemaCreateCommand),
+	(SchemaCreateCommand.execute), (SchemaCreateCommand.canExecute),
+	(SchemaCreateCommand.redo), (SchemaCreateCommand.undo):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/SchemaDeleteCommand.java: (SchemaDeleteCommand),
+	(SchemaDeleteCommand.SchemaDeleteCommand),
+	(SchemaDeleteCommand.canUndo), (SchemaDeleteCommand.execute),
+	(SchemaDeleteCommand.redo), (SchemaDeleteCommand.undo):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/SchemaElementEditPolicy.java: (SchemaElementEditPolicy),
+	(SchemaElementEditPolicy.createDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/SchemaRequest.java: (SchemaRequest),
+	(SchemaRequest.getSchemaCreationFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java:
+	(XSMTDiagramLayoutPolicy.createChangeConstraintCommand),
+	(XSMTDiagramLayoutPolicy.getCreateCommand):
+
+2007-04-10  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	Command line interface, and product configuration for cli.
+	Product export gives a working xsmt cli plug-in
+
+	
+	* README:
+	* org.miliconvert.xsmt.cli/.classpath:
+	* org.miliconvert.xsmt.cli/.project:
+	* org.miliconvert.xsmt.cli/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.cli/build.properties:
+	* org.miliconvert.xsmt.cli/config.ini:
+	* org.miliconvert.xsmt.cli/launch_xsmt.sh:
+	* org.miliconvert.xsmt.cli/org.miliconvert.xsmt.cli.product:
+	* org.miliconvert.xsmt.cli/plugin.xml:
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/Activator.j
+	ava: (Activator), (Activator.Activator), (Activator.start),
+	(Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.cli/src/org/miliconvert/xsmt/cli/XSMT.java:
+	(XSMT), (XSMT.getReadable), (XSMT.start), (XSMT.stop):
+	* org.miliconvert.xsmt.engine.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.engine/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Activ
+	ator.java: (Activator.Activator), (Activator.start):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine.isValidModel), (Engine):
+
+2007-04-05  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	Preliminary version of transformation engine
+
+	* org.miliconvert.xsmt.engine.tests/.classpath:
+	* org.miliconvert.xsmt.engine.tests/.project:
+	* org.miliconvert.xsmt.engine.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.engine.tests/build.properties:
+	* org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsmt/engine
+	/tests/Activator.java: (Activator), (Activator.Activator),
+	(Activator.start), (Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsmt/engine
+	/tests/AllTests.java: (AllTests), (AllTests.suite):
+	* org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsmt/engine
+	/tests/EngineTests.java: (EngineTests), (EngineTests.testEngine),
+	(EngineTests.testRun):
+	* org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsmt/engine
+	/tests/ValidatingParserTests.java: (ValidatingParserTests),
+	(ValidatingParserTests.testValidatingParser),
+	(ValidatingParserTests.getReadable),
+	(ValidatingParserTests.testIsValid):
+	* org.miliconvert.xsmt.engine.tests/src/org/miliconvert/xsmt/engine
+	/tests/XSLTGeneratorTests.java: (XSLTGeneratorTests),
+	(XSLTGeneratorTests.testXSLTGenerator),
+	(XSLTGeneratorTests.testGenerate),
+	(XSLTGeneratorTests.testGenerateWithParametersFunctions):
+	* org.miliconvert.xsmt.engine.tests/test-data/path.xml:
+	* org.miliconvert.xsmt.engine.tests/test-data/path.xsd:
+	* org.miliconvert.xsmt.engine.tests/test-data/pathl.xml:
+	* org.miliconvert.xsmt.engine.tests/test-data/pathl.xsd:
+	* org.miliconvert.xsmt.engine.tests/test-data/tmodel_path_to_pathl.
+	xml:
+	* org.miliconvert.xsmt.engine/.classpath:
+	* org.miliconvert.xsmt.engine/.project:
+	* org.miliconvert.xsmt.engine/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.engine/build.properties:
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Activ
+	ator.java: (Activator), (Activator.Activator), (Activator.start),
+	(Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	e.java: (Engine), (Engine.Engine), (Engine.setXmlInstance),
+	(Engine.checkExecutable), (Engine.isExecutable),
+	(Engine.functionAdded), (Engine.linkAdded), (Engine.schemaAdded),
+	(Engine.run), (Engine.getMainSchemaId), (Engine.getMainSource),
+	(Engine.registerListener), (Engine.fireExecutionStateChanged),
+	(Engine.functionRemoved), (Engine.linkRemoved),
+	(Engine.schemaRemoved):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Engin
+	eException.java: (EngineException),
+	(EngineException.EngineException):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/IEngi
+	neListener.java: (IEngineListener):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/IRead
+	able.java: (IReadable):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Model
+	Validator.java: (ModelValidator), (ModelValidator.ModelValidator),
+	(ModelValidator.isValid):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/Valid
+	atingParser.java: (ValidatingParser),
+	(ValidatingParser.ValidatingParser), (ValidatingParser.isValid):
+	* org.miliconvert.xsmt.engine/src/org/miliconvert/xsmt/engine/XSLTG
+	enerator.java: (XSLTGenerator), (XSLTGenerator.XSLTGenerator),
+	(XSLTGenerator.generate), (XSLTGenerator.getMainSource),
+	(XSLTGenerator.walkMainSourceSchema), (XSLTGenerator.walk),
+	(XSLTGenerator.doSomethingWithNode),
+	(XSLTGenerator.isAttributeToAttributeLink),
+	(XSLTGenerator.isElementToElementLink),
+	(XSLTGenerator.getLinkStartingFrom),
+	(XSLTGenerator.generateNamespaces), (XSLTGenerator.putNs),
+	(XSLTGenerator.generateFunctionsInit), (XSLTGenerator.createVar),
+	(XSLTGenerator.getTempVarName), (XSLTGenerator.getNS),
+	(XSLTGenerator.id), (XSLTGenerator.getSource),
+	(XSLTGenerator.dumpXslt), (XSLTGenerator.executableStateChange):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel.getSourceSchemas):
+
+2007-04-05  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+        Deletion & undo/redo with links
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelConnectableElement.java: (GModelConnectableElement),
+	(GModelConnectableElement.disconnectOutput),
+	(GModelConnectableElement.disconnectInput),
+	(GModelConnectableElement.isConnectable):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/LinkElement.java: (LinkElement.update):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram),
+	(XSMTDiagram.add), (XSMTDiagram.remove):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java:
+	(FunctionElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/ConnectionCommand.java: (ConnectionCommand.canExecute):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionDeleteCommand.java: (FunctionDeleteCommand),
+	(FunctionDeleteCommand.FunctionDeleteCommand),
+	(FunctionDeleteCommand.redo), (FunctionDeleteCommand.undo):
+
+2007-04-04  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+        Links saving and reloading
+	
+	* org.miliconvert.xsmt.editor/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelConnectableElement.java:
+	(GModelConnectableElement.isConnectable):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/LinkElement.java: (LinkElement), (LinkElement.update):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram),
+	(XSMTDiagram.add), (XSMTDiagram.remove):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java:
+	(FunctionElementEditPart.propertyChange),
+	(FunctionElementEditPart.addLink), (FunctionElementEditPart),
+	(FunctionElementEditPart.removeLink),
+	(FunctionElementEditPart.getModelSourceConnections),
+	(FunctionElementEditPart.getModelTargetConnections):
+
+2007-04-04  François Gilbert  <francois.gilbert@miliconvert.org>
+
+        Create an extension point for user functions
+
+	Make function plug-in use this extension point
+	
+	* org.miliconvert.xsmt.editor/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Funct
+	ionCreationFactory.java: (FunctionCreationFactory.getNewObject):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.createFunctionsDrawer),
+	(XSMTEditorPaletteFactory.addFunc):
+	* org.miliconvert.xsmt.functions/build.properties:
+	* org.miliconvert.xsmt.functions/plugin.xml:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionCategory.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionDescriptor.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/Library.java:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/XalanMap.java:
+	* org.miliconvert.xsmt.tmodel.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel/build.properties:
+	* org.miliconvert.xsmt.tmodel/plugin.xml:
+	* org.miliconvert.xsmt.tmodel/schema/userfunctions.exsd:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionCategory.java: (FunctionCategory),
+	(FunctionCategory.FunctionCategory), (FunctionCategory.getName):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionDescriptor.java: (FunctionDescriptor),
+	(FunctionDescriptor.FunctionDescriptor),
+	(FunctionDescriptor.getName), (FunctionDescriptor.getComment),
+	(FunctionDescriptor.getImplClass),
+	(FunctionDescriptor.getCategory),
+	(FunctionDescriptor.getMandatoryProperties):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionExtension.java: (FunctionExtension),
+	(FunctionExtension.getFunctionName),
+	(FunctionExtension.setFunctionName),
+	(FunctionExtension.getFunctionComment),
+	(FunctionExtension.setFunctionComment),
+	(FunctionExtension.getFunctionClass),
+	(FunctionExtension.setFunctionClass),
+	(FunctionExtension.getFunctionCategory),
+	(FunctionExtension.setFunctionCategory),
+	(FunctionExtension.getMandatoryProperties),
+	(FunctionExtension.setMandatoryProperties):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/FunctionExtensionParser.java: (FunctionExtensionParser),
+	(FunctionExtensionParser.FunctionExtensionParser),
+	(FunctionExtensionParser.parse),
+	(FunctionExtensionParser.getFunctionExtensionParsed):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/Library.java: (Library), (Library..for), (Library.),
+	(Library.putFunc), (Library.list):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/funct
+	ions/XalanMap.java: (XalanMap), (XalanMap.addItem):
+
+2007-04-03  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+        Implement connections between functions
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.createToolsGroup),
+	(XSMTEditorPaletteFactory.addFuncWithParam),
+	(XSMTEditorPaletteFactory.addFunc):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/ConnectedFigure.java: (ConnectedFigure),
+	(ConnectedFigure.ConnectedFigure),
+	(ConnectedFigure.addInputAnchor),
+	(ConnectedFigure.addOutputAnchor), (ConnectedFigure.getAnchor),
+	(ConnectedFigure.getAnchorId),
+	(ConnectedFigure.nearestInputAnchor),
+	(ConnectedFigure.nearestOutputAnchor),
+	(ConnectedFigure.nearestAnchor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure),
+	(FunctionFigure.FunctionFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/InputAnchor.java: (InputAnchor), (InputAnchor.InputAnchor),
+	(InputAnchor.getLocation), (InputAnchor.getReferencePoint):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/OutputAnchor.java: (OutputAnchor), (OutputAnchor.OutputAnchor),
+	(OutputAnchor.getLocation), (OutputAnchor.getReferencePoint):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement),
+	(FunctionElement.FunctionElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelConnectableElement.java: (GModelConnectableElement),
+	(GModelConnectableElement.GModelConnectableElement),
+	(GModelConnectableElement.getSourceConnections),
+	(GModelConnectableElement.getTargetConnections),
+	(GModelConnectableElement.connectOutput),
+	(GModelConnectableElement.connectInput),
+	(GModelConnectableElement.disconnectOutput),
+	(GModelConnectableElement.disconnectInput),
+	(GModelConnectableElement.isConnectable):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/LinkElement.java: (LinkElement), (LinkElement.LinkElement),
+	(LinkElement.getLink), (LinkElement.setLink),
+	(LinkElement.attachStart), (LinkElement.attachEnd),
+	(LinkElement.detachStart), (LinkElement.detachEnd),
+	(LinkElement.setStartName), (LinkElement.setEndName),
+	(LinkElement.setStart), (LinkElement.setEnd),
+	(LinkElement.getStartName), (LinkElement.getEndName),
+	(LinkElement.getStart), (LinkElement.getEnd):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java: (FunctionElementEditPart),
+	(FunctionElementEditPart.propertyChange),
+	(FunctionElementEditPart.createEditPolicies),
+	(FunctionElementEditPart.getSourceConnectionAnchor),
+	(FunctionElementEditPart.getTargetConnectionAnchor),
+	(FunctionElementEditPart.getModelSourceConnections),
+	(FunctionElementEditPart.getModelTargetConnections):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/LinkElementEditPart.java: (LinkElementEditPart),
+	(LinkElementEditPart.LinkElementEditPart),
+	(LinkElementEditPart.activate),
+	(LinkElementEditPart.activateFigure),
+	(LinkElementEditPart.createEditPolicies),
+	(LinkElementEditPart.createFigure),
+	(LinkElementEditPart.deactivate),
+	(LinkElementEditPart.deactivateFigure),
+	(LinkElementEditPart.getLinkElement),
+	(LinkElementEditPart.propertyChange),
+	(LinkElementEditPart.refreshVisuals):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTEditPartFactory.java: (XSMTEditPartFactory.createEditPart):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/ConnectionCommand.java: (ConnectionCommand),
+	(ConnectionCommand.ConnectionCommand),
+	(ConnectionCommand.getLinkElement),
+	(ConnectionCommand.setLinkElement), (ConnectionCommand.getSource),
+	(ConnectionCommand.setSource), (ConnectionCommand.getStartAnchor),
+	(ConnectionCommand.setStartAnchor), (ConnectionCommand.getTarget),
+	(ConnectionCommand.setTarget), (ConnectionCommand.getTargetAnchor),
+	(ConnectionCommand.setTargetAnchor), (ConnectionCommand.execute),
+	(ConnectionCommand.canExecute), (ConnectionCommand.redo),
+	(ConnectionCommand.undo):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/FunctionElementNodeEditPolicy.java:
+	(FunctionElementNodeEditPolicy),
+	(FunctionElementNodeEditPolicy.getConnectionCompleteCommand),
+	(FunctionElementNodeEditPolicy.getConnectionCreateCommand),
+	(FunctionElementNodeEditPolicy.getReconnectSourceCommand),
+	(FunctionElementNodeEditPolicy.getReconnectTargetCommand),
+	(FunctionElementNodeEditPolicy.createDummyConnection),
+	(FunctionElementNodeEditPolicy.getFEEditPart),
+	(FunctionElementNodeEditPolicy.getConnectedFigure),
+	(FunctionElementNodeEditPolicy.getFE):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/LinkEditPolicy.java: (LinkEditPolicy),
+	(LinkEditPolicy.getDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/LinkEndpointEditPolicy.java: (LinkEndpointEditPolicy),
+	(LinkEndpointEditPolicy.addSelectionHandles),
+	(LinkEndpointEditPolicy.getConnectionFigure),
+	(LinkEndpointEditPolicy.removeSelectionHandles):
+	* org.miliconvert.xsmt.functions/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/Library.java: (Library.list):
+	* org.miliconvert.xsmt.gmodel.tests/.classpath:
+	* org.miliconvert.xsmt.gmodel.tests/.project:
+	* org.miliconvert.xsmt.gmodel.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.gmodel.tests/build.properties:
+	* org.miliconvert.xsmt.gmodel.tests/src/org/miliconvert/xsmt/gmodel
+	/tests/Activator.java: (Activator), (Activator.Activator),
+	(Activator.start), (Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.gmodel.tests/src/org/miliconvert/xsmt/gmodel
+	/tests/GModelFactoryTests.java: (GModelFactoryTests),
+	(GModelFactoryTests.testLoad), (GModelFactoryTests.testSave):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lFactory.java: (GModelFactory.load):
+	* org.miliconvert.xsmt.tmodel.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/AbstractTModelTest.java: (AbstractTModelTest.setUp):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/TModelFactoryTest.java: (TModelFactoryTest.testLoad),
+	(TModelFactoryTest), (TModelFactoryTest.testLoadHandWrittenModel):
+	* org.miliconvert.xsmt.tmodel.tests/test-data/tmodel_path_to_pathl.
+	xml:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ion.java: (Function.getProperties):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lFactory.java: (TModelFactory.load), (TModelFactory.computePrefix),
+	(TModelFactory):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/DOMUtil
+	s.java: (DOMUtils), (DOMUtils.setTransformerFactory),
+	(DOMUtils.serialise), (DOMUtils.logDom), (DOMUtils.createDoc):
+
+2007-03-27  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+        Implement gmodel and design reload in graphical editor.
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorActionBarContributor.java: (XSMTEditorActionBarContributor),
+	(XSMTEditorActionBarContributor.buildActions),
+	(XSMTEditorActionBarContributor.contributeToToolBar),
+	(XSMTEditorActionBarContributor.declareGlobalActionKeys):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelElement.java: (GModelElement), (GModelElement.setLocation),
+	(GModelElement.setSize), (GModelElement.setBox),
+	(GModelElement.getBox):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram.XSMTDiagram), (XSMTDiagram.add):
+	* org.miliconvert.xsmt.gmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/Box.j
+	ava: (Box), (Box.Box), (Box.getModelId), (Box.setModelId),
+	(Box.getX), (Box.setX), (Box.getY), (Box.setY), (Box.getW),
+	(Box.setW), (Box.getH), (Box.setH):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	l.java: (GModel), (GModel.GModel), (GModel.getBox),
+	(GModel.getBoxes), (GModel.addBox), (GModel.functionAdded),
+	(GModel.linkAdded), (GModel.schemaAdded), (GModel.functionRemoved),
+	(GModel.linkRemoved), (GModel.schemaRemoved):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lFactory.java: (GModelFactory.load), (GModelFactory.save):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/XSMTPackage.j
+	ava: (XSMTPackage), (XSMTPackage.XSMTPackage):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/AbstractTModelTest.java: (AbstractTModelTest.setUp):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/ITMod
+	elListener.java: (ITModelListener):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/LinkR
+	esolver.java: (LinkResolver), (LinkResolver.resolveIdxParam),
+	(LinkResolver.resolve):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.add), (TModel.findFunctionById),
+	(TModel.fireFunctionAddedEvent), (TModel.fireLinkAddedEvent),
+	(TModel.fireSchemaAddedEvent), (TModel.fireSchemaRemovedEvent),
+	(TModel.fireFunctionRemovedEvent), (TModel.fireLinkRemovedEvent),
+	(TModel.getFunctions), (TModel.getLinks), (TModel.getSchemas),
+	(TModel.registerListener), (TModel.remove), (TModel.isLinked),
+	(TModel.setFunctions), (TModel.setLinks), (TModel.setSchemas),
+	(TModel.unregisterListener):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lFactory.java: (TModelFactory.getId), (TModelFactory),
+	(TModelFactory.load), (TModelFactory.addLinks),
+	(TModelFactory.addFunctions):
+
+2007-03-26  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Handle functions needing init parameters in a more usable way.
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Funct
+	ionCreationFactory.java: (FunctionCreationFactory),
+	(FunctionCreationFactory.FunctionCreationFactory),
+	(FunctionCreationFactory.getNewObject):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Param
+	eteredTool.java: (ParameteredTool),
+	(ParameteredTool.IInputValidator),
+	(ParameteredTool.ParameteredTool), (ParameteredTool.setShell),
+	(ParameteredTool.getFactory), (ParameteredTool.applyProperty),
+	(ParameteredTool.promptParams), (ParameteredTool.activate),
+	(ParameteredTool.deactivate), (ParameteredTool.getCreateRequest):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Param
+	eteredToolEntry.java: (ParameteredToolEntry.ParameteredToolEntry):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor.configureGraphicalViewer):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.addFuncWithParam),
+	(XSMTEditorPaletteFactory.addFunc):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure.FunctionFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java: (XSMTDiagramLayoutPolicy),
+	(XSMTDiagramLayoutPolicy.getCreateCommand):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Constant.java: (Constant.getDefaultMap), (Constant),
+	(Constant.Constant), (Constant.setProperties):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Abstr
+	actFunctionImpl.java: (AbstractFunctionImpl),
+	(AbstractFunctionImpl.setProperties):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ion.java: (Function), (Function.getName), (Function.setProperties),
+	(Function.getImpl), (Function.setImpl):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionFactory.java: (FunctionFactory.create), (FunctionFactory):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/IFunc
+	tionImpl.java: (IFunctionImpl):
+
+2007-03-23  François Gilbert  <francois.gilbert@miliconvert.org>
+
+        Nicer FunctionFigure (tom).
+
+	Try to import some code from dropshadow border, but it's not
+	working that well (tom).
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/DropShadowBorder.java: (DropShadowBorder):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/DropShadowImages.java: (DropShadowImages),
+	(DropShadowImages.create):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/LineBorderEx.java: (LineBorderEx), (LineBorderEx.LineBorderEx),
+	(LineBorderEx.paint):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/RectangularDropShadow.java: (RectangularDropShadow),
+	(RectangularDropShadow.RectangularDropShadow),
+	(RectangularDropShadow.createImageFromAlpha),
+	(RectangularDropShadow.drawBottomLeftShadow),
+	(RectangularDropShadow.drawBottomRightShadow),
+	(RectangularDropShadow.drawBottomShadow),
+	(RectangularDropShadow.drawRightShadow),
+	(RectangularDropShadow.drawShadow),
+	(RectangularDropShadow.drawTopRightShadow),
+	(RectangularDropShadow.getBottomRightShadowDimension),
+	(RectangularDropShadow.getBottomShadowDimension),
+	(RectangularDropShadow.getLeftShadowDimension),
+	(RectangularDropShadow.getRightShadowDimension),
+	(RectangularDropShadow.getShadowHeight),
+	(RectangularDropShadow.getShadowWidth):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/RectangularDropShadowLineBorder.java:
+	(RectangularDropShadowLineBorder),
+	(RectangularDropShadowLineBorder.RectangularDropShadowLineBorder),
+	(RectangularDropShadowLineBorder.getShadowWidth),
+	(RectangularDropShadowLineBorder.getShadowHeight),
+	(RectangularDropShadowLineBorder.getInsets),
+	(RectangularDropShadowLineBorder.shouldDrawShadow),
+	(RectangularDropShadowLineBorder.getTransparentInsets),
+	(RectangularDropShadowLineBorder.isOpaque),
+	(RectangularDropShadowLineBorder.paintLineBorder),
+	(RectangularDropShadowLineBorder.paintDropShadowBorder),
+	(RectangularDropShadowLineBorder.paint),
+	(RectangularDropShadowLineBorder.shouldDrawDropShadow),
+	(RectangularDropShadowLineBorder.setShouldDrawDropShadow),
+	(RectangularDropShadowLineBorder.getDropShadow):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/borde
+	rs/SeparatorBorder.java: (SeparatorBorder),
+	(SeparatorBorder.SeparatorBorder), (SeparatorBorder.paint):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure),
+	(FunctionFigure.FunctionFigure), (FunctionFigure.getFx):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/SeparatorBorder.java:
+
+2007-03-23  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+        Add parameterized functions
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Funct
+	ionCreationFactory.java: (FunctionCreationFactory),
+	(FunctionCreationFactory.FunctionCreationFactory),
+	(FunctionCreationFactory.getNewObject),
+	(FunctionCreationFactory.setShell):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Param
+	eteredTool.java: (ParameteredTool), (ParameteredTool.getFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Param
+	eteredToolEntry.java: (ParameteredToolEntry),
+	(ParameteredToolEntry.ParameteredToolEntry):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java:
+	(XSMTEditorPaletteFactory.createFunctionsDrawer),
+	(XSMTEditorPaletteFactory),
+	(XSMTEditorPaletteFactory.addFuncWithParam),
+	(XSMTEditorPaletteFactory.addFunc):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement.FunctionElement):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java:
+	(FunctionElementEditPart.refreshVisuals):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java:
+	(XSMTDiagramLayoutPolicy.createChangeConstraintCommand),
+	(XSMTDiagramLayoutPolicy.getCreateCommand):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionDescriptor.java: (FunctionDescriptor),
+	(FunctionDescriptor.FunctionDescriptor),
+	(FunctionDescriptor.getMandatoryProperties):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/Library.java: (Library), (Library..putFunc), (Library.),
+	(Library.putFunc), (Library.list):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Constant.java: (Constant.getName):
+
+2007-03-22  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Make functions look nicer
+	
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure),
+	(FunctionFigure.FunctionFigure), (FunctionFigure.getFx):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/SeparatorBorder.java: (SeparatorBorder),
+	(SeparatorBorder.SeparatorBorder), (SeparatorBorder.paint):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement.FunctionElement):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/Library.java:
+
+2007-03-21  François Gilbert  <francois.gilbert@miliconvert.org>
+
+        Function move in graphical editor
+	
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelElement.java: (GModelElement), (GModelElement.setLocation):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java:
+	(FunctionElementEditPart.propertyChange):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionChangeConstraintCommand.java:
+	(FunctionChangeConstraintCommand),
+	(FunctionChangeConstraintCommand.FunctionChangeConstraintCommand),
+	(FunctionChangeConstraintCommand.getModel),
+	(FunctionChangeConstraintCommand.execute),
+	(FunctionChangeConstraintCommand.redo),
+	(FunctionChangeConstraintCommand.undo):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionDeleteCommand.java:
+	(FunctionDeleteCommand.FunctionDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java:
+	(XSMTDiagramLayoutPolicy.createChangeConstraintCommand):
+
+2007-03-21  François Gilbert  <francois.gilbert@miliconvert.org>
+
+	Graphical editing of functions
+
+	* org.miliconvert.xsmt.editor/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.editor/plugin.xml:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Funct
+	ionCreationFactory.java: (FunctionCreationFactory),
+	(FunctionCreationFactory.FunctionCreationFactory),
+	(FunctionCreationFactory.getNewObject),
+	(FunctionCreationFactory.getObjectType):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor), (XSMTEditor.XSMTEditor),
+	(XSMTEditor.setInput), (XSMTEditor.configureGraphicalViewer),
+	(XSMTEditor.commandStackChanged),
+	(XSMTEditor.createPaletteViewerProvider), (XSMTEditor.doSave),
+	(XSMTEditor.doSaveAs), (XSMTEditor.getModel),
+	(XSMTEditor.getPaletteRoot),
+	(XSMTEditor.initializeGraphicalViewer),
+	(XSMTEditor.isSaveAsAllowed), (XSMTEditor.getSynchronizer),
+	(XSMTEditor.getRegistry):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorActionBarContributor.java: (XSMTEditorActionBarContributor),
+	(XSMTEditorActionBarContributor.buildActions),
+	(XSMTEditorActionBarContributor.contributeToToolBar),
+	(XSMTEditorActionBarContributor.declareGlobalActionKeys):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditorPaletteFactory.java: (XSMTEditorPaletteFactory),
+	(XSMTEditorPaletteFactory.createFunctionsDrawer),
+	(XSMTEditorPaletteFactory.addFunc),
+	(XSMTEditorPaletteFactory.createPalette),
+	(XSMTEditorPaletteFactory.createToolsGroup),
+	(XSMTEditorPaletteFactory.XSMTEditorPaletteFactory):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/figur
+	es/FunctionFigure.java: (FunctionFigure),
+	(FunctionFigure.FunctionFigure):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/FunctionElement.java: (FunctionElement),
+	(FunctionElement.FunctionElement), (FunctionElement.getFunction),
+	(FunctionElement.setFunction):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelElement.java: (GModelElement),
+	(GModelElement.GModelElement), (GModelElement.getLocation),
+	(GModelElement.setLocation), (GModelElement.getSize),
+	(GModelElement.setSize):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/GModelNode.java: (GModelNode), (GModelNode.GModelNode),
+	(GModelNode.getEditableValue), (GModelNode.getPropertyDescriptors),
+	(GModelNode.getPropertyValue), (GModelNode.isPropertySet),
+	(GModelNode.resetPropertyValue), (GModelNode.setPropertyValue),
+	(GModelNode.addPropertyChangeListener),
+	(GModelNode.fireIndexedPropertyChange),
+	(GModelNode.firePropertyChange),
+	(GModelNode.getPropertyChangeListeners), (GModelNode.hasListeners),
+	(GModelNode.removePropertyChangeListener):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/model
+	/XSMTDiagram.java: (XSMTDiagram), (XSMTDiagram.XSMTDiagram),
+	(XSMTDiagram.save), (XSMTDiagram.add), (XSMTDiagram.remove),
+	(XSMTDiagram.getChildren):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/FunctionElementEditPart.java: (FunctionElementEditPart),
+	(FunctionElementEditPart.FunctionElementEditPart),
+	(FunctionElementEditPart.getCastedModel),
+	(FunctionElementEditPart.createFigure),
+	(FunctionElementEditPart.activate),
+	(FunctionElementEditPart.deactivate),
+	(FunctionElementEditPart.propertyChange),
+	(FunctionElementEditPart.refreshVisuals),
+	(FunctionElementEditPart.createEditPolicies):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTDiagramEditPart.java: (XSMTDiagramEditPart),
+	(XSMTDiagramEditPart.XSMTDiagramEditPart),
+	(XSMTDiagramEditPart.getCastedModel),
+	(XSMTDiagramEditPart.createFigure),
+	(XSMTDiagramEditPart.getModelChildren),
+	(XSMTDiagramEditPart.createEditPolicies),
+	(XSMTDiagramEditPart.propertyChange),
+	(XSMTDiagramEditPart.activate), (XSMTDiagramEditPart.deactivate):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/XSMTEditPartFactory.java: (XSMTEditPartFactory),
+	(XSMTEditPartFactory.createEditPart):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionCreateCommand.java: (FunctionCreateCommand),
+	(FunctionCreateCommand.FunctionCreateCommand),
+	(FunctionCreateCommand.execute),
+	(FunctionCreateCommand.canExecute), (FunctionCreateCommand.redo),
+	(FunctionCreateCommand.undo):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/parts
+	/commands/FunctionDeleteCommand.java: (FunctionDeleteCommand),
+	(FunctionDeleteCommand.FunctionDeleteCommand),
+	(FunctionDeleteCommand.canUndo), (FunctionDeleteCommand.execute),
+	(FunctionDeleteCommand.redo), (FunctionDeleteCommand.undo):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/FunctionElementEditPolicy.java: (FunctionElementEditPolicy),
+	(FunctionElementEditPolicy.createDeleteCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/polic
+	ies/XSMTDiagramLayoutPolicy.java: (XSMTDiagramLayoutPolicy),
+	(XSMTDiagramLayoutPolicy.createChangeConstraintCommand),
+	(XSMTDiagramLayoutPolicy.getCreateCommand):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizard.java: (XSMTWizard.doFinish), (XSMTWizard),
+	(XSMTWizard.openContentStream), (XSMTWizard.createCoreException):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizardPage.java: (XSMTWizardPage),
+	(XSMTWizardPage.initialize):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Abstr
+	actFunctionImpl.java: (AbstractFunctionImpl):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionFactory.java: (FunctionFactory.create):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.remove), (TModel.getSourceSchemas):
+
+2007-03-21  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Abstr
+	actFunctionImpl.java: (AbstractFunctionImpl):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionSignature.java: (FunctionSignature.getParametersCount),
+	(FunctionSignature), (FunctionSignature.getParameters):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/IFunc
+	tionImpl.java: (IFunctionImpl):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.TModel), (TModel.findSchemaById),
+	(TModel.registerListener), (TModel.unregisterListener),
+	(TModel.getSourceSchemas):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Varia
+	ble.java: (Variable):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/DOMUtil
+	s.java: (DOMUtils.getElementText), (DOMUtils):
+
+2007-03-15  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        First look at transformation execution. Preparatory work only for
+	specification writing.
+	
+	* org.miliconvert.xsmt.functions/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/XalanMap.java: (XalanMap), (XalanMap.addItem):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Constant.java: (Constant), (Constant.Constant),
+	(Constant.getName), (Constant.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Identity.java: (Identity.execute):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Replace.java: (Replace), (Replace.Replace),
+	(Replace.getName), (Replace.strReplace), (Replace.execute):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Abstr
+	actFunctionImpl.java: (AbstractFunctionImpl):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ion.java: (Function.getProperties), (Function):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/IFunc
+	tionImpl.java: (IFunctionImpl):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/DOMUtil
+	s.java: (DOMUtils.parse):
+	* org.miliconvert.xsmt.xalan.tests/.classpath:
+	* org.miliconvert.xsmt.xalan.tests/.project:
+	* org.miliconvert.xsmt.xalan.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.xalan.tests/build.properties:
+	* org.miliconvert.xsmt.xalan.tests/src/org/miliconvert/xsmt/xalan/t
+	ests/Activator.java: (Activator), (Activator.Activator),
+	(Activator.start), (Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.xalan.tests/src/org/miliconvert/xsmt/xalan/t
+	ests/XalanJavaCallTest.java: (XalanJavaCallTest),
+	(XalanJavaCallTest.setUp), (XalanJavaCallTest.tearDown),
+	(XalanJavaCallTest.transformWithXSL),
+	(XalanJavaCallTest.testTransformClassic),
+	(XalanJavaCallTest.testTransformXSMT), (XalanJavaCallTest.error),
+	(XalanJavaCallTest.fatalError), (XalanJavaCallTest.warning):
+	* org.miliconvert.xsmt.xalan.tests/test-data/path.xml:
+	* org.miliconvert.xsmt.xalan.tests/test-data/replace-classic.xsl:
+	* org.miliconvert.xsmt.xalan.tests/test-data/replace.xsl:
+	* org.miliconvert.xsmt.xalan/.classpath:
+	* org.miliconvert.xsmt.xalan/.project:
+	* org.miliconvert.xsmt.xalan/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.xalan/build.properties:
+	* transform.sh:
+
+2007-03-14  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        More work on "schema tree" display, works with path.xsd and
+	rss.xsd
+
+	Link Resolution probably fails with rss.xsd. Should improve test
+	to make it fail and fix resolution.
+
+	Looking at GEF, an event model has to be added to GEF to track
+	model changes.
+
+	Add .xsmt files io. We can now plug it into the editor.
+	
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionCategory.java: (FunctionCategory),
+	(FunctionCategory.FunctionCategory), (FunctionCategory.getName):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/FunctionDescriptor.java: (FunctionDescriptor),
+	(FunctionDescriptor.FunctionDescriptor),
+	(FunctionDescriptor.getName), (FunctionDescriptor.getComment),
+	(FunctionDescriptor.getImplClass),
+	(FunctionDescriptor.getCategory):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/Library.java: (Library), (Library..putFunc), (Library.),
+	(Library..list):
+	* org.miliconvert.xsmt.gmodel/.classpath:
+	* org.miliconvert.xsmt.gmodel/.project:
+	* org.miliconvert.xsmt.gmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.gmodel/build.properties:
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	l.java: (GModel):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lActivator.java: (GModelActivator),
+	(GModelActivator.GModelActivator), (GModelActivator.start),
+	(GModelActivator.stop), (GModelActivator.getDefault):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lException.java: (GModelException),
+	(GModelException.GModelException):
+	* org.miliconvert.xsmt.gmodel/src/org/miliconvert/xsmt/gmodel/GMode
+	lFactory.java: (GModelFactory), (GModelFactory.load),
+	(GModelFactory.save):
+	* org.miliconvert.xsmt.io.tests/.classpath:
+	* org.miliconvert.xsmt.io.tests/.project:
+	* org.miliconvert.xsmt.io.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.io.tests/build.properties:
+	* org.miliconvert.xsmt.io.tests/src/org/miliconvert/xsmt/io/tests/A
+	ctivator.java: (Activator), (Activator.Activator),
+	(Activator.start), (Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.io.tests/src/org/miliconvert/xsmt/io/tests/X
+	SMTPackageFactoryTests.java: (XSMTPackageFactoryTests),
+	(XSMTPackageFactoryTests.testSave),
+	(XSMTPackageFactoryTests.testLoad):
+	* org.miliconvert.xsmt.io/.classpath:
+	* org.miliconvert.xsmt.io/.project:
+	* org.miliconvert.xsmt.io/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.io/build.properties:
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/Activator.jav
+	a: (Activator), (Activator.Activator), (Activator.start),
+	(Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/XSMTException
+	.java: (XSMTException), (XSMTException.XSMTException):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/XSMTPackage.j
+	ava: (XSMTPackage), (XSMTPackage.XSMTPackage),
+	(XSMTPackage.getTmodel), (XSMTPackage.getGraphic):
+	* org.miliconvert.xsmt.io/src/org/miliconvert/xsmt/io/XSMTPackageFa
+	ctory.java: (XSMTPackageFactory),
+	(XSMTPackageFactory.XSMTPackageFactory), (XSMTPackageFactory.load),
+	(XSMTPackageFactory.save), (XSMTPackageFactory.read):
+	* org.miliconvert.xsmt.tmodel.tests/.settings/org.eclipse.core.reso
+	urces.prefs:
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/AbstractTModelTest.java: (AbstractTModelTest.setUp),
+	(AbstractTModelTest.createFeatFuncLink), (AbstractTModelTest),
+	(AbstractTModelTest.createFuncFeatLink),
+	(AbstractTModelTest.createFeatFeatLink),
+	(AbstractTModelTest.print), (AbstractTModelTest.walk):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/AllTModelTests.java: (AllTModelTests),
+	(AllTModelTests.suite):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/LinkResolverTest.java: (LinkResolverTest.testSerializeEnd),
+	(LinkResolverTest.testSerializeStart),
+	(LinkResolverTest.testResolveFeature), (LinkResolverTest),
+	(LinkResolverTest.testResolveFunction):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/SchemaTest.java: (SchemaTest.setUp), (SchemaTest),
+	(SchemaTest.print), (SchemaTest.walk), (SchemaTest.testGetSchema):
+	* org.miliconvert.xsmt.tmodel.tests/test-data/rss-2_0_1-rev10.xsd:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ion.java: (Function.Function):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/LinkR
+	esolver.java: (LinkResolver.serializeEnd),
+	(LinkResolver.serializeStart), (LinkResolver.serialize),
+	(LinkResolver), (LinkResolver.findFeaturesByName),
+	(LinkResolver.resolveFeature), (LinkResolver.resolveFunctionId):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.findSchemaById),
+	(TModel.findFunctionById), (TModel.getId):
+
+2007-03-12  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Added Link serialisation in tmodel and related tests.
+	
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/AbstractTModelTest.java: (AbstractTModelTest),
+	(AbstractTModelTest.setUp), (AbstractTModelTest.createLink),
+	(AbstractTModelTest.print), (AbstractTModelTest.walk),
+	(AbstractTModelTest.tearDown):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/LinkResolverTest.java: (LinkResolverTest),
+	(LinkResolverTest.testLinkResolverCTor),
+	(LinkResolverTest.testSerializeEnd),
+	(LinkResolverTest.testSerializeStart):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/TModelFactoryTest.java: (TModelFactoryTest),
+	(TModelFactoryTest.testLoad), (TModelFactoryTest.testToXML):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ion.java: (Function):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionId.java: (FunctionId.toString), (FunctionId):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Link.
+	java: (Link.toString), (Link), (Link.getStartFeat),
+	(Link.getEndFeat), (Link.getStartFid), (Link.getEndFid),
+	(Link.getEndParamIdx):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/LinkR
+	esolver.java: (LinkResolver), (LinkResolver.LinkResolver),
+	(LinkResolver.serializeEnd), (LinkResolver.serializeStart),
+	(LinkResolver.serialize):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel.getId), (TModel), (TModel.addLink):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lFactory.java: (TModelFactory.save), (TModelFactory.addLinks),
+	(TModelFactory.addFunctions):
+
+2007-03-12  François Gilbert  <francois.gilbert@miliconvert.org>
+
+        Initial editor & perspective
+	
+	* org.miliconvert.xsmt.editor/.classpath:
+	* org.miliconvert.xsmt.editor/.project:
+	* org.miliconvert.xsmt.editor/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.editor/build.properties:
+	* org.miliconvert.xsmt.editor/plugin.xml:
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/Activ
+	ator.java: (Activator), (Activator.Activator), (Activator.start),
+	(Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/XSMTE
+	ditor.java: (XSMTEditor), (XSMTEditor.dispose):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizard.java: (XSMTWizard), (XSMTWizard.XSMTWizard),
+	(XSMTWizard.addPages), (XSMTWizard.performFinish),
+	(XSMTWizard.doFinish), (XSMTWizard.openContentStream),
+	(XSMTWizard.throwCoreException), (XSMTWizard.init):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/editor/wizar
+	ds/XSMTWizardPage.java: (XSMTWizardPage),
+	(XSMTWizardPage.XSMTWizardPage), (XSMTWizardPage.createControl),
+	(XSMTWizardPage.initialize), (XSMTWizardPage.handleBrowse),
+	(XSMTWizardPage.dialogChanged), (XSMTWizardPage.updateStatus),
+	(XSMTWizardPage.getContainerName), (XSMTWizardPage.getFileName):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/perspective/
+	XSMTPerspectiveFactory.java: (XSMTPerspectiveFactory),
+	(XSMTPerspectiveFactory.createInitialLayout):
+	* org.miliconvert.xsmt.editor/src/org/miliconvert/xsmt/perspective/
+	XSMTPerspectivePlugin.java: (XSMTPerspectivePlugin):
+
+2007-03-09  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Initial tmodel factory
+	
+	* org.miliconvert.xsmt.tmodel.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/TModelFactoryTest.java: (TModelFactoryTest),
+	(TModelFactoryTest.testLoad), (TModelFactoryTest.testToXML):
+	* org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	a.java: (Schema), (Schema.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	aId.java: (SchemaId), (SchemaId.SchemaId), (SchemaId.equals),
+	(SchemaId.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.TModel), (TModel.setLinks):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lActivator.java: (TModelActivator), (TModelActivator.start),
+	(TModelActivator.stop), (TModelActivator.getDefault):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lFactory.java: (TModelFactory), (TModelFactory.load),
+	(TModelFactory.toXML), (TModelFactory.addLinks),
+	(TModelFactory.addFunctions), (TModelFactory.addSchemas):
+	* org.miliconvert.xsmt.utils/.classpath:
+	* org.miliconvert.xsmt.utils/.project:
+	* org.miliconvert.xsmt.utils/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.utils/build.properties:
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/Activat
+	or.java: (Activator), (Activator.Activator), (Activator.start),
+	(Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.utils/src/org/miliconvert/xsmt/utils/DOMUtil
+	s.java: (DOMUtils), (DOMUtils.getElementText),
+	(DOMUtils.getElementTextNS), (DOMUtils.getTexts),
+	(DOMUtils.getTextsNS), (DOMUtils.getAttributes),
+	(DOMUtils.getElementAttribute), (DOMUtils.getUniqueElement),
+	(DOMUtils.findElementWithUniqueAttribute),
+	(DOMUtils.createElementAndText), (DOMUtils.createElement),
+	(DOMUtils.serialise), (DOMUtils.logDom), (DOMUtils.parse),
+	(DOMUtils.createDoc):
+
+2007-03-08  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        Add simple schema tests et complete schemafactory test
+	
+	* org.miliconvert.xsmt.tmodel.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/SchemaFactoryTest.java:
+	(SchemaFactoryTest.testCreateSchemaIdString),
+	(SchemaFactoryTest.testCreateString):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/SchemaTest.java: (SchemaTest), (SchemaTest.setUp),
+	(SchemaTest.tearDown), (SchemaTest.testHashCode),
+	(SchemaTest.testGetId), (SchemaTest.testSetId),
+	(SchemaTest.testGetFsPath), (SchemaTest.testSetFsPath),
+	(SchemaTest.testGetSchema):
+	* org.miliconvert.xsmt.tmodel.tests/test-data/path.xsd:
+	* org.miliconvert.xsmt.tmodel.tests/test-data/pathl.xsd:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	aFactory.java: (SchemaFactory.create):
+
+2007-03-07  Thomas Cataldo  <thomas.cataldo@miliconvert.org>
+
+        First draft of tmodel code
+	
+	* README:
+	* org.miliconvert.xsmt.functions/.classpath:
+	* org.miliconvert.xsmt.functions/.project:
+	* org.miliconvert.xsmt.functions/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.functions/build.properties:
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/Activator.java: (Activator), (Activator.Activator),
+	(Activator.start), (Activator.stop), (Activator.getDefault):
+	* org.miliconvert.xsmt.functions/src/org/miliconvert/xsmt/functions
+	/core/Identity.java: (Identity), (Identity.Identity),
+	(Identity.getName), (Identity.execute):
+	* org.miliconvert.xsmt.tmodel.tests/.classpath:
+	* org.miliconvert.xsmt.tmodel.tests/.project:
+	* org.miliconvert.xsmt.tmodel.tests/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel.tests/build.properties:
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/FunctionFactoryTest.java: (FunctionFactoryTest),
+	(FunctionFactoryTest.testCreateFunctionIdStringMapOfStringString),
+	(FunctionFactoryTest.testCreateStringMapOfStringString),
+	(FunctionFactoryTest.testCreateString):
+	* org.miliconvert.xsmt.tmodel.tests/src/org/miliconvert/xsmt/tmodel
+	/tests/SchemaFactoryTest.java: (SchemaFactoryTest),
+	(SchemaFactoryTest.testCreateSchemaIdString),
+	(SchemaFactoryTest.testCreateString):
+	* org.miliconvert.xsmt.tmodel/.classpath:
+	* org.miliconvert.xsmt.tmodel/.project:
+	* org.miliconvert.xsmt.tmodel/META-INF/MANIFEST.MF:
+	* org.miliconvert.xsmt.tmodel/build.properties:
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Abstr
+	actFunctionImpl.java: (AbstractFunctionImpl),
+	(AbstractFunctionImpl.AbstractFunctionImpl),
+	(AbstractFunctionImpl.execute),
+	(AbstractFunctionImpl.getSignature):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ion.java: (Function), (Function.Function), (Function.getId),
+	(Function.setId), (Function.getName), (Function.setName),
+	(Function.getImplementationClass),
+	(Function.setImplementationClass), (Function.getSignature),
+	(Function.setSignature), (Function.getProperties),
+	(Function.setProperties), (Function.equals), (Function.hashCode):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionFactory.java: (FunctionFactory), (FunctionFactory.create):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionId.java: (FunctionId), (FunctionId.FunctionId),
+	(FunctionId.get), (FunctionId.equals), (FunctionId.hashCode):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Funct
+	ionSignature.java: (FunctionSignature),
+	(FunctionSignature.FunctionSignature):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/IFunc
+	tionImpl.java: (IFunctionImpl):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Link.
+	java: (Link), (Link.setStart), (Link.setEnd), (Link.toString):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	a.java: (Schema), (Schema.getId), (Schema.setId),
+	(Schema.getFsPath), (Schema.setFsPath), (Schema.getSchema),
+	(Schema.setSchema), (Schema.hashCode), (Schema.equals):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	aFactory.java: (SchemaFactory), (SchemaFactory.create),
+	(SchemaFactory.loadModel):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Schem
+	aId.java: (SchemaId), (SchemaId.SchemaId), (SchemaId.get),
+	(SchemaId.equals), (SchemaId.hashCode):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	l.java: (TModel), (TModel.TModel), (TModel.add),
+	(TModel.getSchemas), (TModel.setSchemas), (TModel.getFunctions),
+	(TModel.setFunctions), (TModel.getLinks), (TModel.setLinks):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lActivator.java: (TModelActivator),
+	(TModelActivator.TModelActivator):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/TMode
+	lException.java: (TModelException),
+	(TModelException.TModelException):
+	* org.miliconvert.xsmt.tmodel/src/org/miliconvert/xsmt/tmodel/Varia
+	ble.java: (Variable), (Variable.Variable), (Variable.getValue),
+	(Variable.setValue), (Variable.getName), (Variable.setName):
+
+2007-02-27  Thomas Cataldo  <thomas.cataldo@aliasource.fr>
+
+	* README: added
+
+

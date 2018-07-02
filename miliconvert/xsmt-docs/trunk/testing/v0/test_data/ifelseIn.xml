@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ifelse>
+  <tuple bool="true" val1="abc" val2="cde"/>
+  <tuple bool="false" val1="abc" val2="cde"/>
+  <tuple bool="false" val1="abc" val2="cde"/>
+  <tuple bool="true" val1="abc" val2="cde"/>
+</ifelse>

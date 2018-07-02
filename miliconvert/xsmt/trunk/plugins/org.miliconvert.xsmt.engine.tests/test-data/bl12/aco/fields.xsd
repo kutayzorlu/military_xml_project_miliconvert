@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="nato:adatp-3:bl12:elementals" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="nato:adatp-3:bl12:elementals" version="bl12">
+<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+<xsd:simpleType name="exercise.nickname.1021.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,56})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="exercise.additional.identifier.1018.11">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(BLUE|CONTROL|DISTAFF|DRILL|NO PLAY|NODUF|ORANGE|PURPLE|UMPIRE|UMPIRE EYES ONLY)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="exercise.additional.nickname.1018.16">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,20})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="operation.codeword.1020.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,50})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="plan.originator.1029.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="blank.space.character.1025.4">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([a-zA-Z \.,\(\)\?\-_]{1})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="plan.number.1012.146">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="option.nickname.1232.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,23})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="secondary.option.nickname.1232.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,23})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="message.text.format.identifier.1018.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(AARCTM|AEW ALLOCATION|ACMREQ|AEW COMPLIANCE|ACO|AEW REQUEST|ACTORD|AEW SORNUM|EMREQ DEL|ACTREQ|EMREQ REP|ACTWARN|EMREQ REQ|ADACTREP|FORDREP|KILLBOX|LCS INTENTIONS|LOGSITREPMAR|AFU\.AMS|MTRANSIT|AFU\.DCMD|NPS IMPLEMENTATION|NPS RESPONSE|OPTASK AMPHIB|AFU\.FUS|PCS INTENTIONS|RAILREP|AIRALLOC|REPAIR DIR|AIRATTACKWARN|ROUTEREP|AIRINTREP|SPOTREP|AIRMOVE|TUNNELREP|AIRREQ|AIRSTAT|AIRTASK|AMMOMALFUNCREP|ARRESTREP|ASSESSREP|ATCORD|ATCORDACK|ATI\.ATR|ATI\.TIR|ATMISCOMP|ATMISDEL|ATMISPROG|ATO|ATSTAT|BARREP|BATRECEVACREQ|BATRECEVACTASK|BIOCHEM1|BIOCHEM2|BIOCHEM3|BIOCHEM4|BIOCHEM5|BIOCHEM6|BIOINTREC|BOMBREP|BOMBWARN|BRDMLORD|BRDMLRECCEORD|BRDMLRECCEREP|BRDMLREP|CARGOTRAFFIC|CARRIER SORTIES|CASEVACREQ|CASSUM|CATAS ADVISORY|CCISSTATREP|CCLREP|CFEEXREP|CFEINSPREP|CIINTREP|CIINTSUM|CIMICREP|CISSITREP|CISUPINTREP|CMOSITREP|COLATDAMREP|COMCAPREP|COMMEDREP|COMMGATEWAYACC|COMMGATEWAYREQ|COMMGATEWAYSTAT|COMPASSESSREP|COMSPOT|COMTECHREP - TYPE A|COMTECHREP - TYPE B|COMTECHREP - TYPE C|COVREP|CROSSDECKREQ|CROSSDECKRESP|DEDOCREP|DELTREP|DEPENDREP|DEPSTARTREP|DIVEACC|DMLORD|EMBUREP|ENEMY CONTACT REP|ENGAGEREP|ENGGSORD|ENGGSRECCEORD|ENGGSRECCEREP|ENGGSREP|ENGMATREQREL|ENGOPO|ENGRDATAREP|ENGREP|ENGRECCEORD|ENGRECCEREP|ENGRRESREP|ENGSTATREP|ENGTASKREP|ENSITREP|EODINCREP|EODTASKREP|EORTASKREP|EQUIPINTREC|EVENTINTREC|EVENTREP|EWAM|EWMSNSUM|EWRTM|EWSTOPJAM|EWSUM|FIRST HOSTILE ACT|FM\.CFF|FM\.FMC|FM\.MTO|FM\.SUB|FORCEPREP|FRAGO|GAPORD|GAPRECCEORD|GAPRECCEREP|GAPREP|GENINFOMSG|GEOSITREP|GRASSHOPPER EXECUTE|GRASSHOPPER REQUEST|GREEN|HELACK|HELOPSUM|HELQUEST|HELTASK|HNSREQ|ICTYREP|IFFPROD|IMPLREQ|INCREP|INCSPOTREP|INFLIGHTREP|INTENDCHOP|INTRELREC|INTREP|INTREQ|INTSUM|INTTOLAY|JAMWARN|LASERWARN|LOCATOR|LOGASREQ|LOGASRESP|LOGASSESSREP|LOGDEFREP|LOGSITLAND|LOGSURPLUS|LOGUPDATE|MAPREQ|MARINTREP|MARINTSUM|MCMREP|MCR|MEO|MET\.CM|MET\.RFM|MET\.TA|MIJIWARNREP|MINCLRORD|MINCLRRECCEORD|MINCLRRECCEREP|MINCLRREP|MINLAYORD|MINLAYRECCEORD|MINLAYRECCEREP|MINLAYREP|MISREP|MLAYREP|MOD\.ATTACK|MOD\.XCLUDE|MOVASSESSREP|MOVEREP|MOVREQ|MSGCORRCANX|MWO|AEW LOGSITREP|AEW MISREP|AEW OPSTAT|AEW TACREP|NARAT|NAVOPDEF|NAVSITREP|NAVSITSUM|NBC BWR|NBC CDR|NBC EDR|NBCSITREP|NNFP\.COMFP|NNFP\.FP|NNFP\.RESFU|NPS AUTHORIZATION|NPS CANCELLATION|NPS DECLARATION|NPS RECOMMENDATION|NPS REQUEST|NUC1|NUC2|NUC3|NUC4|NUC5|NUC6|OBSEXORD|OBSEXREP|OBSRECCEORD|OBSRECCEREP|OBSREP|OFFSTOFR|OPGEN|OPSTAT CARGO|OPSTAT RAS|OPSTAT RASREQ|OPSTAT UNIT|OPTASK AAW|OPTASK AIR|OPTASK ASUW|OPTASK ASW|OPTASK COMMS|OPTASK DIVE|OPTASK EW|OPTASK LINK|OPTASK MINING|OPTASK NUC|OPTASK RAS|ORBATAIR|ORBATLAND|ORBATSEA|ORBATTOA LAND-AIR|ORBATTOASEA|OWNSITREP|PERSREP|PISITREP|PLACEINTREC|PRESENCE|PRETECHREP|PSOCOMASSESSREP|PSYREP|PTLREP|PURPLE|PWINTERREP|PWPERSREC|RBTMAINTORD|RBTMAINTREP|RBTRECCEORD|RBTRECCEREP|REALESTREQ|REALESTRESP|RECEXREP|RESPONSE|ROEAUTH|ROEIMPL|ROEREQ|ROTA1|ROTA2|ROTA3|ROTA4|ROTA5|ROTA6|ROUTERECCEORD|ROUTERECCEREP|SAILSIG|SARIR|SARREQ|SARSIT|SATVULREP|SCATMINORD|SCATMINREC|SCATMINREP|SCATMINREQ|SCATMINWARN|SEAMOV|SENSCOVREP|SHORADLOCSTAT|SHREDREP|SIDATREP|SITREP|SPRT\.ACA|SPRT\.GEOM|STRIKWARN|SUBCHOP|SUBDANGER|SUBNOI|SUBNOTE|SUBNOTE CHANGE|SUBNOTE CHANGE REQ|SUBNOTE REQ|SUPINTREP|SURFREP|SURORD|SURRECCEORD|SURRECCEREP|SURREP|SYS\.RFR|SYS\.RRM|TACBEREP|TRACKREP|TRANSAR|TRANSCPL|UNITINTREC|VDS NOTE|WCO|WSM ALLOCSTAT|WSM REQ|ALZREP|BRIDGEREP|DZREP|HELLSREP|MERSITREP|DEPLOYREP|COMMGATEWAYESTA|EVACREQ|IMAGEINTREC|LALC REPORT|MEDCASREPTRACK|MERSITSUM|OPTASK LOG FLC|OPTASK LOG MNLC|RDMOVBID|RDMOVCREDIT|SAILNOTE|SFCTPTREQ|SFCTPTREPLY|TARGETINTREC)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="originator.1029.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="message.serial.number.1012.7">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="month.name.abbreviated.1004.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="qualifier.1130.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(AMP|BLK|CHG|DEV|FIN|FUP|INI|NEW|PER|REQ|UPD)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="serial.number.of.qualifier.1012.29">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="serial.letter.1102.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,10})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="communication.type.1153.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(CON|DOC|EML|LTR|MSG|TEL|VTC)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="day.1000.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{2})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="hour.time.1001.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{2})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="minute.time.1002.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{2})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="time.zone.1003.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(A|B|C|D|E|F|G|H|I|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="year.1005.7">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{4})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="month.numeric.1004.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(01|02|03|04|05|06|07|08|09|10|11|12)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="year.4.digit.1005.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{4})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="reference.serial.number.1012.66">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="special.notation.1131.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(PASEP|NOTAL)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="sic.1017.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z]{3})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="filing.number.1012.49">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="name.of.area.of.validity.1022.25">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,55})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="aco.serial.number.1012.40">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="geodetic.datum.1195.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(ADINDAN|AFGOOYE|AIN EL ABD|ANNA 1 ASTRO|ANTIGUA ISLAND ASTRO|ARC 1950|ASCENSION ISLAND|ASTRO BEACON E|ASTRO DOS 71-4|ASTRO TERN ISLAND|ASTRONOMICAL STATION|AUSTRALIAN GEODETIC 1966|AUSTRALIAN GEODETIC 1984|AYABELLE LIGHTHOUSE|BELLEVUE|BERMUDA|BISSAU|BOGOTA OBSERVATORY|BUKIT RIMPAH|CAMP AREA ASTRO|CAMPO INCHAUSPE|CANTON ASTRO 1966|CAPE|CAPE CANAVERAL|CARTHAGE|CHATHAM ISLAND ASTRO|CHUA ASTRO|CORREGO ALEGRE|DABOLA|DJAKARTA (BATAVIA)|DOS 1968|EASTER ISLAND|EUROPEAN 1950|EUROPEAN 1979|FORT THOMAS|GAN 1970|GEODETIC DATUM|GPS|GRACIOSA BASE SW|GUAM 1963|GUNUNG SEGARA|GUX 1 ASTRO|HERAT NORTH|HJORSEY|HONG KONG|HU-TZU-SHAN|INDIAN|INDIAN 1954|INDIAN 1975|IRELAND|ISTS 061 ASTRO 1968|ISTS 073 ASTRO 1969|JOHNSTON ISLAND|KANDAWALA|KERGUELEN ISLAND|KERTAU|KUSAIE ASTRO|L\. C\. 5 ASTRO 1961|LEIGON|LIBERIA|LUZON|M PORALOKO|MAHE 1971|MASSAWA|MERCHICH|MIDWAY ASTRO|MINNA|MONTSERRAT ISLAND ASTRO|NAHRWAN|NAPARIMA BWI|NORTH AMERICAN 1927|NORTH AMERICAN 1983|OBSERVATORIO METEOR 1939|OLD EGYPTIAN|OLD HAWAIIAN|OMAN|ORD SURVEY GB|PICO DE LAS NIEVES|PITCAIRN ASTRO|POINT 58|POINTE NOIRE|PORTO SANTO|PROVISIONAL SOUTH AMERICA|PROVISIONAL SOUTH CHILEAN|PUERTO RICO|QORNOQ|QUATAR NATIONAL|REUNION|ROME 1940|SANTO (DOS)|SAO BRAZ|SAPPER HILL|SCHWARZECK|SELVAGEM GRANDE|SOUTH AMERICAN|SOUTH ASIA|TANANARIVE OBSERVATORY|TIMBALAI|TOKYO|TRISTAN ASTRO|VITI LEVU|WAKE - ENIWETOK|WAKE ISLAND ASTRO|WGS 1972|W84|YACARE|ZANDERIJ)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="stop.time.qualifier.1220.8">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(AFTER|ASAP|ASAPAFT|ASAPNLT|ASOF|BEFORE|INDEF|NET|NLT|ONCALL|TBD|UFN|UNK)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="text.indicator.1009.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,61})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="free.text.1006.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([:a-zA-Z0-9 &#10;\.,\(\)\?\-_/\\.]*)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="airspace.control.means.status.update.1156.5">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(ADD|CHANGE|DELETE)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="airspace.control.means.identifying.designator.1515.12">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="airspace.control.means.name.1022.27">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,55})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="airspace.control.means.identifier.1389.7">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,7})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="hyphen.1025.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(-)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="type.of.airspace.control.means.1389.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(ADAREA|ADOA|ATC|CORRTE|PROC|REFPT|ROZ|SUA)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="type.of.acm.other.1389.4">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,7})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="type.of.airspace.shape.1237.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(CIRCLE|CORRIDOR|LINE|ORBIT|POINT|POLYARC|POLYGON|RADARC|TRACK)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="airspace.usage.1389.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(AAR|ABC|ACA|ACP|ACSS|ADAA|ADIZ|ADVRTE|ADZ|AEW|AIRCOR|AIRRTE|ALERTA|ALTRV|AOA|APPCOR|ARWY|ASCA|ATSRTE|BDZ|BNDRY|BULL|BZ|CADA|CAP|CAS|CBA|CCZONE|CDR|CFL|CL|CLSA|CLSB|CLSC|CLSD|CLSE|CLSF|CLSG|CONTZN|COZ|CP|CTA|DA|DBSL|DZ|EC|EG|FACA|FARP|FEBA|FFA|FIR|FIRUB|FLOT|FOL|FRAD|FSCL|GNDAOR|HG|HIDACZ|HIMEZ|IFFOFF|IFFON|ISP|ISR|JEZ|JOA|KILLB|KILLZ|LFEZ|LMEZ|LOMEZ|LZ|MFEZ|MG|MISARC|MMEZ|MOA|MP|MRR|NAVRTE|NFA|NOFLY|PIRAZ|PROHIB|PZ|RA|RCA|RECCE|RFA|RFL|ROA|RTF|SAAFR|SAFE|SAFES|SARDOT|SC|SCZ|SEMA|SHORAD|SL|SOF|SSMS|TC|TCA|TL|TMRR|TR|TRNG|TRSA|TSA|UAV|WARN|WFZ)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="airspace.usage.other.1389.5">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,7})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="acm.link.16.track.number.reference.1625.28">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z]{1,5})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="context.quantity.0.99999.1023.4">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9\.,\(\)\?\-_]{1,12})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="unit.of.linear.measurement.feet.or.metres.1008.13">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(FT|M)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="latitude.degrees.1039.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{2})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="latitude.minute.angular.1041.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{2})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="latitudinal.hemisphere.1030.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(N|S)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="longitude.degrees.1040.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{3})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="longitude.minute.angular.1041.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{2})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="longitudinal.hemisphere.1030.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(E|W)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="latitude.second.angular.1042.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{2})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="longitude.second.angular.1042.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{2})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="context.quantity.000.359.1023.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9\.,\(\)\?\-_]{1,12})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="angular.measurement.reference.true.1024.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(T)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="context.quantity.0.to.1.decimal.pt.permitted.5.char.max.1023.49">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9\.,\(\)\?\-_]{1,12})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="unit.of.linear.measurement.m.km.nm.1008.20">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(KM|M|NM)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="track.leg.1012.274">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="context.quantity.0.1.decimal.pt.permitted.1023.39">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9\.,\(\)\?\-_]{1,12})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="lateral.adjustment.indicator.left.1586.5">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(L)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="lateral.adjustment.indicator.right.1586.6">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(R)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="altitude.base.reference.point.qualifier.1130.8">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(GL|MSL)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="maximum.altitude.in.hundreds.of.feet.1255.5">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{1,3})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="altitude.reference.qualifier.1130.9">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(AGL|AMSL)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="flight.level.data.qualifier.1130.4">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(FL)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="minimum.altitude.in.hundreds.of.feet.1255.4">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9]{1,3})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="flight.level.number.1012.42">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="serial.number.of.way.point.1012.35">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,30})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="orbit.alignment.1586.4">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(C|L|R)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="airspace.time.mode.1220.19">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(DISCRETE|INTERVAL)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="interval.frequency.1346.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(BIWEEKLY|DAILY|MON WED FRI|MONTHLY BY DATE|MONTHLY BY WEEKDAY|TUE THUR|WEEKDAYS|WEEKENDS|YEARLY)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="context.quantity.1.999.1023.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9\.,\(\)\?\-_]{1,12})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="unit.of.time.measurement.day.wk.biwk.mon.yr.1008.94">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(BIWK|DAY|MON|WK|YR)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="time.qualifier.until.further.notice.1220.5">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(UFN)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="control.point.type.1362.5">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(CP|EP|ER|FF|IF|IP|OT|RP|WP)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="position.or.point.name.1022.18">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,55})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="operational.control.authority.1028.8">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,50})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="context.quantity.decimal.pt.permitted.11.char.max.1023.22">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9\.,\(\)\?\-_]{1,12})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="unit.of.electromagnetic.emission.measurement.1008.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(GHZ|HZ|KHZ|MHZ)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="frequency.designator.1396.1">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z]{1,8})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="undefined.link.16.track.number.reference.1625.29">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z]{1,5})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="derivative.source.for.classification.1243.4">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,55})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="name.of.original.classification.authority.1022.269">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,55})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="reason.for.classification.1807.2">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(15A|15B|15C|15D|15E|15F|15G)"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="downgrading.or.declassification.instructions.1822.6">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="([0-9a-zA-Z \.,\(\)\?\-_]{1,68})"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="downgrading.or.declassification.exemption.code.1807.3">
+<xsd:restriction base="xsd:string">
+<xsd:pattern value="(X0|X1|X2|X3|X4|X5|X6|X7|X8)"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:schema>

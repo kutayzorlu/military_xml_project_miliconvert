@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema">
+<AssociationInstanceObjetAdresse>
+<CTE>_tmuh8AZ9Ed-1o-SfTCJpgw</CTE>
+<AssocieCommeObjet_Adresse>
+<refCTE>_tmwXIAZ9Ed-1o-SfTCJpgw</refCTE>
+</AssocieCommeObjet_Adresse>
+<AssocieCommeSujet_InstanceObjet/>
+</AssociationInstanceObjetAdresse>
+<Unite>
+<CTE>_tmMWcQZ9Ed-1o-SfTCJpgw</CTE>
+<EstSujet_AssociationEntiteOrgPersonne>
+<refCTE>_tmMWcAZ9Ed-1o-SfTCJpgw</refCTE>
+</EstSujet_AssociationEntiteOrgPersonne>
+</Unite>
+<AutreAdresse>
+<Libelle>235.000MHZ</Libelle>
+<CTE>_tmwXIAZ9Ed-1o-SfTCJpgw</CTE>
+<EstAdresse_AssociationInstanceObjetAdresse>
+<refCTE>_tmuh8AZ9Ed-1o-SfTCJpgw</refCTE>
+</EstAdresse_AssociationInstanceObjetAdresse>
+</AutreAdresse>
+<AssociationEntiteOrgPersonne>
+<CTE>_tmMWcAZ9Ed-1o-SfTCJpgw</CTE>
+<APourObjet_Personne/>
+<APourSujet_EntiteOrganisationnelle>
+<refCTE>_tmMWcQZ9Ed-1o-SfTCJpgw</refCTE>
+</APourSujet_EntiteOrganisationnelle>
+</AssociationEntiteOrgPersonne>
+</schema:MPGT_Message>

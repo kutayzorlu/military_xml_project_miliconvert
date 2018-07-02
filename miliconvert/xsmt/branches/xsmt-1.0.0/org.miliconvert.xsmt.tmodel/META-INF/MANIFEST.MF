@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.xsmt.tmodel
+Bundle-SymbolicName: org.miliconvert.xsmt.tmodel;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.miliconvert.xsmt.tmodel.TModelActivator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.xsd,
+ org.eclipse.core.runtime,
+ org.miliconvert.xsmt.utils,
+ org.miliconvert.xsmt.xalan
+Eclipse-LazyStart: false
+Eclipse-BuddyPolicy: registered
+Eclipse-RegisterBuddy: org.miliconvert.xsmt.xalan
+Export-Package: org.miliconvert.xsmt.tmodel;
+  uses:="org.osgi.framework,
+   org.w3c.dom,
+   org.eclipse.xsd,
+   org.eclipse.osgi.util,
+   org.eclipse.core.runtime",
+ org.miliconvert.xsmt.tmodel.functions
+

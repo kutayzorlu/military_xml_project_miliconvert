@@ -1,0 +1,8 @@
+FUDN;Name;Size;Type;Explanation;Version;Status;Modified
+1;OPERATION CODEWORD;1-32;Instructive;;1.0;In Service;03 Dec 07
+3;ACTIVITY CODEWORD DESIGNATOR;1-20;Instructive;;1.0;In Service;03 Dec 07
+4;OPLAN CODEWORD;1-32;Instructive;;1.0;In Service;03 Dec 07
+6;ASW EXERCISE CODEWORD;2-3;Instructive;THE ASW CODE FOR CREW QUALIFICATIONS. ;1.0;In Service;03 Dec 07
+8;CODEWORD;1-15;Instructive;;1.0;In Service;03 Dec 07
+9;CODEWORD MEANING;1-32;Instructive;;1.0;In Service;03 Dec 07
+12;SPECIAL HANDLING CODEWORD;1-32;Instructive;SECURITY COMPARTMENTS ASSOCIATED WITH THE PRODUCT.;1.0;In Service;03 Dec 07

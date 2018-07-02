@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fourwhisky xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="fourwhisky.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">CTG 473.1</command>
+<message_identifier ff-seq="2">4WHISKY</message_identifier>
+<message_serial_no ff-seq="3">0025</message_serial_no>
+<month ff-seq="4">NOV</month>
+<operexer_name ff-seq="5">SHAREM 06</operexer_name>
+<qualifier ff-seq="6">AMP</qualifier>
+<qualifier_serial_no ff-seq="7">001</qualifier_serial_no>
+</message_identification>
+<_4-whisky set-seq="43" setId="WHSKY">
+<name ff-seq="1">POSITION</name>
+<no_of_grid_cells ff-seq="2">24</no_of_grid_cells>
+<grid_cell_size ff-seq="3">5NM</grid_cell_size>
+<pim_cell ff-seq="4">AA24</pim_cell>
+</_4-whisky>
+<_4-whisky_unit set-seq="44" setId="WUNIT">
+<unit_name ff-seq="1">CASSARD</unit_name>
+<unit_assignment ff-seq="2">A01;A02;A03;A04;B01;B02;B03;B04</unit_assignment>
+</_4-whisky_unit>
+<_4-whisky_unit set-seq="44" setId="WUNIT">
+<unit_name ff-seq="1">VAR</unit_name>
+<unit_assignment ff-seq="2">B04;B05;B06,B07;B08;C04;C05;C06;C07;C08;D04;D05;D06;D07;D08;E05;E06</unit_assignment>
+</_4-whisky_unit>
+<_4-whisky_unit set-seq="44" setId="WUNIT">
+<unit_name ff-seq="1">ATL2</unit_name>
+<unit_assignment ff-seq="2">N12;N13;N14;N15;P12;P13;P14;P15;Q12;Q13;Q14;Q15;S12;S13;S14,S15;S16</unit_assignment>
+</_4-whisky_unit>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</fourwhisky>

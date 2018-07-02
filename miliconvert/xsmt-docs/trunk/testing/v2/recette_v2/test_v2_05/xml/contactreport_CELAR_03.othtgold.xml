@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactreport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactreport.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">CTG 81.0</command>
+<message_identifier ff-seq="2">GOLD</message_identifier>
+<message_serial_no ff-seq="3">1215</message_serial_no>
+<month ff-seq="4">APR</month>
+<operexer_name ff-seq="5">RIMPAC 00</operexer_name>
+</message_identification>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7123</track_number>
+<class-name ff-seq="2">UNEQUATED-UNKNOWN</class-name>
+<type ff-seq="4">SSGN</type>
+<category ff-seq="5">SUB</category>
+<flag ff-seq="7">UR</flag>
+<alert_code ff-seq="10">HIT</alert_code>
+<force_code ff-seq="11">14</force_code>
+<track_type ff-seq="13"/>
+<average_speed ff-seq="14">10</average_speed>
+<avg_time_on_leg ff-seq="15">10</avg_time_on_leg>
+<discrete_identifier ff-seq="16">3442</discrete_identifier>
+<unique_identifier ff-seq="17">F2K000162412</unique_identifier>
+<ircs ff-seq="18">CAOB</ircs>
+<suspicion_code ff-seq="19">03</suspicion_code>
+<position_segment seg-seq="1">
+<position set-seq="5" setId="POS">
+<date-time_group ff-seq="1">121410Z9</date-time_group>
+<month ff-seq="2">APR</month>
+<latitude_of_center ff-seq="3">2540N1</latitude_of_center>
+<longitude_of_center ff-seq="4">16204W3</longitude_of_center>
+<sensor_code ff-seq="5">VISUAL</sensor_code>
+<length_of_semi-major_axis ff-seq="7">10NM</length_of_semi-major_axis>
+<course ff-seq="9">340T</course>
+<speed ff-seq="10">12K</speed>
+<expanded_radar_data set-seq="16" setId="RADB">
+<date-time_group ff-seq="1">121410Z9</date-time_group>
+<month ff-seq="2">APR</month>
+<elint_notation ff-seq="3">O923B</elint_notation>
+<emitter_name ff-seq="4">FRONT PACE</emitter_name>
+<radio_frequency ff-seq="5">12.34GHZ</radio_frequency>
+<pulse_rep_interval ff-seq="6">000123.45</pulse_rep_interval>
+<pulse_rep_frequency ff-seq="7">8100.446</pulse_rep_frequency>
+<pulse_width ff-seq="8">123.123</pulse_width>
+<scan_rate ff-seq="9">5.0SPC</scan_rate>
+<scan_type ff-seq="10">CIRC</scan_type>
+</expanded_radar_data>
+<electronic_order_of set-seq="17" setId="EOB">
+<developmental_eob ff-seq="2">D18445999</developmental_eob>
+</electronic_order_of>
+<signature_segment seg-seq="1">
+<signature set-seq="18" setId="SIGNA">
+<source ff-seq="1">XXX</source>
+<fundamental_freq ff-seq="2">123.45HZ</fundamental_freq>
+<harmonics ff-seq="3">6,10,4</harmonics>
+<rpm ff-seq="4">88</rpm>
+<turns_per_knot ff-seq="5">10.5</turns_per_knot>
+<date-time_group ff-seq="6">121410Z9</date-time_group>
+<month ff-seq="7">APR</month>
+<acoustic_sensor_code ff-seq="8">VDSACT</acoustic_sensor_code>
+<detection_status ff-seq="9">STEADY</detection_status>
+<signa_amplification set-seq="19" setId="SIGAM">
+<free-text ff-seq="1">UNIDENTIFIED SIGNAL IN MAIN MACHINERY SPACE</free-text>
+</signa_amplification>
+</signature>
+</signature_segment>
+<mode_gold set-seq="20" setId="MODEG">
+<submarine_operating_mode ff-seq="1">SUBMERGED</submarine_operating_mode>
+<submarine_propulsion_mode ff-seq="2">OTR</submarine_propulsion_mode>
+<depth ff-seq="3">850FT</depth>
+<depth_measured_estimated ff-seq="4">E</depth_measured_estimated>
+<depth_determination_means ff-seq="5">IN-LAYER DECIBELS</depth_determination_means>
+</mode_gold>
+</position>
+</position_segment>
+</contact>
+</contact_segment>
+<contact_segment seg-seq="1">
+<contact set-seq="5" setId="CTC">
+<track_number ff-seq="1">T7164</track_number>
+<class-name ff-seq="2">UNEQUATED-UNKNOWN</class-name>
+<trademark ff-seq="3">TRDMARK</trademark>
+<type ff-seq="4">SSN</type>
+<category ff-seq="5">SUB</category>
+<force_code ff-seq="11">00</force_code>
+<track_type ff-seq="13"/>
+<line_of_bearing_segment seg-seq="1">
+<line_of_bearing set-seq="15" setId="LOB">
+<date-time_group ff-seq="1">121420Z0</date-time_group>
+<month ff-seq="2">APR</month>
+<latitude_of_origin ff-seq="3">2510N8</latitude_of_origin>
+<longitude_of_origin ff-seq="4">16210W0</longitude_of_origin>
+<bearing ff-seq="5">120T</bearing>
+<sensor_code ff-seq="6">TACTAS</sensor_code>
+<half-width ff-seq="7">1.2DEG</half-width>
+<expanded_radar_data set-seq="16" setId="RADB">
+<date-time_group ff-seq="1">121420Z0</date-time_group>
+<month ff-seq="2">APR</month>
+<elint_notation ff-seq="3">O924Z</elint_notation>
+<emitter_name ff-seq="4">TRAP DEER</emitter_name>
+<radio_frequency ff-seq="5">13.20GHZ</radio_frequency>
+<pulse_rep_interval ff-seq="6">000200.55</pulse_rep_interval>
+<pulse_rep_frequency ff-seq="7">4987.531</pulse_rep_frequency>
+<pulse_width ff-seq="8">222.001</pulse_width>
+</expanded_radar_data>
+<remarks set-seq="34" setId="RMKS">
+<free-text ff-seq="1">EVALUATE AS TYPE II NUC</free-text>
+</remarks>
+</line_of_bearing>
+</line_of_bearing_segment>
+</contact>
+</contact_segment>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</contactreport>

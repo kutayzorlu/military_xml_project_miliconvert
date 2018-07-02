@@ -1,0 +1,514 @@
+Ligne;N° Set;Type élément;Segment;Ensemble;Zone;SS Zone;FFIRN/FUDN;Card.;Longueur;Libellé;Entité MPGT de départ {Entité de l'attribut};Entité MPGT instanciée {Entité de l'attribut};Attribut MPGT
+1;;;ATO;;;;;;;;;;
+2;;SET;ATO;EXER;;;;O - 1;;EXERCISE IDENTIFICATION;;;
+3;;;;;;;;;;;;;
+4;;SET;ATO;OPER;;;;C - 1;;OPERATION CODEWORD;;;
+5;;;;;;;;;;;;;
+6;;SET;ATO;MSGID;;;;M - 1;;MESSAGE IDENTIFIER;;;
+7;;;;;;;;;;;;;
+8;;SET;ATO;REF;;;;O - N;;REFERENCE;;;
+9;;;;;;;;;;;;;
+10;;SET;ATO;AKNLDG;;;;M - 1;;ACKNOWLEDGE;;;
+11;;;;;;;;;;;;;
+12;;SET;ATO;CANX;;;;O - N;;MESSAGE CANCELLATION WITH NEW INFORMATION PROVIDED;;;
+13;;;;;;;;;;;;;
+14;;SET;ATO;TIMEFRAM;;;;M - 1;;EFFECTIVE DATE-TIME FRAME;;;
+15;;;;;;;;;;;;;
+16;;SET;ATO;HEADING;;;;M - 1;;HEADING INFORMATION;;;
+17;;;;;;;;;;;;;
+18;;SET;ATO;GENTEXT;;;;O - 1;;GENERAL TEXT;;;
+19;;;;;;;;;;;;;
+20;;SET;ATO;GEODATUM;;;;M - 1;;GEODETIC DATUM;;;
+21;;;;;;;;;;;;;
+22;;SET;ATO;RESASSET;;;;O - N;;THEATER RESOURCE ASSETS;;;
+23;;;;;;;;;;;;;
+24;;SET;ATO;7ALLOT;;;;O - 1;;FORCE ALLOTMENT DATA;MPGT.PlanificationOperation3D;;
+25;;REPET. GROUP;ATO;7ALLOT;-;;1037/004;-;;REQUESTING COMPONENT COMMAND;MPGT.PlanificationOperation3D;;
+26;;FIELD;ATO;7ALLOT;1;;1037/004;M - N;1..15;REQUESTING COMPONENT COMMAND;MPGT.PlanificationOperation3D;MPIA.Unite;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Unite}
+27;;FIELD;ATO;7ALLOT;2;;1012/144;O - N;1..11;REQUEST IDENTIFIER;MPGT.PlanificationOperation3D;MPGT.SuiviDemande;EstSujet{MPIA.AssociationFonctionnelleActivite}#EstSuivieSelon{MPGT.SuiviDemande}#MPGT.SuiviDemande.IdentifiantDemande
+28;;FIELD;ATO;7ALLOT;3;;1570/003;M - N;3..3;REQUEST STATUS INDICATOR, ABBREVIATED;MPGT.PlanificationOperation3D;MPGT.SuiviDemande;EstSujet{MPIA.AssociationFonctionnelleActivite}#EstSuivieSelon{MPGT.SuiviDemande}#MPGT.SuiviDemande.EtatDemande
+29;;FIELD;ATO;7ALLOT;4;;1012/069;M - N;1..8;MISSION NUMBER;MPGT.PlanificationOperation3D;MPGT.MissionAir;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeSujet{MPGT.MissionAir}#MPGT.MissionAir.NumeroMission
+30;;FIELD;ATO;7ALLOT;5;;1037/005;M - N;1..15;COMPLYING COMPONENT COMMAND OR UNIT;MPGT.PlanificationOperation3D;MPIA.Unite;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeSujet{MPGT.Mission}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}
+31;;FIELD;ATO;7ALLOT;6;;1076/009;O - N;1..2;REVISED PRIORITY;MPGT.PlanificationOperation3D;MPGT.SuiviDemande;EstSujet{MPIA.AssociationFonctionnelleActivite}#EstSuivieSelon{MPGT.SuiviDemande}#MPGT.SuiviDemande.PrioriteRevisee
+32;;FIELD;ATO;7ALLOT;7;;1357/025;O - N;1..8;COMMENT, ABBREVIATED;MPGT.PlanificationOperation3D;MPGT.SuiviDemande;EstSujet{MPIA.AssociationFonctionnelleActivite}#EstSuivieSelon{MPGT.SuiviDemande}#MPGT.SuiviDemande.CommentaireAbrege
+33;;SET;ATO;CODES;;;;O - N;;CODES, CRYPTO AND AUTHENTICATION;;;
+34;;;;;;;;;;;;;
+35;;SET;ATO;POC;;;;O - 1;;POINT OF CONTACT INFORMATION;MPGT.PlanificationOperation3D;MPIA.Personne;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}
+36;;FIELD;ATO;POC;1;;1022/007;M - 1;1..20;CONTACT NAME;MPGT.PlanificationOperation3D;MPIA.Personne{MPIA.RacineOperationnelle};EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#MPIA.RacineOperationnelle.Nom
+37;;FIELD;ATO;POC;2;;1046/002;M - 1;1..16;RANK OR POSITION;MPGT.PlanificationOperation3D;MPIA.TypePersonne;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.TypePersonne}#MPIA.TypePersonne.Grade
+38;;FIELD;ATO;POC;3.A;;1022/057;M - 1;1..30;UNIT;MPGT.PlanificationOperation3D;MPIA.Unite;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}
+39;;FIELD;ATO;POC;3.B;;1129/033;M - 1;1..38;UNIT CALL SIGN;MPGT.PlanificationOperation3D;MPIA.AssociationInstanceObjetAdresse;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#MPIA.AssociationInstanceObjetAdresse.Designation
+40;;FIELD;ATO;POC;3.C;;2141/001;M - 1;7..9;UNIT IDENTIFICATION CODE (UIC);MPGT.PlanificationOperation3D;MPIA.Unite{MPIA.EntiteOrganisationnelle};EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}#MPGT.EntiteOrganisationnelle.CodeIdentification
+41;;COMP. FIELD;ATO;POC;4.A;;2024/001;M - 1;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+42;;COMP. FIELD;ATO;POC;4.B;;2086/001;M - 1;13..13;GEOGRAPHIC POSITION, UTM 10-METRE;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+43;;FIELD;ATO;POC;4.C;;1022/004;M - 1;1..20;LOCATION NAME;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#MPGT.Localisation.Lieu
+44;;REPET. GROUP;ATO;POC;-;;1361/003;-;;TELEPHONE NUMBER OR FREQUENCY;MPGT.PlanificationOperation3D;MPIA.AutreAdresse;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}
+45;;FIELD;ATO;POC;5.A;;1361/003;M - N;3..20;NON-SECURE TELEPHONE;MPGT.PlanificationOperation3D;MPIA.AutreAdresse{MPIA.Adresse};EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+46;;FIELD;ATO;POC;5.B;;1361/004;M - N;4..20;SECURE TELEPHONE NUMBER;MPGT.PlanificationOperation3D;MPIA.AutreAdresse{MPIA.Adresse};EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+47;;FIELD;ATO;POC;5.C;;2064/001;M - N;3..14;RADIO FREQUENCY;MPGT.PlanificationOperation3D;MPIA.Frequence;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}
+48;;SS ZONE;ATO;POC;5.C;1;1023/022;;1..11;CONTEXT QUANTITY, DECIMAL PT PERMITTED, 11 CHAR MAX;MPGT.PlanificationOperation3D;MPIA.Frequence;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.Frequence
+49;;SS ZONE;ATO;POC;5.C;2;1008/002;;2..3;UNIT OF ELECTROMAGNETIC EMISSION MEASUREMENT;-;-;-
+50;;FIELD;ATO;POC;5.D;;1396/001;M - N;1..8;FREQUENCY DESIGNATOR;MPGT.PlanificationOperation3D;MPIA.Frequence;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.NomCode
+51;;FIELD;ATO;POC;5.E;;2498/001;M - N;2..8;FREQUENCY MODE AND NUMERIC;NON_TRACE;;NON_TRACE
+52;;FIELD;ATO;POC;5.F;;2533/001;M - N;3..7;LINK 16 VOICE PARAMETERS;MPGT.PlanificationOperation3D;MPIA.AdresseElectronique;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}
+53;;FIELD;ATO;POC;5.G;;2534/001;M - N;18..49;HAVE QUICK PARAMETERS WITH MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+54;;FIELD;ATO;POC;5.H;;2535/001;M - N;12..18;HAVE QUICK PARAMETERS WITHOUT MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+55;;FIELD;ATO;POC;5.I;;1183/007;M - N;1..60;ELECTRONIC MAIL ADDRESS;MPGT.PlanificationOperation3D;MPIA.AutreAdresse{MPIA.Adresse};EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+56;;FIELD;ATO;POC;5.J;;1361/007;M - N;3..20;NON-SECURE FACSIMILE (FAX) NUMBER;MPGT.PlanificationOperation3D;MPIA.AutreAdresse{MPIA.Adresse};EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+57;;FIELD;ATO;POC;5.K;;1361/008;M - N;4..20;SECURE FACSIMILE (FAX) NUMBER;MPGT.PlanificationOperation3D;MPIA.AutreAdresse{MPIA.Adresse};EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Personne}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+58;;SET;ATO;DUTY;;;;O - N;;DUTY ASSIGNMENT DETAILS;;;
+59;;;;;;;;;;;;;
+60;;SET;ATO;TBMFSTAT;;;;O - N;;TACTICAL BATTLE MANAGEMENT FUNCTION STATUS;;;
+61;;;;;;;;;;;;;
+62;;SEGMENT;ADAREA;;;;;? - N;;AIR DEFENCE AREA;;;
+63;;SET;ADAREA;ADAREA;;;;M - 1;;AIR DEFENCE AREA;MPGT.PlanificationOperation3D;MPIA.AutreElementControle;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}
+64;;FIELD;ADAREA;ADAREA;1;;1022/069;M - 1;1..38;AREA NAME;MPGT.PlanificationOperation3D;MPIA.AutreElementControle{MPIA.RacineOperationnelle};APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#MPIA.RacineOperationnelle.Nom
+65;;FIELD;ADAREA;ADAREA;2;;1284/023;M - 1;3..8;AIR DEFENCE AREA TYPE;MPGT.PlanificationOperation3D;MPIA.AutreTypeElementControle;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.Categorie
+66;;FIELD;ADAREA;ADAREA;2;;1284/023;M - 1;3..8;AIR DEFENCE AREA TYPE;MPGT.PlanificationOperation3D;MPIA.AutreTypeElementControle;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.SousCategorie
+67;;FIELD;ADAREA;ADAREA;3;;1822/003;O - 1;1..40;AREA TRANSIT INSTRUCTIONS;MPGT.PlanificationOperation3D;MPGT.Reglementation;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstSoumiseA{MPGT.Reglementation}#MPGT.Reglementation.Description
+68;;FIELD;ADAREA;ADAREA;4;;1022/271;O - 1;1..38;BROADCAST REFERENCE POINT NAME;MPGT.PlanificationOperation3D;MPIA.AutreElementControle{MPIA.RacineOperationnelle};APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#MPIA.RacineOperationnelle.Commentaire
+69;;SET;ADAREA;RADARC;;;;O - 1;;AIRSPACE SHAPE RADARC;;;
+70;;;;;;;;;;;;;
+71;;SET;ADAREA;POLYGON;;;;C - 1;;SHAPE POLYGON;MPGT.PlanificationOperation3D;;
+72;;REPET. GROUP;ADAREA;POLYGON;-;;2023/001;-;;POLYGON POINTS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}
+73;;FIELD;ADAREA;POLYGON;1.A;;2023/001;M - N;11..11;GEOGRAPHIC POSITION, LAT/LONG, MINUTES;NON_TRACE;;NON_TRACE
+74.a;;FIELD;ADAREA;POLYGON;1.B;;2024/001;M - N;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.Latitude
+74.b;;FIELD;ADAREA;POLYGON;1.B;;2024/001;M - N;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.Longitude
+74.c;;FIELD;ADAREA;POLYGON;1.B;;2024/001;M - N;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.PrecisionLatitude
+74d;;FIELD;ADAREA;POLYGON;1.B;;2024/001;M - N;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.PrecisionLongitude
+75;;SET;ADAREA;CIRCLE;;;;C - 1;;SHAPE CIRCLE;MPGT.PlanificationOperation3D;;
+76;;COMP. FIELD;ADAREA;CIRCLE;1.A;;2023/001;M - 1;11..11;GEOGRAPHIC POSITION, LAT/LONG, MINUTES;NON_TRACE;;NON_TRACE
+77a;;COMP. FIELD;ADAREA;CIRCLE;1.B;;2024/001;M - 1;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.CercleGeometrique}#APourCentre{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.Latitude
+77.b;;COMP. FIELD;ADAREA;CIRCLE;1.B;;2024/001;M - 1;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.CercleGeometrique}#APourCentre{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.Longitude
+77c;;COMP. FIELD;ADAREA;CIRCLE;1.B;;2024/001;M - 1;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.CercleGeometrique}#APourCentre{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.PrecisionLatitude
+77.d;;COMP. FIELD;ADAREA;CIRCLE;1.B;;2024/001;M - 1;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.CercleGeometrique}#APourCentre{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.PrecisionLongitude
+78.a;;COMP. FIELD;ADAREA;CIRCLE;2;;2118/001;M - 1;2..7;RADIUS, M, KM, NM;MPGT.PlanificationOperation3D;MPGT.CercleGeometrique;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourObjetGeographique{MPGT.CercleGeometrique}#MPGT.CercleGeometrique.Rayon
+79;;SS ZONE;ADAREA;CIRCLE;2;1;1023/049;;1..5;CONTEXT QUANTITY, 0 TO 1 DECIMAL PT PERMITTED, 5 CHAR MAX ;NON_TRACE;;NON_TRACE
+80;;SS ZONE;ADAREA;CIRCLE;2;2;1008/020;;1..2;UNIT OF LINEAR MEASUREMENT, M, KM, NM;NON_TRACE;;NON_TRACE
+81;;SET;ADAREA;AORBIT;;;;C - 1;;AIRSPACE SHAPE ORBIT;;;
+82;;FIELD;;;;;;;;;;;
+83;;SET;ADAREA;EFFLEVEL;;;;M - 1;;VERTICAL DIMENSION OF THE EFFECTIVE LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlafond{MPIA.DistanceVerticale}
+85;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2166/001
+;M - 1;9..11;VERTICAL DIMENSION, BASE REF POINT TO RELATIVE ALTITUDE;NON_TRACE;;
+86;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2167/001
+;-;8..9;VERTICAL DIMENSION, BASE REF POINT TO FLIGHT LEVEL;NON_TRACE;;
+87.a;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2168/001
+;-;12..13;VERTICAL DIMENSION, RELATIVE ALTITUDE TO FLIGHT LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlancher{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+87.b;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2168/001
+;-;12..13;VERTICAL DIMENSION, RELATIVE ALTITUDE TO FLIGHT LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlancher{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Valeur
+87.c;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2168/001
+;-;12..13;VERTICAL DIMENSION, RELATIVE ALTITUDE TO FLIGHT LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlafond{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+87.d;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2168/001
+;-;12..13;VERTICAL DIMENSION, RELATIVE ALTITUDE TO FLIGHT LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlafond{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Valeur
+88.a;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2169/001;-;13..15;VERTICAL DIMENSION, RELATIVE ALTITUDE TO RELATIVE ALT;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlancher{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+88.b;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2169/001;-;13..15;VERTICAL DIMENSION, RELATIVE ALTITUDE TO RELATIVE ALT;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlancher{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+88.c;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2169/001;-;13..15;VERTICAL DIMENSION, RELATIVE ALTITUDE TO RELATIVE ALT;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlancher{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+88.d;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2169/001;-;13..15;VERTICAL DIMENSION, RELATIVE ALTITUDE TO RELATIVE ALT;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlancher{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+89.a;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2099/002
+;-;11..11;VERTICAL DIMENSION, FLIGHT LEVEL TO FLIGHT LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlafond{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+89.b;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2099/002
+;-;11..11;VERTICAL DIMENSION, FLIGHT LEVEL TO FLIGHT LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlafond{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+89.c;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2099/002
+;-;11..11;VERTICAL DIMENSION, FLIGHT LEVEL TO FLIGHT LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlafond{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+89.d;;COMP. FIELD;ADAREA;EFFLEVEL;1;;2099/002
+;-;11..11;VERTICAL DIMENSION, FLIGHT LEVEL TO FLIGHT LEVEL;MPGT.PlanificationOperation3D;MPIA.DistanceVerticale;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlafond{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Reference
+83;;SET;ADAREA;APERIOD;;;;M - 1;;AIRSPACE TIME PERIOD;MPGT.PlanificationOperation3D;MPIA.Periode3D;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstValidePour{MPIA.Periode3D}
+84;;FIELD;ADAREA;APERIOD;1;;1220/019;M - 1;8..8;AIRSPACE TIME MODE;NON_TRACE;;
+85;;COMP. FIELD;ADAREA;APERIOD;2;;2030/003;M - 1;10..10;DAY-TIME AND MONTH OF START;MPGT.PlanificationOperation3D;MPIA.Periode3D;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstValidePour{MPIA.Periode3D}#MPIA.Periode3D.DateDebut
+86;;COMP. FIELD;ADAREA;APERIOD;3;;2030/004;M - 1;10..10;DAY-TIME AND MONTH OF STOP;MPGT.PlanificationOperation3D;MPIA.Periode3D;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstValidePour{MPIA.Periode3D}#MPIA.Periode3D.DateFin
+87;;COMP. FIELD;ADAREA;APERIOD;3;;1220/008;M - 1;3..7;STOP TIME QUALIFIER;MPGT.PlanificationOperation3D;MPIA.Periode3D;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstValidePour{MPIA.Periode3D}#MPIA.Periode3D.QualificatifDateFin
+88;;FIELD;ADAREA;APERIOD;4;;1346/003;C - 1;5..18;INTERVAL FREQUENCY;NON_TRACE;;
+89;;COMP. FIELD;ADAREA;APERIOD;5;;2525/001;C - 1;3..7;INTERVAL DURATION;NON_TRACE;;
+90;;COMP. FIELD;ADAREA;APERIOD;5;;1220/005;C - 1;3..3;TIME QUALIFIER UNTIL FURTHER NOTICE;NON_TRACE;;
+91;;COMP. FIELD;ADAREA;APERIOD;5;;2033/024;C - 1;14..14;DTG OF COMPLETION, 4 DIGIT YR;NON_TRACE;;
+92;;SET;ATO;BCASTPNT;;;;O - N;;BROADCAST POINT;;;
+93;;;;;;;;;;;;;
+94;;SET;ATO;IDCHKPNT;;;;O - N;;IDENTIFICATION CHECK POINT;;;
+95;;;;;;;;;;;;;
+96;;SET;ATO;IDCRIT;;;;O - N;;IDENTIFICATION CRITERIA;;;
+97;;;;;;;;;;;;;
+98;;SET;ATO;HEADING;;;;C - 1;;HEADING INFORMATION;;;
+99;;;;;;;;;;;;;
+100;;SET;ATO;NAVFLTOP;;;;O - N;;NAVAL FLIGHT OPERATIONS TIMES;;;
+101;;;;;;;;;;;;;
+102;;SEGMENT;FYFCE;;;;;? - N;;FRIENDLY FORCES;;;
+103;;SET;FYFCE;FYFCE;;;;M - 1;;FRIENDLY FORCES;;;
+104;;;;;;;;;;;;;
+105;;SET;FYFCE;AAXIS;;;;O - 1;;ANTI-AIR WARFARE AXIS INFORMATION;;;
+106;;;;;;;;;;;;;
+107;;SEGMENT;FYPOS;;;;;? - N;;FRIENDLY FORCES POSITION;;;
+108;;SET;FYPOS;FYPOS;;;;M - 1;;FRIENDLY FORCES POSITION;;;
+109;;;;;;;;;;;;;
+110;;SET;FYPOS;CASPCAT;;;;O - 1;;COORDINATED AIR/SEA PROCEDURES CATEGORY;;;
+111;;;;;;;;;;;;;
+112;;SET;FYPOS;IFF;;;;O - 1;;IFF OR SIF SETTING;;;
+113;;;;;;;;;;;;;
+114;;SEGMENT;AOTRP;;;;;? - N;;AIR OPERATIONS TIMING REFERENCE POINT;;;
+115;;SET;AOTRP;AOTRP;;;;M - 1;;AIR OPERATIONS TIMING REFERENCE POINT;;;
+116;;;;;;;;;;;;;
+117;;SET;AOTRP;7AOFDAT;;;;O - 1;;AIR OPERATIONS TIMING REFERENCE POINT (TRP) FLOW DATA;;;
+118;;;;;;;;;;;;;
+119;;SET;ATO;CNXMSN;;;;O - N;;CANCELLED MISSION;;;
+120;;;;;;;;;;;;;
+121;;SET;ATO;HEADING;;;;M - 1;;HEADING INFORMATION;;;
+122;;;;;;;;;;;;;
+123;;SEGMENT;TSKGRPG;;;;;? - N;;TASK GROUPING;;;
+124;;SET;TSKGRPG;TSKGRPG;;;;M - 1;;TASK GROUPING;;;
+125;;;;;;;;;;;;;
+126;;SET;TSKGRPG;POC;;;;O - 1;;POINT OF CONTACT INFORMATION;MPIA.Personne;;
+127;;FIELD;TSKGRPG;POC;1;;1022/007;M - 1;1..20;CONTACT NAME;MPIA.Personne;MPIA.Personne{MPIA.RacineOperationnelle};MPIA.RacineOperationnelle.Nom
+128;;FIELD;TSKGRPG;POC;2;;1046/002;M - 1;1..16;RANK OR POSITION;MPIA.Personne;MPIA.TypePersonne;APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.TypePersonne}#MPIA.TypePersonne.Grade
+129;;FIELD;TSKGRPG;POC;3;;1022/057;M - 1;1..30;UNIT;MPIA.Personne;MPIA.Unite;EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}
+130;;FIELD;TSKGRPG;POC;3;;1129/033;M - 1;1..38;UNIT CALL SIGN;MPIA.Personne;MPIA.AssociationInstanceObjetAdresse;EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#MPIA.AssociationInstanceObjetAdresse.Designation
+131;;FIELD;TSKGRPG;POC;3;;2141/001;M - 1;7..9;UNIT IDENTIFICATION CODE (UIC);MPIA.Personne;MPIA.Unite{MPIA.EntiteOrganisationnelle};EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}#MPGT.EntiteOrganisationnelle.CodeIdentification
+132;;COMP. FIELD;TSKGRPG;POC;4;;2024/001;M - 1;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPIA.Personne;MPGT.LocalisationGeometrique2D;EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+133;;COMP. FIELD;TSKGRPG;POC;4;;2086/001;M - 1;13..13;GEOGRAPHIC POSITION, UTM 10-METRE;MPIA.Personne;MPGT.LocalisationGeometrique2D;EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+134;;COMP. FIELD;TSKGRPG;POC;4;;1022/004;M - 1;1..20;LOCATION NAME;MPIA.Personne;MPGT.LocalisationGeometrique2D;EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#MPGT.Localisation.Lieu
+135;;REPET. GROUP;TSKGRPG;POC;-;;1361/003;-;;TELEPHONE NUMBER OR FREQUENCY;MPIA.Personne;MPIA.AssociationInstanceObjetAdresse;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}
+136;;FIELD;TSKGRPG;POC;5;;1361/003;M - N;3..20;NON-SECURE TELEPHONE;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+137;;FIELD;TSKGRPG;POC;5;;1361/004;M - N;4..20;SECURE TELEPHONE NUMBER;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+138;;FIELD;TSKGRPG;POC;5;;2064/001;M - N;3..14;RADIO FREQUENCY;MPIA.Personne;MPIA.Frequence;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}
+139;;SS ZONE;TSKGRPG;POC;5;1;1023/022;;1..11;CONTEXT QUANTITY, DECIMAL PT PERMITTED, 11 CHAR MAX;MPIA.Personne;MPIA.Frequence;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.Frequence
+140;;SS ZONE;TSKGRPG;POC;5;2;1008/002;;2..3;UNIT OF ELECTROMAGNETIC EMISSION MEASUREMENT;-;-;-
+141;;FIELD;TSKGRPG;POC;5;;1396/001;M - N;1..8;FREQUENCY DESIGNATOR;MPIA.Personne;MPIA.Frequence;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.NomCode
+142;;FIELD;TSKGRPG;POC;5;;2498/001;M - N;2..8;FREQUENCY MODE AND NUMERIC;NON_TRACE;;NON_TRACE
+143;;FIELD;TSKGRPG;POC;5;;2533/001;M - N;3..7;LINK 16 VOICE PARAMETERS;MPIA.Personne;MPIA.AdresseElectronique;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}
+144;;FIELD;TSKGRPG;POC;5;;2534/001;M - N;18..49;HAVE QUICK PARAMETERS WITH MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+145;;FIELD;TSKGRPG;POC;5;;2535/001;M - N;12..18;HAVE QUICK PARAMETERS WITHOUT MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+146;;FIELD;TSKGRPG;POC;5;;1183/007;M - N;1..60;ELECTRONIC MAIL ADDRESS;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+147;;FIELD;TSKGRPG;POC;5;;1361/007;M - N;3..20;NON-SECURE FACSIMILE (FAX) NUMBER;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+148;;FIELD;TSKGRPG;POC;5;;1361/008;M - N;4..20;SECURE FACSIMILE (FAX) NUMBER;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+149;;SEGMENT;TASKUNIT;;;;;? - N;;TASKED UNIT AND LOCATION;;;
+150;;SET;TASKUNIT;TASKUNIT;;;;M - 1;;TASKED UNIT AND LOCATION;MPIA.Unite;;
+151;;FIELD;TASKUNIT;TASKUNIT;1;;1026/016;M - 1;2..2;GEOGRAPHIC ENTITIES, NOTIONAL AND ACTUAL;MPIA.Unite;MPIA.EntitePolitique;EstAffilieA{MPIA.AssociationAffiliationInstanceObjet}#ConcerneAffiliation{MPIA.EntitePolitique}#MPIA.EntitePolitique.Trigramme
+152;;FIELD;TASKUNIT;TASKUNIT;2;;1107/002;M - 1;1..1;ARMED SERVICE CODE;MPIA.Unite;MPIA.TypeUnite{MPIA.TypeOrganisationGouvernementale};APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.TypeUnite}#MPIA.TypeOrganisationGouvernementale.Armee
+153;;FIELD;TASKUNIT;TASKUNIT;3;;1028/041;M - 1;1..30;TASKED UNIT DESIGNATOR;MPIA.Unite;MPIA.Unite{MPIA.RacineOperationnelle};MPIA.RacineOperationnelle.Nom
+154;;FIELD;TASKUNIT;TASKUNIT;3;;2141/001;M - 1;7..9;UNIT IDENTIFICATION CODE (UIC);MPIA.Unite;MPIA.Unite{MPIA.EntiteOrganisationnelle};MPGT.EntiteOrganisationnelle.CodeIdentification
+155;;FIELD;TASKUNIT;TASKUNIT;4;;1125/002;O - 1;4..4;ICAO BASE CODE;MPIA.Unite;MPIA.Aerodrome;EstSujet{MPGT.AssociationEntiteOrgSite}#APourObjet{MPIA.Aerodrome}#MPIA.Aerodrome.CodeOACI
+156;;FIELD;TASKUNIT;TASKUNIT;4;;1022/170;O - 1;1..20;PLACE NAME;MPIA.Unite;MPIA.Localisation(NON INST);EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPIA.Localisation}#MPGT.Localisation.Lieu
+157;;FIELD;TASKUNIT;TASKUNIT;4;;2023/001;O - 1;11..11;GEOGRAPHIC POSITION, LAT/LONG, MINUTES;MPIA.Unite;MPGT.LocalisationGeometrique2D;EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+158;;FIELD;TASKUNIT;TASKUNIT;5;;1357/001;O - 1;1..68;COMMENTS;MPIA.Unite;MPIA.Unite{MPIA.RacineOperationnelle};MPIA.RacineOperationnelle.Commentaire
+159;;SET;TASKUNIT;UNITDIR;;;;O - 1;;UNIT DIRECTIVES;;;
+160;;FIELD;TASKUNIT;UNITDIR;1;;1044/360;C - 1;4..4;AIRCRAFT SORTIES EXPECTED;MPIA.Unite;MPGT.UniteAir;APourCaracteristiquesUniteAir{MPGT.UniteAir}#MPGT.UniteAir.NombreSortiesAeronefsAttendues
+161;;FIELD;TASKUNIT;UNITDIR;2;;1044/361;C - 1;3..3;AIRCRAFT SORTIES TASKED;MPIA.Unite;MPGT.UniteAir;APourCaracteristiquesUniteAir{MPGT.UniteAir}#MPGT.UniteAir.NombreSortiesAeronefsExecutees
+162;;REPET. GROUP;TASKUNIT;UNITDIR;;;;;;NUMBER OF ASSETS, 000-999;_;_;_
+163;;FIELD;TASKUNIT;UNITDIR;3;;1044/321;M - N;3..3;NUMBER OF ASSETS, 000-999;MPIA.Unite{MPIA.InstanceObjet};MPIA.DotationEffective;APourDotationEffective{MPIA.DotationEffective}#MPIA.DotationEffective.QuantiteTotale
+164;;FIELD;TASKUNIT;UNITDIR;4.A;;1015/020;M - N;2..6;AIRCRAFT TYPE AND MODEL;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeAeronef(NON INST);APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeAeronef}#MPIA.TypeAeronef.Modele
+165;;FIELD;TASKUNIT;UNITDIR;4.B;;1015/018;M - N;2..6;AIRCRAFT TYPE AND MODEL, OTHER;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeAeronef(NON INST){MPIA.RacineOperationnelle};APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeAeronef}#MPIA.RacineOperationnelle.Nom
+166;;FIELD;TASKUNIT;UNITDIR;4.C;;1022/108;M - N;1..19;NAME OF ASSETS;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeEquipement(NON INST){MPIA.RacineOperationnelle};APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeEquipement}#MPIA.RacineOperationnelle.Nom
+167.a;;FIELD;TASKUNIT;UNITDIR;4.D;;1407/002;M - N;3..6;ORDNANCE/WEAPON TYPE, SURFACE-TO-AIR;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeArme;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeArme}#MPIA.TypeArme.Categorie
+167.b;;FIELD;TASKUNIT;UNITDIR;4.D;;1407/002;M - N;3..6;ORDNANCE/WEAPON TYPE, SURFACE-TO-AIR;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeArme;{MPIA.Unite}#APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeArme}#MPIA.TypeArme.SousCategorie
+168.a;;FIELD;TASKUNIT;UNITDIR;4.E;;1874/004;M - N;2..4;COMMAND AND CONTROL TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.AutreTypeSite;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.AutreTypeSite}#MPIA.AutreTypeSite.Categorie
+168.b;;FIELD;TASKUNIT;UNITDIR;4.E;;1874/004;M - N;2..4;COMMAND AND CONTROL TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeEntiteOrganisationnelle(NON INST);APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.TypeEntiteOrganisationnelle}#MPIA.TypeEntiteOrganisationnelle.TypeCommandement
+168.c;;FIELD;TASKUNIT;UNITDIR;4.E;;1874/004;M - N;2..4;COMMAND AND CONTROL TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeEquipementElectronique;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeEquipementElectronique}#MPIA.TypeEquipementElectronique.Categorie
+168.d;;FIELD;TASKUNIT;UNITDIR;4.E;;1874/004;M - N;2..4;COMMAND AND CONTROL TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypePosteMilitaire;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypePosteMilitaire}#MPIA.TypePosteMilitaire.Categorie
+168.e;;FIELD;TASKUNIT;UNITDIR;4.E;;1874/004;M - N;2..4;COMMAND AND CONTROL TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeRegroupementForce;APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.TypeRegroupementForce}#MPIA.TypeRegroupementForce.Categorie
+169.a;;FIELD;TASKUNIT;UNITDIR;4.F;;1434/001;M - N;2..6;SENSOR TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeEquipementElectronique;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeEquipementElectronique}#MPIA.TypeEquipementElectronique.Categorie
+169.b;;FIELD;TASKUNIT;UNITDIR;4.F;;1434/001;M - N;2..6;SENSOR TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeEquipementElectronique;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeEquipementElectronique}#MPIA.TypeEquipementElectronique.SousCategorie
+169.c;;FIELD;TASKUNIT;UNITDIR;4.F;;1434/001;M - N;2..6;SENSOR TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeEquipementMaritime;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeEquipementMaritime}#MPIA.TypeEquipementMaritime.Categorie
+169.d;;FIELD;TASKUNIT;UNITDIR;4.F;;1434/001;M - N;2..6;SENSOR TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeEquipementMaritime;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeEquipementMaritime}#MPIA.TypeEquipementMaritime.SousCategorie
+170.a;;FIELD;TASKUNIT;UNITDIR;4.G;;1135/033;M - N;8..8;SURFACE-TO-AIR WEAPON RESOURCE TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeArme;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeArme}#MPIA.TypeArme.SousCategorie
+170.b;;FIELD;TASKUNIT;UNITDIR;4.G;;1135/033;M - N;8..8;SURFACE-TO-AIR WEAPON RESOURCE TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.TypeEquipementElectronique;APourDotationEffective{MPIA.DotationEffective}#AssocieCommeType{MPIA.TypeEquipementElectronique}#MPIA.TypeEquipementElectronique.Categorie
+171.a;;FIELD;TASKUNIT;UNITDIR;4.H;;1812/001;M - N;3..8;CONTROL POSITION TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.AutreTypeElementControle;EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.AutreElementControle}#APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.Categorie
+171.b;;FIELD;TASKUNIT;UNITDIR;4.H;;1812/001;M - N;3..8;CONTROL POSITION TYPE;MPIA.Unite{MPIA.InstanceObjet};MPIA.AutreTypeElementControle;EstSujet{MPGT.AssociationEntiteOrgEltCtrl}#APourObjet{MPIA.AutreElementControle}#APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.AutreTypeElementControle}#MPIA.AutreTypeElementControle.SousCategorie
+172;;SET;TASKUNIT;GEODATUM;;;;O - 1;;GEODETIC DATUM;;;
+173;;;;;;;;;;;;;
+174;;SET;TASKUNIT;POC;;;;O - 1;;POINT OF CONTACT INFORMATION;MPIA.Personne;;
+175;;FIELD;TASKUNIT;POC;1;;1022/007;M - 1;1..20;CONTACT NAME;MPIA.Personne;MPIA.Personne{MPIA.RacineOperationnelle};MPIA.RacineOperationnelle.Nom
+176;;FIELD;TASKUNIT;POC;2;;1046/002;M - 1;1..16;RANK OR POSITION;MPIA.Personne;MPIA.TypePersonne;APourType{MPIA.AssociationInstanceObjetType}#AssocieCommeType{MPIA.TypePersonne}#MPIA.TypePersonne.Grade
+177;;FIELD;TASKUNIT;POC;3;;1022/057;M - 1;1..30;UNIT;MPIA.Personne;MPIA.Unite;EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}
+178;;FIELD;TASKUNIT;POC;3;;1129/033;M - 1;1..38;UNIT CALL SIGN;MPIA.Personne;MPIA.AssociationInstanceObjetAdresse;EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#MPIA.AssociationInstanceObjetAdresse.Designation
+179;;FIELD;TASKUNIT;POC;3;;2141/001;M - 1;7..9;UNIT IDENTIFICATION CODE (UIC);MPIA.Personne;MPIA.Unite{MPIA.EntiteOrganisationnelle};EstObjet{MPGT.AssociationEntiteOrgPersonne}#APourSujet{MPIA.Unite}#MPGT.EntiteOrganisationnelle.CodeIdentification
+180;;COMP. FIELD;TASKUNIT;POC;4;;2024/001;M - 1;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPIA.Personne;MPGT.LocalisationGeometrique2D;EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+181;;COMP. FIELD;TASKUNIT;POC;4;;2086/001;M - 1;13..13;GEOGRAPHIC POSITION, UTM 10-METRE;MPIA.Personne;MPGT.LocalisationGeometrique2D;EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+182;;COMP. FIELD;TASKUNIT;POC;4;;1022/004;M - 1;1..20;LOCATION NAME;MPIA.Personne;MPGT.LocalisationGeometrique2D{MPIA.Localisation};EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#MPGT.Localisation.Lieu
+183;;REPET. GROUP;TASKUNIT;POC;-;;1361/003;-;;TELEPHONE NUMBER OR FREQUENCY;MPIA.Personne;MPIA.AssociationInstanceObjetAdresse;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}
+184;;FIELD;TASKUNIT;POC;5;;1361/003;M - N;3..20;NON-SECURE TELEPHONE;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+185;;FIELD;TASKUNIT;POC;5;;1361/004;M - N;4..20;SECURE TELEPHONE NUMBER;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+186;;FIELD;TASKUNIT;POC;5;;2064/001;M - N;3..14;RADIO FREQUENCY;MPIA.Personne;MPIA.Frequence;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}
+187;;SS ZONE;TASKUNIT;POC;5;1;1023/022;;1..11;CONTEXT QUANTITY, DECIMAL PT PERMITTED, 11 CHAR MAX;MPIA.Personne;MPIA.Frequence;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.Frequence
+188;;SS ZONE;TASKUNIT;POC;5;2;1008/002;;2..3;UNIT OF ELECTROMAGNETIC EMISSION MEASUREMENT;-;-;-
+189;;FIELD;TASKUNIT;POC;5;;1396/001;M - N;1..8;FREQUENCY DESIGNATOR;MPIA.Personne;MPIA.Frequence;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseRadio}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.NomCode
+190;;FIELD;TASKUNIT;POC;5;;2498/001;M - N;2..8;FREQUENCY MODE AND NUMERIC;NON_TRACE;;NON_TRACE
+191;;FIELD;TASKUNIT;POC;5;;2533/001;M - N;3..7;LINK 16 VOICE PARAMETERS;MPIA.Personne;MPIA.AdresseElectronique;AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}
+192;;FIELD;TASKUNIT;POC;5;;2534/001;M - N;18..49;HAVE QUICK PARAMETERS WITH MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+193;;FIELD;TASKUNIT;POC;5;;2535/001;M - N;12..18;HAVE QUICK PARAMETERS WITHOUT MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+194;;FIELD;TASKUNIT;POC;5;;1183/007;M - N;1..60;ELECTRONIC MAIL ADDRESS;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+195;;FIELD;TASKUNIT;POC;5;;1361/007;M - N;3..20;NON-SECURE FACSIMILE (FAX) NUMBER;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+196;;FIELD;TASKUNIT;POC;5;;1361/008;M - N;4..20;SECURE FACSIMILE (FAX) NUMBER;MPIA.Personne;MPIA.AutreAdresse{MPIA.Adresse};AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AutreAdresse}#MPIA.Adresse.Libelle
+197;;SEGMENT;MTGTLOC;;;;;? - N;;MISSILE TARGET LOCATION;;;
+198;;SET;MTGTLOC;MTGTLOC;;;;M - 1;;MISSILE TARGET LOCATION;;;
+199;;;;;;;;;;;;;
+200;;SET;MTGTLOC;REQNO;;;;O - 1;;REQUEST NUMBER;;;
+201;;;;;;;;;;;;;
+202;;SEGMENT;SAWMSN;;;;;? - N;;SURFACE-TO-AIR WEAPON MISSION DATA;;;
+203;;SET;SAWMSN;SAWMSN;;;;M - 1;;SURFACE-TO-AIR WEAPON MISSION DATA;MPGT.PlanificationOperation3D;MPGT.Mission;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}
+204;;FIELD;SAWMSN;SAWMSN;1;;1012/069;M - 1;1..8;MISSION NUMBER;MPGT.PlanificationOperation3D;MPGT.MissionASA;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#MPGT.MissionASA.NumeroMissionASA
+205;;FIELD;SAWMSN;SAWMSN;2;;1285/027;M - 1;3..3;TYPE OF AIR DEFENCE ARTILLERY MISSION;MPGT.PlanificationOperation3D;MPGT.MissionASA;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}MPGT.MissionASA.TypeMissionASA
+206;;FIELD;SAWMSN;SAWMSN;3;;1129/001;O - 1;1..38;CALL SIGN;MPGT.PlanificationOperation3D;MPIA.AssociationInstanceObjetAdresse;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#MPIA.AssociationInstanceObjetAdresse.Designation
+207;;FIELD;SAWMSN;SAWMSN;4;;1068/013;O - 1;1..8;PRIMARY FREQUENCY IN MEGAHERTZ, .0000001 - 99999999;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MissionASA}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.Frequence
+208;;FIELD;SAWMSN;SAWMSN;4;;1396/002;O - 1;1..8;PRIMARY FREQUENCY DESIGNATOR;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MissionASA}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.NomCode
+209;;FIELD;SAWMSN;SAWMSN;4;;2533/001;O - 1;3..7;LINK 16 VOICE PARAMETERS;MPGT.PlanificationOperation3D;MPIA.AdresseElectronique;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MissionASA}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#MPIA.AdresseElectronique.AdresseReseau
+210;;FIELD;SAWMSN;SAWMSN;4;;2534/001;O - 1;18..49;HAVE QUICK PARAMETERS WITH MICKEY NET CONTROLLER;;;NON_TRACE
+211;;FIELD;SAWMSN;SAWMSN;4;;2535/001;O - 1;12..18;HAVE QUICK PARAMETERS WITHOUT MICKEY NET CONTROLLER;;;NON_TRACE
+212;;FIELD;SAWMSN;SAWMSN;5;;1068/014;C - 1;1..8;SECONDARY FREQUENCY IN MEGAHERTZ, .0000001 - 99999999;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MissionASA}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.Frequence
+213;;FIELD;SAWMSN;SAWMSN;5;;1396/003;C - 1;1..8;SECONDARY FREQUENCY DESIGNATOR;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MissionASA}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.NomCode
+214;;FIELD;SAWMSN;SAWMSN;5;;2533/001;C - 1;3..7;LINK 16 VOICE PARAMETERS;MPGT.PlanificationOperation3D;MPIA.AdresseElectronique;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#MPIA.AdresseElectronique.AdresseReseau
+215;;FIELD;SAWMSN;SAWMSN;5;;2534/001;C - 1;18..49;HAVE QUICK PARAMETERS WITH MICKEY NET CONTROLLER;;;NON_TRACE
+216;;FIELD;SAWMSN;SAWMSN;5;;2535/001;C - 1;12..18;HAVE QUICK PARAMETERS WITHOUT MICKEY NET CONTROLLER;;;NON_TRACE
+217;;REPET. GROUP;SAWMSN;SAWMSN;-;;1022/270;-;;DEFENDED ASSET NAME;;;
+218;;FIELD;SAWMSN;SAWMSN;6;;1022/270;O - N;1..30;DEFENDED ASSET NAME;MPGT.PlanificationOperation3D;MPGT.ElementParticulierADefendre;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MissionASA}#EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourMissionDefenseParticuliere{MPGT.MissionDefenseParticuliere}#ACommeDefenseParticuliere{MPGT.ElementParticulierADefendre}#MPGT.ElementParticulierADefendre.NatureElement
+219;;COMP. FIELD;SAWMSN;SAWMSN;7;;2023/001;C - N;11..11;GEOGRAPHIC POSITION, LAT/LONG, MINUTES;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourMissionDefenseParticuliere{MPGT.MissionDefenseParticuliere}#ACommeDefenseParticuliere{MPGT.ElementParticulierADefendre}#ACommeLocalisation{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+220;;COMP. FIELD;SAWMSN;SAWMSN;7;;2281/001;C - N;7..20;POSITION, TRUE BEARING AND RANGE IN NM;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D{MPIA.Localisation};EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourMissionDefenseParticuliere{MPGT.MissionDefenseParticuliere}#ACommeDefenseParticuliere{MPGT.ElementParticulierADefendre}#ACommeLocalisation{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#MPGT.Localisation.Lieu
+221;;COMP. FIELD;SAWMSN;SAWMSN;7;;2126/001;C - N;8..8;GEOGRAPHIC POSITION, UTM ABBREVIATED 100-METRE;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourMissionDefenseParticuliere{MPGT.MissionDefenseParticuliere}#ACommeDefenseParticuliere{MPGT.ElementParticulierADefendre}#ACommeLocalisation{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+222;;COMP. FIELD;SAWMSN;SAWMSN;7;;2017/001;C - N;8..8;GEOGRAPHIC POSITION, GEOREF, MINUTE;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourMissionDefenseParticuliere{MPGT.MissionDefenseParticuliere}#ACommeDefenseParticuliere{MPGT.ElementParticulierADefendre}#ACommeLocalisation{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+223;;SET;SAWMSN;SAWREADY;;;;M - N;;SURFACE-TO-AIR WEAPON READINESS STATUS INFORMATION;MPGT.PlanificationOperation3D;;
+224;;COMP. FIELD;SAWMSN;SAWREADY;1;;2000/014;M - 1;7..7;DAY-TIME START;MPGT.PlanificationOperation3D;MPIA.Periode3D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourStadeAlerteEtEmission{MPGT.StadeAlerteEmission}#APourCreneauTemps{MPIA.Periode3D}#MPIA.Periode3D.DateDebut
+225;;COMP. FIELD;SAWMSN;SAWREADY;2;;2000/015;M - 1;7..7;DAY-TIME STOP;MPGT.PlanificationOperation3D;MPIA.Periode3D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourStadeAlerteEtEmission{MPGT.StadeAlerteEmission}#APourCreneauTemps{MPIA.Periode3D}#MPIA.Periode3D.DateFin
+226;;FIELD;SAWMSN;SAWREADY;3;;1236/033;M - 1;2..3;READINESS STATE;MPGT.PlanificationOperation3D;MPGT.StadeAlerteEmission;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourStadeAlerteEtEmission{MPGT.StadeAlerteEmission}#MPGT.StadeAlerteEmission.StadeAlerte
+227;;FIELD;SAWMSN;SAWREADY;4;;1584/004;O - 1;1..20;STATE OF EMISSION;MPGT.PlanificationOperation3D;MPGT.StadeAlerteEmission;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionASA}#APourStadeAlerteEtEmission{MPGT.StadeAlerteEmission}#MPGT.StadeAlerteEmission.StadeEmission
+228;;SET;SAWMSN;SAWPNCTL;;;;M - N;;SURFACE-TO-AIR WEAPON CONTROL STATUS INFORMATION;MPGT.PlanificationOperation3D;;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}
+229;;COMP. FIELD;SAWMSN;SAWPNCTL;1;;2000/014;M - 1;7..7;DAY-TIME START;MPGT.PlanificationOperation3D;MPIA.Periode3D;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstValidePour{MPIA.Periode3D}#MPIA.Periode3D.DateDebut
+230;;COMP. FIELD;SAWMSN;SAWPNCTL;2;;2000/015;M - 1;7..7;DAY-TIME STOP;MPGT.PlanificationOperation3D;MPIA.Periode3D;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstValidePour{MPIA.Periode3D}#MPIA.Periode3D.DateFin
+231;;FIELD;SAWMSN;SAWPNCTL;3;;1012/282;M - 1;1..15;MISSILE/SHORT RANGE AIR DEFENCE ENGAGEMENT ZONE IDENTIFIER;MPGT.PlanificationOperation3D;MPIA.MesureCoordination;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#MPIA.RacineOperationnelle.Nom
+232;;FIELD;SAWMSN;SAWPNCTL;4;;1145/006;M - 1;4..5;ZONE WEAPON CONTROL STATUS;MPGT.PlanificationOperation3D;MPGT.ConsigneTir;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstSoumiseA{MPGT.ConsigneTir}#MPGT.ConsigneTir.ConsigneTirSurAvion
+232;;FIELD;SAWMSN;SAWPNCTL;4;;1145/006;M - 1;4..5;ZONE WEAPON CONTROL STATUS;MPGT.PlanificationOperation3D;MPGT.ConsigneTir;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstSoumiseA{MPGT.ConsigneTir}#MPGT.ConsigneTir.ConsigneTirSurDrone
+232;;FIELD;SAWMSN;SAWPNCTL;4;;1145/006;M - 1;4..5;ZONE WEAPON CONTROL STATUS;MPGT.PlanificationOperation3D;MPGT.ConsigneTir;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstSoumiseA{MPGT.ConsigneTir}#MPGT.ConsigneTir.ConsigneTirSurHelicoptere
+232;;FIELD;SAWMSN;SAWPNCTL;4;;1145/006;M - 1;4..5;ZONE WEAPON CONTROL STATUS;MPGT.PlanificationOperation3D;MPGT.ConsigneTir;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstSoumiseA{MPGT.ConsigneTir}#MPGT.ConsigneTir.ConsigneTirSurMissile
+233;;FIELD;SAWMSN;SAWPNCTL;5;;1028/045;M - 1;1..22;ENGAGEMENT AUTHORITY;MPGT.PlanificationOperation3D;MPIA.Unite;EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Unite}
+234;;COMP. FIELD;SAWMSN;SAWPNCTL;6;;2368/004;O - 1;4..4;THREAT DIRECTION IN DEGREES TRUE, MAGNETIC OR RELATIVE;MPGT.PlanificationOperation3D;MPIA.AssocInstanceObjetLocalisation;APourObjectif{MPIA.ObjectifActivite}#AssocieCommeInstanceObjet{MPIA.MesureCoordination}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#MPIA.AssocInstanceObjetLocalisation.AngleMouvement
+235;;SEGMENT;CCTASK;;;;;? - N;;COMMAND, CONTROL AND SURVEILLANCE TASKING;;;
+236;;SET;CCTASK;CCTASK;;;;M - 1;;COMMAND, CONTROL AND SURVEILLANCE TASKING;;;
+237;;;;;;;;;;;;;
+238;;SET;CCTASK;BTLMAREA;;;;O - 1;;BATTLE MANAGEMENT AREA;;;
+239;;;;;;;;;;;;;
+240;;SET;CCTASK;FTRASSET;;;;O - N;;INTERCEPTOR FIGHTER ASSETS ASSIGNED/ATTACHED;;;
+241;;;;;;;;;;;;;
+242;;SET;CCTASK;SAWASSET;;;;O - N;;SURFACE-TO-AIR WEAPON (SAW) ASSETS ASSIGNED/ATTACHED;;;
+243;;;;;;;;;;;;;
+244;;SET;CCTASK;CCASSET;;;;O - N;;COMMAND AND CONTROL ASSETS ASSIGNED/ATTACHED;;;
+245;;;;;;;;;;;;;
+246;;SET;CCTASK;JAAWCORD;;;;O - N;;JOINT AIR-TO-AIR WARFARE SHORE COORDINATION;;;
+247;;;;;;;;;;;;;
+248;;SET;CCTASK;7CONTROL;;;;O - 1;;AIRCRAFT CONTROL INFORMATION;;;
+249;;;;;;;;;;;;;
+250;;SET;CCTASK;FACIP;;;;O - N;;FORWARD AIR CONTROLLER INITIAL POINT;;;
+251;;;;;;;;;;;;;
+252;;SET;CCTASK;SURVAREA;;;;O - N;;SURVEILLANCE AREA;;;
+253;;;;;;;;;;;;;
+254;;SEGMENT;AMSNDAT;;;;;? - N;;AIRCRAFT MISSION DATA;;;
+255;;SET;AMSNDAT;AMSNDAT;;;;M - 1;;AIRCRAFT MISSION DATA;MPGT.PlanificationOperation3D;;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}
+256;;FIELD;AMSNDAT;AMSNDAT;1;;1084/008;M - 1;1..1;RESIDUAL MISSION INDICATOR;MPGT.PlanificationOperation3D;;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#MPGT.MissionAir.IndicateurMissionResiduel
+257;;FIELD;AMSNDAT;AMSNDAT;2;;1012/069;M - 1;1..8;MISSION NUMBER;MPGT.PlanificationOperation3D;;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#MPGT.MissionAir.NumeroMission
+258;;FIELD;AMSNDAT;AMSNDAT;3;;1012/241;O - 1;1..12;AIRLIFT MISSION NUMBER;MPGT.PlanificationOperation3D;;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#MPGT.MissionAir.NumeroPontAerien
+259;;FIELD;AMSNDAT;AMSNDAT;3;;1012/023;O - 1;3..3;AIRCRAFT EVENT NUMBER;MPGT.PlanificationOperation3D;;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#MPGT.MissionAir.NumeroEvenement
+260;;FIELD;AMSNDAT;AMSNDAT;4;;1028/038;M - 1;1..5;PACKAGE IDENTIFICATION;MPGT.PlanificationOperation3D;MPIA.Unite;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourGroupement{MPIA.Unite}
+261;;FIELD;AMSNDAT;AMSNDAT;5;;1515/005;O - 1;2..2;MISSION COMMANDER DESIGNATOR;MPGT.PlanificationOperation3D;MPIA.Unite;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#EstObjet{MPIA.AssociationInstanceObjetActivite}#APourSujet{MPIA.Unite}
+262;;FIELD;AMSNDAT;AMSNDAT;6;;1012/277;O - 1;1..15;COMPOSITE AIR OPERATIONS (COMAO) IDENTIFIER;MPGT.PlanificationOperation3D;MPIA.EntiteOrganisationnelle;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#ACommeArticulation{MPIA.AutreArticulation}#APourEntitePlusHautNiveau{MPIA.EntiteOrganisationnelle}
+263;;FIELD;AMSNDAT;AMSNDAT;7;;1285/031;M - 1;2..6;PRIMARY AERIAL MISSION TYPE;MPGT.PlanificationOperation3D;MPGT.MissionAir;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#MPGT.MissionAir.TypeMission
+264;;FIELD;AMSNDAT;AMSNDAT;8;;1285/032;O - 1;2..6;SECONDARY AERIAL MISSION TYPE;MPGT.PlanificationOperation3D;MPGT.MissionAir;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#MPGT.MissionAir.TypeSecondaireMission
+265;;FIELD;AMSNDAT;AMSNDAT;9;;1798/002;C - 1;2..3;AIR ALERT STATUS;MPGT.PlanificationOperation3D;MPIA.EtatOperationnelEntiteOrganisationnelle;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#APourEtat{MPIA.EtatOperationnelEntiteOrganisationnelle}#MPIA.EtatOperationnelEntiteOrganisationnelle.NiveauAlerte
+270;;COMP. FIELD;AMSNDAT;AMSNDAT;-;;;-;;RECOVERY LOCATION;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourPointDepart{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+266;;FIELD;AMSNDAT;AMSNDAT;10.A;;1125/002;O - 1;4..4;ICAO BASE CODE;NON_TRACE;;NON_TRACE
+267;;FIELD;AMSNDAT;AMSNDAT;10.B;;1022/170;O - 1;1..20;PLACE NAME;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourPointDepart{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#MPGT.Localisation.Lieu
+268;;FIELD;AMSNDAT;AMSNDAT;10.C;;2023/001;O - 1;11..11;GEOGRAPHIC POSITION, LAT/LONG, MINUTES;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourPointDepart{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+269;;FIELD;AMSNDAT;AMSNDAT;10.D;;2087/001;O - 1;11..11;GEOGRAPHIC POSITION, UTM 100-METRE;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourPointDepart{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+270;;REPET. GROUP;AMSNDAT;AMSNDAT;-;;;-;;RECOVERY LOCATION;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourPointsRecuperation{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+271;;FIELD;AMSNDAT;AMSNDAT;11;;1125/002;C - N;4..4;ICAO BASE CODE;NON_TRACE;;NON_TRACE
+272;;FIELD;AMSNDAT;AMSNDAT;11;;1022/170;C - N;1..20;PLACE NAME;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourPointsRecuperation{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#MPGT.Localisation.Lieu
+273;;FIELD;AMSNDAT;AMSNDAT;11;;2023/001;C - N;11..11;GEOGRAPHIC POSITION, LAT/LONG, MINUTES;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourPointsRecuperation{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+274;;FIELD;AMSNDAT;AMSNDAT;11;;2087/001;C - N;11..11;GEOGRAPHIC POSITION, UTM 100-METRE;MPGT.PlanificationOperation3D;MPGT.LocalisationGeometrique2D;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourPointsRecuperation{MPIA.AutreElementControle}#EstLocalisePar{MPIA.AssocInstanceObjetLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}
+275;;SET;AMSNDAT;SCRAMBLE;;;;C - 1;;SCRAMBLE AUTHORITY;;;
+276;;;;;;;;;;;;;
+277;;SET;AMSNDAT;CODWDS;;;;O - 1;;CODEWORDS;;;
+278;;;;;;;;;;;;;
+279;;SEGMENT;MSNACFT;;;;;? - N;;INDIVIDUAL AIRCRAFT MISSION DATA;;;
+280;;SET;MSNACFT;MSNACFT;;;;M - 1;;INDIVIDUAL AIRCRAFT MISSION DATA;;;
+281;;;;;;;;;;;;;
+282;;SET;MSNACFT;ARINFO;;;;O - N;;AERIAL REFUELLING INFORMATION;;;
+283;;;;;;;;;;;;;
+284;;SET;AMSNDAT;URMKREF;;;;O - 1;;UNIT REMARKS REFERENCE;;;
+285;;;;;;;;;;;;;
+286;;SET;AMSNDAT;ROUTE;;;;O - 1;;ROUTE;;;
+287;;;;;;;;;;;;;
+288;;SET;AMSNDAT;1MSNRTE;;;;O - 1;;MISSION ROUTING;;;
+289;;;;;;;;;;;;;
+290;;SEGMENT;PKGINFO;;;;;? - N;;PACKAGE INFORMATION;;;
+291;;SET;PKGINFO;PKGINFO;;;;M - 1;;PACKAGE INFORMATION;;;
+292;;;;;;;;;;;;;
+293;;SET;PKGINFO;9PKGDAT;;;;M - 1;;PACKAGE DATA;;;
+294;;;;;;;;;;;;;
+295;;SET;PKGINFO;POC;;;;O - 1;;POINT OF CONTACT INFORMATION;;;
+296;;;;;;;;;;;;;
+297;;SET;PKGINFO;CODWDS;;;;O - 1;;CODEWORDS;;;
+298;;;;;;;;;;;;;
+299;;SET;AMSNDAT;PKGCMD;;;;C - 1;;PACKAGE COMMANDER;;;
+300;;FIELD;AMSNDAT;PKGCMD;1;;1028/038;M - 1;1..5;PACKAGE IDENTIFICATION;MPGT.PlanificationOperation3D;MPIA.Unite;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourGroupement{MPIA.Unite}
+301;;FIELD;AMSNDAT;PKGCMD;2;;1028/041;M - 1;1..30;TASKED UNIT DESIGNATOR;MPGT.PlanificationOperation3D;MPIA.Unite{MPIA.RacineOperationnelle};EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourGroupement{MPIA.Unite}#MPIA.RacineOperationnelle.Nom
+302;;FIELD;AMSNDAT;PKGCMD;2;;2141/001;M - 1;7..9;UNIT IDENTIFICATION CODE (UIC);MPGT.PlanificationOperation3D;MPIA.Unite{MPIA.EntiteOrganisationnelle};EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourGroupement{MPIA.Unite}#MPGT.EntiteOrganisationnelle.CodeIdentification
+303;;FIELD;AMSNDAT;PKGCMD;3;;1012/069;M - 1;1..8;MISSION NUMBER;MPGT.PlanificationOperation3D;;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#MPGT.MissionAir.NumeroMissionGroupement
+304;;FIELD;AMSNDAT;PKGCMD;4;;1129/034;M - 1;1..12;CALL SIGN, ABBREVIATED;MPGT.PlanificationOperation3D;;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#MPGT.MissionAir.SignalAppelGroupement
+305;;SEGMENT;AMSNLOC;;;;;? - N;;AIRCRAFT MISSION LOCATION;;;
+306;;SET;AMSNLOC;AMSNLOC;;;;O - 1;;AIRCRAFT MISSION LOCATION;;;
+307;;;;;;;;;;;;;
+308;;SET;AMSNLOC;GTGTLOC;;;;C - 1;;GROUND TARGET LOCATION;MPGT.PlanificationOperation3D;MPIA.ObjectifActivite;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourObjectif{MPIA.ObjectifActivite}
+309;;FIELD;AMSNLOC;GTGTLOC;1;;1076/013;M - 1;1..1;PRIMARY/ALTERNATE TARGET DESIGNATOR;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.Caracteristique
+310;;COMP. FIELD;AMSNLOC;GTGTLOC;2.A;;2030/041;O - 1;10..10;DAY-TIME AND MONTH TASKED TIME ON TARGET;NON_TRACE;;NON_TRACE
+311;;COMP. FIELD;AMSNLOC;GTGTLOC;2.B;;2483/002;O - 1;9..9;DAY-TIME ON TARGET TO THE SECOND, ZULU;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.DateZULU
+312;;COMP. FIELD;AMSNLOC;GTGTLOC;3;;2030/046;C - 1;10..10;NOT EARLIER THAN DAY-TIME AND MONTH;NON_TRACE;;NON_TRACE
+313;;COMP. FIELD;AMSNLOC;GTGTLOC;4;;2000/087;C - 1;7..7;NOT LATER THAN DAY-TIME;NON_TRACE;;NON_TRACE
+314;;COMP. FIELD;AMSNLOC;GTGTLOC;4;;2030/042;C - 1;10..10;DAY-TIME AND MONTH OFF TARGET;NON_TRACE;;NON_TRACE
+315;;FIELD;AMSNLOC;GTGTLOC;5;;1022/234;M - 1;1..38;TARGET/FACILITY NAME;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.Nom
+316;;FIELD;AMSNLOC;GTGTLOC;6;;1416/002;O - 1;1..20;TARGET POSITION IDENTIFIER;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.IdentifiantPositionnel
+317;;FIELD;AMSNLOC;GTGTLOC;7;;1650/006;M - 1;2..6;NON-SHIP TARGET TYPE;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.TypeSynthetiqueObjectif
+318;;FIELD;AMSNLOC;GTGTLOC;7;;1036/011;M - 1;2..6;SHIP TARGET TYPE;NON_TRACE;;NON_TRACE
+319;;FIELD;AMSNLOC;GTGTLOC;8;;1416/007;O - 1;1..30;DESIRED MEAN POINT OF IMPACT (DMPI) IDENTIFIER;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.IdentifiantImpact
+320;;FIELD;AMSNLOC;GTGTLOC;9;;1363/044;O - 1;1..38;DESIRED MEAN POINT OF IMPACT DESCRIPTION;MPGT.PlanificationOperation3D;MPIA.ObjectifActivite;APourObjectif{MPIA.ObjectifActivite}#MPGT.ObjectifActivite.Commentaire
+321;;COMP. FIELD;AMSNLOC;GTGTLOC;10;;2024/001;O - 1;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.PointGeometrique}#EstLocalisePar{MPGT.CoordonneesLatLong}
+322;;COMP. FIELD;AMSNLOC;GTGTLOC;10;;2023/001;O - 1;11..11;GEOGRAPHIC POSITION, LAT/LONG, MINUTES;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.PointGeometrique}#EstLocalisePar{MPGT.CoordonneesLatLong}
+323;;COMP. FIELD;AMSNLOC;GTGTLOC;10;;2187/001;O - 1;19..19;LOCATION, DECISECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.PointGeometrique}#EstLocalisePar{MPGT.CoordonneesLatLong}
+324;;COMP. FIELD;AMSNLOC;GTGTLOC;10;;2488/001;O - 1;19..19;GEOGRAPHIC LOCATION, LAT/LONG, CENTISECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.PointGeometrique}#EstLocalisePar{MPGT.CoordonneesLatLong}
+325;;COMP. FIELD;AMSNLOC;GTGTLOC;10;;2496/001;O - 1;19..19;GEOGRAPHIC POSITION, LAT/LONG, THOUSANDTHS OF MINUTE;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.PointGeometrique}#EstLocalisePar{MPGT.CoordonneesLatLong}
+326;;COMP. FIELD;AMSNLOC;GTGTLOC;10;;2489/001;O - 1;21..21;GEOGRAPHIC POSITION, LAT/LONG TEN THOUSANDTHS OF MINUTE;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.PointGeometrique}#EstLocalisePar{MPGT.CoordonneesLatLong}
+327;;COMP. FIELD;AMSNLOC;GTGTLOC;11;;2532/002;C - 1;5..9;PROBABLE COORDINATE HORIZONTAL CIRCULAR ERROR;MPGT.PlanificationOperation3D;MPIA.ObjectifActivite;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#MPGT.AssociationObjectifActiviteLocalisation.PrecisionHoriz
+328;;COMP. FIELD;AMSNLOC;GTGTLOC;12;;2492/002;C - 1;2..9;DESIRED MEAN POINT OF IMPACT ELEVATION IN FEET OR METRES;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.PointGeometrique}#EstLocalisePar{MPGT.CoordonneesLatLong}#MPGT.CoordonneesLatLong.ValeurDistanceVerticale
+329;;COMP. FIELD;AMSNLOC;GTGTLOC;13;;2532/003;C - 1;5..9;PROBABLE COORDINATE ELEVATION LINEAR ERROR;MPGT.PlanificationOperation3D;MPIA.ObjectifActivite;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#MPGT.AssociationObjectifActiviteLocalisation.PrecisionVerticale
+330;;FIELD;AMSNLOC;GTGTLOC;14;;1416/005;O - 1;1..12;COMPONENT TARGET IDENTIFIER;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.IdentifiantComposante
+331;;FIELD;AMSNLOC;GTGTLOC;15;;1076/011;O - 1;1..5;TARGET PRIORITY, LITERAL;MPGT.PlanificationOperation3D;MPIA.ObjectifActivite;APourObjectif{MPIA.ObjectifActivite}#MPIA.ObjectifActivite.Priorite
+332;;FIELD;AMSNLOC;GTGTLOC;16;;1456/003;O - 1;1..15;TARGET OBJECTIVE;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.ButAssocieAObjectif
+333;;FIELD;AMSNLOC;GTGTLOC;17;;1357/023;O - 1;1..20;ADDITIONAL TARGET IDENTIFICATION FEATURES;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.IdentifiantComplementaire
+334;;SET;AMSNLOC;SHIPTGT;;;;C - 1;;SHIP TARGET DATA;;;
+335;;;;;;;;;;;;;
+336;;SET;AMSNLOC;AIRMOVE;;;;C - 1;;AIR MOVEMENT INFORMATION;;;
+337;;;;;;;;;;;;;
+338;;SET;AMSNLOC;REPOSTN;;;;C - 1;;CONTIGUOUS MISSION REPOSITIONING INFORMATION;;;
+339;;;;;;;;;;;;;
+340;;SET;AMSNLOC;ESCDATA;;;;C - 1;;ESCORT DATA;;;
+341;;;;;;;;;;;;;
+342;;SET;AMSNLOC;RECCEDAT;;;;C - 1;;RECONNAISSANCE MISSION DATA;;;
+343;;;;;;;;;;;;;
+344;;SEGMENT;PTRCPLOT;;;;;? - N;;POSITION TRACE PLOT;;;
+345;;SET;PTRCPLOT;PTRCPLOT;;;;M - 1;;POSITION TRACE PLOT;;;
+346;;;;;;;;;;;;;
+347;;SEGMENT;PRODUCT;;;;;? - N;;INTELLIGENCE PRODUCT;;;
+348;;SET;PRODUCT;PRODUCT;;;;M - 1;;INTELLIGENCE PRODUCT;;;
+349;;;;;;;;;;;;;
+350;;SET;PRODUCT;POC;;;;O - N;;POINT OF CONTACT INFORMATION;;;
+351;;;;;;;;;;;;;
+352;;SET;AMSNLOC;IMDATLNK;;;;C - 1;;IMAGERY DATA LINK CONTROL INFORMATION;;;
+353;;;;;;;;;;;;;
+354;;SET;AMSNLOC;REQNO;;;;O - 1;;REQUEST NUMBER;;;
+355;;;;;;;;;;;;;
+356;;SET;AMSNLOC;MTGTLOC;;;;C - N;;MISSILE TARGET LOCATION;;;
+357;;;;;;;;;;;;;
+358;;SET;AMSNLOC;GTGTAREA;;;;C - 1;;GROUND TARGET AREA;MPGT.PlanificationOperation3D;MPIA.ObjectifActivite;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourObjectif{MPIA.ObjectifActivite}
+359;;FIELD;AMSNLOC;GTGTAREA;1;;1022/069;M - 1;1..38;AREA NAME;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.Nom
+360;;FIELD;AMSNLOC;GTGTAREA;2;;1284/017;M - 1;2..10;AREA TYPE;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#APourCaracteristiquesObjectif3D{MPGT.Objectif3D}#MPGT.Objectif3D.TypeZone
+361;;FIELD;AMSNLOC;GTGTAREA;3;;1255/001;M - 1;3..3;ALTITUDE IN HUNDREDS OF FEET;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.CylindreGeometrique}#APourPlancher{MPIA.DistanceVerticale}#MPIA.DistanceVerticale.Valeur
+362;;FIELD;AMSNLOC;GTGTAREA;3;;2100/001;M - 1;7..7;ALTITUDE BAND;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#MPGT.AssociationObjectifActiviteLocalisation.PlancherBandeAlt
+362;;FIELD;AMSNLOC;GTGTAREA;3;;2100/001;M - 1;7..7;ALTITUDE BAND;MPGT.PlanificationOperation3D;MPGT.Objectif3D;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#MPGT.AssociationObjectifActiviteLocalisation.PlafondBandeAlt
+363;;COMP. FIELD;AMSNLOC;GTGTAREA;4;;2490/001;O - 1;2..6;RADIUS, IN, FT, YD, KF, SM, NM, MM, CM, M, KM, HM;NON_TRACE;;NON_TRACE
+364;;COMP. FIELD;AMSNLOC;GTGTAREA;4;;2494/001;O - 1;11..21;ELLIPTICAL AREA, 5 CHAR MAX UNIT AXIS;NON_TRACE;;NON_TRACE
+365;;COMP. FIELD;AMSNLOC;GTGTAREA;4;;2526/001;O - 1;9..13;SECTOR GEOMETRY WITH OUTER RANGE;NON_TRACE;;NON_TRACE
+366;;COMP. FIELD;AMSNLOC;GTGTAREA;4;;2527/001;O - 1;11..18;SECTOR GEOMETRY WITH INNER AND OUTER RANGE;NON_TRACE;;NON_TRACE
+367;;REPET. GROUP;AMSNLOC;GTGTAREA;-;;2496/001;-;;AREA COORDINATES OR ORIGIN;NON_TRACE;;NON_TRACE
+368;;FIELD;AMSNLOC;GTGTAREA;5;;2496/001;C - N;19..19;GEOGRAPHIC POSITION, LAT/LONG, THOUSANDTHS OF MINUTE;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}
+369;;FIELD;AMSNLOC;GTGTAREA;5;;2187/001;C - N;19..19;LOCATION, DECISECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}
+370;;FIELD;AMSNLOC;GTGTAREA;5;;2024/001;C - N;15..15;GEOGRAPHIC POSITION, LAT/LONG, SECONDS;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}
+371;;FIELD;AMSNLOC;GTGTAREA;5;;2023/001;C - N;11..11;GEOGRAPHIC POSITION, LAT/LONG, MINUTES;MPGT.PlanificationOperation3D;MPGT.CoordonneesLatLong;APourObjectif{MPIA.ObjectifActivite}#EstLocalisePar{MPGT.AssociationObjectifActiviteLocalisation}#EstLocaliseEn{MPGT.LocalisationGeometrique2D}#APourObjetGeographique{MPGT.AirePolygoneGeometrique}#APourFrontiere{MPGT.CoordonneesLatLong}
+372;;FIELD;AMSNLOC;GTGTAREA;5;;1125/001;C - N;4..4;ICAO LOCATION IDENTIFIER;NON_TRACE;;NON_TRACE
+373;;SET;AMSNLOC;WPNSPEC;;;;O - N;;WEAPON SPECIFICATION;MPGT.PlanificationOperation3D;MPIA.RessourceActiviteInstanceObjet;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}
+374;;FIELD;AMSNLOC;WPNSPEC;1;;1044/131;M - 1;1..3;QUANTITY OF ORDNANCE;MPGT.PlanificationOperation3D;MPIA.RessourceActiviteType;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteType}#MPIA.RessourceActiviteType.Quantite
+375;;FIELD;AMSNLOC;WPNSPEC;2;;1407/001;M - 1;1..30;WEAPON TYPE, GENERIC;MPGT.PlanificationOperation3D;MPIA.TypeMunition{MPIA.RacineOperationnelle};EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteType}#AssocieCommeType{MPIA.TypeMunition}#MPIA.RacineOperationnelle.Nom
+376;;FIELD;AMSNLOC;WPNSPEC;3;;1012/254;O - 1;4..4;LASER CORRELATION CODE;NON_TRACE;;NON_TRACE
+377;;FIELD;AMSNLOC;WPNSPEC;3;;1396/004;O - 1;1..2;DATA LINK FREQUENCY CODE;MPGT.PlanificationOperation3D;MPIA.AdresseElectronique;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourAdresse{MPIA.AdresseElectronique}#MPIA.AdresseElectronique.Nom
+378;;FIELD;AMSNLOC;WPNSPEC;4;;1068/011;C - 1;1..8;GUIDANCE FREQUENCY IN MEGAHERTZ;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.Frequence
+379;;FIELD;AMSNLOC;WPNSPEC;4;;1396/007;C - 1;1..8;GUIDANCE FREQUENCY DESIGNATOR;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.NomCode
+380;;FIELD;AMSNLOC;WPNSPEC;5;;1129/031;O - 1;1..20;CONTACT CALL SIGN;MPGT.PlanificationOperation3D;MPIA.AssociationInstanceObjetAdresse;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#MPIA.AssociationInstanceObjetAdresse.Designation
+381;;FIELD;AMSNLOC;WPNSPEC;6;;1068/013;O - 1;1..8;PRIMARY FREQUENCY IN MEGAHERTZ, .0000001 - 99999999;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.Frequence
+382;;FIELD;AMSNLOC;WPNSPEC;6;;1396/002;O - 1;1..8;PRIMARY FREQUENCY DESIGNATOR;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.NomCode
+383;;FIELD;AMSNLOC;WPNSPEC;6;;2533/001;O - 1;3..7;LINK 16 VOICE PARAMETERS;NON_TRACE;;NON_TRACE
+384;;FIELD;AMSNLOC;WPNSPEC;6;;2534/001;O - 1;18..49;HAVE QUICK PARAMETERS WITH MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+385;;FIELD;AMSNLOC;WPNSPEC;6;;2535/001;O - 1;12..18;HAVE QUICK PARAMETERS WITHOUT MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+386;;FIELD;AMSNLOC;WPNSPEC;7;;1068/014;C - 1;1..8;SECONDARY FREQUENCY IN MEGAHERTZ, .0000001 - 99999999;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.Frequence
+387;;FIELD;AMSNLOC;WPNSPEC;7;;1396/003;C - 1;1..8;SECONDARY FREQUENCY DESIGNATOR;MPGT.PlanificationOperation3D;MPIA.Frequence;EstSujet{MPIA.AssociationFonctionnelleActivite}#AssocieCommeObjet{MPGT.MissionAir}#APourRessource{MPIA.RessourceActiviteInstanceObjet}#AssocieCommeInstanceObjet{MPIA.Unite}#AssocieCommeAdresse{MPIA.AssociationInstanceObjetAdresse}#AssocieCommeObjet{MPIA.AdresseElectronique}#FournitAccesA{MPIA.ServiceReseau}#EstAssocieAuReseau{MPIA.ReseauTelecommunication}#APourFrequence{MPIA.Frequence}#MPIA.Frequence.NomCode
+388;;FIELD;AMSNLOC;WPNSPEC;7;;2533/001;C - 1;3..7;LINK 16 VOICE PARAMETERS;NON_TRACE;;NON_TRACE
+389;;FIELD;AMSNLOC;WPNSPEC;7;;2534/001;C - 1;18..49;HAVE QUICK PARAMETERS WITH MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+390;;FIELD;AMSNLOC;WPNSPEC;7;;2535/001;C - 1;12..18;HAVE QUICK PARAMETERS WITHOUT MICKEY NET CONTROLLER;NON_TRACE;;NON_TRACE
+391;;SET;AMSNLOC;REFTSK;;;;C - 1;;REFUELLING TASKING;;;
+392;;;;;;;;;;;;;
+393;;SET;AMSNLOC;5REFUEL;;;;C - 1;;AERIAL REFUELLING;;;
+394;;;;;;;;;;;;;
+395;;SET;AMSNLOC;ADINTPRI;;;;C - N;;AIR DEFENSE INTERCEPTOR PRIORITIES;;;
+396;;;;;;;;;;;;;
+397;;SET;AMSNLOC;CAPPOS;;;;C - 1;;COMBAT AIR PATROL POSITION;;;
+398;;;;;;;;;;;;;
+399;;SET;AMSNLOC;CCTASK;;;;C - 1;;COMMAND, CONTROL AND SURVEILLANCE TASKING;;;
+400;;;;;;;;;;;;;
+401;;SET;AMSNLOC;TACON;;;;O - 1;;TACTICAL CONTROL AUTHORITY INFORMATION;;;
+402;;;;;;;;;;;;;
+403;;SET;AMSNLOC;GNDCORD;;;;O - N;;GROUND COORDINATION DETAILS;;;
+404;;;;;;;;;;;;;
+405;;SET;AMSNLOC;CNTLAREA;;;;O - N;;CONTROL AREA;;;
+406;;;;;;;;;;;;;
+407;;SET;AMSNLOC;WPNCNTL;;;;O - 1;;WEAPON CONTROL INSTRUCTIONS;;;
+408;;;;;;;;;;;;;
+409;;SET;AMSNLOC;7CONTROL;;;;O - 1;;AIRCRAFT CONTROL INFORMATION;;;
+410;;;;;;;;;;;;;
+411;;SET;AMSNLOC;FACIP;;;;C - N;;FORWARD AIR CONTROLLER INITIAL POINT;;;
+412;;;;;;;;;;;;;
+413;;SEGMENT;SURVAREA;;;;;? - N;;SURVEILLANCE AREA;;;
+414;;SET;SURVAREA;SURVAREA;;;;M - 1;;SURVEILLANCE AREA;;;
+415;;;;;;;;;;;;;
+416;;SET;SURVAREA;ESURVTSK;;;;O - 1;;ELECTRONIC SURVEILLANCE TASKING DATA;;;
+417;;;;;;;;;;;;;
+418;;SET;AMSNLOC;6EWDATA;;;;O - 1;;ELECTRONIC WARFARE EMITTER/JAMMING DATA;;;
+419;;;;;;;;;;;;;
+420;;SET;AMSNLOC;ARMDATA;;;;O - 1;;ANTI-RADIATION MISSILE DATA;;;
+421;;;;;;;;;;;;;
+422;;SET;AMSNLOC;CHAFF;;;;O - N;;CHAFF MISSION DATA;;;
+423;;;;;;;;;;;;;
+424;;SET;AMSNLOC;TRANSREQ;;;;C - N;;ALLOCATED TRANSPORTATION REQUIREMENTS;;;
+425;;;;;;;;;;;;;
+426;;SET;AMSNLOC;LANDSTS;;;;O - N;;LANDING SITE STATUS INFORMATION;;;
+427;;;;;;;;;;;;;
+428;;SET;AMSNLOC;AIRDROP;;;;O - N;;DROP ZONE;;;
+429;;;;;;;;;;;;;
+430;;SET;AMSNLOC;CONTINST;;;;O - N;;CONTACT INSTRUCTIONS;;;
+431;;;;;;;;;;;;;
+432;;SET;AMSNLOC;FACINFOR;;;;O - N;;FORWARD AIR CONTROLLER INFORMATION;;;
+433;;;;;;;;;;;;;
+434;;SET;AMSNLOC;ASUPTFOR;;;;O - N;;AIR SUPPORT FOR;;;
+435;;;;;;;;;;;;;
+436;;SET;AMSNLOC;ASUPTBY;;;;O - N;;AIR SUPPORTED BY;;;
+437;;;;;;;;;;;;;
+438;;SET;AMSNLOC;6ROUTE;;;;O - 1;;AIRCRAFT ROUTE INFORMATION;;;
+439;;;;;;;;;;;;;
+440;;SEGMENT;RDZBKUP;;;;;? - N;;AIRCRAFT RENDEZVOUS/BREAKUP MISSION DATA;;;
+441;;SET;RDZBKUP;RDZBKUP;;;;M - 1;;AIRCRAFT RENDEZVOUS/BREAKUP MISSION DATA;;;
+442;;;;;;;;;;;;;
+443;;SET;RDZBKUP;RDZAREA;;;;C - 1;;RENDEZVOUS/BREAKUP AREA;;;
+444;;;;;;;;;;;;;
+445;;SET;AMSNLOC;GNDFRND;;;;O - N;;GROUND LOCATION OF FRIENDLY TROOPS;;;
+446;;;;;;;;;;;;;
+447;;SET;AMSNLOC;AUTOCAT;;;;O - N;;AIRBORNE RADIO RELAY STATION DETAILS;;;
+448;;;;;;;;;;;;;
+449;;SET;AMSNLOC;EMCON;;;;O - 1;;EMISSION CONTROL PLAN;;;
+450;;;;;;;;;;;;;
+451;;SET;AMSNLOC;SEAINCDT;;;;C - 1;;SEA INCIDENT INFORMATION;;;
+452;;;;;;;;;;;;;
+453;;SET;AMSNLOC;SUBINCDT;;;;C - 1;;SUBMARINE INCIDENT INFORMATION;;;
+454;;;;;;;;;;;;;
+455;;SET;AMSNLOC;ACINCDT;;;;C - 1;;AIRCRAFT INCIDENT INFORMATION;;;
+456;;;;;;;;;;;;;
+457;;SET;AMSNLOC;GNDINCDT;;;;C - 1;;GROUND INCIDENT INFORMATION;;;
+458;;;;;;;;;;;;;
+459;;SET;TASKUNIT;GENTEXT;;;;C - 1;;GENERAL TEXT;;;
+460;;;;;;;;;;;;;
+461;;SET;ATO;HEADING;;;;C - 1;;HEADING INFORMATION;;;
+462;;;;;;;;;;;;;
+463;;SET;ATO;GENTEXT;;;;O - N;;GENERAL TEXT;;;
+464;;;;;;;;;;;;;
+465;;SET;ATO;DECL;;;;O - 1;;MESSAGE DOWNGRADING OR DECLASSIFICATION DATA;;;
+466;;;;;;;;;;;;;
+FIN;;;;;;;;;;;;;

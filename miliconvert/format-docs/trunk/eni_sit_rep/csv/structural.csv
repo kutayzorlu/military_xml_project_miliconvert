@@ -1,0 +1,14 @@
+null;null;1.;(2) P ([1] @)
+null;null;2.;(3)F1 A "ENSITREP"
+null;null;3.;(11) QP ([9]F1 = "SUBORDINATE")
+null;null;4.;(16) P (((([12] @) / ([13] @)) / ([14] @)) / ([15] @))
+null;null;5.;(19) P ([18] !@)
+null;null;6.;(27) P ([26] !@)
+null;null;7.;(31) P ([30] !@)
+null;null;8.;(32)F1 A "COMMANDERS ASSESSMENT"
+null;null;9.;(7)F10 Q (F2 = "CORPS" / "ARMY" / "AG" / "MOD" / "MD")
+null;null;10.;(10)F10 QP (F1 = "-")
+null;null;11.;(19)F10 Q (F2 = "CORPS" / "ARMY" / "AG" / "MOD" / "MD")
+null;null;12.;(24)F10 Q (F2 = "CORPS" / "ARMY" / "AG" / "MOD" / "MD")
+null;null;13.;(27)F10 Q (F2 = "CORPS" / "ARMY" / "AG" / "MOD" / "MD")
+null;null;14.;(31)F10 Q (F2 = "CORPS" / "ARMY" / "AG" / "MOD" / "MD")

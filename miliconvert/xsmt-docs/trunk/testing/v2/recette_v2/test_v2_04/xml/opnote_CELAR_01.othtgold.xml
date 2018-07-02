@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opnote xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opnote.xsd">
+<message_identification set-seq="40" setId="MSGID">
+<command ff-seq="1">NCTSI</command>
+<message_identifier ff-seq="2">GOLD</message_identifier>
+<message_serial_no ff-seq="3">0001</message_serial_no>
+<month ff-seq="4">APR</month>
+</message_identification>
+<narrative set-seq="37" setId="NARR">
+<free-text ff-seq="1">OPNOTE: SR DE T1 IAW ACOP, REQUEST THAT YOU DELETE              
+UNAUTHORIZED DATA IN THE TRADEMARK FIELD OF T7410. LCDR              
+JOHNSEN SENDS.</free-text>
+</narrative>
+<end_of_data set-seq="45" setId="ENDAT"/>
+</opnote>

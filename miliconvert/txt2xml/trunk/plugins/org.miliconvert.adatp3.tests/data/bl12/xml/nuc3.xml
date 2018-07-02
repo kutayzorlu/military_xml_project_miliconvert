@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><nbc3_nuc_report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nuc3/messages.xsd">
+<exercise_identification set-id="exer" set-seq="1">
+<exercise_nickname alt="A" ff-seq="1" ffirn-fudn="1021-1">CMX 95</exercise_nickname>
+<exercise_identifier>
+<exercise_additional_nickname alt="B" descriptor="NICK" ff-seq="2" ffirn-fudn="1018-16">COBRA GOLD</exercise_additional_nickname>
+</exercise_identifier>
+</exercise_identification>
+<operation_codeword set-id="oper" set-seq="2">
+<operation_codeword alt="A" ff-seq="1" ffirn-fudn="1020-1">DENY FLIGHT</operation_codeword>
+</operation_codeword>
+<message_identifier set-id="msgid" set-seq="3">
+<message_text_format_identifier alt="A" ff-seq="1" ffirn-fudn="1018-2">NUC3</message_text_format_identifier>
+<originator alt="A" ff-seq="2" ffirn-fudn="1029-1">SHAPE</originator>
+<message_serial_number alt="A" ff-seq="3" ffirn-fudn="1012-7">15</message_serial_number>
+<month_name_abbreviated alt="A" ff-seq="4" ffirn-fudn="1004-1">DEC</month_name_abbreviated>
+<qualifier alt="A" ff-seq="5" ffirn-fudn="1130-3">FIN</qualifier>
+<serial_number_of_qualifier alt="A" ff-seq="6" ffirn-fudn="1012-29">5</serial_number_of_qualifier>
+</message_identifier>
+<geodetic_datum set-id="geodatum" set-seq="5">
+<geodetic_datum alt="A" ff-seq="1" ffirn-fudn="1195-1">EUROPEAN 1979</geodetic_datum>
+</geodetic_datum>
+<date_time_group set-id="dtg" set-seq="6">
+<dtg alt="A " ff-seq="1" ffirn-fudn="2033-1">
+<day ffirn-fudn="1000-1">04</day>
+<hour_time ffirn-fudn="1001-1">14</hour_time>
+<minute_time ffirn-fudn="1002-1">05</minute_time>
+<time_zone ffirn-fudn="1003-1">Z</time_zone>
+<month_name_abbreviated ffirn-fudn="1004-1">APR</month_name_abbreviated>
+<year ffirn-fudn="1005-7">1995</year>
+</dtg>
+</date_time_group>
+<organization_designator_of_drafter_releaser set-id="orgiddft" set-seq="7">
+<unit_designation_name alt="A " ff-seq="1" ffirn-fudn="1022-39">1-503IN</unit_designation_name>
+<unit_size_indicator alt="A " ff-seq="2" ffirn-fudn="1045-4">BN</unit_size_indicator>
+<geographical_entity alt="A " ff-seq="3" ffirn-fudn="1026-1">US</geographical_entity>
+<unit_role_indicator_code_a alt="A " ff-seq="4" ffirn-fudn="1311-2">INF</unit_role_indicator_code_a>
+<unit_role_indicator_code_b alt="A " ff-seq="5" ffirn-fudn="1311-3">RECCE</unit_role_indicator_code_b>
+<unit_role_indicator_code_c alt="A " ff-seq="6" ffirn-fudn="1311-4">ABN</unit_role_indicator_code_c>
+<unit_role_indicator_code_d alt="A " ff-seq="7" ffirn-fudn="1311-5" xsi:nil="true"/>
+<higher_formation_name alt="A " ff-seq="8" ffirn-fudn="1022-40">2BDE</higher_formation_name>
+<armed_service_or_civilian_agency_code>
+<armed_service alt="A" ff-seq="9" ffirn-fudn="1107-1">A</armed_service>
+</armed_service_or_civilian_agency_code>
+</organization_designator_of_drafter_releaser>
+<type_of_nbc_report set-id="nbcevent" set-seq="8">
+<nbc__report>
+<type_of_nbc_report alt="A" ff-seq="1" ffirn-fudn="1018-8">NUC</type_of_nbc_report>
+</nbc__report>
+<validation_code alt="A" ff-seq="2" ffirn-fudn="1742-1">NOIR 12</validation_code>
+</type_of_nbc_report>
+<strike_serial_number set-id="alfa" set-seq="9">
+<geographic_location>
+<nationality alt="A" descriptor="NAT" ff-seq="1" ffirn-fudn="1026-2">UK</nationality>
+</geographic_location>
+<code_for_originator alt="A" ff-seq="2" ffirn-fudn="1029-3">1HF4</code_for_originator>
+<sequence_number alt="A" ff-seq="3" ffirn-fudn="1012-57">2</sequence_number>
+<type_of_incident alt="A" ff-seq="4" ffirn-fudn="1211-10">N</type_of_incident>
+<grading_of_message_report alt="A" ff-seq="5" ffirn-fudn="1202-4">146</grading_of_message_report>
+</strike_serial_number>
+<date_time_group_of_attack_or_detonation_and_attack_end set-id="delta" set-seq="10">
+<date_time_group_of_attack_or_detonation>
+<dtg_of_attack_zulu alt="A" descriptor="ATT" ff-seq="1" ffirn-fudn="2323-7">
+<day ffirn-fudn="1000-1">12</day>
+<hour_time ffirn-fudn="1001-1">12</hour_time>
+<minute_time ffirn-fudn="1002-1">30</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name_abbreviated ffirn-fudn="1004-1">JUL</month_name_abbreviated>
+<year ffirn-fudn="1005-7">2001</year>
+</dtg_of_attack_zulu>
+</date_time_group_of_attack_or_detonation>
+</date_time_group_of_attack_or_detonation_and_attack_end>
+<location_of_attack_or_event set-id="foxtrot" set-seq="11">
+<group_of_fields>
+<attack_or_event_location>
+<geographic_place_name alt="A" descriptor="N" ff-seq="1" ffirn-fudn="1022-90">BARROWS POINT</geographic_place_name>
+</attack_or_event_location>
+<location_qualifier>
+<location_qualifier alt="A" ff-seq="2" ffirn-fudn="1118-1">EE</location_qualifier>
+</location_qualifier>
+</group_of_fields>
+</location_of_attack_or_event>
+<delivery_and_quantity_information set-id="golf" set-seq="12">
+<suspected_observed_event alt="A" ff-seq="1" ffirn-fudn="1312-1">SUS</suspected_observed_event>
+<type_of_delivery alt="A" ff-seq="2" ffirn-fudn="1737-1">MOR</type_of_delivery>
+<number_of_delivery_systems alt="A" ff-seq="3" ffirn-fudn="1044-355">12</number_of_delivery_systems>
+<type_of_agent_container alt="A" ff-seq="4" ffirn-fudn="1190-3">TOR</type_of_agent_container>
+<agent_container_or_release>
+<number_of_agent_containers alt="A" ff-seq="5" ffirn-fudn="1044-364">23</number_of_agent_containers>
+</agent_container_or_release>
+</delivery_and_quantity_information>
+<type_of_nuclear_burst set-id="hotel" set-seq="13">
+<type_of_nuclear_burst alt="A" ff-seq="1" ffirn-fudn="1735-2">SURF</type_of_nuclear_burst>
+</type_of_nuclear_burst>
+<estimated_nuclear_yield_in_kilotons set-id="november" set-seq="14">
+<estimated_nuclear_yield_in_kilotons alt="A " ff-seq="1" ffirn-fudn="1104-2">500.5</estimated_nuclear_yield_in_kilotons>
+</estimated_nuclear_yield_in_kilotons>
+<reference_date_time_for_estimated_contour_lines set-id="oscar" set-seq="15">
+<dtg_zulu alt="A " ff-seq="1" ffirn-fudn="2323-1">
+<day ffirn-fudn="1000-1">25</day>
+<hour_time ffirn-fudn="1001-1">18</hour_time>
+<minute_time ffirn-fudn="1002-1">00</minute_time>
+<time_zone_zulu ffirn-fudn="1003-2">Z</time_zone_zulu>
+<month_name_abbreviated ffirn-fudn="1004-1">JAN</month_name_abbreviated>
+<year ffirn-fudn="1005-7">1992</year>
+</dtg_zulu>
+</reference_date_time_for_estimated_contour_lines>
+<detailed_fallout_hazard_prediction_parameters set-id="papab" set-seq="16">
+<effective_wind_speed_and_unit_of_measurement alt="A" ff-seq="1" ffirn-fudn="2318-3">
+<context_quantity_000_999 ffirn-fudn="1023-31">009</context_quantity_000_999>
+<unit_of_speed_velocity_measurement ffirn-fudn="1008-5">KPH</unit_of_speed_velocity_measurement>
+</effective_wind_speed_and_unit_of_measurement>
+<downwind_distance_of_zone_1_and_unit_of_measure alt="A" ff-seq="2" ffirn-fudn="2320-2">
+<context_quantity_001_999 ffirn-fudn="1023-45">015</context_quantity_001_999>
+<unit_of_linear_measurement_ft_kf_yd_sm_nm_m_hm_km ffirn-fudn="1008-8">KM</unit_of_linear_measurement_ft_kf_yd_sm_nm_m_hm_km>
+</downwind_distance_of_zone_1_and_unit_of_measure>
+<cloud_radius_and_unit_of_measurement alt="A" ff-seq="3" ffirn-fudn="2316-2">
+<context_quantity_01_99 ffirn-fudn="1023-46">15</context_quantity_01_99>
+<unit_of_linear_measurement_ft_kf_yd_sm_nm_m_hm_km ffirn-fudn="1008-8">HM</unit_of_linear_measurement_ft_kf_yd_sm_nm_m_hm_km>
+</cloud_radius_and_unit_of_measurement>
+<left_radial_line_direction>
+<left_radial_line_in_degrees alt="A" descriptor="LEFT" ff-seq="4" ffirn-fudn="2321-8">
+<context_quantity_000_360 ffirn-fudn="1023-43">250</context_quantity_000_360>
+<unit_of_measurement_direction_in_degrees ffirn-fudn="1008-9">DGT</unit_of_measurement_direction_in_degrees>
+</left_radial_line_in_degrees>
+</left_radial_line_direction>
+<right_radial_line_direction>
+<right_radial_line_in_degrees alt="A" descriptor="RIGHT" ff-seq="5" ffirn-fudn="2321-9">
+<context_quantity_000_360 ffirn-fudn="1023-43">350</context_quantity_000_360>
+<unit_of_measurement_direction_in_degrees ffirn-fudn="1008-9">DGT</unit_of_measurement_direction_in_degrees>
+</right_radial_line_in_degrees>
+</right_radial_line_direction>
+</detailed_fallout_hazard_prediction_parameters>
+<radar_determined_external_contour_of_radioactive_cloud set-id="papac" set-seq="17">
+<external_contour_of_radioactive_cloud>
+<geographic_position_lat_long_minutes alt="C" ff-seq="1" ffirn-fudn="2023-1">
+<latitude_degrees ffirn-fudn="1039-1">45</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">115</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">45</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</external_contour_of_radioactive_cloud>
+<external_contour_of_radioactive_cloud>
+<geographic_position_lat_long_minutes alt="C" ff-seq="1" ffirn-fudn="2023-1">
+<latitude_degrees ffirn-fudn="1039-1">45</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">11</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">115</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">45</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</external_contour_of_radioactive_cloud>
+<external_contour_of_radioactive_cloud>
+<geographic_position_lat_long_minutes alt="C" ff-seq="1" ffirn-fudn="2023-1">
+<latitude_degrees ffirn-fudn="1039-1">45</latitude_degrees>
+<latitude_minute_angular ffirn-fudn="1041-2">10</latitude_minute_angular>
+<latitudinal_hemisphere ffirn-fudn="1030-2">N</latitudinal_hemisphere>
+<longitude_degrees ffirn-fudn="1040-1">115</longitude_degrees>
+<longitude_minute_angular ffirn-fudn="1041-3">45</longitude_minute_angular>
+<longitudinal_hemisphere ffirn-fudn="1030-3">E</longitudinal_hemisphere>
+</geographic_position_lat_long_minutes>
+</external_contour_of_radioactive_cloud>
+</radar_determined_external_contour_of_radioactive_cloud>
+<radar_determined_downwind_direction_of_radioactive_cloud set-id="papad" set-seq="18">
+<downwind_direction_of_radioactive_cloud_unit_of_measurement>
+<direction_of_radioactive_cloud_in_degrees alt="A" ff-seq="1" ffirn-fudn="2321-3">
+<context_quantity_000_360 ffirn-fudn="1023-43">180</context_quantity_000_360>
+<unit_of_measurement_direction_in_degrees ffirn-fudn="1008-9">DGG</unit_of_measurement_direction_in_degrees>
+</direction_of_radioactive_cloud_in_degrees>
+</downwind_direction_of_radioactive_cloud_unit_of_measurement>
+</radar_determined_downwind_direction_of_radioactive_cloud>
+<predicted_contour_information set-id="xrayb" set-seq="20">
+<type_of_contour alt="A" ff-seq="1" ffirn-fudn="1064-54">55</type_of_contour>
+<contamination_dose_dose_rate_dosage_and_hazard>
+<level_of_dose_rate_dosage_and_unit_of_measurement alt="C" descriptor="RAT" ff-seq="2" ffirn-fudn="2456-1">
+<context_quantity_0_to_7_decimal_places_permitted ffirn-fudn="1023-88">0.0034</context_quantity_0_to_7_decimal_places_permitted>
+<unit_of_dose_rate_dosage ffirn-fudn="1008-91">MSH</unit_of_dose_rate_dosage>
+</level_of_dose_rate_dosage_and_unit_of_measurement>
+</contamination_dose_dose_rate_dosage_and_hazard>
+<limit_contour_line_or_area_of_contamination>
+<geographic_position_utm_10_metre alt="B" ff-seq="3" ffirn-fudn="2086-1">
+<utm_grid_zone_column ffirn-fudn="1096-1">10</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">B</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">C</utm_100000_metre_square_row>
+<utm_10_metre_easting ffirn-fudn="1234-1">1234</utm_10_metre_easting>
+<utm_10_metre_northing ffirn-fudn="1238-1">5678</utm_10_metre_northing>
+</geographic_position_utm_10_metre>
+</limit_contour_line_or_area_of_contamination>
+</predicted_contour_information>
+<predicted_contour_information set-id="xrayb" set-seq="20">
+<type_of_contour alt="A" ff-seq="1" ffirn-fudn="1064-54">35</type_of_contour>
+<contamination_dose_dose_rate_dosage_and_hazard>
+<level_of_hazard alt="D" ff-seq="2" ffirn-fudn="2467-1">
+<type_of_hazard ffirn-fudn="1744-1">ICT</type_of_hazard>
+<context_quantity_1_99 ffirn-fudn="1023-30">70</context_quantity_1_99>
+</level_of_hazard>
+</contamination_dose_dose_rate_dosage_and_hazard>
+<limit_contour_line_or_area_of_contamination>
+<geographic_position_utm_10_metre alt="B" ff-seq="3" ffirn-fudn="2086-1">
+<utm_grid_zone_column ffirn-fudn="1096-1">10</utm_grid_zone_column>
+<utm_grid_zone_row ffirn-fudn="1097-1">A</utm_grid_zone_row>
+<utm_100000_metre_square_column ffirn-fudn="1098-1">B</utm_100000_metre_square_column>
+<utm_100000_metre_square_row ffirn-fudn="1099-1">C</utm_100000_metre_square_row>
+<utm_10_metre_easting ffirn-fudn="1234-1">1234</utm_10_metre_easting>
+<utm_10_metre_northing ffirn-fudn="1238-1">5678</utm_10_metre_northing>
+</geographic_position_utm_10_metre>
+</limit_contour_line_or_area_of_contamination>
+</predicted_contour_information>
+<representative_downwind_direction_and_downwind_speed set-id="yankee" set-seq="21">
+<representative_downwind_direction>
+<representative_downwind_direction_in_mils alt="B" ff-seq="1" ffirn-fudn="2322-4">
+<context_quantity_0000_6400 ffirn-fudn="1023-6">3200</context_quantity_0000_6400>
+<unit_of_measurement_direction_in_mils ffirn-fudn="1008-10">MLM</unit_of_measurement_direction_in_mils>
+</representative_downwind_direction_in_mils>
+</representative_downwind_direction>
+<representative_downwind_speed_and_unit_of_measurement alt="A" ff-seq="2" ffirn-fudn="2455-1">
+<context_quantity_0_999 ffirn-fudn="1023-5">5</context_quantity_0_999>
+<unit_of_speed_velocity_measurement ffirn-fudn="1008-5">MPS</unit_of_speed_velocity_measurement>
+</representative_downwind_speed_and_unit_of_measurement>
+</representative_downwind_direction_and_downwind_speed>
+<actual_weather_conditions set-id="zulu" set-seq="22">
+<detailed_simplified_air_stability_category>
+<detailed_air_stability_category alt="A" ff-seq="1" ffirn-fudn="1313-1">4</detailed_air_stability_category>
+</detailed_simplified_air_stability_category>
+<surface_air_temperature_and_unit_of_measurement alt="A" ff-seq="2" ffirn-fudn="2319-1">
+<context_quantity__99_to_999 ffirn-fudn="1023-42">49</context_quantity__99_to_999>
+<unit_of_temperature_measure_degrees_celsius_or_fahrenheit ffirn-fudn="1008-12">C</unit_of_temperature_measure_degrees_celsius_or_fahrenheit>
+</surface_air_temperature_and_unit_of_measurement>
+<relative_humidity_range alt="A" ff-seq="3" ffirn-fudn="1315-1">8</relative_humidity_range>
+<significant_weather_phenomena alt="A" ff-seq="4" ffirn-fudn="1386-6">4</significant_weather_phenomena>
+<cloud_coverage alt="A" ff-seq="5" ffirn-fudn="1328-1">2</cloud_coverage>
+</actual_weather_conditions>
+<general_text set-id="gentext" set-seq="23">
+<text_indicator alt="A" ff-seq="1" ffirn-fudn="1009-1">NBC INFO</text_indicator>
+<free_text alt="A" ff-seq="2" ffirn-fudn="1006-1">HERE YOU MAY ADD ANY COMMENTS IN FREE
+TEXT OF AN UNLIMITED NUMBER OF CHARACTERS THAT IS REQUIRED BY THE
+MESSAGE</free_text>
+</general_text>
+</nbc3_nuc_report>

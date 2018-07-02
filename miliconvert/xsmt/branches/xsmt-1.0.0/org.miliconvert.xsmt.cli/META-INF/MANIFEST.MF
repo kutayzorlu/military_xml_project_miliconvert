@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.xsmt.cli
+Bundle-SymbolicName: org.miliconvert.xsmt.cli;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.miliconvert.xsmt.cli.Activator
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.xsmt.xalan,
+ org.miliconvert.xsmt.utils,
+ org.miliconvert.xsmt.tmodel,
+ org.miliconvert.xsmt.io,
+ org.miliconvert.xsmt.engine,
+ org.eclipse.xsd,
+ org.miliconvert.xsmt.gmodel
+Eclipse-LazyStart: true

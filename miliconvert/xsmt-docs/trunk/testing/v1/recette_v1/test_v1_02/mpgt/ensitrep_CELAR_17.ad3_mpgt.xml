@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema:MPGT_Message xmlns:schema="urn:XST-schema">
+<AssociationEntiteOrgEntiteOrg>
+<CTE>_llAjsQZ8Ed-nALFkxwV2Ig</CTE>
+<APourSujet_EntiteOrganisationnelle/>
+<APourObjet_EntiteOrganisationnelle>
+<refCTE>_llBKwAZ8Ed-nALFkxwV2Ig</refCTE>
+</APourObjet_EntiteOrganisationnelle>
+</AssociationEntiteOrgEntiteOrg>
+<Unite>
+<CTE>_llBKwAZ8Ed-nALFkxwV2Ig</CTE>
+<EstObjet_AssociationEntiteOrgEntiteOrg>
+<refCTE>_llAjsQZ8Ed-nALFkxwV2Ig</refCTE>
+</EstObjet_AssociationEntiteOrgEntiteOrg>
+</Unite>
+</schema:MPGT_Message>

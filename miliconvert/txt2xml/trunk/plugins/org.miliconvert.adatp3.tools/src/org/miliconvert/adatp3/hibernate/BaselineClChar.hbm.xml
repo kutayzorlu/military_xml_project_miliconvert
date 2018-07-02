@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 09:13:44 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.miliconvert.adatp3.hibernate.BaselineClChar" table="BASELINE_CL_CHAR" >
+        <id name="classid" type="double">
+            <column name="CLASSID" precision="15" scale="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="alpha" type="string">
+            <column name="ALPHA" length="250" />
+        </property>
+        <property name="num" type="string">
+            <column name="NUM" length="250" />
+        </property>
+        <property name="blank" type="string">
+            <column name="BLANK" length="250" />
+        </property>
+        <property name="spec" type="string">
+            <column name="SPEC" length="250" />
+        </property>
+        <property name="wild" type="string">
+            <column name="WILD" length="1" />
+        </property>
+        <property name="dp" type="string">
+            <column name="DP" length="1" />
+        </property>
+        <property name="auditdate" type="timestamp">
+            <column name="AUDITDATE" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+Ligne;N° Set;Type élément;Segment;Ensemble;Zone;SS Zone;FFIRN/FUDN;Card.;Longueur;Libellé;Entité MPGT de départ {Entité de l'attribut};Entité MPGT instanciée {Entité de l'attribut};Attribut MPGT;Action Analyse;Action Synthèse;Commentaire
+1;;MESSAGE;;;;;;;;;;;;;;
+2;;SET;;EXER;;;;O - 1;;EXERCISE IDENTIFICATION;;;;;;
+3;;FIELD;;EXER;1;1;;M - 1;;EXERCISE NICKNAME;Entete;;Diffusion.NomExercice;;;
+4;;FIELD;;EXER;2;2;;O - 1;;EXERCISE ADDITIONAL IDENTIFIER;Entete;;Diffusion.IdentifiantComplementaireExercice;;;
+5;;SET;;OPER;;;;C - 1;;OPERATION CODEWORD;;;;;;
+6;;FIELD;;OPER;1;1;;M - 1;;OPERATION CODEWORD;Entete;;Diffusion.NomOperation;;;
+7;;FIELD;;OPER;2;2;;O - 1;;PLAN ORIGINATOR AND NUMBER;Entete;;Diffusion.NomPlan;;;
+8;;FIELD;;OPER;3;3;;O - 1;;OPTION NICKNAME;NON_TRACE;;NON_TRACE;;;
+9;;FIELD;;OPER;4;4;;O - 1;;SECONDARY OPTION NICKNAME;NON_TRACE;;NON_TRACE;;;
+10;;SET;;MSGID;;;;M - 1;;MESSAGE IDENTIFIER;;;;;;
+11;;FIELD;;MSGID;1;1;;M - 1;;MESSAGE TEXT FORMAT IDENTIFIER;Version;;Version.TypeDocument;;;
+12;;FIELD;;MSGID;2;2;;M - 1;;ORIGINATOR;Entete;;Diffusion.AutoriteOrigine;;;
+13;;FIELD;;MSGID;3;3;;O - 1;;MESSAGE SERIAL NUMBER;Entete;;Diffusion.NumeroSerie;;;
+14;;FIELD;;MSGID;4;4;;O - 1;;MONTH NAME;NON_TRACE;;NON_TRACE;;;
+15;;FIELD;;MSGID;5;5;;O - 1;;QUALIFIER;NON_TRACE;;NON_TRACE;;;
+16;;FIELD;;MSGID;6;6;;O - 1;;SERIAL NUMBER OF QUALIFIER;NON_TRACE;;NON_TRACE;;;
+17;;SET;;REF;;;;O - N;;REFERENCE;;;;;;
+18;;FIELD;;REF;1;1;;M - 1;;SERIAL LETTER;Entete;;ReferenceAAutreMessage.NumeroOrdre;;;
+19;;FIELD;;REF;2;2;;M - 1;;MESSAGE TEXT FORMAT IDENTIFIER;Entete;;ReferenceAAutreMessage.TypeDocument;;;
+20;;FIELD;;REF;3;3;;M - 1;;ORIGINATOR;Entete;;ReferenceAAutreMessage.AutoriteOrigine;;;
+21;;FIELD;;REF;4;4;;M - 1;;DAY-TIME GROUP OF REFERENCE;Entete;;ReferenceAAutreMessag.DateComposition;;;
+22;;FIELD;;REF;5;5;;O - 1;;REFERENCE SERIAL NUMBER;Entete;;ReferenceAAutreMessage.NumeroSerie;;;
+23;;FIELD;;REF;6;6;;O - 1;;SPECIAL NOTATION;NON_TRACE;;NON_TRACE;;;
+24;;FIELD;;REF;7;7;;O - N;;SIC;Entete;;ReferenceAAutreMessageSic.Sic;;;
+FIN;;;;;;;;;;;;;;;;

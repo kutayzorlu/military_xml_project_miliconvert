@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="XSMT"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.miliconvert.xsmt.cli.XSMT">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="xsmtcli"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.miliconvert.xsmt.cli.XSMT"
+            name="XSMT command line interface">
+         <property
+               name="appName"
+               value="XSMT command line interface">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

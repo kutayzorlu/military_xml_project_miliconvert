@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.txt2xml.miliformats
+Bundle-SymbolicName: org.miliconvert.txt2xml.miliformats;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.miliconvert.txt2xml.miliformats.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.miliconvert.txt2xml.transform
+Eclipse-LazyStart: true

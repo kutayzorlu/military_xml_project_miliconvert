@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.miliconvert.otg.tests
+Bundle-SymbolicName: org.miliconvert.otg.tests
+Bundle-Version: 1.0.0
+Bundle-Vendor: miliconvert.org
+Require-Bundle: org.miliconvert.otg,
+ org.miliconvert.txt2xml.transform,
+ org.miliconvert.xsmt.utils,
+ org.junit,
+ org.miliconvert.otg.tools;bundle-version="1.0.0",
+ org.miliconvert.xsmt.engine;bundle-version="1.2.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+
